@@ -23,23 +23,9 @@ class GeneanetSpider(scrapy.Spider):
     # Initialize the parser
     gedcomw_parser = Parser()
 
-    xxxstart_urls = [
-        #"https://gw.geneanet.org/fbiet?lang=fr&n=rochet&p=didier&oc=0",
-        #"https://gw.geneanet.org/fbiet?n=rochet&oc=10&p=francois",
-        #"https://gw.geneanet.org/fbiet?n=rochet&p=didier&oc=0",
-        "https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard",
-    ]
-
     def start_requests(self):
         logfile = "scrapy2.log"
 
-        urls = [
-            #"https://gw.geneanet.org/fbiet?n=rochet&p=didier&oc=0",
-            "https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard", # tests
-            #"https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele", # Emmanuele Schembri
-            #"https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna", # Maria Anna Brincat
-            #"https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri", # Etienne Henri NICOLAS
-        ]
         #logging_to_file(logfile)
 
         #logging.basicConfig(
@@ -48,11 +34,17 @@ class GeneanetSpider(scrapy.Spider):
         #    level=logging.INFO
         #)
         self.log(f"start_requests")
+        self.log(f"URL = {self.url}")
+        result_name = self.url
+        result_name = result_name.replace("https://", "")
+        result_name = result_name.replace("/", ".")
+        result_name = result_name.replace("&", ".")
+        result_name = result_name.replace("?", ".")
+        self.log(f"result_name = {result_name}")
+        self.gedcom_result_filename = "result/" + result_name + ".ged"
+        self.log(f"gedcom_result_filename = {self.gedcom_result_filename}")
 
-        for url in urls:
-            #logging_to_file(logfile)
-            #self.log.LOG_FILE = logfile
-            yield scrapy.Request(url=url, callback=self.parse, meta={'generation':0, 'sosa':1} )
+        yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1} )
 
     def parse(self, response):
         source = response.request.url
@@ -75,7 +67,7 @@ class GeneanetSpider(scrapy.Spider):
         #element = IndividualElement(level, pointer, tag, value, crlf, multi_line=False)
         pointer = "@I%05d@" % (self.nb_persons)
         self.log(f"Avant création IndividualElement")
-        person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "value", '\n', multi_line=False)
+        person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
         self.log(f"Après création IndividualElement")
         person.set_name(prenom,nom)
         self.gedcomw_parser.get_root_element().add_child_element(person)
@@ -154,4 +146,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"nb_errors          = {self.nb_errors}")
         spider.logger.info(f"nb_warnings        = {self.nb_warnings}")
-        self.gedcomw_parser.print_gedcom()
+        #self.gedcomw_parser.print_gedcom()
+        gedresult = open(self.gedcom_result_filename, "wb")
+        self.gedcomw_parser.nra_save_gedcom(gedresult)
+        gedresult.close()

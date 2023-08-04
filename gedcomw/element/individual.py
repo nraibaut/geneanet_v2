@@ -40,11 +40,12 @@ class IndividualElement(Element):
         # givenname = prénom = GEDCOM_TAG_GIVEN_NAME = "GIVN"
         # surname = nom de famille = GEDCOM_TAG_SURNAME = "SURN"
         name = "%s /%s/" % (givenname, surname)
+        pointer = ''
         self.logger.debug(f"NRa {__name__} : set_name : givenname={givenname} surname={surname} (name='{name}')")
-        element_name = Element( self.get_level()+1, None, gedcomw.tags.GEDCOM_TAG_NAME, name, '\n', multi_line=False)
+        element_name = Element( self.get_level()+1, pointer, gedcomw.tags.GEDCOM_TAG_NAME, name, '\n', multi_line=False)
         self.add_child_element(element_name)
-        element_givenname = Element( self.get_level()+2, None, gedcomw.tags.GEDCOM_TAG_GIVEN_NAME, givenname, '\n', multi_line=False)
-        element_surname = Element( self.get_level()+2, None, gedcomw.tags.GEDCOM_TAG_SURNAME, surname, '\n', multi_line=False)
+        element_givenname = Element( self.get_level()+2, pointer, gedcomw.tags.GEDCOM_TAG_GIVEN_NAME, givenname, '\n', multi_line=False)
+        element_surname = Element( self.get_level()+2, pointer, gedcomw.tags.GEDCOM_TAG_SURNAME, surname, '\n', multi_line=False)
         element_name.add_child_element(element_givenname)
         element_name.add_child_element(element_surname)
 
