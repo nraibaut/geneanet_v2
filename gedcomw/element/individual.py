@@ -49,6 +49,13 @@ class IndividualElement(Element):
         element_name.add_child_element(element_givenname)
         element_name.add_child_element(element_surname)
 
+    def set_sex(self, sex): # NRa
+        # sex = GEDCOM_TAG_SEX = "SEX"
+        pointer = ''
+        self.logger.debug(f"NRa {__name__} : set_sex : sex={sex}")
+        element = Element( self.get_level()+1, pointer, gedcomw.tags.GEDCOM_TAG_SEX, sex, '\n', multi_line=False)
+        self.add_child_element(element)
+
     def is_individual(self):
         """Checks if this element is an actual individual
         :rtype: bool

@@ -61,7 +61,10 @@ class GeneanetSpider(scrapy.Spider):
         #nom = response.xpath("//div[@id='person-title']//div//h1//a[2]//text()")[0].extract()
         prenom = response.xpath("//div[@id='person-title']//div//h1//a[1]//text()").get()
         nom = response.xpath("//div[@id='person-title']//div//h1//a[2]//text()").get()
-        self.log(f"Generation {generation}, sosa {sosa} : '{prenom}' '{nom}' ({source})")
+        sexe = response.xpath("//div[@id='person-title']//img//@title").get() # "H/F" en français, "M/F" en anglais
+        if sexe == "H" :
+            sexe = "M"
+        self.log(f"Generation {generation}, sosa {sosa} : '{prenom}' '{nom}' ({sexe}) ({source})")
         #if self.nb_persons == 1 :
         #person = IndividualElement ()
         #element = IndividualElement(level, pointer, tag, value, crlf, multi_line=False)
@@ -70,6 +73,7 @@ class GeneanetSpider(scrapy.Spider):
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
         self.log(f"Après création IndividualElement")
         person.set_name(prenom,nom)
+        person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
 
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
