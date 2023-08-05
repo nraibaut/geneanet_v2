@@ -1,0 +1,626 @@
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init class gedcomw.element.element #############################
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa init class gedcomw.parser #############################
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=-1 pointer= tag=ROOT value= multi_line=True
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa init instance gedcomw.parser ##################################################
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=-1 pointer= tag=ROOT value= multi_line=True
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer= tag=HEAD value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NOTE value=Cette généalogie a été créée avec Ancestris le 15/05/23 23:15. multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SUBM value=@B00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=PLAC value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=FORM value=Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SOUR value=ANCESTRIS multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=VERS value=12.0.11951 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NAME value=Ancestris multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CORP value=Ancestris Team multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=ADDR value=https://www.ancestris.org multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=DEST value=ANY multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=DATE value=9 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=TIME value=00:44:17 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FILE value=Test.ged multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=GEDC value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=VERS value=5.5.1 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=FORM value=LINEAGE-LINKED multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAR value=UTF-8 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@B00001@ tag=SUBM value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@I00001@ tag=INDI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NAME value=Gérard /DUPONT/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=GIVN value=Gérard multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SURN value=DUPONT multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SEX value=M multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BIRT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=22 MAR 1882 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Paris, France, , , , ,  multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=_TIME value=22h10 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=DEAT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=10 APR 1892 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Nice, FRANCE multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00003@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00003@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=_TIME value=23h50 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=RESI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Lyon, France multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00008@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00008@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=OCCU value=Profession de Gérard multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00005@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00005@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=Titre de Gérard multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00006@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00006@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=GRAD value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=TYPE value=Certificat d'études multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=1 JUL 1891 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Nice, FRANCE multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00014@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00010@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=18 MAY 1882 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Paris, France multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00007@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00007@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BURI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=11 APR 1892 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Nice, FRANCE multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00004@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00004@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=_TIME value=11h multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NOTE value=@N00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMC value=@F00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SOUR value=@S00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=23:23:08 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00001@ tag=NOTE value=Texte1 note général multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Texte2 note général multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:49:14 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00001@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_general.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source général multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source général multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:49:14 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00002@ tag=NOTE value=Note1 sur la naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur la naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:56:18 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00002@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_naissance.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:49:14 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00003@ tag=NOTE value=Note1 sur le décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur le décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:44:33 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00003@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_deces.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:49:14 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@F00001@ tag=FAM value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=HUSB value=@I00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=WIFE value=@I00003@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=MARR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=24 AUG 1877 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=PLAC value=Paris, France multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00009@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00009@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHIL value=@I00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=23:17:36 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@I00002@ tag=INDI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NAME value=Pierre /DUPONT/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=GIVN value=Pierre multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SURN value=DUPONT multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SEX value=M multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BIRT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=1 SEP 1850 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00015@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00011@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=DEAT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=1 APR 1895 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00016@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SOUR value=@S00012@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMC value=@F00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMS value=@F00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=8 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=22:44:12 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@I00003@ tag=INDI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NAME value=Marie Paule /DURAND/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=GIVN value=Marie, Paule multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SURN value=DURAND multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SEX value=F multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BIRT value=Y multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMS value=@F00001@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:13:14 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00004@ tag=NOTE value=Note1 sur l'inhumation multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur l'inhumation multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00004@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_inhumation.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source inhumation multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source inhumation multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:56:18 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00005@ tag=NOTE value=Note1 sur la profession multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur la profession multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00005@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_profession.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source profession multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source profession multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:56:18 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00006@ tag=NOTE value=Note1 sur le titre multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur le titre multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00006@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_titre.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source titre multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source titre multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=19:56:18 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00007@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_bapteme.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source baptême multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source baptême multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:15:12 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00007@ tag=NOTE value=Note1 sur le baptême multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur le baptême multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00008@ tag=NOTE value=Note1 sur la résidence multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur la résidence multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00008@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_residence.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source résidence multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source résidence multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:19:58 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00009@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_mariage.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source mariage multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source mariage multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:22:37 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00009@ tag=NOTE value=Note1 sur le mariage multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur le mariage multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:21:48 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@F00002@ tag=FAM value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=HUSB value=@I00004@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=WIFE value=@I00005@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHIL value=@I00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:22:39 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@I00004@ tag=INDI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NAME value=Jean /DATES/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=GIVN value=Jean multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SURN value=DATES multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SEX value=M multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BIRT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=ABT JUL 1802 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00010@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=DEAT value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=CAL 1 JUN 1885 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00011@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=EST 23 FEB 1803 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00012@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=RETI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=INT 1872 () multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=NOTE value=@N00013@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMS value=@F00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=23:18:12 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@I00005@ tag=INDI value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=NAME value=Jeanne /INN/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=GIVN value=Jeanne multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=SURN value=INN multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=SEX value=F multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=BIRT value=Y multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=FAMS value=@F00002@ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:40:33 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00010@ tag=NOTE value=Date environ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:28:59 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00011@ tag=NOTE value=Date calculée multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:28:59 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00012@ tag=NOTE value=Date estimée multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:28:59 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00013@ tag=NOTE value=Date interprêtée multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=20:30:43 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00014@ tag=NOTE value=Note1 sur diplôme multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur diplôme multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=23:21:57 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00010@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_diplome.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source diplôme multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source diplôme multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=5 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=23:23:08 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00011@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_naissance.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=8 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=22:33:12 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@S00012@ tag=SOUR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TITL value=https://www.source_deces.fr/ multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=TEXT value=Texte1 source décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=CONT value=Texte2 source décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=8 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=22:33:51 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00015@ tag=NOTE value=Note1 sur la naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur la naissance multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=8 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=22:43:45 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer=@N00016@ tag=NOTE value=Note1 sur le décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CONT value=Note2 sur le décès multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=1 pointer= tag=CHAN value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=2 pointer= tag=DATE value=8 JUN 2023 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=3 pointer= tag=TIME value=22:44:12 multi_line=False
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa init instance gedcomw.element.element : level=0 pointer= tag=TRLR value= multi_line=False
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa begin save_gedcom (version_info[0]=3) :
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=-1 pointer= tag=ROOT value=''
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa end save_gedcom
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa begin nra_save_gedcom :
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer= tag=HEAD value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NOTE value='Cette généalogie a été créée avec Ancestris le 15/05/23 23:15.'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SUBM value='@B00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=PLAC value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=FORM value='Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SOUR value='ANCESTRIS'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=VERS value='12.0.11951'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NAME value='Ancestris'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CORP value='Ancestris Team'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=ADDR value='https://www.ancestris.org'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=DEST value='ANY'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=DATE value='9 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=TIME value='00:44:17'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FILE value='Test.ged'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=GEDC value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=VERS value='5.5.1'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=FORM value='LINEAGE-LINKED'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAR value='UTF-8'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@B00001@ tag=SUBM value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@I00001@ tag=INDI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NAME value='Gérard /DUPONT/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=GIVN value='Gérard'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SURN value='DUPONT'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SEX value='M'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BIRT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='22 MAR 1882'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Paris, France, , , , , '
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=_TIME value='22h10'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=DEAT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='10 APR 1892'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Nice, FRANCE'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00003@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00003@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=_TIME value='23h50'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=RESI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Lyon, France'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00008@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00008@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=OCCU value='Profession de Gérard'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00005@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00005@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='Titre de Gérard'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00006@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00006@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=GRAD value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=TYPE value='Certificat d'études'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='1 JUL 1891'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Nice, FRANCE'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00014@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00010@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='18 MAY 1882'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Paris, France'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00007@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00007@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BURI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='11 APR 1892'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Nice, FRANCE'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00004@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00004@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=_TIME value='11h'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NOTE value='@N00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMC value='@F00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SOUR value='@S00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='23:23:08'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00001@ tag=NOTE value='Texte1 note général'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Texte2 note général'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:49:14'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00001@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_general.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source général'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source général'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:49:14'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00002@ tag=NOTE value='Note1 sur la naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur la naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:56:18'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00002@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_naissance.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:49:14'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00003@ tag=NOTE value='Note1 sur le décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur le décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:44:33'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00003@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_deces.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:49:14'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@F00001@ tag=FAM value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=HUSB value='@I00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=WIFE value='@I00003@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=MARR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='24 AUG 1877'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=PLAC value='Paris, France'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00009@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00009@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHIL value='@I00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='23:17:36'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@I00002@ tag=INDI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NAME value='Pierre /DUPONT/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=GIVN value='Pierre'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SURN value='DUPONT'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SEX value='M'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BIRT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='1 SEP 1850'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00015@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00011@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=DEAT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='1 APR 1895'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00016@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SOUR value='@S00012@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMC value='@F00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMS value='@F00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='8 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='22:44:12'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@I00003@ tag=INDI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NAME value='Marie Paule /DURAND/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=GIVN value='Marie, Paule'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SURN value='DURAND'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SEX value='F'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BIRT value='Y'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMS value='@F00001@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:13:14'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00004@ tag=NOTE value='Note1 sur l'inhumation'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur l'inhumation'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00004@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_inhumation.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source inhumation'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source inhumation'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:56:18'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00005@ tag=NOTE value='Note1 sur la profession'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur la profession'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00005@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_profession.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source profession'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source profession'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:56:18'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00006@ tag=NOTE value='Note1 sur le titre'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur le titre'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00006@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_titre.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source titre'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source titre'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='19:56:18'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00007@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_bapteme.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source baptême'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source baptême'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:15:12'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00007@ tag=NOTE value='Note1 sur le baptême'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur le baptême'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00008@ tag=NOTE value='Note1 sur la résidence'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur la résidence'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00008@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_residence.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source résidence'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source résidence'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:19:58'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00009@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_mariage.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source mariage'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source mariage'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:22:37'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00009@ tag=NOTE value='Note1 sur le mariage'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur le mariage'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:21:48'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@F00002@ tag=FAM value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=HUSB value='@I00004@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=WIFE value='@I00005@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHIL value='@I00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:22:39'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@I00004@ tag=INDI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NAME value='Jean /DATES/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=GIVN value='Jean'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SURN value='DATES'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SEX value='M'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BIRT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='ABT JUL 1802'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00010@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=DEAT value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='CAL 1 JUN 1885'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00011@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='EST 23 FEB 1803'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00012@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=RETI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='INT 1872 ()'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=NOTE value='@N00013@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMS value='@F00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='23:18:12'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@I00005@ tag=INDI value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=NAME value='Jeanne /INN/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=GIVN value='Jeanne'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=SURN value='INN'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=SEX value='F'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=BIRT value='Y'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=FAMS value='@F00002@'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:40:33'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00010@ tag=NOTE value='Date environ'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:28:59'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00011@ tag=NOTE value='Date calculée'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:28:59'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00012@ tag=NOTE value='Date estimée'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:28:59'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00013@ tag=NOTE value='Date interprêtée'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='20:30:43'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00014@ tag=NOTE value='Note1 sur diplôme'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur diplôme'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='23:21:57'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00010@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_diplome.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source diplôme'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source diplôme'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='5 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='23:23:08'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00011@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_naissance.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='8 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='22:33:12'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@S00012@ tag=SOUR value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TITL value='https://www.source_deces.fr/'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=TEXT value='Texte1 source décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=CONT value='Texte2 source décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='8 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='22:33:51'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00015@ tag=NOTE value='Note1 sur la naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur la naissance'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='8 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='22:43:45'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer=@N00016@ tag=NOTE value='Note1 sur le décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CONT value='Note2 sur le décès'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=1 pointer= tag=CHAN value=''
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=2 pointer= tag=DATE value='8 JUN 2023'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=3 pointer= tag=TIME value='22:44:12'
+2023-08-05 23:37:18 [gedcomw.element.element] DEBUG: NRa to_gedcom_string(recursive=True) : level=0 pointer= tag=TRLR value=''
+2023-08-05 23:37:18 [gedcomw.parser] DEBUG: NRa end nra_save_gedcom

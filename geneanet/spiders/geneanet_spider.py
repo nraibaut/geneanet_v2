@@ -1,3 +1,5 @@
+import os
+
 import scrapy
 from scrapy import signals
 import html2text
@@ -8,6 +10,11 @@ from gedcomw.parser import Parser
 import gedcomw.element
 from gedcomw.element.individual import IndividualElement
 from datetime import datetime
+import sys
+import atexit
+import shutil # pour copyfile final
+
+#tmplogfile = "tmp.log"
 
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
@@ -15,45 +22,58 @@ class GeneanetSpider(scrapy.Spider):
     version = "0.1.0"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
+    result_dir = "result"
+    result_name = "tbd" # sera connu plus tard
     nb_persons = 0
     nb_titres_noblesse = 0
     max_generations = 0
     nb_warnings = 0
     nb_errors = 0
     list_tuples_child_of = []
-    configure_logging(install_root_handler=False)
+    #logging_to_file(logfile)
+    #logfile = self.result_dir + "/" + result_name + ".log"
+    tmplogfile = result_dir + "/scrapy.log.tmp"
 
-    # Path to your `.ged` file
-    gedcom_file_path = 'scrapy.ged'
-    result_dir = "result"
+    # Configuration fichier de sortie log :
+    # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
+    # mais on n'a pas encore l'url, à partir de laquelle on veut construire le nom du log.
+    # Contournement : on écrit dans un log tmp et on renomme à la fin...
+    try:
+        os.remove(tmplogfile)
+    except OSError:
+        pass
+    configure_logging(install_root_handler=False)
+    logging.basicConfig(
+        filename=tmplogfile,
+        # format='%(asctime)s [%(name)s] %(levelname)s: %(message)s',
+        format='[%(name)s] %(levelname)s: %(message)s',
+        level=logging.DEBUG
+    )
+    logging.info(f"Starting {progname} {version}")
 
     # Initialize the parser
-    gedcomw_parser = Parser()
+    gedcomw_parser = None
 
     def start_requests(self):
-        logfile = "scrapy2.log"
-
-        #logging_to_file(logfile)
-
-        #logging.basicConfig(
-        #    filename=logfile,
-        #    format='zz %(asctime)s %(levelname)s: %(message)s',
-        #    level=logging.INFO
-        #)
-        self.log(f"start_requests")
-        self.log(f"URL = {self.url}")
         result_name = self.url
         result_name = result_name.replace("https://", "")
         result_name = result_name.replace("/", ".")
         result_name = result_name.replace("&", ".")
         result_name = result_name.replace("?", ".")
+        GeneanetSpider.result_name = result_name
+
+        self.log("start_requests")
+        self.gedcomw_parser = Parser()
+
+        self.log(f"URL = {self.url}")
+
         self.log(f"result_name = {result_name}")
-        self.gedcom_result_filename = result_name + ".ged"
-        self.log(f"gedcom_result_filename = {self.gedcom_result_filename}")
+        GeneanetSpider.gedcom_result_filename = result_name + ".ged"
+        self.log(f"gedcom_result_filename = {GeneanetSpider.gedcom_result_filename}")
         now = datetime.now()  # current date and time
-        date = now.strftime("%d/%m/%Y à %H:%M:%S")
+        date = now.strftime("%d/%m/%Y à %H:%M")
         self.gedcomw_parser.nra_set_header(f"Cette généalogie a été créée par {self.progname} le {date} à partir de {self.url}", self.progname, self.version, self.progname,
-                   self.team, self.address, self.gedcom_result_filename)
+                   self.team, self.address, GeneanetSpider.gedcom_result_filename)
 
         yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':''} )
 
@@ -82,12 +102,9 @@ class GeneanetSpider(scrapy.Spider):
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
             self.list_tuples_child_of.append((child_pointer,pointer,sexe))
 
-        #if self.nb_persons == 1 :
-        #person = IndividualElement ()
-        #element = IndividualElement(level, pointer, tag, value, crlf, multi_line=False)
-        self.log(f"Avant création IndividualElement")
+        #self.log(f"Avant création IndividualElement")
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
-        self.log(f"Après création IndividualElement")
+        #self.log(f"Après création IndividualElement")
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
@@ -161,14 +178,38 @@ class GeneanetSpider(scrapy.Spider):
         return spider
 
     def spider_closed(self, spider):
-        spider.logger.info("NRa Spider closed: %s", spider.name)
-        spider.logger.info(f"nb_persons         = {self.nb_persons}")
-        spider.logger.info(f"max_generations    = {self.max_generations}")
-        spider.logger.info(f"nb_titres_noblesse = {self.nb_titres_noblesse}")
-        spider.logger.info(f"nb_errors          = {self.nb_errors}")
-        spider.logger.info(f"nb_warnings        = {self.nb_warnings}")
-        #self.gedcomw_parser.print_gedcom()
-        gedresult = open( self.result_dir + "/" + self.gedcom_result_filename, "wb")
+        spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
+        spider.logger.info(f"- nb_persons         = {self.nb_persons}")
+        spider.logger.info(f"- max_generations    = {self.max_generations}")
+        spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
+        spider.logger.info(f"- nb_errors          = {self.nb_errors}")
+        spider.logger.info(f"- nb_warnings        = {self.nb_warnings}")
+        gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
+        spider.logger.info(f"Saving to '{gedresultfilename}'")
+        gedresult = open( gedresultfilename, "wb")
         self.gedcomw_parser.nra_save_gedcom(gedresult)
         gedresult.close()
         print(self.list_tuples_child_of)
+
+
+
+def close_logger(logger):
+    """Close all handlers on logger object."""
+    if logger is None:
+        return
+    for handler in list(logger.handlers):
+        handler.close()
+        logger.removeHandler(handler)
+
+
+@atexit.register
+def goodbye():
+    print('Leaving the Python sector.')
+    #close_logger(logging)
+    #configure_logging(install_root_handler=True)
+    #logging.shutdown()
+    #os.rename(GeneanetSpider.tmplogfile, final_logname) # KO : erreur "fichier utilisé par un autre processus"
+    final_logname = GeneanetSpider.result_dir + "/" + GeneanetSpider.result_name + ".log"
+    print(f"Renaming '{GeneanetSpider.tmplogfile}' to '{final_logname}'")
+    shutil.copyfile(GeneanetSpider.tmplogfile, final_logname)
+

@@ -61,16 +61,17 @@ class Parser(object):
       - a dict (only elements with pointers, which are the keys)
     """
     logger = logging.getLogger(__name__)  # Logger NRa
-    logger.setLevel(logging.DEBUG)
-    # create console handler and set level to debug
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.DEBUG)
-    # create formatter
-    formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-    # add formatter to ch
-    ch.setFormatter(formatter)
-    # add ch to logger
-    logger.addHandler(ch)
+    logger.setLevel(logging.INFO)
+    # NRa 06/08/23 : je supprime le StreamHandler, qui provoque une double sortie sur la console
+    ## create console handler and set level to debug
+    #ch = logging.StreamHandler()
+    #ch.setLevel(logging.DEBUG)
+    ## create formatter
+    #formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    ## add formatter to ch
+    #ch.setFormatter(formatter)
+    ## add ch to logger
+    #logger.addHandler(ch)
     logger.debug(f"NRa init class {__name__} #############################")
 
     def __init__(self):
@@ -79,7 +80,7 @@ class Parser(object):
         self.__element_dictionary = {}
         self.__root_element = RootElement()
 
-        self.logger.debug(f"NRa init instance {__name__} ##################################################")
+        self.logger.debug(f"NRa init instance {__name__} #############################")
 
     def invalidate_cache(self):
         """Empties the element list and dictionary to cause
@@ -560,7 +561,7 @@ class Parser(object):
         """Save GEDCOM data to a file
         :type open_file: file
         """
-        self.logger.debug(f"NRa begin nra_save_gedcom :")
+        self.logger.info(f"nra_save_gedcom : saving gedcom to '{open_file.name}'")
         root_child_elements = self.get_root_child_elements()
 
         # Iterate through all root child elements
@@ -575,9 +576,9 @@ class Parser(object):
                 # Unpack the name tuple
                 (first, last) = element.get_name()
                 # Print the first and last name of the found individual
-                print("# '" + first + "' '" + last + "'")
+                #print("# '" + first + "' '" + last + "'")
 
-        self.logger.debug(f"NRa end nra_save_gedcom")
+        self.logger.debug(f"nra_save_gedcom : gedcom file saved")
 
 
     def nra_set_header(self, note, source, version, name, corp, address, file):
@@ -609,7 +610,7 @@ class Parser(object):
 
         pointer = ''
         submitter_pointer = '@B00001@'
-        self.logger.debug(f"NRa {__name__} : set_header : note={note} ...")
+        self.logger.info(f"nra_set_header : set_header : note='{note}' ...")
         element_head = Element(0, pointer, gedcomw.tags.GEDCOM_TAG_HEAD, "", '\n', multi_line=False)
         element_note = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_NOTE, note, '\n', multi_line=False)
         element_submitter_ref = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_SUBMITTER, submitter_pointer, '\n', multi_line=False)

@@ -58,16 +58,17 @@ class Element(object):
     """
 
     logger = logging.getLogger(__name__)  # Logger NRa
-    logger.setLevel(logging.DEBUG)
-    # create console handler and set level to debug
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.DEBUG)
-    # create formatter
-    formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
-    # add formatter to ch
-    ch.setFormatter(formatter)
-    # add ch to logger
-    logger.addHandler(ch)
+    logger.setLevel(logging.INFO)
+    # NRa 06/08/23 : je supprime le StreamHandler, qui provoque une double sortie sur la console
+    ## create console handler and set level to debug
+    #ch = logging.StreamHandler()
+    #ch.setLevel(logging.DEBUG)
+    ## create formatter
+    #formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    ## add formatter to ch
+    #ch.setFormatter(formatter)
+    ## add ch to logger
+    #logger.addHandler(ch)
     logger.debug(f"NRa init class {__name__} #############################")
 
     def __init__(self, level, pointer, tag, value, crlf="\n", multi_line=True):
