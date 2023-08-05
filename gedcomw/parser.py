@@ -36,6 +36,7 @@ from gedcomw.element.root import RootElement
 import gedcomw.tags
 import logging # NRa
 from gedcomw.element.individual import IndividualElement # NRa
+from datetime import datetime # NRa
 
 FAMILY_MEMBERS_TYPE_ALL = "ALL"
 FAMILY_MEMBERS_TYPE_CHILDREN = gedcomw.tags.GEDCOM_TAG_CHILD
@@ -577,3 +578,75 @@ class Parser(object):
                 print("# '" + first + "' '" + last + "'")
 
         self.logger.debug(f"NRa end nra_save_gedcom")
+
+
+    def nra_set_header(self, note, source, version, name, corp, address, file):
+        """Set GEDCOM header
+        """
+        # Header de la forme :
+        # 0 HEAD
+        # 1 NOTE Cette généalogie a été créée avec Ancestris le 15/05/23 23:15.
+        # 1 SUBM @B00001@
+        # 1 PLAC
+        # 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
+        # 1 SOUR ANCESTRIS
+        # 2 VERS 12.0.11951
+        # 2 NAME Ancestris
+        # 2 CORP Ancestris Team
+        # 3 ADDR https://www.ancestris.org
+        # 1 DEST ANY
+        # 1 DATE 9 JUN 2023
+        # 2 TIME 00:44:17
+        # 1 FILE Test.ged
+        # 1 GEDC
+        # 2 VERS 5.5.1
+        # 2 FORM LINEAGE-LINKED
+        # 1 CHAR UTF-8
+        # 0 @B00001@ SUBM
+        now = datetime.now()  # current date and time
+        date = now.strftime("%d %b %Y")
+        time = now.strftime("%H:%M:%S")
+
+        pointer = ''
+        submitter_pointer = '@B00001@'
+        self.logger.debug(f"NRa {__name__} : set_header : note={note} ...")
+        element_head = Element(0, pointer, gedcomw.tags.GEDCOM_TAG_HEAD, "", '\n', multi_line=False)
+        element_note = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_NOTE, note, '\n', multi_line=False)
+        element_submitter_ref = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_SUBMITTER, submitter_pointer, '\n', multi_line=False)
+        element_submitter = Element(0, submitter_pointer, gedcomw.tags.GEDCOM_TAG_SUBMITTER, "", '\n', multi_line=False)
+        element_place = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_PLACE, "", '\n', multi_line=False)
+        element_form = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_FORM, "Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays", '\n', multi_line=False)
+        element_source = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, source, '\n', multi_line=False)
+        element_version = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_VERSION, version, '\n', multi_line=False)
+        element_name = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_NAME, name, '\n', multi_line=False)
+        element_corp = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_CORP, corp, '\n', multi_line=False)
+        element_addr = Element(3, pointer, gedcomw.tags.GEDCOM_TAG_ADDRESS, address, '\n', multi_line=False)
+        element_dest = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_DEST, "ANY", '\n', multi_line=False)
+        element_date = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_DATE, date, '\n', multi_line=False)
+        element_time = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_TIME, time, '\n', multi_line=False)
+        element_file = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_FILE, file, '\n', multi_line=False)
+        element_gedc = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_GEDC, "", '\n', multi_line=False)
+        element_versiongedc = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_VERSION, "5.5.1", '\n', multi_line=False)
+        element_formgedc = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_FORM, "LINEAGE-LINKED", '\n', multi_line=False)
+        element_char = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_CHAR, "UTF-8", '\n', multi_line=False)
+
+        self.get_root_element().add_child_element(element_head)
+        element_head.add_child_element(element_note)
+        element_head.add_child_element(element_submitter_ref)
+        element_head.add_child_element(element_place)
+        element_place.add_child_element(element_form)
+        element_head.add_child_element(element_source)
+        element_source.add_child_element(element_version)
+        element_source.add_child_element(element_name)
+        element_source.add_child_element(element_corp)
+        element_corp.add_child_element(element_addr)
+        element_head.add_child_element(element_dest)
+        element_head.add_child_element(element_date)
+        element_date.add_child_element(element_time)
+        element_head.add_child_element(element_file)
+        element_head.add_child_element(element_gedc)
+        element_gedc.add_child_element(element_versiongedc)
+        element_gedc.add_child_element(element_formgedc)
+        element_head.add_child_element(element_char)
+        self.get_root_element().add_child_element(element_submitter)
+

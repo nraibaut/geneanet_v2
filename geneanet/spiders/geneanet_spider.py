@@ -7,18 +7,25 @@ import gedcomw
 from gedcomw.parser import Parser
 import gedcomw.element
 from gedcomw.element.individual import IndividualElement
+from datetime import datetime
 
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
+    progname = "GeneanetSpider"
+    version = "0.1.0"
+    team = "Nicolas Raibaut"
+    address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     nb_persons = 0
     nb_titres_noblesse = 0
     max_generations = 0
     nb_warnings = 0
     nb_errors = 0
+    list_tuples_child_of = []
     configure_logging(install_root_handler=False)
 
     # Path to your `.ged` file
     gedcom_file_path = 'scrapy.ged'
+    result_dir = "result"
 
     # Initialize the parser
     gedcomw_parser = Parser()
@@ -41,10 +48,14 @@ class GeneanetSpider(scrapy.Spider):
         result_name = result_name.replace("&", ".")
         result_name = result_name.replace("?", ".")
         self.log(f"result_name = {result_name}")
-        self.gedcom_result_filename = "result/" + result_name + ".ged"
+        self.gedcom_result_filename = result_name + ".ged"
         self.log(f"gedcom_result_filename = {self.gedcom_result_filename}")
+        now = datetime.now()  # current date and time
+        date = now.strftime("%d/%m/%Y à %H:%M:%S")
+        self.gedcomw_parser.nra_set_header(f"Cette généalogie a été créée par {self.progname} le {date} à partir de {self.url}", self.progname, self.version, self.progname,
+                   self.team, self.address, self.gedcom_result_filename)
 
-        yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1} )
+        yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':''} )
 
     def parse(self, response):
         source = response.request.url
@@ -52,7 +63,9 @@ class GeneanetSpider(scrapy.Spider):
         if generation > self.max_generations :
             self.max_generations = generation
         sosa = response.meta['sosa']
+        child_pointer = response.meta['child_pointer']
         self.nb_persons += 1
+        pointer = "@I%05d@" % (self.nb_persons)
 
         #generation = 1
         #prenom = response.xpath("//div[@id='person-title']//div//h1//a//text()")[0].extract()
@@ -64,11 +77,14 @@ class GeneanetSpider(scrapy.Spider):
         sexe = response.xpath("//div[@id='person-title']//img//@title").get() # "H/F" en français, "M/F" en anglais
         if sexe == "H" :
             sexe = "M"
-        self.log(f"Generation {generation}, sosa {sosa} : '{prenom}' '{nom}' ({sexe}) ({source})")
+        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source})")
+        if child_pointer != '' :
+            self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
+            self.list_tuples_child_of.append((child_pointer,pointer,sexe))
+
         #if self.nb_persons == 1 :
         #person = IndividualElement ()
         #element = IndividualElement(level, pointer, tag, value, crlf, multi_line=False)
-        pointer = "@I%05d@" % (self.nb_persons)
         self.log(f"Avant création IndividualElement")
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
         self.log(f"Après création IndividualElement")
@@ -122,7 +138,7 @@ class GeneanetSpider(scrapy.Spider):
             url_parent = parent.xpath("a/@href").get()
             url_parent = response.urljoin(url_parent)
             self.log(f"URL parent (forme 1) {idx} = {url_parent}")
-            yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1})
+            yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1,'child_pointer':pointer})
 
         # Parents forme 2 ("<!-- Parents simple -->")
         if idx == 0 :
@@ -131,7 +147,7 @@ class GeneanetSpider(scrapy.Spider):
                 url_parent = parent.xpath("a/@href").get()
                 url_parent = response.urljoin(url_parent)
                 self.log(f"URL parent (forme 2) {idx} = {url_parent}")
-                yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1})
+                yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1,'child_pointer':pointer})
         if idx > 2 :
             self.nb_errors += 1
             self.logger.error(f"{idx} parents for {prenom} {nom} ({source}) !")
@@ -151,6 +167,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"nb_errors          = {self.nb_errors}")
         spider.logger.info(f"nb_warnings        = {self.nb_warnings}")
         #self.gedcomw_parser.print_gedcom()
-        gedresult = open(self.gedcom_result_filename, "wb")
+        gedresult = open( self.result_dir + "/" + self.gedcom_result_filename, "wb")
         self.gedcomw_parser.nra_save_gedcom(gedresult)
         gedresult.close()
+        print(self.list_tuples_child_of)

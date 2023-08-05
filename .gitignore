@@ -9,7 +9,7 @@ download/
 *.zip
 *.tgz
 *.tar.gz
-result/
+#result/
 tmp/
 * - Copie*
 ~*

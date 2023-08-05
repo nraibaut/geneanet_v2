@@ -121,3 +121,16 @@ GEDCOM_TAG_SURNAME = "SURN"
 
 # An individual in the role as a mother and/or married woman.
 GEDCOM_TAG_WIFE = "WIFE"
+
+# NRa : tags header
+GEDCOM_TAG_HEAD = "HEAD" # NRa
+GEDCOM_TAG_NOTE = "NOTE" # NRa
+GEDCOM_TAG_FORM = "FORM" # NRa
+GEDCOM_TAG_VERSION = "VERS" # NRa
+GEDCOM_TAG_CORP = "CORP" # NRa
+GEDCOM_TAG_ADDRESS = "ADDR" # NRa
+GEDCOM_TAG_DEST = "DEST" # NRa
+GEDCOM_TAG_TIME = "TIME" # NRa
+GEDCOM_TAG_GEDC = "GEDC" # NRa
+GEDCOM_TAG_CHAR = "CHAR" # NRa
+GEDCOM_TAG_SUBMITTER = "SUBM" # NRa (1 tag obligatoire)
