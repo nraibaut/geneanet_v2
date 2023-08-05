@@ -91,6 +91,7 @@ class GeneanetSpider(scrapy.Spider):
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
+        person.add_source( self.gedcomw_parser.get_root_element(), source, '')
 
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
             line = info.get()

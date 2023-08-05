@@ -90,6 +90,7 @@ class Element(object):
         self.__tag = tag
         self.__value = value
         self.__crlf = crlf
+        self.__nbSources = 0 # NRa : utile pour root_element seulement a priori
 
         # structuring
         self.__children = []
@@ -318,3 +319,25 @@ class Element(object):
             return self.to_gedcom_string()
 
         return self.to_gedcom_string().encode('utf-8-sig')
+
+    def add_source(self, root_element, title, text): # NRa
+        """ Ajout d'une source
+        :type rootelement: gedcomw.element.Element
+        """
+        root_element.__nbSources += 1
+        source_pointer = "@S%05d@" % (root_element.__nbSources)
+
+        element_source_ref = Element(self.get_level()+1, '', gedcomw.tags.GEDCOM_TAG_SOURCE, source_pointer, '\n', multi_line=False)
+        self.add_child_element(element_source_ref)
+
+        element_source = Element(0, source_pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, '', '\n', multi_line=False)
+        element_title = Element(1, '', gedcomw.tags.GEDCOM_TAG_TITLE, title, '\n', multi_line=False)
+        element_source.add_child_element(element_title)
+        if text != "" :
+            element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, text, '\n', multi_line=False)
+            element_source.add_child_element(element_text)
+        root_element.add_child_element(element_source)
+
+
+
+

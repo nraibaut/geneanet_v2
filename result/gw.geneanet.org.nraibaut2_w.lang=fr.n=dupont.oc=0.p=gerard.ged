@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 05/08/2023 à 15:41:16 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 05/08/2023 à 16:46:09 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 05 Aug 2023
-2 TIME 15:41:16
+2 TIME 16:46:09
 1 FILE gw.geneanet.org.nraibaut2_w.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -22,23 +22,38 @@
 2 GIVN Gérard
 2 SURN DUPONT
 1 SEX M
+1 SOUR @S00001@
+0 @S00001@ SOUR
+1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 0 @I00002@ INDI
 1 NAME Pierre /DUPONT/
 2 GIVN Pierre
 2 SURN DUPONT
 1 SEX M
+1 SOUR @S00002@
+0 @S00002@ SOUR
+1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
 0 @I00003@ INDI
 1 NAME Marie Paule /DURAND/
 2 GIVN Marie Paule
 2 SURN DURAND
 1 SEX F
+1 SOUR @S00003@
+0 @S00003@ SOUR
+1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
 0 @I00004@ INDI
-1 NAME Jean /DATES/
-2 GIVN Jean
-2 SURN DATES
-1 SEX M
-0 @I00005@ INDI
 1 NAME Jeanne /INN/
 2 GIVN Jeanne
 2 SURN INN
 1 SEX F
+1 SOUR @S00004@
+0 @S00004@ SOUR
+1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
+0 @I00005@ INDI
+1 NAME Jean /DATES/
+2 GIVN Jean
+2 SURN DATES
+1 SEX M
+1 SOUR @S00005@
+0 @S00005@ SOUR
+1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
