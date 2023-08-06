@@ -25,11 +25,14 @@ class GeneanetSpider(scrapy.Spider):
     result_dir = "result"
     result_name = "tbd" # sera connu plus tard
     nb_persons = 0
+    nb_families = 0
     nb_titres_noblesse = 0
     max_generations = 0
     nb_warnings = 0
     nb_errors = 0
     list_tuples_child_of = []
+    parents_of = {} # dictionnaire des parents de chaque individu
+    sex_of = {} # dictionnaire des sexes des parents de chaque individu
     #logging_to_file(logfile)
     #logfile = self.result_dir + "/" + result_name + ".log"
     tmplogfile = result_dir + "/scrapy.log.tmp"
@@ -97,10 +100,20 @@ class GeneanetSpider(scrapy.Spider):
         sexe = response.xpath("//div[@id='person-title']//img//@title").get() # "H/F" en français, "M/F" en anglais
         if sexe == "H" :
             sexe = "M"
+        if sexe not in ("M", "F") :
+            self.nb_errors += 1
+            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({source}) !")
+        self.sex_of[pointer] = [sexe]
         self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source})")
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
             self.list_tuples_child_of.append((child_pointer,pointer,sexe))
+            #self.parents_of[child_pointer] = "aaa" # .append((pointer,sexe))
+            if child_pointer not in self.parents_of :
+                self.parents_of[child_pointer] = [pointer]
+            else:
+                self.parents_of[child_pointer].append(pointer)
+
 
         #self.log(f"Avant création IndividualElement")
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
@@ -108,7 +121,7 @@ class GeneanetSpider(scrapy.Spider):
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
-        person.add_source( self.gedcomw_parser.get_root_element(), source, '')
+        person.add_source( self.gedcomw_parser.get_root_element(), source, 'texte')
 
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
             line = info.get()
@@ -170,6 +183,29 @@ class GeneanetSpider(scrapy.Spider):
             self.nb_errors += 1
             self.logger.error(f"{idx} parents for {prenom} {nom} ({source}) !")
 
+    def manage_families(self):
+        #print(self.list_tuples_child_of)
+        #print(self.parents_of)
+        #for item in self.parents_of.keys() :
+        for item in self.parents_of.items() :
+            child = item[0]
+            husband = None
+            wife = None
+            for parent in item[1]:
+                #print(f"child {child} : parent {parent}")
+                sexe = self.sex_of[parent][0]
+                if sexe == "M" and husband == None :
+                    husband = parent
+                elif sexe == "F" and wife == None :
+                    wife = parent
+                else :
+                    self.nb_errors += 1
+                    self.logger.error(f"Problem with parents of '{child}' : actual husband='{husband}', actual wife='{wife}', new parent '{parent}' sex '{sexe}'.")
+            self.nb_families += 1
+            pointer_family = "@F%05d@" % (self.nb_families)
+            self.log(f"Famille '{pointer_family}' : enfant='{child}', père='{husband}', mère='{wife}'")
+            self.gedcomw_parser.add_family( pointer_family, child, husband, wife)
+
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
         # câblage de la méthode spider_closed
@@ -178,18 +214,22 @@ class GeneanetSpider(scrapy.Spider):
         return spider
 
     def spider_closed(self, spider):
+        self.manage_families()
+
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
         spider.logger.info(f"- nb_persons         = {self.nb_persons}")
+        spider.logger.info(f"- nb_families        = {self.nb_families}")
         spider.logger.info(f"- max_generations    = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
         spider.logger.info(f"- nb_warnings        = {self.nb_warnings}")
+
         gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
         spider.logger.info(f"Saving to '{gedresultfilename}'")
         gedresult = open( gedresultfilename, "wb")
         self.gedcomw_parser.nra_save_gedcom(gedresult)
         gedresult.close()
-        print(self.list_tuples_child_of)
+
 
 
 

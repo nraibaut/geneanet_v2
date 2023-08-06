@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 06/08/2023 à 12:39 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 06/08/2023 à 14:44 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -9,8 +9,8 @@
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 06 Aug 2023
-2 TIME 12:39:58
+1 DATE 06 AUG 2023
+2 TIME 14:44:49
 1 FILE gw.geneanet.org.nraibaut2_w.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -24,23 +24,26 @@
 1 SEX M
 1 SOUR @S00001@
 0 @S00001@ SOUR
-1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 TEXT texte
 0 @I00002@ INDI
-1 NAME Marie Paule /DURAND/
-2 GIVN Marie Paule
-2 SURN DURAND
-1 SEX F
-1 SOUR @S00002@
-0 @S00002@ SOUR
-1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
-0 @I00003@ INDI
 1 NAME Pierre /DUPONT/
 2 GIVN Pierre
 2 SURN DUPONT
 1 SEX M
+1 SOUR @S00002@
+0 @S00002@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
+1 TEXT texte
+0 @I00003@ INDI
+1 NAME Marie Paule /DURAND/
+2 GIVN Marie Paule
+2 SURN DURAND
+1 SEX F
 1 SOUR @S00003@
 0 @S00003@ SOUR
-1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
+1 TEXT texte
 0 @I00004@ INDI
 1 NAME Jeanne /INN/
 2 GIVN Jeanne
@@ -48,7 +51,8 @@
 1 SEX F
 1 SOUR @S00004@
 0 @S00004@ SOUR
-1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
+1 TEXT texte
 0 @I00005@ INDI
 1 NAME Jean /DATES/
 2 GIVN Jean
@@ -56,4 +60,13 @@
 1 SEX M
 1 SOUR @S00005@
 0 @S00005@ SOUR
-1 TITLE https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
+1 TEXT texte
+0 @F00001@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 CHIL @I00001@
+0 @F00002@ FAM
+1 HUSB @I00005@
+1 WIFE @I00004@
+1 CHIL @I00002@

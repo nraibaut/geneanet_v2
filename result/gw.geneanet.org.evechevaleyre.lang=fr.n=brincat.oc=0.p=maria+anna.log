@@ -1,0 +1,244 @@
+[root] INFO: Starting GeneanetSpider 0.1.0
+[scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
+[scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'geneanet',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'geneanet.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['geneanet.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+[asyncio] DEBUG: Using selector: SelectSelector
+[scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[scrapy.extensions.telnet] INFO: Telnet Password: d4ac6ef40dd34184
+[scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[geneanet] DEBUG: start_requests
+[geneanet] DEBUG: URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
+[geneanet] DEBUG: result_name = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna
+[geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 06/08/2023 à 14:50 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/robots.txt> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna> (referer: None)
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Maria Anna' 'BRINCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Giovanna rosa' 'BARTOLO' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
+[geneanet] DEBUG: 'Giovanna rosa' 'BARTOLO' parent de @I00001@
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : info = 'Décédée avant 11 janvier 1818'
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
+[geneanet] DEBUG: 'rafaele' 'BRINCAT' parent de @I00001@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00004@ : 'Maria' 'CAMILLERI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27)
+[geneanet] DEBUG: 'Maria' 'CAMILLERI' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00005@ : 'Giuseppe' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7)
+[geneanet] DEBUG: 'Giuseppe' 'BARTOLO' parent de @I00002@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00006@ : 'Rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
+[geneanet] DEBUG: 'Rafaele' 'BRINCAT' parent de @I00003@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00007@ : 'Margarita' 'ATTARD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
+[geneanet] DEBUG: 'Margarita' 'ATTARD' parent de @I00003@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
+[geneanet] DEBUG: Generation 4, sosa 11, id @I00008@ : 'Teodora' 'CIANTAR?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
+[geneanet] DEBUG: 'Teodora' 'CIANTAR?' parent de @I00007@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8
+[geneanet] DEBUG: Generation 4, sosa 10, id @I00009@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00007@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2
+[geneanet] DEBUG: Generation 4, sosa 9, id @I00010@ : 'Domenica' 'CHETCUTI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
+[geneanet] DEBUG: 'Domenica' 'CHETCUTI' parent de @I00006@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15
+[geneanet] DEBUG: Generation 4, sosa 8, id @I00011@ : 'Francesco' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
+[geneanet] DEBUG: 'Francesco' 'de BRINCAT' parent de @I00006@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
+[geneanet] DEBUG: Generation 5, sosa 20, id @I00012@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
+[geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : info = 'Né - Zejtun - Malte, , , ,'
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
+[geneanet] DEBUG: Generation 5, sosa 21, id @I00013@ : 'Clara' 'BARTOLO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Clara' 'BARTOLO?' parent de @I00009@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2
+[geneanet] DEBUG: Generation 5, sosa 23, id @I00014@ : 'Geronima' 'MIFSUD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8)
+[geneanet] DEBUG: 'Geronima' 'MIFSUD' parent de @I00008@
+[geneanet] DEBUG: Generation 5, sosa 18, id @I00015@ : 'Gregorio' 'CHETCUTI' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti)
+[geneanet] DEBUG: 'Gregorio' 'CHETCUTI' parent de @I00010@
+[geneanet] DEBUG: Generation 5, sosa 22, id @I00016@ : 'Francesco' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
+[geneanet] DEBUG: 'Francesco' 'CIANTAR' parent de @I00008@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697
+[geneanet] DEBUG: Generation 5, sosa 19, id @I00017@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
+[geneanet] DEBUG: 'Maddalena' 'MAGRO?' parent de @I00010@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2
+[geneanet] DEBUG: Generation 5, sosa 16, id @I00018@ : 'Giacchi' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
+[geneanet] DEBUG: 'Giacchi' 'de BRINCAT' parent de @I00011@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop
+[geneanet] DEBUG: Generation 5, sosa 17, id @I00019@ : 'Teresa' 'MUSCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
+[geneanet] DEBUG: 'Teresa' 'MUSCAT' parent de @I00011@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
+[geneanet] DEBUG: Generation 6, sosa 45, id @I00020@ : '?' '?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697)
+[geneanet] DEBUG: '?' '?' parent de @I00016@
+[geneanet] DEBUG: Generation 6, sosa 41, id @I00021@ : 'Lucrezia' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4)
+[geneanet] DEBUG: 'Lucrezia' 'NN' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 43, id @I00022@ : 'Lucrezia' 'SALIBA' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2)
+[geneanet] DEBUG: 'Lucrezia' 'SALIBA' parent de @I00013@
+[geneanet] DEBUG: Generation 6, sosa 44, id @I00023@ : 'Valerio Valente' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar)
+[geneanet] DEBUG: 'Valerio Valente' 'CIANTAR' parent de @I00016@
+[geneanet] DEBUG: Generation 6, sosa 40, id @I00024@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 39, id @I00025@ : 'Giacobina' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2)
+[geneanet] DEBUG: 'Giacobina' 'NN' parent de @I00017@
+[geneanet] DEBUG: Generation 6, sosa 38, id @I00026@ : 'Marino' 'MAGRO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro)
+[geneanet] DEBUG: 'Marino' 'MAGRO' parent de @I00017@
+[geneanet] DEBUG: Generation 6, sosa 42, id @I00027@ : 'Lorenzo' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Lorenzo' 'BARTOLO' parent de @I00013@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
+[geneanet] DEBUG: Generation 6, sosa 32, id @I00028@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
+[geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00018@
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : info = 'Né - Siggewi - Malte, , , ,'
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3
+[geneanet] DEBUG: Generation 6, sosa 35, id @I00029@ : 'Angelica' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23)
+[geneanet] DEBUG: 'Angelica' 'NN' parent de @I00019@
+[geneanet] DEBUG: Generation 6, sosa 33, id @I00030@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
+[geneanet] DEBUG: 'Clara' 'CHIRCOP' parent de @I00018@
+[geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2
+[geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18
+[geneanet] DEBUG: Generation 6, sosa 34, id @I00031@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7)
+[geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00019@
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : info = 'Né - Birkhirkara - Malte, , , ,'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
+[geneanet] DEBUG: Generation 7, sosa 64, id @I00032@ : 'Bartolomeo' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato)
+[geneanet] DEBUG: 'Bartolomeo' 'BRINCATO' parent de @I00028@
+[geneanet] DEBUG: Generation 7, sosa 65, id @I00033@ : 'Clemenza' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3)
+[geneanet] DEBUG: 'Clemenza' 'NN' parent de @I00028@
+[geneanet] DEBUG: Generation 7, sosa 67, id @I00034@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18)
+[geneanet] DEBUG: 'Marietta' 'NN' parent de @I00030@
+[geneanet] DEBUG: Generation 7, sosa 66, id @I00035@ : 'Nicola' 'CHIRCOP' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2)
+[geneanet] DEBUG: 'Nicola' 'CHIRCOP' parent de @I00030@
+[geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : info = 'Mro'
+[scrapy.core.engine] INFO: Closing spider (finished)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00003@', mère='@I00002@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00005@', mère='@I00004@'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00003@', père='@I00006@', mère='@I00007@'
+[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00007@', père='@I00009@', mère='@I00008@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00006@', père='@I00011@', mère='@I00010@'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', père='@I00012@', mère='@I00013@'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00008@', père='@I00016@', mère='@I00014@'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00010@', père='@I00015@', mère='@I00017@'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00011@', père='@I00018@', mère='@I00019@'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00016@', père='@I00023@', mère='@I00020@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00012@', père='@I00024@', mère='@I00021@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00013@', père='@I00027@', mère='@I00022@'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00017@', père='@I00026@', mère='@I00025@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00018@', père='@I00028@', mère='@I00030@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00019@', père='@I00031@', mère='@I00029@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00028@', père='@I00032@', mère='@I00033@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00030@', père='@I00035@', mère='@I00034@'
+[geneanet] INFO: NRa Spider 'geneanet' closed :
+[geneanet] INFO: - nb_persons         = 35
+[geneanet] INFO: - nb_families        = 17
+[geneanet] INFO: - max_generations    = 7
+[geneanet] INFO: - nb_titres_noblesse = 0
+[geneanet] INFO: - nb_errors          = 0
+[geneanet] INFO: - nb_warnings        = 0
+[geneanet] INFO: Saving to 'result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged'
+[gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged'
+[scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 19254,
+ 'downloader/request_count': 36,
+ 'downloader/request_method_count/GET': 36,
+ 'downloader/response_bytes': 583172,
+ 'downloader/response_count': 36,
+ 'downloader/response_status_count/200': 36,
+ 'elapsed_time_seconds': 4.021173,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 8, 6, 12, 50, 6, 336315),
+ 'httpcompression/response_bytes': 3064806,
+ 'httpcompression/response_count': 36,
+ 'log_count/DEBUG': 168,
+ 'log_count/INFO': 20,
+ 'request_depth_max': 6,
+ 'response_received_count': 36,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 35,
+ 'scheduler/dequeued/memory': 35,
+ 'scheduler/enqueued': 35,
+ 'scheduler/enqueued/memory': 35,
+ 'start_time': datetime.datetime(2023, 8, 6, 12, 50, 2, 315142)}
+[scrapy.core.engine] INFO: Spider closed (finished)

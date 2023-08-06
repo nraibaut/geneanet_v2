@@ -605,7 +605,7 @@ class Parser(object):
         # 1 CHAR UTF-8
         # 0 @B00001@ SUBM
         now = datetime.now()  # current date and time
-        date = now.strftime("%d %b %Y")
+        date = now.strftime("%d %b %Y").upper()
         time = now.strftime("%H:%M:%S")
 
         pointer = ''
@@ -650,4 +650,31 @@ class Parser(object):
         element_gedc.add_child_element(element_formgedc)
         element_head.add_child_element(element_char)
         self.get_root_element().add_child_element(element_submitter)
+
+    def add_family(self, pointer_family, pointer_child, pointer_husband, pointer_wife): # NRa
+        """ Ajout famille
+        """
+        # Family de la forme :
+        # 0 @F00001@ FAM
+        # 1 HUSB @I00002@
+        # 1 WIFE @I00003@
+        # 1 MARR
+        # 2 DATE 24 AUG 1877
+        # 2 PLAC Paris, France
+        # 2 NOTE @N00009@
+        # 2 SOUR @S00009@
+        # 1 CHIL @I00001@
+        # 1 CHAN
+        # 2 DATE 5 JUN 2023
+        # 3 TIME 23:17:36
+        element_fam = Element(0, pointer_family, gedcomw.tags.GEDCOM_TAG_FAMILY, "", '\n', multi_line=False)
+        if pointer_husband != None :
+            element_husb = Element(1, '', gedcomw.tags.GEDCOM_TAG_HUSBAND, pointer_husband, '\n', multi_line=False)
+            element_fam.add_child_element(element_husb)
+        if pointer_wife != None :
+            element_wife = Element(1, '', gedcomw.tags.GEDCOM_TAG_WIFE, pointer_wife, '\n', multi_line=False)
+            element_fam.add_child_element(element_wife)
+        element_child = Element(1, '', gedcomw.tags.GEDCOM_TAG_CHILD, pointer_child, '\n', multi_line=False)
+        element_fam.add_child_element(element_child)
+        self.get_root_element().add_child_element(element_fam)
 
