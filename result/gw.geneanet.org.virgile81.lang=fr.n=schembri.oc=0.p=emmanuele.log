@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: 9616163e25881a90
+[scrapy.extensions.telnet] INFO: Telnet Password: cde90faeec1a41c3
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -45,217 +45,217 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele
 [geneanet] DEBUG: result_name = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 06/08/2023 à 14:49 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette gÃ©nÃ©alogie a Ã©tÃ© crÃ©Ã©e par GeneanetSpider le 06/08/2023 Ã  23:59 Ã  partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/robots.txt> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele> (referer: None)
-[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Emmanuele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele)
-[geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : info = 'Décédé le 7 avril 1877 - Tunis (Tunisie) \u200e\u062a\u0648\u0646\u0633 église Ste-Croix'
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Emmanuele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele) pause=0ms
+[geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : info = 'DÃ©cÃ©dÃ© leÂ 7Â avrilÂ 1877 - Tunis (Tunisie) â€ŽØªÙˆÙ†Ø³ Ã©glise Ste-Croix'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri> (referer: https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele)
-[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Michele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Michele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri) pause=0ms
 [geneanet] DEBUG: 'Michele' 'SCHEMBRI' parent de @I00001@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi> (referer: https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele)
-[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Anna' 'AZZOPARDI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Anna' 'AZZOPARDI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi) pause=0ms
 [geneanet] DEBUG: 'Anna' 'AZZOPARDI' parent de @I00001@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00004@ : 'Gaetano' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri)
-[geneanet] DEBUG: 'Gaetano' 'SCHEMBRI' parent de @I00002@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00005@ : 'Maria' 'MARTINO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Maria' 'MARTINO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino) pause=8ms
 [geneanet] DEBUG: 'Maria' 'MARTINO' parent de @I00002@
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00006@ : 'Antonia' 'LIBRERI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00005@ : 'Antonia' 'LIBRERI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri) pause=8ms
 [geneanet] DEBUG: 'Antonia' 'LIBRERI' parent de @I00003@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00007@ : 'Aloisio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Aloisio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi) pause=8ms
 [geneanet] DEBUG: 'Aloisio' 'AZZOPARDI' parent de @I00003@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00007@ : 'Gaetano' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri) pause=8ms
+[geneanet] DEBUG: 'Gaetano' 'SCHEMBRI' parent de @I00002@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
+[geneanet] DEBUG: Generation 4, sosa 15, id @I00008@ : 'Andreana' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...) pause=16ms
+[geneanet] DEBUG: 'Andreana' '...' parent de @I00005@
+[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : info = 'Esclave libÃ©rÃ©e'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
-[geneanet] DEBUG: Generation 4, sosa 13, id @I00008@ : 'Anna' 'CARUANA' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana)
-[geneanet] DEBUG: 'Anna' 'CARUANA' parent de @I00007@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
+[geneanet] DEBUG: Generation 4, sosa 13, id @I00009@ : 'Anna' 'CARUANA' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana) pause=16ms
+[geneanet] DEBUG: 'Anna' 'CARUANA' parent de @I00006@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano
+[geneanet] DEBUG: Generation 4, sosa 12, id @I00010@ : 'Antonio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1) pause=16ms
+[geneanet] DEBUG: 'Antonio' 'AZZOPARDI' parent de @I00006@
+[geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : info = 'NÃ© - Porto Salvo (Malte)'
+[geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : info = 'DÃ©cÃ©dÃ© avantÂ 30Â novembreÂ 1784'
+[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
-[geneanet] DEBUG: Generation 4, sosa 14, id @I00009@ : 'Carlo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
-[geneanet] DEBUG: 'Carlo' 'LIBRERI' parent de @I00006@
-[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : info = 'Décédé avant 30 novembre 1784'
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...
+[geneanet] DEBUG: Generation 4, sosa 14, id @I00011@ : 'Carlo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri) pause=16ms
+[geneanet] DEBUG: 'Carlo' 'LIBRERI' parent de @I00005@
+[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : info = 'DÃ©cÃ©dÃ© avantÂ 30Â novembreÂ 1784'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
-[geneanet] DEBUG: Generation 4, sosa 15, id @I00010@ : 'Andreana' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...)
-[geneanet] DEBUG: 'Andreana' '...' parent de @I00006@
-[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : info = 'Esclave libérée'
-[geneanet] DEBUG: Generation 4, sosa 12, id @I00011@ : 'Antonio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
-[geneanet] DEBUG: 'Antonio' 'AZZOPARDI' parent de @I00007@
-[geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : info = 'Né - Porto Salvo (Malte)'
-[geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : info = 'Décédé avant 30 novembre 1784'
-[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana)
-[geneanet] DEBUG: Generation 5, sosa 26, id @I00012@ : 'Gio Antonio' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
-[geneanet] DEBUG: 'Gio Antonio' 'CARUANA' parent de @I00008@
-[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : info = 'Né - Is-Si\u0121\u0121iewi (Malte)'
+[geneanet] DEBUG: Generation 5, sosa 26, id @I00012@ : 'Gio Antonio' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana) pause=32ms
+[geneanet] DEBUG: 'Gio Antonio' 'CARUANA' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : info = 'NÃ© - Is-SiÄ¡Ä¡iewi (Malte)'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
-[geneanet] DEBUG: Generation 5, sosa 29, id @I00013@ : 'Diana' 'LOMBARDO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
-[geneanet] DEBUG: 'Diana' 'LOMBARDO' parent de @I00009@
-[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
-[geneanet] DEBUG: Generation 5, sosa 27, id @I00014@ : 'Orsola' 'NAPOLITANO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
-[geneanet] DEBUG: 'Orsola' 'NAPOLITANO' parent de @I00008@
-[geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : info = 'Née - Is-Si\u0121\u0121iewi (Malte)'
+[geneanet] DEBUG: Generation 5, sosa 27, id @I00013@ : 'Orsola' 'NAPOLITANO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano) pause=32ms
+[geneanet] DEBUG: 'Orsola' 'NAPOLITANO' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : info = 'NÃ©e - Is-SiÄ¡Ä¡iewi (Malte)'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon
-[geneanet] DEBUG: Generation 5, sosa 24, id @I00015@ : 'Michel Angelo' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi)
-[geneanet] DEBUG: 'Michel Angelo' 'AZZOPARDI' parent de @I00011@
+[geneanet] DEBUG: Generation 5, sosa 24, id @I00014@ : 'Michel Angelo' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi) pause=32ms
+[geneanet] DEBUG: 'Michel Angelo' 'AZZOPARDI' parent de @I00010@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
-[geneanet] DEBUG: Generation 5, sosa 28, id @I00016@ : 'Francesco' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri)
-[geneanet] DEBUG: 'Francesco' 'LIBRERI' parent de @I00009@
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Né - Porto Salvo (Malte)'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Décédé avant 12 septembre 1756'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
+[geneanet] DEBUG: Generation 5, sosa 28, id @I00015@ : 'Francesco' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri) pause=32ms
+[geneanet] DEBUG: 'Francesco' 'LIBRERI' parent de @I00011@
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'NÃ© - Porto Salvo (Malte)'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'DÃ©cÃ©dÃ© avantÂ 12Â septembreÂ 1756'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
-[geneanet] DEBUG: Generation 5, sosa 25, id @I00017@ : 'Teresa' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...)
-[geneanet] DEBUG: 'Teresa' '...' parent de @I00011@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
-[geneanet] DEBUG: Generation 6, sosa 58, id @I00018@ : 'Alessando' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
-[geneanet] DEBUG: 'Alessando' 'LOMBARDO' parent de @I00013@
-[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : info = 'Né - Porto Salvo (Malte)'
-[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
-[geneanet] DEBUG: Generation 6, sosa 53, id @I00019@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00012@
-[geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : info = 'Décédée avant 17 février 1715'
-[geneanet] DEBUG: Generation 6, sosa 59, id @I00020@ : 'Geronima' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
-[geneanet] DEBUG: 'Geronima' 'COSENTI' parent de @I00013@
-[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
+[geneanet] DEBUG: Generation 5, sosa 25, id @I00016@ : 'Teresa' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...) pause=32ms
+[geneanet] DEBUG: 'Teresa' '...' parent de @I00010@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
-[geneanet] DEBUG: Generation 6, sosa 54, id @I00021@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
-[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 52, id @I00017@ : 'Giuseppe' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana) pause=64ms
+[geneanet] DEBUG: 'Giuseppe' 'CARUANA' parent de @I00012@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
+[geneanet] DEBUG: Generation 6, sosa 54, id @I00018@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano) pause=64ms
+[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00013@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri)
-[geneanet] DEBUG: Generation 6, sosa 52, id @I00022@ : 'Giuseppe' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana)
-[geneanet] DEBUG: 'Giuseppe' 'CARUANA' parent de @I00012@
-[geneanet] DEBUG: Generation 6, sosa 57, id @I00023@ : 'Angelica' 'MUSCAT' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
-[geneanet] DEBUG: 'Angelica' 'MUSCAT' parent de @I00016@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
+[geneanet] DEBUG: Generation 6, sosa 57, id @I00019@ : 'Angelica' 'MUSCAT' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat) pause=64ms
+[geneanet] DEBUG: 'Angelica' 'MUSCAT' parent de @I00015@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat
+[geneanet] DEBUG: Generation 5, sosa 29, id @I00020@ : 'Diana' 'LOMBARDO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo) pause=32ms
+[geneanet] DEBUG: 'Diana' 'LOMBARDO' parent de @I00011@
+[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
-[geneanet] DEBUG: Generation 7, sosa 117, id @I00024@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00018@
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti
+[geneanet] DEBUG: Generation 6, sosa 53, id @I00021@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7) pause=64ms
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : info = 'DÃ©cÃ©dÃ©e avantÂ 17Â fÃ©vrierÂ 1715'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri)
-[geneanet] DEBUG: Generation 6, sosa 56, id @I00025@ : 'Cosimo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri)
-[geneanet] DEBUG: 'Cosimo' 'LIBRERI' parent de @I00016@
+[geneanet] DEBUG: Generation 6, sosa 56, id @I00022@ : 'Cosimo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri) pause=64ms
+[geneanet] DEBUG: 'Cosimo' 'LIBRERI' parent de @I00015@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
-[geneanet] DEBUG: Generation 6, sosa 55, id @I00026@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
-[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 55, id @I00023@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon) pause=64ms
+[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00013@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4
-[geneanet] DEBUG: Generation 7, sosa 116, id @I00027@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo)
-[geneanet] DEBUG: 'Fabrizio' 'LOMBARDO' parent de @I00018@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
-[geneanet] DEBUG: Generation 7, sosa 108, id @I00028@ : 'Pietro' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
-[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00021@
-[geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Né - La Valette (Malte)'
-[geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Décédé avant 25 avril 1700'
+[geneanet] DEBUG: Generation 7, sosa 108, id @I00024@ : 'Pietro' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano) pause=128ms
+[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00018@
+[geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'NÃ© - La Valette (Malte)'
+[geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'DÃ©cÃ©dÃ© avantÂ 25Â avrilÂ 1700'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
-[geneanet] DEBUG: Generation 7, sosa 119, id @I00029@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti)
-[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00020@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
-[geneanet] DEBUG: Generation 7, sosa 118, id @I00030@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832)
-[geneanet] DEBUG: '?' '?' parent de @I00020@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
-[geneanet] DEBUG: Generation 7, sosa 114, id @I00031@ : 'Augustino' 'MUSCAT' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat)
-[geneanet] DEBUG: 'Augustino' 'MUSCAT' parent de @I00023@
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : info = 'Décédé avant 22 novembre 1676'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
-[geneanet] DEBUG: Generation 7, sosa 111, id @I00032@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4)
-[geneanet] DEBUG: 'Grazia' '...' parent de @I00026@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
-[geneanet] DEBUG: Generation 7, sosa 109, id @I00033@ : 'Caterina' 'BUHAGIAR' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
-[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00021@
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
+[geneanet] DEBUG: Generation 7, sosa 115, id @I00025@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5) pause=128ms
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00019@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
+[geneanet] DEBUG: Generation 6, sosa 58, id @I00026@ : 'Alessando' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo) pause=64ms
+[geneanet] DEBUG: 'Alessando' 'LOMBARDO' parent de @I00020@
+[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : info = 'NÃ© - Porto Salvo (Malte)'
+[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6
+[geneanet] DEBUG: Generation 7, sosa 109, id @I00027@ : 'Caterina' 'BUHAGIAR' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar) pause=128ms
+[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00018@
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo
-[geneanet] DEBUG: Generation 7, sosa 110, id @I00034@ : 'Francesco' 'CASCON' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon)
-[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00026@
-[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : info = 'Décédé avant 25 avril 1700'
-[geneanet] DEBUG: Generation 7, sosa 115, id @I00035@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00023@
+[geneanet] DEBUG: Generation 6, sosa 59, id @I00028@ : 'Geronima' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti) pause=64ms
+[geneanet] DEBUG: 'Geronima' 'COSENTI' parent de @I00020@
+[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti
+[geneanet] DEBUG: Generation 7, sosa 114, id @I00029@ : 'Augustino' 'MUSCAT' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat) pause=128ms
+[geneanet] DEBUG: 'Augustino' 'MUSCAT' parent de @I00019@
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : info = 'DÃ©cÃ©dÃ© avantÂ 22Â novembreÂ 1676'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
+[geneanet] DEBUG: Generation 7, sosa 110, id @I00030@ : 'Francesco' 'CASCON' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon) pause=128ms
+[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00023@
+[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : info = 'DÃ©cÃ©dÃ© avantÂ 25Â avrilÂ 1700'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
-[geneanet] DEBUG: Generation 8, sosa 216, id @I00036@ : 'Alfonso' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano)
-[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00028@
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : info = 'Décédé avant 18 novembre 1640'
+[geneanet] DEBUG: Generation 7, sosa 111, id @I00031@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4) pause=128ms
+[geneanet] DEBUG: 'Grazia' '...' parent de @I00023@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
-[geneanet] DEBUG: Generation 8, sosa 217, id @I00037@ : 'Isabella' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1)
-[geneanet] DEBUG: 'Isabella' '...' parent de @I00028@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
-[geneanet] DEBUG: Generation 8, sosa 219, id @I00038@ : 'Laurica' 'MAMO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
-[geneanet] DEBUG: 'Laurica' 'MAMO' parent de @I00033@
-[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo
-[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5
+[geneanet] DEBUG: Generation 8, sosa 216, id @I00032@ : 'Alfonso' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano) pause=256ms
+[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00024@
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : info = 'DÃ©cÃ©dÃ© avantÂ 18Â novembreÂ 1640'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
+[geneanet] DEBUG: Generation 7, sosa 117, id @I00033@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6) pause=128ms
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00026@
+[geneanet] DEBUG: Generation 8, sosa 217, id @I00034@ : 'Isabella' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1) pause=256ms
+[geneanet] DEBUG: 'Isabella' '...' parent de @I00024@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
-[geneanet] DEBUG: Generation 8, sosa 218, id @I00039@ : 'Salvatore' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar)
-[geneanet] DEBUG: 'Salvatore' 'BUHAGIAR' parent de @I00033@
-[geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : info = 'Décédé avant 18 novembre 1640'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
+[geneanet] DEBUG: Generation 7, sosa 116, id @I00035@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo) pause=128ms
+[geneanet] DEBUG: 'Fabrizio' 'LOMBARDO' parent de @I00026@
+[geneanet] DEBUG: Generation 7, sosa 119, id @I00036@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti) pause=128ms
+[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00028@
+[geneanet] DEBUG: Generation 8, sosa 218, id @I00037@ : 'Salvatore' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar) pause=256ms
+[geneanet] DEBUG: 'Salvatore' 'BUHAGIAR' parent de @I00027@
+[geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : info = 'DÃ©cÃ©dÃ© avantÂ 18Â novembreÂ 1640'
 [geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar
+[geneanet] DEBUG: Generation 8, sosa 219, id @I00038@ : 'Laurica' 'MAMO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo) pause=256ms
+[geneanet] DEBUG: 'Laurica' 'MAMO' parent de @I00027@
+[geneanet] DEBUG: URL parent (forme 1) 1 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo
+[geneanet] DEBUG: Generation 7, sosa 118, id @I00039@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832) pause=128ms
+[geneanet] DEBUG: '?' '?' parent de @I00028@
 [geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
-[geneanet] DEBUG: Generation 9, sosa 439, id @I00040@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5)
-[geneanet] DEBUG: 'Grazia' '...' parent de @I00038@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
-[geneanet] DEBUG: Generation 9, sosa 438, id @I00041@ : 'Matteo' 'MAMO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo)
-[geneanet] DEBUG: 'Matteo' 'MAMO' parent de @I00038@
+[geneanet] DEBUG: URL parent (forme 1) 2 = https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar)
-[geneanet] DEBUG: Generation 9, sosa 436, id @I00042@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar)
-[geneanet] DEBUG: 'Giuseppe' 'BUHAGIAR' parent de @I00039@
+[geneanet] DEBUG: Generation 9, sosa 436, id @I00040@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar) pause=512ms
+[geneanet] DEBUG: 'Giuseppe' 'BUHAGIAR' parent de @I00037@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848> (referer: https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar)
-[geneanet] DEBUG: Generation 9, sosa 437, id @I00043@ : '?' '?' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848)
-[geneanet] DEBUG: '?' '?' parent de @I00039@
+[geneanet] DEBUG: Generation 9, sosa 439, id @I00041@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5) pause=512ms
+[geneanet] DEBUG: 'Grazia' '...' parent de @I00038@
+[geneanet] DEBUG: Generation 9, sosa 438, id @I00042@ : 'Matteo' 'MAMO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo) pause=512ms
+[geneanet] DEBUG: 'Matteo' 'MAMO' parent de @I00038@
+[geneanet] DEBUG: Generation 9, sosa 437, id @I00043@ : '?' '?' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848) pause=512ms
+[geneanet] DEBUG: '?' '?' parent de @I00037@
 [scrapy.core.engine] INFO: Closing spider (finished)
-[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00002@', mère='@I00003@'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00004@', mère='@I00005@'
-[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00003@', père='@I00007@', mère='@I00006@'
-[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00007@', père='@I00011@', mère='@I00008@'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00006@', père='@I00009@', mère='@I00010@'
-[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00008@', père='@I00012@', mère='@I00014@'
-[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00009@', père='@I00016@', mère='@I00013@'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', père='@I00015@', mère='@I00017@'
-[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00013@', père='@I00018@', mère='@I00020@'
-[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00012@', père='@I00022@', mère='@I00019@'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', père='@I00021@', mère='@I00026@'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00016@', père='@I00025@', mère='@I00023@'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00018@', père='@I00027@', mère='@I00024@'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00021@', père='@I00028@', mère='@I00033@'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00020@', père='@I00030@', mère='@I00029@'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', père='@I00031@', mère='@I00035@'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00026@', père='@I00034@', mère='@I00032@'
-[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00028@', père='@I00036@', mère='@I00037@'
-[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00033@', père='@I00039@', mère='@I00038@'
-[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00038@', père='@I00041@', mère='@I00040@'
-[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00039@', père='@I00042@', mère='@I00043@'
+[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', pÃ¨re='@I00002@', mÃ¨re='@I00003@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', pÃ¨re='@I00007@', mÃ¨re='@I00004@'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00003@', pÃ¨re='@I00006@', mÃ¨re='@I00005@'
+[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00005@', pÃ¨re='@I00011@', mÃ¨re='@I00008@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00006@', pÃ¨re='@I00010@', mÃ¨re='@I00009@'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', pÃ¨re='@I00012@', mÃ¨re='@I00013@'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00010@', pÃ¨re='@I00014@', mÃ¨re='@I00016@'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', pÃ¨re='@I00015@', mÃ¨re='@I00020@'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00012@', pÃ¨re='@I00017@', mÃ¨re='@I00021@'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00013@', pÃ¨re='@I00018@', mÃ¨re='@I00023@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00015@', pÃ¨re='@I00022@', mÃ¨re='@I00019@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00018@', pÃ¨re='@I00024@', mÃ¨re='@I00027@'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00019@', pÃ¨re='@I00029@', mÃ¨re='@I00025@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', pÃ¨re='@I00026@', mÃ¨re='@I00028@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00023@', pÃ¨re='@I00030@', mÃ¨re='@I00031@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00024@', pÃ¨re='@I00032@', mÃ¨re='@I00034@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00026@', pÃ¨re='@I00035@', mÃ¨re='@I00033@'
+[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00028@', pÃ¨re='@I00039@', mÃ¨re='@I00036@'
+[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00027@', pÃ¨re='@I00037@', mÃ¨re='@I00038@'
+[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00037@', pÃ¨re='@I00040@', mÃ¨re='@I00043@'
+[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00038@', pÃ¨re='@I00042@', mÃ¨re='@I00041@'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 43
 [geneanet] INFO: - nb_families        = 21
@@ -269,13 +269,13 @@
 {'downloader/request_bytes': 24462,
  'downloader/request_count': 44,
  'downloader/request_method_count/GET': 44,
- 'downloader/response_bytes': 810211,
+ 'downloader/response_bytes': 810611,
  'downloader/response_count': 44,
  'downloader/response_status_count/200': 44,
- 'elapsed_time_seconds': 9.868166,
+ 'elapsed_time_seconds': 11.873084,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 6, 12, 49, 15, 832926),
- 'httpcompression/response_bytes': 4104834,
+ 'finish_time': datetime.datetime(2023, 8, 6, 21, 59, 22, 2811),
+ 'httpcompression/response_bytes': 4105800,
  'httpcompression/response_count': 44,
  'log_count/DEBUG': 216,
  'log_count/INFO': 20,
@@ -288,5 +288,5 @@
  'scheduler/dequeued/memory': 43,
  'scheduler/enqueued': 43,
  'scheduler/enqueued/memory': 43,
- 'start_time': datetime.datetime(2023, 8, 6, 12, 49, 5, 964760)}
+ 'start_time': datetime.datetime(2023, 8, 6, 21, 59, 10, 129727)}
 [scrapy.core.engine] INFO: Spider closed (finished)

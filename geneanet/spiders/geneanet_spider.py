@@ -51,6 +51,7 @@ class GeneanetSpider(scrapy.Spider):
         filename=tmplogfile,
         # format='%(asctime)s [%(name)s] %(levelname)s: %(message)s',
         format='[%(name)s] %(levelname)s: %(message)s',
+        encoding='utf-8', # sinon les grep (de git bash) dans les logs ne fonctionnent pas sur les lignes accentuées !
         level=logging.DEBUG
     )
     logging.info(f"Starting {progname} {version}")
@@ -130,32 +131,32 @@ class GeneanetSpider(scrapy.Spider):
         person.add_source( self.gedcomw_parser.get_root_element(), source, 'texte')
 
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
-            line = info.get()
+            line = info.get().replace("\n", " ")
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
 
         for titre in response.xpath("//div[@id='person-title']/following-sibling::em[1]/a") :
             self.nb_titres_noblesse += 1
-            titre_noblesse = titre.xpath("text()").get()
+            titre_noblesse = titre.xpath("text()").get().strip()
             # @todo extraire commentaire
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}'")
 
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
             #tmp = event.xpath("td[2]").get()
             #tmp = html2text.html2text(tmp)
-            event_nom = event.xpath("td[2]/span[@class='nnom']/text()").get()
+            event_nom = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
             lines = event.xpath("td[2]/div[@class='nnotes']").get()
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
             if lines is None:
                 event_notes = None # @todo améliorer gestion des champs absents/vides
             else:
-                event_notes = html2text.html2text(lines)
+                event_notes = html2text.html2text(lines).strip()
             #event_notes = html2text.html2text(event_notes)
             lines = event.xpath("td[2]/span[@class='ssource']").get()
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
             if lines is None:
                 event_sources = None # @todo améliorer gestion des champs absents/vides
             else :
-                event_sources = html2text.html2text(lines)
+                event_sources = html2text.html2text(lines).strip()
             #event_sources = html2text.html2text(tmp)
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_nom = '{event_nom}'")
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
@@ -164,7 +165,7 @@ class GeneanetSpider(scrapy.Spider):
         for source in response.xpath("//h2[span='Sources']/following-sibling::em/ul[1]/li"):
             #line = source.xpath("text()").get()
             line1 = source.extract()
-            line = html2text.html2text(line1)
+            line = html2text.html2text(line1).strip()
             #line = source.xpath("text()").extract()
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
 
