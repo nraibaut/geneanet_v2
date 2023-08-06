@@ -10,9 +10,10 @@ from gedcomw.parser import Parser
 import gedcomw.element
 from gedcomw.element.individual import IndividualElement
 from datetime import datetime
-import sys
+#import sys
 import atexit
 import shutil # pour copyfile final
+import time # pour pause
 
 #tmplogfile = "tmp.log"
 
@@ -104,7 +105,13 @@ class GeneanetSpider(scrapy.Spider):
             self.nb_errors += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({source}) !")
         self.sex_of[pointer] = [sexe]
-        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source})")
+        # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
+        pause = 0
+        if generation >= 3 :
+            pause = 2 ** generation
+            #pause = 1000
+            time.sleep(pause/1000)
+        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source}) pause={pause}ms")
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
             self.list_tuples_child_of.append((child_pointer,pointer,sexe))
@@ -113,7 +120,6 @@ class GeneanetSpider(scrapy.Spider):
                 self.parents_of[child_pointer] = [pointer]
             else:
                 self.parents_of[child_pointer].append(pointer)
-
 
         #self.log(f"Avant création IndividualElement")
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
