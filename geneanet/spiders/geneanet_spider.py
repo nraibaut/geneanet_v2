@@ -14,6 +14,7 @@ from datetime import datetime
 import atexit
 import shutil # pour copyfile final
 import time # pour pause
+import re
 
 #tmplogfile = "tmp.log"
 
@@ -154,23 +155,33 @@ class GeneanetSpider(scrapy.Spider):
             #tmp = event.xpath("td[2]").get()
             #tmp = html2text.html2text(tmp)
             event_nom = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_nom = '{event_nom}'")
+            # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation Contrat de mariage
+
             lines = event.xpath("td[2]/div[@class='nnotes']").get()
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
-            if lines is None:
-                event_notes = None # @todo améliorer gestion des champs absents/vides
-            else:
+            event_notes = None
+            if not lines is None:
+                #event_notes = html2text.html2text(event_notes)
                 event_notes = html2text.html2text(lines).strip()
-            #event_notes = html2text.html2text(event_notes)
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
+
             lines = event.xpath("td[2]/span[@class='ssource']").get()
+            event_sources = None
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
-            if lines is None:
-                event_sources = None # @todo améliorer gestion des champs absents/vides
-            else :
+            if not lines is None:
+                #event_sources = html2text.html2text(tmp)
                 event_sources = html2text.html2text(lines).strip()
-            #event_sources = html2text.html2text(tmp)
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_nom = '{event_nom}'")
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
+
+            lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
+            event_ddate = None
+            if not lines is None:
+                event_date = html2text.html2text(lines).strip()
+                event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
+
+            # @todo y a-t-il d'autres classes ? parsing à robustifier
 
         for source in response.xpath("//h2[span='Sources']/following-sibling::em/ul[1]/li"):
             #line = source.xpath("text()").get()

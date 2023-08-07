@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: d915a8c2ead029bb
+[scrapy.extensions.telnet] INFO: Telnet Password: 56ea12b3b2296a30
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -45,7 +45,7 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard
 [geneanet] DEBUG: result_name = gw.geneanet.org.nraibaut2_w.lang=fr.n=dupont.oc=0.p=gerard
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.nraibaut2_w.lang=fr.n=dupont.oc=0.p=gerard.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 07/08/2023 à 08:02 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 07/08/2023 à 19:15 à partir de https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard' ...
 [geneanet] DEBUG: csv result = result/gw.geneanet.org.nraibaut2_w.lang=fr.n=dupont.oc=0.p=gerard.csv
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/robots.txt> (referer: None)
 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard> from <GET https://gw.geneanet.org/nraibaut2_w?lang=fr&n=dupont&oc=0&p=gerard>
@@ -63,12 +63,14 @@ Note2 sur la naissance'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = 'Sources: <https://www.source_naissance.fr/>  
 Texte1 source naissance  
 Texte2 source naissance'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '22 mars 1882'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_nom = 'Baptême  - Paris, France'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur le baptême  
 Note2 sur le baptême'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = 'Sources: <https://www.source_bapteme.fr/>  
 Texte1 source baptême  
 Texte2 source baptême'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '18 mai 1882'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_nom = 'Profession'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Profession de Gérard  
 Note1 sur la profession  
@@ -89,17 +91,20 @@ Note2 sur diplôme'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = 'Sources: <https://www.source_diplome.fr/>  
 Texte1 source diplôme  
 Texte2 source diplôme'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '1er juillet 1891'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_nom = 'Décès  - Nice, FRANCE'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur le décès  
 Note2 sur le décès'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = 'Sources: <https://www.source_deces.fr/> \- Texte1 source décès  
 Texte2 source décès'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '10 avril 1892'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_nom = 'Inhumation  - Nice, FRANCE'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur l'inhumation  
 Note2 sur l'inhumation'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = 'Sources: <https://www.source_inhumation.fr/>  
 Texte1 source inhumation  
 Texte2 source inhumation'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '11 avril 1892'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : source = '* Personne: <https://www.source_general.fr/>  
 Texte1 source général  
 Texte2 source général'
@@ -137,16 +142,16 @@ Texte2 source mariage'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : info = 'Décédé vers 1er juin 1885, à l'âge d'environ 82 ans'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_nom = 'Naissance'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date environ'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_sources = 'None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'vers juillet 1802'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_nom = 'Baptême'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date estimée'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_sources = 'None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'peut-être 23 février 1803'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_nom = 'Retraite'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date interprêtée'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_sources = 'None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'vers 1872'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_nom = 'Décès'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date calculée'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_sources = 'None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'vers 1er juin 1885'
 [scrapy.core.engine] INFO: Closing spider (finished)
 [geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00002@', mère='@I00003@'
 [geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00005@', mère='@I00004@'
@@ -163,16 +168,16 @@ Texte2 source mariage'
 {'downloader/request_bytes': 2758,
  'downloader/request_count': 7,
  'downloader/request_method_count/GET': 7,
- 'downloader/response_bytes': 82603,
+ 'downloader/response_bytes': 82856,
  'downloader/response_count': 7,
  'downloader/response_status_count/200': 6,
  'downloader/response_status_count/302': 1,
- 'elapsed_time_seconds': 1.352418,
+ 'elapsed_time_seconds': 1.442856,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 7, 6, 2, 18, 458206),
+ 'finish_time': datetime.datetime(2023, 8, 7, 17, 15, 14, 156544),
  'httpcompression/response_bytes': 412379,
  'httpcompression/response_count': 6,
- 'log_count/DEBUG': 79,
+ 'log_count/DEBUG': 84,
  'log_count/INFO': 20,
  'request_depth_max': 2,
  'response_received_count': 6,
@@ -183,5 +188,5 @@ Texte2 source mariage'
  'scheduler/dequeued/memory': 6,
  'scheduler/enqueued': 6,
  'scheduler/enqueued/memory': 6,
- 'start_time': datetime.datetime(2023, 8, 7, 6, 2, 17, 105788)}
+ 'start_time': datetime.datetime(2023, 8, 7, 17, 15, 12, 713688)}
 [scrapy.core.engine] INFO: Spider closed (finished)
