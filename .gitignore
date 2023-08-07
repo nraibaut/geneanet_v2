@@ -10,6 +10,7 @@ download/
 *.tgz
 *.tar.gz
 #result/
+result/pages/
 tmp/
 *.tmp*
 * - Copie*

@@ -60,12 +60,17 @@ class GeneanetSpider(scrapy.Spider):
     # Initialize the parser
     gedcomw_parser = None
 
+    def url_to_filename(self, url):
+        result = url
+        result = result.replace("https://", "")
+        result = result.replace("/", ".")
+        result = result.replace("&", ".")
+        result = result.replace("?", ".")
+
+        return result
+
     def start_requests(self):
-        result_name = self.url
-        result_name = result_name.replace("https://", "")
-        result_name = result_name.replace("/", ".")
-        result_name = result_name.replace("&", ".")
-        result_name = result_name.replace("?", ".")
+        result_name = self.url_to_filename(self.url)
         GeneanetSpider.result_name = result_name
 
         self.log("start_requests")
@@ -93,6 +98,14 @@ class GeneanetSpider(scrapy.Spider):
 
     def parse(self, response):
         source = response.request.url
+
+        # Sauvegarde de la page
+        page_filename = self.result_dir + "/pages/" + self.url_to_filename(source) + ".html"
+        self.log(f"Saving page {source} to '{page_filename}'")
+        with open( page_filename, "wb") as f:
+            f.write(response.body)
+            f.close()
+
         generation = response.meta['generation'] + 1
         if generation > self.max_generations :
             self.max_generations = generation
