@@ -68,17 +68,25 @@ class GeneanetSpider(scrapy.Spider):
         GeneanetSpider.result_name = result_name
 
         self.log("start_requests")
+        self.log(f"URL = {self.url}")
+        self.log(f"result_name = {result_name}")
+
+        # Initialisation parser
         self.gedcomw_parser = Parser()
 
-        self.log(f"URL = {self.url}")
-
-        self.log(f"result_name = {result_name}")
         GeneanetSpider.gedcom_result_filename = result_name + ".ged"
         self.log(f"gedcom_result_filename = {GeneanetSpider.gedcom_result_filename}")
         now = datetime.now()  # current date and time
         date = now.strftime("%d/%m/%Y à %H:%M")
-        self.gedcomw_parser.nra_set_header(f"Cette généalogie a été créée par {self.progname} le {date} à partir de {self.url}", self.progname, self.version, self.progname,
+        header_text = f"Cette généalogie a été créée par {self.progname} le {date} à partir de {self.url}"
+        self.gedcomw_parser.nra_set_header(header_text, self.progname, self.version, self.progname,
                    self.team, self.address, GeneanetSpider.gedcom_result_filename)
+
+        # Sortie CSV :
+        csvfilename = self.result_dir + "/" + result_name + ".csv"
+        self.log(f"csv result = {csvfilename}")
+        self.csv = open( csvfilename, "w")
+        self.csv.write("# " + header_text + "\n")
 
         yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':''} )
 
@@ -113,6 +121,8 @@ class GeneanetSpider(scrapy.Spider):
             #pause = 1000
             time.sleep(pause/1000)
         self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source}) pause={pause}ms")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{source};")
+
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
             self.list_tuples_child_of.append((child_pointer,pointer,sexe))
@@ -189,6 +199,7 @@ class GeneanetSpider(scrapy.Spider):
         if idx > 2 :
             self.nb_errors += 1
             self.logger.error(f"{idx} parents for {prenom} {nom} ({source}) !")
+        self.csv.write("\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
@@ -231,13 +242,15 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
         spider.logger.info(f"- nb_warnings        = {self.nb_warnings}")
 
+        self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
+        self.csv.write(f"# {self.nb_errors} errors, {self.nb_warnings} warnings\n")
+        self.csv.close()
+
         gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
         spider.logger.info(f"Saving to '{gedresultfilename}'")
         gedresult = open( gedresultfilename, "wb")
         self.gedcomw_parser.nra_save_gedcom(gedresult)
         gedresult.close()
-
-
 
 
 def close_logger(logger):
