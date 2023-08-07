@@ -15,6 +15,7 @@ import atexit
 import shutil # pour copyfile final
 import time # pour pause
 import re
+import tempfile
 
 #tmplogfile = "tmp.log"
 
@@ -35,18 +36,14 @@ class GeneanetSpider(scrapy.Spider):
     list_tuples_child_of = []
     parents_of = {} # dictionnaire des parents de chaque individu
     sex_of = {} # dictionnaire des sexes des parents de chaque individu
-    #logging_to_file(logfile)
-    #logfile = self.result_dir + "/" + result_name + ".log"
-    tmplogfile = result_dir + "/scrapy.log.tmp"
+
+
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
     # mais on n'a pas encore l'url, à partir de laquelle on veut construire le nom du log.
     # Contournement : on écrit dans un log tmp et on renomme à la fin...
-    try:
-        os.remove(tmplogfile)
-    except OSError:
-        pass
+    tmplogfile = tempfile.NamedTemporaryFile(suffix=".log.tmp", prefix="scrapy.", dir="tmp").name
     configure_logging(install_root_handler=False)
     logging.basicConfig(
         filename=tmplogfile,
@@ -92,16 +89,16 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv result = {csvfilename}")
         self.csv = open( csvfilename, "w")
-        self.csv.write("# " + header_text + "\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;{date}\n")
 
         yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':''} )
 
     def parse(self, response):
-        source = response.request.url
+        url_source = response.request.url
 
         # Sauvegarde de la page
-        page_filename = self.result_dir + "/pages/" + self.url_to_filename(source) + ".html"
-        self.log(f"Saving page {source} to '{page_filename}'")
+        page_filename = self.result_dir + "/pages/" + self.url_to_filename(url_source) + ".html"
+        self.log(f"Saving page {url_source} to '{page_filename}'")
         with open( page_filename, "wb") as f:
             f.write(response.body)
             f.close()
@@ -126,16 +123,16 @@ class GeneanetSpider(scrapy.Spider):
             sexe = "M"
         if sexe not in ("M", "F") :
             self.nb_errors += 1
-            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({source}) !")
+            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({url_source}) !")
         self.sex_of[pointer] = [sexe]
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
         pause = 0
         if generation >= 3 :
             pause = 2 ** generation
             #pause = 1000
+            pause = 0
             time.sleep(pause/1000)
-        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({source}) pause={pause}ms")
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{source};")
+        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({url_source}) pause={pause}ms")
 
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
@@ -152,19 +149,25 @@ class GeneanetSpider(scrapy.Spider):
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
-        person.add_source( self.gedcomw_parser.get_root_element(), source, 'texte')
+        person.add_source( self.gedcomw_parser.get_root_element(), url_source, 'texte')
 
+        nb_infos = 0
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
+            nb_infos += 1
             line = info.get().replace("\n", " ")
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
 
+        nb_titres = 0
         for titre in response.xpath("//div[@id='person-title']/following-sibling::em[1]/a") :
+            nb_titres += 1
             self.nb_titres_noblesse += 1
             titre_noblesse = titre.xpath("text()").get().strip()
             # @todo extraire commentaire
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}'")
 
+        nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
+            nb_evenements += 1
             #tmp = event.xpath("td[2]").get()
             #tmp = html2text.html2text(tmp)
             event_nom = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
@@ -196,34 +199,39 @@ class GeneanetSpider(scrapy.Spider):
 
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
+        nb_sources = 0
         for source in response.xpath("//h2[span='Sources']/following-sibling::em/ul[1]/li"):
+            nb_sources += 1
             #line = source.xpath("text()").get()
             line1 = source.extract()
             line = html2text.html2text(line1).strip()
             #line = source.xpath("text()").extract()
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
 
-        idx=0
+        nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
+        presence_parents=""
         for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
-            idx += 1
+            nb_parents += 1
             url_parent = parent.xpath("a/@href").get()
             url_parent = response.urljoin(url_parent)
-            self.log(f"URL parent (forme 1) {idx} = {url_parent}")
-            yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1,'child_pointer':pointer})
+            self.log(f"URL parent (forme 1) {nb_parents} = {url_parent}")
+            presence_parents = "forme1" # forme 1
+            yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer})
 
         # Parents forme 2 ("<!-- Parents simple -->")
-        if idx == 0 :
+        if nb_parents == 0 :
             for parent in response.xpath("//h2[span='Parents']/following-sibling::ul[1]/li"):
-                idx += 1
+                nb_parents += 1
                 url_parent = parent.xpath("a/@href").get()
                 url_parent = response.urljoin(url_parent)
-                self.log(f"URL parent (forme 2) {idx} = {url_parent}")
-                yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+idx-1,'child_pointer':pointer})
-        if idx > 2 :
+                self.log(f"URL parent (forme 2) {nb_parents} = {url_parent}")
+                presence_parents = "forme2"  # forme 2
+                yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer})
+        if nb_parents > 2 :
             self.nb_errors += 1
-            self.logger.error(f"{idx} parents for {prenom} {nom} ({source}) !")
-        self.csv.write("\n")
+            self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({url_source}) !")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{url_source};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
@@ -294,6 +302,15 @@ def goodbye():
     #logging.shutdown()
     #os.rename(GeneanetSpider.tmplogfile, final_logname) # KO : erreur "fichier utilisé par un autre processus"
     final_logname = GeneanetSpider.result_dir + "/" + GeneanetSpider.result_name + ".log"
+    try:
+        os.remove(final_logname)
+    except OSError:
+        pass
     print(f"Renaming '{GeneanetSpider.tmplogfile}' to '{final_logname}'")
     shutil.copyfile(GeneanetSpider.tmplogfile, final_logname)
+    try:
+        os.remove(GeneanetSpider.tmplogfile)
+    except OSError:
+        print(f"Can't remove '{GeneanetSpider.tmplogfile}' !'")
+        pass
 
