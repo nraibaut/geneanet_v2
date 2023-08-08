@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 import scrapy
@@ -37,8 +38,6 @@ class GeneanetSpider(scrapy.Spider):
     parents_of = {} # dictionnaire des parents de chaque individu
     sex_of = {} # dictionnaire des sexes des parents de chaque individu
 
-
-
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
     # mais on n'a pas encore l'url, à partir de laquelle on veut construire le nom du log.
@@ -63,7 +62,6 @@ class GeneanetSpider(scrapy.Spider):
         result = result.replace("/", ".")
         result = result.replace("&", ".")
         result = result.replace("?", ".")
-
         return result
 
     def start_requests(self):
