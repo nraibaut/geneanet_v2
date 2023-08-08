@@ -27,6 +27,7 @@
 
 import re as regex
 from gedcomw.element.element import Element
+from gedcomw.element.event import Event # NRa
 from gedcomw.helpers import deprecated
 import gedcomw.tags
 
@@ -36,6 +37,7 @@ class NotAnActualIndividualError(Exception):
 
 
 class IndividualElement(Element):
+
     def set_name(self, givenname, surname): # NRa
         # givenname = prénom = GEDCOM_TAG_GIVEN_NAME = "GIVN"
         # surname = nom de famille = GEDCOM_TAG_SURNAME = "SURN"
@@ -55,6 +57,21 @@ class IndividualElement(Element):
         self.logger.debug(f"NRa {__name__} : set_sex : sex={sex}")
         element = Element( self.get_level()+1, pointer, gedcomw.tags.GEDCOM_TAG_SEX, sex, '\n', multi_line=False)
         self.add_child_element(element)
+
+    def set_event(self, name, date=None, place=None, notes=None, source=None): # NRa
+        self.logger.debug(f"set_event : name='{name}', date='{date}', place='{place}', notes='{notes}', source='{source}'")
+        if name not in self.list_of_events:
+            self.logger.debug(f"set_event : nouvelle clé name='{name}'")
+            #event = Event(name, date, place, notes, source)
+            self.list_of_events[name]=Event(name=name, date=date, place=place, notes=notes, source=source)
+        else:
+            self.logger.debug(f"set_event : maj clé existante name='{name}'")
+            self.list_of_events[name].update( date=date, place=place, notes=notes, source=source)
+
+    def manage_events(self): # NRa
+        for key, event in self.list_of_events.items():
+            #self.logger.info(f"event : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
+            self.logger.info(f"manage_events : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
 
     def is_individual(self):
         """Checks if this element is an actual individual

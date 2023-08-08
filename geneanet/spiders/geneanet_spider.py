@@ -156,6 +156,22 @@ class GeneanetSpider(scrapy.Spider):
             nb_infos += 1
             line = info.get().replace("\n", " ")
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
+            line = re.sub(", à l'âge .*", "", line) # on coupe la fin, inutile
+            premier_mot = re.sub(" .*", "", line)
+            event_date_and_place = re.sub("^[^ ]* *", "", line)
+            event_date = re.sub(" *- *.*", "", event_date_and_place)
+            event_date = re.sub("^le ", "", event_date) # @todo NE FONCTIONNE PAS !
+            event_place = None
+            if " - " in event_date_and_place:
+                event_place = re.sub(".* *- *", "", event_date_and_place)
+            if premier_mot in "Né" "Née":
+                event_name = "Naissance"
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
+                person.set_event(name=event_name, date=event_date, place=event_place)
+            elif premier_mot in "Décédé" "Décédée":
+                event_name = "Décès"
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
+                person.set_event(name=event_name, date=event_date, place=event_place)
 
         nb_titres = 0
         for titre in response.xpath("//div[@id='person-title']/following-sibling::em[1]/a") :
@@ -170,9 +186,14 @@ class GeneanetSpider(scrapy.Spider):
             nb_evenements += 1
             #tmp = event.xpath("td[2]").get()
             #tmp = html2text.html2text(tmp)
-            event_nom = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_nom = '{event_nom}'")
-            # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation Contrat de mariage
+            event_name_and_place = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
+            # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation "Contrat de mariage (avec xxx)"
+            # suivi éventuellement du lieu
+            event_name = re.sub(" *- .*", "", event_name_and_place)  # suppression " - .*" final
+            event_place = None
+            if " - " in event_name_and_place:
+                event_place = re.sub(".* *- *", "", event_name_and_place)
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : '{event_name_and_place}' --> event_name='{event_name}' event_place='{event_place}'")
 
             lines = event.xpath("td[2]/div[@class='nnotes']").get()
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
@@ -188,6 +209,10 @@ class GeneanetSpider(scrapy.Spider):
             if not lines is None:
                 #event_sources = html2text.html2text(tmp)
                 event_sources = html2text.html2text(lines).strip()
+                # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
+                if event_name == "Décès" :
+                    event_sources = event_sources.replace( "\\- ", "\n", 1)
+                event_sources = re.sub(" *\n", "\n", event_sources) # suppression des espaces ajoutés en fin de lignes
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
 
             lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
@@ -197,6 +222,7 @@ class GeneanetSpider(scrapy.Spider):
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
+            person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
         nb_sources = 0
@@ -206,7 +232,19 @@ class GeneanetSpider(scrapy.Spider):
             line1 = source.extract()
             line = html2text.html2text(line1).strip()
             #line = source.xpath("text()").extract()
+            #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
+            event_name = line.split(":",1)[0]
+            event_name = re.sub("^\* *", "", event_name)  # suppression début "* "
+            #event_sources = re.sub("[^:]*:  *", "", line)  # suppression avant ":"
+            event_sources = line.split(":",1)[1]
+            event_sources = re.sub("^ *", "", event_sources)  # suppression début " "
+            # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
+            if event_name == "Décès":
+                event_sources = event_sources.replace("\\- ", "\n", 1)
+            event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
+            person.set_event(name=event_name, source=event_sources)
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -231,6 +269,8 @@ class GeneanetSpider(scrapy.Spider):
         if nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({url_source}) !")
+
+        person.manage_events()
         self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{url_source};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};\n")
 
     def manage_families(self):

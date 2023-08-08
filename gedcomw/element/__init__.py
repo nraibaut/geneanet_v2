@@ -30,6 +30,7 @@ __all__ = [
     "family",
     "file",
     "individual",
+    "event",
     "object",
     "root"
 ]

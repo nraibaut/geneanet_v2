@@ -3,9 +3,8 @@
 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
 [scrapy.crawler] INFO: Overridden settings:
 {'BOT_NAME': 'geneanet',
- 'CONCURRENT_REQUESTS_PER_DOMAIN': 4,
- 'CONCURRENT_REQUESTS_PER_IP': 4,
- 'DOWNLOAD_DELAY': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'DOWNLOAD_DELAY': 0.5,
  'FEED_EXPORT_ENCODING': 'utf-8',
  'NEWSPIDER_MODULE': 'geneanet.spiders',
  'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
@@ -15,7 +14,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: b64ea630acfb61c4
+[scrapy.extensions.telnet] INFO: Telnet Password: 914b0e63bd954ba3
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -48,7 +47,7 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 [geneanet] DEBUG: result_name = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 07/08/2023 à 22:33 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 08/08/2023 à 02:51 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
 [geneanet] DEBUG: csv result = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.csv
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/robots.txt> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna> (referer: None)
@@ -61,8 +60,10 @@
 [geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Giovanna rosa' 'BARTOLO' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo) pause=0ms
 [geneanet] DEBUG: 'Giovanna rosa' 'BARTOLO' parent de @I00001@
 [geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : info = 'Décédée avant 11 janvier 1818'
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : --> event_name2='Décès' event_date2='avant 11 janvier 1818' event_place2='None' 
 [geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7
 [geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27
+[gedcomw.element.element] INFO: manage_events : name='Décès', date='avant 11 janvier 1818', place='None', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
 [geneanet] DEBUG: Saving page https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2 to 'result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html'
 [geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2) pause=0ms
@@ -134,8 +135,10 @@
 [geneanet] DEBUG: Generation 5, sosa 20, id @I00015@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24) pause=0ms
 [geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00009@
 [geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : info = 'Né - Zejtun - Malte, , , ,'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : --> event_name2='Naissance' event_date2='' event_place2='Malte, , , ,' 
 [geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
 [geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
+[gedcomw.element.element] INFO: manage_events : name='Naissance', date='', place='Malte, , , ,', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
 [geneanet] DEBUG: Saving page https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15 to 'result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html'
 [geneanet] DEBUG: Generation 5, sosa 19, id @I00016@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15) pause=0ms
@@ -199,6 +202,8 @@
 [geneanet] DEBUG: Generation 6, sosa 34, id @I00029@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7) pause=0ms
 [geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00018@
 [geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : info = 'Né - Birkhirkara - Malte, , , ,'
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : --> event_name2='Naissance' event_date2='' event_place2='Malte, , , ,' 
+[gedcomw.element.element] INFO: manage_events : name='Naissance', date='', place='Malte, , , ,', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
 [geneanet] DEBUG: Saving page https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop to 'result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html'
 [geneanet] DEBUG: Generation 6, sosa 33, id @I00030@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop) pause=0ms
@@ -210,8 +215,10 @@
 [geneanet] DEBUG: Generation 6, sosa 32, id @I00031@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato) pause=0ms
 [geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00019@
 [geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : info = 'Né - Siggewi - Malte, , , ,'
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : --> event_name2='Naissance' event_date2='' event_place2='Malte, , , ,' 
 [geneanet] DEBUG: URL parent (forme 2) 1 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato
 [geneanet] DEBUG: URL parent (forme 2) 2 = https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3
+[gedcomw.element.element] INFO: manage_events : name='Naissance', date='', place='Malte, , , ,', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18> (referer: https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
 [geneanet] DEBUG: Saving page https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18 to 'result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html'
 [geneanet] DEBUG: Generation 7, sosa 67, id @I00032@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18) pause=0ms
@@ -260,16 +267,16 @@
 {'downloader/request_bytes': 19254,
  'downloader/request_count': 36,
  'downloader/request_method_count/GET': 36,
- 'downloader/response_bytes': 582514,
+ 'downloader/response_bytes': 583387,
  'downloader/response_count': 36,
  'downloader/response_status_count/200': 36,
- 'elapsed_time_seconds': 43.048334,
+ 'elapsed_time_seconds': 21.303315,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 7, 20, 34, 7, 552599),
+ 'finish_time': datetime.datetime(2023, 8, 8, 0, 51, 32, 889455),
  'httpcompression/response_bytes': 3064806,
  'httpcompression/response_count': 36,
- 'log_count/DEBUG': 204,
- 'log_count/INFO': 20,
+ 'log_count/DEBUG': 208,
+ 'log_count/INFO': 24,
  'request_depth_max': 6,
  'response_received_count': 36,
  'robotstxt/request_count': 1,
@@ -279,5 +286,5 @@
  'scheduler/dequeued/memory': 35,
  'scheduler/enqueued': 35,
  'scheduler/enqueued/memory': 35,
- 'start_time': datetime.datetime(2023, 8, 7, 20, 33, 24, 504265)}
+ 'start_time': datetime.datetime(2023, 8, 8, 0, 51, 11, 586140)}
 [scrapy.core.engine] INFO: Spider closed (finished)
