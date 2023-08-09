@@ -30,6 +30,7 @@ from gedcomw.element.element import Element
 from gedcomw.element.event import Event # NRa
 from gedcomw.helpers import deprecated
 import gedcomw.tags
+from gedcomw.element.dateconverter import DateConverter
 
 
 class NotAnActualIndividualError(Exception):
@@ -37,10 +38,71 @@ class NotAnActualIndividualError(Exception):
 
 
 class IndividualElement(Element):
+    __givenname = "?"
+    __surname = "?"
+    #====================================================================
+    # Etiquettes événements :
+    # voir https://www.francogene.com/internet/gedcom.php#indi
+    # (voir aussi doc Ancestris et norme : https://docs.ancestris.org/books/mode-demploi/page/gedcom)
+    # OCCU	Occupation de l'individu.
+    # BIRT	Naissance de l'individu.  Voir les lignes génériques d'un événement.
+    # CHR	Le fait de donner un nom à l'individu (christening).  Certains logiciels préfèrent BAPT pour baptême. Voir les lignes génériques d'un événement.
+    # BAPT	Baptême d'un individu.  Voir les lignes génériques d'un événement.
+    # DEAT	Décès d'un individu.  Voir les lignes génériques d'un événement.
+    # BURI	Inhumation ou sépulture d'un individu.  Chez les catholiques, il s'agit en général de l'inscription du décès dans un registre lors de la sépulture.  Voir les lignes génériques d'un événement.
+    # EVEN	Autre événement.  Dans certaines logiciels, il peut s'agir du baptême ou de la sépulture.  On trouve alors un mot clé indiquant le type d'événement.  Dans d'autres logiciels, il s'agit du numéro d'une fiche d'événement qui contient alors les détails sur cet événement. Voir les lignes génériques d'un événement.
+    # Autres :
+    # ADOP	Adoption
+    # CENS	Recensement
+    # CONF	Confirmation
+    # CRIM	Crime
+    # DONA	Donation
+    # EDUC	Éducation
+    # EMIG	Émigration, départ d'un endroit
+    # EMPL	Emploi
+    # FCOM	Première communion
+    # FUNE	Funérailles
+    # HIST	Historique, chronologie de l'individu
+    # IMMI	Immigration, arrivée dans un endroit
+    # LVG	Vivant (living)
+    # NATU	Naturalisation
+    # NOBL	Anoblissement
+    # ONDO	Ondoiement
+    # ORDN	Ordination, entrée en religion
+    # PASL	Liste de passagers
+    # PROB	Ouverture d'un testament (probate)
+    # RELI	Religion pratiquée
+    # RESI	Résidence
+    # RETI	Retraite
+    # RMRK	Remarque
+    # TBS	Pierre tombale (tombstone)
+    # WILL	Testament
+    #
+    # Absent doc, mais présent export Ancestris et géré par Geneanet :
+    # TITL  Titre
+    # GRAD  Diplôme
+    #
+    #====================================================================
+
+    event_dict = {
+        "Baptême" : "CHR", # Ancestris exporte les baptèmes avec "CHR" (et non pas "BAPT")
+        "Contrat de mariage" : "",
+        "Diplôme" : "GRAD",
+        "Domicile" : "RESI",
+        "Décès" : "DEAT",
+        "Inhumation" : "BURI",
+        "Naissance" : "BIRT",
+        "Personne" : "Personne???", # @todo à voir = uniquement source sur la personne ?
+        "Profession" : "OCCU",
+        "Retraite" : "RETI",
+        "Union" : "Union???", # @todo à voir = uniquement source sur le mariage ?
+    }
 
     def set_name(self, givenname, surname): # NRa
         # givenname = prénom = GEDCOM_TAG_GIVEN_NAME = "GIVN"
         # surname = nom de famille = GEDCOM_TAG_SURNAME = "SURN"
+        self.__givenname = givenname
+        self.__surname = surname
         name = "%s /%s/" % (givenname, surname)
         pointer = ''
         self.logger.debug(f"NRa {__name__} : set_name : givenname={givenname} surname={surname} (name='{name}')")
@@ -68,10 +130,61 @@ class IndividualElement(Element):
             self.logger.debug(f"set_event : maj clé existante name='{name}'")
             self.list_of_events[name].update( date=date, place=place, notes=notes, source=source)
 
-    def manage_events(self): # NRa
+    def manage_events(self, root_element, csv_log=None): # NRa
+        """ Gère les événements d'un individu.
+        Cette méthode est appelée en fin de traitement d'un individu, après consolidation de tous les
+        évènements (par appels successifs de set_event, pouvant potentiellement se recouvrir entre événements).
+        :rtype: int (nombre d'erreurs)
+        """
+        nb_errors = 0
+
         for key, event in self.list_of_events.items():
             #self.logger.info(f"event : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
-            self.logger.info(f"manage_events : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
+            self.logger.info(f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
+            tag = "?"
+            try:
+                tag = IndividualElement.event_dict[event._name]  # ok, ou exception "KeyError"
+            except:
+                tag = event._name + "???"
+                nb_errors += 1
+                self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
+                pass
+            element_etiq = Element(self.get_level() + 1, '', tag, '', '\n', multi_line=False)
+            self.add_child_element(element_etiq)
+            # @todo tag TYP (cas GRAD (diplôme)) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
+            date = ""
+            gedcom_date = ""
+            place = ""
+            notes = ""
+            source = ""
+            notes_on_source = ""
+            if event._date is not None and event._date is not "" :
+                date = event._date
+                conv = DateConverter(event._date)
+                gedcom_date = conv.to_gedcom_string()
+                element_date = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_DATE, gedcom_date, '\n', multi_line=False)
+                self.add_child_element(element_date)
+            if event._place is not None and event._place is not "":
+                place = event._place
+                element_place = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_PLACE, place, '\n', multi_line=False)
+                self.add_child_element(element_place)
+            if event._notes is not None:
+                notes = event._notes
+                self.add_note(root_element, event._notes)
+            if event._source is not None:
+                source = event._source
+                # la chaîne contient :
+                # - en première ligne la source
+                # - en lignes suivantes les notes sur la source
+                lines = event._source.splitlines()
+                source = lines[0]
+                notes_on_source = '\n'.join(lines[1:])
+                self.add_source(root_element, source, notes_on_source)
+
+            if csv_log is not None:
+                csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+
+        return nb_errors
 
     def is_individual(self):
         """Checks if this element is an actual individual

@@ -1,0 +1,38 @@
+id;prenom;nom;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;10/08/2023 à 01:51
+@I00001@;Gérard;DUPONT;Naissance;BIRT;22 mars 1882;22 MAR 1882;Paris, France;"Note1 sur la naissance  
+Note2 sur la naissance";"<https://www.source_naissance.fr/>";"Texte1 source naissance
+Texte2 source naissance";
+@I00001@;Gérard;DUPONT;Décès;DEAT;10 avril 1892;10 APR 1892;Nice, FRANCE;"Note1 sur le décès  
+Note2 sur le décès";"<https://www.source_deces.fr/>";"Texte1 source décès
+Texte2 source décès";
+@I00001@;Gérard;DUPONT;Baptême;CHR;18 mai 1882;18 MAY 1882;Paris, France;"Note1 sur le baptême  
+Note2 sur le baptême";"<https://www.source_bapteme.fr/>";"Texte1 source baptême
+Texte2 source baptême";
+@I00001@;Gérard;DUPONT;Profession;OCCU;18 mai 1882;18 MAY 1882;;"Profession de Gérard  
+Note1 sur la profession  
+Note2 sur la profession";"<https://www.source_profession.fr/>";"Texte1 source profession
+Texte2 source profession";
+@I00001@;Gérard;DUPONT;Domicile;RESI;18 mai 1882;18 MAY 1882;Lyon, France;"Note1 sur la résidence  
+Note2 sur la résidence";"<https://www.source_residence.fr/>";"Texte1 source résidence
+Texte2 source résidence";
+@I00001@;Gérard;DUPONT;Diplôme;GRAD;1er juillet 1891;1 JUL 1891;Nice, FRANCE;"Certificat d'études  
+Note1 sur diplôme  
+Note2 sur diplôme";"<https://www.source_diplome.fr/>";"Texte1 source diplôme
+Texte2 source diplôme";
+@I00001@;Gérard;DUPONT;Inhumation;BURI;11 avril 1892;11 APR 1892;Nice, FRANCE;"Note1 sur l'inhumation  
+Note2 sur l'inhumation";"<https://www.source_inhumation.fr/>";"Texte1 source inhumation
+Texte2 source inhumation";
+@I00001@;Gérard;DUPONT;Personne;Personne???;;;;"";"<https://www.source_general.fr/>";"Texte1 source général
+Texte2 source général";
+@I00003@;Marie Paule;DURAND;Union;Union???;;;;"";"<https://www.source_mariage.fr/>";"Texte1 source mariage
+Texte2 source mariage";
+@I00002@;Pierre;DUPONT;Naissance;BIRT;1er septembre 1850;1 SEP 1850;;"";"<https://www.source_naissance.fr/>";"Texte1 source naissance
+Texte2 source naissance";
+@I00002@;Pierre;DUPONT;Décès;DEAT;1er avril 1895;1 APR 1895;;"";"<https://www.source_deces.fr/>";"Texte1 source décès
+Texte2 source décès";
+@I00002@;Pierre;DUPONT;Union;Union???;;;;"";"<https://www.source_mariage.fr/>";"Texte1 source mariage
+Texte2 source mariage";
+@I00005@;Jean;DATES;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;;"Date environ";"";"";
+@I00005@;Jean;DATES;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;;"Date calculée";"";"";
+@I00005@;Jean;DATES;Baptême;CHR;peut-être 23 février 1803;EST? 23 FEB 1803;;"Date estimée";"";"";
+@I00005@;Jean;DATES;Retraite;RETI;vers 1872;ABT 1872;;"Date interprêtée";"";"";

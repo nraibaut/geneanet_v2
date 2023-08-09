@@ -152,11 +152,16 @@ class GeneanetSpider(scrapy.Spider):
         self.gedcomw_parser.nra_set_header(header_text, self.progname, self.version, self.progname,
                    self.team, self.address, GeneanetSpider.gedcom_result_filename)
 
-        # Sortie CSV :
+        # Sorties CSV :
         csvfilename = self.result_dir + "/" + result_name + ".csv"
-        self.log(f"csv result = {csvfilename}")
+        self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w")
         self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;{date}\n")
+
+        csvfilename = self.result_dir + "/" + result_name + ".events.csv"
+        self.log(f"csv events = {csvfilename}")
+        self.csv_events = open( csvfilename, "w")
+        self.csv_events.write(f"id;prenom;nom;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;{date}\n")
 
         true_url = self.url
         url_to_scan = self.get_url_to_scan(true_url)
@@ -211,16 +216,16 @@ class GeneanetSpider(scrapy.Spider):
             sexe = "M"
         if sexe not in ("M", "F") :
             self.nb_errors += 1
-            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({url_source}) !")
+            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
         self.sex_of[pointer] = [sexe]
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
-        pause = 0
-        if generation >= 3 :
-            pause = 2 ** generation
-            #pause = 1000
-            pause = 0
-            time.sleep(pause/1000)
-        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({url_source}) pause={pause}ms")
+        #pause = 0
+        #if generation >= 3 :
+        #    pause = 2 ** generation
+        #    #pause = 1000
+        #    pause = 0
+        #    time.sleep(pause/1000)
+        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
 
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
@@ -235,18 +240,22 @@ class GeneanetSpider(scrapy.Spider):
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
-        person.add_source( self.gedcomw_parser.get_root_element(), url_source, 'texte')
+        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, 'texte') # @todo texte source générale
 
         nb_infos = 0
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
             nb_infos += 1
             line = info.get().replace("\n", " ")
+            # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
+            # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
+            line = line.replace(u"\u00A0", " ")  # avant toute chose !
+
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
             line = re.sub(", à l'âge .*", "", line) # on coupe la fin, inutile
             premier_mot = re.sub(" .*", "", line)
             event_date_and_place = re.sub("^[^ ]* *", "", line)
-            event_date = re.sub(" *- *.*", "", event_date_and_place)
-            event_date = re.sub("^le ", "", event_date) # @todo NE FONCTIONNE PAS !
+            event_date = re.sub(" * - *.*", "", event_date_and_place)
+            event_date = re.sub("^le ", "", event_date)
             event_place = None
             if " - " in event_date_and_place:
                 event_place = re.sub(".* *- *", "", event_date_and_place)
@@ -299,6 +308,7 @@ class GeneanetSpider(scrapy.Spider):
                 if event_name == "Décès" :
                     event_sources = event_sources.replace( "\\- ", "\n", 1)
                 event_sources = re.sub(" *\n", "\n", event_sources) # suppression des espaces ajoutés en fin de lignes
+                event_sources = re.sub("^Sources: *", "", event_sources) # texte "Sources: " en début de source
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
 
             lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
@@ -362,10 +372,10 @@ class GeneanetSpider(scrapy.Spider):
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents > 2 :
             self.nb_errors += 1
-            self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({url_source}) !")
+            self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
 
-        person.manage_events()
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{url_source};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};\n")
+        person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events)
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
@@ -399,6 +409,7 @@ class GeneanetSpider(scrapy.Spider):
 
     def spider_closed(self, spider):
         self.manage_families()
+        self.gedcomw_parser.get_root_element().add_end_of_file()
 
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
         spider.logger.info(f"- nb_persons         = {self.nb_persons}")
@@ -414,6 +425,7 @@ class GeneanetSpider(scrapy.Spider):
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_warnings} warnings\n")
         self.csv.close()
+        self.csv_events.close()
 
         gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
         spider.logger.info(f"Saving to '{gedresultfilename}'")

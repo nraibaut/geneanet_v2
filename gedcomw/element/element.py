@@ -92,6 +92,7 @@ class Element(object):
         self.__value = value
         self.__crlf = crlf
         self.__nbSources = 0 # NRa : utile pour root_element seulement a priori
+        self.__nbNotes = 0 # NRa : utile pour root_element seulement a priori
         self.list_of_events = {}  # NRa : dictionnaire des événements, utile pour IndividualElement seulement
 
         # structuring
@@ -335,10 +336,30 @@ class Element(object):
         element_source = Element(0, source_pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, '', '\n', multi_line=False)
         element_title = Element(1, '', gedcomw.tags.GEDCOM_TAG_TITLE, title, '\n', multi_line=False)
         element_source.add_child_element(element_title)
-        if text != "" :
-            element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, text, '\n', multi_line=False)
+        if text is not None :
+            element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, text, '\n', multi_line=True) # @todo : vérifier le multiline sur les sources
             element_source.add_child_element(element_text)
         root_element.add_child_element(element_source)
+
+    def add_note(self, root_element, note): # NRa
+        """ Ajout d'une note
+        :type rootelement: gedcomw.element.Element
+        """
+        root_element.__nbNotes += 1
+        note_pointer = "@N%05d@" % (root_element.__nbNotes)
+
+        element_note_ref = Element(self.get_level()+1, '', gedcomw.tags.GEDCOM_TAG_NOTE, note_pointer, '\n', multi_line=False)
+        self.add_child_element(element_note_ref)
+
+        element_note = Element(0, note_pointer, gedcomw.tags.GEDCOM_TAG_NOTE, note, '\n', multi_line=True) # @todo : vérifier le multiline sur les notes
+        root_element.add_child_element(element_note)
+
+    def add_end_of_file(self): # NRa
+        """ Ajout du tag de fin de fichier
+        :type rootelement: gedcomw.element.Element
+        """
+        element = Element(0, '', gedcomw.tags.GEDCOM_TAG_TRLR, '', '\n', multi_line=False)
+        self.add_child_element(element)
 
 
 

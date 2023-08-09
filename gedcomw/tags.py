@@ -138,3 +138,5 @@ GEDCOM_TAG_SUBMITTER = "SUBM" # NRa (1 tag obligatoire)
 # NRa : tags source
 GEDCOM_TAG_TITLE = "TITL" # NRa
 GEDCOM_TAG_TEXT = "TEXT" # NRa
+
+GEDCOM_TAG_TRLR = "TRLR" # NRa

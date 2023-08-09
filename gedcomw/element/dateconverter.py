@@ -90,8 +90,8 @@ class DateConverter(object):
             self._republican_date = isrepublicain.groups(0)[0].strip()
             text2 = isrepublicain.groups(0)[1]
 
-        text2 = re.sub("^1er ", "1 ", text2, 1)
         text2 = text2.lower() # robustesse sur les mois
+        text2 = re.sub("1er ", "1 ", text2, 1)
 
         for mois1 in DateConverter.months.keys():
             mois2 = DateConverter.months[mois1]
