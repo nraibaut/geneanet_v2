@@ -18,8 +18,6 @@ import time # pour pause
 import re
 import tempfile
 
-#tmplogfile = "tmp.log"
-
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
@@ -27,16 +25,21 @@ class GeneanetSpider(scrapy.Spider):
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
-    result_name = "tbd" # sera connu plus tard
+    result_name = "tbd.tmp" # sera connu plus tard
     nb_persons = 0
     nb_families = 0
     nb_titres_noblesse = 0
     max_generations = 0
     nb_warnings = 0
     nb_errors = 0
+    nb_scanned_pages = 0
+    nb_saved_pages = 0
+    nb_cached_pages = 0
     list_tuples_child_of = []
     parents_of = {} # dictionnaire des parents de chaque individu
     sex_of = {} # dictionnaire des sexes des parents de chaque individu
+    is_http_url = re.compile("^http[s]*:.*")
+    is_file_url = re.compile("^file:.*")
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -58,12 +61,78 @@ class GeneanetSpider(scrapy.Spider):
 
     def url_to_filename(self, url):
         result = url
-        result = result.replace("https://", "")
+        #result = result.replace("https://", "")
+        result = re.sub("^http[s]*://", "", result)
+        result = re.sub("^file:.*/pages/", "", result)
+        result = re.sub("^file:.*.pages.", "", result)
         result = result.replace("/", ".")
+        result = result.replace("\\", ".")
         result = result.replace("&", ".")
         result = result.replace("?", ".")
         return result
 
+    def get_cache_files(self, http_url):
+        """
+        donne les noms des fichiers cache
+        :param url:
+        :return:
+        """
+        # url = une vraie URL http (https://...)
+        # (pas "file:///compte?lang=fr&p=pierre&n=dupont"...)
+
+        cache_base = self.result_dir + "/pages/" + self.url_to_filename(http_url)
+        cache_html_page = cache_base + ".html"
+        cache_url_file = cache_base + ".url.txt"
+
+        return [cache_html_page, cache_url_file]
+
+    def url_to_true_http_url(self, current_true_http_url, url_to_scan):
+        """
+        Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
+        :param url:
+        :return:
+        """
+        # current_true_http_url = forcément une vraie URL http (https://...)
+        # url_to_scan =
+        # * soit une vraie URL http (https://...)
+        # * soit quelque chose de la forme "file:///compte?lang=fr&p=pierre&n=dupont"
+
+        is_http_url = GeneanetSpider.is_http_url.match(url_to_scan)
+        if is_http_url:
+            result = url_to_scan
+        else:
+            part1 = re.sub("[^/]*$", "", current_true_http_url) # on coupe après le dernier "/"
+            part2 = re.sub(".*/", "", url_to_scan) # on coupe jusqu'au dernier "/"
+            result = part1 + part2
+
+        return result
+
+    def get_url_to_scan(self, true_http_url):
+        """
+        Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
+        :param url:
+        :return:
+        """
+        # url = forcément une vraie URL http (https://...)
+
+        result = true_http_url    # par défaut
+
+        cache_files = self.get_cache_files(true_http_url)
+        cache_html_page = cache_files[0]
+        cache_url_file = cache_files[1]
+        self.log(f"Test pour true_http_url = '{true_http_url}' :)")
+        self.log(f"os.path.isfile({cache_html_page}) = {os.path.isfile(cache_html_page)}")
+        self.log(f"os.path.isfile({cache_url_file}) = {os.path.isfile(cache_url_file)}")
+
+        if os.path.isfile(cache_html_page) and os.path.isfile(cache_url_file):
+            #result = "file:" + cache_html_page # KO... visiblement, il FAUT un chemin absolu !!!!
+            #result = "file:D:/Users/Nicolas/Documents/Python/geneanet/" + cache_html_page
+            result = "file:" + os.getcwd() + "/" + cache_html_page
+
+        return result
+
+
+    # On a déjà en cache la page et son url :
     def start_requests(self):
         result_name = self.url_to_filename(self.url)
         GeneanetSpider.result_name = result_name
@@ -89,17 +158,38 @@ class GeneanetSpider(scrapy.Spider):
         self.csv = open( csvfilename, "w")
         self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;{date}\n")
 
-        yield scrapy.Request(url=self.url, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':''} )
+        true_url = self.url
+        url_to_scan = self.get_url_to_scan(true_url)
+        self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
+
+        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':'', 'true_http_url':true_url} )
 
     def parse(self, response):
         url_source = response.request.url
+        # soit une "vraie" url (https://...) soit un fichier (file://...)
 
-        # Sauvegarde de la page
-        page_filename = self.result_dir + "/pages/" + self.url_to_filename(url_source) + ".html"
-        self.log(f"Saving page {url_source} to '{page_filename}'")
-        with open( page_filename, "wb") as f:
-            f.write(response.body)
-            f.close()
+        is_http_url = GeneanetSpider.is_http_url.match(url_source)
+
+        if is_http_url :
+            true_http_url = url_source
+            cache_files = self.get_cache_files(true_http_url)
+            cache_html_page = cache_files[0]
+            cache_url_file = cache_files[1]
+            self.nb_scanned_pages += 1
+            if (not os.path.isfile(cache_html_page)) or (not os.path.isfile(cache_url_file)):
+                # C'est une "vraie" url qu'on n'a pas encore en cache :
+                self.log(f"Saving page {url_source} to '{cache_html_page}'")
+                with open( cache_html_page, "wb") as f:
+                    f.write(response.body)
+                    f.close()
+                self.log(f"Saving URL to '{cache_url_file}'")
+                with open( cache_url_file, "w") as f:
+                    f.writelines(url_source)
+                    f.close()
+                self.nb_saved_pages += 1
+        else:
+            self.nb_cached_pages += 1
+            true_http_url = response.meta['true_http_url']
 
         generation = response.meta['generation'] + 1
         if generation > self.max_generations :
@@ -141,9 +231,7 @@ class GeneanetSpider(scrapy.Spider):
             else:
                 self.parents_of[child_pointer].append(pointer)
 
-        #self.log(f"Avant création IndividualElement")
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
-        #self.log(f"Après création IndividualElement")
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
@@ -251,9 +339,13 @@ class GeneanetSpider(scrapy.Spider):
             nb_parents += 1
             url_parent = parent.xpath("a/@href").get()
             url_parent = response.urljoin(url_parent)
-            self.log(f"URL parent (forme 1) {nb_parents} = {url_parent}")
             presence_parents = "forme1" # forme 1
-            yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer})
+
+            true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
+            url_parent_to_scan = self.get_url_to_scan( true_url_parent)
+            self.log(f"URL parent (forme 1) {nb_parents} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+
+            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
 
         # Parents forme 2 ("<!-- Parents simple -->")
         if nb_parents == 0 :
@@ -261,9 +353,13 @@ class GeneanetSpider(scrapy.Spider):
                 nb_parents += 1
                 url_parent = parent.xpath("a/@href").get()
                 url_parent = response.urljoin(url_parent)
-                self.log(f"URL parent (forme 2) {nb_parents} = {url_parent}")
                 presence_parents = "forme2"  # forme 2
-                yield scrapy.Request(url_parent, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer})
+
+                true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
+                url_parent_to_scan = self.get_url_to_scan(true_url_parent)
+                self.log(f"URL parent (forme 2) {nb_parents} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+
+                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({url_source}) !")
@@ -311,6 +407,9 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
         spider.logger.info(f"- nb_warnings        = {self.nb_warnings}")
+        spider.logger.info(f"- nb_scanned_pages   = {self.nb_scanned_pages}")
+        spider.logger.info(f"- nb_saved_pages     = {self.nb_saved_pages}")
+        spider.logger.info(f"- nb_cached_pages    = {self.nb_cached_pages}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_warnings} warnings\n")

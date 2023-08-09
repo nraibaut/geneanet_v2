@@ -13,6 +13,7 @@ download/
 result/pages/
 tmp/
 *.tmp*
+*.old*
 * - Copie*
 ~*
 *~

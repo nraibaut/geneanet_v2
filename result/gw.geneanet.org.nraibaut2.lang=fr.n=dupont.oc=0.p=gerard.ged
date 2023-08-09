@@ -1,0 +1,72 @@
+0 HEAD
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 09/08/2023 à 21:41 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 SUBM @B00001@
+1 PLAC
+2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
+1 SOUR GeneanetSpider
+2 VERS 0.1.0
+2 NAME GeneanetSpider
+2 CORP Nicolas Raibaut
+3 ADDR raibaut.nicolas@gmail.com
+1 DEST ANY
+1 DATE 09 AUG 2023
+2 TIME 21:41:39
+1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @B00001@ SUBM
+0 @I00001@ INDI
+1 NAME Gérard /DUPONT/
+2 GIVN Gérard
+2 SURN DUPONT
+1 SEX M
+1 SOUR @S00001@
+0 @S00001@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.html
+1 TEXT texte
+0 @I00002@ INDI
+1 NAME Pierre /DUPONT/
+2 GIVN Pierre
+2 SURN DUPONT
+1 SEX M
+1 SOUR @S00002@
+0 @S00002@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=pierre.n=dupont.html
+1 TEXT texte
+0 @I00003@ INDI
+1 NAME Marie Paule /DURAND/
+2 GIVN Marie Paule
+2 SURN DURAND
+1 SEX F
+1 SOUR @S00003@
+0 @S00003@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=marie+paule.n=durand.html
+1 TEXT texte
+0 @I00004@ INDI
+1 NAME Jeanne /INN/
+2 GIVN Jeanne
+2 SURN INN
+1 SEX F
+1 SOUR @S00004@
+0 @S00004@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jeanne.n=inn.html
+1 TEXT texte
+0 @I00005@ INDI
+1 NAME Jean /DATES/
+2 GIVN Jean
+2 SURN DATES
+1 SEX M
+1 SOUR @S00005@
+0 @S00005@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jean.n=dates.html
+1 TEXT texte
+0 @F00001@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 CHIL @I00001@
+0 @F00002@ FAM
+1 HUSB @I00005@
+1 WIFE @I00004@
+1 CHIL @I00002@

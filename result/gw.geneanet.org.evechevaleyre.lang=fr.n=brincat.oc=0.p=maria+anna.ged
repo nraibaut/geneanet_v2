@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 08/08/2023 à 02:51 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 09/08/2023 à 21:43 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -9,8 +9,8 @@
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 08 AUG 2023
-2 TIME 02:51:11
+1 DATE 09 AUG 2023
+2 TIME 21:43:20
 1 FILE gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
 1 GEDC
 2 VERS 5.5.1
@@ -24,7 +24,7 @@
 1 SEX F
 1 SOUR @S00001@
 0 @S00001@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html
 1 TEXT texte
 0 @I00002@ INDI
 1 NAME Giovanna rosa /BARTOLO/
@@ -33,7 +33,7 @@
 1 SEX F
 1 SOUR @S00002@
 0 @S00002@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html
 1 TEXT texte
 0 @I00003@ INDI
 1 NAME rafaele /BRINCAT/
@@ -42,7 +42,7 @@
 1 SEX M
 1 SOUR @S00003@
 0 @S00003@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html
 1 TEXT texte
 0 @I00004@ INDI
 1 NAME Maria /CAMILLERI/
@@ -51,34 +51,34 @@
 1 SEX F
 1 SOUR @S00004@
 0 @S00004@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html
 1 TEXT texte
 0 @I00005@ INDI
-1 NAME Giuseppe /BARTOLO/
-2 GIVN Giuseppe
-2 SURN BARTOLO
-1 SEX M
-1 SOUR @S00005@
-0 @S00005@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7
-1 TEXT texte
-0 @I00006@ INDI
 1 NAME Margarita /ATTARD/
 2 GIVN Margarita
 2 SURN ATTARD
 1 SEX F
-1 SOUR @S00006@
-0 @S00006@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3
+1 SOUR @S00005@
+0 @S00005@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html
 1 TEXT texte
-0 @I00007@ INDI
+0 @I00006@ INDI
 1 NAME Rafaele /BRINCAT/
 2 GIVN Rafaele
 2 SURN BRINCAT
 1 SEX M
+1 SOUR @S00006@
+0 @S00006@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html
+1 TEXT texte
+0 @I00007@ INDI
+1 NAME Giuseppe /BARTOLO/
+2 GIVN Giuseppe
+2 SURN BARTOLO
+1 SEX M
 1 SOUR @S00007@
 0 @S00007@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html
 1 TEXT texte
 0 @I00008@ INDI
 1 NAME Teodora /CIANTAR?/
@@ -87,7 +87,7 @@
 1 SEX F
 1 SOUR @S00008@
 0 @S00008@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html
 1 TEXT texte
 0 @I00009@ INDI
 1 NAME Salvatore /ATTARD/
@@ -96,7 +96,7 @@
 1 SEX M
 1 SOUR @S00009@
 0 @S00009@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html
 1 TEXT texte
 0 @I00010@ INDI
 1 NAME Domenica /CHETCUTI/
@@ -105,7 +105,7 @@
 1 SEX F
 1 SOUR @S00010@
 0 @S00010@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html
 1 TEXT texte
 0 @I00011@ INDI
 1 NAME Francesco /de BRINCAT/
@@ -114,52 +114,52 @@
 1 SEX M
 1 SOUR @S00011@
 0 @S00011@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html
 1 TEXT texte
 0 @I00012@ INDI
-1 NAME Geronima /MIFSUD/
-2 GIVN Geronima
-2 SURN MIFSUD
-1 SEX F
-1 SOUR @S00012@
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8
-1 TEXT texte
-0 @I00013@ INDI
-1 NAME Francesco /CIANTAR/
-2 GIVN Francesco
-2 SURN CIANTAR
-1 SEX M
-1 SOUR @S00013@
-0 @S00013@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar
-1 TEXT texte
-0 @I00014@ INDI
 1 NAME Clara /BARTOLO?/
 2 GIVN Clara
 2 SURN BARTOLO?
 1 SEX F
-1 SOUR @S00014@
-0 @S00014@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2
+1 SOUR @S00012@
+0 @S00012@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html
 1 TEXT texte
-0 @I00015@ INDI
+0 @I00013@ INDI
 1 NAME Domenico /ATTARD/
 2 GIVN Domenico
 2 SURN ATTARD
 1 SEX M
+1 SOUR @S00013@
+0 @S00013@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html
+1 TEXT texte
+0 @I00014@ INDI
+1 NAME Geronima /MIFSUD/
+2 GIVN Geronima
+2 SURN MIFSUD
+1 SEX F
+1 SOUR @S00014@
+0 @S00014@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html
+1 TEXT texte
+0 @I00015@ INDI
+1 NAME Francesco /CIANTAR/
+2 GIVN Francesco
+2 SURN CIANTAR
+1 SEX M
 1 SOUR @S00015@
 0 @S00015@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html
 1 TEXT texte
 0 @I00016@ INDI
-1 NAME Maddalena /MAGRO?/
-2 GIVN Maddalena
-2 SURN MAGRO?
+1 NAME Teresa /MUSCAT/
+2 GIVN Teresa
+2 SURN MUSCAT
 1 SEX F
 1 SOUR @S00016@
 0 @S00016@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html
 1 TEXT texte
 0 @I00017@ INDI
 1 NAME Gregorio /CHETCUTI/
@@ -168,43 +168,43 @@
 1 SEX M
 1 SOUR @S00017@
 0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html
 1 TEXT texte
 0 @I00018@ INDI
-1 NAME Teresa /MUSCAT/
-2 GIVN Teresa
-2 SURN MUSCAT
-1 SEX F
-1 SOUR @S00018@
-0 @S00018@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6
-1 TEXT texte
-0 @I00019@ INDI
 1 NAME Giacchi /de BRINCAT/
 2 GIVN Giacchi
 2 SURN de BRINCAT
 1 SEX M
+1 SOUR @S00018@
+0 @S00018@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html
+1 TEXT texte
+0 @I00019@ INDI
+1 NAME Maddalena /MAGRO?/
+2 GIVN Maddalena
+2 SURN MAGRO?
+1 SEX F
 1 SOUR @S00019@
 0 @S00019@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html
 1 TEXT texte
 0 @I00020@ INDI
-1 NAME ? /?/
-2 GIVN ?
-2 SURN ?
+1 NAME Lucrezia /NN/
+2 GIVN Lucrezia
+2 SURN NN
 1 SEX F
 1 SOUR @S00020@
 0 @S00020@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html
 1 TEXT texte
 0 @I00021@ INDI
-1 NAME Valerio Valente /CIANTAR/
-2 GIVN Valerio Valente
-2 SURN CIANTAR
+1 NAME Salvatore /ATTARD/
+2 GIVN Salvatore
+2 SURN ATTARD
 1 SEX M
 1 SOUR @S00021@
 0 @S00021@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html
 1 TEXT texte
 0 @I00022@ INDI
 1 NAME Lucrezia /SALIBA/
@@ -213,7 +213,7 @@
 1 SEX F
 1 SOUR @S00022@
 0 @S00022@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html
 1 TEXT texte
 0 @I00023@ INDI
 1 NAME Lorenzo /BARTOLO/
@@ -222,25 +222,25 @@
 1 SEX M
 1 SOUR @S00023@
 0 @S00023@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html
 1 TEXT texte
 0 @I00024@ INDI
-1 NAME Lucrezia /NN/
-2 GIVN Lucrezia
-2 SURN NN
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
 1 SEX F
 1 SOUR @S00024@
 0 @S00024@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html
 1 TEXT texte
 0 @I00025@ INDI
-1 NAME Salvatore /ATTARD/
-2 GIVN Salvatore
-2 SURN ATTARD
+1 NAME Valerio Valente /CIANTAR/
+2 GIVN Valerio Valente
+2 SURN CIANTAR
 1 SEX M
 1 SOUR @S00025@
 0 @S00025@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html
 1 TEXT texte
 0 @I00026@ INDI
 1 NAME Giacobina /NN/
@@ -249,7 +249,7 @@
 1 SEX F
 1 SOUR @S00026@
 0 @S00026@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html
 1 TEXT texte
 0 @I00027@ INDI
 1 NAME Marino /MAGRO/
@@ -258,43 +258,43 @@
 1 SEX M
 1 SOUR @S00027@
 0 @S00027@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html
 1 TEXT texte
 0 @I00028@ INDI
-1 NAME Angelica /NN/
-2 GIVN Angelica
-2 SURN NN
-1 SEX F
-1 SOUR @S00028@
-0 @S00028@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
-1 TEXT texte
-0 @I00029@ INDI
-1 NAME Gio Maria /MUSCAT/
-2 GIVN Gio Maria
-2 SURN MUSCAT
-1 SEX M
-1 SOUR @S00029@
-0 @S00029@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7
-1 TEXT texte
-0 @I00030@ INDI
 1 NAME Clara /CHIRCOP/
 2 GIVN Clara
 2 SURN CHIRCOP
 1 SEX F
-1 SOUR @S00030@
-0 @S00030@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop
+1 SOUR @S00028@
+0 @S00028@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html
 1 TEXT texte
-0 @I00031@ INDI
+0 @I00029@ INDI
 1 NAME Giuseppe /BRINCATO/
 2 GIVN Giuseppe
 2 SURN BRINCATO
 1 SEX M
+1 SOUR @S00029@
+0 @S00029@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html
+1 TEXT texte
+0 @I00030@ INDI
+1 NAME Angelica /NN/
+2 GIVN Angelica
+2 SURN NN
+1 SEX F
+1 SOUR @S00030@
+0 @S00030@ SOUR
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html
+1 TEXT texte
+0 @I00031@ INDI
+1 NAME Gio Maria /MUSCAT/
+2 GIVN Gio Maria
+2 SURN MUSCAT
+1 SEX M
 1 SOUR @S00031@
 0 @S00031@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html
 1 TEXT texte
 0 @I00032@ INDI
 1 NAME Marietta /NN/
@@ -303,7 +303,7 @@
 1 SEX F
 1 SOUR @S00032@
 0 @S00032@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html
 1 TEXT texte
 0 @I00033@ INDI
 1 NAME Nicola /CHIRCOP/
@@ -312,7 +312,7 @@
 1 SEX M
 1 SOUR @S00033@
 0 @S00033@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html
 1 TEXT texte
 0 @I00034@ INDI
 1 NAME Clemenza /NN/
@@ -321,7 +321,7 @@
 1 SEX F
 1 SOUR @S00034@
 0 @S00034@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html
 1 TEXT texte
 0 @I00035@ INDI
 1 NAME Bartolomeo /BRINCATO/
@@ -330,44 +330,44 @@
 1 SEX M
 1 SOUR @S00035@
 0 @S00035@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato
+1 TITL file:///D:/Users/Nicolas/Documents/Python/geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html
 1 TEXT texte
 0 @F00001@ FAM
 1 HUSB @I00003@
 1 WIFE @I00002@
 1 CHIL @I00001@
 0 @F00002@ FAM
-1 HUSB @I00005@
+1 HUSB @I00007@
 1 WIFE @I00004@
 1 CHIL @I00002@
 0 @F00003@ FAM
-1 HUSB @I00007@
-1 WIFE @I00006@
+1 HUSB @I00006@
+1 WIFE @I00005@
 1 CHIL @I00003@
 0 @F00004@ FAM
 1 HUSB @I00009@
 1 WIFE @I00008@
-1 CHIL @I00006@
+1 CHIL @I00005@
 0 @F00005@ FAM
 1 HUSB @I00011@
 1 WIFE @I00010@
-1 CHIL @I00007@
+1 CHIL @I00006@
 0 @F00006@ FAM
 1 HUSB @I00013@
 1 WIFE @I00012@
-1 CHIL @I00008@
+1 CHIL @I00009@
 0 @F00007@ FAM
 1 HUSB @I00015@
 1 WIFE @I00014@
-1 CHIL @I00009@
+1 CHIL @I00008@
 0 @F00008@ FAM
-1 HUSB @I00017@
+1 HUSB @I00018@
 1 WIFE @I00016@
-1 CHIL @I00010@
-0 @F00009@ FAM
-1 HUSB @I00019@
-1 WIFE @I00018@
 1 CHIL @I00011@
+0 @F00009@ FAM
+1 HUSB @I00017@
+1 WIFE @I00019@
+1 CHIL @I00010@
 0 @F00010@ FAM
 1 HUSB @I00021@
 1 WIFE @I00020@
@@ -375,7 +375,7 @@
 0 @F00011@ FAM
 1 HUSB @I00023@
 1 WIFE @I00022@
-1 CHIL @I00014@
+1 CHIL @I00012@
 0 @F00012@ FAM
 1 HUSB @I00025@
 1 WIFE @I00024@
@@ -383,7 +383,7 @@
 0 @F00013@ FAM
 1 HUSB @I00027@
 1 WIFE @I00026@
-1 CHIL @I00016@
+1 CHIL @I00019@
 0 @F00014@ FAM
 1 HUSB @I00029@
 1 WIFE @I00028@
@@ -391,12 +391,12 @@
 0 @F00015@ FAM
 1 HUSB @I00031@
 1 WIFE @I00030@
-1 CHIL @I00019@
+1 CHIL @I00016@
 0 @F00016@ FAM
 1 HUSB @I00033@
 1 WIFE @I00032@
-1 CHIL @I00030@
+1 CHIL @I00028@
 0 @F00017@ FAM
 1 HUSB @I00035@
 1 WIFE @I00034@
-1 CHIL @I00031@
+1 CHIL @I00029@
