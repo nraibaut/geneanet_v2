@@ -25,31 +25,31 @@ class DateConverter(object):
     # "le 20 floréal an VIII  (10 mai 1800)"
     # On va chercher à extraire la partie entre parenthèses
     repcal = re.compile("(.*) *\((.*)\).*")
-    months = [
-        ("janvier", "JAN"),
-        ("février", "FEB"),
-        ("mars", "MAR"),
-        ("avril", "APR"),
-        ("mai", "MAY"),
-        ("juin", "JUN"),
-        ("juillet", "JUL"),
-        ("août", "AUG"),
-        ("septembre", "SEP"),
-        ("octobre", "OCT"),
-        ("novembre", "NOV"),
-        ("décembre", "DEC"),
-    ]
+    months = {
+        "janvier"   : "JAN",
+        "février"   : "FEB",
+        "mars"      : "MAR",
+        "avril"     : "APR",
+        "mai"       : "MAY",
+        "juin"      : "JUN",
+        "juillet"   : "JUL",
+        "août"      : "AUG",
+        "septembre" : "SEP",
+        "octobre"   : "OCT",
+        "novembre"  : "NOV",
+        "décembre"  : "DEC",
+    }
     # Préfixes officiels : ABT(environ), BEF(avant), AFT(après).
     # Préfixes autres : EST (estimé) ou WFT EST (estimé par World Family Tree)
     # Dans Geneanet : "avant", "après", "vers", "en", "peut-être"
     # Dans Ancestris : "CAL" (calculée, en plus de EST), "INT" (interprêtée)
-    prefixes = [
-        ("vers", "ABT"),
-        ("avant", "BEF"),
-        ("après", "AFT"),
-        ("peut-être", "EST?"),
-        ("en", "???"),
-    ]
+    prefixes = {
+        "vers"      : "ABT",
+        "avant"     : "BEF",
+        "après"     : "AFT",
+        "peut-être" : "EST?",
+        "en"        : "???",
+    }
     def __init__(self, text):
         """Initialize Event
         :type text: str
@@ -78,11 +78,12 @@ class DateConverter(object):
         words = text2.split()
         first_word = words[0]
         #for qualificatif in ("avant", "après", "vers", "en", "peut-être"):
-        for prefix1,prefix2 in DateConverter.prefixes:
-            if first_word == prefix1 :
-                self._qualificatif = prefix1
-                text2 = re.sub("^" + prefix1, prefix2, text2, 1)
-                break
+        try :
+            prefix = DateConverter.prefixes[first_word] # ok, ou exception "KeyError"
+            self._qualificatif = first_word
+            text2 = re.sub("^" + first_word, prefix, text2, 1)
+        except:
+            pass
 
         isrepublicain = DateConverter.repcal.match(text2)
         if isrepublicain :
@@ -92,9 +93,10 @@ class DateConverter(object):
         text2 = re.sub("^1er ", "1 ", text2, 1)
         text2 = text2.lower() # robustesse sur les mois
 
-        for mois,mois2 in DateConverter.months:
-            #print(f"{mois} --> {mois2}")
-            text2 = text2.replace(mois, mois2, 1)
+        for mois1 in DateConverter.months.keys():
+            mois2 = DateConverter.months[mois1]
+            #print(f"{mois1} --> {mois2}")
+            text2 = text2.replace(mois1, mois2, 1)
 
         text2 = text2.upper() # norme = majuscules
 
@@ -104,9 +106,9 @@ class DateConverter(object):
         """Formats this element into a string
         :rtype: str
         """
-        result = "date='" + self._text2
+        result = "date='" + self._text2 + "'"
         if self._qualificatif:
-            result += "' (" + self._qualificatif + ")"
+            result += " (" + self._qualificatif + ")"
         if self._republican_date:
             result += " (" + self._republican_date + ")"
         return result
