@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: 340fc522cefe4728
+[scrapy.extensions.telnet] INFO: Telnet Password: b0a7a6648664f4b4
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -40,289 +40,184 @@
 []
 [scrapy.core.engine] INFO: Spider opened
 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
 [geneanet] DEBUG: start_requests
 [geneanet] DEBUG: URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 [geneanet] DEBUG: result_name = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 10/08/2023 à 01:33 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 11/08/2023 à 00:04 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.events.csv
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.url.txt) = True
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna (true='https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html')
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html> (referer: None)
 [geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Maria Anna' 'BRINCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html'
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html> (referer: None)
 [geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Giovanna rosa' 'BARTOLO' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
 [geneanet] DEBUG: 'Giovanna rosa' 'BARTOLO' parent de @I00001@
 [geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : info = 'Décédée avant 11 janvier 1818'
 [geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : --> event_name2='Décès' event_date2='avant 11 janvier 1818' event_place2='None' 
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html'
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Giovanna rosa' 'BARTOLO' : name='Décès', date='avant 11 janvier 1818', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
 [geneanet] DEBUG: 'rafaele' 'BRINCAT' parent de @I00001@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html'
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html> (referer: None)
-[gedcomw.element.element] INFO: manage_events : @I00002@ 'Giovanna rosa' 'BARTOLO' : name='Décès', date='avant 11 janvier 1818', place='None', notes='None', source='None'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00004@ : 'Rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
-[geneanet] DEBUG: 'Rafaele' 'BRINCAT' parent de @I00003@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html'
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00005@ : 'Maria' 'CAMILLERI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27)
-[geneanet] DEBUG: 'Maria' 'CAMILLERI' parent de @I00002@
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Giuseppe' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7)
-[geneanet] DEBUG: 'Giuseppe' 'BARTOLO' parent de @I00002@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00007@ : 'Margarita' 'ATTARD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Margarita' 'ATTARD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
 [geneanet] DEBUG: 'Margarita' 'ATTARD' parent de @I00003@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html'
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html> (referer: None)
-[geneanet] DEBUG: Generation 4, sosa 9, id @I00008@ : 'Domenica' 'CHETCUTI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
-[geneanet] DEBUG: 'Domenica' 'CHETCUTI' parent de @I00004@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html'
-[geneanet] DEBUG: Generation 4, sosa 8, id @I00009@ : 'Francesco' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
-[geneanet] DEBUG: 'Francesco' 'de BRINCAT' parent de @I00004@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html'
-[geneanet] DEBUG: Generation 4, sosa 11, id @I00010@ : 'Teodora' 'CIANTAR?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
-[geneanet] DEBUG: 'Teodora' 'CIANTAR?' parent de @I00007@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
+[geneanet] DEBUG: 'Rafaele' 'BRINCAT' parent de @I00003@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00006@ : 'Maria' 'CAMILLERI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27)
+[geneanet] DEBUG: 'Maria' 'CAMILLERI' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00007@ : 'Giuseppe' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7)
+[geneanet] DEBUG: 'Giuseppe' 'BARTOLO' parent de @I00002@
+[geneanet] DEBUG: Generation 4, sosa 11, id @I00008@ : 'Teodora' 'CIANTAR?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
+[geneanet] DEBUG: 'Teodora' 'CIANTAR?' parent de @I00004@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html'
+[geneanet] DEBUG: Generation 4, sosa 10, id @I00009@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00004@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html'
+[geneanet] DEBUG: Generation 4, sosa 9, id @I00010@ : 'Domenica' 'CHETCUTI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
+[geneanet] DEBUG: 'Domenica' 'CHETCUTI' parent de @I00005@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html> (referer: None)
-[geneanet] DEBUG: Generation 4, sosa 10, id @I00011@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
-[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00007@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html> (referer: None)
-[geneanet] DEBUG: Generation 5, sosa 23, id @I00012@ : 'Geronima' 'MIFSUD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8)
-[geneanet] DEBUG: 'Geronima' 'MIFSUD' parent de @I00010@
-[geneanet] DEBUG: Generation 5, sosa 22, id @I00013@ : 'Francesco' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
-[geneanet] DEBUG: 'Francesco' 'CIANTAR' parent de @I00010@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html'
-[geneanet] DEBUG: Generation 5, sosa 17, id @I00014@ : 'Teresa' 'MUSCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
-[geneanet] DEBUG: 'Teresa' 'MUSCAT' parent de @I00009@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html'
-[geneanet] DEBUG: Generation 5, sosa 16, id @I00015@ : 'Giacchi' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
-[geneanet] DEBUG: 'Giacchi' 'de BRINCAT' parent de @I00009@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html'
-[geneanet] DEBUG: Generation 5, sosa 19, id @I00016@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
-[geneanet] DEBUG: 'Maddalena' 'MAGRO?' parent de @I00008@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html'
-[geneanet] DEBUG: Generation 5, sosa 18, id @I00017@ : 'Gregorio' 'CHETCUTI' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti)
-[geneanet] DEBUG: 'Gregorio' 'CHETCUTI' parent de @I00008@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 8, id @I00011@ : 'Francesco' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
+[geneanet] DEBUG: 'Francesco' 'de BRINCAT' parent de @I00005@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 19, id @I00012@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
+[geneanet] DEBUG: 'Maddalena' 'MAGRO?' parent de @I00010@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html'
+[geneanet] DEBUG: Generation 5, sosa 18, id @I00013@ : 'Gregorio' 'CHETCUTI' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti)
+[geneanet] DEBUG: 'Gregorio' 'CHETCUTI' parent de @I00010@
+[geneanet] DEBUG: Generation 5, sosa 21, id @I00014@ : 'Clara' 'BARTOLO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Clara' 'BARTOLO?' parent de @I00009@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html'
+[geneanet] DEBUG: Generation 5, sosa 20, id @I00015@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
+[geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : info = 'Né - Zejtun - Malte, , , ,'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : --> event_name2='Naissance' event_date2='' event_place2='Zejtun - Malte, , , ,' 
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Domenico' 'ATTARD' : name='Naissance', date='', place='Zejtun - Malte, , , ,', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 22, id @I00016@ : 'Francesco' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
+[geneanet] DEBUG: 'Francesco' 'CIANTAR' parent de @I00008@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html'
+[geneanet] DEBUG: Generation 5, sosa 23, id @I00017@ : 'Geronima' 'MIFSUD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8)
+[geneanet] DEBUG: 'Geronima' 'MIFSUD' parent de @I00008@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 17, id @I00018@ : 'Teresa' 'MUSCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
+[geneanet] DEBUG: 'Teresa' 'MUSCAT' parent de @I00011@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html'
+[geneanet] DEBUG: Generation 5, sosa 16, id @I00019@ : 'Giacchi' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
+[geneanet] DEBUG: 'Giacchi' 'de BRINCAT' parent de @I00011@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html> (referer: None)
-[geneanet] DEBUG: Generation 5, sosa 21, id @I00018@ : 'Clara' 'BARTOLO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
-[geneanet] DEBUG: 'Clara' 'BARTOLO?' parent de @I00011@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html'
-[geneanet] DEBUG: Generation 5, sosa 20, id @I00019@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
-[geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00011@
-[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : info = 'Né - Zejtun - Malte, , , ,'
-[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : --> event_name2='Naissance' event_date2='- Zejtun' event_place2='Malte, , , ,' 
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html> (referer: None)
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html'
-[gedcomw.element.element] INFO: manage_events : @I00019@ 'Domenico' 'ATTARD' : name='Naissance', date='- Zejtun', place='Malte, , , ,', notes='None', source='None'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html> (referer: None)
-[geneanet] DEBUG: Generation 6, sosa 39, id @I00020@ : 'Giacobina' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2)
-[geneanet] DEBUG: 'Giacobina' 'NN' parent de @I00016@
-[geneanet] DEBUG: Generation 6, sosa 38, id @I00021@ : 'Marino' 'MAGRO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro)
-[geneanet] DEBUG: 'Marino' 'MAGRO' parent de @I00016@
-[geneanet] DEBUG: Generation 6, sosa 35, id @I00022@ : 'Angelica' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23)
-[geneanet] DEBUG: 'Angelica' 'NN' parent de @I00014@
-[geneanet] DEBUG: Generation 6, sosa 33, id @I00023@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
-[geneanet] DEBUG: 'Clara' 'CHIRCOP' parent de @I00015@
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html'
-[geneanet] DEBUG: Generation 6, sosa 32, id @I00024@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
-[geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00015@
+[geneanet] DEBUG: Generation 6, sosa 45, id @I00020@ : '?' '?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697)
+[geneanet] DEBUG: '?' '?' parent de @I00016@
+[geneanet] DEBUG: Generation 6, sosa 44, id @I00021@ : 'Valerio Valente' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar)
+[geneanet] DEBUG: 'Valerio Valente' 'CIANTAR' parent de @I00016@
+[geneanet] DEBUG: Generation 6, sosa 41, id @I00022@ : 'Lucrezia' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4)
+[geneanet] DEBUG: 'Lucrezia' 'NN' parent de @I00015@
+[geneanet] DEBUG: Generation 6, sosa 40, id @I00023@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00015@
+[geneanet] DEBUG: Generation 6, sosa 43, id @I00024@ : 'Lucrezia' 'SALIBA' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2)
+[geneanet] DEBUG: 'Lucrezia' 'SALIBA' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 42, id @I00025@ : 'Lorenzo' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Lorenzo' 'BARTOLO' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 38, id @I00026@ : 'Marino' 'MAGRO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro)
+[geneanet] DEBUG: 'Marino' 'MAGRO' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 39, id @I00027@ : 'Giacobina' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2)
+[geneanet] DEBUG: 'Giacobina' 'NN' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 33, id @I00028@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
+[geneanet] DEBUG: 'Clara' 'CHIRCOP' parent de @I00019@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html'
+[geneanet] DEBUG: Generation 6, sosa 35, id @I00029@ : 'Angelica' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23)
+[geneanet] DEBUG: 'Angelica' 'NN' parent de @I00018@
+[geneanet] DEBUG: Generation 6, sosa 32, id @I00030@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
+[geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00019@
 [geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : info = 'Né - Siggewi - Malte, , , ,'
-[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : --> event_name2='Naissance' event_date2='- Siggewi' event_place2='Malte, , , ,' 
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html'
-[geneanet] DEBUG: Test pour true_http_url = 'https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3' :)
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html) = True
-[geneanet] DEBUG: os.path.isfile(result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.url.txt) = True
-[geneanet] DEBUG: URL parent (forme 2) 2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html'
-[gedcomw.element.element] INFO: manage_events : @I00024@ 'Giuseppe' 'BRINCATO' : name='Naissance', date='- Siggewi', place='Malte, , , ,', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 45, id @I00025@ : '?' '?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697)
-[geneanet] DEBUG: '?' '?' parent de @I00013@
-[geneanet] DEBUG: Generation 6, sosa 34, id @I00026@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7)
-[geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : --> event_name2='Naissance' event_date2='' event_place2='Siggewi - Malte, , , ,' 
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html'
+[geneanet] DEBUG: Generation 6, sosa 34, id @I00031@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7)
+[geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00018@
 [geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : info = 'Né - Birkhirkara - Malte, , , ,'
-[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : --> event_name2='Naissance' event_date2='- Birkhirkara' event_place2='Malte, , , ,' 
-[gedcomw.element.element] INFO: manage_events : @I00026@ 'Gio Maria' 'MUSCAT' : name='Naissance', date='- Birkhirkara', place='Malte, , , ,', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 44, id @I00027@ : 'Valerio Valente' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar)
-[geneanet] DEBUG: 'Valerio Valente' 'CIANTAR' parent de @I00013@
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : --> event_name2='Naissance' event_date2='' event_place2='Birkhirkara - Malte, , , ,' 
+[gedcomw.element.element] INFO: manage_events : @I00031@ 'Gio Maria' 'MUSCAT' : name='Naissance', date='', place='Birkhirkara - Malte, , , ,', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html> (referer: None)
-[geneanet] DEBUG: Generation 6, sosa 40, id @I00028@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11)
-[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00019@
-[geneanet] DEBUG: Generation 6, sosa 43, id @I00029@ : 'Lucrezia' 'SALIBA' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2)
-[geneanet] DEBUG: 'Lucrezia' 'SALIBA' parent de @I00018@
-[geneanet] DEBUG: Generation 6, sosa 42, id @I00030@ : 'Lorenzo' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2)
-[geneanet] DEBUG: 'Lorenzo' 'BARTOLO' parent de @I00018@
-[geneanet] DEBUG: Generation 6, sosa 41, id @I00031@ : 'Lucrezia' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4)
-[geneanet] DEBUG: 'Lucrezia' 'NN' parent de @I00019@
-[geneanet] DEBUG: Generation 7, sosa 65, id @I00032@ : 'Clemenza' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3)
-[geneanet] DEBUG: 'Clemenza' 'NN' parent de @I00024@
-[geneanet] DEBUG: Generation 7, sosa 64, id @I00033@ : 'Bartolomeo' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato)
-[geneanet] DEBUG: 'Bartolomeo' 'BRINCATO' parent de @I00024@
-[geneanet] DEBUG: Generation 7, sosa 67, id @I00034@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18)
-[geneanet] DEBUG: 'Marietta' 'NN' parent de @I00023@
-[geneanet] DEBUG: Generation 7, sosa 66, id @I00035@ : 'Nicola' 'CHIRCOP' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2)
-[geneanet] DEBUG: 'Nicola' 'CHIRCOP' parent de @I00023@
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html'
+[gedcomw.element.element] INFO: manage_events : @I00030@ 'Giuseppe' 'BRINCATO' : name='Naissance', date='', place='Siggewi - Malte, , , ,', notes='None', source='None'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html> (referer: None)
+[geneanet] DEBUG: Generation 7, sosa 64, id @I00032@ : 'Bartolomeo' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato)
+[geneanet] DEBUG: 'Bartolomeo' 'BRINCATO' parent de @I00030@
+[geneanet] DEBUG: Generation 7, sosa 67, id @I00033@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18)
+[geneanet] DEBUG: 'Marietta' 'NN' parent de @I00028@
+[geneanet] DEBUG: Generation 7, sosa 66, id @I00034@ : 'Nicola' 'CHIRCOP' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2)
+[geneanet] DEBUG: 'Nicola' 'CHIRCOP' parent de @I00028@
 [geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : info = 'Mro'
+[geneanet] DEBUG: Generation 7, sosa 65, id @I00035@ : 'Clemenza' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3)
+[geneanet] DEBUG: 'Clemenza' 'NN' parent de @I00030@
 [scrapy.core.engine] INFO: Closing spider (finished)
 [geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00003@', mère='@I00002@'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', père='@I00004@', mère='@I00007@'
-[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', père='@I00006@', mère='@I00005@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', père='@I00005@', mère='@I00004@'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', père='@I00007@', mère='@I00006@'
 [geneanet] DEBUG: Famille '@F00004@' : enfant='@I00004@', père='@I00009@', mère='@I00008@'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00007@', père='@I00011@', mère='@I00010@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00005@', père='@I00011@', mère='@I00010@'
 [geneanet] DEBUG: Famille '@F00006@' : enfant='@I00010@', père='@I00013@', mère='@I00012@'
 [geneanet] DEBUG: Famille '@F00007@' : enfant='@I00009@', père='@I00015@', mère='@I00014@'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', père='@I00017@', mère='@I00016@'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', père='@I00016@', mère='@I00017@'
 [geneanet] DEBUG: Famille '@F00009@' : enfant='@I00011@', père='@I00019@', mère='@I00018@'
 [geneanet] DEBUG: Famille '@F00010@' : enfant='@I00016@', père='@I00021@', mère='@I00020@'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', père='@I00026@', mère='@I00022@'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00015@', père='@I00024@', mère='@I00023@'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00013@', père='@I00027@', mère='@I00025@'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00019@', père='@I00028@', mère='@I00031@'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00018@', père='@I00030@', mère='@I00029@'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00024@', père='@I00033@', mère='@I00032@'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00023@', père='@I00035@', mère='@I00034@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00015@', père='@I00023@', mère='@I00022@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00014@', père='@I00025@', mère='@I00024@'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00012@', père='@I00026@', mère='@I00027@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00019@', père='@I00030@', mère='@I00028@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00018@', père='@I00031@', mère='@I00029@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00030@', père='@I00032@', mère='@I00035@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00028@', père='@I00034@', mère='@I00033@'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 35
 [geneanet] INFO: - nb_families        = 17
@@ -342,10 +237,10 @@
  'downloader/response_bytes': 3064737,
  'downloader/response_count': 35,
  'downloader/response_status_count/200': 35,
- 'elapsed_time_seconds': 1.0395,
+ 'elapsed_time_seconds': 1.047083,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 9, 23, 34, 0, 682618),
- 'log_count/DEBUG': 279,
+ 'finish_time': datetime.datetime(2023, 8, 10, 22, 4, 50, 684278),
+ 'log_count/DEBUG': 174,
  'log_count/INFO': 27,
  'request_depth_max': 6,
  'response_received_count': 35,
@@ -353,5 +248,5 @@
  'scheduler/dequeued/memory': 35,
  'scheduler/enqueued': 35,
  'scheduler/enqueued/memory': 35,
- 'start_time': datetime.datetime(2023, 8, 9, 23, 33, 59, 643118)}
+ 'start_time': datetime.datetime(2023, 8, 10, 22, 4, 49, 637195)}
 [scrapy.core.engine] INFO: Spider closed (finished)

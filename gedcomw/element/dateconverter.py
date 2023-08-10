@@ -41,14 +41,13 @@ class DateConverter(object):
     }
     # Préfixes officiels : ABT(environ), BEF(avant), AFT(après).
     # Préfixes autres : EST (estimé) ou WFT EST (estimé par World Family Tree)
-    # Dans Geneanet : "avant", "après", "vers", "en", "peut-être"
+    # Dans Geneanet : "avant", "après", "vers", "peut-être" ("en" et "le" ignorés)
     # Dans Ancestris : "CAL" (calculée, en plus de EST), "INT" (interprêtée)
     prefixes = {
         "vers"      : "ABT",
         "avant"     : "BEF",
         "après"     : "AFT",
         "peut-être" : "EST?",
-        "en"        : "???",
     }
     def __init__(self, text):
         """Initialize Event

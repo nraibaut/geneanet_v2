@@ -86,7 +86,7 @@ class IndividualElement(Element):
 
     event_dict = {
         "Baptême" : "CHR", # Ancestris exporte les baptèmes avec "CHR" (et non pas "BAPT")
-        "Contrat de mariage" : "",
+        "Contrat de mariage" : "???", # @todo à voir
         "Diplôme" : "GRAD",
         "Domicile" : "RESI",
         "Décès" : "DEAT",
@@ -130,7 +130,7 @@ class IndividualElement(Element):
             self.logger.debug(f"set_event : maj clé existante name='{name}'")
             self.list_of_events[name].update( date=date, place=place, notes=notes, source=source)
 
-    def manage_events(self, root_element, csv_log=None): # NRa
+    def manage_events(self, root_element, csv_log=None, url=''): # NRa
         """ Gère les événements d'un individu.
         Cette méthode est appelée en fin de traitement d'un individu, après consolidation de tous les
         évènements (par appels successifs de set_event, pouvant potentiellement se recouvrir entre événements).
@@ -182,7 +182,7 @@ class IndividualElement(Element):
                 self.add_source(root_element, source, notes_on_source)
 
             if csv_log is not None:
-                csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
 
         return nb_errors
 

@@ -120,9 +120,9 @@ class GeneanetSpider(scrapy.Spider):
         cache_files = self.get_cache_files(true_http_url)
         cache_html_page = cache_files[0]
         cache_url_file = cache_files[1]
-        self.log(f"Test pour true_http_url = '{true_http_url}' :)")
-        self.log(f"os.path.isfile({cache_html_page}) = {os.path.isfile(cache_html_page)}")
-        self.log(f"os.path.isfile({cache_url_file}) = {os.path.isfile(cache_url_file)}")
+        #self.log(f"Test pour true_http_url = '{true_http_url}' :")
+        #self.log(f"os.path.isfile({cache_html_page}) = {os.path.isfile(cache_html_page)}")
+        #self.log(f"os.path.isfile({cache_url_file}) = {os.path.isfile(cache_url_file)}")
 
         if os.path.isfile(cache_html_page) and os.path.isfile(cache_url_file):
             #result = "file:" + cache_html_page # KO... visiblement, il FAUT un chemin absolu !!!!
@@ -155,13 +155,13 @@ class GeneanetSpider(scrapy.Spider):
         # Sorties CSV :
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
-        self.csv = open( csvfilename, "w")
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;{date}\n")
+        self.csv = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;profession;infos;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
-        self.csv_events = open( csvfilename, "w")
-        self.csv_events.write(f"id;prenom;nom;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;{date}\n")
+        self.csv_events = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;{date}\n")
 
         true_url = self.url
         url_to_scan = self.get_url_to_scan(true_url)
@@ -240,33 +240,56 @@ class GeneanetSpider(scrapy.Spider):
         person.set_name(prenom,nom)
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
-        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, 'texte') # @todo texte source générale
 
         nb_infos = 0
+        texte_infos = ""
+        profession = None
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
             nb_infos += 1
             line = info.get().replace("\n", " ")
             # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
             # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
             line = line.replace(u"\u00A0", " ")  # avant toute chose !
+            line = re.sub(" * ", " ", line) # supression espaces multiples
+            texte_infos = texte_infos + "- " + line + '\n'
 
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
-            line = re.sub(", à l'âge .*", "", line) # on coupe la fin, inutile
-            premier_mot = re.sub(" .*", "", line)
-            event_date_and_place = re.sub("^[^ ]* *", "", line)
-            event_date = re.sub(" * - *.*", "", event_date_and_place)
+            # on coupe la fin, inutile, de la forme ", à l'âge...", ", peut-être à l'âge...", ...
+            line = re.sub(",[^,]* l'âge .*", "", line)
+            words = line.split()
+            premier_mot = words[0]
+            event_date_and_place = re.sub("^[^ ]*", "", line) # on enlève le premier mot (mais on garde l'espace, au cas date vide (exemple : "Né - lieu")
+            event_date = re.sub(" - .*", "", event_date_and_place)
             event_date = re.sub("^le ", "", event_date)
+            event_date = re.sub("^en ", "", event_date)
+            event_date = re.sub("^ *", "", event_date)
             event_place = None
             if " - " in event_date_and_place:
-                event_place = re.sub(".* *- *", "", event_date_and_place)
-            if premier_mot in "Né" "Née":
-                event_name = "Naissance"
+                event_place = re.sub("^[^-]* - ", "", event_date_and_place) # attention : on peut avoir des "-" dans le lieu
+            event_dict = {
+                "Né": "Naissance",
+                "Née": "Naissance",
+                "Baptisé" : "Baptême",
+                "Baptisée" : "Baptême",
+                "Décédé": "Décès",
+                "Décédée": "Décès",
+                "Inhumé": "Inhumation",
+                "Inhumée": "Inhumation",
+            }
+            try:
+                event_name = event_dict[premier_mot]  # ok, ou exception "KeyError"
+                # C'est un événement connu :
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
                 person.set_event(name=event_name, date=event_date, place=event_place)
-            elif premier_mot in "Décédé" "Décédée":
-                event_name = "Décès"
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
-                person.set_event(name=event_name, date=event_date, place=event_place)
+            except:
+                # Ce n'est pas un événement connu : peut-être la profession ? (sur la dernière ligne)
+                if profession == None:
+                    profession = line
+                else:
+                    self.nb_errors += 1
+                    self.logger.error(f"Is '{profession}' an event ? Please check !")
+                    profession = line
+                pass
 
         nb_titres = 0
         for titre in response.xpath("//div[@id='person-title']/following-sibling::em[1]/a") :
@@ -274,7 +297,10 @@ class GeneanetSpider(scrapy.Spider):
             self.nb_titres_noblesse += 1
             titre_noblesse = titre.xpath("text()").get().strip()
             # @todo extraire commentaire
+            texte_infos = texte_infos + "- " + titre_noblesse + '\n'
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}'")
+
+        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos.strip()) # @todo texte source générale
 
         nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
@@ -353,7 +379,7 @@ class GeneanetSpider(scrapy.Spider):
 
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
-            self.log(f"URL parent (forme 1) {nb_parents} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+            self.log(f"URL parent {nb_parents} (forme 1) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
 
             yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
 
@@ -367,15 +393,18 @@ class GeneanetSpider(scrapy.Spider):
 
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
-                self.log(f"URL parent (forme 2) {nb_parents} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+                self.log(f"URL parent {nb_parents} (forme 2) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
 
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
 
-        person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events)
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};\n")
+        self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
+        if profession == None:
+            profession = ""
+        texte_infos = texte_infos.strip()
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};{profession};\"{texte_infos}\";\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)

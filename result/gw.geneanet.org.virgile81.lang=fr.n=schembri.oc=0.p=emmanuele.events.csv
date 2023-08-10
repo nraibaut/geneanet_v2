@@ -1,15 +1,14 @@
-id;prenom;nom;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;10/08/2023 à 01:34
-@I00001@;Emmanuele;SCHEMBRI;Décès;DEAT;7 avril 1877;7 APR 1877;Croix;"";"";"";
-@I00010@;Antonio;AZZOPARDI;Naissance;BIRT;- Porto Salvo (Malte);MALTE;;"";"";"";
-@I00010@;Antonio;AZZOPARDI;Décès;DEAT;avant 30 novembre 1784;BEF 30 NOV 1784;;"";"";"";
-@I00011@;Carlo;LIBRERI;Décès;DEAT;avant 30 novembre 1784;BEF 30 NOV 1784;;"";"";"";
-@I00014@;Francesco;LIBRERI;Naissance;BIRT;- Porto Salvo (Malte);MALTE;;"";"";"";
-@I00014@;Francesco;LIBRERI;Décès;DEAT;avant 12 septembre 1756;BEF 12 SEP 1756;;"";"";"";
-@I00019@;Domenica;...;Décès;DEAT;avant 17 février 1715;BEF 17 FEB 1715;;"";"";"";
-@I00025@;Alessando;LOMBARDO;Naissance;BIRT;- Porto Salvo (Malte);MALTE;;"";"";"";
-@I00027@;Pietro;NAPOLITANO;Naissance;BIRT;- La Valette (Malte);MALTE;;"";"";"";
-@I00027@;Pietro;NAPOLITANO;Décès;DEAT;avant 25 avril 1700;BEF 25 APR 1700;;"";"";"";
-@I00029@;Francesco;CASCON;Décès;DEAT;avant 25 avril 1700;BEF 25 APR 1700;;"";"";"";
-@I00031@;Augustino;MUSCAT;Décès;DEAT;avant 22 novembre 1676;BEF 22 NOV 1676;;"";"";"";
-@I00036@;Alfonso;NAPOLITANO;Décès;DEAT;avant 18 novembre 1640;BEF 18 NOV 1640;;"";"";"";
-@I00039@;Salvatore;BUHAGIAR;Décès;DEAT;avant 18 novembre 1640;BEF 18 NOV 1640;;"";"";"";
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;11/08/2023 à 00:04
+@I00009@;Carlo;LIBRERI;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri;Décès;DEAT;avant 30 novembre 1784;BEF 30 NOV 1784;;"";"";"";
+@I00011@;Antonio;AZZOPARDI;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1;Naissance;BIRT;;;Porto Salvo (Malte);"";"";"";
+@I00011@;Antonio;AZZOPARDI;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1;Décès;DEAT;avant 30 novembre 1784;BEF 30 NOV 1784;;"";"";"";
+@I00013@;Francesco;LIBRERI;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri;Naissance;BIRT;;;Porto Salvo (Malte);"";"";"";
+@I00013@;Francesco;LIBRERI;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri;Décès;DEAT;avant 12 septembre 1756;BEF 12 SEP 1756;;"";"";"";
+@I00021@;Alessando;LOMBARDO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo;Naissance;BIRT;;;Porto Salvo (Malte);"";"";"";
+@I00022@;Domenica;...;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7;Décès;DEAT;avant 17 février 1715;BEF 17 FEB 1715;;"";"";"";
+@I00027@;Augustino;MUSCAT;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat;Décès;DEAT;avant 22 novembre 1676;BEF 22 NOV 1676;;"";"";"";
+@I00034@;Pietro;NAPOLITANO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano;Naissance;BIRT;;;La Valette (Malte);"";"";"";
+@I00034@;Pietro;NAPOLITANO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano;Décès;DEAT;avant 25 avril 1700;BEF 25 APR 1700;;"";"";"";
+@I00035@;Francesco;CASCON;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon;Décès;DEAT;avant 25 avril 1700;BEF 25 APR 1700;;"";"";"";
+@I00037@;Alfonso;NAPOLITANO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano;Décès;DEAT;avant 18 novembre 1640;BEF 18 NOV 1640;;"";"";"";
+@I00039@;Salvatore;BUHAGIAR;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar;Décès;DEAT;avant 18 novembre 1640;BEF 18 NOV 1640;;"";"";"";
