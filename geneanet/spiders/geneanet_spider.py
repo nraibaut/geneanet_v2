@@ -236,6 +236,7 @@ class GeneanetSpider(scrapy.Spider):
             else:
                 self.parents_of[child_pointer].append(pointer)
 
+        source_personne = None
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
         person.set_name(prenom,nom)
         person.set_sex(sexe)
@@ -300,8 +301,6 @@ class GeneanetSpider(scrapy.Spider):
             texte_infos = texte_infos + "- " + titre_noblesse + '\n'
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}'")
 
-        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos.strip()) # @todo texte source générale
-
         nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
             nb_evenements += 1
@@ -365,8 +364,13 @@ class GeneanetSpider(scrapy.Spider):
                 event_sources = event_sources.replace("\\- ", "\n", 1)
             event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
-            person.set_event(name=event_name, source=event_sources)
+            if event_name == "Personne" :
+                # Cette source concerne la personne elle-même, et non pas un événement :
+                source_personne = event_sources
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+            else:
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
+                person.set_event(name=event_name, source=event_sources)
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -403,7 +407,11 @@ class GeneanetSpider(scrapy.Spider):
         self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
         if profession == None:
             profession = ""
+        if source_personne is not None:
+            texte_infos = texte_infos + "Sources : " + source_personne
         texte_infos = texte_infos.strip()
+        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
+
         self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};{profession};\"{texte_infos}\";\n")
 
     def manage_families(self):

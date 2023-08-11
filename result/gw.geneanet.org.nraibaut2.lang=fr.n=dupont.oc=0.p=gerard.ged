@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 11/08/2023 à 00:04 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 11/08/2023 à 20:43 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 11 AUG 2023
-2 TIME 00:04:45
+2 TIME 20:43:02
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -22,44 +22,86 @@
 2 GIVN Gérard
 2 SURN DUPONT
 1 SEX M
-1 SOUR @S00001@
 1 BIRT
 2 DATE 22 MAR 1882
 2 PLAC Paris, France
 1 NOTE @N00001@
-1 SOUR @S00002@
+1 SOUR @S00001@
 1 CHR
 2 DATE 18 MAY 1882
 2 PLAC Paris, France
 1 NOTE @N00002@
-1 SOUR @S00003@
+1 SOUR @S00002@
 1 DEAT
 2 DATE 10 APR 1892
 2 PLAC Nice, FRANCE
 1 NOTE @N00003@
-1 SOUR @S00004@
+1 SOUR @S00003@
 1 BURI
 2 DATE 11 APR 1892
 2 PLAC Nice, FRANCE
 1 NOTE @N00004@
-1 SOUR @S00005@
+1 SOUR @S00004@
 1 OCCU
 2 DATE 18 MAY 1882
 1 NOTE @N00005@
-1 SOUR @S00006@
+1 SOUR @S00005@
 1 RESI
 2 DATE 18 MAY 1882
 2 PLAC Lyon, France
 1 NOTE @N00006@
-1 SOUR @S00007@
+1 SOUR @S00006@
 1 GRAD
 2 DATE 1 JUL 1891
 2 PLAC Nice, FRANCE
 1 NOTE @N00007@
+1 SOUR @S00007@
 1 SOUR @S00008@
-1 Personne???
-1 SOUR @S00009@
+0 @N00001@ NOTE Note1 sur la naissance  
+1 CONT Note2 sur la naissance
 0 @S00001@ SOUR
+1 TITL <https://www.source_naissance.fr/>
+1 TEXT Texte1 source naissance
+2 CONT Texte2 source naissance
+0 @N00002@ NOTE Note1 sur le baptême  
+1 CONT Note2 sur le baptême
+0 @S00002@ SOUR
+1 TITL <https://www.source_bapteme.fr/>
+1 TEXT Texte1 source baptême
+2 CONT Texte2 source baptême
+0 @N00003@ NOTE Note1 sur le décès  
+1 CONT Note2 sur le décès
+0 @S00003@ SOUR
+1 TITL <https://www.source_deces.fr/>
+1 TEXT Texte1 source décès
+2 CONT Texte2 source décès
+0 @N00004@ NOTE Note1 sur l'inhumation  
+1 CONT Note2 sur l'inhumation
+0 @S00004@ SOUR
+1 TITL <https://www.source_inhumation.fr/>
+1 TEXT Texte1 source inhumation
+2 CONT Texte2 source inhumation
+0 @N00005@ NOTE Profession de Gérard  
+1 CONT Note1 sur la profession  
+1 CONT Note2 sur la profession
+0 @S00005@ SOUR
+1 TITL <https://www.source_profession.fr/>
+1 TEXT Texte1 source profession
+2 CONT Texte2 source profession
+0 @N00006@ NOTE Note1 sur la résidence  
+1 CONT Note2 sur la résidence
+0 @S00006@ SOUR
+1 TITL <https://www.source_residence.fr/>
+1 TEXT Texte1 source résidence
+2 CONT Texte2 source résidence
+0 @N00007@ NOTE Certificat d'études  
+1 CONT Note1 sur diplôme  
+1 CONT Note2 sur diplôme
+0 @S00007@ SOUR
+1 TITL <https://www.source_diplome.fr/>
+1 TEXT Texte1 source diplôme
+2 CONT Texte2 source diplôme
+0 @S00008@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 TEXT - Né le 22 mars 1882 - Paris, France
 2 CONT - Baptisé le 18 mai 1882 - Paris, France
@@ -67,69 +109,36 @@
 2 CONT - Inhumé le 11 avril 1892 - Nice, FRANCE
 2 CONT - Profession de Gérard
 2 CONT - Titre de Gérard
-0 @N00001@ NOTE Note1 sur la naissance  
-1 CONT Note2 sur la naissance
-0 @S00002@ SOUR
-1 TITL <https://www.source_naissance.fr/>
-1 TEXT Texte1 source naissance
-2 CONT Texte2 source naissance
-0 @N00002@ NOTE Note1 sur le baptême  
-1 CONT Note2 sur le baptême
-0 @S00003@ SOUR
-1 TITL <https://www.source_bapteme.fr/>
-1 TEXT Texte1 source baptême
-2 CONT Texte2 source baptême
-0 @N00003@ NOTE Note1 sur le décès  
-1 CONT Note2 sur le décès
-0 @S00004@ SOUR
-1 TITL <https://www.source_deces.fr/>
-1 TEXT Texte1 source décès
-2 CONT Texte2 source décès
-0 @N00004@ NOTE Note1 sur l'inhumation  
-1 CONT Note2 sur l'inhumation
-0 @S00005@ SOUR
-1 TITL <https://www.source_inhumation.fr/>
-1 TEXT Texte1 source inhumation
-2 CONT Texte2 source inhumation
-0 @N00005@ NOTE Profession de Gérard  
-1 CONT Note1 sur la profession  
-1 CONT Note2 sur la profession
-0 @S00006@ SOUR
-1 TITL <https://www.source_profession.fr/>
-1 TEXT Texte1 source profession
-2 CONT Texte2 source profession
-0 @N00006@ NOTE Note1 sur la résidence  
-1 CONT Note2 sur la résidence
-0 @S00007@ SOUR
-1 TITL <https://www.source_residence.fr/>
-1 TEXT Texte1 source résidence
-2 CONT Texte2 source résidence
-0 @N00007@ NOTE Certificat d'études  
-1 CONT Note1 sur diplôme  
-1 CONT Note2 sur diplôme
-0 @S00008@ SOUR
-1 TITL <https://www.source_diplome.fr/>
-1 TEXT Texte1 source diplôme
-2 CONT Texte2 source diplôme
-0 @S00009@ SOUR
-1 TITL <https://www.source_general.fr/>
-1 TEXT Texte1 source général
+2 CONT Sources : <https://www.source_general.fr/>
+2 CONT Texte1 source général
 2 CONT Texte2 source général
 0 @I00002@ INDI
 1 NAME Pierre /DUPONT/
 2 GIVN Pierre
 2 SURN DUPONT
 1 SEX M
-1 SOUR @S00010@
 1 BIRT
 2 DATE 1 SEP 1850
-1 SOUR @S00013@
+1 SOUR @S00009@
 1 DEAT
 2 DATE 1 APR 1895
-1 SOUR @S00014@
+1 SOUR @S00010@
 1 Union???
-1 SOUR @S00015@
+1 SOUR @S00011@
+1 SOUR @S00012@
+0 @S00009@ SOUR
+1 TITL <https://www.source_naissance.fr/>
+1 TEXT Texte1 source naissance
+2 CONT Texte2 source naissance
 0 @S00010@ SOUR
+1 TITL <https://www.source_deces.fr/>
+1 TEXT Texte1 source décès
+2 CONT Texte2 source décès
+0 @S00011@ SOUR
+1 TITL <https://www.source_mariage.fr/>
+1 TEXT Texte1 source mariage
+2 CONT Texte2 source mariage
+0 @S00012@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
 1 TEXT - Né le 1er septembre 1850
 2 CONT - Décédé le 1er avril 1895, à l'âge de 44 ans
@@ -138,35 +147,23 @@
 2 GIVN Marie Paule
 2 SURN DURAND
 1 SEX F
-1 SOUR @S00011@
 1 Union???
-1 SOUR @S00012@
-0 @S00011@ SOUR
+1 SOUR @S00013@
+1 SOUR @S00014@
+0 @S00013@ SOUR
+1 TITL <https://www.source_mariage.fr/>
+1 TEXT Texte1 source mariage
+2 CONT Texte2 source mariage
+0 @S00014@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
 1 TEXT
-0 @S00012@ SOUR
-1 TITL <https://www.source_mariage.fr/>
-1 TEXT Texte1 source mariage
-2 CONT Texte2 source mariage
-0 @S00013@ SOUR
-1 TITL <https://www.source_naissance.fr/>
-1 TEXT Texte1 source naissance
-2 CONT Texte2 source naissance
-0 @S00014@ SOUR
-1 TITL <https://www.source_deces.fr/>
-1 TEXT Texte1 source décès
-2 CONT Texte2 source décès
-0 @S00015@ SOUR
-1 TITL <https://www.source_mariage.fr/>
-1 TEXT Texte1 source mariage
-2 CONT Texte2 source mariage
 0 @I00004@ INDI
 1 NAME Jeanne /INN/
 2 GIVN Jeanne
 2 SURN INN
 1 SEX F
-1 SOUR @S00016@
-0 @S00016@ SOUR
+1 SOUR @S00015@
+0 @S00015@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
 1 TEXT
 0 @I00005@ INDI
@@ -174,7 +171,6 @@
 2 GIVN Jean
 2 SURN DATES
 1 SEX M
-1 SOUR @S00017@
 1 BIRT
 2 DATE ABT JUL 1802
 1 NOTE @N00008@
@@ -187,15 +183,16 @@
 1 RETI
 2 DATE ABT 1872
 1 NOTE @N00011@
-0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
-1 TEXT - Né vers juillet 1802
-2 CONT - Baptisé peut-être le 23 février 1803
-2 CONT - Décédé vers 1er juin 1885, à l'âge d'environ 82 ans
+1 SOUR @S00016@
 0 @N00008@ NOTE Date environ
 0 @N00009@ NOTE Date estimée
 0 @N00010@ NOTE Date calculée
 0 @N00011@ NOTE Date interprêtée
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
+1 TEXT - Né vers juillet 1802
+2 CONT - Baptisé peut-être le 23 février 1803
+2 CONT - Décédé vers 1er juin 1885, à l'âge d'environ 82 ans
 0 @F00001@ FAM
 1 HUSB @I00002@
 1 WIFE @I00003@
