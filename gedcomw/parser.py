@@ -37,6 +37,7 @@ import gedcomw.tags
 import logging # NRa
 from gedcomw.element.individual import IndividualElement # NRa
 from datetime import datetime # NRa
+from gedcomw.element.dateconverter import DateConverter # NRa
 
 FAMILY_MEMBERS_TYPE_ALL = "ALL"
 FAMILY_MEMBERS_TYPE_CHILDREN = gedcomw.tags.GEDCOM_TAG_CHILD
@@ -651,7 +652,7 @@ class Parser(object):
         element_head.add_child_element(element_char)
         self.get_root_element().add_child_element(element_submitter)
 
-    def add_family(self, pointer_family, pointer_child, pointer_husband, pointer_wife): # NRa
+    def add_family(self, pointer_family, pointer_child, pointer_husband, pointer_wife, mariage_date, mariage_place, mariage_source): # NRa
         """ Ajout famille
         """
         # Family de la forme :
@@ -674,6 +675,30 @@ class Parser(object):
         if pointer_wife != None :
             element_wife = Element(1, '', gedcomw.tags.GEDCOM_TAG_WIFE, pointer_wife, '\n', multi_line=False)
             element_fam.add_child_element(element_wife)
+        if mariage_date != None or mariage_place != None :
+            element_marriage = Element(1, '', gedcomw.tags.GEDCOM_TAG_MARRIAGE, '', '\n', multi_line=False)
+            element_fam.add_child_element(element_marriage)
+            if mariage_date != None :
+                conv = DateConverter(mariage_date)
+                gedcom_date = conv.to_gedcom_string()
+                element_marriage_date = Element(2, '', gedcomw.tags.GEDCOM_TAG_DATE, gedcom_date, '\n', multi_line=False)
+                element_marriage.add_child_element(element_marriage_date)
+            if mariage_place != None :
+                element_marriage_place = Element(2, '', gedcomw.tags.GEDCOM_TAG_PLACE, mariage_place, '\n', multi_line=False)
+                element_marriage.add_child_element(element_marriage_place)
+            if mariage_source != None:
+                # Presque idem person.add_source :
+                source_pointer = self.get_root_element().get_next_source_pointer()
+                element_source_ref = Element(2, '', gedcomw.tags.GEDCOM_TAG_SOURCE, source_pointer, '\n', multi_line=False)
+                element_marriage.add_child_element(element_source_ref)
+
+                element_source = Element(0, source_pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, '', '\n', multi_line=False)
+                element_title = Element(1, '', gedcomw.tags.GEDCOM_TAG_TITLE, "", '\n', multi_line=False)
+                element_source.add_child_element(element_title)
+                element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, mariage_source, '\n', multi_line=True)  # @todo : vérifier le multiline sur les sources
+                element_source.add_child_element(element_text)
+                self.get_root_element().add_child_element(element_source)
+
         element_child = Element(1, '', gedcomw.tags.GEDCOM_TAG_CHILD, pointer_child, '\n', multi_line=False)
         element_fam.add_child_element(element_child)
         self.get_root_element().add_child_element(element_fam)

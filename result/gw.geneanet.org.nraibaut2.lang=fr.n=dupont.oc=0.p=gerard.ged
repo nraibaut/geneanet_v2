@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 11/08/2023 à 20:43 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 19:54 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -9,8 +9,8 @@
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 11 AUG 2023
-2 TIME 20:43:02
+1 DATE 15 AUG 2023
+2 TIME 19:54:45
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -119,51 +119,39 @@
 1 SEX M
 1 BIRT
 2 DATE 1 SEP 1850
-1 SOUR @S00009@
+1 SOUR @S00010@
 1 DEAT
 2 DATE 1 APR 1895
-1 SOUR @S00010@
-1 Union???
 1 SOUR @S00011@
 1 SOUR @S00012@
-0 @S00009@ SOUR
-1 TITL <https://www.source_naissance.fr/>
-1 TEXT Texte1 source naissance
-2 CONT Texte2 source naissance
-0 @S00010@ SOUR
-1 TITL <https://www.source_deces.fr/>
-1 TEXT Texte1 source décès
-2 CONT Texte2 source décès
-0 @S00011@ SOUR
-1 TITL <https://www.source_mariage.fr/>
-1 TEXT Texte1 source mariage
-2 CONT Texte2 source mariage
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
-1 TEXT - Né le 1er septembre 1850
-2 CONT - Décédé le 1er avril 1895, à l'âge de 44 ans
 0 @I00003@ INDI
 1 NAME Marie Paule /DURAND/
 2 GIVN Marie Paule
 2 SURN DURAND
 1 SEX F
-1 Union???
-1 SOUR @S00013@
-1 SOUR @S00014@
-0 @S00013@ SOUR
-1 TITL <https://www.source_mariage.fr/>
-1 TEXT Texte1 source mariage
-2 CONT Texte2 source mariage
-0 @S00014@ SOUR
+1 SOUR @S00009@
+0 @S00009@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
 1 TEXT
+0 @S00010@ SOUR
+1 TITL <https://www.source_naissance.fr/>
+1 TEXT Texte1 source naissance
+2 CONT Texte2 source naissance
+0 @S00011@ SOUR
+1 TITL <https://www.source_deces.fr/>
+1 TEXT Texte1 source décès
+2 CONT Texte2 source décès
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
+1 TEXT - Né le 1er septembre 1850
+2 CONT - Décédé le 1er avril 1895, à l'âge de 44 ans
 0 @I00004@ INDI
 1 NAME Jeanne /INN/
 2 GIVN Jeanne
 2 SURN INN
 1 SEX F
-1 SOUR @S00015@
-0 @S00015@ SOUR
+1 SOUR @S00013@
+0 @S00013@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
 1 TEXT
 0 @I00005@ INDI
@@ -183,12 +171,12 @@
 1 RETI
 2 DATE ABT 1872
 1 NOTE @N00011@
-1 SOUR @S00016@
+1 SOUR @S00014@
 0 @N00008@ NOTE Date environ
 0 @N00009@ NOTE Date estimée
 0 @N00010@ NOTE Date calculée
 0 @N00011@ NOTE Date interprêtée
-0 @S00016@ SOUR
+0 @S00014@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
 1 TEXT - Né vers juillet 1802
 2 CONT - Baptisé peut-être le 23 février 1803

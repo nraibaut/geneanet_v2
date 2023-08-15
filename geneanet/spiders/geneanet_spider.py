@@ -36,10 +36,15 @@ class GeneanetSpider(scrapy.Spider):
     nb_saved_pages = 0
     nb_cached_pages = 0
     list_tuples_child_of = []
-    parents_of = {} # dictionnaire des parents de chaque individu
-    sex_of = {} # dictionnaire des sexes des parents de chaque individu
+    parents_of = {} # dictionnaire des parents de chaque individu (index = <pointer>)
+    sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <pointer>)
+    mariages_dates = {} # dictionnaire des dates de mariaqes (index = "<true_url_pere>;<true_url_mere>")
+    mariages_places = {} # dictionnaire des lieux de mariages (index = "<true_url_pere>;<true_url_mere>")
+    mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_pere_ou_mere>")
+    true_url_of = {} # dictionnaire des url (index = <pointer>)
     is_http_url = re.compile("^http[s]*:.*")
     is_file_url = re.compile("^file:.*")
+    ligne_mariage = re.compile(".*Mari.*avec.*")
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -156,7 +161,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;nb_titres;profession;infos;{date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;nb_titres;profession;infos;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
@@ -226,6 +231,7 @@ class GeneanetSpider(scrapy.Spider):
         #    pause = 0
         #    time.sleep(pause/1000)
         self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
+        self.true_url_of[pointer] = true_http_url # pour retrouver les infos sur les mariages
 
         if child_pointer != '' :
             self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
@@ -251,7 +257,7 @@ class GeneanetSpider(scrapy.Spider):
             # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
             # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
             line = line.replace(u"\u00A0", " ")  # avant toute chose !
-            line = re.sub(" * ", " ", line) # supression espaces multiples
+            line = re.sub(" * ", " ", line) # suppression espaces multiples
             texte_infos = texte_infos + "- " + line + '\n'
 
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
@@ -368,6 +374,12 @@ class GeneanetSpider(scrapy.Spider):
                 # Cette source concerne la personne elle-même, et non pas un événement :
                 source_personne = event_sources
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+            elif event_name == "Union" :
+                # Cette source concerne concerne le mariage de la personne (autre événement de type mariage) :
+                # --> on mémorise pour le restaurer lors de la génération des familles :
+                source_mariage = event_sources
+                self.mariages_sources[true_http_url] = source_mariage
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
             else:
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
                 person.set_event(name=event_name, source=event_sources)
@@ -375,6 +387,9 @@ class GeneanetSpider(scrapy.Spider):
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
         presence_parents=""
+        mariage_date = None
+        mariage_place = None
+        parents_url= {}
         for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
             nb_parents += 1
             url_parent = parent.xpath("a/@href").get()
@@ -384,10 +399,11 @@ class GeneanetSpider(scrapy.Spider):
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
             self.log(f"URL parent {nb_parents} (forme 1) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+            parents_url[nb_parents]=true_url_parent
 
             yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
 
-        # Parents forme 2 ("<!-- Parents simple -->")
+        # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->"
         if nb_parents == 0 :
             for parent in response.xpath("//h2[span='Parents']/following-sibling::ul[1]/li"):
                 nb_parents += 1
@@ -398,9 +414,41 @@ class GeneanetSpider(scrapy.Spider):
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
                 self.log(f"URL parent {nb_parents} (forme 2) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+                parents_url[nb_parents] = true_url_parent
+
+                # On essaye de voir s'il y a une ligne "Marié le ... avec" sur le premier parent :
+                if nb_parents == 1:
+                    lignes = parent.extract()
+                    lignes = html2text.html2text(lignes).strip()
+                    lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+                    lignes = lignes.replace(f"\n", " ") # sinon le match ne matche pas !!!!
+                    info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
+                    if info_mariage:
+                        lignes = lignes.replace(f"_", "")  # caractère de formatage introduit par html2text
+                        #self.log( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
+                        lignes = re.sub(".*Mariée* *", "", lignes)  # suppression avant "Marié"
+                        lignes = re.sub(", *avec$", "", lignes)  # suppression ", avec" final
+                        lignes = re.sub("avec$", "", lignes)  # suppression ", avec" final
+
+                        if not lignes == "": # Lignes autres que seulement "Marié avec"
+                            # Ici : séparateur date/lieu = virgule (et non pas tiret comme dans les infos générales)
+                            mariage_date = re.sub(",.*$", "", lignes)
+                            mariage_date = re.sub("^le ", "", mariage_date)
+                            mariage_date = re.sub("^en ", "", mariage_date)
+                            mariage_date = re.sub("^ *", "", mariage_date)
+                            if "," in lignes:
+                                mariage_place = re.sub("^[^,]*, *", "", lignes)
+                            if mariage_date == "":
+                                mariage_date = None
+                            if mariage_place == "":
+                                mariage_place = None
+                            self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
-        if nb_parents > 2 :
+        if nb_parents == 2 :
+            self.mariages_dates[parents_url[1] + ";" + parents_url[2]] = mariage_date
+            self.mariages_places[parents_url[1] + ";" + parents_url[2]] = mariage_place
+        elif nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
 
@@ -412,7 +460,11 @@ class GeneanetSpider(scrapy.Spider):
         texte_infos = texte_infos.strip()
         person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
 
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{nb_titres};{profession};\"{texte_infos}\";\n")
+        if mariage_date == None:
+            mariage_date = ""
+        if mariage_place == None:
+            mariage_place = ""
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{nb_titres};{profession};\"{texte_infos}\";\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
@@ -435,7 +487,40 @@ class GeneanetSpider(scrapy.Spider):
             self.nb_families += 1
             pointer_family = "@F%05d@" % (self.nb_families)
             self.log(f"Famille '{pointer_family}' : enfant='{child}', père='{husband}', mère='{wife}'")
-            self.gedcomw_parser.add_family( pointer_family, child, husband, wife)
+            try:
+                true_url_pere = self.true_url_of[husband]
+            except:
+                pass
+            try:
+                true_url_mere = self.true_url_of[wife]
+            except:
+                pass
+            key = true_url_pere + ";" + true_url_mere
+            mariage_date = None
+            mariage_place = None
+            mariage_source = None
+            try:
+                mariage_date = self.mariages_dates[key]
+            except:
+                pass
+            try:
+                mariage_place = self.mariages_places[key]
+            except:
+                pass
+            try:
+                mariage_source = self.mariages_sources[true_url_pere] # normalement, on a la même chose avec true_url_mere
+                if self.mariages_sources[true_url_pere] != self.mariages_sources[true_url_mere]:
+                    self.nb_errors += 1
+                    self.logger.error(f"Famille '{pointer_family}' : ERREUR mariages_sources[père]('{mariage_source}') différent de mariages_sources[mère]('{self.mariages_sources[true_url_mere]}')")
+                else:
+                    self.log(f"Famille '{pointer_family}' : OK : mariages_sources[père]=mariages_sources[mère]='{mariage_source}'")
+
+                self.log(f"Famille '{pointer_family}' : mariages_sources[{true_http_url}]='{mariage_source}'")
+            except:
+                pass
+
+            self.log(f"Famille '{pointer_family}' : enfant='{child}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_place='{mariage_source}'")
+            self.gedcomw_parser.add_family( pointer_family, child, husband, wife, mariage_date, mariage_place, mariage_source)
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):

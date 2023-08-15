@@ -105,6 +105,14 @@ class Element(object):
         self.logger.debug(f"NRa init instance {__name__} : level={level} pointer={pointer} tag={tag} value={value} multi_line={multi_line}")
         #self.logger.debug(f"NRa aaaaaaaaaa")
 
+    def get_next_source_pointer(self): # NRa
+        """
+        :rtype: str
+        """
+        self.__nbSources += 1
+        source_pointer = "@S%05d@" % (self.__nbSources)
+        return source_pointer
+
     def get_level(self):
         """Returns the level of this element from within the GEDCOM file
         :rtype: int
@@ -327,8 +335,7 @@ class Element(object):
         """ Ajout d'une source
         :type rootelement: gedcomw.element.Element
         """
-        root_element.__nbSources += 1
-        source_pointer = "@S%05d@" % (root_element.__nbSources)
+        source_pointer = root_element.get_next_source_pointer()
 
         element_source_ref = Element(self.get_level()+1, '', gedcomw.tags.GEDCOM_TAG_SOURCE, source_pointer, '\n', multi_line=False)
         self.add_child_element(element_source_ref)
