@@ -182,7 +182,21 @@ class IndividualElement(Element):
                 self.add_source(root_element, source, notes_on_source)
 
             if csv_log is not None:
-                csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                try:
+                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                except:
+                    #nb_errors += 1
+                    self.logger.error( f"manage_events : ERROR write csv for {self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};'")
+
+                    # On retente d'écrire en réencodant le lieu (source du pb) :
+                    #place = "xxxxxxxx"
+                    #place = place.encode('utf-8-sig')
+                    #place = place.encode('utf-8')
+                    #place = place.encode(errors="replace")
+                    #place = place.encode(errors="xmlcharrefreplace")
+                    place = place.encode(encoding = "ascii",errors="replace")
+                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                    pass
 
         return nb_errors
 
