@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: e4b6a1afbe4785e0
+[scrapy.extensions.telnet] INFO: Telnet Password: e6801303c3d0ff16
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -45,7 +45,7 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele
 [geneanet] DEBUG: result_name = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 19:53 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 21:25 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.events.csv
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele (true='https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.html')
@@ -89,7 +89,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 455, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 468, in parse
     self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\Users\Nicolas\Documents\Python\geneanet\gedcomw\element\individual.py", line 185, in manage_events
@@ -220,7 +220,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 455, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 468, in parse
     self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\Users\Nicolas\Documents\Python\geneanet\gedcomw\element\individual.py", line 185, in manage_events
@@ -229,8 +229,6 @@ Traceback (most recent call last):
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 153-154: character maps to <undefined>
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=cascon.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+paolo.n=napolitano.html> (referer: None)
 [geneanet] DEBUG: Generation 5, sosa 26, id @I00017@ : 'Gio Antonio' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
 [geneanet] DEBUG: 'Gio Antonio' 'CARUANA' parent de @I00008@
 [geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : info = 'Né - Is-Siġġiewi (Malte)'
@@ -271,7 +269,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 455, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 468, in parse
     self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "D:\Users\Nicolas\Documents\Python\geneanet\gedcomw\element\individual.py", line 185, in manage_events
@@ -282,6 +280,8 @@ Traceback (most recent call last):
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158: character maps to <undefined>
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=7.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=caruana.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=cascon.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+paolo.n=napolitano.html> (referer: None)
 [geneanet] DEBUG: Generation 6, sosa 57, id @I00018@ : 'Angelica' 'MUSCAT' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
 [geneanet] DEBUG: 'Angelica' 'MUSCAT' parent de @I00013@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html'
@@ -305,73 +305,73 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158:
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257832.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=5.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html> (referer: None)
-[geneanet] DEBUG: Generation 6, sosa 55, id @I00022@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
-[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00016@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html'
-[geneanet] DEBUG: Generation 6, sosa 54, id @I00023@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
-[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00016@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html'
-[geneanet] DEBUG: Generation 6, sosa 53, id @I00024@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7)
+[geneanet] DEBUG: Generation 6, sosa 53, id @I00022@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7)
 [geneanet] DEBUG: 'Domenica' '...' parent de @I00017@
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : info = 'Décédée avant 17 février 1715'
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : --> event_name2='Décès' event_date2='avant 17 février 1715' event_place2='None' 
-[gedcomw.element.element] INFO: manage_events : @I00024@ 'Domenica' '...' : name='Décès', date='avant 17 février 1715', place='None', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 52, id @I00025@ : 'Giuseppe' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana)
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Domenica' '...' : name='Décès', date='avant 17 février 1715', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 52, id @I00023@ : 'Giuseppe' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana)
 [geneanet] DEBUG: 'Giuseppe' 'CARUANA' parent de @I00017@
+[geneanet] DEBUG: Generation 6, sosa 55, id @I00024@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
+[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00016@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html'
+[geneanet] DEBUG: Generation 6, sosa 54, id @I00025@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
+[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00016@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html> (referer: None)
 [geneanet] DEBUG: Generation 7, sosa 117, id @I00026@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6)
 [geneanet] DEBUG: 'Domenica' '...' parent de @I00021@
-[geneanet] DEBUG: Generation 7, sosa 119, id @I00027@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti)
-[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00020@
-[geneanet] DEBUG: Generation 7, sosa 116, id @I00028@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo)
+[geneanet] DEBUG: Generation 7, sosa 116, id @I00027@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo)
 [geneanet] DEBUG: 'Fabrizio' 'LOMBARDO' parent de @I00021@
-[geneanet] DEBUG: Generation 7, sosa 118, id @I00029@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832)
-[geneanet] DEBUG: '?' '?' parent de @I00020@
-[geneanet] DEBUG: Generation 7, sosa 115, id @I00030@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5)
+[geneanet] DEBUG: Generation 7, sosa 115, id @I00028@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5)
 [geneanet] DEBUG: 'Domenica' '...' parent de @I00018@
+[geneanet] DEBUG: Generation 7, sosa 119, id @I00029@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti)
+[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00020@
+[geneanet] DEBUG: Generation 7, sosa 118, id @I00030@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832)
+[geneanet] DEBUG: '?' '?' parent de @I00020@
 [geneanet] DEBUG: Generation 7, sosa 114, id @I00031@ : 'Augustino' 'MUSCAT' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat)
 [geneanet] DEBUG: 'Augustino' 'MUSCAT' parent de @I00018@
 [geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : info = 'Décédé avant 22 novembre 1676'
 [geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : --> event_name2='Décès' event_date2='avant 22 novembre 1676' event_place2='None' 
 [gedcomw.element.element] INFO: manage_events : @I00031@ 'Augustino' 'MUSCAT' : name='Décès', date='avant 22 novembre 1676', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 7, sosa 109, id @I00032@ : 'Caterina' 'BUHAGIAR' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
-[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00023@
+[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00025@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=salvatore.n=buhagiar.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=laurica.n=mamo.html'
 [geneanet] DEBUG: Generation 7, sosa 111, id @I00033@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4)
-[geneanet] DEBUG: 'Grazia' '...' parent de @I00022@
-[geneanet] DEBUG: Generation 7, sosa 108, id @I00034@ : 'Pietro' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
-[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00023@
+[geneanet] DEBUG: 'Grazia' '...' parent de @I00024@
+[geneanet] DEBUG: Generation 7, sosa 110, id @I00034@ : 'Francesco' 'CASCON' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon)
+[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00024@
+[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : info = 'Décédé avant 25 avril 1700'
+[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : --> event_name2='Décès' event_date2='avant 25 avril 1700' event_place2='None' 
+[gedcomw.element.element] INFO: manage_events : @I00034@ 'Francesco' 'CASCON' : name='Décès', date='avant 25 avril 1700', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 108, id @I00035@ : 'Pietro' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
+[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00025@
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Né - La Valette (Malte)'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : --> event_name2='Naissance' event_date2='' event_place2='La Valette (Malte)' 
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Décédé avant 25 avril 1700'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : --> event_name2='Décès' event_date2='avant 25 avril 1700' event_place2='None' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alfonso.n=napolitano.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=isabella.n=....oc=1.html'
-[gedcomw.element.element] INFO: manage_events : @I00034@ 'Pietro' 'NAPOLITANO' : name='Naissance', date='', place='La Valette (Malte)', notes='None', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00034@ 'Pietro' 'NAPOLITANO' : name='Décès', date='avant 25 avril 1700', place='None', notes='None', source='None'
-[geneanet] DEBUG: Generation 7, sosa 110, id @I00035@ : 'Francesco' 'CASCON' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon)
-[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00022@
-[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : info = 'Décédé avant 25 avril 1700'
-[geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : --> event_name2='Décès' event_date2='avant 25 avril 1700' event_place2='None' 
-[gedcomw.element.element] INFO: manage_events : @I00035@ 'Francesco' 'CASCON' : name='Décès', date='avant 25 avril 1700', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00035@ 'Pietro' 'NAPOLITANO' : name='Naissance', date='', place='La Valette (Malte)', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00035@ 'Pietro' 'NAPOLITANO' : name='Décès', date='avant 25 avril 1700', place='None', notes='None', source='None'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=isabella.n=....oc=1.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alfonso.n=napolitano.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=laurica.n=mamo.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=salvatore.n=buhagiar.html> (referer: None)
 [geneanet] DEBUG: Generation 8, sosa 217, id @I00036@ : 'Isabella' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1)
-[geneanet] DEBUG: 'Isabella' '...' parent de @I00034@
+[geneanet] DEBUG: 'Isabella' '...' parent de @I00035@
 [geneanet] DEBUG: Generation 8, sosa 219, id @I00037@ : 'Laurica' 'MAMO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
 [geneanet] DEBUG: 'Laurica' 'MAMO' parent de @I00032@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=matteo.n=mamo.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=5.html'
 [geneanet] DEBUG: Generation 8, sosa 216, id @I00038@ : 'Alfonso' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano)
-[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00034@
+[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00035@
 [geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : info = 'Décédé avant 18 novembre 1640'
 [geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : --> event_name2='Décès' event_date2='avant 18 novembre 1640' event_place2='None' 
 [gedcomw.element.element] INFO: manage_events : @I00038@ 'Alfonso' 'NAPOLITANO' : name='Décès', date='avant 18 novembre 1640', place='None', notes='None', source='None'
@@ -388,10 +388,10 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158:
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=matteo.n=mamo.html> (referer: None)
 [geneanet] DEBUG: Generation 9, sosa 437, id @I00040@ : '?' '?' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848)
 [geneanet] DEBUG: '?' '?' parent de @I00039@
-[geneanet] DEBUG: Generation 9, sosa 436, id @I00041@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar)
-[geneanet] DEBUG: 'Giuseppe' 'BUHAGIAR' parent de @I00039@
-[geneanet] DEBUG: Generation 9, sosa 439, id @I00042@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5)
+[geneanet] DEBUG: Generation 9, sosa 439, id @I00041@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5)
 [geneanet] DEBUG: 'Grazia' '...' parent de @I00037@
+[geneanet] DEBUG: Generation 9, sosa 436, id @I00042@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar)
+[geneanet] DEBUG: 'Giuseppe' 'BUHAGIAR' parent de @I00039@
 [geneanet] DEBUG: Generation 9, sosa 438, id @I00043@ : 'Matteo' 'MAMO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo)
 [geneanet] DEBUG: 'Matteo' 'MAMO' parent de @I00037@
 [scrapy.core.engine] INFO: Closing spider (finished)
@@ -415,27 +415,27 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158:
 [geneanet] DEBUG: Famille '@F00009@' : enfant='@I00013@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat' mariage_date='None' mariage_place='None' mariage_place='None'
 [geneanet] DEBUG: Famille '@F00010@' : enfant='@I00012@', père='@I00021@', mère='@I00020@'
 [geneanet] DEBUG: Famille '@F00010@' : enfant='@I00012@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00016@', père='@I00023@', mère='@I00022@'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00016@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', père='@I00025@', mère='@I00024@'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', père='@I00028@', mère='@I00026@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00017@', père='@I00023@', mère='@I00022@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00016@', père='@I00025@', mère='@I00024@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00016@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', père='@I00027@', mère='@I00026@'
 [geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', père='@I00029@', mère='@I00027@'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00018@', père='@I00031@', mère='@I00030@'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00018@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', père='@I00034@', mère='@I00032@'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', père='@I00035@', mère='@I00033@'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00034@', père='@I00038@', mère='@I00036@'
-[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00034@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00018@', père='@I00031@', mère='@I00028@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00018@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00020@', père='@I00030@', mère='@I00029@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00020@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00025@', père='@I00035@', mère='@I00032@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00025@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00024@', père='@I00034@', mère='@I00033@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00024@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00035@', père='@I00038@', mère='@I00036@'
+[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00035@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1' mariage_date='None' mariage_place='None' mariage_place='None'
 [geneanet] DEBUG: Famille '@F00019@' : enfant='@I00032@', père='@I00039@', mère='@I00037@'
 [geneanet] DEBUG: Famille '@F00019@' : enfant='@I00032@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00039@', père='@I00041@', mère='@I00040@'
+[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00039@', père='@I00042@', mère='@I00040@'
 [geneanet] DEBUG: Famille '@F00020@' : enfant='@I00039@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', père='@I00043@', mère='@I00042@'
+[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', père='@I00043@', mère='@I00041@'
 [geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_place='None'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 43
@@ -456,9 +456,9 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158:
  'downloader/response_bytes': 4104837,
  'downloader/response_count': 43,
  'downloader/response_status_count/200': 43,
- 'elapsed_time_seconds': 1.295229,
+ 'elapsed_time_seconds': 1.292659,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 15, 17, 54, 1, 276205),
+ 'finish_time': datetime.datetime(2023, 8, 15, 19, 25, 47, 308930),
  'log_count/DEBUG': 255,
  'log_count/ERROR': 3,
  'log_count/INFO': 39,
@@ -469,5 +469,5 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 157-158:
  'scheduler/enqueued': 43,
  'scheduler/enqueued/memory': 43,
  'spider_exceptions/UnicodeEncodeError': 3,
- 'start_time': datetime.datetime(2023, 8, 15, 17, 53, 59, 980976)}
+ 'start_time': datetime.datetime(2023, 8, 15, 19, 25, 46, 16271)}
 [scrapy.core.engine] INFO: Spider closed (finished)

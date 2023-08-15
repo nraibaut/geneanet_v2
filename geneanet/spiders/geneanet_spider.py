@@ -43,7 +43,8 @@ class GeneanetSpider(scrapy.Spider):
     mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_pere_ou_mere>")
     true_url_of = {} # dictionnaire des url (index = <pointer>)
     is_http_url = re.compile("^http[s]*:.*")
-    is_file_url = re.compile("^file:.*")
+    #is_file_url = re.compile("^file:.*")
+    is_contrat_de_mariage = re.compile("^Contrat de mariage \(avec .*\).*")
     ligne_mariage = re.compile(".*Mari.*avec.*")
 
     # Configuration fichier de sortie log :
@@ -349,7 +350,12 @@ class GeneanetSpider(scrapy.Spider):
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
-            person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
+            if GeneanetSpider.is_contrat_de_mariage.match(event_name):
+                # Evénement de la forme "Contrat de mariage (avec <conjoint>) - <lieu>"
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement contrat de mariage '{event_name}'")
+                # on ignore les infos (normalement, on les a via la fiche enfant)
+            else:
+                person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
         nb_sources = 0
@@ -381,8 +387,14 @@ class GeneanetSpider(scrapy.Spider):
                 self.mariages_sources[true_http_url] = source_mariage
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
             else:
+                # Cas particulier : on peur avoir en fait plusieurs événements concernés :
+                # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13"
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
-                person.set_event(name=event_name, source=event_sources)
+                ev = event_name.split(",")
+                for e in ev:
+                    e = e.strip().capitalize()
+                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name3='{e}' event_sources2='{event_sources}'")
+                    person.set_event(name=e, source=event_sources)
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -422,6 +434,7 @@ class GeneanetSpider(scrapy.Spider):
                     lignes = html2text.html2text(lignes).strip()
                     lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
                     lignes = lignes.replace(f"\n", " ") # sinon le match ne matche pas !!!!
+                    lignes = lignes.replace(f"Contrat de mariage", "Marié") # on peut avoir "Contrat de mariage" au lieu de "Marié"
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
                         lignes = lignes.replace(f"_", "")  # caractère de formatage introduit par html2text

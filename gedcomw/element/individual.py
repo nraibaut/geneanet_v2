@@ -86,16 +86,16 @@ class IndividualElement(Element):
 
     event_dict = {
         "Baptême" : "CHR", # Ancestris exporte les baptèmes avec "CHR" (et non pas "BAPT")
-        "Contrat de mariage" : "???", # @todo à voir
+        #"Contrat de mariage" : "???", # @todo à voir
         "Diplôme" : "GRAD",
         "Domicile" : "RESI",
         "Décès" : "DEAT",
         "Inhumation" : "BURI",
         "Naissance" : "BIRT",
-        "Personne" : "Personne???", # @todo à voir = uniquement source sur la personne ?
+        #"Personne" : "Personne???", # @todo à voir = uniquement source sur la personne ?
         "Profession" : "OCCU",
         "Retraite" : "RETI",
-        "Union" : "Union???", # @todo à voir = uniquement source sur le mariage ?
+        #"Union" : "Union???", # @todo à voir = uniquement source sur le mariage ?
     }
 
     def set_name(self, givenname, surname): # NRa

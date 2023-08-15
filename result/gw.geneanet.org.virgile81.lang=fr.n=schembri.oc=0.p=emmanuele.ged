@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 19:53 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 21:25 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 15 AUG 2023
-2 TIME 19:53:59
+2 TIME 21:25:46
 1 FILE gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.ged
 1 GEDC
 2 VERS 5.5.1
@@ -216,42 +216,42 @@
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo
 1 TEXT - Né - Porto Salvo (Malte)
 0 @I00022@ INDI
-1 NAME Antonia /CASCON/
-2 GIVN Antonia
-2 SURN CASCON
-1 SEX F
-1 SOUR @S00019@
-0 @S00019@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon
-1 TEXT
-0 @I00023@ INDI
-1 NAME Gio Paolo /NAPOLITANO/
-2 GIVN Gio Paolo
-2 SURN NAPOLITANO
-1 SEX M
-1 SOUR @S00020@
-0 @S00020@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano
-1 TEXT
-0 @I00024@ INDI
 1 NAME Domenica /.../
 2 GIVN Domenica
 2 SURN ...
 1 SEX F
 1 DEAT
 2 DATE BEF 17 FEB 1715
-1 SOUR @S00021@
-0 @S00021@ SOUR
+1 SOUR @S00019@
+0 @S00019@ SOUR
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7
 1 TEXT - Décédée avant 17 février 1715
-0 @I00025@ INDI
+0 @I00023@ INDI
 1 NAME Giuseppe /CARUANA/
 2 GIVN Giuseppe
 2 SURN CARUANA
 1 SEX M
+1 SOUR @S00020@
+0 @S00020@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana
+1 TEXT
+0 @I00024@ INDI
+1 NAME Antonia /CASCON/
+2 GIVN Antonia
+2 SURN CASCON
+1 SEX F
+1 SOUR @S00021@
+0 @S00021@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon
+1 TEXT
+0 @I00025@ INDI
+1 NAME Gio Paolo /NAPOLITANO/
+2 GIVN Gio Paolo
+2 SURN NAPOLITANO
+1 SEX M
 1 SOUR @S00022@
 0 @S00022@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano
 1 TEXT
 0 @I00026@ INDI
 1 NAME Domenica /.../
@@ -263,40 +263,40 @@
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6
 1 TEXT
 0 @I00027@ INDI
-1 NAME Orsalia /COSENTI/
-2 GIVN Orsalia
-2 SURN COSENTI
-1 SEX F
-1 SOUR @S00024@
-0 @S00024@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti
-1 TEXT
-0 @I00028@ INDI
 1 NAME Fabrizio /LOMBARDO/
 2 GIVN Fabrizio
 2 SURN LOMBARDO
 1 SEX M
-1 SOUR @S00025@
-0 @S00025@ SOUR
+1 SOUR @S00024@
+0 @S00024@ SOUR
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo
 1 TEXT
-0 @I00029@ INDI
-1 NAME ? /?/
-2 GIVN ?
-2 SURN ?
-1 SEX M
-1 SOUR @S00026@
-0 @S00026@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832
-1 TEXT
-0 @I00030@ INDI
+0 @I00028@ INDI
 1 NAME Domenica /.../
 2 GIVN Domenica
 2 SURN ...
 1 SEX F
+1 SOUR @S00025@
+0 @S00025@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5
+1 TEXT
+0 @I00029@ INDI
+1 NAME Orsalia /COSENTI/
+2 GIVN Orsalia
+2 SURN COSENTI
+1 SEX F
+1 SOUR @S00026@
+0 @S00026@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti
+1 TEXT
+0 @I00030@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX M
 1 SOUR @S00027@
 0 @S00027@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832
 1 TEXT
 0 @I00031@ INDI
 1 NAME Augustino /MUSCAT/
@@ -328,6 +328,17 @@
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4
 1 TEXT
 0 @I00034@ INDI
+1 NAME Francesco /CASCON/
+2 GIVN Francesco
+2 SURN CASCON
+1 SEX M
+1 DEAT
+2 DATE BEF 25 APR 1700
+1 SOUR @S00031@
+0 @S00031@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon
+1 TEXT - Décédé avant 25 avril 1700
+0 @I00035@ INDI
 1 NAME Pietro /NAPOLITANO/
 2 GIVN Pietro
 2 SURN NAPOLITANO
@@ -336,22 +347,11 @@
 2 PLAC La Valette (Malte)
 1 DEAT
 2 DATE BEF 25 APR 1700
-1 SOUR @S00031@
-0 @S00031@ SOUR
+1 SOUR @S00032@
+0 @S00032@ SOUR
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano
 1 TEXT - Né - La Valette (Malte)
 2 CONT - Décédé avant 25 avril 1700
-0 @I00035@ INDI
-1 NAME Francesco /CASCON/
-2 GIVN Francesco
-2 SURN CASCON
-1 SEX M
-1 DEAT
-2 DATE BEF 25 APR 1700
-1 SOUR @S00032@
-0 @S00032@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon
-1 TEXT - Décédé avant 25 avril 1700
 0 @I00036@ INDI
 1 NAME Isabella /.../
 2 GIVN Isabella
@@ -366,7 +366,10 @@
 2 GIVN Laurica
 2 SURN MAMO
 1 SEX F
-1 SOUR @S00036@
+1 SOUR @S00034@
+0 @S00034@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo
+1 TEXT
 0 @I00038@ INDI
 1 NAME Alfonso /NAPOLITANO/
 2 GIVN Alfonso
@@ -374,8 +377,8 @@
 1 SEX M
 1 DEAT
 2 DATE BEF 18 NOV 1640
-1 SOUR @S00034@
-0 @S00034@ SOUR
+1 SOUR @S00035@
+0 @S00035@ SOUR
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano
 1 TEXT - Décédé avant 18 novembre 1640
 0 @I00039@ INDI
@@ -385,13 +388,10 @@
 1 SEX M
 1 DEAT
 2 DATE BEF 18 NOV 1640
-1 SOUR @S00035@
-0 @S00035@ SOUR
+1 SOUR @S00036@
+0 @S00036@ SOUR
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar
 1 TEXT - Décédé avant 18 novembre 1640
-0 @S00036@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo
-1 TEXT
 0 @I00040@ INDI
 1 NAME ? /?/
 2 GIVN ?
@@ -402,22 +402,22 @@
 1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848
 1 TEXT
 0 @I00041@ INDI
-1 NAME Giuseppe /BUHAGIAR/
-2 GIVN Giuseppe
-2 SURN BUHAGIAR
-1 SEX M
-1 SOUR @S00038@
-0 @S00038@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar
-1 TEXT
-0 @I00042@ INDI
 1 NAME Grazia /.../
 2 GIVN Grazia
 2 SURN ...
 1 SEX F
+1 SOUR @S00038@
+0 @S00038@ SOUR
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5
+1 TEXT
+0 @I00042@ INDI
+1 NAME Giuseppe /BUHAGIAR/
+2 GIVN Giuseppe
+2 SURN BUHAGIAR
+1 SEX M
 1 SOUR @S00039@
 0 @S00039@ SOUR
-1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5
+1 TITL https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar
 1 TEXT
 0 @I00043@ INDI
 1 NAME Matteo /MAMO/
@@ -471,45 +471,45 @@
 0 @F00011@ FAM
 1 HUSB @I00023@
 1 WIFE @I00022@
-1 CHIL @I00016@
+1 CHIL @I00017@
 0 @F00012@ FAM
 1 HUSB @I00025@
 1 WIFE @I00024@
-1 CHIL @I00017@
+1 CHIL @I00016@
 0 @F00013@ FAM
-1 HUSB @I00028@
+1 HUSB @I00027@
 1 WIFE @I00026@
 1 CHIL @I00021@
 0 @F00014@ FAM
-1 HUSB @I00029@
-1 WIFE @I00027@
-1 CHIL @I00020@
-0 @F00015@ FAM
 1 HUSB @I00031@
-1 WIFE @I00030@
+1 WIFE @I00028@
 1 CHIL @I00018@
+0 @F00015@ FAM
+1 HUSB @I00030@
+1 WIFE @I00029@
+1 CHIL @I00020@
 0 @F00016@ FAM
-1 HUSB @I00034@
-1 WIFE @I00032@
-1 CHIL @I00023@
-0 @F00017@ FAM
 1 HUSB @I00035@
+1 WIFE @I00032@
+1 CHIL @I00025@
+0 @F00017@ FAM
+1 HUSB @I00034@
 1 WIFE @I00033@
-1 CHIL @I00022@
+1 CHIL @I00024@
 0 @F00018@ FAM
 1 HUSB @I00038@
 1 WIFE @I00036@
-1 CHIL @I00034@
+1 CHIL @I00035@
 0 @F00019@ FAM
 1 HUSB @I00039@
 1 WIFE @I00037@
 1 CHIL @I00032@
 0 @F00020@ FAM
-1 HUSB @I00041@
+1 HUSB @I00042@
 1 WIFE @I00040@
 1 CHIL @I00039@
 0 @F00021@ FAM
 1 HUSB @I00043@
-1 WIFE @I00042@
+1 WIFE @I00041@
 1 CHIL @I00037@
 0 TRLR
