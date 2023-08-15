@@ -304,9 +304,17 @@ class GeneanetSpider(scrapy.Spider):
             nb_titres += 1
             self.nb_titres_noblesse += 1
             titre_noblesse = titre.xpath("text()").get().strip()
-            # @todo extraire commentaire
-            texte_infos = texte_infos + "- " + titre_noblesse + '\n'
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}'")
+            # Extraction commentaire : entre parenthèses sur la 2ème ligne de texte :
+            texte = response.xpath("//div[@id='person-title']/following-sibling::em[1]").get()
+            texte = html2text.html2text(texte).strip()
+            texte = re.sub(".*\n\(", "", texte)
+            texte = re.sub("\)_$", "", texte)
+            if texte == "":
+                texte = None
+            note_titre_noblesse = texte
+            texte_infos = texte_infos + "- titre: " + titre_noblesse + " (" + note_titre_noblesse + ")\n"
+            person.add_title( self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
 
         nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):

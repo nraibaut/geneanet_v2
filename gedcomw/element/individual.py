@@ -200,6 +200,14 @@ class IndividualElement(Element):
 
         return nb_errors
 
+    def add_title(self, root_element, title, note): # NRa
+        # titre de noblesse = GEDCOM_TAG_TITLE = "TITL"
+        self.logger.debug(f"NRa {__name__} : add_title : title='{title}' note='{note}'")
+        element = Element( self.get_level()+1, '', gedcomw.tags.GEDCOM_TAG_TITLE, title, '\n', multi_line=False)
+        self.add_child_element(element)
+        if note:
+            element.add_note(root_element, note)
+
     def is_individual(self):
         """Checks if this element is an actual individual
         :rtype: bool
