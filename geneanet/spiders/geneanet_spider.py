@@ -162,7 +162,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;nb_titres;profession;infos;{date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;nb_titres;profession;nb_notes;infos;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
@@ -396,6 +396,25 @@ class GeneanetSpider(scrapy.Spider):
                     self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name3='{e}' event_sources2='{event_sources}'")
                     person.set_event(name=e, source=event_sources)
 
+        nb_notes = 0
+        for note in response.xpath("//h2[span='Notes']/following-sibling::h3[@class='note_type']"):
+            nb_notes += 1
+            note_type = note.xpath("text()").get().strip()
+            #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
+            note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
+            # Cas Notes individuelles :
+            if note_text == "":
+                note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip()
+            #note_text = "?"
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} : note_type='{note_type}' note_text='{note_text}'")
+            if note_type == "Notes individuelles":
+                person.add_note(self.gedcomw_parser.get_root_element(), note_text)
+            elif (note_type == "Naissance") or (note_type == "Décès"):
+                person.set_event(name=note_type, notes=note_text)
+            else:
+                self.nb_errors += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
+
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
         presence_parents=""
@@ -477,7 +496,7 @@ class GeneanetSpider(scrapy.Spider):
             mariage_date = ""
         if mariage_place == None:
             mariage_place = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{nb_titres};{profession};\"{texte_infos}\";\n")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{nb_titres};{profession};{nb_notes};\"{texte_infos}\";\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)

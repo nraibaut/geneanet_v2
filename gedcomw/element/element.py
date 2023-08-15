@@ -113,6 +113,14 @@ class Element(object):
         source_pointer = "@S%05d@" % (self.__nbSources)
         return source_pointer
 
+    def get_next_note_pointer(self): # NRa
+        """
+        :rtype: str
+        """
+        self.__nbNotes += 1
+        note_pointer = "@N%05d@" % (self.__nbNotes)
+        return note_pointer
+
     def get_level(self):
         """Returns the level of this element from within the GEDCOM file
         :rtype: int
@@ -352,8 +360,7 @@ class Element(object):
         """ Ajout d'une note
         :type rootelement: gedcomw.element.Element
         """
-        root_element.__nbNotes += 1
-        note_pointer = "@N%05d@" % (root_element.__nbNotes)
+        note_pointer = root_element.get_next_note_pointer()
 
         element_note_ref = Element(self.get_level()+1, '', gedcomw.tags.GEDCOM_TAG_NOTE, note_pointer, '\n', multi_line=False)
         self.add_child_element(element_note_ref)

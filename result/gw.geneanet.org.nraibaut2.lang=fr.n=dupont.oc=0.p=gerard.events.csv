@@ -1,4 +1,4 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;15/08/2023 à 21:26
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;15/08/2023 à 23:36
 @I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Naissance;BIRT;22 mars 1882;22 MAR 1882;Paris, France;"Note1 sur la naissance  
 Note2 sur la naissance";"<https://www.source_naissance.fr/>";"Texte1 source naissance
 Texte2 source naissance";
@@ -22,9 +22,11 @@ Texte2 source résidence";
 Note1 sur diplôme  
 Note2 sur diplôme";"<https://www.source_diplome.fr/>";"Texte1 source diplôme
 Texte2 source diplôme";
-@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Naissance;BIRT;le 1er septembre 1850;1 SEP 1850;;"";"<https://www.source_naissance.fr/>";"Texte1 source naissance
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Naissance;BIRT;le 1er septembre 1850;1 SEP 1850;;"Note1 sur la naissance  
+Note2 sur la naissance";"<https://www.source_naissance.fr/>";"Texte1 source naissance
 Texte2 source naissance";
-@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Décès;DEAT;le 1er avril 1895;1 APR 1895;;"";"<https://www.source_deces.fr/>";"Texte1 source décès
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Décès;DEAT;le 1er avril 1895;1 APR 1895;;"Note1 sur le décès  
+Note2 sur le décès";"<https://www.source_deces.fr/>";"Texte1 source décès
 Texte2 source décès";
 @I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;;"Date environ";"";"";
 @I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST? 23 FEB 1803;;"Date estimée";"";"";

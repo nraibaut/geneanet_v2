@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 21:26 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 23:36 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 15 AUG 2023
-2 TIME 21:26:00
+2 TIME 23:36:38
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -22,79 +22,82 @@
 2 GIVN Gérard
 2 SURN DUPONT
 1 SEX M
+1 NOTE @N00001@
 1 BIRT
 2 DATE 22 MAR 1882
 2 PLAC Paris, France
-1 NOTE @N00001@
+1 NOTE @N00002@
 1 SOUR @S00001@
 1 CHR
 2 DATE 18 MAY 1882
 2 PLAC Paris, France
-1 NOTE @N00002@
+1 NOTE @N00003@
 1 SOUR @S00002@
 1 DEAT
 2 DATE 10 APR 1892
 2 PLAC Nice, FRANCE
-1 NOTE @N00003@
+1 NOTE @N00004@
 1 SOUR @S00003@
 1 BURI
 2 DATE 11 APR 1892
 2 PLAC Nice, FRANCE
-1 NOTE @N00004@
+1 NOTE @N00005@
 1 SOUR @S00004@
 1 OCCU
 2 DATE 18 MAY 1882
-1 NOTE @N00005@
+1 NOTE @N00006@
 1 SOUR @S00005@
 1 RESI
 2 DATE 18 MAY 1882
 2 PLAC Lyon, France
-1 NOTE @N00006@
+1 NOTE @N00007@
 1 SOUR @S00006@
 1 GRAD
 2 DATE 1 JUL 1891
 2 PLAC Nice, FRANCE
-1 NOTE @N00007@
+1 NOTE @N00008@
 1 SOUR @S00007@
 1 SOUR @S00008@
-0 @N00001@ NOTE Note1 sur la naissance  
+0 @N00001@ NOTE Texte1 note général  
+1 CONT Texte2 note général
+0 @N00002@ NOTE Note1 sur la naissance  
 1 CONT Note2 sur la naissance
 0 @S00001@ SOUR
 1 TITL <https://www.source_naissance.fr/>
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
-0 @N00002@ NOTE Note1 sur le baptême  
+0 @N00003@ NOTE Note1 sur le baptême  
 1 CONT Note2 sur le baptême
 0 @S00002@ SOUR
 1 TITL <https://www.source_bapteme.fr/>
 1 TEXT Texte1 source baptême
 2 CONT Texte2 source baptême
-0 @N00003@ NOTE Note1 sur le décès  
+0 @N00004@ NOTE Note1 sur le décès  
 1 CONT Note2 sur le décès
 0 @S00003@ SOUR
 1 TITL <https://www.source_deces.fr/>
 1 TEXT Texte1 source décès
 2 CONT Texte2 source décès
-0 @N00004@ NOTE Note1 sur l'inhumation  
+0 @N00005@ NOTE Note1 sur l'inhumation  
 1 CONT Note2 sur l'inhumation
 0 @S00004@ SOUR
 1 TITL <https://www.source_inhumation.fr/>
 1 TEXT Texte1 source inhumation
 2 CONT Texte2 source inhumation
-0 @N00005@ NOTE Profession de Gérard  
+0 @N00006@ NOTE Profession de Gérard  
 1 CONT Note1 sur la profession  
 1 CONT Note2 sur la profession
 0 @S00005@ SOUR
 1 TITL <https://www.source_profession.fr/>
 1 TEXT Texte1 source profession
 2 CONT Texte2 source profession
-0 @N00006@ NOTE Note1 sur la résidence  
+0 @N00007@ NOTE Note1 sur la résidence  
 1 CONT Note2 sur la résidence
 0 @S00006@ SOUR
 1 TITL <https://www.source_residence.fr/>
 1 TEXT Texte1 source résidence
 2 CONT Texte2 source résidence
-0 @N00007@ NOTE Certificat d'études  
+0 @N00008@ NOTE Certificat d'études  
 1 CONT Note1 sur diplôme  
 1 CONT Note2 sur diplôme
 0 @S00007@ SOUR
@@ -119,9 +122,11 @@
 1 SEX M
 1 BIRT
 2 DATE 1 SEP 1850
+1 NOTE @N00009@
 1 SOUR @S00010@
 1 DEAT
 2 DATE 1 APR 1895
+1 NOTE @N00010@
 1 SOUR @S00011@
 1 SOUR @S00012@
 0 @I00003@ INDI
@@ -133,10 +138,14 @@
 0 @S00009@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
 1 TEXT
+0 @N00009@ NOTE Note1 sur la naissance  
+1 CONT Note2 sur la naissance
 0 @S00010@ SOUR
 1 TITL <https://www.source_naissance.fr/>
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
+0 @N00010@ NOTE Note1 sur le décès  
+1 CONT Note2 sur le décès
 0 @S00011@ SOUR
 1 TITL <https://www.source_deces.fr/>
 1 TEXT Texte1 source décès
@@ -159,23 +168,25 @@
 2 GIVN Jean
 2 SURN DATES
 1 SEX M
+1 NOTE @N00011@
 1 BIRT
 2 DATE ABT JUL 1802
-1 NOTE @N00008@
+1 NOTE @N00012@
 1 CHR
 2 DATE EST? 23 FEB 1803
-1 NOTE @N00009@
+1 NOTE @N00013@
 1 DEAT
 2 DATE ABT 1 JUN 1885
-1 NOTE @N00010@
+1 NOTE @N00014@
 1 RETI
 2 DATE ABT 1872
-1 NOTE @N00011@
+1 NOTE @N00015@
 1 SOUR @S00014@
-0 @N00008@ NOTE Date environ
-0 @N00009@ NOTE Date estimée
-0 @N00010@ NOTE Date calculée
-0 @N00011@ NOTE Date interprêtée
+0 @N00011@ NOTE Retraite:
+0 @N00012@ NOTE Date environ
+0 @N00013@ NOTE Date estimée
+0 @N00014@ NOTE Date calculée
+0 @N00015@ NOTE Date interprêtée
 0 @S00014@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
 1 TEXT - Né vers juillet 1802

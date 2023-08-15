@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 21:25 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 15/08/2023 à 23:40 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 15 AUG 2023
-2 TIME 21:25:51
+2 TIME 23:40:39
 1 FILE gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
 1 GEDC
 2 VERS 5.5.1
@@ -96,7 +96,9 @@
 2 GIVN Francesco
 2 SURN de BRINCAT
 1 SEX M
+1 NOTE @N00001@
 1 SOUR @S00009@
+0 @N00001@ NOTE son père est nommé BRINCAT Gioacchino Verifier la parenté
 0 @S00009@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17
 1 TEXT
@@ -202,43 +204,43 @@
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2
 1 TEXT
 0 @I00021@ INDI
-1 NAME Marino /MAGRO/
-2 GIVN Marino
-2 SURN MAGRO
-1 SEX M
-1 SOUR @S00021@
-0 @S00021@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro
-1 TEXT
-0 @I00022@ INDI
 1 NAME Clara /CHIRCOP/
 2 GIVN Clara
 2 SURN CHIRCOP
 1 SEX F
-1 SOUR @S00022@
-0 @S00022@ SOUR
+1 SOUR @S00021@
+0 @S00021@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop
 1 TEXT
-0 @I00023@ INDI
-1 NAME Angelica /NN/
-2 GIVN Angelica
-2 SURN NN
-1 SEX F
-1 SOUR @S00023@
-0 @S00023@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
+0 @I00022@ INDI
+1 NAME Marino /MAGRO/
+2 GIVN Marino
+2 SURN MAGRO
+1 SEX M
+1 SOUR @S00022@
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro
 1 TEXT
-0 @I00024@ INDI
+0 @I00023@ INDI
 1 NAME Giuseppe /BRINCATO/
 2 GIVN Giuseppe
 2 SURN BRINCATO
 1 SEX M
 1 BIRT
 2 PLAC Siggewi - Malte, , , ,
-1 SOUR @S00024@
-0 @S00024@ SOUR
+1 SOUR @S00023@
+0 @S00023@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato
 1 TEXT - Né - Siggewi - Malte, , , ,
+0 @I00024@ INDI
+1 NAME Angelica /NN/
+2 GIVN Angelica
+2 SURN NN
+1 SEX F
+1 SOUR @S00024@
+0 @S00024@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
+1 TEXT
 0 @I00025@ INDI
 1 NAME Gio Maria /MUSCAT/
 2 GIVN Gio Maria
@@ -269,22 +271,22 @@
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar
 1 TEXT
 0 @I00028@ INDI
-1 NAME Lucrezia /NN/
-2 GIVN Lucrezia
-2 SURN NN
-1 SEX F
-1 SOUR @S00028@
-0 @S00028@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
-1 TEXT
-0 @I00029@ INDI
 1 NAME Salvatore /ATTARD/
 2 GIVN Salvatore
 2 SURN ATTARD
 1 SEX M
+1 SOUR @S00028@
+0 @S00028@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+1 TEXT
+0 @I00029@ INDI
+1 NAME Lucrezia /NN/
+2 GIVN Lucrezia
+2 SURN NN
+1 SEX F
 1 SOUR @S00029@
 0 @S00029@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
 1 TEXT
 0 @I00030@ INDI
 1 NAME Lorenzo /BARTOLO/
@@ -401,27 +403,27 @@
 2 PLAC Ghaxaq
 1 CHIL @I00011@
 0 @F00010@ FAM
-1 HUSB @I00021@
+1 HUSB @I00022@
 1 WIFE @I00020@
 1 CHIL @I00017@
 0 @F00011@ FAM
-1 HUSB @I00024@
-1 WIFE @I00022@
+1 HUSB @I00023@
+1 WIFE @I00021@
 1 MARR
 2 DATE 6 NOV 1653
 2 PLAC P.Salvo
 1 CHIL @I00015@
 0 @F00012@ FAM
 1 HUSB @I00025@
-1 WIFE @I00023@
+1 WIFE @I00024@
 1 CHIL @I00014@
 0 @F00013@ FAM
 1 HUSB @I00027@
 1 WIFE @I00026@
 1 CHIL @I00013@
 0 @F00014@ FAM
-1 HUSB @I00029@
-1 WIFE @I00028@
+1 HUSB @I00028@
+1 WIFE @I00029@
 1 CHIL @I00019@
 0 @F00015@ FAM
 1 HUSB @I00030@
@@ -430,9 +432,9 @@
 0 @F00016@ FAM
 1 HUSB @I00035@
 1 WIFE @I00032@
-1 CHIL @I00024@
+1 CHIL @I00023@
 0 @F00017@ FAM
 1 HUSB @I00034@
 1 WIFE @I00033@
-1 CHIL @I00022@
+1 CHIL @I00021@
 0 TRLR
