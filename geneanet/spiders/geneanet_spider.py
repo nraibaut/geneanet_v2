@@ -162,7 +162,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;nb_titres;profession;sous_titre;nb_notes;infos;{date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
@@ -299,34 +299,36 @@ class GeneanetSpider(scrapy.Spider):
                     profession = line
                 pass
 
-        nb_titres = 0
-        for titre in response.xpath("//div[@id='person-title']/following-sibling::em[1]/a") :
-            nb_titres += 1
-            self.nb_titres_noblesse += 1
-            titre_noblesse = titre.xpath("text()").get().strip()
-            # Extraction commentaire : entre parenthèses sur la 2ème ligne de texte :
-            texte = response.xpath("//div[@id='person-title']/following-sibling::em[1]").get()
-            texte = html2text.html2text(texte).strip()
-            texte = re.sub(".*\n\(", "", texte)
-            texte = re.sub("\)_$", "", texte)
-            if texte == "":
-                texte = None
-            note_titre_noblesse = texte
-            texte_infos = texte_infos + "- titre: " + titre_noblesse + " (" + note_titre_noblesse + ")\n"
-            person.add_title( self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
-
+        # Extraction "sous-titre" ou titre_noblesse/note_titre_noblesse
+        # Cette info est présente dans la balise "em" juste après div[@id='person-title']
+        #
+        # Méthode 1 pas assez robuste (la balise "em" peut être loin, notamment dans § Sources !) :
+        # info = response.xpath("//div[@id='person-title']/following-sibling::em[1]")
+        # Méthode 2 plus robuste : on prend le premier voisin, s'il est de type "em") :
+        # info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
         sous_titre = None
-        if nb_titres == 0:
-            # Pas de titre de noblesse, on a peut-être un "sous-titre" / note.
-            #
-            # Méthode 1 pas assez robuste (la balise "em" peut être loin, notamment dans § Sources !) :
-            #texte = response.xpath("//div[@id='person-title']/following-sibling::em[1]").get()
-            # Méthode 2 plus robuste : on prend le premier voisin, s'il est de type "em") :
-            #texte = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
-            texte = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']/text()")
-            if texte:
-                texte = texte.get()
+        titre_noblesse = None
+        note_titre_noblesse = None
+
+        info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
+        if info:
+            lien_hyper = info.xpath("a")
+            if lien_hyper:
+                titre_noblesse = lien_hyper.xpath("text()").get().strip()
+                #texte = info.xpath("text()").get()
+                texte = info.get()
+                texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+                texte = texte.replace(f"\n", " ")
+                texte = texte.strip()
+                texte = re.sub(".*\(", "", texte)
+                texte = re.sub("\) *</em>$", "", texte)
+                if texte != "":
+                    note_titre_noblesse = texte
+                texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
+                person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
+            else:
+                texte = info.xpath("text()").get()
                 texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
                 texte = texte.strip()
                 if texte != "":
@@ -524,7 +526,11 @@ class GeneanetSpider(scrapy.Spider):
             mariage_place = ""
         if sous_titre == None:
             sous_titre = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{nb_titres};{profession};{sous_titre};{nb_notes};\"{texte_infos}\";\n")
+        if titre_noblesse == None:
+            titre_noblesse = ""
+        if note_titre_noblesse == None:
+            note_titre_noblesse = ""
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
