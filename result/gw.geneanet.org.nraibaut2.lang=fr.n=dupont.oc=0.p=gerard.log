@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: 7a8e43261c5866cf
+[scrapy.extensions.telnet] INFO: Telnet Password: 76d2ef930f963d26
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -40,12 +40,12 @@
 []
 [scrapy.core.engine] INFO: Spider opened
 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
 [geneanet] DEBUG: start_requests
 [geneanet] DEBUG: URL = https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 [geneanet] DEBUG: result_name = gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 16/08/2023 à 01:11 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 16/08/2023 à 23:31 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.events.csv
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard (true='https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.html')
@@ -192,13 +192,13 @@ Note2 sur le mariage'
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&p=jean&n=dates (true='https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jean.n=dates.html'
 [geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Marie Paule' 'DURAND' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand)
 [geneanet] DEBUG: 'Marie Paule' 'DURAND' parent de @I00001@
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : sous_titre='(Marie, Paule DURAND)'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : source = '* Union: <https://www.source_mariage.fr/>  
 Texte1 source mariage  
 Texte2 source mariage'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : --> mariages_sources[https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand]='<https://www.source_mariage.fr/>
 Texte1 source mariage
 Texte2 source mariage'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jean.n=dates.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&p=jeanne&n=inn (true='https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jeanne.n=inn.html'
 [gedcomw.element.element] INFO: manage_events : @I00002@ 'Pierre' 'DUPONT' : name='Naissance', date='le 1er septembre 1850', place='None', notes='Note1 sur la naissance  
 Note2 sur la naissance', source='<https://www.source_naissance.fr/>
@@ -209,7 +209,10 @@ Note2 sur le décès', source='<https://www.source_deces.fr/>
 Texte1 source décès
 Texte2 source décès'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jeanne.n=inn.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00004@ : 'Jean' 'DATES' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jean.n=dates.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Jeanne' 'INN' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn)
+[geneanet] DEBUG: 'Jeanne' 'INN' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Jean' 'DATES' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates)
 [geneanet] DEBUG: 'Jean' 'DATES' parent de @I00002@
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : info = 'Né vers juillet 1802'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : --> event_name2='Naissance' event_date2='vers juillet 1802' event_place2='None' 
@@ -230,12 +233,10 @@ Texte2 source décès'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date calculée'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'vers 1er juin 1885'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : note 1 : note_type='Notes individuelles' note_text='Retraite:'
-[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jean' 'DATES' : name='Naissance', date='vers juillet 1802', place='None', notes='Date environ', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jean' 'DATES' : name='Baptême', date='peut-être 23 février 1803', place='None', notes='Date estimée', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jean' 'DATES' : name='Décès', date='vers 1er juin 1885', place='None', notes='Date calculée', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jean' 'DATES' : name='Retraite', date='vers 1872', place='None', notes='Date interprêtée', source='None'
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00005@ : 'Jeanne' 'INN' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn)
-[geneanet] DEBUG: 'Jeanne' 'INN' parent de @I00002@
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DATES' : name='Naissance', date='vers juillet 1802', place='None', notes='Date environ', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DATES' : name='Baptême', date='peut-être 23 février 1803', place='None', notes='Date estimée', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DATES' : name='Décès', date='vers 1er juin 1885', place='None', notes='Date calculée', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DATES' : name='Retraite', date='vers 1872', place='None', notes='Date interprêtée', source='None'
 [scrapy.core.engine] INFO: Closing spider (finished)
 [geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00002@', mère='@I00003@'
 [geneanet] DEBUG: Famille '@F00001@' : OK : mariages_sources[père]=mariages_sources[mère]='<https://www.source_mariage.fr/>
@@ -244,7 +245,7 @@ Texte2 source mariage'
 [geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', true_url_pere='https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont', true_url_mere='https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand' mariage_date='None' mariage_place='None' mariage_place='<https://www.source_mariage.fr/>
 Texte1 source mariage
 Texte2 source mariage'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00004@', mère='@I00005@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00005@', mère='@I00004@'
 [geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', true_url_pere='https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates', true_url_mere='https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn' mariage_date='None' mariage_place='None' mariage_place='None'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 5
@@ -265,10 +266,10 @@ Texte2 source mariage'
  'downloader/response_bytes': 412040,
  'downloader/response_count': 5,
  'downloader/response_status_count/200': 5,
- 'elapsed_time_seconds': 0.442499,
+ 'elapsed_time_seconds': 0.442948,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 15, 23, 11, 31, 734794),
- 'log_count/DEBUG': 108,
+ 'finish_time': datetime.datetime(2023, 8, 16, 21, 31, 27, 869595),
+ 'log_count/DEBUG': 109,
  'log_count/ERROR': 1,
  'log_count/INFO': 36,
  'request_depth_max': 2,
@@ -277,5 +278,5 @@ Texte2 source mariage'
  'scheduler/dequeued/memory': 5,
  'scheduler/enqueued': 5,
  'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2023, 8, 15, 23, 11, 31, 292295)}
+ 'start_time': datetime.datetime(2023, 8, 16, 21, 31, 27, 426647)}
 [scrapy.core.engine] INFO: Spider closed (finished)
