@@ -520,6 +520,16 @@ class GeneanetSpider(scrapy.Spider):
         texte_infos = texte_infos.strip()
         person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
 
+        # Liste/contrôle des rubriques
+        #for info in response.xpath("//h2[span/@class]/span[2]/text()"): # NON à cause § "Union(s), enfant(s)"... : extraire text() après for
+        for info in response.xpath("//h2[span/@class]/span[2]"):
+            titre = info.xpath("text()").get();
+            titre = titre.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+            titre = titre.replace(f"\n", " ")
+            titre = re.sub( "  *", " ", titre)
+            titre = titre.strip()
+            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
+
         if mariage_date == None:
             mariage_date = ""
         if mariage_place == None:
