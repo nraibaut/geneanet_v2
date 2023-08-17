@@ -169,6 +169,11 @@ class GeneanetSpider(scrapy.Spider):
         self.csv_events = open( csvfilename, "w") # encoding="utf-8" ?
         self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;{date}\n")
 
+        csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
+        self.log(f"csv unions = {csvfilename}")
+        self.csv_unions = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;{date}\n")
+
         true_url = self.url
         url_to_scan = self.get_url_to_scan(true_url)
         self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
@@ -506,8 +511,15 @@ class GeneanetSpider(scrapy.Spider):
 
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents == 2 :
-            self.mariages_dates[parents_url[1] + ";" + parents_url[2]] = mariage_date
-            self.mariages_places[parents_url[1] + ";" + parents_url[2]] = mariage_place
+            key = parents_url[1] + ";" + parents_url[2]
+            if mariage_date:
+                self.mariages_dates[key] = mariage_date
+            if mariage_place:
+                self.mariages_places[key] = mariage_place
+            #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+            self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\n")
+
+
         elif nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
@@ -624,6 +636,7 @@ class GeneanetSpider(scrapy.Spider):
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_warnings} warnings\n")
         self.csv.close()
         self.csv_events.close()
+        self.csv_unions.close()
 
         gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
         spider.logger.info(f"Saving to '{gedresultfilename}'")
