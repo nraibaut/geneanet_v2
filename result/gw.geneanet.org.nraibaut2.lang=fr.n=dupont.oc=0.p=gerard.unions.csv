@@ -1,0 +1,7 @@
+id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;18/08/2023 à 01:36
+@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;§parents;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand;"";"";;
+@I00003@;Marie Paule;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand;union1;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand;"24 août 1877";"Paris, France,";"* Mariée _le 24 août 1877, Paris, France,_";
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;§parents;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;"";"";;
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;union1;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand;"24 août 1877";"Paris, France,";"* Marié _le 24 août 1877, Paris, France,_";
+@I00004@;Jeanne;INN;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;union1;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;"*";"";"*";
+@I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;union1;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;"*";"";"*";

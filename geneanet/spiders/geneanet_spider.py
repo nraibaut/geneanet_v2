@@ -46,6 +46,7 @@ class GeneanetSpider(scrapy.Spider):
     #is_file_url = re.compile("^file:.*")
     is_contrat_de_mariage = re.compile("^Contrat de mariage \(avec .*\).*")
     ligne_mariage = re.compile(".*Mari.*avec.*")
+    union_regex = re.compile("(.*) [Aa]vec \[([^\]]*)\]\(([^\)]*)\).*")
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -172,7 +173,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
         self.log(f"csv unions = {csvfilename}")
         self.csv_unions = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;{date}\n")
+        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{date}\n")
 
         true_url = self.url
         url_to_scan = self.get_url_to_scan(true_url)
@@ -453,6 +454,7 @@ class GeneanetSpider(scrapy.Spider):
         presence_parents=""
         mariage_date = None
         mariage_place = None
+        info_debug_csv = None
         parents_url= {}
         for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
             nb_parents += 1
@@ -486,10 +488,12 @@ class GeneanetSpider(scrapy.Spider):
                     lignes = html2text.html2text(lignes).strip()
                     lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
                     lignes = lignes.replace(f"\n", " ") # sinon le match ne matche pas !!!!
+                    lignes = lignes.replace(f"_", "")  # caractère de formatage introduit par html2text
+                    info_debug_csv = lignes
                     lignes = lignes.replace(f"Contrat de mariage", "Marié") # on peut avoir "Contrat de mariage" au lieu de "Marié"
+                    lignes = lignes.replace(f"Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
-                        lignes = lignes.replace(f"_", "")  # caractère de formatage introduit par html2text
                         #self.log( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
                         lignes = re.sub(".*Mariée* *", "", lignes)  # suppression avant "Marié"
                         lignes = re.sub(", *avec$", "", lignes)  # suppression ", avec" final
@@ -514,19 +518,82 @@ class GeneanetSpider(scrapy.Spider):
             key = parents_url[1] + ";" + parents_url[2]
             if mariage_date:
                 self.mariages_dates[key] = mariage_date
+            else:
+                mariage_date = ""
             if mariage_place:
                 self.mariages_places[key] = mariage_place
-            #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-            self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\n")
-
+            else:
+                mariage_place = ""
+            if not info_debug_csv:
+                info_debug_csv = ""
+            mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+            info_debug_csv = info_debug_csv.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+            self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n")
 
         elif nb_parents > 2 :
             self.nb_errors += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
 
+        nb_unions = 0
+        for union in response.xpath("//ul[@class='fiche_union']/li"):
+            nb_unions += 1
+            #line = source.xpath("text()").get()
+            line1 = union.extract()
+            line = html2text.html2text(line1).strip()
+            #line = source.xpath("text()").extract()
+            #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
+            match_union = self.union_regex.match(line)
+            if match_union:
+                debut = match_union.groups(0)[0].strip()
+                nom_conjoint = match_union.groups(0)[1]
+                url_conjoint = match_union.groups(0)[2]
+                url_conjoint = response.urljoin(url_conjoint)
+                url_conjoint = self.url_to_true_http_url(true_http_url, url_conjoint)
+
+                # La plupart du temps, on a forme "Marié ..." / "Mariée ...", sauf parfois :
+                # "Relation" ou "Contrat de mariage"
+                info = re.sub(".*Mariée* *", "", debut)  # suppression avant "Marié"
+                info = info.replace(f"* Contrat de mariage", "")
+                info = info.replace(f"* Relation", "")
+                info = info.replace(f"_", "")  # caractère de formatage introduit par html2text
+
+                mariage_date = re.sub(",.*$", "", info)
+                mariage_date = re.sub("^le ", "", mariage_date)
+                mariage_date = re.sub("^en ", "", mariage_date)
+                mariage_date = re.sub("^ *", "", mariage_date)
+                mariage_place = None
+                if "," in info:
+                    mariage_place = re.sub("^[^,]*, *", "", info)
+                if mariage_date == "":
+                    mariage_date = None
+                if mariage_place == "":
+                    mariage_place = None
+
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} = debut='{debut}' nom_conjoint='{nom_conjoint}' url_conjoint='{url_conjoint}' ")
+                if sexe == "M":
+                    url_pere = true_http_url
+                    url_mere = url_conjoint
+                else:
+                    url_pere = url_conjoint
+                    url_mere = true_http_url
+                key = url_pere + ";" + url_mere
+                if mariage_date:
+                    self.mariages_dates[key] = mariage_date
+                else:
+                    mariage_date = ""
+                if mariage_place:
+                    self.mariages_places[key] = mariage_place
+                else:
+                    mariage_place = ""
+                mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+                debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+                self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n")
+            else:
+                self.nb_errors += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
+
         self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
-        if profession == None:
-            profession = ""
+
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
         texte_infos = texte_infos.strip()
@@ -542,6 +609,8 @@ class GeneanetSpider(scrapy.Spider):
             titre = titre.strip()
             self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
 
+        if profession == None:
+            profession = ""
         if mariage_date == None:
             mariage_date = ""
         if mariage_place == None:

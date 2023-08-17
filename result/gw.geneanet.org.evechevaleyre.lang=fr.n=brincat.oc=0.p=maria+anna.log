@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: a82935bc16af1ec5
+[scrapy.extensions.telnet] INFO: Telnet Password: 38bebe7e279b3055
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -40,119 +40,206 @@
 []
 [scrapy.core.engine] INFO: Spider opened
 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
 [geneanet] DEBUG: start_requests
 [geneanet] DEBUG: URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 [geneanet] DEBUG: result_name = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 17/08/2023 à 00:35 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 18/08/2023 à 01:36 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.events.csv
+[geneanet] DEBUG: csv unions = result/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.unions.csv
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna (true='https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html')
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.html> (referer: None)
 [geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Maria Anna' 'BRINCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Maria Anna BRINCAT = date='28 avril 1805 (dimanche)' place='S.Paolo - Malte, , , ,'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : union 1 = debut='* Mariée _le 11 juin 1836 (samedi)_' nom_conjoint='Gregorio REVERS / REVEST' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=revers+revest' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Union(s)'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Maria Anna BRINCAT : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giovanna+rosa.n=bartolo.html> (referer: None)
-[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
-[geneanet] DEBUG: 'rafaele' 'BRINCAT' parent de @I00001@
-[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html'
-[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de rafaele BRINCAT = date='26 novembre 1776 (mardi)' place='S.Paolo - Malte, , , ,'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html'
-[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Giovanna rosa' 'BARTOLO' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Giovanna rosa' 'BARTOLO' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo)
 [geneanet] DEBUG: 'Giovanna rosa' 'BARTOLO' parent de @I00001@
 [geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : info = 'Décédée avant 11 janvier 1818'
 [geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : --> event_name2='Décès' event_date2='avant 11 janvier 1818' event_place2='None' 
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html'
-[gedcomw.element.element] INFO: manage_events : @I00003@ 'Giovanna rosa' 'BARTOLO' : name='Décès', date='avant 11 janvier 1818', place='None', notes='None', source='None'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : union 1 = debut='* Mariée _le 28 avril 1805 (dimanche), S.Paolo - Malte, , , ,,_' nom_conjoint='rafaele BRINCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Giovanna rosa' 'BARTOLO' : name='Décès', date='avant 11 janvier 1818', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Giovanna rosa BARTOLO : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2)
+[geneanet] DEBUG: 'rafaele' 'BRINCAT' parent de @I00001@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html'
+[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de rafaele BRINCAT = date='26 novembre 1776 (mardi)' place='S.Paolo - Malte, , , ,'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : union 1 = debut='* Marié _le 28 avril 1805 (dimanche), S.Paolo - Malte, , , ,,_' nom_conjoint='Giovanna rosa BARTOLO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo' 
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : union 2 = debut='* Marié _le 11 janvier 1818 (dimanche), S.Paolo - Malte, , , ,,_' nom_conjoint='Apolonia VELLA' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=apolonia&n=vella' 
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Demi-frères et demi-sœurs'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 2 : rafaele BRINCAT : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=margarita.n=attard.oc=3.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=rafaele.n=brincat.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00004@ : 'Maria' 'CAMILLERI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27)
-[geneanet] DEBUG: 'Maria' 'CAMILLERI' parent de @I00003@
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00005@ : 'Giuseppe' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7)
-[geneanet] DEBUG: 'Giuseppe' 'BARTOLO' parent de @I00003@
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00006@ : 'Margarita' 'ATTARD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
-[geneanet] DEBUG: 'Margarita' 'ATTARD' parent de @I00002@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maria.n=camilleri.oc=27.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=bartolo.oc=7.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Margarita' 'ATTARD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3)
+[geneanet] DEBUG: 'Margarita' 'ATTARD' parent de @I00003@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Margarita ATTARD = date='peut-être le 19 juillet 1723' place='Zejtun - Malte, , , ,'
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00007@ : 'Rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
-[geneanet] DEBUG: 'Rafaele' 'BRINCAT' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Rafaele' 'BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat)
+[geneanet] DEBUG: 'Rafaele' 'BRINCAT' parent de @I00003@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Rafaele BRINCAT = date='peut-être le 8 avril 1709' place='P.Salvo, , , ,'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00006@ : 'Maria' 'CAMILLERI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27)
+[geneanet] DEBUG: 'Maria' 'CAMILLERI' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 7 : Maria CAMILLERI : union 1 = debut='* Mariée' nom_conjoint='Giuseppe BARTOLO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Maria CAMILLERI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : Maria CAMILLERI : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Maria CAMILLERI : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00007@ : 'Giuseppe' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7)
+[geneanet] DEBUG: 'Giuseppe' 'BARTOLO' parent de @I00002@
+[geneanet] DEBUG: Generation 3, sosa 6 : Giuseppe BARTOLO : union 1 = debut='* Marié' nom_conjoint='Maria CAMILLERI' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Giuseppe BARTOLO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 6 : Giuseppe BARTOLO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 6 : Giuseppe BARTOLO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=de+brincat.oc=17.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=10.html> (referer: None)
-[geneanet] DEBUG: Generation 4, sosa 11, id @I00008@ : 'Teodora' 'CIANTAR?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
-[geneanet] DEBUG: 'Teodora' 'CIANTAR?' parent de @I00006@
-[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html'
-[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Teodora CIANTAR? = date='22 avril 1686 (lundi)' place='Zejtun - Malte, , , ,'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html'
-[geneanet] DEBUG: Generation 4, sosa 8, id @I00009@ : 'Francesco' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
-[geneanet] DEBUG: 'Francesco' 'de BRINCAT' parent de @I00007@
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : union 1 = debut='* Mariée _le 15 juillet 1767 (mercredi), S.Paolo - Malte, , , ,,_' nom_conjoint='Salvatore VELLA' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=vella&oc=13' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : union 2 = debut='* Mariée _le 26 novembre 1776 (mardi), S.Paolo - Malte, , , ,,_' nom_conjoint='Rafaele BRINCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 5 : Margarita ATTARD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : union 1 = debut='* Marié _le 28 janvier 1750 (mercredi), S.Paolo - Malte, , , ,,_' nom_conjoint='Teresa MIZZI?' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=mizzi&oc=6' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : union 2 = debut='* Marié _le 26 novembre 1776 (mardi), S.Paolo - Malte, , , ,,_' nom_conjoint='Margarita ATTARD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Rafaele BRINCAT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenica.n=chetcuti.oc=3.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teodora.n=ciantar.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 8, id @I00008@ : 'Francesco' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17)
+[geneanet] DEBUG: 'Francesco' 'de BRINCAT' parent de @I00005@
 [geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : note 1 : note_type='Notes individuelles' note_text='son père est nommé BRINCAT Gioacchino Verifier la parenté'
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Francesco de BRINCAT = date='13 juin 1683 (dimanche)' place='S.Paolo - Malte, , , ,'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html'
-[geneanet] DEBUG: Generation 4, sosa 10, id @I00010@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
-[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00006@
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : union 1 = debut='* Marié' nom_conjoint='Anna NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=anna&n=nn&oc=57' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : union 2 = debut='* Marié _le 8 avril 1709 (lundi), P.Salvo,_' nom_conjoint='Domenica CHETCUTI' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : union 3 = debut='* Marié _peut-être le 8 avril 1709, P.Salvo, , , ,,_' nom_conjoint='Domenica CHETCUTI' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Francesco de BRINCAT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 10, id @I00009@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00004@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Salvatore ATTARD = date='peut-être le 10 octobre 1693' place='Ghaxaq'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html'
-[geneanet] DEBUG: Generation 4, sosa 9, id @I00011@ : 'Domenica' 'CHETCUTI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
-[geneanet] DEBUG: 'Domenica' 'CHETCUTI' parent de @I00007@
-[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html'
-[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Domenica CHETCUTI = date='peut-être le 14 janvier 1680' place='P.Salvo, , , ,'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : union 1 = debut='* Marié _en 1715_' nom_conjoint='Venerenda NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=venerenda&n=nn&oc=4' 
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : union 2 = debut='* Marié _peut-être le 19 juillet 1723, Zejtun - Malte, , , ,,_' nom_conjoint='Teodora CIANTAR?' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2' 
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 10 : Salvatore ATTARD : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=bartolo.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=domenico.n=attard.oc=24.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=teresa.n=muscat.oc=6.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacchi.n=de+brincat.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 9, id @I00010@ : 'Domenica' 'CHETCUTI' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3)
+[geneanet] DEBUG: 'Domenica' 'CHETCUTI' parent de @I00005@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html'
+[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Domenica CHETCUTI = date='peut-être le 14 janvier 1680' place='P.Salvo, , , ,'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html'
+[geneanet] DEBUG: Generation 4, sosa 11, id @I00011@ : 'Teodora' 'CIANTAR?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2)
+[geneanet] DEBUG: 'Teodora' 'CIANTAR?' parent de @I00004@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html'
+[geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Teodora CIANTAR? = date='22 avril 1686 (lundi)' place='Zejtun - Malte, , , ,'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html'
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : union 1 = debut='* Mariée _peut-être le 19 juillet 1723, Zejtun - Malte, , , ,,_' nom_conjoint='Salvatore ATTARD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10' 
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 11 : Teodora CIANTAR? : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=geronima.n=mifsud.oc=8.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=francesco.n=ciantar.html> (referer: None)
-[geneanet] DEBUG: Generation 5, sosa 19, id @I00012@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
-[geneanet] DEBUG: 'Maddalena' 'MAGRO?' parent de @I00011@
-[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html'
-[geneanet] DEBUG: Generation 5, sosa 18, id @I00013@ : 'Gregorio' 'CHETCUTI' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti)
-[geneanet] DEBUG: 'Gregorio' 'CHETCUTI' parent de @I00011@
-[geneanet] DEBUG: Generation 5, sosa 21, id @I00014@ : 'Clara' 'BARTOLO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
-[geneanet] DEBUG: 'Clara' 'BARTOLO?' parent de @I00010@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=maddalena.n=magro.oc=15.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gregorio.n=chetcuti.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : union 1 = debut='* Mariée _le 8 avril 1709 (lundi), P.Salvo,_' nom_conjoint='Francesco de BRINCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : union 2 = debut='* Mariée _peut-être le 8 avril 1709, P.Salvo, , , ,,_' nom_conjoint='Francesco de BRINCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Domenica CHETCUTI : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 21, id @I00012@ : 'Clara' 'BARTOLO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Clara' 'BARTOLO?' parent de @I00009@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html'
-[geneanet] DEBUG: Generation 5, sosa 20, id @I00015@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
-[geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00010@
+[geneanet] DEBUG: Generation 5, sosa 21 : Clara BARTOLO? : union 1 = debut='* Mariée _peut-être le 10 octobre 1693, Ghaxaq,_' nom_conjoint='Domenico ATTARD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24' 
+[geneanet] DEBUG: Generation 5, sosa 21 : Clara BARTOLO? : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 21 : Clara BARTOLO? : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 21 : Clara BARTOLO? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 21 : Clara BARTOLO? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 20, id @I00013@ : 'Domenico' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24)
+[geneanet] DEBUG: 'Domenico' 'ATTARD' parent de @I00009@
 [geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : info = 'Né - Zejtun - Malte, , , ,'
 [geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : --> event_name2='Naissance' event_date2='' event_place2='Zejtun - Malte, , , ,' 
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=nn.oc=4.html'
-[gedcomw.element.element] INFO: manage_events : @I00015@ 'Domenico' 'ATTARD' : name='Naissance', date='', place='Zejtun - Malte, , , ,', notes='None', source='None'
-[geneanet] DEBUG: Generation 5, sosa 23, id @I00016@ : 'Geronima' 'MIFSUD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8)
-[geneanet] DEBUG: 'Geronima' 'MIFSUD' parent de @I00008@
-[geneanet] DEBUG: Generation 5, sosa 17, id @I00017@ : 'Teresa' 'MUSCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
-[geneanet] DEBUG: 'Teresa' 'MUSCAT' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : union 1 = debut='* Marié _peut-être le 10 octobre 1693, Ghaxaq,_' nom_conjoint='Clara BARTOLO?' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Domenico' 'ATTARD' : name='Naissance', date='', place='Zejtun - Malte, , , ,', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 20 : Domenico ATTARD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 17, id @I00014@ : 'Teresa' 'MUSCAT' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6)
+[geneanet] DEBUG: 'Teresa' 'MUSCAT' parent de @I00008@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=gio+maria.n=muscat.oc=7.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html'
-[geneanet] DEBUG: Generation 5, sosa 16, id @I00018@ : 'Giacchi' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
-[geneanet] DEBUG: 'Giacchi' 'de BRINCAT' parent de @I00009@
+[geneanet] DEBUG: Generation 5, sosa 17 : Teresa MUSCAT : union 1 = debut='* Mariée _le 13 juin 1683 (dimanche), S.Paolo - Malte, , , ,,_' nom_conjoint='Giacchi de BRINCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Teresa MUSCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 17 : Teresa MUSCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 17 : Teresa MUSCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 17 : Teresa MUSCAT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 16, id @I00015@ : 'Giacchi' 'de BRINCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat)
+[geneanet] DEBUG: 'Giacchi' 'de BRINCAT' parent de @I00008@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html'
 [geneanet] DEBUG: Infos mariage sur parent 1 (forme 2) de Giacchi de BRINCAT = date='6 novembre 1653 (jeudi)' place='P.Salvo'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html'
-[geneanet] DEBUG: Generation 5, sosa 22, id @I00019@ : 'Francesco' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
-[geneanet] DEBUG: 'Francesco' 'CIANTAR' parent de @I00008@
-[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : union 1 = debut='* Marié _le 13 juin 1683 (dimanche), S.Paolo - Malte, , , ,,_' nom_conjoint='Teresa MUSCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6' 
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 16 : Giacchi de BRINCAT : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clara.n=chircop.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giuseppe.n=brincato.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=angelica.n=nn.oc=23.html> (referer: None)
@@ -161,90 +248,190 @@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=salvatore.n=attard.oc=11.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lucrezia.n=saliba.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=lorenzo.n=bartolo.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 23, id @I00016@ : 'Geronima' 'MIFSUD' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8)
+[geneanet] DEBUG: 'Geronima' 'MIFSUD' parent de @I00011@
+[geneanet] DEBUG: Generation 5, sosa 23 : Geronima MIFSUD : union 1 = debut='* Mariée _le 22 avril 1686 (lundi), Zejtun - Malte, , , ,,_' nom_conjoint='Francesco CIANTAR' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar' 
+[geneanet] DEBUG: Generation 5, sosa 23 : Geronima MIFSUD : union 2 = debut='* Mariée' nom_conjoint='Francesco CIANTAR' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar' 
+[geneanet] DEBUG: Generation 5, sosa 23 : Geronima MIFSUD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 23 : Geronima MIFSUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 23 : Geronima MIFSUD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 22, id @I00017@ : 'Francesco' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar)
+[geneanet] DEBUG: 'Francesco' 'CIANTAR' parent de @I00011@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html'
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : union 1 = debut='* Marié' nom_conjoint='Geronima MIFSUD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : union 2 = debut='* Marié _le 22 avril 1686 (lundi), Zejtun - Malte, , , ,,_' nom_conjoint='Geronima MIFSUD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 22 : Francesco CIANTAR : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 19, id @I00018@ : 'Maddalena' 'MAGRO?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15)
+[geneanet] DEBUG: 'Maddalena' 'MAGRO?' parent de @I00010@
+[geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maddalena MAGRO? : union 1 = debut='* Mariée _peut-être le 14 janvier 1680, P.Salvo, , , ,,_' nom_conjoint='Gregorio CHETCUTI' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti' 
+[geneanet] DEBUG: Generation 5, sosa 19 : Maddalena MAGRO? : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maddalena MAGRO? : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maddalena MAGRO? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maddalena MAGRO? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 18, id @I00019@ : 'Gregorio' 'CHETCUTI' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti)
+[geneanet] DEBUG: 'Gregorio' 'CHETCUTI' parent de @I00010@
+[geneanet] DEBUG: Generation 5, sosa 18 : Gregorio CHETCUTI : union 1 = debut='* Marié _peut-être le 14 janvier 1680, P.Salvo, , , ,,_' nom_conjoint='Maddalena MAGRO?' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15' 
+[geneanet] DEBUG: Generation 5, sosa 18 : Gregorio CHETCUTI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 18 : Gregorio CHETCUTI : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 18 : Gregorio CHETCUTI : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=giacobina.n=nn.oc=2.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marino.n=magro.html> (referer: None)
-[geneanet] DEBUG: Generation 6, sosa 45, id @I00020@ : '?' '?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697)
-[geneanet] DEBUG: '?' '?' parent de @I00019@
-[geneanet] DEBUG: Generation 6, sosa 44, id @I00021@ : 'Valerio Valente' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar)
-[geneanet] DEBUG: 'Valerio Valente' 'CIANTAR' parent de @I00019@
-[geneanet] DEBUG: Generation 6, sosa 33, id @I00022@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
-[geneanet] DEBUG: 'Clara' 'CHIRCOP' parent de @I00018@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.i=43697.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=valerio+valente.n=ciantar.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 33, id @I00020@ : 'Clara' 'CHIRCOP' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop)
+[geneanet] DEBUG: 'Clara' 'CHIRCOP' parent de @I00015@
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html'
-[geneanet] DEBUG: Generation 6, sosa 32, id @I00023@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
-[geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00018@
+[geneanet] DEBUG: Generation 6, sosa 33 : Clara CHIRCOP : union 1 = debut='* Mariée _le 6 novembre 1653 (jeudi), P.Salvo,_' nom_conjoint='Giuseppe BRINCATO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato' 
+[geneanet] DEBUG: Generation 6, sosa 33 : Clara CHIRCOP : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 33 : Clara CHIRCOP : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 33 : Clara CHIRCOP : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 33 : Clara CHIRCOP : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 32, id @I00021@ : 'Giuseppe' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato)
+[geneanet] DEBUG: 'Giuseppe' 'BRINCATO' parent de @I00015@
 [geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : info = 'Né - Siggewi - Malte, , , ,'
 [geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : --> event_name2='Naissance' event_date2='' event_place2='Siggewi - Malte, , , ,' 
 [geneanet] DEBUG: URL parent 1 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html'
 [geneanet] DEBUG: URL parent 2 (forme 2) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3 (true='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html'
-[gedcomw.element.element] INFO: manage_events : @I00023@ 'Giuseppe' 'BRINCATO' : name='Naissance', date='', place='Siggewi - Malte, , , ,', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 35, id @I00024@ : 'Angelica' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23)
-[geneanet] DEBUG: 'Angelica' 'NN' parent de @I00017@
-[geneanet] DEBUG: Generation 6, sosa 34, id @I00025@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7)
-[geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00017@
-[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : info = 'Né - Birkhirkara - Malte, , , ,'
-[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : --> event_name2='Naissance' event_date2='' event_place2='Birkhirkara - Malte, , , ,' 
-[gedcomw.element.element] INFO: manage_events : @I00025@ 'Gio Maria' 'MUSCAT' : name='Naissance', date='', place='Birkhirkara - Malte, , , ,', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 41, id @I00026@ : 'Lucrezia' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4)
-[geneanet] DEBUG: 'Lucrezia' 'NN' parent de @I00015@
-[geneanet] DEBUG: Generation 6, sosa 40, id @I00027@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11)
-[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00015@
-[geneanet] DEBUG: Generation 6, sosa 43, id @I00028@ : 'Lucrezia' 'SALIBA' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2)
-[geneanet] DEBUG: 'Lucrezia' 'SALIBA' parent de @I00014@
-[geneanet] DEBUG: Generation 6, sosa 42, id @I00029@ : 'Lorenzo' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2)
-[geneanet] DEBUG: 'Lorenzo' 'BARTOLO' parent de @I00014@
-[geneanet] DEBUG: Generation 6, sosa 39, id @I00030@ : 'Giacobina' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2)
-[geneanet] DEBUG: 'Giacobina' 'NN' parent de @I00012@
-[geneanet] DEBUG: Generation 6, sosa 38, id @I00031@ : 'Marino' 'MAGRO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro)
-[geneanet] DEBUG: 'Marino' 'MAGRO' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : union 1 = debut='* Marié _le 6 novembre 1653 (jeudi), P.Salvo,_' nom_conjoint='Clara CHIRCOP' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop' 
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Giuseppe' 'BRINCATO' : name='Naissance', date='', place='Siggewi - Malte, , , ,', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 32 : Giuseppe BRINCATO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=clemenza.n=nn.oc=3.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=bartolomeo.n=brincato.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=marietta.n=nn.oc=18.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.evechevaleyre.lang=fr.pz=evelyne.nz=cassar.p=nicola.n=chircop.oc=2.html> (referer: None)
-[geneanet] DEBUG: Generation 7, sosa 65, id @I00032@ : 'Clemenza' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3)
-[geneanet] DEBUG: 'Clemenza' 'NN' parent de @I00023@
-[geneanet] DEBUG: Generation 7, sosa 67, id @I00033@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18)
-[geneanet] DEBUG: 'Marietta' 'NN' parent de @I00022@
-[geneanet] DEBUG: Generation 7, sosa 64, id @I00034@ : 'Bartolomeo' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato)
-[geneanet] DEBUG: 'Bartolomeo' 'BRINCATO' parent de @I00023@
-[geneanet] DEBUG: Generation 7, sosa 66, id @I00035@ : 'Nicola' 'CHIRCOP' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2)
-[geneanet] DEBUG: 'Nicola' 'CHIRCOP' parent de @I00022@
+[geneanet] DEBUG: Generation 6, sosa 35, id @I00022@ : 'Angelica' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23)
+[geneanet] DEBUG: 'Angelica' 'NN' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 35 : Angelica NN : union 1 = debut='* Mariée' nom_conjoint='Gio Maria MUSCAT' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7' 
+[geneanet] DEBUG: Generation 6, sosa 35 : Angelica NN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 35 : Angelica NN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 35 : Angelica NN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 34, id @I00023@ : 'Gio Maria' 'MUSCAT' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7)
+[geneanet] DEBUG: 'Gio Maria' 'MUSCAT' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : info = 'Né - Birkhirkara - Malte, , , ,'
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : --> event_name2='Naissance' event_date2='' event_place2='Birkhirkara - Malte, , , ,' 
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : union 1 = debut='* Marié' nom_conjoint='Angelica NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23' 
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Gio Maria' 'MUSCAT' : name='Naissance', date='', place='Birkhirkara - Malte, , , ,', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 34 : Gio Maria MUSCAT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 41, id @I00024@ : 'Lucrezia' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4)
+[geneanet] DEBUG: 'Lucrezia' 'NN' parent de @I00013@
+[geneanet] DEBUG: Generation 6, sosa 41 : Lucrezia NN : union 1 = debut='* Mariée' nom_conjoint='Salvatore ATTARD' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11' 
+[geneanet] DEBUG: Generation 6, sosa 41 : Lucrezia NN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 41 : Lucrezia NN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 41 : Lucrezia NN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 40, id @I00025@ : 'Salvatore' 'ATTARD' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11)
+[geneanet] DEBUG: 'Salvatore' 'ATTARD' parent de @I00013@
+[geneanet] DEBUG: Generation 6, sosa 40 : Salvatore ATTARD : union 1 = debut='* Marié' nom_conjoint='Lucrezia NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4' 
+[geneanet] DEBUG: Generation 6, sosa 40 : Salvatore ATTARD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 40 : Salvatore ATTARD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 40 : Salvatore ATTARD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 43, id @I00026@ : 'Lucrezia' 'SALIBA' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2)
+[geneanet] DEBUG: 'Lucrezia' 'SALIBA' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 43 : Lucrezia SALIBA : union 1 = debut='* Mariée' nom_conjoint='Lorenzo BARTOLO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2' 
+[geneanet] DEBUG: Generation 6, sosa 43 : Lucrezia SALIBA : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 43 : Lucrezia SALIBA : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 43 : Lucrezia SALIBA : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 42, id @I00027@ : 'Lorenzo' 'BARTOLO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2)
+[geneanet] DEBUG: 'Lorenzo' 'BARTOLO' parent de @I00012@
+[geneanet] DEBUG: Generation 6, sosa 42 : Lorenzo BARTOLO : union 1 = debut='* Marié' nom_conjoint='Lucrezia SALIBA' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2' 
+[geneanet] DEBUG: Generation 6, sosa 42 : Lorenzo BARTOLO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 42 : Lorenzo BARTOLO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 42 : Lorenzo BARTOLO : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 39, id @I00028@ : 'Giacobina' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2)
+[geneanet] DEBUG: 'Giacobina' 'NN' parent de @I00018@
+[geneanet] DEBUG: Generation 6, sosa 39 : Giacobina NN : union 1 = debut='* Mariée' nom_conjoint='Marino MAGRO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro' 
+[geneanet] DEBUG: Generation 6, sosa 39 : Giacobina NN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 39 : Giacobina NN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 39 : Giacobina NN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 38, id @I00029@ : 'Marino' 'MAGRO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro)
+[geneanet] DEBUG: 'Marino' 'MAGRO' parent de @I00018@
+[geneanet] DEBUG: Generation 6, sosa 38 : Marino MAGRO : union 1 = debut='* Marié' nom_conjoint='Giacobina NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2' 
+[geneanet] DEBUG: Generation 6, sosa 38 : Marino MAGRO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 38 : Marino MAGRO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 38 : Marino MAGRO : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 45, id @I00030@ : '?' '?' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697)
+[geneanet] DEBUG: '?' '?' parent de @I00017@
+[geneanet] DEBUG: Generation 6, sosa 45 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Valerio Valente CIANTAR' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar' 
+[geneanet] DEBUG: Generation 6, sosa 45 : ? ? : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 45 : ? ? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 45 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 44, id @I00031@ : 'Valerio Valente' 'CIANTAR' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar)
+[geneanet] DEBUG: 'Valerio Valente' 'CIANTAR' parent de @I00017@
+[geneanet] DEBUG: Generation 6, sosa 44 : Valerio Valente CIANTAR : union 1 = debut='* Marié' nom_conjoint='? ?' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697' 
+[geneanet] DEBUG: Generation 6, sosa 44 : Valerio Valente CIANTAR : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 44 : Valerio Valente CIANTAR : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 44 : Valerio Valente CIANTAR : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 67, id @I00032@ : 'Marietta' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18)
+[geneanet] DEBUG: 'Marietta' 'NN' parent de @I00020@
+[geneanet] DEBUG: Generation 7, sosa 67 : Marietta NN : union 1 = debut='* Mariée' nom_conjoint='Nicola CHIRCOP' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2' 
+[geneanet] DEBUG: Generation 7, sosa 67 : Marietta NN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 67 : Marietta NN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 67 : Marietta NN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 66, id @I00033@ : 'Nicola' 'CHIRCOP' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2)
+[geneanet] DEBUG: 'Nicola' 'CHIRCOP' parent de @I00020@
 [geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : info = 'Mro'
+[geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : union 1 = debut='* Marié' nom_conjoint='Marietta NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18' 
+[geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 66 : Nicola CHIRCOP : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 65, id @I00034@ : 'Clemenza' 'NN' (F) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3)
+[geneanet] DEBUG: 'Clemenza' 'NN' parent de @I00021@
+[geneanet] DEBUG: Generation 7, sosa 65 : Clemenza NN : union 1 = debut='* Mariée' nom_conjoint='Bartolomeo BRINCATO' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato' 
+[geneanet] DEBUG: Generation 7, sosa 65 : Clemenza NN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 65 : Clemenza NN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 65 : Clemenza NN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 64, id @I00035@ : 'Bartolomeo' 'BRINCATO' (M) (https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato)
+[geneanet] DEBUG: 'Bartolomeo' 'BRINCATO' parent de @I00021@
+[geneanet] DEBUG: Generation 7, sosa 64 : Bartolomeo BRINCATO : union 1 = debut='* Marié' nom_conjoint='Clemenza NN' url_conjoint='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3' 
+[geneanet] DEBUG: Generation 7, sosa 64 : Bartolomeo BRINCATO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 64 : Bartolomeo BRINCATO : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 64 : Bartolomeo BRINCATO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] INFO: Closing spider (finished)
-[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00002@', mère='@I00003@'
-[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo' mariage_date='28 avril 1805 (dimanche)' mariage_place='S.Paolo - Malte, , , ,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00003@', mère='@I00002@'
+[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo' mariage_date='28 avril 1805 (dimanche)' mariage_place='S.Paolo - Malte, , , ,,' mariage_place='None'
 [geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', père='@I00005@', mère='@I00004@'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3' mariage_date='26 novembre 1776 (mardi)' mariage_place='S.Paolo - Malte, , , ,,' mariage_place='None'
 [geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', père='@I00007@', mère='@I00006@'
-[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3' mariage_date='26 novembre 1776 (mardi)' mariage_place='S.Paolo - Malte, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00006@', père='@I00010@', mère='@I00008@'
-[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00006@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2' mariage_date='peut-être le 19 juillet 1723' mariage_place='Zejtun - Malte, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00007@', père='@I00009@', mère='@I00011@'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00007@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3' mariage_date='peut-être le 8 avril 1709' mariage_place='P.Salvo, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00011@', père='@I00013@', mère='@I00012@'
-[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00011@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15' mariage_date='peut-être le 14 janvier 1680' mariage_place='P.Salvo, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00010@', père='@I00015@', mère='@I00014@'
-[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00010@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2' mariage_date='peut-être le 10 octobre 1693' mariage_place='Ghaxaq' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', père='@I00019@', mère='@I00016@'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8' mariage_date='22 avril 1686 (lundi)' mariage_place='Zejtun - Malte, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00009@', père='@I00018@', mère='@I00017@'
-[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00009@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6' mariage_date='13 juin 1683 (dimanche)' mariage_place='S.Paolo - Malte, , , ,' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00019@', père='@I00021@', mère='@I00020@'
-[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00019@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00018@', père='@I00023@', mère='@I00022@'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00018@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop' mariage_date='6 novembre 1653 (jeudi)' mariage_place='P.Salvo' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', père='@I00025@', mère='@I00024@'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00015@', père='@I00027@', mère='@I00026@'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00015@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00014@', père='@I00029@', mère='@I00028@'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00014@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00012@', père='@I00031@', mère='@I00030@'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00012@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', père='@I00034@', mère='@I00032@'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3' mariage_date='None' mariage_place='None' mariage_place='None'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', père='@I00035@', mère='@I00033@'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maria&n=camilleri&oc=27' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00005@', père='@I00008@', mère='@I00010@'
+[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00005@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3' mariage_date='peut-être le 8 avril 1709' mariage_place='P.Salvo, , , ,,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00004@', père='@I00009@', mère='@I00011@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00004@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2' mariage_date='peut-être le 19 juillet 1723' mariage_place='Zejtun - Malte, , , ,,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', père='@I00013@', mère='@I00012@'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2' mariage_date='peut-être le 10 octobre 1693' mariage_place='Ghaxaq,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00008@', père='@I00015@', mère='@I00014@'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00008@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6' mariage_date='13 juin 1683 (dimanche)' mariage_place='S.Paolo - Malte, , , ,,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', père='@I00017@', mère='@I00016@'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=geronima&n=mifsud&oc=8' mariage_date='22 avril 1686 (lundi)' mariage_place='Zejtun - Malte, , , ,,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00010@', père='@I00019@', mère='@I00018@'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00010@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15' mariage_date='peut-être le 14 janvier 1680' mariage_place='P.Salvo, , , ,,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00015@', père='@I00021@', mère='@I00020@'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00015@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop' mariage_date='6 novembre 1653 (jeudi)' mariage_place='P.Salvo,' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', père='@I00023@', mère='@I00022@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00013@', père='@I00025@', mère='@I00024@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00013@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00012@', père='@I00027@', mère='@I00026@'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00012@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00018@', père='@I00029@', mère='@I00028@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00018@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00017@', père='@I00031@', mère='@I00030@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00020@', père='@I00033@', mère='@I00032@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00020@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18' mariage_date='None' mariage_place='None' mariage_place='None'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00021@', père='@I00035@', mère='@I00034@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00021@', true_url_pere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato', true_url_mere='https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clemenza&n=nn&oc=3' mariage_date='None' mariage_place='None' mariage_place='None'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 35
 [geneanet] INFO: - nb_families        = 17
@@ -264,10 +451,10 @@
  'downloader/response_bytes': 3064737,
  'downloader/response_count': 35,
  'downloader/response_status_count/200': 35,
- 'elapsed_time_seconds': 1.105029,
+ 'elapsed_time_seconds': 1.058663,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 16, 22, 35, 49, 682634),
- 'log_count/DEBUG': 201,
+ 'finish_time': datetime.datetime(2023, 8, 17, 23, 36, 18, 319828),
+ 'log_count/DEBUG': 388,
  'log_count/INFO': 27,
  'request_depth_max': 6,
  'response_received_count': 35,
@@ -275,5 +462,5 @@
  'scheduler/dequeued/memory': 35,
  'scheduler/enqueued': 35,
  'scheduler/enqueued/memory': 35,
- 'start_time': datetime.datetime(2023, 8, 16, 22, 35, 48, 577605)}
+ 'start_time': datetime.datetime(2023, 8, 17, 23, 36, 17, 261165)}
 [scrapy.core.engine] INFO: Spider closed (finished)
