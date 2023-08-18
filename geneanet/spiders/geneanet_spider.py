@@ -138,6 +138,19 @@ class GeneanetSpider(scrapy.Spider):
 
         return result
 
+    def key_union(self, url_parent1, url_parent2):
+        """
+        Donne la clé à utiliser pour les dictionnaires concernant les mariages.
+        Au lieu d'utiliser url_pere/url_mere (en risquant de se tromper), on trie pa ordre alphabétique
+        :param url_parent1:
+        :param url_parent2:
+        :return:
+        """
+        if url_parent1 > url_parent2:
+            result = url_parent1 + ";" + url_parent2
+        else:
+            result = url_parent2 + ";" + url_parent1
+        return result
 
     # On a déjà en cache la page et son url :
     def start_requests(self):
@@ -515,7 +528,7 @@ class GeneanetSpider(scrapy.Spider):
 
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents == 2 :
-            key = parents_url[1] + ";" + parents_url[2]
+            key = self.key_union(parents_url[1], parents_url[2])
             if mariage_date:
                 self.mariages_dates[key] = mariage_date
             else:
@@ -576,7 +589,7 @@ class GeneanetSpider(scrapy.Spider):
                 else:
                     url_pere = url_conjoint
                     url_mere = true_http_url
-                key = url_pere + ";" + url_mere
+                key = self.key_union(url_pere, url_mere)
                 if mariage_date:
                     self.mariages_dates[key] = mariage_date
                 else:
@@ -652,7 +665,7 @@ class GeneanetSpider(scrapy.Spider):
                 true_url_mere = self.true_url_of[wife]
             except:
                 pass
-            key = true_url_pere + ";" + true_url_mere
+            key = self.key_union(true_url_pere, true_url_mere)
             mariage_date = None
             mariage_place = None
             mariage_source = None
@@ -676,7 +689,7 @@ class GeneanetSpider(scrapy.Spider):
             except:
                 pass
 
-            self.log(f"Famille '{pointer_family}' : enfant='{child}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_place='{mariage_source}'")
+            self.log(f"Famille '{pointer_family}' : enfant='{child}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
             self.gedcomw_parser.add_family( pointer_family, child, husband, wife, mariage_date, mariage_place, mariage_source)
 
     @classmethod
