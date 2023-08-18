@@ -149,9 +149,11 @@ class IndividualElement(Element):
                 nb_errors += 1
                 self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
                 pass
-            element_etiq = Element(self.get_level() + 1, '', tag, '', '\n', multi_line=False)
-            self.add_child_element(element_etiq)
+            element_event = Element(self.get_level() + 1, '', tag, '', '\n', multi_line=False)
+            self.add_child_element(element_event)
             # @todo tag TYP (cas GRAD (diplôme)) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
+            # @todo cas OCCU (profession) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
+            # @todo espaces en fin de lignes des notes événements
             date = ""
             gedcom_date = ""
             place = ""
@@ -163,14 +165,14 @@ class IndividualElement(Element):
                 conv = DateConverter(event._date)
                 gedcom_date = conv.to_gedcom_string()
                 element_date = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_DATE, gedcom_date, '\n', multi_line=False)
-                self.add_child_element(element_date)
+                element_event.add_child_element(element_date)
             if event._place is not None and event._place is not "":
                 place = event._place
                 element_place = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_PLACE, place, '\n', multi_line=False)
-                self.add_child_element(element_place)
+                element_event.add_child_element(element_place)
             if event._notes is not None:
                 notes = event._notes
-                self.add_note(root_element, event._notes)
+                element_event.add_note(root_element, event._notes)
             if event._source is not None:
                 source = event._source
                 # la chaîne contient :
@@ -179,7 +181,7 @@ class IndividualElement(Element):
                 lines = event._source.splitlines()
                 source = lines[0]
                 notes_on_source = '\n'.join(lines[1:])
-                self.add_source(root_element, source, notes_on_source)
+                element_event.add_source(root_element, source, notes_on_source)
 
             if csv_log is not None:
                 try:

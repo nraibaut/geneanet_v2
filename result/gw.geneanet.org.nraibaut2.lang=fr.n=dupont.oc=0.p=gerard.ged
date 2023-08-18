@@ -1,5 +1,5 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 18/08/2023 à 01:36 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 18/08/2023 à 18:29 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
@@ -10,7 +10,7 @@
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 18 AUG 2023
-2 TIME 01:36:13
+2 TIME 18:29:01
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -28,37 +28,37 @@
 1 BIRT
 2 DATE 22 MAR 1882
 2 PLAC Paris, France
-1 NOTE @N00003@
-1 SOUR @S00001@
+2 NOTE @N00003@
+2 SOUR @S00001@
 1 CHR
 2 DATE 18 MAY 1882
 2 PLAC Paris, France
-1 NOTE @N00004@
-1 SOUR @S00002@
+2 NOTE @N00004@
+2 SOUR @S00002@
 1 DEAT
 2 DATE 10 APR 1892
 2 PLAC Nice, FRANCE
-1 NOTE @N00005@
-1 SOUR @S00003@
+2 NOTE @N00005@
+2 SOUR @S00003@
 1 BURI
 2 DATE 11 APR 1892
 2 PLAC Nice, FRANCE
-1 NOTE @N00006@
-1 SOUR @S00004@
+2 NOTE @N00006@
+2 SOUR @S00004@
 1 OCCU
 2 DATE 18 MAY 1882
-1 NOTE @N00007@
-1 SOUR @S00005@
+2 NOTE @N00007@
+2 SOUR @S00005@
 1 RESI
 2 DATE 18 MAY 1882
 2 PLAC Lyon, France
-1 NOTE @N00008@
-1 SOUR @S00006@
+2 NOTE @N00008@
+2 SOUR @S00006@
 1 GRAD
 2 DATE 1 JUL 1891
 2 PLAC Nice, FRANCE
-1 NOTE @N00009@
-1 SOUR @S00007@
+2 NOTE @N00009@
+2 SOUR @S00007@
 1 SOUR @S00008@
 0 @N00001@ NOTE Note1 sur le titre
 0 @N00002@ NOTE Texte1 note général  
@@ -125,12 +125,12 @@
 1 SEX M
 1 BIRT
 2 DATE 1 SEP 1850
-1 NOTE @N00011@
-1 SOUR @S00010@
+2 NOTE @N00011@
+2 SOUR @S00010@
 1 DEAT
 2 DATE 1 APR 1895
-1 NOTE @N00012@
-1 SOUR @S00011@
+2 NOTE @N00012@
+2 SOUR @S00011@
 1 SOUR @S00012@
 0 @I00003@ INDI
 1 NAME Marie Paule /DURAND/
@@ -176,16 +176,16 @@
 1 NOTE @N00013@
 1 BIRT
 2 DATE ABT JUL 1802
-1 NOTE @N00014@
+2 NOTE @N00014@
 1 CHR
 2 DATE EST? 23 FEB 1803
-1 NOTE @N00015@
+2 NOTE @N00015@
 1 DEAT
 2 DATE ABT 1 JUN 1885
-1 NOTE @N00016@
+2 NOTE @N00016@
 1 RETI
 2 DATE ABT 1872
-1 NOTE @N00017@
+2 NOTE @N00017@
 1 SOUR @S00014@
 0 @N00013@ NOTE Retraite:
 0 @N00014@ NOTE Date environ
