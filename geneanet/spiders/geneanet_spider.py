@@ -375,6 +375,7 @@ class GeneanetSpider(scrapy.Spider):
             if not lines is None:
                 #event_notes = html2text.html2text(event_notes)
                 event_notes = html2text.html2text(lines).strip()
+                event_notes = re.sub(" *\n", "\n", event_notes) # suppression des espaces ajoutés en fin de lignes
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
 
             lines = event.xpath("td[2]/span[@class='ssource']").get()
@@ -452,6 +453,7 @@ class GeneanetSpider(scrapy.Spider):
             # Cas Notes individuelles :
             if note_text == "":
                 note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip()
+            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
             #note_text = "?"
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} : note_type='{note_type}' note_text='{note_text}'")
             if note_type == "Notes individuelles":

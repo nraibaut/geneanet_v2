@@ -153,7 +153,6 @@ class IndividualElement(Element):
             self.add_child_element(element_event)
             # @todo tag TYP (cas GRAD (diplôme)) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
             # @todo cas OCCU (profession) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
-            # @todo espaces en fin de lignes des notes événements
             date = ""
             gedcom_date = ""
             place = ""
