@@ -695,7 +695,7 @@ class Parser(object):
                 element_source = Element(0, source_pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, '', '\n', multi_line=False)
                 element_title = Element(1, '', gedcomw.tags.GEDCOM_TAG_TITLE, "", '\n', multi_line=False)
                 element_source.add_child_element(element_title)
-                element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, mariage_source, '\n', multi_line=True)  # @todo : vérifier le multiline sur les sources
+                element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, mariage_source, '\n', multi_line=True)
                 element_source.add_child_element(element_text)
                 self.get_root_element().add_child_element(element_source)
 

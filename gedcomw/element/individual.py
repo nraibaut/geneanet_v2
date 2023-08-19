@@ -87,16 +87,16 @@ class IndividualElement(Element):
 
     event_dict = {
         "Baptême" : "CHR", # Ancestris exporte les baptèmes avec "CHR" (et non pas "BAPT")
-        #"Contrat de mariage" : "???", # @todo à voir
+        #"Contrat de mariage" : "???", # Evénements "Contrat de mariage" ignorés en amont (unions gérées séparément)
         "Diplôme" : "GRAD",
         "Domicile" : "RESI",
         "Décès" : "DEAT",
         "Inhumation" : "BURI",
         "Naissance" : "BIRT",
-        #"Personne" : "Personne???", # @todo à voir = uniquement source sur la personne ?
+        #"Personne" : "Personne???", # Uniquement source sur la personne (géré au niveau du parsing individu)
         "Profession" : "OCCU",
         "Retraite" : "RETI",
-        #"Union" : "Union???", # @todo à voir = uniquement source sur le mariage ?
+        #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"

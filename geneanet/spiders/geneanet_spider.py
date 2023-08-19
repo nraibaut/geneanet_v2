@@ -30,8 +30,8 @@ class GeneanetSpider(scrapy.Spider):
     nb_families = 0
     nb_titres_noblesse = 0
     max_generations = 0
-    nb_warnings = 0
     nb_errors = 0
+    nb_todo = 0
     nb_scanned_pages = 0
     nb_saved_pages = 0
     nb_cached_pages = 0
@@ -176,7 +176,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;{date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
@@ -228,6 +228,7 @@ class GeneanetSpider(scrapy.Spider):
         child_pointer = response.meta['child_pointer']
         self.nb_persons += 1
         pointer = "@I%05d@" % (self.nb_persons)
+        nb_errors_indiv = 0
 
         #generation = 1
         #prenom = response.xpath("//div[@id='person-title']//div//h1//a//text()")[0].extract()
@@ -240,7 +241,7 @@ class GeneanetSpider(scrapy.Spider):
         if sexe == "H" :
             sexe = "M"
         if sexe not in ("M", "F") :
-            self.nb_errors += 1
+            nb_errors_indiv += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
         self.sex_of[pointer] = [sexe]
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
@@ -313,8 +314,10 @@ class GeneanetSpider(scrapy.Spider):
                 if profession == None:
                     profession = line
                 else:
-                    self.nb_errors += 1
+                    nb_errors_indiv += 1
                     self.logger.error(f"Is '{profession}' an event ? Please check !")
+                    self.nb_todo += 1
+                    texte_infos = texte_infos + f"@todo vérifier l'événement '{profession}'\n"
                     profession = line
                 pass
 
@@ -400,8 +403,10 @@ class GeneanetSpider(scrapy.Spider):
 
             if GeneanetSpider.is_contrat_de_mariage.match(event_name):
                 # Evénement de la forme "Contrat de mariage (avec <conjoint>) - <lieu>"
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement contrat de mariage '{event_name}'")
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
                 # on ignore les infos (normalement, on les a via la fiche enfant)
+                self.nb_todo += 1
+                texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}'\n"
             else:
                 person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
@@ -461,8 +466,10 @@ class GeneanetSpider(scrapy.Spider):
             elif (note_type == "Naissance") or (note_type == "Décès"):
                 person.set_event(name=note_type, notes=note_text)
             else:
-                self.nb_errors += 1
+                nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
+                self.nb_todo += 1
+                texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré. Valeur='{note_text}'\n"
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -546,8 +553,10 @@ class GeneanetSpider(scrapy.Spider):
             self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n")
 
         elif nb_parents > 2 :
-            self.nb_errors += 1
+            nb_errors_indiv += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
+            self.nb_todo += 1
+            texte_infos = texte_infos + f"@todo à vérifier : {nb_parents} parents !'\n"
 
         nb_unions = 0
         for union in response.xpath("//ul[@class='fiche_union']/li"):
@@ -604,10 +613,16 @@ class GeneanetSpider(scrapy.Spider):
                 debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
                 self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n")
             else:
-                self.nb_errors += 1
+                nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
+                self.nb_todo += 1
+                texte_infos = texte_infos + f"@todo à vérifier : union {nb_unions} NON DECODEE = '{line}'\n"
 
-        self.nb_errors += person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
+        nb_err_events = person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
+        if nb_err_events > 0:
+            self.nb_todo += 1
+            texte_infos = texte_infos + f"@todo vérifier les événements ({nb_err_events} erreur(s) détectée(s))\n"
+        nb_errors_indiv += nb_err_events
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
@@ -624,6 +639,8 @@ class GeneanetSpider(scrapy.Spider):
             titre = titre.strip()
             self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
 
+        self.nb_errors += nb_errors_indiv
+
         if profession == None:
             profession = ""
         if mariage_date == None:
@@ -636,7 +653,7 @@ class GeneanetSpider(scrapy.Spider):
             titre_noblesse = ""
         if note_titre_noblesse == None:
             note_titre_noblesse = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";\n")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
 
     def manage_families(self):
         #print(self.list_tuples_child_of)
@@ -711,13 +728,13 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- max_generations    = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
-        spider.logger.info(f"- nb_warnings        = {self.nb_warnings}")
+        spider.logger.info(f"- nb_todo            = {self.nb_todo}")
         spider.logger.info(f"- nb_scanned_pages   = {self.nb_scanned_pages}")
         spider.logger.info(f"- nb_saved_pages     = {self.nb_saved_pages}")
         spider.logger.info(f"- nb_cached_pages    = {self.nb_cached_pages}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
-        self.csv.write(f"# {self.nb_errors} errors, {self.nb_warnings} warnings\n")
+        self.csv.write(f"# {self.nb_errors} errors, {self.nb_todo} todo\n")
         self.csv.close()
         self.csv_events.close()
         self.csv_unions.close()
