@@ -181,7 +181,7 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
         self.csv_events = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;source;notes_source;{date}\n")
+        self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
         self.log(f"csv unions = {csvfilename}")

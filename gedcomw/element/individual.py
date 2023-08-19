@@ -31,6 +31,7 @@ from gedcomw.element.event import Event # NRa
 from gedcomw.helpers import deprecated
 import gedcomw.tags
 from gedcomw.element.dateconverter import DateConverter
+import re
 
 
 class NotAnActualIndividualError(Exception):
@@ -97,6 +98,8 @@ class IndividualElement(Element):
         "Retraite" : "RETI",
         #"Union" : "Union???", # @todo à voir = uniquement source sur le mariage ?
     }
+    event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
+    event_with_TYPE = [ "GRAD" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
 
     def set_name(self, givenname, surname): # NRa
         # givenname = prénom = GEDCOM_TAG_GIVEN_NAME = "GIVN"
@@ -149,14 +152,29 @@ class IndividualElement(Element):
                 nb_errors += 1
                 self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
                 pass
-            element_event = Element(self.get_level() + 1, '', tag, '', '\n', multi_line=False)
+            notes = event._notes
+            tag_value = ""
+            type_value = ""
+            if tag in IndividualElement.event_with_value : # cas événements de type OCCU (profession) : on remonte la première ligne de la note sur le tag OCCU
+                if notes is not None:
+                    lignes_notes = notes.splitlines()
+                    tag_value = lignes_notes[0]
+                    # notes = lignes_notes[1:]
+                    notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+            if tag in IndividualElement.event_with_TYPE :  # cas événements de type GRAD (diplôme) : on remonte la première ligne de la note en élément TYPE
+                if notes is not None:
+                    lignes_notes = notes.splitlines()
+                    type_value = lignes_notes[0]
+                    # notes = lignes_notes[1:]
+                    notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+            element_event = Element(self.get_level() + 1, '', tag, tag_value, '\n', multi_line=False)
             self.add_child_element(element_event)
-            # @todo tag TYP (cas GRAD (diplôme)) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
-            # @todo cas OCCU (profession) : voir si ça vaut le coup de l'extraire de la 1ère ligne des notes
+            if type_value != "" :
+                element_type = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_TYPE, type_value, '\n', multi_line=False)
+                element_event.add_child_element(element_type)
             date = ""
             gedcom_date = ""
             place = ""
-            notes = ""
             source = ""
             notes_on_source = ""
             if event._date is not None and event._date is not "" :
@@ -169,9 +187,10 @@ class IndividualElement(Element):
                 place = event._place
                 element_place = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_PLACE, place, '\n', multi_line=False)
                 element_event.add_child_element(element_place)
-            if event._notes is not None:
-                notes = event._notes
-                element_event.add_note(root_element, event._notes)
+            if notes is not None:
+                element_event.add_note(root_element, notes)
+            else:
+                note = ""
             if event._source is not None:
                 source = event._source
                 # la chaîne contient :
@@ -184,7 +203,7 @@ class IndividualElement(Element):
 
             if csv_log is not None:
                 try:
-                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";{tag_value}{type_value};\"{source}\";\"{notes_on_source}\";\n")
                 except:
                     #nb_errors += 1
                     self.logger.error( f"manage_events : ERROR write csv for {self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};'")
@@ -196,7 +215,7 @@ class IndividualElement(Element):
                     #place = place.encode(errors="replace")
                     #place = place.encode(errors="xmlcharrefreplace")
                     place = place.encode(encoding = "ascii",errors="replace")
-                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";\"{source}\";\"{notes_on_source}\";\n")
+                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";{tag_value}{type_value};\"{source}\";\"{notes_on_source}\";\n")
                     pass
 
         return nb_errors
