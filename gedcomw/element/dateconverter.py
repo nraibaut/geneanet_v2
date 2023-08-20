@@ -43,11 +43,12 @@ class DateConverter(object):
     # Préfixes autres : EST (estimé) ou WFT EST (estimé par World Family Tree)
     # Dans Geneanet : "avant", "après", "vers", "peut-être" ("en" et "le" ignorés)
     # Dans Ancestris : "CAL" (calculée, en plus de EST), "INT" (interprêtée)
+    # date estimée dans Ancestris affichée avec "peut-être" dans Geneanet
     prefixes = {
         "vers"      : "ABT",
         "avant"     : "BEF",
         "après"     : "AFT",
-        "peut-être" : "EST?",
+        "peut-être" : "EST",
     }
     def __init__(self, text):
         """Initialize Event

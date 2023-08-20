@@ -1,16 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider le 20/08/2023 à 11:16 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider le 20/08/2023 à 22:32 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
-2 FORM Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays
 1 SOUR GeneanetSpider
-2 VERS 0.1.0
+2 VERS 1.0.0
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
 1 DATE 20 AUG 2023
-2 TIME 11:16:02
+2 TIME 22:32:55
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -46,11 +45,9 @@
 2 NOTE @N00006@
 2 SOUR @S00004@
 1 OCCU Profession de Gérard
-2 DATE 18 MAY 1882
 2 NOTE @N00007@
 2 SOUR @S00005@
 1 RESI
-2 DATE 18 MAY 1882
 2 PLAC Lyon, France
 2 NOTE @N00008@
 2 SOUR @S00006@
@@ -67,43 +64,43 @@
 0 @N00003@ NOTE Note1 sur la naissance
 1 CONT Note2 sur la naissance
 0 @S00001@ SOUR
-1 TITL <https://www.source_naissance.fr/>
+1 TITL https://www.source_naissance.fr/
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
 0 @N00004@ NOTE Note1 sur le baptême
 1 CONT Note2 sur le baptême
 0 @S00002@ SOUR
-1 TITL <https://www.source_bapteme.fr/>
+1 TITL https://www.source_bapteme.fr/
 1 TEXT Texte1 source baptême
 2 CONT Texte2 source baptême
 0 @N00005@ NOTE Note1 sur le décès
 1 CONT Note2 sur le décès
 0 @S00003@ SOUR
-1 TITL <https://www.source_deces.fr/>
+1 TITL https://www.source_deces.fr/
 1 TEXT Texte1 source décès
 2 CONT Texte2 source décès
 0 @N00006@ NOTE Note1 sur l'inhumation
 1 CONT Note2 sur l'inhumation
 0 @S00004@ SOUR
-1 TITL <https://www.source_inhumation.fr/>
+1 TITL https://www.source_inhumation.fr/
 1 TEXT Texte1 source inhumation
 2 CONT Texte2 source inhumation
 0 @N00007@ NOTE Note1 sur la profession
 1 CONT Note2 sur la profession
 0 @S00005@ SOUR
-1 TITL <https://www.source_profession.fr/>
+1 TITL https://www.source_profession.fr/
 1 TEXT Texte1 source profession
 2 CONT Texte2 source profession
 0 @N00008@ NOTE Note1 sur la résidence
 1 CONT Note2 sur la résidence
 0 @S00006@ SOUR
-1 TITL <https://www.source_residence.fr/>
+1 TITL https://www.source_residence.fr/
 1 TEXT Texte1 source résidence
 2 CONT Texte2 source résidence
 0 @N00009@ NOTE Note1 sur diplôme
 1 CONT Note2 sur diplôme
 0 @S00007@ SOUR
-1 TITL <https://www.source_diplome.fr/>
+1 TITL https://www.source_diplome.fr/
 1 TEXT Texte1 source diplôme
 2 CONT Texte2 source diplôme
 0 @S00008@ SOUR
@@ -146,13 +143,13 @@
 0 @N00011@ NOTE Note1 sur la naissance
 1 CONT Note2 sur la naissance
 0 @S00010@ SOUR
-1 TITL <https://www.source_naissance.fr/>
+1 TITL https://www.source_naissance.fr/
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
 0 @N00012@ NOTE Note1 sur le décès
 1 CONT Note2 sur le décès
 0 @S00011@ SOUR
-1 TITL <https://www.source_deces.fr/>
+1 TITL https://www.source_deces.fr/
 1 TEXT Texte1 source décès
 2 CONT Texte2 source décès
 0 @S00012@ SOUR
@@ -180,7 +177,7 @@
 2 DATE ABT JUL 1802
 2 NOTE @N00014@
 1 CHR
-2 DATE EST? 23 FEB 1803
+2 DATE EST 23 FEB 1803
 2 NOTE @N00015@
 1 DEAT
 2 DATE ABT 1 JUN 1885
@@ -215,7 +212,5 @@
 0 @F00002@ FAM
 1 HUSB @I00005@
 1 WIFE @I00004@
-1 MARR
-2 DATE *
 1 CHIL @I00002@
 0 TRLR

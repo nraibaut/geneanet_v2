@@ -198,6 +198,8 @@ class IndividualElement(Element):
                 # - en lignes suivantes les notes sur la source
                 lines = event._source.splitlines()
                 source = lines[0]
+                source = re.sub("^<", "", source)  # suppression "<" au début
+                source = re.sub(">$", "", source)  # suppression ">" à la fin
                 notes_on_source = '\n'.join(lines[1:])
                 element_event.add_source(root_element, source, notes_on_source)
 

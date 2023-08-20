@@ -617,7 +617,8 @@ class Parser(object):
         element_submitter_ref = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_SUBMITTER, submitter_pointer, '\n', multi_line=False)
         element_submitter = Element(0, submitter_pointer, gedcomw.tags.GEDCOM_TAG_SUBMITTER, "", '\n', multi_line=False)
         element_place = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_PLACE, "", '\n', multi_line=False)
-        element_form = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_FORM, "Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays", '\n', multi_line=False)
+        # La présence de FORM génère des warnings de cohérence lors de l'import Ancestris
+        #element_form = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_FORM, "Lieudit, Commune, Code_INSEE, Code_Postal, Département, Région, Pays", '\n', multi_line=False)
         element_source = Element(1, pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, source, '\n', multi_line=False)
         element_version = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_VERSION, version, '\n', multi_line=False)
         element_name = Element(2, pointer, gedcomw.tags.GEDCOM_TAG_NAME, name, '\n', multi_line=False)
@@ -636,7 +637,7 @@ class Parser(object):
         element_head.add_child_element(element_note)
         element_head.add_child_element(element_submitter_ref)
         element_head.add_child_element(element_place)
-        element_place.add_child_element(element_form)
+        #element_place.add_child_element(element_form)
         element_head.add_child_element(element_source)
         element_source.add_child_element(element_version)
         element_source.add_child_element(element_name)

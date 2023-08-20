@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "0.1.0"
+    version = "1.0.0"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -414,7 +414,7 @@ class GeneanetSpider(scrapy.Spider):
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
 
             lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
-            event_ddate = None
+            event_date = None
             if not lines is None:
                 event_date = html2text.html2text(lines).strip()
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
@@ -620,6 +620,7 @@ class GeneanetSpider(scrapy.Spider):
                 info = info.replace(f"* Contrat de mariage", "")
                 info = info.replace(f"* Relation", "")
                 info = info.replace(f"_", "")  # caractère de formatage introduit par html2text
+                info = re.sub("^\** *", "", info)
 
                 mariage_date = re.sub(",.*$", "", info)
                 mariage_date = re.sub("^le ", "", mariage_date)
@@ -666,6 +667,15 @@ class GeneanetSpider(scrapy.Spider):
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
+
+        # Détection encart "Anomalies détectées"
+        #if response.xpath("//gw-individual-anomalies"):
+        #if response.xpath("//script[contains(text(),'gntGeneweb.person.anomalies')]"):
+        if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies', [])\")]"):
+            nb_errors_indiv += 1
+            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} :  Anomalies détectées sur {prenom} {nom}. Vérifier la source.")
+            self.nb_todo += 1
+            texte_infos = texte_infos + f"@todo Anomalies détectées sur {prenom} {nom}. Vérifier la source.\n"
 
         # Liste/contrôle des rubriques
         #for info in response.xpath("//h2[span/@class]/span[2]/text()"): # NON à cause § "Union(s), enfant(s)"... : extraire text() après for
