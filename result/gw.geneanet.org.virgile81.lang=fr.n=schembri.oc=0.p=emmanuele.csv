@@ -1,46 +1,46 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;19/08/2023 à 16:20
-2;3;@I00002@;Anna;AZZOPARDI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi;0;0;0;2;forme1;22 novembre 1802;b'Porto Salvo (Malte),';;;;;0;"";0;
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;20/08/2023 à 11:16
 2;2;@I00003@;Michele;SCHEMBRI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri;0;0;0;2;forme1;22 novembre 1802;b'Porto Salvo (Malte),';;;;;0;"";0;
-3;5;@I00004@;Maria;MARTINO;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino;0;0;0;0;;;b'';;;;;0;"";0;
+2;3;@I00002@;Anna;AZZOPARDI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi;0;0;0;2;forme1;22 novembre 1802;b'Porto Salvo (Malte),';;;;;0;"";0;
 3;4;@I00005@;Gaetano;SCHEMBRI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri;0;0;0;0;;;b'';;;;;0;"";0;
-3;7;@I00006@;Antonia;LIBRERI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri;0;0;0;2;forme1;30 novembre 1784;b'Porto Salvo (Malte),';;;;;0;"";0;
+3;5;@I00006@;Maria;MARTINO;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino;0;0;0;0;;;b'';;;;;0;"";0;
 3;6;@I00007@;Aloisio;AZZOPARDI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi;0;0;0;2;forme1;30 novembre 1784;b'Porto Salvo (Malte),';;;;;0;"";0;
+3;7;@I00004@;Antonia;LIBRERI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri;0;0;0;2;forme1;30 novembre 1784;b'Porto Salvo (Malte),';;;;;0;"";0;
 4;13;@I00008@;Anna;CARUANA;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana;0;0;0;2;forme1;16 avril 1736;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
+4;14;@I00010@;Carlo;LIBRERI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri;1;0;0;2;forme1;12 septembre 1756;b'Porto Salvo (Malte),';;;;;0;"- Décédé avant 30 novembre 1784";0;
 4;12;@I00009@;Antonio;AZZOPARDI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1;2;0;0;2;forme1;16 avril 1736;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"- Né - Porto Salvo (Malte)
 - Décédé avant 30 novembre 1784";0;
-4;15;@I00010@;Andreana;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...;1;0;0;0;;12 septembre 1756;b'Porto Salvo (Malte),';Esclave libérée;;;;0;"- Esclave libérée";0;
-4;14;@I00011@;Carlo;LIBRERI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri;1;0;0;2;forme1;12 septembre 1756;b'Porto Salvo (Malte),';;;;;0;"- Décédé avant 30 novembre 1784";0;
+4;15;@I00011@;Andreana;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...;1;0;0;0;;12 septembre 1756;b'Porto Salvo (Malte),';Esclave libérée;;;;0;"- Esclave libérée";0;
 5;29;@I00012@;Diana;LOMBARDO;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo;0;0;0;2;forme1;31 août 1710;b'Porto Salvo (Malte),';;;;;0;"";0;
 5;28;@I00013@;Francesco;LIBRERI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri;2;0;0;2;forme1;31 août 1710;b'Porto Salvo (Malte),';;;;;0;"- Né - Porto Salvo (Malte)
 - Décédé avant 12 septembre 1756";0;
-5;25;@I00014@;Teresa;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...;0;0;0;0;;;b'';;;;;0;"";0;
-5;24;@I00015@;Michel Angelo;AZZOPARDI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi;0;0;0;0;;;b'';;;;;0;"";0;
-6;59;@I00018@;Geronima;COSENTI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti;0;0;0;2;forme1;12 décembre 1688;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
-6;58;@I00019@;Alessando;LOMBARDO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo;1;0;0;2;forme1;12 décembre 1688;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"- Né - Porto Salvo (Malte)";0;
-6;57;@I00020@;Angelica;MUSCAT;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat;0;0;0;2;forme1;22 novembre 1676;b'I?-?urrieq (Malte),';;;;;0;"";0;
-6;56;@I00021@;Cosimo;LIBRERI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri;0;0;0;0;;22 novembre 1676;b'I?-?urrieq (Malte),';;(Cosmano LIBRERI);;;0;"";0;
-6;55;@I00022@;Antonia;CASCON;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon;0;0;0;2;forme1;25 avril 1700;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
-6;53;@I00023@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7;1;0;0;0;;;b'';;;;;0;"- Décédée avant 17 février 1715";0;
-6;52;@I00024@;Giuseppe;CARUANA;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana;0;0;0;0;;;b'';;;;;0;"";0;
-6;54;@I00025@;Gio Paolo;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano;0;0;0;2;forme1;25 avril 1700;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
-7;117;@I00026@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6;0;0;0;0;;;b'';;;;;0;"";0;
-7;119;@I00027@;Orsalia;COSENTI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti;0;0;0;0;;;b'';;;;;0;"";0;
-7;116;@I00028@;Fabrizio;LOMBARDO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo;0;0;0;0;;;b'';;;;;0;"";0;
-7;118;@I00029@;?;?;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832;0;0;0;0;;;b'';;;;;0;"";0;
-7;115;@I00030@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
-7;114;@I00031@;Augustino;MUSCAT;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat;1;0;0;0;;;b'';;;;;0;"- Décédé avant 22 novembre 1676";0;
-7;111;@I00033@;Grazia;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
-7;108;@I00034@;Pietro;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano;2;0;0;2;forme1;18 novembre 1640;b'?ebbu? (Malte),';;;;;0;"- Né - La Valette (Malte)
+5;24;@I00014@;Michel Angelo;AZZOPARDI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi;0;0;0;0;;;b'';;;;;0;"";0;
+5;25;@I00017@;Teresa;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...;0;0;0;0;;;b'';;;;;0;"";0;
+6;53;@I00018@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7;1;0;0;0;;;b'';;;;;0;"- Décédée avant 17 février 1715";0;
+6;52;@I00019@;Giuseppe;CARUANA;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana;0;0;0;0;;;b'';;;;;0;"";0;
+6;55;@I00020@;Antonia;CASCON;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon;0;0;0;2;forme1;25 avril 1700;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
+6;57;@I00021@;Angelica;MUSCAT;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat;0;0;0;2;forme1;22 novembre 1676;b'I?-?urrieq (Malte),';;;;;0;"";0;
+6;54;@I00022@;Gio Paolo;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano;0;0;0;2;forme1;25 avril 1700;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
+6;56;@I00023@;Cosimo;LIBRERI;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri;0;0;0;0;;22 novembre 1676;b'I?-?urrieq (Malte),';;(Cosmano LIBRERI);;;0;"";0;
+6;58;@I00024@;Alessando;LOMBARDO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo;1;0;0;2;forme1;12 décembre 1688;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"- Né - Porto Salvo (Malte)";0;
+6;59;@I00025@;Geronima;COSENTI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti;0;0;0;2;forme1;12 décembre 1688;b'La Valette (Malte) ?glise coll?giale du naufrage de Saint-Paul,';;;;;0;"";0;
+7;119;@I00026@;Orsalia;COSENTI;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti;0;0;0;0;;;b'';;;;;0;"";0;
+7;118;@I00027@;?;?;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832;0;0;0;0;;;b'';;;;;0;"";0;
+7;117;@I00028@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6;0;0;0;0;;;b'';;;;;0;"";0;
+7;116;@I00029@;Fabrizio;LOMBARDO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo;0;0;0;0;;;b'';;;;;0;"";0;
+7;109;@I00030@;Caterina;BUHAGIAR;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar;0;0;0;2;forme1;18 novembre 1640;b'?ebbu? (Malte),';;;;;0;"";0;
+7;108;@I00031@;Pietro;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano;2;0;0;2;forme1;18 novembre 1640;b'?ebbu? (Malte),';;;;;0;"- Né - La Valette (Malte)
 - Décédé avant 25 avril 1700";0;
+7;115;@I00032@;Domenica;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
+7;114;@I00033@;Augustino;MUSCAT;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat;1;0;0;0;;;b'';;;;;0;"- Décédé avant 22 novembre 1676";0;
+7;111;@I00034@;Grazia;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
 7;110;@I00035@;Francesco;CASCON;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon;1;0;0;0;;;b'';;;;;0;"- Décédé avant 25 avril 1700";0;
-7;109;@I00032@;Caterina;BUHAGIAR;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar;0;0;0;2;forme1;18 novembre 1640;b'?ebbu? (Malte),';;;;;0;"";0;
 8;217;@I00036@;Isabella;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-8;218;@I00037@;Salvatore;BUHAGIAR;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar;1;0;0;2;forme1;7 septembre 1603;b'Is-Si??iewi (Malte),';;;;;0;"- Décédé avant 18 novembre 1640";0;
-8;216;@I00038@;Alfonso;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano;1;0;0;0;;;b'';;;;;0;"- Décédé avant 18 novembre 1640";0;
-8;219;@I00039@;Laurica;MAMO;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo;0;0;0;2;forme1;7 septembre 1603;b'Is-Si??iewi (Malte),';;;;;0;"";0;
-9;439;@I00040@;Grazia;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
-9;437;@I00041@;?;?;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848;0;0;0;0;;;b'';;;;;0;"";0;
+8;216;@I00037@;Alfonso;NAPOLITANO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano;1;0;0;0;;;b'';;;;;0;"- Décédé avant 18 novembre 1640";0;
+8;219;@I00038@;Laurica;MAMO;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo;0;0;0;2;forme1;7 septembre 1603;b'Is-Si??iewi (Malte),';;;;;0;"";0;
+8;218;@I00039@;Salvatore;BUHAGIAR;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar;1;0;0;2;forme1;7 septembre 1603;b'Is-Si??iewi (Malte),';;;;;0;"- Décédé avant 18 novembre 1640";0;
+9;436;@I00040@;Giuseppe;BUHAGIAR;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar;0;0;0;0;;;b'';;;;;0;"";0;
+9;439;@I00041@;Grazia;...;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
 9;438;@I00042@;Matteo;MAMO;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo;0;0;0;0;;;b'';;;;;0;"";0;
-9;436;@I00043@;Giuseppe;BUHAGIAR;M;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar;0;0;0;0;;;b'';;;;;0;"";0;
+9;437;@I00043@;?;?;F;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848;0;0;0;0;;;b'';;;;;0;"";0;
 # 43 persons, 21 families, 9 generations, 0 titres de noblesse
 # 0 errors, 0 todo

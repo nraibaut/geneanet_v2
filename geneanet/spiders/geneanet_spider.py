@@ -47,6 +47,25 @@ class GeneanetSpider(scrapy.Spider):
     is_contrat_de_mariage = re.compile("^Contrat de mariage \(avec .*\).*")
     ligne_mariage = re.compile(".*Mari.*avec.*")
     union_regex = re.compile("(.*) [Aa]vec \[([^\]]*)\]\(([^\)]*)\).*")
+    union_avec_regex = re.compile("Union avec.*")
+
+    paragraphes_connus = [
+        "Aperçu de l'arbre",
+        "Demi-frères et demi-sœurs",
+        "Fratrie",
+        "Grands parents maternels, oncles et tantes",
+        "Grands parents paternels, oncles et tantes",
+        "Notes concernant l'union",
+        "Notes",
+        "Parents",
+        "Photos & documents",
+        "Relations",
+        "Sources",
+        "Union(s) et enfant(s)",
+        "Union(s)",
+        "Union(s), enfant(s)",
+        "Événements",
+    ]
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -450,7 +469,10 @@ class GeneanetSpider(scrapy.Spider):
                     person.set_event(name=e, source=event_sources)
 
         nb_notes = 0
-        for note in response.xpath("//h2[span='Notes']/following-sibling::h3[@class='note_type']"):
+        # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
+        # ==> on teste uniquement h3[@class='note_type' au lieu de :
+        # for note in response.xpath("//h2[span='Notes']/following-sibling::h3[@class='note_type']"):
+        for note in response.xpath("//h3[@class='note_type']"):
             nb_notes += 1
             note_type = note.xpath("text()").get().strip()
             #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
@@ -465,11 +487,29 @@ class GeneanetSpider(scrapy.Spider):
                 person.add_note(self.gedcomw_parser.get_root_element(), note_text)
             elif (note_type == "Naissance") or (note_type == "Décès"):
                 person.set_event(name=note_type, notes=note_text)
+            elif GeneanetSpider.union_avec_regex.match(note_type):
+                self.nb_todo += 1
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
+                texte_infos = texte_infos + f"@todo note '{note_type}' à analyser : '{note_text}'\n"
             else:
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
                 self.nb_todo += 1
                 texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré. Valeur='{note_text}'\n"
+
+        # Autres notes (certains cas, pas tous, de "Notes concernant l'union"
+        #for note in response.xpath("//*[@name='note-wed-1']"):
+        #for note in response.xpath("//p[a/@name='note-wed-1']"):
+        # le seul cas rencontré est :
+        # <p><a name="note-wed-1"></a>...&#34;laquelle SYBILLE a accusé ledit BAR de crime de rapt...&#34;</p>
+        # Par robustesse, je prends tout ce qui a @name='note-wed-1' (pas seulement balise "a" dans balise "p") :
+        for note in response.xpath("//*[*/@name='note-wed-1']"):
+            nb_notes += 1
+            note_text = html2text.html2text(note.get()).strip()
+            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+            self.nb_todo += 1
+            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
+            texte_infos = texte_infos + f"@todo note union à analyser : '{note_text}'\n"
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -626,8 +666,6 @@ class GeneanetSpider(scrapy.Spider):
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
-        texte_infos = texte_infos.strip()
-        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
 
         # Liste/contrôle des rubriques
         #for info in response.xpath("//h2[span/@class]/span[2]/text()"): # NON à cause § "Union(s), enfant(s)"... : extraire text() après for
@@ -638,8 +676,15 @@ class GeneanetSpider(scrapy.Spider):
             titre = re.sub( "  *", " ", titre)
             titre = titre.strip()
             self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
+            if titre not in GeneanetSpider.paragraphes_connus :
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique '{titre}' inconnue !")
+                self.nb_todo += 1
+                texte_infos = texte_infos + f"@todo à vérifier : rubrique '{titre}' inconnue.\n"
 
         self.nb_errors += nb_errors_indiv
+        texte_infos = texte_infos.strip()
+        person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
 
         if profession == None:
             profession = ""
