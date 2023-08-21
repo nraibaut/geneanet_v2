@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.0"
+    version = "1.0.1"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -187,7 +187,7 @@ class GeneanetSpider(scrapy.Spider):
         self.log(f"gedcom_result_filename = {GeneanetSpider.gedcom_result_filename}")
         now = datetime.now()  # current date and time
         date = now.strftime("%d/%m/%Y à %H:%M")
-        header_text = f"Cette généalogie a été créée par {self.progname} le {date} à partir de {self.url}"
+        header_text = f"Cette généalogie a été créée par {self.progname} {self.version} le {date} à partir de {self.url}"
         self.gedcomw_parser.nra_set_header(header_text, self.progname, self.version, self.progname,
                    self.team, self.address, GeneanetSpider.gedcom_result_filename)
 
@@ -291,9 +291,13 @@ class GeneanetSpider(scrapy.Spider):
         nb_infos = 0
         texte_infos = ""
         profession = None
-        for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
+        #for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
+        for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li"):
             nb_infos += 1
-            line = info.get().replace("\n", " ")
+            #line = info.get().replace("\n", " ")
+            line = html2text.html2text(info.get()).strip()
+            line = re.sub("^\* *", "", line)
+
             # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
             # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
             line = line.replace(u"\u00A0", " ")  # avant toute chose !
