@@ -307,9 +307,9 @@ class GeneanetSpider(scrapy.Spider):
             premier_mot = words[0]
             event_date_and_place = re.sub("^[^ ]*", "", line) # on enlève le premier mot (mais on garde l'espace, au cas date vide (exemple : "Né - lieu")
             event_date = re.sub(" - .*", "", event_date_and_place)
+            event_date = re.sub("^ *", "", event_date)
             event_date = re.sub("^le ", "", event_date)
             event_date = re.sub("^en ", "", event_date)
-            event_date = re.sub("^ *", "", event_date)
             event_place = None
             if " - " in event_date_and_place:
                 event_place = re.sub("^[^-]* - ", "", event_date_and_place) # attention : on peut avoir des "-" dans le lieu
