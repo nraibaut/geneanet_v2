@@ -315,8 +315,11 @@ class GeneanetSpider(scrapy.Spider):
             event_date = re.sub("^le ", "", event_date)
             event_date = re.sub("^en ", "", event_date)
             event_place = None
-            if " - " in event_date_and_place:
-                event_place = re.sub("^[^-]* - ", "", event_date_and_place) # attention : on peut avoir des "-" dans le lieu
+            #if " - " in event_date_and_place:
+            #    event_place = re.sub("^[^-]* - ", "", event_date_and_place) # attention : on peut avoir des "-" dans le lieu
+            n = event_date_and_place.find(" - ")
+            if n >= 0:
+                event_place = event_date_and_place[n+3:]
             event_dict = {
                 "Né": "Naissance",
                 "Née": "Naissance",
