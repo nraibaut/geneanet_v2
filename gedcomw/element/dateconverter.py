@@ -67,8 +67,12 @@ class DateConverter(object):
         # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
         text2 = text2.replace(u"\u00A0", " ") # avant toute chose !
 
-        # On enlève le "le " parfois présent au début :
+        text2 = text2.strip()
+        text2 = text2.lower() # robustesse sur les mois
+
+        # On enlève le "le " ou "en " parfois présent au début :
         text2 = re.sub("^le ", "", text2, 1)
+        text2 = re.sub("^en ", "", text2, 1)
 
         # On supprime le jour de la semaine parfois présent à la fin :
         for jour in ("(lundi)", "(mardi)", "(mercredi)", "(jeudi)", "(vendredi)", "(samedi)", "(dimanche)") :
@@ -77,12 +81,18 @@ class DateConverter(object):
         # On regarde la présence éventuelle d'un qualificatif :
         words = text2.split()
         first_word = words[0]
-        #for qualificatif in ("avant", "après", "vers", "en", "peut-être"):
+        #for qualificatif in ("avant", "après", "vers", "peut-être"):
         try :
             prefix = DateConverter.prefixes[first_word] # ok, ou exception "KeyError"
             self._qualificatif = first_word
-            text2 = re.sub("^" + first_word, prefix, text2, 1)
-        except:
+            # on enlève d'abord le premier mot (Geneanet)
+            text2 = re.sub("^" + first_word + " ", "", text2, 1)
+            # On enlève le "le " ou "en " qui peut être après le qualificatif ("avant", "après", "vers", "peut-être") :
+            text2 = re.sub("^le ", "", text2, 1)
+            text2 = re.sub("^en ", "", text2, 1)
+            # On remet le prefixe (gedcom)
+            text2 = prefix + " " + text2
+        except KeyError:
             pass
 
         isrepublicain = DateConverter.repcal.match(text2)
@@ -90,7 +100,6 @@ class DateConverter(object):
             self._republican_date = isrepublicain.groups(0)[0].strip()
             text2 = isrepublicain.groups(0)[1]
 
-        text2 = text2.lower() # robustesse sur les mois
         text2 = re.sub("1er ", "1 ", text2, 1)
 
         for mois1 in DateConverter.months.keys():
