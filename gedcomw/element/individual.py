@@ -145,16 +145,22 @@ class IndividualElement(Element):
             #self.logger.info(f"event : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
             self.logger.info(f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
             tag = "?"
+            tag_value = ""
+            type_value = ""
             try:
                 tag = IndividualElement.event_dict[event._name]  # ok, ou exception "KeyError"
             except:
-                tag = event._name + "???"
+                #tag = event._name + "???"
+                tag = "EVEN" # on génère un événement gedcom valide, avec une valeur @todo
+                info = f"@todo événement '{event._name}' inconnu. Vérifier la source."
+                if event._source is not None:
+                    event._source += "\n" + info
+                else:
+                    event._source += info
                 nb_errors += 1
                 self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
                 pass
             notes = event._notes
-            tag_value = ""
-            type_value = ""
             if tag in IndividualElement.event_with_value : # cas événements de type OCCU (profession) : on remonte la première ligne de la note sur le tag OCCU
                 if notes is not None:
                     lignes_notes = notes.splitlines()
@@ -167,6 +173,8 @@ class IndividualElement(Element):
                     type_value = lignes_notes[0]
                     # notes = lignes_notes[1:]
                     notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+            if (tag == "DEAT") and ((event._date is None) or (event._date is "")): # cas des morts sans date
+                tag_value = "Y"
             element_event = Element(self.get_level() + 1, '', tag, tag_value, '\n', multi_line=False)
             self.add_child_element(element_event)
             if type_value != "" :
