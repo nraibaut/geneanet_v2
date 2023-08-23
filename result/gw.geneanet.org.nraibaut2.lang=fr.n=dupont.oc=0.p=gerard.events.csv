@@ -1,4 +1,4 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;22/08/2023 à 02:02
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.3 23/08/2023 à 22:31
 @I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Naissance;BIRT;22 mars 1882;22 MAR 1882;Paris, France;"Note1 sur la naissance
 Note2 sur la naissance";;"https://www.source_naissance.fr/";"Texte1 source naissance
 Texte2 source naissance";
@@ -26,7 +26,7 @@ Texte2 source naissance";
 @I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Décès;DEAT;1er avril 1895;1 APR 1895;;"Note1 sur le décès
 Note2 sur le décès";;"https://www.source_deces.fr/";"Texte1 source décès
 Texte2 source décès";
-@I00004@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;;"Date environ";;"";"";
-@I00004@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST 23 FEB 1803;;"Date estimée";;"";"";
-@I00004@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;;"Date calculée";;"";"";
-@I00004@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Retraite;RETI;vers 1872;ABT 1872;;"Date interprêtée";;"";"";
+@I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;;"Date environ";;"";"";
+@I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST 23 FEB 1803;;"Date estimée";;"";"";
+@I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;;"Date calculée";;"";"";
+@I00005@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Retraite;RETI;vers 1872;ABT 1872;;"Date interprêtée";;"";"";

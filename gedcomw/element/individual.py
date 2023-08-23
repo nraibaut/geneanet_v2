@@ -152,7 +152,7 @@ class IndividualElement(Element):
             except:
                 #tag = event._name + "???"
                 tag = "EVEN" # on génère un événement gedcom valide, avec une valeur @todo
-                info = f"@todo événement '{event._name}' inconnu. Vérifier la source."
+                info = f"@todo événement '{event._name}' inconnu pour {self.__givenname} {self.__surname}. Vérifier la source."
                 if event._source is not None:
                     event._source += "\n" + info
                 else:
@@ -166,13 +166,15 @@ class IndividualElement(Element):
                     lignes_notes = notes.splitlines()
                     tag_value = lignes_notes[0]
                     # notes = lignes_notes[1:]
-                    notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+                    #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+                    notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
             if tag in IndividualElement.event_with_TYPE :  # cas événements de type GRAD (diplôme) : on remonte la première ligne de la note en élément TYPE
                 if notes is not None:
                     lignes_notes = notes.splitlines()
                     type_value = lignes_notes[0]
                     # notes = lignes_notes[1:]
-                    notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+                    #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
+                    notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
             if (tag == "DEAT") and ((event._date is None) or (event._date is "")): # cas des morts sans date
                 tag_value = "Y"
             element_event = Element(self.get_level() + 1, '', tag, tag_value, '\n', multi_line=False)

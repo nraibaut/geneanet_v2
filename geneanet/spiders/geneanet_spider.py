@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.2"
+    version = "1.0.3"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -195,17 +195,17 @@ class GeneanetSpider(scrapy.Spider):
         csvfilename = self.result_dir + "/" + result_name + ".csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;{date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
         self.csv_events = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{date}\n")
+        self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
         self.log(f"csv unions = {csvfilename}")
         self.csv_unions = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{date}\n")
+        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{self.progname} {self.version} {date}\n")
 
         true_url = self.url
         url_to_scan = self.get_url_to_scan(true_url)
@@ -434,7 +434,7 @@ class GeneanetSpider(scrapy.Spider):
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
                 # on ignore les infos (normalement, on les a via la fiche enfant)
                 self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}'\n"
+                texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}' pour {prenom} {nom}\n"
             else:
                 person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
@@ -499,12 +499,12 @@ class GeneanetSpider(scrapy.Spider):
             elif GeneanetSpider.union_avec_regex.match(note_type):
                 self.nb_todo += 1
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
-                texte_infos = texte_infos + f"@todo note '{note_type}' à analyser : '{note_text}'\n"
+                texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
             else:
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
                 self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré. Valeur='{note_text}'\n"
+                texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
 
         # Autres notes (certains cas, pas tous, de "Notes concernant l'union"
         #for note in response.xpath("//*[@name='note-wed-1']"):
@@ -518,7 +518,7 @@ class GeneanetSpider(scrapy.Spider):
             note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
             self.nb_todo += 1
             self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
-            texte_infos = texte_infos + f"@todo note union à analyser : '{note_text}'\n"
+            texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
@@ -605,7 +605,7 @@ class GeneanetSpider(scrapy.Spider):
             nb_errors_indiv += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
             self.nb_todo += 1
-            texte_infos = texte_infos + f"@todo à vérifier : {nb_parents} parents !'\n"
+            texte_infos = texte_infos + f"@todo à vérifier : {nb_parents} parents pour {prenom} {nom} !'\n"
 
         nb_unions = 0
         for union in response.xpath("//ul[@class='fiche_union']/li"):
@@ -666,12 +666,12 @@ class GeneanetSpider(scrapy.Spider):
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
                 self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo à vérifier : union {nb_unions} NON DECODEE = '{line}'\n"
+                texte_infos = texte_infos + f"@todo à vérifier : union {nb_unions} NON DECODEE pour {prenom} {nom} = '{line}'\n"
 
         nb_err_events = person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
         if nb_err_events > 0:
             self.nb_todo += 1
-            texte_infos = texte_infos + f"@todo vérifier les événements ({nb_err_events} erreur(s) détectée(s))\n"
+            texte_infos = texte_infos + f"@todo vérifier les événements pour {prenom} {nom} ({nb_err_events} erreur(s) détectée(s))\n"
         nb_errors_indiv += nb_err_events
 
         if source_personne is not None:
@@ -682,7 +682,7 @@ class GeneanetSpider(scrapy.Spider):
         #if response.xpath("//script[contains(text(),'gntGeneweb.person.anomalies')]"):
         if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies', [])\")]"):
             nb_errors_indiv += 1
-            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} :  Anomalies détectées sur {prenom} {nom}. Vérifier la source.")
+            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Anomalies détectées sur {prenom} {nom}. Vérifier la source.")
             self.nb_todo += 1
             texte_infos = texte_infos + f"@todo Anomalies détectées sur {prenom} {nom}. Vérifier la source.\n"
 
@@ -699,7 +699,7 @@ class GeneanetSpider(scrapy.Spider):
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique '{titre}' inconnue !")
                 self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo à vérifier : rubrique '{titre}' inconnue.\n"
+                texte_infos = texte_infos + f"@todo à vérifier : rubrique '{titre}' inconnue pour {prenom} {nom}.\n"
 
         self.nb_errors += nb_errors_indiv
         texte_infos = texte_infos.strip()
