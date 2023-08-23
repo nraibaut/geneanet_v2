@@ -1,4 +1,4 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;20/08/2023 à 22:32
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;22/08/2023 à 02:02
 1;1;@I00001@;Gérard;DUPONT;M;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;5;7;1;2;forme2;;b'';Profession de Gérard;;Titre de Gérard;Note1 sur le titre;1;"- Né le 22 mars 1882 - Paris, France
 - Baptisé le 18 mai 1882 - Paris, France
 - Décédé le 10 avril 1892 - Nice, FRANCE, à l'âge de 10 ans
@@ -14,9 +14,9 @@ Note2 sur le mariage'";0;
 - Décédé le 1er avril 1895, à l'âge de 44 ans
 @todo note 'Union avec Marie Paule DURAND' à analyser : 'Note1 sur le mariage
 Note2 sur le mariage'";0;
-3;5;@I00004@;Jeanne;INN;F;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;0;0;0;0;;;b'';;;;;0;"";0;
-3;4;@I00005@;Jean;DATES;M;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;3;4;0;0;;;b'';;;;;1;"- Né vers juillet 1802
+3;4;@I00004@;Jean;DATES;M;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;3;4;0;0;;;b'';;;;;1;"- Né vers juillet 1802
 - Baptisé peut-être le 23 février 1803
 - Décédé vers 1er juin 1885, à l'âge d'environ 82 ans";0;
+3;5;@I00005@;Jeanne;INN;F;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;0;0;0;0;;;b'';;;;;0;"";0;
 # 5 persons, 2 families, 3 generations, 0 titres de noblesse
 # 0 errors, 2 todo

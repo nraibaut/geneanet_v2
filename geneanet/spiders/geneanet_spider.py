@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.1"
+    version = "1.0.2"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -346,6 +346,8 @@ class GeneanetSpider(scrapy.Spider):
                     texte_infos = texte_infos + f"@todo vérifier l'événement '{profession}'\n"
                     profession = line
                 pass
+        if profession is not None:
+            person.set_event(name="Profession", notes=profession)
 
         # Extraction "sous-titre" ou titre_noblesse/note_titre_noblesse
         # Cette info est présente dans la balise "em" juste après div[@id='person-title']

@@ -1,4 +1,4 @@
-[root] INFO: Starting GeneanetSpider 1.0.0
+[root] INFO: Starting GeneanetSpider 1.0.2
 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
 [scrapy.crawler] INFO: Overridden settings:
@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: c5fb13c8853d86eb
+[scrapy.extensions.telnet] INFO: Telnet Password: 7e5aaba8fe2be5bd
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -45,7 +45,7 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele
 [geneanet] DEBUG: result_name = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider le 20/08/2023 à 22:32 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.2 le 22/08/2023 à 02:02 à partir de https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.events.csv
 [geneanet] DEBUG: csv unions = result/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.unions.csv
@@ -53,12 +53,13 @@
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.n=schembri.oc=0.p=emmanuele.html> (referer: None)
 [geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Emmanuele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele)
 [geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : info = 'Décédé le 7 avril 1877 - Tunis (Tunisie) ‎تونس église Ste-Croix'
-[geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : --> event_name2='Décès' event_date2='le 7 avril 1877' event_place2='Tunis (Tunisie) ‎تونس église Ste-Croix' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : --> event_name2='Décès' event_date2='7 avril 1877' event_place2='Tunis (Tunisie) ‎تونس église Ste-Croix' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=michele.n=schembri.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=michele.n=schembri.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=azzopardi.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=azzopardi.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=michele.n=schembri.html> (referer: None)
 [geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : union 1 = debut='* Marié _le 5 septembre 1846, Tunis (Tunisie) ‎تونس église Ste-Croix,_' nom_conjoint='Marta ROSSO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=marta&n=rosso' 
-[gedcomw.element.element] INFO: manage_events : @I00001@ 'Emmanuele' 'SCHEMBRI' : name='Décès', date='le 7 avril 1877', place='Tunis (Tunisie) ‎تونس église Ste-Croix', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Emmanuele' 'SCHEMBRI' : name='Décès', date='7 avril 1877', place='Tunis (Tunisie) ‎تونس église Ste-Croix', notes='None', source='None'
 [gedcomw.element.element] ERROR: manage_events : ERROR write csv for @I00001@;Emmanuele;SCHEMBRI;https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele;Décès;DEAT;'
 [geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : rubrique='Parents'
 [geneanet] DEBUG: Generation 1, sosa 1 : Emmanuele SCHEMBRI : rubrique='Union(s), enfant(s)'
@@ -96,63 +97,62 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 711, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 720, in parse
     self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\encodings\cp1252.py", line 19, in encode
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 229-233: character maps to <undefined>
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=azzopardi.html> (referer: None)
-[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Michele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
-[geneanet] DEBUG: 'Michele' 'SCHEMBRI' parent de @I00001@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gaetano.n=schembri.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=maria.n=martino.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=maria.n=martino.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gaetano.n=schembri.html> (referer: None)
-[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : union 1 = debut='* Marié _le 22 novembre 1802, Porto Salvo (Malte),_' nom_conjoint='Anna AZZOPARDI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi' 
-[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Parents'
-[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Anna' 'AZZOPARDI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Anna' 'AZZOPARDI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi)
 [geneanet] DEBUG: 'Anna' 'AZZOPARDI' parent de @I00001@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=aloisio.n=azzopardi.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=aloisio.n=azzopardi.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=libreri.html'
 [geneanet] DEBUG: Generation 2, sosa 3 : Anna AZZOPARDI : union 1 = debut='* Mariée _le 22 novembre 1802, Porto Salvo (Malte),_' nom_conjoint='Michele SCHEMBRI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri' 
 [geneanet] DEBUG: Generation 2, sosa 3 : Anna AZZOPARDI : rubrique='Parents'
 [geneanet] DEBUG: Generation 2, sosa 3 : Anna AZZOPARDI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 2, sosa 3 : Anna AZZOPARDI : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'Michele' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri)
+[geneanet] DEBUG: 'Michele' 'SCHEMBRI' parent de @I00001@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gaetano.n=schembri.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gaetano.n=schembri.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=libreri.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Maria' 'MARTINO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino)
-[geneanet] DEBUG: 'Maria' 'MARTINO' parent de @I00002@
-[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : union 1 = debut='* Mariée' nom_conjoint='Gaetano SCHEMBRI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri' 
-[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Gaetano' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri)
-[geneanet] DEBUG: 'Gaetano' 'SCHEMBRI' parent de @I00002@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=aloisio.n=azzopardi.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=maria.n=martino.html'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : union 1 = debut='* Marié _le 22 novembre 1802, Porto Salvo (Malte),_' nom_conjoint='Anna AZZOPARDI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michele SCHEMBRI : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=maria.n=martino.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00004@ : 'Gaetano' 'SCHEMBRI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri)
+[geneanet] DEBUG: 'Gaetano' 'SCHEMBRI' parent de @I00003@
 [geneanet] DEBUG: Generation 3, sosa 4 : Gaetano SCHEMBRI : union 1 = debut='* Marié' nom_conjoint='Maria MARTINO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino' 
 [geneanet] DEBUG: Generation 3, sosa 4 : Gaetano SCHEMBRI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 4 : Gaetano SCHEMBRI : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Aloisio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
-[geneanet] DEBUG: 'Aloisio' 'AZZOPARDI' parent de @I00003@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonio.n=azzopardi.oc=1.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=caruana.html'
-[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : union 1 = debut='* Marié _le 30 novembre 1784, Porto Salvo (Malte),_' nom_conjoint='Antonia LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri' 
-[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Parents'
-[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Aperçu de l'arbre'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=caruana.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonio.n=azzopardi.oc=1.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00007@ : 'Antonia' 'LIBRERI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
-[geneanet] DEBUG: 'Antonia' 'LIBRERI' parent de @I00003@
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00005@ : 'Antonia' 'LIBRERI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri)
+[geneanet] DEBUG: 'Antonia' 'LIBRERI' parent de @I00002@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=carlo.n=libreri.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=... (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=andreana.n=....html'
 [geneanet] DEBUG: Generation 3, sosa 7 : Antonia LIBRERI : union 1 = debut='* Mariée _le 30 novembre 1784, Porto Salvo (Malte),_' nom_conjoint='Aloisio AZZOPARDI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi' 
 [geneanet] DEBUG: Generation 3, sosa 7 : Antonia LIBRERI : rubrique='Parents'
 [geneanet] DEBUG: Generation 3, sosa 7 : Antonia LIBRERI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 7 : Antonia LIBRERI : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Aloisio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi)
+[geneanet] DEBUG: 'Aloisio' 'AZZOPARDI' parent de @I00002@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonio.n=azzopardi.oc=1.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=caruana.html'
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00007@ : 'Maria' 'MARTINO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino)
+[geneanet] DEBUG: 'Maria' 'MARTINO' parent de @I00003@
+[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : union 1 = debut='* Mariée' nom_conjoint='Gaetano SCHEMBRI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 5 : Maria MARTINO : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=anna.n=caruana.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonio.n=azzopardi.oc=1.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=andreana.n=....html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=carlo.n=libreri.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : union 1 = debut='* Marié _le 30 novembre 1784, Porto Salvo (Malte),_' nom_conjoint='Antonia LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 6 : Aloisio AZZOPARDI : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 4, sosa 13, id @I00008@ : 'Anna' 'CARUANA' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana)
 [geneanet] DEBUG: 'Anna' 'CARUANA' parent de @I00006@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+antonio.n=caruana.html'
@@ -161,7 +161,19 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 229-233:
 [geneanet] DEBUG: Generation 4, sosa 13 : Anna CARUANA : rubrique='Parents'
 [geneanet] DEBUG: Generation 4, sosa 13 : Anna CARUANA : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 4, sosa 13 : Anna CARUANA : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 4, sosa 12, id @I00009@ : 'Antonio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
+[geneanet] DEBUG: Generation 4, sosa 15, id @I00009@ : 'Andreana' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...)
+[geneanet] DEBUG: 'Andreana' '...' parent de @I00005@
+[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : info = 'Esclave libérée'
+[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : union 1 = debut='* Mariée _le 12 septembre 1756, Porto Salvo (Malte),_' nom_conjoint='Carlo LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri' 
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Andreana' '...' : name='Profession', date='None', place='None', notes='Esclave libérée', source='None'
+[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 14, id @I00010@ : 'Carlo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
+[geneanet] DEBUG: 'Carlo' 'LIBRERI' parent de @I00005@
+[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : info = 'Décédé avant 30 novembre 1784'
+[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : --> event_name2='Décès' event_date2='avant 30 novembre 1784' event_place2='None' 
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=libreri.html'
+[geneanet] DEBUG: Generation 4, sosa 12, id @I00011@ : 'Antonio' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1)
 [geneanet] DEBUG: 'Antonio' 'AZZOPARDI' parent de @I00006@
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : info = 'Né - Porto Salvo (Malte)'
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : --> event_name2='Naissance' event_date2='' event_place2='Porto Salvo (Malte)' 
@@ -170,53 +182,67 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 229-233:
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=michel+angelo.n=azzopardi.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=... (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=teresa.n=....html'
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : union 1 = debut='* Marié _le 16 avril 1736, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Anna CARUANA' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana' 
-[gedcomw.element.element] INFO: manage_events : @I00009@ 'Antonio' 'AZZOPARDI' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00009@ 'Antonio' 'AZZOPARDI' : name='Décès', date='avant 30 novembre 1784', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Antonio' 'AZZOPARDI' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Antonio' 'AZZOPARDI' : name='Décès', date='avant 30 novembre 1784', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : rubrique='Parents'
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 4, sosa 12 : Antonio AZZOPARDI : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=teresa.n=....html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=michel+angelo.n=azzopardi.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=libreri.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=orsola.n=napolitano.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+antonio.n=caruana.html> (referer: None)
-[geneanet] DEBUG: Generation 4, sosa 15, id @I00010@ : 'Andreana' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...)
-[geneanet] DEBUG: 'Andreana' '...' parent de @I00007@
-[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : info = 'Esclave libérée'
-[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : union 1 = debut='* Mariée _le 12 septembre 1756, Porto Salvo (Malte),_' nom_conjoint='Carlo LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri' 
-[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 4, sosa 15 : Andreana ... : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 4, sosa 14, id @I00011@ : 'Carlo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri)
-[geneanet] DEBUG: 'Carlo' 'LIBRERI' parent de @I00007@
-[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : info = 'Décédé avant 30 novembre 1784'
-[geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : --> event_name2='Décès' event_date2='avant 30 novembre 1784' event_place2='None' 
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=libreri.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=libreri.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=diana.n=lombardo.html'
 [geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : union 1 = debut='* Marié _le 12 septembre 1756, Porto Salvo (Malte),_' nom_conjoint='Andreana ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...' 
-[gedcomw.element.element] INFO: manage_events : @I00011@ 'Carlo' 'LIBRERI' : name='Décès', date='avant 30 novembre 1784', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Carlo' 'LIBRERI' : name='Décès', date='avant 30 novembre 1784', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : rubrique='Parents'
 [geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 4, sosa 14 : Carlo LIBRERI : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=diana.n=lombardo.html> (referer: None)
 [geneanet] DEBUG: Generation 5, sosa 25, id @I00012@ : 'Teresa' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...)
-[geneanet] DEBUG: 'Teresa' '...' parent de @I00009@
+[geneanet] DEBUG: 'Teresa' '...' parent de @I00011@
 [geneanet] DEBUG: Generation 5, sosa 25 : Teresa ... : union 1 = debut='* Mariée' nom_conjoint='Michel Angelo AZZOPARDI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi' 
 [geneanet] DEBUG: Generation 5, sosa 25 : Teresa ... : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 5, sosa 25 : Teresa ... : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 5, sosa 24, id @I00013@ : 'Michel Angelo' 'AZZOPARDI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi)
-[geneanet] DEBUG: 'Michel Angelo' 'AZZOPARDI' parent de @I00009@
+[geneanet] DEBUG: 'Michel Angelo' 'AZZOPARDI' parent de @I00011@
 [geneanet] DEBUG: Generation 5, sosa 24 : Michel Angelo AZZOPARDI : union 1 = debut='* Marié' nom_conjoint='Teresa ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...' 
 [geneanet] DEBUG: Generation 5, sosa 24 : Michel Angelo AZZOPARDI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 5, sosa 24 : Michel Angelo AZZOPARDI : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 5, sosa 27, id @I00014@ : 'Orsola' 'NAPOLITANO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
+[geneanet] DEBUG: Generation 5, sosa 28, id @I00014@ : 'Francesco' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri)
+[geneanet] DEBUG: 'Francesco' 'LIBRERI' parent de @I00010@
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Né - Porto Salvo (Malte)'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : --> event_name2='Naissance' event_date2='' event_place2='Porto Salvo (Malte)' 
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Décédé avant 12 septembre 1756'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : --> event_name2='Décès' event_date2='avant 12 septembre 1756' event_place2='None' 
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=cosimo.n=libreri.html'
+[geneanet] DEBUG: Generation 5, sosa 27, id @I00015@ : 'Orsola' 'NAPOLITANO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano)
 [geneanet] DEBUG: 'Orsola' 'NAPOLITANO' parent de @I00008@
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : info = 'Née - Is-Siġġiewi (Malte)'
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : --> event_name2='Naissance' event_date2='' event_place2='Is-Siġġiewi (Malte)' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+paolo.n=napolitano.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=cascon.html'
+[geneanet] DEBUG: Generation 5, sosa 26, id @I00016@ : 'Gio Antonio' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
+[geneanet] DEBUG: 'Gio Antonio' 'CARUANA' parent de @I00008@
+[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : info = 'Né - Is-Siġġiewi (Malte)'
+[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : --> event_name2='Naissance' event_date2='' event_place2='Is-Siġġiewi (Malte)' 
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=caruana.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=7.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=7.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=caruana.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=cascon.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+paolo.n=napolitano.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=cosimo.n=libreri.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=angelica.n=muscat.html'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : union 1 = debut='* Marié _le 31 août 1710, Porto Salvo (Malte),_' nom_conjoint='Diana LOMBARDO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo' 
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Francesco' 'LIBRERI' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Francesco' 'LIBRERI' : name='Décès', date='avant 12 septembre 1756', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : union 1 = debut='* Mariée _le 17 février 1715, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Gio Antonio CARUANA' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana' 
-[gedcomw.element.element] INFO: manage_events : @I00014@ 'Orsola' 'NAPOLITANO' : name='Naissance', date='', place='Is-Siġġiewi (Malte)', notes='None', source='None'
-[gedcomw.element.element] ERROR: manage_events : ERROR write csv for @I00014@;Orsola;NAPOLITANO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano;Naissance;BIRT;'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Orsola' 'NAPOLITANO' : name='Naissance', date='', place='Is-Siġġiewi (Malte)', notes='None', source='None'
+[gedcomw.element.element] ERROR: manage_events : ERROR write csv for @I00015@;Orsola;NAPOLITANO;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano;Naissance;BIRT;'
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : rubrique='Parents'
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 5, sosa 27 : Orsola NAPOLITANO : rubrique='Aperçu de l'arbre'
@@ -253,21 +279,15 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 711, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 720, in parse
     self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\encodings\cp1252.py", line 19, in encode
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 256-257: character maps to <undefined>
-[geneanet] DEBUG: Generation 5, sosa 26, id @I00015@ : 'Gio Antonio' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana)
-[geneanet] DEBUG: 'Gio Antonio' 'CARUANA' parent de @I00008@
-[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : info = 'Né - Is-Siġġiewi (Malte)'
-[geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : --> event_name2='Naissance' event_date2='' event_place2='Is-Siġġiewi (Malte)' 
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=caruana.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=7.html'
 [geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : union 1 = debut='* Marié _le 17 février 1715, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Orsola NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano' 
-[gedcomw.element.element] INFO: manage_events : @I00015@ 'Gio Antonio' 'CARUANA' : name='Naissance', date='', place='Is-Siġġiewi (Malte)', notes='None', source='None'
-[gedcomw.element.element] ERROR: manage_events : ERROR write csv for @I00015@;Gio Antonio;CARUANA;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana;Naissance;BIRT;'
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Gio Antonio' 'CARUANA' : name='Naissance', date='', place='Is-Siġġiewi (Malte)', notes='None', source='None'
+[gedcomw.element.element] ERROR: manage_events : ERROR write csv for @I00016@;Gio Antonio;CARUANA;https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana;Naissance;BIRT;'
 [geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : rubrique='Parents'
 [geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 5, sosa 26 : Gio Antonio CARUANA : rubrique='Aperçu de l'arbre'
@@ -304,32 +324,15 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
     for r in iterable:
-  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 711, in parse
+  File "D:\Users\Nicolas\Documents\Python\geneanet\geneanet\spiders\geneanet_spider.py", line 720, in parse
     self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
   File "C:\Users\Nicolas\.conda\envs\scrapy\Lib\encodings\cp1252.py", line 19, in encode
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260: character maps to <undefined>
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=7.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=caruana.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=antonia.n=cascon.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=gio+paolo.n=napolitano.html> (referer: None)
-[geneanet] DEBUG: Generation 5, sosa 28, id @I00016@ : 'Francesco' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri)
-[geneanet] DEBUG: 'Francesco' 'LIBRERI' parent de @I00011@
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Né - Porto Salvo (Malte)'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : --> event_name2='Naissance' event_date2='' event_place2='Porto Salvo (Malte)' 
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : info = 'Décédé avant 12 septembre 1756'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : --> event_name2='Décès' event_date2='avant 12 septembre 1756' event_place2='None' 
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=cosimo.n=libreri.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=angelica.n=muscat.html'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : union 1 = debut='* Marié _le 31 août 1710, Porto Salvo (Malte),_' nom_conjoint='Diana LOMBARDO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo' 
-[gedcomw.element.element] INFO: manage_events : @I00016@ 'Francesco' 'LIBRERI' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00016@ 'Francesco' 'LIBRERI' : name='Décès', date='avant 12 septembre 1756', place='None', notes='None', source='None'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Parents'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 5, sosa 28 : Francesco LIBRERI : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=angelica.n=muscat.html> (referer: None)
 [geneanet] DEBUG: Generation 5, sosa 29, id @I00017@ : 'Diana' 'LOMBARDO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo)
-[geneanet] DEBUG: 'Diana' 'LOMBARDO' parent de @I00011@
+[geneanet] DEBUG: 'Diana' 'LOMBARDO' parent de @I00010@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alessando.n=lombardo.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=geronima.n=cosenti.html'
 [geneanet] DEBUG: Generation 5, sosa 29 : Diana LOMBARDO : union 1 = debut='* Mariée _le 31 août 1710, Porto Salvo (Malte),_' nom_conjoint='Francesco LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri' 
@@ -338,10 +341,8 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 5, sosa 29 : Diana LOMBARDO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=geronima.n=cosenti.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alessando.n=lombardo.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=angelica.n=muscat.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=cosimo.n=libreri.html> (referer: None)
 [geneanet] DEBUG: Generation 6, sosa 53, id @I00018@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00015@
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00016@
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : info = 'Décédée avant 17 février 1715'
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : --> event_name2='Décès' event_date2='avant 17 février 1715' event_place2='None' 
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : union 1 = debut='* Mariée' nom_conjoint='Giuseppe CARUANA' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana' 
@@ -349,20 +350,12 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 6, sosa 53 : Domenica ... : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 6, sosa 52, id @I00019@ : 'Giuseppe' 'CARUANA' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana)
-[geneanet] DEBUG: 'Giuseppe' 'CARUANA' parent de @I00015@
+[geneanet] DEBUG: 'Giuseppe' 'CARUANA' parent de @I00016@
 [geneanet] DEBUG: Generation 6, sosa 52 : Giuseppe CARUANA : union 1 = debut='* Marié' nom_conjoint='Domenica ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7' 
 [geneanet] DEBUG: Generation 6, sosa 52 : Giuseppe CARUANA : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 6, sosa 52 : Giuseppe CARUANA : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 6, sosa 55, id @I00020@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
-[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00014@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html'
-[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : union 1 = debut='* Mariée _le 25 avril 1700, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Gio Paolo NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano' 
-[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Parents'
-[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 6, sosa 54, id @I00021@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
-[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 54, id @I00020@ : 'Gio Paolo' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano)
+[geneanet] DEBUG: 'Gio Paolo' 'NAPOLITANO' parent de @I00015@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html'
 [geneanet] DEBUG: Generation 6, sosa 54 : Gio Paolo NAPOLITANO : union 1 = debut='* Marié _le 30 juin 1675, Żebbuġ (Malte),_' nom_conjoint='Caterina MIFSUD' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=mifsud&oc=1' 
@@ -370,11 +363,33 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 6, sosa 54 : Gio Paolo NAPOLITANO : rubrique='Parents'
 [geneanet] DEBUG: Generation 6, sosa 54 : Gio Paolo NAPOLITANO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 6, sosa 54 : Gio Paolo NAPOLITANO : rubrique='Aperçu de l'arbre'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 55, id @I00021@ : 'Antonia' 'CASCON' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon)
+[geneanet] DEBUG: 'Antonia' 'CASCON' parent de @I00015@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html'
+[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : union 1 = debut='* Mariée _le 25 avril 1700, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Gio Paolo NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano' 
+[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 55 : Antonia CASCON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 56, id @I00022@ : 'Cosimo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri)
+[geneanet] DEBUG: 'Cosimo' 'LIBRERI' parent de @I00014@
+[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : sous_titre='(Cosmano LIBRERI)'
+[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : union 1 = debut='* Marié _le 22 novembre 1676, Iż-Żurrieq (Malte),_' nom_conjoint='Angelica MUSCAT' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat' 
+[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=4.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=francesco.n=cascon.html> (referer: None)
-[geneanet] DEBUG: Generation 6, sosa 59, id @I00022@ : 'Geronima' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=caterina.n=buhagiar.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=pietro.n=napolitano.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 57, id @I00023@ : 'Angelica' 'MUSCAT' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
+[geneanet] DEBUG: 'Angelica' 'MUSCAT' parent de @I00014@
+[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=5.html'
+[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : union 1 = debut='* Mariée _le 22 novembre 1676, Iż-Żurrieq (Malte),_' nom_conjoint='Cosimo LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri' 
+[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 59, id @I00024@ : 'Geronima' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti)
 [geneanet] DEBUG: 'Geronima' 'COSENTI' parent de @I00017@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257832.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=orsalia.n=cosenti.html'
@@ -382,52 +397,38 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 6, sosa 59 : Geronima COSENTI : rubrique='Parents'
 [geneanet] DEBUG: Generation 6, sosa 59 : Geronima COSENTI : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 6, sosa 59 : Geronima COSENTI : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 6, sosa 58, id @I00023@ : 'Alessando' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
+[geneanet] DEBUG: Generation 6, sosa 58, id @I00025@ : 'Alessando' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo)
 [geneanet] DEBUG: 'Alessando' 'LOMBARDO' parent de @I00017@
 [geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : info = 'Né - Porto Salvo (Malte)'
 [geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : --> event_name2='Naissance' event_date2='' event_place2='Porto Salvo (Malte)' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=fabrizio.n=lombardo.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=6.html'
-[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : union 1 = debut='* Marié _le 12 décembre 1688, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Geronima COSENTI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti' 
-[gedcomw.element.element] INFO: manage_events : @I00023@ 'Alessando' 'LOMBARDO' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
-[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Parents'
-[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 6, sosa 57, id @I00024@ : 'Angelica' 'MUSCAT' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat)
-[geneanet] DEBUG: 'Angelica' 'MUSCAT' parent de @I00016@
-[geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html'
-[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=5.html'
-[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : union 1 = debut='* Mariée _le 22 novembre 1676, Iż-Żurrieq (Malte),_' nom_conjoint='Cosimo LIBRERI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri' 
-[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Parents'
-[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 6, sosa 57 : Angelica MUSCAT : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 6, sosa 56, id @I00025@ : 'Cosimo' 'LIBRERI' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri)
-[geneanet] DEBUG: 'Cosimo' 'LIBRERI' parent de @I00016@
-[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : sous_titre='(Cosmano LIBRERI)'
-[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : union 1 = debut='* Marié _le 22 novembre 1676, Iż-Żurrieq (Malte),_' nom_conjoint='Angelica MUSCAT' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat' 
-[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 6, sosa 56 : Cosimo LIBRERI : rubrique='Aperçu de l'arbre'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=5.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=6.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=fabrizio.n=lombardo.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=orsalia.n=cosenti.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257832.html> (referer: None)
-[geneanet] DEBUG: Generation 7, sosa 109, id @I00026@ : 'Caterina' 'BUHAGIAR' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
-[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00021@
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=5.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=augustino.n=muscat.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=6.html'
+[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : union 1 = debut='* Marié _le 12 décembre 1688, La Valette (Malte) église collégiale du naufrage de Saint-Paul,_' nom_conjoint='Geronima COSENTI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti' 
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Alessando' 'LOMBARDO' : name='Naissance', date='', place='Porto Salvo (Malte)', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 58 : Alessando LOMBARDO : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=domenica.n=....oc=6.html> (referer: None)
+[geneanet] DEBUG: Generation 7, sosa 111, id @I00026@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4)
+[geneanet] DEBUG: 'Grazia' '...' parent de @I00021@
+[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : union 1 = debut='* Mariée' nom_conjoint='Francesco CASCON' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon' 
+[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 109, id @I00027@ : 'Caterina' 'BUHAGIAR' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar)
+[geneanet] DEBUG: 'Caterina' 'BUHAGIAR' parent de @I00020@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=salvatore.n=buhagiar.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=laurica.n=mamo.html'
 [geneanet] DEBUG: Generation 7, sosa 109 : Caterina BUHAGIAR : union 1 = debut='* Mariée _le 18 novembre 1640, Żebbuġ (Malte),_' nom_conjoint='Pietro NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano' 
 [geneanet] DEBUG: Generation 7, sosa 109 : Caterina BUHAGIAR : rubrique='Parents'
 [geneanet] DEBUG: Generation 7, sosa 109 : Caterina BUHAGIAR : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 7, sosa 109 : Caterina BUHAGIAR : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 111, id @I00027@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4)
-[geneanet] DEBUG: 'Grazia' '...' parent de @I00020@
-[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : union 1 = debut='* Mariée' nom_conjoint='Francesco CASCON' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon' 
-[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 111 : Grazia ... : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 7, sosa 110, id @I00028@ : 'Francesco' 'CASCON' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon)
-[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00020@
+[geneanet] DEBUG: 'Francesco' 'CASCON' parent de @I00021@
 [geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : info = 'Décédé avant 25 avril 1700'
 [geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : --> event_name2='Décès' event_date2='avant 25 avril 1700' event_place2='None' 
 [geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : union 1 = debut='* Marié' nom_conjoint='Grazia ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4' 
@@ -435,12 +436,15 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 7, sosa 110 : Francesco CASCON : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 7, sosa 108, id @I00029@ : 'Pietro' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano)
-[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00021@
+[geneanet] DEBUG: 'Pietro' 'NAPOLITANO' parent de @I00020@
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Né - La Valette (Malte)'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : --> event_name2='Naissance' event_date2='' event_place2='La Valette (Malte)' 
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : info = 'Décédé avant 25 avril 1700'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : --> event_name2='Décès' event_date2='avant 25 avril 1700' event_place2='None' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alfonso.n=napolitano.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alfonso.n=napolitano.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=laurica.n=mamo.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=salvatore.n=buhagiar.html> (referer: None)
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=isabella.n=....oc=1.html'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : union 1 = debut='* Marié _le 18 novembre 1640, Żebbuġ (Malte),_' nom_conjoint='Caterina BUHAGIAR' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar' 
 [gedcomw.element.element] INFO: manage_events : @I00029@ 'Pietro' 'NAPOLITANO' : name='Naissance', date='', place='La Valette (Malte)', notes='None', source='None'
@@ -449,49 +453,49 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 7, sosa 108 : Pietro NAPOLITANO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=isabella.n=....oc=1.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=alfonso.n=napolitano.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=laurica.n=mamo.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=salvatore.n=buhagiar.html> (referer: None)
-[geneanet] DEBUG: Generation 7, sosa 115, id @I00030@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00024@
-[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : union 1 = debut='* Mariée' nom_conjoint='Augustino MUSCAT' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat' 
-[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 114, id @I00031@ : 'Augustino' 'MUSCAT' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat)
-[geneanet] DEBUG: 'Augustino' 'MUSCAT' parent de @I00024@
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : info = 'Décédé avant 22 novembre 1676'
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : --> event_name2='Décès' event_date2='avant 22 novembre 1676' event_place2='None' 
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : union 1 = debut='* Marié' nom_conjoint='Domenica ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' 
-[gedcomw.element.element] INFO: manage_events : @I00031@ 'Augustino' 'MUSCAT' : name='Décès', date='avant 22 novembre 1676', place='None', notes='None', source='None'
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 117, id @I00032@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6)
-[geneanet] DEBUG: 'Domenica' '...' parent de @I00023@
-[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : union 1 = debut='* Mariée' nom_conjoint='Fabrizio LOMBARDO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo' 
-[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 119, id @I00033@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti)
-[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00022@
-[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : union 1 = debut='* Relation' nom_conjoint='? ?' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832' 
-[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 118, id @I00034@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832)
-[geneanet] DEBUG: '?' '?' parent de @I00022@
-[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : union 1 = debut='* Relation' nom_conjoint='Orsalia COSENTI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' 
-[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 7, sosa 116, id @I00035@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo)
-[geneanet] DEBUG: 'Fabrizio' 'LOMBARDO' parent de @I00023@
+[geneanet] DEBUG: Generation 7, sosa 116, id @I00030@ : 'Fabrizio' 'LOMBARDO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo)
+[geneanet] DEBUG: 'Fabrizio' 'LOMBARDO' parent de @I00025@
 [geneanet] DEBUG: Generation 7, sosa 116 : Fabrizio LOMBARDO : union 1 = debut='* Marié' nom_conjoint='Domenica ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6' 
 [geneanet] DEBUG: Generation 7, sosa 116 : Fabrizio LOMBARDO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 7, sosa 116 : Fabrizio LOMBARDO : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 8, sosa 217, id @I00036@ : 'Isabella' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1)
-[geneanet] DEBUG: 'Isabella' '...' parent de @I00029@
-[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : union 1 = debut='* Mariée' nom_conjoint='Alfonso NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano' 
-[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 119, id @I00031@ : 'Orsalia' 'COSENTI' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti)
+[geneanet] DEBUG: 'Orsalia' 'COSENTI' parent de @I00024@
+[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : union 1 = debut='* Relation' nom_conjoint='? ?' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832' 
+[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 119 : Orsalia COSENTI : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 118, id @I00032@ : '?' '?' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832)
+[geneanet] DEBUG: '?' '?' parent de @I00024@
+[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : union 1 = debut='* Relation' nom_conjoint='Orsalia COSENTI' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' 
+[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 118 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 115, id @I00033@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5)
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00023@
+[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : union 1 = debut='* Mariée' nom_conjoint='Augustino MUSCAT' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat' 
+[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 115 : Domenica ... : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 114, id @I00034@ : 'Augustino' 'MUSCAT' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat)
+[geneanet] DEBUG: 'Augustino' 'MUSCAT' parent de @I00023@
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : info = 'Décédé avant 22 novembre 1676'
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : --> event_name2='Décès' event_date2='avant 22 novembre 1676' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : union 1 = debut='* Marié' nom_conjoint='Domenica ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' 
+[gedcomw.element.element] INFO: manage_events : @I00034@ 'Augustino' 'MUSCAT' : name='Décès', date='avant 22 novembre 1676', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 114 : Augustino MUSCAT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 117, id @I00035@ : 'Domenica' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6)
+[geneanet] DEBUG: 'Domenica' '...' parent de @I00025@
+[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : union 1 = debut='* Mariée' nom_conjoint='Fabrizio LOMBARDO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo' 
+[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 117 : Domenica ... : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 216, id @I00036@ : 'Alfonso' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano)
+[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00029@
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : info = 'Décédé avant 18 novembre 1640'
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : --> event_name2='Décès' event_date2='avant 18 novembre 1640' event_place2='None' 
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : union 1 = debut='* Marié' nom_conjoint='Isabella ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00036@ 'Alfonso' 'NAPOLITANO' : name='Décès', date='avant 18 novembre 1640', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 8, sosa 219, id @I00037@ : 'Laurica' 'MAMO' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo)
-[geneanet] DEBUG: 'Laurica' 'MAMO' parent de @I00026@
+[geneanet] DEBUG: 'Laurica' 'MAMO' parent de @I00027@
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=matteo.n=mamo.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=5.html'
 [geneanet] DEBUG: Generation 8, sosa 219 : Laurica MAMO : union 1 = debut='* Mariée _le 7 septembre 1603, Is-Siġġiewi (Malte),_' nom_conjoint='Salvatore BUHAGIAR' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar' 
@@ -499,90 +503,87 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
 [geneanet] DEBUG: Generation 8, sosa 219 : Laurica MAMO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 8, sosa 219 : Laurica MAMO : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 8, sosa 218, id @I00038@ : 'Salvatore' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar)
-[geneanet] DEBUG: 'Salvatore' 'BUHAGIAR' parent de @I00026@
+[geneanet] DEBUG: 'Salvatore' 'BUHAGIAR' parent de @I00027@
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : info = 'Décédé avant 18 novembre 1640'
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : --> event_name2='Décès' event_date2='avant 18 novembre 1640' event_place2='None' 
 [geneanet] DEBUG: URL parent 1 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=buhagiar.html'
 [geneanet] DEBUG: URL parent 2 (forme 1) = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848 (true='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257848.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257848.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=buhagiar.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=5.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=matteo.n=mamo.html> (referer: None)
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : union 1 = debut='* Marié _le 7 septembre 1603, Is-Siġġiewi (Malte),_' nom_conjoint='Laurica MAMO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo' 
 [gedcomw.element.element] INFO: manage_events : @I00038@ 'Salvatore' 'BUHAGIAR' : name='Décès', date='avant 18 novembre 1640', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : rubrique='Parents'
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 8, sosa 218 : Salvatore BUHAGIAR : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 8, sosa 216, id @I00039@ : 'Alfonso' 'NAPOLITANO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano)
-[geneanet] DEBUG: 'Alfonso' 'NAPOLITANO' parent de @I00029@
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : info = 'Décédé avant 18 novembre 1640'
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : --> event_name2='Décès' event_date2='avant 18 novembre 1640' event_place2='None' 
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : union 1 = debut='* Marié' nom_conjoint='Isabella ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1' 
-[gedcomw.element.element] INFO: manage_events : @I00039@ 'Alfonso' 'NAPOLITANO' : name='Décès', date='avant 18 novembre 1640', place='None', notes='None', source='None'
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 8, sosa 216 : Alfonso NAPOLITANO : rubrique='Aperçu de l'arbre'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.i=257848.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=giuseppe.n=buhagiar.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=grazia.n=....oc=5.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.virgile81.lang=fr.pz=mathieu+maurice+andre.nz=nival.ocz=1.p=matteo.n=mamo.html> (referer: None)
+[geneanet] DEBUG: Generation 8, sosa 217, id @I00039@ : 'Isabella' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1)
+[geneanet] DEBUG: 'Isabella' '...' parent de @I00029@
+[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : union 1 = debut='* Mariée' nom_conjoint='Alfonso NAPOLITANO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano' 
+[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 217 : Isabella ... : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 9, sosa 437, id @I00040@ : '?' '?' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848)
 [geneanet] DEBUG: '?' '?' parent de @I00038@
 [geneanet] DEBUG: Generation 9, sosa 437 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Giuseppe BUHAGIAR' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar' 
 [geneanet] DEBUG: Generation 9, sosa 437 : ? ? : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 9, sosa 437 : ? ? : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 9, sosa 439, id @I00041@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5)
-[geneanet] DEBUG: 'Grazia' '...' parent de @I00037@
-[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : union 1 = debut='* Mariée' nom_conjoint='Matteo MAMO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo' 
-[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : rubrique='Union(s), enfant(s)'
-[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 9, sosa 436, id @I00042@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar)
+[geneanet] DEBUG: Generation 9, sosa 436, id @I00041@ : 'Giuseppe' 'BUHAGIAR' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar)
 [geneanet] DEBUG: 'Giuseppe' 'BUHAGIAR' parent de @I00038@
 [geneanet] DEBUG: Generation 9, sosa 436 : Giuseppe BUHAGIAR : union 1 = debut='* Marié' nom_conjoint='? ?' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848' 
 [geneanet] DEBUG: Generation 9, sosa 436 : Giuseppe BUHAGIAR : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 9, sosa 436 : Giuseppe BUHAGIAR : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 9, sosa 439, id @I00042@ : 'Grazia' '...' (F) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5)
+[geneanet] DEBUG: 'Grazia' '...' parent de @I00037@
+[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : union 1 = debut='* Mariée' nom_conjoint='Matteo MAMO' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo' 
+[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 9, sosa 439 : Grazia ... : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: Generation 9, sosa 438, id @I00043@ : 'Matteo' 'MAMO' (M) (https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo)
 [geneanet] DEBUG: 'Matteo' 'MAMO' parent de @I00037@
 [geneanet] DEBUG: Generation 9, sosa 438 : Matteo MAMO : union 1 = debut='* Marié' nom_conjoint='Grazia ...' url_conjoint='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5' 
 [geneanet] DEBUG: Generation 9, sosa 438 : Matteo MAMO : rubrique='Union(s), enfant(s)'
 [geneanet] DEBUG: Generation 9, sosa 438 : Matteo MAMO : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] INFO: Closing spider (finished)
-[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00002@', mère='@I00003@'
+[geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', père='@I00003@', mère='@I00002@'
 [geneanet] DEBUG: Famille '@F00001@' : enfant='@I00001@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michele&n=schembri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=azzopardi' mariage_date='22 novembre 1802' mariage_place='Porto Salvo (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', père='@I00005@', mère='@I00004@'
-[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00002@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00003@', père='@I00006@', mère='@I00007@'
-[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00003@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri' mariage_date='30 novembre 1784' mariage_place='Porto Salvo (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00006@', père='@I00009@', mère='@I00008@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', père='@I00004@', mère='@I00007@'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='@I00003@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gaetano&n=schembri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=maria&n=martino' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', père='@I00006@', mère='@I00005@'
+[geneanet] DEBUG: Famille '@F00003@' : enfant='@I00002@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=aloisio&n=azzopardi', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=libreri' mariage_date='30 novembre 1784' mariage_place='Porto Salvo (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00004@' : enfant='@I00006@', père='@I00011@', mère='@I00008@'
 [geneanet] DEBUG: Famille '@F00004@' : enfant='@I00006@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonio&n=azzopardi&oc=1', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=anna&n=caruana' mariage_date='16 avril 1736' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00007@', père='@I00011@', mère='@I00010@'
-[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00007@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...' mariage_date='12 septembre 1756' mariage_place='Porto Salvo (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', père='@I00013@', mère='@I00012@'
-[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00009@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00008@', père='@I00015@', mère='@I00014@'
-[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00008@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano' mariage_date='17 février 1715' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', père='@I00016@', mère='@I00017@'
-[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00011@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo' mariage_date='31 août 1710' mariage_place='Porto Salvo (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00015@', père='@I00019@', mère='@I00018@'
-[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00015@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00014@', père='@I00021@', mère='@I00020@'
-[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00014@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon' mariage_date='25 avril 1700' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00017@', père='@I00023@', mère='@I00022@'
-[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti' mariage_date='12 décembre 1688' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00016@', père='@I00025@', mère='@I00024@'
-[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00016@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat' mariage_date='22 novembre 1676' mariage_place='Iż-Żurrieq (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', père='@I00029@', mère='@I00026@'
-[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar' mariage_date='18 novembre 1640' mariage_place='Żebbuġ (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', père='@I00028@', mère='@I00027@'
-[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00024@', père='@I00031@', mère='@I00030@'
-[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00024@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', père='@I00035@', mère='@I00032@'
-[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00023@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', père='@I00034@', mère='@I00033@'
-[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00022@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00029@', père='@I00039@', mère='@I00036@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00005@', père='@I00010@', mère='@I00009@'
+[geneanet] DEBUG: Famille '@F00005@' : enfant='@I00005@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=carlo&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=andreana&n=...' mariage_date='12 septembre 1756' mariage_place='Porto Salvo (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00011@', père='@I00013@', mère='@I00012@'
+[geneanet] DEBUG: Famille '@F00006@' : enfant='@I00011@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=michel+angelo&n=azzopardi', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=teresa&n=...' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00010@', père='@I00014@', mère='@I00017@'
+[geneanet] DEBUG: Famille '@F00007@' : enfant='@I00010@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=diana&n=lombardo' mariage_date='31 août 1710' mariage_place='Porto Salvo (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', père='@I00016@', mère='@I00015@'
+[geneanet] DEBUG: Famille '@F00008@' : enfant='@I00008@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+antonio&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsola&n=napolitano' mariage_date='17 février 1715' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00016@', père='@I00019@', mère='@I00018@'
+[geneanet] DEBUG: Famille '@F00009@' : enfant='@I00016@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=caruana', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=7' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00015@', père='@I00020@', mère='@I00021@'
+[geneanet] DEBUG: Famille '@F00010@' : enfant='@I00015@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=gio+paolo&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=antonia&n=cascon' mariage_date='25 avril 1700' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', père='@I00022@', mère='@I00023@'
+[geneanet] DEBUG: Famille '@F00011@' : enfant='@I00014@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=cosimo&n=libreri', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=angelica&n=muscat' mariage_date='22 novembre 1676' mariage_place='Iż-Żurrieq (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', père='@I00025@', mère='@I00024@'
+[geneanet] DEBUG: Famille '@F00012@' : enfant='@I00017@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alessando&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=geronima&n=cosenti' mariage_date='12 décembre 1688' mariage_place='La Valette (Malte) église collégiale du naufrage de Saint-Paul,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', père='@I00028@', mère='@I00026@'
+[geneanet] DEBUG: Famille '@F00013@' : enfant='@I00021@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=francesco&n=cascon', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=4' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', père='@I00029@', mère='@I00027@'
+[geneanet] DEBUG: Famille '@F00014@' : enfant='@I00020@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=pietro&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=caterina&n=buhagiar' mariage_date='18 novembre 1640' mariage_place='Żebbuġ (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00025@', père='@I00030@', mère='@I00035@'
+[geneanet] DEBUG: Famille '@F00015@' : enfant='@I00025@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=fabrizio&n=lombardo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=6' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00024@', père='@I00032@', mère='@I00031@'
+[geneanet] DEBUG: Famille '@F00016@' : enfant='@I00024@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257832', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=orsalia&n=cosenti' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00023@', père='@I00034@', mère='@I00033@'
+[geneanet] DEBUG: Famille '@F00017@' : enfant='@I00023@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=augustino&n=muscat', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=domenica&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00018@' : enfant='@I00029@', père='@I00036@', mère='@I00039@'
 [geneanet] DEBUG: Famille '@F00018@' : enfant='@I00029@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=alfonso&n=napolitano', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=isabella&n=...&oc=1' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00026@', père='@I00038@', mère='@I00037@'
-[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00026@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo' mariage_date='7 septembre 1603' mariage_place='Is-Siġġiewi (Malte),' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00038@', père='@I00042@', mère='@I00040@'
+[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00027@', père='@I00038@', mère='@I00037@'
+[geneanet] DEBUG: Famille '@F00019@' : enfant='@I00027@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=salvatore&n=buhagiar', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=laurica&n=mamo' mariage_date='7 septembre 1603' mariage_place='Is-Siġġiewi (Malte),' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00020@' : enfant='@I00038@', père='@I00041@', mère='@I00040@'
 [geneanet] DEBUG: Famille '@F00020@' : enfant='@I00038@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=giuseppe&n=buhagiar', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&i=257848' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', père='@I00043@', mère='@I00041@'
+[geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', père='@I00043@', mère='@I00042@'
 [geneanet] DEBUG: Famille '@F00021@' : enfant='@I00037@', true_url_pere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=matteo&n=mamo', true_url_mere='https://gw.geneanet.org/virgile81?lang=fr&pz=mathieu+maurice+andre&nz=nival&ocz=1&p=grazia&n=...&oc=5' mariage_date='None' mariage_place='None' mariage_source='None'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons         = 43
@@ -603,12 +604,12 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
  'downloader/response_bytes': 4104837,
  'downloader/response_count': 43,
  'downloader/response_status_count/200': 43,
- 'elapsed_time_seconds': 1.340828,
+ 'elapsed_time_seconds': 1.446343,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 8, 20, 20, 32, 58, 526044),
+ 'finish_time': datetime.datetime(2023, 8, 22, 0, 2, 44, 803184),
  'log_count/DEBUG': 408,
  'log_count/ERROR': 6,
- 'log_count/INFO': 39,
+ 'log_count/INFO': 40,
  'request_depth_max': 8,
  'response_received_count': 43,
  'scheduler/dequeued': 43,
@@ -616,5 +617,5 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 259-260:
  'scheduler/enqueued': 43,
  'scheduler/enqueued/memory': 43,
  'spider_exceptions/UnicodeEncodeError': 3,
- 'start_time': datetime.datetime(2023, 8, 20, 20, 32, 57, 185216)}
+ 'start_time': datetime.datetime(2023, 8, 22, 0, 2, 43, 356841)}
 [scrapy.core.engine] INFO: Spider closed (finished)
