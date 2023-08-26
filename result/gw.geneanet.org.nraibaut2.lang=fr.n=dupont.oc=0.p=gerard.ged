@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.3 le 23/08/2023 à 22:31 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.4 le 26/08/2023 à 17:14 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.3
+2 VERS 1.0.4
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 23 AUG 2023
-2 TIME 22:31:28
+1 DATE 26 AUG 2023
+2 TIME 17:14:33
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1

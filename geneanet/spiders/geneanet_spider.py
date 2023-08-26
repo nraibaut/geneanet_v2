@@ -28,6 +28,7 @@ class GeneanetSpider(scrapy.Spider):
     result_name = "tbd.tmp" # sera connu plus tard
     nb_persons = 0
     nb_families = 0
+    nb_consanguinites = 0
     nb_titres_noblesse = 0
     max_generations = 0
     nb_errors = 0
@@ -722,6 +723,12 @@ class GeneanetSpider(scrapy.Spider):
     def manage_families(self):
         #print(self.parents_of)
         #for item in self.parents_of.keys() :
+        unions_children = {} # pointers des enfants, key = <url_pere>;<url_mere>
+        unions_husband = {} # urls des pères, key = <url_pere>;<url_mere>
+        unions_wife = {} # urls des mères, key = <url_pere>;<url_mere>
+
+        # Première boucle pour identifier les familles
+        # (et traiter les cas de consanguinité : plusieurs enfants d'un même couple dans l'arbre généalogique)
         for item in self.parents_of.items() :
             child_url = item[0]
             true_url_pere = None
@@ -736,13 +743,40 @@ class GeneanetSpider(scrapy.Spider):
                 else :
                     self.nb_errors += 1
                     self.logger.error(f"Problem with parents of '{child_url}' : actual husband='{true_url_pere}', actual wife='{true_url_mere}', new parent '{parent_url}' sex '{sexe}'.")
+
+            if (true_url_pere != None) and (true_url_mere != None):
+                key = self.key_union(true_url_pere, true_url_mere)
+                child_pointer = self.pointer_of[child_url]
+                if key not in unions_children:
+                    unions_children[key] = [child_pointer]
+                    unions_husband[key] = true_url_pere
+                    unions_wife[key] = true_url_mere
+                else:
+                    self.nb_consanguinites += 1
+                    self.log(f"consanguinité #{self.nb_consanguinites} pour union '{key}'")
+                    unions_children[key].append(child_pointer)
+            else:
+                self.nb_errors += 1
+                self.logger.error(f"Parent(s) missing for '{child_url}' : husband='{true_url_pere}', wife='{true_url_mere}'.")
+
+        # Deuxième boucle pour constituer les familles
+        for item in unions_children.items() :
+            key = item[0]
+            true_url_pere = unions_husband[key]
+            true_url_mere = unions_wife[key]
+            children_pointers = item[1]
+
             self.nb_families += 1
             pointer_family = "@F%05d@" % (self.nb_families)
-            child_pointer = self.pointer_of[child_url]
             husband_pointer = self.pointer_of[true_url_pere]
             wife_pointer = self.pointer_of[true_url_mere]
 
-            self.log(f"Famille '{pointer_family}' : enfant='{child_url}', père='{true_url_pere}', mère='{true_url_mere}'")
+            nb_children = len(children_pointers)
+            self.log(f"Famille '{pointer_family}' : père='{true_url_pere}', mère='{true_url_mere}', {nb_children} enfant(s)")
+            mariage_note = None
+            if nb_children > 1 :
+                mariage_note = f"{nb_children} enfants dans l'arbre généalogique"
+                self.log(f"{nb_children} enfants dans la famille '{pointer_family}' (père='{true_url_pere}', mère='{true_url_mere}')")
 
             key = self.key_union(true_url_pere, true_url_mere)
             mariage_date = None
@@ -769,7 +803,7 @@ class GeneanetSpider(scrapy.Spider):
                 pass
 
             self.log(f"Famille '{pointer_family}' : enfant='{child_url}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
-            self.gedcomw_parser.add_family( pointer_family, child_pointer, husband_pointer, wife_pointer, mariage_date, mariage_place, mariage_source)
+            self.gedcomw_parser.add_family( pointer_family, children_pointers, husband_pointer, wife_pointer, mariage_date, mariage_place, mariage_source, mariage_note)
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
@@ -786,6 +820,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- nb_persons         = {self.nb_persons}")
         spider.logger.info(f"- nb_families        = {self.nb_families}")
         spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
+        spider.logger.info(f"- nb_consanguinites  = {self.nb_consanguinites}")
         spider.logger.info(f"- max_generations    = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")

@@ -1,711 +1,711 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;GeneanetSpider 1.0.3 23/08/2023 à 22:31
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;GeneanetSpider 1.0.4 26/08/2023 à 17:14
 1;1;@I00001@;Etienne Henri;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri;2;0;0;2;forme2;14 octobre 1873 (mardi);b'Boulbon (13017)';;;;;0;"- Né le 21 septembre 1874 (lundi) - Saint-Pierre-de-Mézoargues (13061)
 - Décédé";0;
-2;2;@I00002@;Henri Marie Amédée;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=henri+marie+amedee&n=nicolas;3;0;0;2;forme2;14 octobre 1873 (mardi);b'Boulbon (13017),';Cultivateur;;;;0;"- Né le 28 octobre 1850 (lundi) - Boulbon (13017)
-- Décédé
-- Cultivateur";0;
-2;3;@I00003@;Magdelaine "Laurence";NICOLAS;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdelaine+laurence&n=nicolas;3;0;0;2;forme2;14 octobre 1873 (mardi);b'Boulbon (13017),';Couturière;;;;0;"- Née le 10 août 1853 (mercredi) - Boulbon (13017)
+2;3;@I00002@;Magdelaine "Laurence";NICOLAS;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdelaine+laurence&n=nicolas;3;0;0;2;forme2;14 octobre 1873 (mardi);b'Boulbon (13017),';Couturière;;;;0;"- Née le 10 août 1853 (mercredi) - Boulbon (13017)
 - Décédée
 - Couturière";0;
-3;5;@I00004@;Louise;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=berlandier&oc=5;2;0;0;2;forme2;2 mars 1841 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 7 novembre 1811 (jeudi) - Boulbon (13017)
-- Décédée le 11 août 1853 (jeudi) - Boulbon (13017), à l'âge de 41 ans";0;
-3;6;@I00005@;Pierre;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=nicolas&oc=10;3;0;0;2;forme2;3 février 1841 (mercredi);b'Boulbon (13017),';Agriculteur;(Pierre Jean Baptiste NICOLAS);;;0;"- Né le 31 janvier 1821 (mercredi) - Boulbon (13017)
-- Décédé le 24 mars 1890 (lundi) - Boulbon (13017), à l'âge de 69 ans
-- Agriculteur";0;
-3;4;@I00006@;Etienne-Benoît;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne+benoit&n=nicolas;3;0;0;2;forme2;;b'';Meunier, ménager;;;;0;"- Né le 16 avril 1813 (vendredi) - Boulbon (13017)
+2;2;@I00003@;Henri Marie Amédée;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=henri+marie+amedee&n=nicolas;3;0;0;2;forme2;14 octobre 1873 (mardi);b'Boulbon (13017),';Cultivateur;;;;0;"- Né le 28 octobre 1850 (lundi) - Boulbon (13017)
+- Décédé
+- Cultivateur";0;
+3;4;@I00004@;Etienne-Benoît;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne+benoit&n=nicolas;3;0;0;2;forme2;;b'';Meunier, ménager;;;;0;"- Né le 16 avril 1813 (vendredi) - Boulbon (13017)
 - Décédé le 8 janvier 1892 (vendredi) - Boulbon (13017), à l'âge de 78 ans
 - Meunier, ménager";0;
-3;7;@I00007@;Elizabeth;ARNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=arnaud&oc=4;2;0;0;2;forme2;3 février 1841 (mercredi);b'Boulbon (13017),';;;;;0;"- Née le 1er janvier 1822 (mardi) - Boulbon (13017)
+3;7;@I00005@;Elizabeth;ARNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=arnaud&oc=4;2;0;0;2;forme2;3 février 1841 (mercredi);b'Boulbon (13017),';;;;;0;"- Née le 1er janvier 1822 (mardi) - Boulbon (13017)
 - Décédée";0;
-4;8;@I00008@;Joseph;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=nicolas&oc=5;3;0;0;2;forme2;16 avril 1812 (jeudi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 2 mars 1790 (mardi) - Boulbon (13017)
-- Décédé le 27 décembre 1873 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 83 ans
+3;6;@I00006@;Pierre;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=nicolas&oc=10;3;0;0;2;forme2;3 février 1841 (mercredi);b'Boulbon (13017),';Agriculteur;(Pierre Jean Baptiste NICOLAS);;;0;"- Né le 31 janvier 1821 (mercredi) - Boulbon (13017)
+- Décédé le 24 mars 1890 (lundi) - Boulbon (13017), à l'âge de 69 ans
 - Agriculteur";0;
-4;12;@I00009@;Jean;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=nicolas&oc=4;3;0;0;2;forme2;16 mai 1837 (mardi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 29 germinal an VII (18 avril 1799) (jeudi) - Boulbon (13017)
-- Décédé le 30 mai 1864 (lundi) - Barbentane (13010), à l'âge de 65 ans
-- Agriculteur";0;
-4;10;@I00010@;François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=berlandier&oc=16;3;0;0;2;forme2;24 fructidor an VI (10 septembre 1798) (lundi);b'Boulbon (13017),';Cultivateur;;;;0;"- Né le 6 mai 1777 (mardi) - Boulbon (13017)
-- Décédé le 16 février 1852 (lundi) - Boulbon (13017), à l'âge de 74 ans
-- Cultivateur";0;
-4;9;@I00011@;Magdeleine;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=berlandier&oc=22;2;0;0;2;forme2;16 avril 1812 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 27 février 1788 (mercredi) - Boulbon (13017)
-- Décédée le 19 décembre 1868 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 80 ans";0;
-4;13;@I00012@;Françoise;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=braye&oc=1;2;0;0;2;forme2;6 mai 1818 (mercredi);b'Boulbon (13017),';;;;;0;"- Née le 30 pluviôse an IX (19 février 1801) (jeudi) - Boulbon (13017)
-- Décédée le 19 avril 1836 (mardi) - Boulbon (13017), à l'âge de 35 ans";0;
-4;11;@I00013@;Marie;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gilles&oc=8;2;0;0;2;forme2;24 fructidor an VI (10 septembre 1798) (lundi);b'Boulbon (13017),';;;;;0;"- Née le 4 avril 1781 (mercredi) - Boulbon (13017)
-- Décédée le 29 janvier 1868 (mercredi) - Boulbon (13017), à l'âge de 86 ans";0;
-4;14;@I00014@;Joseph;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=arnaud&oc=12;3;0;0;2;forme2;;b'';Cultivateur, ménager;;;;0;"- Né le 20 juillet 1781 (vendredi) - Barbentane (13010)
+3;5;@I00007@;Louise;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=berlandier&oc=5;2;0;0;2;forme2;2 mars 1841 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 7 novembre 1811 (jeudi) - Boulbon (13017)
+- Décédée le 11 août 1853 (jeudi) - Boulbon (13017), à l'âge de 41 ans";0;
+4;15;@I00008@;Jeanne Marie;OLLIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne+marie&n=ollier&oc=1;2;0;0;0;;;b'';;;;;0;"- Née le 13 mars 1778 (vendredi) - Barbentane (13010)
+- Décédée le 13 octobre 1846 (mardi) - Boulbon (13017), à l'âge de 68 ans";0;
+4;14;@I00009@;Joseph;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=arnaud&oc=12;3;0;0;2;forme2;;b'';Cultivateur, ménager;;;;0;"- Né le 20 juillet 1781 (vendredi) - Barbentane (13010)
 - Décédé le 3 avril 1845 (jeudi) - Boulbon (13017), à l'âge de 63 ans
 - Cultivateur, ménager";0;
-4;15;@I00015@;Jeanne Marie;OLLIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne+marie&n=ollier&oc=1;2;0;0;0;;;b'';;;;;0;"- Née le 13 mars 1778 (vendredi) - Barbentane (13010)
-- Décédée le 13 octobre 1846 (mardi) - Boulbon (13017), à l'âge de 68 ans";0;
-5;24;@I00016@;Pierre Etienne Marie;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre+etienne+marie&n=nicolas&oc=1;3;0;0;2;forme2;23 novembre 1789 (lundi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 29 janvier 1766 (mercredi) - Boulbon (13017)
-- Décédé le 1er mai 1837 (lundi) - Boulbon (13017), à l'âge de 71 ans
+4;8;@I00010@;Joseph;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=nicolas&oc=5;3;0;0;2;forme2;16 avril 1812 (jeudi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 2 mars 1790 (mardi) - Boulbon (13017)
+- Décédé le 27 décembre 1873 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 83 ans
 - Agriculteur";0;
-5;17;@I00017@;Françoise;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=bechet&oc=2;2;0;0;2;forme2;25 février 1783 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 17 février 1759 (samedi) - Boulbon (13017)
-- Décédée le 2 avril 1840 (jeudi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 81 ans";0;
-5;16;@I00018@;Claude;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=nicolas&oc=4;3;0;0;2;forme2;25 février 1783 (mardi);b'Boulbon (13017),';Ménager, cultivateur;;;;0;"- Né le 22 avril 1760 (mardi) - Boulbon (13017)
+4;9;@I00011@;Magdeleine;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=berlandier&oc=22;2;0;0;2;forme2;16 avril 1812 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 27 février 1788 (mercredi) - Boulbon (13017)
+- Décédée le 19 décembre 1868 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 80 ans";0;
+4;12;@I00012@;Jean;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=nicolas&oc=4;3;0;0;2;forme2;16 mai 1837 (mardi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 29 germinal an VII (18 avril 1799) (jeudi) - Boulbon (13017)
+- Décédé le 30 mai 1864 (lundi) - Barbentane (13010), à l'âge de 65 ans
+- Agriculteur";0;
+4;13;@I00014@;Françoise;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=braye&oc=1;2;0;0;2;forme2;6 mai 1818 (mercredi);b'Boulbon (13017),';;;;;0;"- Née le 30 pluviôse an IX (19 février 1801) (jeudi) - Boulbon (13017)
+- Décédée le 19 avril 1836 (mardi) - Boulbon (13017), à l'âge de 35 ans";0;
+4;10;@I00013@;François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=berlandier&oc=16;3;0;0;2;forme2;24 fructidor an VI (10 septembre 1798) (lundi);b'Boulbon (13017),';Cultivateur;;;;0;"- Né le 6 mai 1777 (mardi) - Boulbon (13017)
+- Décédé le 16 février 1852 (lundi) - Boulbon (13017), à l'âge de 74 ans
+- Cultivateur";0;
+4;11;@I00015@;Marie;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gilles&oc=8;2;0;0;2;forme2;24 fructidor an VI (10 septembre 1798) (lundi);b'Boulbon (13017),';;;;;0;"- Née le 4 avril 1781 (mercredi) - Boulbon (13017)
+- Décédée le 29 janvier 1868 (mercredi) - Boulbon (13017), à l'âge de 86 ans";0;
+5;28;@I00018@;Joseph;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=arnaud&oc=6;2;0;0;0;;9 février 1778 (lundi);b'Boulbon (13017),';;;;;0;"- Né vers 1743 - Barbentane (13010)
+- Décédé le 7 février 1813 (dimanche) - Boulbon (13017), à l'âge d'environ 70 ans";0;
+5;29;@I00016@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=8;2;0;0;2;forme2;9 février 1778 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er juin 1752 (jeudi) - Boulbon (13017)
+- Décédée le 1er mars 1813 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
+5;16;@I00017@;Claude;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=nicolas&oc=4;3;0;0;2;forme2;25 février 1783 (mardi);b'Boulbon (13017),';Ménager, cultivateur;;;;0;"- Né le 22 avril 1760 (mardi) - Boulbon (13017)
 - Décédé le 9 messidor an XII (28 juin 1804) (jeudi) - Boulbon (13017), à l'âge de 44 ans
 - Ménager, cultivateur";0;
-5;25;@I00019@;Elizabeth;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=saint+michel&oc=4;2;0;0;2;forme2;23 novembre 1789 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 juin 1768 (jeudi) - Boulbon (13017)
-- Décédée le 18 juillet 1835 (samedi) - Boulbon (13017), à l'âge de 67 ans";0;
-5;20;@I00020@;Joseph;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=berlandier&oc=11;2;0;0;2;forme2;10 février 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 13 janvier 1741 (vendredi) - Boulbon (13017)
-- Décédé le 2 mai 1819 (dimanche) - Boulbon (13017), à l'âge de 78 ans";0;
-5;21;@I00021@;Dorothée;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=dorothee&n=berlandier&oc=1;2;0;0;2;forme2;10 février 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 20 novembre 1743 (mercredi) - Boulbon (13017)
-- Décédée le 6 germinal an XI (27 mars 1803) (dimanche) - Boulbon (13017), à l'âge de 59 ans";0;
-5;28;@I00022@;Joseph;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=arnaud&oc=6;2;0;0;0;;9 février 1778 (lundi);b'Boulbon (13017),';;;;;0;"- Né vers 1743 - Barbentane (13010)
-- Décédé le 7 février 1813 (dimanche) - Boulbon (13017), à l'âge d'environ 70 ans";0;
-5;22;@I00023@;Marcellin;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=gilles&oc=1;2;0;0;2;forme2;14 septembre 1779 (mardi);b'Boulbon (13017),';;(né Maximin GILLES);;;0;"- Né le 1er juin 1749 (dimanche) - Boulbon (13017)
-- Décédé le 10 septembre 1832 (lundi) - Boulbon (13017), à l'âge de 83 ans";0;
-5;18;@I00024@;Etienne Benoit;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne+benoit&n=berlandier;3;0;0;2;forme2;31 janvier 1785 (lundi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 9 mars 1763 (mercredi) - Boulbon (13017)
+5;17;@I00019@;Françoise;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=bechet&oc=2;2;0;0;2;forme2;25 février 1783 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 17 février 1759 (samedi) - Boulbon (13017)
+- Décédée le 2 avril 1840 (jeudi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 81 ans";0;
+5;24;@I00020@;Pierre Etienne Marie;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre+etienne+marie&n=nicolas&oc=1;3;0;0;2;forme2;23 novembre 1789 (lundi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 29 janvier 1766 (mercredi) - Boulbon (13017)
+- Décédé le 1er mai 1837 (lundi) - Boulbon (13017), à l'âge de 71 ans
+- Agriculteur";0;
+5;18;@I00021@;Etienne Benoit;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne+benoit&n=berlandier;3;0;0;2;forme2;31 janvier 1785 (lundi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 9 mars 1763 (mercredi) - Boulbon (13017)
 - Décédé le 10 décembre 1828 (mercredi) - Boulbon (13017), à l'âge de 65 ans
 - Meunier";0;
-5;26;@I00025@;Jean Michel;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+michel&n=braye&oc=2;3;0;0;2;forme2;;b'';Cultivateur;;;;0;"- Né le 13 avril 1770 (vendredi) - Boulbon (13017)
+5;27;@I00022@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=15;2;0;0;2;forme2;;b'';;;;;0;"- Née le 13 novembre 1772 (vendredi) - Boulbon (13017)
+- Décédée le 3 août 1841 (mardi) - Boulbon (13017), à l'âge de 68 ans";0;
+5;26;@I00023@;Jean Michel;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+michel&n=braye&oc=2;3;0;0;2;forme2;;b'';Cultivateur;;;;0;"- Né le 13 avril 1770 (vendredi) - Boulbon (13017)
 - Décédé le 20 messidor an XIII (9 juillet 1805) (mardi) - Boulbon (13017), à l'âge de 35 ans
 - Cultivateur";0;
-5;29;@I00026@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=8;2;0;0;2;forme2;9 février 1778 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er juin 1752 (jeudi) - Boulbon (13017)
-- Décédée le 1er mars 1813 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
-5;23;@I00027@;Françoise;FABRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=fabre&oc=1;2;0;0;2;forme2;14 septembre 1779 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 6 octobre 1752 (vendredi) - Boulbon (13017)
-- Décédée le 28 septembre 1831 (mercredi) - Boulbon (13017), à l'âge de 78 ans";0;
-5;27;@I00028@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=15;2;0;0;2;forme2;;b'';;;;;0;"- Née le 13 novembre 1772 (vendredi) - Boulbon (13017)
-- Décédée le 3 août 1841 (mardi) - Boulbon (13017), à l'âge de 68 ans";0;
-5;19;@I00029@;Anne Marie;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne+marie&n=boudoy&oc=3;2;0;0;2;forme2;31 janvier 1785 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er décembre 1763 (jeudi) - Boulbon (13017)
+5;25;@I00024@;Elizabeth;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=saint+michel&oc=4;2;0;0;2;forme2;23 novembre 1789 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 juin 1768 (jeudi) - Boulbon (13017)
+- Décédée le 18 juillet 1835 (samedi) - Boulbon (13017), à l'âge de 67 ans";0;
+5;20;@I00025@;Joseph;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=berlandier&oc=11;2;0;0;2;forme2;10 février 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 13 janvier 1741 (vendredi) - Boulbon (13017)
+- Décédé le 2 mai 1819 (dimanche) - Boulbon (13017), à l'âge de 78 ans";0;
+5;19;@I00026@;Anne Marie;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne+marie&n=boudoy&oc=3;2;0;0;2;forme2;31 janvier 1785 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er décembre 1763 (jeudi) - Boulbon (13017)
 - Décédée le 25 janvier 1833 (vendredi) - Boulbon (13017), à l'âge de 69 ans";0;
-6;42;@I00030@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=5;3;0;0;2;forme2;12 septembre 1735 (lundi);b'Boulbon (13017),';Maître Mareschal;;;;0;"- Né le 14 octobre 1706 (jeudi) - Boulbon (13017)
-- Décédé le 26 février 1768 (vendredi) - Boulbon (13017), à l'âge de 61 ans
-- Maître Mareschal";0;
-6;49;@I00031@;Charlotte;JOUBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=charlotte&n=joubert;2;0;0;2;forme2;peut-être en 1763;b'';;;;;0;"- Née vers 1732
-- Décédée le 15 septembre 1811 (dimanche) - Boulbon (13017), à l'âge d'environ 79 ans";0;
-6;50;@I00032@;Jean Baptiste;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=saint+michel;2;0;0;2;forme2;17 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 1er mars 1737 (vendredi) - Boulbon (13017)
-- Décédé le 12 germinal an III (1er avril 1795) (mercredi) - Boulbon (13017), à l'âge de 58 ans";0;
-6;40;@I00033@;Jean François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+francois&n=berlandier;3;0;0;2;forme2;16 janvier 1736 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 13 novembre 1715 (mercredi) - Boulbon (13017)
-- Décédé le 13 juillet 1762 (mardi) - Boulbon (13017), à l'âge de 46 ans
-- Travailleur";0;
-6;32;@I00034@;Jean "Jacques";NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+jacques&n=nicolas;2;0;0;2;forme2;29 janvier 1758 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 27 décembre 1733 (dimanche) - Boulbon (13017)
-- Décédé le 15 août 1771 (jeudi) - Boulbon (13017), à l'âge de 37 ans";0;
-6;34;@I00035@;Jean Baptiste;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bechet;2;0;0;2;forme2;29 janvier 1753 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 11 juillet 1728 (dimanche) - Boulbon (13017)
-- Décédé le 23 brumaire an VI (13 novembre 1797) (lundi) - Boulbon (13017), à l'âge de 69 ans";0;
-6;48;@I00036@;Etienne;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=nicolas&oc=3;2;0;0;2;forme2;peut-être en 1763;b'';;;;;0;"- Né en 1735
-- Décédé le 4 octobre 1820 (mercredi) - Boulbon (13017), à l'âge de 85 ans";0;
-6;43;@I00037@;Elizabeth;BLANC;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=blanc;2;0;0;2;forme2;12 septembre 1735 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 9 janvier 1716 (jeudi) - Boulbon (13017)
-- Décédée le 12 janvier 1786 (jeudi) - Boulbon (13017), à l'âge de 70 ans";0;
-6;51;@I00038@;Thérèse;AMY;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=amy&oc=1;2;0;0;2;forme2;17 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 23 avril 1736 (lundi) - Boulbon (13017)
-- Décédée le 21 septembre 1774 (mercredi) - Boulbon (13017), à l'âge de 38 ans";0;
-6;41;@I00039@;Anne;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=braye&oc=1;2;0;0;2;forme2;16 janvier 1736 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 15 mai 1707 (dimanche) - Boulbon (13017)
-- Décédée le 7 septembre 1774 (mercredi) - Boulbon (13017), à l'âge de 67 ans";0;
-6;35;@I00040@;Françoise;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=boudoy;2;0;0;2;forme2;29 janvier 1753 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 2 août 1728 (lundi) - Boulbon (13017)
-- Décédée le 6 juin 1812 (samedi) - Boulbon (13017), à l'âge de 83 ans";0;
-6;33;@I00041@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=6;2;0;0;2;forme2;29 janvier 1758 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 22 avril 1737 (lundi) - Boulbon (13017)
-- Décédée le 20 floréal an VIII (10 mai 1800) (samedi) - Boulbon (13017), à l'âge de 63 ans";0;
-6;52;@I00042@;Jean Baptiste;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=braye;3;0;0;2;forme2;10 mars 1766 (lundi);b'Boulbon (13017),';Maçon;;;;0;"- Né le 8 mars 1741 (mercredi) - Boulbon (13017)
-- Décédé le 18 avril 1821 (mercredi) - Boulbon (13017), à l'âge de 80 ans
-- Maçon";0;
-6;36;@I00043@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=24;3;0;0;2;forme2;;b'';Meunier;(Jean Michel BERLANDIER);;;0;"- Né le 8 mars 1735 (mardi) - Boulbon (13017)
-- Décédé le 30 thermidor an X (18 août 1802) (mercredi) - Boulbon (13017), à l'âge de 67 ans
-- Meunier";0;
-6;44;@I00044@;Joseph;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=gilles&oc=4;3;0;0;2;forme2;19 février 1748 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 20 novembre 1722 (vendredi) - Boulbon (13017)
-- Décédé le 15 floréal an IV (4 mai 1796) (mercredi) - Boulbon (13017), à l'âge de 73 ans
-- Travailleur";0;
-6;53;@I00045@;Marie;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=berlandier&oc=7;2;0;0;2;forme2;10 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 14 octobre 1740 (vendredi) - Boulbon (13017)
-- Décédée le 12 thermidor an X (31 juillet 1802) (samedi) - Boulbon (13017), à l'âge de 61 ans";0;
-6;37;@I00046@;Magdeleine;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=gilles&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née le 14 juin 1736 (jeudi) - Boulbon (13017)
-- Décédée le 20 ventôse an VI (10 mars 1798) (samedi) - Boulbon (13017), à l'âge de 61 ans";0;
-6;45;@I00047@;Marie;ELLIEN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=ellien&oc=2;2;0;0;2;forme2;19 février 1748 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 août 1725 (jeudi) - Boulbon (13017)
-- Décédée le 5 avril 1812 (dimanche) - Boulbon (13017), à l'âge de 86 ans";0;
-7;96;@I00048@;Jacques;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=nicolas&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-7;64;@I00049@;Sébastien;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=sebastien&n=nicolas;2;0;0;2;forme2;4 mars 1726 (lundi);b'Boulbon (13017),';;;;;0;"- Né vers 1700
-- Décédé le 23 mai 1777 (vendredi) - Boulbon (13017), à l'âge d'environ 77 ans";0;
-7;68;@I00050@;Pierre;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bechet;3;0;0;2;forme2;13 août 1714 (lundi);b'Boulbon (13017),';Consul;;;;0;"- Né le 12 janvier 1687 (dimanche) - Boulbon (13017)
-- Décédé le 29 octobre 1760 (mercredi) - Boulbon (13017), à l'âge de 73 ans
-- Consul";0;
-7;80;@I00051@;Louis;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=berlandier&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né le 17 mars 1679 (vendredi) - Boulbon (13017)
-- Décédé le 15 avril 1758 (samedi) - Boulbon (13017), à l'âge de 79 ans";0;
-7;100;@I00052@;Louis;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=saint+michel;3;0;0;2;forme2;10 janvier 1733 (samedi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 20 janvier 1709 (dimanche) - Boulbon (13017)
-- Décédé le 15 décembre 1773 (mercredi) - Boulbon (13017), à l'âge de 64 ans
-- Ménager";0;
-7;98;@I00053@;Pierre;JOUBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=joubert;3;0;1;2;forme2;10 mars 1732 (lundi);b'Barbentane (13010),';Maçon;;;;0;"- Né en 1707 - Barbentane (13010)
-- Décédé en 1790 - Barbentane (13010), à l'âge de 83 ans
-- Maçon";0;
-7;84;@I00054@;Charles;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=berlandier;3;0;0;2;forme2;27 septembre 1703 (jeudi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 22 septembre 1679 (vendredi) - Boulbon (13017)
-- Décédé le 18 juin 1751 (vendredi) - Boulbon (13017), à l'âge de 71 ans
-- Meunier";0;
-6;38;@I00055@;Jacques;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=boudoy&oc=1;3;0;0;2;forme2;23 juin 1755 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 21 novembre 1727 (vendredi) - Boulbon (13017)
-- Décédé le 6 juillet 1764 (vendredi) - Boulbon (13017), à l'âge de 36 ans
-- Ménager";0;
-6;54;@I00056@;Joseph;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=saint+michel&oc=11;3;0;0;2;forme2;18 février 1760 (lundi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 2 juillet 1744 (jeudi) - Boulbon (13017)
-- Décédé le 16 mai 1810 (mercredi) - Boulbon (13017), à l'âge de 65 ans
-- Agriculteur";0;
-6;46;@I00057@;Joseph;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=fabre&oc=12;3;0;0;2;forme2;20 août 1736 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 13 septembre 1716 (dimanche) - Boulbon (13017)
-- Décédé le 20 avril 1778 (lundi) - Boulbon (13017), à l'âge de 61 ans
-- Travailleur";0;
-6;58;@I00058@;Jacques;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=saint+michel;3;0;0;2;forme2;11 février 1737 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 21 janvier 1715 (lundi) - Boulbon (13017)
+5;21;@I00027@;Dorothée;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=dorothee&n=berlandier&oc=1;2;0;0;2;forme2;10 février 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 20 novembre 1743 (mercredi) - Boulbon (13017)
+- Décédée le 6 germinal an XI (27 mars 1803) (dimanche) - Boulbon (13017), à l'âge de 59 ans";0;
+5;22;@I00028@;Marcellin;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=gilles&oc=1;2;0;0;2;forme2;14 septembre 1779 (mardi);b'Boulbon (13017),';;(né Maximin GILLES);;;0;"- Né le 1er juin 1749 (dimanche) - Boulbon (13017)
+- Décédé le 10 septembre 1832 (lundi) - Boulbon (13017), à l'âge de 83 ans";0;
+5;23;@I00029@;Françoise;FABRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=fabre&oc=1;2;0;0;2;forme2;14 septembre 1779 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 6 octobre 1752 (vendredi) - Boulbon (13017)
+- Décédée le 28 septembre 1831 (mercredi) - Boulbon (13017), à l'âge de 78 ans";0;
+6;58;@I00030@;Jacques;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=saint+michel;3;0;0;2;forme2;11 février 1737 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 21 janvier 1715 (lundi) - Boulbon (13017)
 - Décédé le 21 septembre 1791 (mercredi) - Boulbon (13017), à l'âge de 76 ans
 - Travailleur";0;
-7;97;@I00060@;Marie;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=mauche&oc=2;2;0;0;0;;;b'';;;;;0;"- Née en 1710
-- Décédée le 27 août 1789 (jeudi) - Boulbon (13017), à l'âge de 79 ans";0;
-7;81;@I00061@;Suzanne;PELLEGRIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=suzanne&n=pellegrin;2;0;0;0;;;b'';;;;;0;"- Née vers 1685
-- Décédée le 24 juillet 1741 (lundi) - Boulbon (13017), à l'âge d'environ 56 ans";0;
-7;69;@I00059@;Marie Rose;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=braye;2;0;0;2;forme2;13 août 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 août 1692 (samedi) - Boulbon (13017)
-- Décédée le 18 novembre 1769 (samedi) - Boulbon (13017), à l'âge de 77 ans";0;
-7;65;@I00062@;Elizabeth;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=gilles;2;0;0;2;forme2;4 mars 1726 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 19 avril 1705 (dimanche) - Boulbon (13017)
-- Décédée le 21 mai 1780 (dimanche) - Boulbon (13017), à l'âge de 75 ans";0;
-7;99;@I00063@;Françoise;GUYON;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=guyon;2;0;3;2;forme2;10 mars 1732 (lundi);b'Barbentane (13010),';;;;;0;"- Née le 6 novembre 1711 (vendredi) - Barbentane (13010)
-- Décédée le 23 octobre 1784 (samedi) - Barbentane (13010), à l'âge de 72 ans";0;
-7;101;@I00064@;Marie Rose;MEYNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=meynier;2;0;0;2;forme2;10 janvier 1733 (samedi);b'Boulbon (13017),';;;;;0;"- Née le 27 août 1708 (lundi) - Boulbon (13017)
-- Décédée le 13 décembre 1787 (jeudi) - Boulbon (13017), à l'âge de 79 ans";0;
-7;85;@I00065@;Magdeleine;GUIRAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=guiraud;2;0;0;2;forme2;27 septembre 1703 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 25 septembre 1687 (jeudi) - Boulbon (13017)
-- Décédée le 11 septembre 1751 (samedi) - Boulbon (13017), à l'âge de 63 ans";0;
-6;55;@I00066@;Françoise;NICOLAS;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=nicolas&oc=1;2;0;0;2;forme2;18 février 1760 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 15 juin 1739 (lundi) - Boulbon (13017)
-- Décédée le 27 juin 1816 (jeudi) - Boulbon (13017), à l'âge de 77 ans";0;
-6;39;@I00067@;Anne Félicité;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne+felicite&n=braye;2;0;0;2;forme2;23 juin 1755 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 4 mai 1732 (dimanche) - Boulbon (13017)
-- Décédée le 23 frimaire an IX (14 décembre 1800) (dimanche) - Boulbon (13017), à l'âge de 68 ans";0;
-6;47;@I00068@;Françoise;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=berlandier&oc=3;2;0;1;2;forme2;20 août 1736 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 31 octobre 1714 (mercredi) - Barbentane (13010)
-- Décédée le 12 février 1785 (samedi) - Boulbon (13017), à l'âge de 70 ans";0;
-6;59;@I00069@;Magdeleine Rose;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine+rose&n=braye&oc=1;2;0;0;2;forme2;11 février 1737 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 5 mars 1713 (dimanche) - Boulbon (13017)
+6;32;@I00031@;Jean "Jacques";NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+jacques&n=nicolas;2;0;0;2;forme2;29 janvier 1758 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 27 décembre 1733 (dimanche) - Boulbon (13017)
+- Décédé le 15 août 1771 (jeudi) - Boulbon (13017), à l'âge de 37 ans";0;
+6;33;@I00032@;Françoise;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=saint+michel&oc=6;2;0;0;2;forme2;29 janvier 1758 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 22 avril 1737 (lundi) - Boulbon (13017)
+- Décédée le 20 floréal an VIII (10 mai 1800) (samedi) - Boulbon (13017), à l'âge de 63 ans";0;
+6;34;@I00033@;Jean Baptiste;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bechet;2;0;0;2;forme2;29 janvier 1753 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 11 juillet 1728 (dimanche) - Boulbon (13017)
+- Décédé le 23 brumaire an VI (13 novembre 1797) (lundi) - Boulbon (13017), à l'âge de 69 ans";0;
+6;59;@I00034@;Magdeleine Rose;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine+rose&n=braye&oc=1;2;0;0;2;forme2;11 février 1737 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 5 mars 1713 (dimanche) - Boulbon (13017)
 - Décédée le 19 septembre 1807 (samedi) - Boulbon (13017), à l'âge de 94 ans";0;
-7;82;@I00070@;Jean "François";BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+francois&n=braye;2;0;0;2;forme2;10 avril 1701 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 26 février 1675 (mardi) - Boulbon (13017)
-- Décédé le 22 janvier 1754 (mardi) - Boulbon (13017), à l'âge de 78 ans";0;
-7;70;@I00071@;Charles;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=boudoy&oc=1;2;0;0;2;forme2;3 septembre 1725 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 12 décembre 1704 (vendredi) - Boulbon (13017)
-- Décédé le 18 octobre 1791 (mardi) - Boulbon (13017), à l'âge de 86 ans";0;
-7;66;@I00072@;Antoine;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=saint+michel;2;0;0;2;forme2;26 août 1736 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 12 janvier 1697 (samedi) - Boulbon (13017)
-- Décédé le 11 avril 1740 (lundi) - Boulbon (13017), à l'âge de 43 ans";0;
-7;86;@I00073@;Claude;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=blanc&oc=2;1;0;1;2;forme2;26 novembre 1714 (lundi);b'Barbentane (13010),';;;;;0;"- Né le 7 septembre 1689 (mercredi) - Boulbon (13017)";0;
-7;102;@I00074@;Claude François;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude+francois&n=amy;3;0;0;2;forme2;28 février 1724 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 29 janvier 1695 (samedi) - Boulbon (13017)
-- Décédé le 10 novembre 1753 (samedi) - Boulbon (13017), à l'âge de 58 ans
-- Travailleur";0;
-7;90;@I00075@;François;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=ellien;3;0;0;2;forme2;19 août 1737 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 27 octobre 1689 (jeudi) - Boulbon (13017)
-- Décédé le 13 juin 1773 (dimanche) - Boulbon (13017), à l'âge de 83 ans
-- Travailleur";0;
-7;106;@I00076@;François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=berlandier;3;0;0;2;forme2;9 janvier 1738 (jeudi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 4 avril 1695 (lundi) - Boulbon (13017)
-- Décédé le 5 avril 1775 (mercredi) - Boulbon (13017), à l'âge de 80 ans
+6;36;@I00035@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=24;3;0;0;2;forme2;;b'';Meunier;(Jean Michel BERLANDIER);;;0;"- Né le 8 mars 1735 (mardi) - Boulbon (13017)
+- Décédé le 30 thermidor an X (18 août 1802) (mercredi) - Boulbon (13017), à l'âge de 67 ans
 - Meunier";0;
-7;74;@I00077@;Antoine;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=gilles;2;0;0;2;forme2;25 février 1727 (mardi);b'Boulbon (13017),';;;;;0;"- Né le 6 juin 1700 (dimanche) - Boulbon (13017)
-- Décédé le 25 décembre 1767 (vendredi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 67 ans";0;
-7;72;@I00078@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=1;3;0;0;2;forme2;31 janvier 1729 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 23 décembre 1701 (vendredi) - Boulbon (13017)
-- Décédé
+6;48;@I00036@;Etienne;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=nicolas&oc=3;2;0;0;2;forme2;peut-être en 1763;b'';;;;;0;"- Né en 1735
+- Décédé le 4 octobre 1820 (mercredi) - Boulbon (13017), à l'âge de 85 ans";0;
+6;35;@I00037@;Françoise;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=boudoy;2;0;0;2;forme2;29 janvier 1753 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 2 août 1728 (lundi) - Boulbon (13017)
+- Décédée le 6 juin 1812 (samedi) - Boulbon (13017), à l'âge de 83 ans";0;
+6;37;@I00038@;Magdeleine;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=gilles&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née le 14 juin 1736 (jeudi) - Boulbon (13017)
+- Décédée le 20 ventôse an VI (10 mars 1798) (samedi) - Boulbon (13017), à l'âge de 61 ans";0;
+6;54;@I00039@;Joseph;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=saint+michel&oc=11;3;0;0;2;forme2;18 février 1760 (lundi);b'Boulbon (13017),';Agriculteur;;;;0;"- Né le 2 juillet 1744 (jeudi) - Boulbon (13017)
+- Décédé le 16 mai 1810 (mercredi) - Boulbon (13017), à l'âge de 65 ans
+- Agriculteur";0;
+6;49;@I00040@;Charlotte;JOUBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=charlotte&n=joubert;2;0;0;2;forme2;peut-être en 1763;b'';;;;;0;"- Née vers 1732
+- Décédée le 15 septembre 1811 (dimanche) - Boulbon (13017), à l'âge d'environ 79 ans";0;
+6;44;@I00041@;Joseph;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=gilles&oc=4;3;0;0;2;forme2;19 février 1748 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 20 novembre 1722 (vendredi) - Boulbon (13017)
+- Décédé le 15 floréal an IV (4 mai 1796) (mercredi) - Boulbon (13017), à l'âge de 73 ans
 - Travailleur";0;
-7;88;@I00079@;Louis;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=gilles&oc=2;2;0;0;2;forme2;3 septembre 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 20 février 1674 (mardi) - Boulbon (13017)
-- Décédé le 5 décembre 1725 (mercredi) - Boulbon (13017), à l'âge de 51 ans";0;
-7;67;@I00080@;Marie;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=jouve&oc=4;2;0;0;2;forme2;26 août 1736 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 8 janvier 1712 (vendredi) - Boulbon (13017)
-- Décédée le 1er février 1777 (samedi) - Boulbon (13017), à l'âge de 65 ans";0;
-8;196;@I00085@;Paul;JOUBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=paul&n=joubert&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-7;92;@I00081@;Jean;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=fabre&oc=2;1;0;0;2;forme2;13 février 1718 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 26 janvier 1673 (jeudi) - Boulbon (13017)";0;
-7;108;@I00082@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel&oc=4;3;0;0;2;forme2;3 février 1741 (vendredi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 29 avril 1720 (lundi) - Boulbon (13017)
-- Décédé le 19 octobre 1747 (jeudi) - Boulbon (13017), à l'âge de 27 ans
+6;42;@I00042@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=5;3;0;0;2;forme2;12 septembre 1735 (lundi);b'Boulbon (13017),';Maître Mareschal;;;;0;"- Né le 14 octobre 1706 (jeudi) - Boulbon (13017)
+- Décédé le 26 février 1768 (vendredi) - Boulbon (13017), à l'âge de 61 ans
+- Maître Mareschal";0;
+6;40;@I00043@;Jean François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+francois&n=berlandier;3;0;0;2;forme2;16 janvier 1736 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 13 novembre 1715 (mercredi) - Boulbon (13017)
+- Décédé le 13 juillet 1762 (mardi) - Boulbon (13017), à l'âge de 46 ans
+- Travailleur";0;
+6;38;@I00044@;Jacques;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=boudoy&oc=1;3;0;0;2;forme2;23 juin 1755 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 21 novembre 1727 (vendredi) - Boulbon (13017)
+- Décédé le 6 juillet 1764 (vendredi) - Boulbon (13017), à l'âge de 36 ans
 - Ménager";0;
-7;76;@I00083@;Jean;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=boudoy;2;0;0;2;forme2;22 avril 1725 (dimanche);b'Boulbon (13017),';;(Joseph BOUDOY);;;0;"- Né le 21 décembre 1704 (dimanche) - Boulbon (13017)
-- Décédé le 10 mars 1759 (samedi) - Boulbon (13017), à l'âge de 54 ans";0;
-8;168;@I00084@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=22;3;0;1;2;forme2;18 août 1659 (lundi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 24 août 1635 (vendredi) - Boulbon (13017)
-- Décédé le 1er septembre 1684 (vendredi) - Boulbon (13017), à l'âge de 49 ans
-- Meunier";0;
-8;160;@I00086@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=11;3;0;0;2;forme2;31 août 1665 (lundi);b'Boulbon (13017),';Tailleur d'habits;;;;0;"- Né le 14 juillet 1642 (lundi) - Boulbon (13017)
-- Décédé le 9 août 1724 (mercredi) - Boulbon (13017), à l'âge de 82 ans
-- Tailleur d'habits";0;
-8;200;@I00087@;Michel;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=michel&n=saint+michel;3;0;0;2;forme2;21 novembre 1707 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 3 octobre 1686 (jeudi) - Boulbon (13017)
+6;50;@I00045@;Jean Baptiste;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=saint+michel;2;0;0;2;forme2;17 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 1er mars 1737 (vendredi) - Boulbon (13017)
+- Décédé le 12 germinal an III (1er avril 1795) (mercredi) - Boulbon (13017), à l'âge de 58 ans";0;
+6;52;@I00046@;Jean Baptiste;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=braye;3;0;0;2;forme2;10 mars 1766 (lundi);b'Boulbon (13017),';Maçon;;;;0;"- Né le 8 mars 1741 (mercredi) - Boulbon (13017)
+- Décédé le 18 avril 1821 (mercredi) - Boulbon (13017), à l'âge de 80 ans
+- Maçon";0;
+6;55;@I00047@;Françoise;NICOLAS;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=nicolas&oc=1;2;0;0;2;forme2;18 février 1760 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 15 juin 1739 (lundi) - Boulbon (13017)
+- Décédée le 27 juin 1816 (jeudi) - Boulbon (13017), à l'âge de 77 ans";0;
+7;64;@I00048@;Sébastien;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=sebastien&n=nicolas;2;0;0;2;forme2;4 mars 1726 (lundi);b'Boulbon (13017),';;;;;0;"- Né vers 1700
+- Décédé le 23 mai 1777 (vendredi) - Boulbon (13017), à l'âge d'environ 77 ans";0;
+6;45;@I00049@;Marie;ELLIEN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=ellien&oc=2;2;0;0;2;forme2;19 février 1748 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 août 1725 (jeudi) - Boulbon (13017)
+- Décédée le 5 avril 1812 (dimanche) - Boulbon (13017), à l'âge de 86 ans";0;
+7;116;@I00050@;Michel;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=michel&n=saint+michel;3;0;0;2;forme2;21 novembre 1707 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 3 octobre 1686 (jeudi) - Boulbon (13017)
 - Décédé le 3 septembre 1744 (jeudi) - Boulbon (13017), à l'âge de 57 ans
 - Ménager";0;
-8;197;@I00092@;Charlotte;MARTIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=charlotte&n=martin&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-7;93;@I00088@;Thérèse;MAUREL;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=maurel&oc=2;2;0;0;2;forme2;6 avril 1704 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1680
-- Décédée le 31 mars 1717 (mercredi) - Boulbon (13017), à l'âge de 37 ans";0;
-8;169;@I00089@;Marguerite;ARNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=arnaud&oc=8;2;0;2;2;forme2;18 août 1659 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er mars 1637 (dimanche) - Boulbon (13017)
-- Décédée le 13 octobre 1699 (mardi) - Boulbon (13017), à l'âge de 62 ans";0;
-7;77;@I00090@;Marie "Thérèse";GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+therese&n=gilles;2;0;0;2;forme2;22 avril 1725 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 25 février 1707 (vendredi) - Boulbon (13017)
-- Décédée le 20 novembre 1769 (lundi) - Boulbon (13017), à l'âge de 62 ans";0;
-7;109;@I00091@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=mauche&oc=4;2;0;0;2;forme2;3 février 1741 (vendredi);b'Boulbon (13017),';;;;;0;"- Née le 18 septembre 1717 (samedi) - Boulbon (13017)
-- Décédée le 2 mai 1745 (dimanche) - Boulbon (13017), à l'âge de 27 ans";0;
-8;201;@I00093@;Magdeleine Rose;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine+rose&n=gilles;2;0;0;2;forme2;21 novembre 1707 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 16 décembre 1685 (dimanche) - Boulbon (13017)
-- Décédée le 30 août 1766 (samedi) - Boulbon (13017), à l'âge de 80 ans";0;
-8;172;@I00094@;Etienne;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=blanc&oc=7;3;0;0;2;forme2;15 juin 1664 (dimanche);b'Boulbon (13017),';Ménager et second consul, puis premier consul;;;;0;"- Né le 29 septembre 1638 (mercredi) - Boulbon (13017)
-- Décédé le 17 septembre 1716 (jeudi) - Boulbon (13017), à l'âge de 77 ans
-- Ménager et second consul, puis premier consul";0;
-8;204;@I00095@;Guillaume;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=amy;3;0;0;2;forme2;;b'';Travailleur;;;;0;"- Né le 24 janvier 1668 (mardi) - Boulbon (13017)
-- Décédé le 19 mars 1733 (jeudi) - Boulbon (13017), à l'âge de 65 ans
+6;46;@I00051@;Joseph;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=fabre&oc=12;3;0;0;2;forme2;20 août 1736 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 13 septembre 1716 (dimanche) - Boulbon (13017)
+- Décédé le 20 avril 1778 (lundi) - Boulbon (13017), à l'âge de 61 ans
 - Travailleur";0;
-8;132;@I00096@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel&oc=3;3;0;0;2;forme2;20 août 1685 (lundi);b'Ch?teaurenard (13027),';Ménager;;;;0;"- Né le 15 novembre 1654 (dimanche) - Boulbon (13017)
-- Décédé le 27 novembre 1728 (samedi) - Boulbon (13017), à l'âge de 74 ans
-- Ménager";0;
-8;140;@I00097@;Etienne;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=boudoy;2;0;0;2;forme2;19 mars 1724 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1669
-- Décédé le 18 février 1729 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-7;78;@I00098@;Etienne;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=braye;3;0;0;2;forme2;13 août 1731 (lundi);b'Boulbon (13017),';Cordonnier;;;;0;"- Né le 9 avril 1684 (dimanche) - Boulbon (13017)
-- Décédé le 14 septembre 1762 (mardi) - Boulbon (13017), à l'âge de 78 ans
-- Cordonnier";0;
-7;94;@I00099@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=15;3;0;0;2;forme2;21 novembre 1694 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 1er mars 1668 (jeudi) - Boulbon (13017)
-- Décédé le 24 août 1749 (dimanche) - Boulbon (13017), à l'âge de 81 ans
-- Ménager";0;
-8;170;@I00100@;Joseph;GUIRAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=guiraud;3;0;0;2;forme2;9 décembre 1685 (dimanche);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né le 11 novembre 1663 (dimanche) - Boulbon (13017)
-- Décédé le 27 mai 1735 (vendredi) - Boulbon (13017), à l'âge de 71 ans
-- Maréchal à forge";0;
-8;198;@I00101@;Louis;GUYON;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=guyon;3;0;0;2;forme2;21 avril 1689 (jeudi);b'Barbentane (13010),';Aubergiste;;;;0;"- Né le 23 mars 1652 (samedi) - PUYMERAS (84094)
-- Décédé le 14 avril 1736 (samedi) - Barbentane (13010), à l'âge de 84 ans
-- Aubergiste";0;
-8;202;@I00102@;Jean;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=meynier;2;0;0;2;forme2;10 juin 1700 (jeudi);b'Boulbon (13017),';;;;;0;"- Né le 11 septembre 1674 (mardi) - Boulbon (13017)
-- Décédé le 11 mai 1751 (mardi) - Boulbon (13017), à l'âge de 76 ans";0;
-8;130;@I00103@;Louis;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=gilles;2;0;0;2;forme2;;b'';;;;;0;"- Né le 28 avril 1655 (mercredi) - Boulbon (13017)
-- Décédé le 27 novembre 1731 (mardi) - Boulbon (13017), à l'âge de 76 ans";0;
-8;134;@I00104@;Barthélemy;JOUVE;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=jouve&oc=2;2;0;0;2;forme2;13 décembre 1705 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 6 mai 1677 (jeudi) - Boulbon (13017)
-- Décédé le 19 novembre 1752 (dimanche) - Boulbon (13017), à l'âge de 75 ans";0;
-8;217;@I00108@;Jeanne;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=bechet;2;0;0;2;forme2;6 février 1719 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1697
-- Décédée le 15 juin 1757 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-8;184;@I00110@;Marin;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=marin&n=fabre;3;0;0;2;forme2;15 avril 1668 (dimanche);b'Boulbon (13017),';Berger, vigneron;;;;0;"- Né vers 1639
-- Décédé le 2 mars 1679 (jeudi) - Boulbon (13017), à l'âge d'environ 40 ans
-- Berger, vigneron";0;
-8;135;@I00111@;Catherine;DURIEU;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=durieu;2;0;0;2;forme2;13 décembre 1705 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1688
-- Décédée le 28 mai 1760 (mercredi) - Boulbon (13017), à l'âge d'environ 72 ans";0;
-8;145;@I00120@;Françoise;GONTIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=gontier&oc=1;2;0;0;2;forme2;29 juillet 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1672
-- Décédée le 13 mai 1728 (jeudi) - Boulbon (13017), à l'âge d'environ 56 ans";0;
-9;320;@I00105@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=10;2;0;0;2;forme2;2 octobre 1622 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1601
-- Décédé le 8 octobre 1671 (jeudi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
-8;153;@I00106@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=mauche&oc=1;2;0;0;2;forme2;1er septembre 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 9 juin 1670 (lundi) - Boulbon (13017)
-- Décédée le 17 décembre 1736 (lundi) - Boulbon (13017), à l'âge de 66 ans";0;
-9;336;@I00107@;Thomas;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=thomas&n=berlandier;3;0;0;2;forme2;5 mars 1632 (vendredi);b'Boulbon (13017),';Meunier;;;;0;"- Né vers 1609 - Boulbon (13017)
-- Décédé le 13 août 1669 (mardi) - Boulbon (13017), à l'âge d'environ 60 ans
-- Meunier";0;
-8;152;@I00109@;François;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=boudoy;2;0;0;2;forme2;1er septembre 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 9 octobre 1667 (dimanche) - Boulbon (13017)
-- Décédé le 9 août 1727 (samedi) - Boulbon (13017), à l'âge de 59 ans";0;
-8;216;@I00112@;Joseph;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=saint+michel&oc=43;2;0;0;2;forme2;6 février 1719 (lundi);b'Boulbon (13017),';;;;;0;"- Né en 1695
-- Décédé le 12 janvier 1722 (lundi) - Boulbon (13017), à l'âge de 27 ans";0;
-8;177;@I00113@;Jeanne;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=berlandier;2;0;0;2;forme2;28 décembre 1664 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 2 août 1644 (mardi) - Boulbon (13017)
-- Décédée le 11 octobre 1683 (lundi) - Boulbon (13017), à l'âge de 39 ans";0;
-8;181;@I00114@;Denise;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=denise&n=jullian;2;0;0;2;forme2;29 mai 1678 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 28 mars 1658 (jeudi) - Boulbon (13017)
-- Décédée le 12 septembre 1724 (mardi) - Boulbon (13017), à l'âge de 66 ans";0;
-8;213;@I00115@;Marcelle;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marcelle&n=mauche;2;0;0;2;forme2;28 décembre 1683 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 8 décembre 1657 (samedi) - Boulbon (13017)
-- Décédée le 24 décembre 1739 (jeudi) - Boulbon (13017), à l'âge de 82 ans";0;
-8;149;@I00116@;Thérèse;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=bechet;2;0;0;2;forme2;4 mars 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 4 janvier 1674 (jeudi) - Boulbon (13017)
-- Décédée le 23 décembre 1749 (mardi) - Boulbon (13017), à l'âge de 75 ans";0;
-8;176;@I00117@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=2;3;0;0;2;forme2;28 décembre 1664 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 23 juin 1639 (jeudi) - Boulbon (13017)
-- Décédé le 27 septembre 1705 (dimanche) - Boulbon (13017), à l'âge de 66 ans
-- Ménager";0;
-8;148;@I00118@;François;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=gilles&oc=1;2;0;0;2;forme2;4 mars 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1665 - Boulbon (13017)
-- Décédé le 11 mars 1752 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge d'environ 87 ans";0;
-8;144;@I00119@;Pierre;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=berlandier;3;0;0;2;forme2;29 juillet 1696 (dimanche);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 16 novembre 1671 (lundi) - Boulbon (13017)
-- Décédé le 29 novembre 1719 (mercredi) - Boulbon (13017), à l'âge de 48 ans
-- Travailleur";0;
-8;186;@I00125@;Etienne;MAUREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=maurel;3;0;0;2;forme2;18 novembre 1669 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né en 1643 - Aulan (26018)
-- Décédé le 28 novembre 1679 (mardi) - Boulbon (13017), à l'âge de 36 ans
-- Vigneron";0;
-8;218;@I00121@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=6;3;0;0;2;forme2;;b'';Ménager;;;;0;"- Né le 4 novembre 1672 (vendredi) - Boulbon (13017)
-- Décédé le 20 mai 1731 (dimanche) - Boulbon (13017), à l'âge de 58 ans
-- Ménager";0;
-8;154;@I00122@;Jacques;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=gilles&oc=1;3;0;0;2;forme2;5 mai 1697 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 26 février 1679 (dimanche) - Boulbon (13017)
-- Décédé le 1er août 1755 (vendredi) - Boulbon (13017), à l'âge de 76 ans
-- Ménager";0;
-8;155;@I00123@;Marie;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=saint+michel&oc=1;2;0;0;2;forme2;5 mai 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 3 novembre 1669 (dimanche) - Boulbon (13017)
-- Décédée le 26 janvier 1761 (lundi) - Boulbon (13017), à l'âge de 91 ans";0;
-9;338;@I00124@;Jean;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=arnaud&oc=8;2;0;0;2;forme2;25 juin 1632 (vendredi);b'Boulbon (13017),';;;;;0;"- Né vers 1614
-- Décédé le 6 janvier 1684 (jeudi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
-8;187;@I00126@;Magdeleine;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=boudoy&oc=2;2;0;0;2;forme2;;b'';;;;;0;"- Née le 18 novembre 1646 (dimanche) - Boulbon (13017)
-- Décédée le 22 juin 1725 (vendredi) - Boulbon (13017), à l'âge de 78 ans";0;
-9;337;@I00127@;Marie;CHAPELIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=chapelier;2;0;0;2;forme2;5 mars 1632 (vendredi);b'Boulbon (13017),';;;;;0;"- Née vers 1608 - Embrun (05046)
-- Décédée le 28 octobre 1668 (dimanche) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-9;321;@I00128@;Marguerite;VARCELLIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=varcellin;2;0;0;2;forme2;2 octobre 1622 (dimanche);b'Boulbon (13017),';;;;;0;"- Née peut-être en 1605
-- Décédée le 21 novembre 1665 (samedi) - Boulbon (13017), peut-être à l'âge de 60 ans";0;
-9;396;@I00131@;Claude;GUYON;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=guyon;1;0;0;0;;;b'';;;;;0;"- Décédé avant 1697 - PUYMERAS (84094)";0;
-9;340;@I00133@;Vincent;GUIRAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=vincent&n=guiraud;3;0;0;0;;28 septembre 1660 (mardi);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né en 1627
-- Décédé le 16 novembre 1687 (dimanche) - Boulbon (13017), à l'âge de 60 ans
-- Maréchal à forge";0;
-9;260;@I00129@;Barthélemy;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=gilles&oc=1;2;0;0;2;forme2;17 avril 1633 (dimanche);b'Boulbon (13017),';;;;;0;"- Né en 1609
-- Décédé le 2 octobre 1669 (mercredi) - Boulbon (13017), à l'âge de 60 ans";0;
-9;404;@I00130@;Jean;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=meynier&oc=1;3;0;0;2;forme2;16 décembre 1670 (mardi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 30 novembre 1642 (dimanche) - Boulbon (13017)
-- Décédé le 4 novembre 1699 (mercredi) - Boulbon (13017), à l'âge de 56 ans
-- Travailleur";0;
-8;188;@I00132@;Antoine;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=berlandier&oc=3;3;0;1;2;forme2;6 août 1656 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 16 janvier 1631 (jeudi) - Boulbon (13017)
-- Décédé le 27 novembre 1704 (jeudi) - Boulbon (13017), à l'âge de 73 ans
-- Ménager";0;
-9;269;@I00134@;Marguerite;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bourges&oc=3;2;0;0;0;;15 novembre 1670 (samedi);b'Tarascon (13108),';;;;;0;"- Née vers 1642
-- Décédée le 5 mars 1724 (dimanche) - Boulbon (13017), à l'âge d'environ 82 ans";0;
-9;268;@I00136@;Claude;JOUVE;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=jouve&oc=1;2;0;0;0;;15 novembre 1670 (samedi);b'Tarascon (13108),';;;;;0;"- Né vers 1639
-- Décédé le 23 août 1714 (jeudi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
-9;397;@I00137@;Elisabeth;SIBOURG;F;https://gw.geneanet.org/danielr13?lang=fr&p=elisabeth&n=sibourg;2;0;1;0;;;b'';;;;;0;"- Née vers 1617
-- Décédée le 4 février 1697 (lundi) - PUYMERAS (84094), à l'âge d'environ 80 ans";0;
-9;261;@I00135@;Magdeleine;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=tissot&oc=1;2;0;0;2;forme2;17 avril 1633 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1608 - Boulbon (13017)
-- Décédée le 11 août 1688 (mercredi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-9;405;@I00138@;Marguerite;LAGARDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lagarde;2;0;0;2;forme2;16 décembre 1670 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 26 décembre 1649 (dimanche) - Boulbon (13017)
-- Décédée le 4 juillet 1700 (dimanche) - Boulbon (13017), à l'âge de 50 ans";0;
-8;189;@I00139@;Anne;BONNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bonnaud&oc=1;2;0;0;2;forme2;6 août 1656 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 30 juillet 1634 (dimanche) - Boulbon (13017)
-- Décédée le 6 septembre 1701 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
-9;341;@I00140@;Louise;LAMOUROUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=lamouroux&oc=1;2;0;0;2;forme2;28 septembre 1660 (mardi);b'Boulbon (13017),';;;;;0;"- Née en 1622
-- Décédée le 2 mars 1685 (vendredi) - Boulbon (13017), à l'âge de 63 ans";0;
-9;291;@I00141@;Jeanne;VINCENT;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=vincent&oc=2;0;0;0;0;;;b'Ch?teaurenard (13027),';;;;;0;"";0;
-9;290;@I00143@;Martial;GONTIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=martial&n=gontier;0;0;0;0;;;b'Ch?teaurenard (13027),';;;;;0;"";0;
-9;427;@I00144@;Gabrielle;VINCENT;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=vincent&oc=1;2;0;0;0;;20 janvier 1654 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1609
-- Décédée le 14 août 1659 (jeudi) - Boulbon (13017), à l'âge d'environ 50 ans";0;
-9;426;@I00145@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=2;0;0;0;0;;20 janvier 1654 (mardi);b'Boulbon (13017),';;;;;0;"";0;
-9;271;@I00148@;Catherine;CARBONNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=carbonnel;2;0;0;0;;;b'';;;;;0;"- Née vers 1638
-- Décédée le 6 mai 1713 (samedi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
-9;368;@I00149@;Vincent;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=vincent&n=fabre;0;0;0;0;;;b'';;;;;0;"";0;
-9;270;@I00150@;Jean Michel;DURIEU;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+michel&n=durieu;2;0;0;0;;;b'';Ménager;;;;0;"- Décédé avant 1700
-- Ménager";0;
-9;369;@I00151@;Jeanne;ARTAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=artaud;0;0;0;0;;;b'';;;;;0;"";0;
-9;288;@I00142@;Nicolas;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=berlandier;3;0;0;2;forme2;30 septembre 1659 (mardi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 15 mars 1634 (mercredi) - Boulbon (13017)
-- Décédé le 22 avril 1708 (dimanche) - Boulbon (13017), à l'âge de 74 ans
-- Travailleur";0;
-9;298;@I00146@;Antoine;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=bechet&oc=1;3;0;0;2;forme2;4 mars 1680 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 4 avril 1642 (vendredi) - Boulbon (13017)
-- Décédé le 19 février 1709 (mardi) - Boulbon (13017), à l'âge de 66 ans
-- Ménager";0;
-9;362;@I00147@;Guillaume;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=jullian&oc=2;2;0;0;2;forme2;16 décembre 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1621 - Boulbon (13017)
-- Décédé le 1er août 1671 (samedi) - Boulbon (13017), à l'âge d'environ 50 ans";0;
-10;642;@I00153@;Guillaume;VARCELLIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=varcellin&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-9;307;@I00152@;Anne;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bard&oc=1;2;0;0;2;forme2;17 avril 1664 (jeudi);b'Boulbon (13017),';;;;;1;"- Née le 30 juin 1638 (mercredi) - Boulbon (13017)
-- Décédée le 25 août 1705 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
-10;674;@I00154@;Claude;CHAPELIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=chapelier;0;0;0;0;;;b'';;;;;0;"";0;
-9;375;@I00155@;Metheline;DAYRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=metheline&n=dayre&oc=2;2;0;0;0;;;b'';;;;;0;"- Née en 1616
-- Décédée le 12 juin 1676 (vendredi) - Boulbon (13017), à l'âge de 60 ans";0;
-9;374;@I00156@;Jean;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=boudoy&oc=3;2;0;0;0;;;b'';;;;;0;"- Né en 1600 - Boulbon (13017)
-- Décédé le 14 juillet 1660 (mercredi) - Boulbon (13017), à l'âge de 60 ans";0;
-10;643;@I00158@;Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=mauche&oc=4;2;0;0;0;;;b'';;;;;0;"- Née - Boulbon (13017)
-- Décédée";0;
-10;520;@I00159@;Pierre;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=gilles;2;0;0;0;;;b'';;;;;0;"- Né vers 1555
-- Décédé le 20 avril 1639 (mercredi) - Boulbon (13017), à l'âge d'environ 84 ans";0;
-9;309;@I00160@;Marguerite;CHARLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=charles;2;0;0;0;;;b'';;;;;0;"- Née peut-être en 1640
-- Décédée le 15 juillet 1719 (samedi) - Boulbon (13017), peut-être à l'âge de 79 ans";0;
-10;677;@I00161@;Anne;COURANT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=courant;2;0;0;0;;;b'';;;;;0;"- Née en 1566
-- Décédée le 27 octobre 1646 (samedi) - Boulbon (13017), à l'âge de 80 ans";0;
-10;675;@I00162@;Isabeau;BOUILLON;F;https://gw.geneanet.org/danielr13?lang=fr&p=isabeau&n=bouillon;0;0;0;0;;;b'';;;;;0;"";0;
-9;373;@I00163@;Catherine;BRUNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=brunel;0;0;0;0;;;b'';;;;;0;"";0;
-10;676;@I00164@;Claude;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=arnaud&oc=3;0;0;0;0;;;b'';;;;;0;"";0;
-9;372;@I00165@;Jacques;MAUREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=maurel&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
-9;308;@I00166@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=3;2;0;0;2;forme2;;b'';;;;;0;"- Né le 1er mai 1636 (jeudi) - Boulbon (13017)
-- Décédé le 10 juillet 1721 (jeudi) - Boulbon (13017), à l'âge de 85 ans";0;
-9;299;@I00167@;Anne;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=guiot&oc=1;2;0;0;0;;21 avril 1670 (lundi);b'Boulbon (13017),';;;;;0;"- Née en 1656
-- Décédée le 12 janvier 1680 (vendredi) - Boulbon (13017), à l'âge de 24 ans";0;
-9;289;@I00168@;Marie;GONTARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gontard;0;0;0;2;forme2;30 septembre 1659 (mardi);b'Boulbon (13017),';;;;;0;"";0;
-10;808;@I00157@;Antoine;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=meynier;1;0;0;2;forme2;;b'';;;;;0;"- Décédé le 12 septembre 1650 (lundi) - Boulbon (13017)";0;
-9;363;@I00169@;Anne;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bard;2;0;0;2;forme2;16 décembre 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1615
-- Décédée le 1er août 1700 (dimanche) - Boulbon (13017), à l'âge d'environ 85 ans";0;
-9;306;@I00170@;Etienne;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=mauche&oc=1;2;0;0;2;forme2;17 avril 1664 (jeudi);b'Boulbon (13017),';;;;;0;"- Né le 9 septembre 1636 (mardi) - Boulbon (13017)
-- Décédé le 30 octobre 1709 (mercredi) - Boulbon (13017), à l'âge de 73 ans";0;
-10;641;@I00171@;Magdeleine;CHRISTOLIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=christolin;1;0;0;2;forme2;27 février 1601 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1581";0;
-9;378;@I00173@;Bernard;BONNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=bernard&n=bonnaud;2;0;0;0;;;b'';;(Arnaud BONNAUD);;;0;"- Né en 1585
-- Décédé le 20 janvier 1665 (mardi) - Boulbon (13017), à l'âge de 80 ans";0;
-10;810;@I00174@;Pierre;LAGARDE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=lagarde;0;0;0;2;forme2;3 juin 1646 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
-10;522;@I00175@;Balthazar;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=balthazar&n=tissot;2;0;0;0;;6 août 1637 (jeudi);b'Boulbon (13017),';;;;;0;"- Né vers 1571
-- Décédé le 3 septembre 1646 (lundi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
-10;809;@I00176@;Anne;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=gibert;0;0;0;0;;;b'';;;;;0;"";0;
-10;521;@I00177@;Marguerite;JAUFFRET;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=jauffret&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-10;682;@I00172@;Antoine;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=lamouroux&oc=1;0;0;0;2;forme2;9 janvier 1602 (mercredi);b'Boulbon (13017),';;;;;0;"";0;
-10;640;@I00178@;Marcellin;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=berlandier;2;0;0;2;forme2;27 février 1601 (mardi);b'Boulbon (13017),';Procureur Juridictionnel Du Comté de Boulbon;;;;0;"- Né en 1580 julien
-- Procureur Juridictionnel Du Comté de Boulbon";0;
-9;281;@I00179@;Marie;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=isaac;2;0;0;2;forme2;2 mai 1661 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 18 avril 1638 (dimanche) - Boulbon (13017)
-- Décédée le 20 novembre 1715 (mercredi) - Boulbon (13017), à l'âge de 77 ans";0;
-9;265;@I00180@;Elizabeth;PELENC;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=pelenc;2;0;0;2;forme2;28 janvier 1652 (dimanche);b'Barbentane (13010),';;(Alix PELENC);;;0;"- Née vers 1628
-- Décédée le 11 décembre 1708 (mardi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-10;724;@I00183@;Raymond;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=raymond&n=jullian&oc=1;2;0;0;0;;;b'';;;;;0;"- Né avant 1600 - Boulbon (13017)
-- Décédé";0;
-10;683;@I00184@;Anne;GUIGUE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=guigue&oc=2;0;0;0;0;;9 janvier 1602 (mercredi);b'Boulbon (13017),';;;;;0;"";0;
-9;379;@I00185@;Marguerite;BRUNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=brunel&oc=3;2;0;0;0;;;b'';;;;;0;"- Née en 1600
-- Décédée le 9 janvier 1645 (lundi) - Boulbon (13017), à l'âge de 45 ans";0;
-10;811;@I00186@;Louise;PINET;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=pinet;2;0;0;2;forme2;3 juin 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1616
-- Décédée le 28 juillet 1701 (jeudi) - Boulbon (13017), à l'âge de 85 ans";0;
-10;614;@I00181@;Barthélémy;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=bard;1;0;0;2;forme2;22 janvier 1635 (lundi);b'Boulbon (13017),';;;;;0;"- Né peut-être en 1613";0;
-10;596;@I00182@;Pierre;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bechet&oc=8;3;0;0;2;forme2;;b'';Consul;;;;0;"- Né peut-être en 1590
-- Décédé le 29 octobre 1660 (vendredi) - Boulbon (13017), peut-être à l'âge de 70 ans
+6;43;@I00052@;Elizabeth;BLANC;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=blanc;2;0;0;2;forme2;12 septembre 1735 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 9 janvier 1716 (jeudi) - Boulbon (13017)
+- Décédée le 12 janvier 1786 (jeudi) - Boulbon (13017), à l'âge de 70 ans";0;
+6;39;@I00053@;Anne Félicité;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne+felicite&n=braye;2;0;0;2;forme2;23 juin 1755 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 4 mai 1732 (dimanche) - Boulbon (13017)
+- Décédée le 23 frimaire an IX (14 décembre 1800) (dimanche) - Boulbon (13017), à l'âge de 68 ans";0;
+6;53;@I00054@;Marie;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=berlandier&oc=7;2;0;0;2;forme2;10 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 14 octobre 1740 (vendredi) - Boulbon (13017)
+- Décédée le 12 thermidor an X (31 juillet 1802) (samedi) - Boulbon (13017), à l'âge de 61 ans";0;
+6;51;@I00055@;Thérèse;AMY;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=amy&oc=1;2;0;0;2;forme2;17 mars 1766 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 23 avril 1736 (lundi) - Boulbon (13017)
+- Décédée le 21 septembre 1774 (mercredi) - Boulbon (13017), à l'âge de 38 ans";0;
+6;41;@I00056@;Anne;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=braye&oc=1;2;0;0;2;forme2;16 janvier 1736 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 15 mai 1707 (dimanche) - Boulbon (13017)
+- Décédée le 7 septembre 1774 (mercredi) - Boulbon (13017), à l'âge de 67 ans";0;
+7;118;@I00057@;Jean "François";BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+francois&n=braye;2;0;0;2;forme2;10 avril 1701 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 26 février 1675 (mardi) - Boulbon (13017)
+- Décédé le 22 janvier 1754 (mardi) - Boulbon (13017), à l'âge de 78 ans";0;
+7;68;@I00058@;Pierre;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bechet;3;0;0;2;forme2;13 août 1714 (lundi);b'Boulbon (13017),';Consul;;;;0;"- Né le 12 janvier 1687 (dimanche) - Boulbon (13017)
+- Décédé le 29 octobre 1760 (mercredi) - Boulbon (13017), à l'âge de 73 ans
 - Consul";0;
-10;725;@I00189@;Isabeau;BOURBON;F;https://gw.geneanet.org/danielr13?lang=fr&p=isabeau&n=bourbon;0;0;0;0;;;b'';;;;;0;"";0;
-9;345;@I00190@;Marie;JOUJOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=joujoux&oc=1;2;0;0;0;;;b'';;;;;0;"- Née vers 1604
-- Décédée le 8 octobre 1646 (lundi) - Boulbon (13017), à l'âge d'environ 42 ans";0;
-10;523;@I00191@;Jeanne;TREBILLON;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=trebillon;1;0;0;0;;;b'';;;;;0;"- Décédée avant 1637";0;
-9;409;@I00192@;Marthe;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=saint+michel&oc=1;2;0;0;0;;22 janvier 1652 (lundi);b'Boulbon (13017),';;Marie MICHEL;;;0;"- Née vers 1625
-- Décédée le 1er novembre 1705 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-9;344;@I00196@;Claude;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=blanc&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-10;615;@I00187@;Catherine;GAIGNON;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=gaignon&oc=1;0;0;0;2;forme2;22 janvier 1635 (lundi);b'Boulbon (13017),';;;;;0;"";0;
-10;597;@I00188@;Metheline;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=metheline&n=jullian&oc=1;0;0;0;2;forme2;;b'';;;;;0;"";0;
-9;280;@I00193@;Charles;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=boudoy;3;0;0;2;forme2;2 mai 1661 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né le 17 septembre 1636 (mercredi) - Boulbon (13017)
-- Décédé le 11 mars 1709 (lundi) - Boulbon (13017), à l'âge de 72 ans
-- Vigneron";0;
-9;408;@I00194@;Claude;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=amy&oc=6;3;0;0;2;forme2;22 janvier 1652 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 25 mai 1631 (dimanche) - Boulbon (13017)
-- Décédé le 26 mars 1683 (vendredi) - Boulbon (13017), à l'âge de 51 ans
+7;65;@I00059@;Elizabeth;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=gilles;2;0;0;2;forme2;4 mars 1726 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 19 avril 1705 (dimanche) - Boulbon (13017)
+- Décédée le 21 mai 1780 (dimanche) - Boulbon (13017), à l'âge de 75 ans";0;
+7;117;@I00060@;Magdeleine Rose;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine+rose&n=gilles;2;0;0;2;forme2;21 novembre 1707 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 16 décembre 1685 (dimanche) - Boulbon (13017)
+- Décédée le 30 août 1766 (samedi) - Boulbon (13017), à l'âge de 80 ans";0;
+7;66;@I00061@;Antoine;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=saint+michel;2;0;0;2;forme2;26 août 1736 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 12 janvier 1697 (samedi) - Boulbon (13017)
+- Décédé le 11 avril 1740 (lundi) - Boulbon (13017), à l'âge de 43 ans";0;
+6;47;@I00062@;Françoise;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=berlandier&oc=3;2;0;1;2;forme2;20 août 1736 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 31 octobre 1714 (mercredi) - Barbentane (13010)
+- Décédée le 12 février 1785 (samedi) - Boulbon (13017), à l'âge de 70 ans";0;
+7;96;@I00067@;Jacques;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=nicolas&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+7;97;@I00069@;Marie;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=mauche&oc=2;2;0;0;0;;;b'';;;;;0;"- Née en 1710
+- Décédée le 27 août 1789 (jeudi) - Boulbon (13017), à l'âge de 79 ans";0;
+7;108;@I00063@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel&oc=4;3;0;0;2;forme2;3 février 1741 (vendredi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 29 avril 1720 (lundi) - Boulbon (13017)
+- Décédé le 19 octobre 1747 (jeudi) - Boulbon (13017), à l'âge de 27 ans
 - Ménager";0;
-9;264;@I00195@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel;2;0;0;2;forme2;28 janvier 1652 (dimanche);b'Barbentane (13010),';;;;;0;"- Né le 31 juillet 1631 (jeudi) - Boulbon (13017)
-- Décédé le 23 décembre 1699 (mercredi) - Boulbon (13017), à l'âge de 68 ans";0;
-10;612;@I00198@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=3;3;0;0;0;;;b'';Maître tailleur d'habits;;;;0;"- Né vers 1601 - Boulbon (13017)
-- Décédé le 24 mai 1681 (samedi) - Boulbon (13017), à l'âge d'environ 80 ans
-- Maître tailleur d'habits";0;
-11;1282;@I00199@;Reymond;CHRISTOLIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=reymond&n=christolin;2;0;0;0;;;b'';;;;;0;"- Né en 1560
-- Décédé après 1581";0;
-8;219;@I00197@;Marie Rose;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=durand&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née le 15 février 1688 (dimanche) - Boulbon (13017)
-- Décédée le 22 janvier 1761 (jeudi) - Boulbon (13017), à l'âge de 72 ans";0;
-10;579;@I00200@;Gabrielle;GRASSET;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=grasset;0;0;0;0;;;b'';;;;;0;"";0;
-10;578;@I00202@;Pierre;GONTARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=gontard&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-10;616;@I00203@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=14;2;0;0;0;;;b'';;;;;0;"- Né en 1607
-- Décédé le 3 janvier 1667 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
-10;617;@I00204@;Marguerite;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=tissot&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-11;1617;@I00205@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29466;0;0;0;0;;;b'';;;;;0;"";0;
-11;1616;@I00206@;Antoine;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=meynier&oc=2;2;0;0;0;;;b'';;;;;0;"- Né en 1546
-- Décédé en novembre 1636 - Boulbon (13017), à l'âge de 90 ans";0;
-9;339;@I00207@;Honnorate;VIDAL;F;https://gw.geneanet.org/danielr13?lang=fr&p=honnorate&n=vidal;2;0;0;0;;25 juin 1632 (vendredi);b'Boulbon (13017),';;dite "La Frizade";;;0;"- Née peut-être en 1616 - SERNHAC (30317)
-- Décédée le 8 janvier 1674 (lundi) - Boulbon (13017), peut-être à l'âge de 58 ans";0;
-10;726;@I00201@;Pierre;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bard;2;0;0;2;forme2;;b'';;;;;0;"- Né avant 1595 - Boulbon (13017)
-- Décédé en 1646 - Boulbon (13017)";0;
-10;530;@I00208@;Jean;PELENC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=pelenc;0;0;0;0;;;b'';;;;;0;"";0;
-10;563;@I00209@;Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=mauche&oc=3;2;0;0;0;;;b'';;;;;0;"- Née vers 1600
-- Décédée le 29 août 1645 (mardi) - Boulbon (13017), à l'âge d'environ 45 ans";0;
-10;562;@I00210@;Jean;ISAAC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=isaac;0;0;0;0;;;b'';;;;;0;"";0;
-11;1280;@I00211@;Guillaume;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=berlandier&oc=3;2;0;0;0;;;b'';Maître Maréchal;;;;0;"- Né vers 1535
-- Maître Maréchal";0;
-11;1621;@I00212@;Louise;CHAUDESSON;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=chaudesson;0;0;0;0;;;b'';;;;;0;"";0;
-11;1283;@I00213@;Biélone;DE GUERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=bielone&n=de+guerin;1;0;0;0;;;b'';;;;;0;"- Née en 1555";0;
-11;1620;@I00214@;Pierre;LAGARDE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=lagarde&oc=1;1;0;0;0;;;b'';;;;;0;"- Décédé le 17 avril 1650 (dimanche) - Boulbon (13017)";0;
-11;1365;@I00215@;Jeanne;ICARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=icard&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-11;1364;@I00216@;Jean;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=lamouroux&oc=18;0;0;0;0;;;b'';;;;;0;"";0;
-10;613;@I00217@;Anne;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=jouve&oc=2;1;0;0;0;;;b'';;;;;0;"- Décédée le 25 août 1653 (lundi) - Boulbon (13017)";0;
-10;727;@I00218@;Toinette;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=toinette&n=berlandier;0;0;0;0;;;b'';;;;;0;"";0;
-11;1622;@I00219@;Pierre;PINET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=pinet&oc=2;2;0;0;0;;;b'';;;;;0;"- Né en 1592
-- Décédé le 8 mai 1642 (jeudi) - Boulbon (13017), à l'âge de 50 ans";0;
-11;1623;@I00220@;Félise;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=felise&n=isaac&oc=1;1;0;0;0;;;b'';;;;;0;"- Décédée le 22 février 1656 (mardi) - Boulbon (13017)";0;
-11;1281;@I00221@;Alione;GRANIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=alione&n=granier;1;0;0;0;;;b'';;;;;0;"- Née en 1540";0;
-10;531;@I00222@;Simone;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=simone&n=guiot;0;0;0;0;;;b'';;;;;0;"";0;
-11;1192;@I00223@;Jean;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bechet&oc=11;2;0;0;0;;;b'';;;;;0;"- Né en 1567
-- Décédé le 27 avril 1637 (lundi) - Boulbon (13017), à l'âge de 70 ans";0;
-8;185;@I00225@;Antoinette;MONIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=monier;2;0;0;2;forme2;20 octobre 1680 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1640 - Vallabrègues (30336)
-- Décédée le 11 mai 1705 (lundi) - Boulbon (13017), à l'âge de 65 ans";0;
-8;205;@I00227@;Marie;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=jouve&oc=2;2;0;0;0;;;b'';;;;;0;"- Née vers 1671
-- Décédée le 26 octobre 1731 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-8;212;@I00224@;Laurent;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=laurent&n=berlandier;3;0;0;2;forme2;28 décembre 1683 (mardi);b'Boulbon (13017),';Meunier - Second consul;;;;0;"- Né le 18 juillet 1661 (lundi) - Boulbon (13017)
-- Décédé le 2 avril 1718 (samedi) - Boulbon (13017), à l'âge de 56 ans
-- Meunier - Second consul";0;
-8;180;@I00226@;Maximin;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=maximin&n=ellien;2;0;0;2;forme2;29 mai 1678 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 9 septembre 1654 (mercredi) - Boulbon (13017)
-- Décédé le 11 février 1702 (samedi), à l'âge de 47 ans";0;
-10;816;@I00229@;Jean;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=amy&oc=1;2;0;0;0;;;b'';;;;;0;"- Né vers 1612
-- Décédé le 8 juillet 1656 (samedi) - Boulbon (13017), à l'âge d'environ 44 ans";0;
-10;528;@I00230@;Marcellin;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=saint+michel&oc=8;1;0;0;0;;;b'';;;;;0;"- Décédé le 3 février 1660 (mardi) - Boulbon (13017)";0;
-11;1194;@I00231@;Gilbert;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=gilbert&n=jullian;0;0;0;0;;;b'';;;;;0;"";0;
-11;1195;@I00232@;Marthe;MUTIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=mutin;0;0;0;0;;;b'';;;;;0;"";0;
-11;1230;@I00233@;Georges;GAIGNON;M;https://gw.geneanet.org/danielr13?lang=fr&p=georges&n=gaignon&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-11;1231;@I00234@;Bilionne;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=bilionne&n=jullian&oc=1;2;0;0;0;;;b'';;;;;0;"- Née en 1582
-- Décédée le 28 novembre 1642 (vendredi) - Boulbon (13017), à l'âge de 60 ans";0;
-11;1193;@I00235@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29426;0;0;0;0;;;b'';;;;;0;"";0;
-9;438;@I00228@;Jean Nicolas;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+nicolas&n=durand;2;0;1;2;forme2;18 octobre 1693 (dimanche);b'Boulbon (13017),';;dit "Grand Jean";;;0;"- Né le 23 juin 1651 (vendredi) - Boulbon (13017)
-- Décédé le 13 juin 1717 (dimanche) - Boulbon (13017), à l'âge de 65 ans";0;
-11;1452;@I00237@;Pons;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pons&n=bard;0;0;0;0;;;b'';;;;;0;"";0;
-8;173;@I00236@;Doucette;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=doucette&n=gilles;2;0;0;2;forme2;15 juin 1664 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 28 août 1645 (lundi) - Boulbon (13017)
-- Décédée le 31 mai 1721 (samedi) - Boulbon (13017), à l'âge de 75 ans";0;
-10;529;@I00238@;Biellone;FREDIERE;F;https://gw.geneanet.org/danielr13?lang=fr&p=biellone&n=frediere;2;0;0;0;;;b'';;;;;0;"- Née peut-être en 1600
-- Décédée le 19 janvier 1663 (vendredi) - Boulbon (13017), peut-être à l'âge de 63 ans";0;
-8;133;@I00240@;Antoinette;GINOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=ginoux;2;0;0;0;;20 août 1685 (lundi);b'Ch?teaurenard (13027),';;;;;0;"- Née vers 1659
-- Décédée le 28 septembre 1739 (lundi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-10;817;@I00241@;Magdeleine;BERTHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=berthet&oc=8543;2;0;0;0;;;b'';;;;;0;"- Née vers 1616
-- Décédée le 18 mars 1676 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-8;141;@I00243@;Louise Rose;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise+rose&n=bourges&oc=1;2;0;0;2;forme2;24 janvier 1704 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 19 juin 1680 (mercredi) - Boulbon (13017)
-- Décédée le 6 janvier 1723 (mercredi) - Boulbon (13017), à l'âge de 42 ans";0;
-9;439;@I00239@;Esprite;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=esprite&n=gilles;2;0;0;2;forme2;1er février 1682 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 8 juin 1651 (jeudi) - Boulbon (13017)
-- Décédée le 14 avril 1693 (mardi) - Boulbon (13017), à l'âge de 41 ans";0;
-7;95;@I00242@;Marie;GRANIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=granier&oc=3;2;0;0;2;forme2;21 novembre 1694 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 24 mars 1676 (mardi) - Boulbon (13017)
-- Décédée";0;
-11;1453;@I00244@;Jeanne;BONNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=bonnaud;0;0;0;0;;;b'';;;;;0;"";0;
-8;137;@I00254@;Elizabeth;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=guiot;2;0;0;0;;;b'';;;;;0;"- Née vers 1660
-- Décédée le 25 décembre 1725 (mardi) - Boulbon (13017), à l'âge d'environ 65 ans";0;
-7;79;@I00245@;Marie Anne;CHOISITY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=choisity;2;0;0;2;forme2;13 août 1731 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 avril 1696 (lundi) - Boulbon (13017)
-- Décédée le 24 octobre 1755 (vendredi) - Boulbon (13017), à l'âge de 59 ans";0;
-8;199;@I00246@;Jeanne;JEAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=jean;2;0;1;2;forme2;21 avril 1689 (jeudi);b'Barbentane (13010),';;;;;0;"- Née le 22 janvier 1665 (jeudi) - Barbentane (13010)
-- Décédée le 5 décembre 1749 (vendredi) - Barbentane (13010), à l'âge de 84 ans";0;
-8;203;@I00247@;Marguerite Rose;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite+rose&n=bechet&oc=2;2;0;0;2;forme2;10 juin 1700 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 6 octobre 1681 (lundi) - Boulbon (13017)
-- Décédée le 22 octobre 1756 (vendredi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 75 ans";0;
-8;171;@I00248@;Claude;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=bard;2;0;0;2;forme2;9 décembre 1685 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 13 juillet 1665 (lundi) - Boulbon (13017)
-- Décédée le 25 octobre 1745 (lundi) - Boulbon (13017), à l'âge de 80 ans";0;
-8;139;@I00249@;Jeanne;JOUJOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=joujoux&oc=1;2;0;0;2;forme2;15 avril 1674 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 19 avril 1648 (dimanche) - Boulbon (13017)
-- Décédée le 3 mars 1717 (mercredi) - Boulbon (13017), à l'âge de 68 ans";0;
-8;131;@I00250@;Françoise;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=durand&oc=5;2;0;0;2;forme2;1er février 1682 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 24 septembre 1662 (dimanche) - Boulbon (13017)
-- Décédée le 2 février 1708 (jeudi) - Boulbon (13017), à l'âge de 45 ans";0;
-8;161;@I00251@;Estiennette;MARGUERIT;F;https://gw.geneanet.org/danielr13?lang=fr&p=estiennette&n=marguerit;2;0;0;2;forme2;31 août 1665 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1649 - Boulbon (13017)
-- Décédée le 27 janvier 1714 (samedi) - Boulbon (13017), à l'âge d'environ 65 ans";0;
-8;138;@I00252@;Jean Louis;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+louis&n=braye&oc=1;3;0;0;2;forme2;15 avril 1674 (dimanche);b'Boulbon (13017),';Maître Cordonnier;;;;0;"- Né vers 1653 - Boulbon (13017)
-- Décédé le 16 avril 1713 (dimanche) - Boulbon (13017), à l'âge d'environ 60 ans
-- Maître Cordonnier";0;
-8;129;@I00253@;Anne;ROCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=roche&oc=1;2;0;0;2;forme2;18 janvier 1693 (dimanche);b'Barbentane (13010),';;;;;0;"- Née vers 1668
-- Décédée le 3 mars 1748 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-9;360;@I00256@;Gabriel;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=gabriel&n=ellien;3;0;0;0;;5 mars 1653 (mercredi);b'Boulbon (13017),';Ménager;;;;0;"- Né vers 1621
-- Décédé le 1er mai 1694 (samedi) - Boulbon (13017), à l'âge d'environ 73 ans
+7;98;@I00064@;Pierre;JOUBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=joubert;3;0;1;2;forme2;10 mars 1732 (lundi);b'Barbentane (13010),';Maçon;;;;0;"- Né en 1707 - Barbentane (13010)
+- Décédé en 1790 - Barbentane (13010), à l'âge de 83 ans
+- Maçon";0;
+7;74;@I00065@;Antoine;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=gilles;2;0;0;2;forme2;25 février 1727 (mardi);b'Boulbon (13017),';;;;;0;"- Né le 6 juin 1700 (dimanche) - Boulbon (13017)
+- Décédé le 25 décembre 1767 (vendredi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 67 ans";0;
+7;75;@I00066@;Marie;BARTHELEMY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=barthelemy;0;0;0;2;forme2;25 février 1727 (mardi);b'Boulbon (13017),';;;;;0;"";0;
+7;70;@I00068@;Charles;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=boudoy&oc=1;2;0;0;2;forme2;3 septembre 1725 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 12 décembre 1704 (vendredi) - Boulbon (13017)
+- Décédé le 18 octobre 1791 (mardi) - Boulbon (13017), à l'âge de 86 ans";0;
+7;119;@I00070@;Elizabeth;DURIEU;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=durieu;2;0;0;2;forme2;10 avril 1701 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1684
+- Décédée le 8 novembre 1757 (mardi) - Boulbon (13017), à l'âge d'environ 73 ans";0;
+7;69;@I00071@;Marie Rose;BRAYE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=braye;2;0;0;2;forme2;13 août 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 août 1692 (samedi) - Boulbon (13017)
+- Décédée le 18 novembre 1769 (samedi) - Boulbon (13017), à l'âge de 77 ans";0;
+7;72;@I00072@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=1;3;0;0;2;forme2;31 janvier 1729 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 23 décembre 1701 (vendredi) - Boulbon (13017)
+- Décédé
+- Travailleur";0;
+7;67;@I00073@;Marie;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=jouve&oc=4;2;0;0;2;forme2;26 août 1736 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 8 janvier 1712 (vendredi) - Boulbon (13017)
+- Décédée le 1er février 1777 (samedi) - Boulbon (13017), à l'âge de 65 ans";0;
+7;100;@I00074@;Louis;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=saint+michel;3;0;0;2;forme2;10 janvier 1733 (samedi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 20 janvier 1709 (dimanche) - Boulbon (13017)
+- Décédé le 15 décembre 1773 (mercredi) - Boulbon (13017), à l'âge de 64 ans
 - Ménager";0;
-8;136;@I00255@;Richard;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=richard&n=bechet&oc=2;3;0;0;2;forme2;;b'';Rentier de Campredon;;;;0;"- Né le 13 février 1657 (mardi) - Boulbon (13017)
-- Décédé le 12 septembre 1708 (mercredi) - Boulbon (13017), à l'âge de 51 ans
-- Rentier de Campredon";0;
-9;370;@I00258@;Jean;MONIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=monier;0;0;0;0;;;b'';;;;;0;"";0;
-9;371;@I00259@;Marie;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gibert&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-7;75;@I00260@;Marie;BARTHELEMY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=barthelemy;0;0;0;2;forme2;25 février 1727 (mardi);b'Boulbon (13017),';;;;;0;"";0;
-7;73;@I00264@;Marguerite;BOSC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bosc;0;0;0;2;forme2;31 janvier 1729 (lundi);b'Boulbon (13017),';;;;;0;"";0;
-8;128;@I00257@;Durand;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=durand&n=nicolas;2;0;0;2;forme2;18 janvier 1693 (dimanche);b'Barbentane (13010),';;;;;0;"- Né le 13 mars 1666 (samedi) - Graveson (13045)
-- Décédé le 29 juillet 1734 (jeudi) - Boulbon (13017), à l'âge de 68 ans";0;
-7;91;@I00261@;Anne;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=tissot;2;0;0;2;forme2;7 février 1716 (vendredi);b'Boulbon (13017),';;;;;0;"- Née vers 1692 - Boulbon (13017)
-- Décédée le 13 octobre 1734 (mercredi) - Boulbon (13017), à l'âge d'environ 42 ans";0;
-7;89;@I00262@;Catherine Rose;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine+rose&n=bechet&oc=2;2;0;0;2;forme2;3 septembre 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 mai 1692 (vendredi) - Boulbon (13017)
-- Décédée le 25 septembre 1759 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
-7;107;@I00263@;Marguerite;LAMOUROUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lamouroux&oc=3;2;0;0;2;forme2;9 janvier 1738 (jeudi);b'Boulbon (13017),';;;;;0;"- Née vers 1709
-- Décédée le 24 mars 1769 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-7;104;@I00265@;Pierre;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=braye&oc=2;3;0;0;2;forme2;9 février 1739 (lundi);b'Boulbon (13017),';Maçon;;;;0;"- Né le 29 octobre 1709 (mardi) - Boulbon (13017)
+7;104;@I00075@;Pierre;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=braye&oc=2;3;0;0;2;forme2;9 février 1739 (lundi);b'Boulbon (13017),';Maçon;;;;0;"- Né le 29 octobre 1709 (mardi) - Boulbon (13017)
 - Décédé le 10 août 1769 (jeudi) - Boulbon (13017), à l'âge de 59 ans
 - Maçon";0;
-7;105;@I00266@;Magdeleine;MEYNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=meynier;2;0;0;2;forme2;9 février 1739 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 31 décembre 1714 (lundi) - Boulbon (13017)
-- Décédée le 1er complémentaire an IV (17 septembre 1796) (samedi) - Boulbon (13017), à l'âge de 81 ans";0;
-9;361;@I00268@;Marthe;BIGOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=bigot;2;0;0;2;forme2;5 mars 1653 (mercredi);b'Boulbon (13017),';;;;;0;"- Née vers 1626
-- Décédée le 23 mai 1686 (jeudi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-7;71;@I00270@;Catherine;POILDAVOINE;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=poildavoine&oc=1;2;0;0;2;forme2;3 septembre 1725 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1705
-- Décédée le 22 août 1765 (jeudi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-10;876;@I00267@;Nicolas;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=durand&oc=4;3;0;0;2;forme2;23 février 1649 (mardi);b'Boulbon (13017),';Consul;;;;0;"- Né vers 1622
-- Décédé le 5 octobre 1676 (lundi) - Boulbon (13017), à l'âge d'environ 54 ans
-- Consul";0;
-7;83;@I00269@;Elizabeth;DURIEU;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=durieu;2;0;0;2;forme2;10 avril 1701 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1684
-- Décédée le 8 novembre 1757 (mardi) - Boulbon (13017), à l'âge d'environ 73 ans";0;
-7;103;@I00271@;Catherine;BURAVAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=buravand;2;0;0;2;forme2;28 février 1724 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 9 novembre 1692 (dimanche) - Boulbon (13017)
-- Décédée le 15 avril 1775 (samedi) - Boulbon (13017), à l'âge de 82 ans";0;
-7;87;@I00272@;Marie "Jeanne";JEAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+jeanne&n=jean&oc=3;2;0;1;2;forme2;26 novembre 1714 (lundi);b'Barbentane (13010),';;;;;0;"- Née en 1693
-- Décédée le 6 octobre 1733 (mardi) - Boulbon (13017), à l'âge de 40 ans";0;
-10;877;@I00275@;Françoise;BURAVAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=buravand;2;0;0;0;;23 février 1649 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1621
-- Décédée le 23 janvier 1701 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-9;282;@I00273@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges&oc=1;3;0;0;2;forme2;21 avril 1670 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 1er janvier 1645 (dimanche) - Boulbon (13017)
-- Décédé avant 1707
+7;80;@I00076@;Louis;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=berlandier&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né le 17 mars 1679 (vendredi) - Boulbon (13017)
+- Décédé le 15 avril 1758 (samedi) - Boulbon (13017), à l'âge de 79 ans";0;
+7;76;@I00077@;Jean;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=boudoy;2;0;0;2;forme2;22 avril 1725 (dimanche);b'Boulbon (13017),';;(Joseph BOUDOY);;;0;"- Né le 21 décembre 1704 (dimanche) - Boulbon (13017)
+- Décédé le 10 mars 1759 (samedi) - Boulbon (13017), à l'âge de 54 ans";0;
+7;84;@I00078@;Charles;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=berlandier;3;0;0;2;forme2;27 septembre 1703 (jeudi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 22 septembre 1679 (vendredi) - Boulbon (13017)
+- Décédé le 18 juin 1751 (vendredi) - Boulbon (13017), à l'âge de 71 ans
+- Meunier";0;
+7;102;@I00079@;Claude François;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude+francois&n=amy;3;0;0;2;forme2;28 février 1724 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 29 janvier 1695 (samedi) - Boulbon (13017)
+- Décédé le 10 novembre 1753 (samedi) - Boulbon (13017), à l'âge de 58 ans
+- Travailleur";0;
+7;106;@I00080@;François;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=berlandier;3;0;0;2;forme2;9 janvier 1738 (jeudi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 4 avril 1695 (lundi) - Boulbon (13017)
+- Décédé le 5 avril 1775 (mercredi) - Boulbon (13017), à l'âge de 80 ans
+- Meunier";0;
+7;78;@I00081@;Etienne;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=braye;3;0;0;2;forme2;13 août 1731 (lundi);b'Boulbon (13017),';Cordonnier;;;;0;"- Né le 9 avril 1684 (dimanche) - Boulbon (13017)
+- Décédé le 14 septembre 1762 (mardi) - Boulbon (13017), à l'âge de 78 ans
+- Cordonnier";0;
+7;92;@I00082@;Jean;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=fabre&oc=2;1;0;0;2;forme2;13 février 1718 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 26 janvier 1673 (jeudi) - Boulbon (13017)";0;
+7;86;@I00083@;Claude;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=blanc&oc=2;1;0;1;2;forme2;26 novembre 1714 (lundi);b'Barbentane (13010),';;;;;0;"- Né le 7 septembre 1689 (mercredi) - Boulbon (13017)";0;
+8;232;@I00084@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel&oc=3;3;0;0;2;forme2;20 août 1685 (lundi);b'Ch?teaurenard (13027),';Ménager;;;;0;"- Né le 15 novembre 1654 (dimanche) - Boulbon (13017)
+- Décédé le 27 novembre 1728 (samedi) - Boulbon (13017), à l'âge de 74 ans
 - Ménager";0;
-9;283;@I00274@;Marguerite;DELEUZE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=deleuze;2;0;0;2;forme2;21 avril 1670 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 20 juillet 1651 (jeudi) - Boulbon (13017)
-- Décédée le 11 mai 1706 (mardi) - Boulbon (13017), à l'âge de 54 ans";0;
-8;190;@I00276@;Guillaume;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=granier&oc=4;3;0;0;2;forme2;20 avril 1665 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né le 24 août 1643 (lundi) - Boulbon (13017)
-- Décédé le 11 mars 1719 (samedi) - Boulbon (13017), à l'âge de 75 ans
-- Vigneron";0;
-9;259;@I00277@;Delphine;GRILLETTE;F;https://gw.geneanet.org/danielr13?lang=fr&p=delphine&n=grillette;0;0;0;0;;;b'';;;;;0;"";0;
-9;258;@I00279@;Sébastien;ROCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=sebastien&n=roche;0;0;0;0;;;b'';;;;;0;"";0;
-9;276;@I00280@;Michel;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=michel&n=braye;0;0;0;0;;;b'';;;;;0;"";0;
-9;322;@I00281@;Toussaint;MARGUERIT;M;https://gw.geneanet.org/danielr13?lang=fr&p=toussaint&n=marguerit;0;0;0;0;;;b'';;;;;0;"";0;
-9;342;@I00283@;Pierre;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bard&oc=1;1;0;0;2;forme2;28 mai 1662 (dimanche);b'Boulbon (13017),';;;;;1;"- Né le 31 octobre 1635 (mercredi) - Boulbon (13017)
-@todo note union à analyser pour Pierre BARD : '..."laquelle SYBILLE a accusé ledit BAR de crime de rapt..."'";0;
-9;278;@I00284@;Nicolas;JOUJOUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=joujoux;1;0;0;0;;;b'';;;;;0;"- Décédé le 13 mai 1658 (lundi) - Boulbon (13017)";0;
-8;158;@I00287@;Jean;CHOISITY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=choisity;3;0;0;2;forme2;9 janvier 1676 (jeudi);b'Boulbon (13017),';Marchand, viguier et lieutenant de juge, consul;;;;0;"- Né vers 1650 - Aramon (30012)
-- Décédé le 8 octobre 1698 (mercredi) - Boulbon (13017), à l'âge d'environ 48 ans
-- Marchand, viguier et lieutenant de juge, consul";0;
-9;272;@I00278@;Etienne;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=bechet;3;0;0;2;forme2;5 mars 1652 (mardi);b'Boulbon (13017),';Rentier de Campredon et Premier consul;;;;0;"- Né vers 1626 - Boulbon (13017)
-- Décédé le 3 août 1691 (vendredi) - Boulbon (13017), à l'âge d'environ 65 ans
-- Rentier de Campredon et Premier consul";0;
-9;398;@I00282@;Barthélemy;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=jean;2;0;1;2;forme2;;b'';;;;;0;"- Né le 1er mars 1636 (samedi) - Barbentane (13010)
-- Décédé en 1688 - Barbentane (13010), à l'âge de 52 ans";0;
-8;159;@I00285@;Marie Jeanne;POILDAVOINE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+jeanne&n=poildavoine&oc=1;2;0;0;2;forme2;9 janvier 1676 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 7 novembre 1655 (dimanche) - Boulbon (13017)
-- Décédée le 21 mars 1732 (vendredi) - Boulbon (13017), à l'âge de 76 ans";0;
-8;191;@I00286@;Françoise;PETRIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=petris&oc=1;2;0;0;2;forme2;20 avril 1665 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er mai 1641 (mercredi) - Boulbon (13017)
-- Décédée le 9 septembre 1718 (vendredi) - Boulbon (13017), à l'âge de 77 ans";0;
-8;147;@I00288@;Marguerite;LACROIX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lacroix;0;0;0;0;;;b'';;;;;0;"";0;
-8;146;@I00289@;Jean Baptiste;BOSC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bosc;2;0;0;2;forme2;9 février 1728 (lundi);b'Boulbon (13017),';;;;;1;"- Né vers 1680
-- Décédé le 14 octobre 1755 (mardi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
-8;214;@I00290@;Claude;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lamouroux&oc=5;2;0;0;2;forme2;9 septembre 1696 (dimanche);b'Tarascon Sainte-Marthe (13108),';;;;;0;"- Né le 28 mai 1667 (samedi) - Saint-Pierre-de-Mézoargues (13061)
-- Décédé le 28 août 1762 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 95 ans";0;
-8;182;@I00291@;Joseph;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=tissot;2;0;0;2;forme2;;b'';;;;;0;"- Né le 1er février 1665 (dimanche) - Boulbon (13017)
-- Décédé";0;
-8;206;@I00292@;Louis;BURAVAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=buravand;3;0;0;2;forme2;11 mai 1687 (dimanche);b'Boulbon (13017),';Tailleur d'habits;;;;0;"- Né le 26 janvier 1654 (lundi) - Boulbon (13017)
-- Décédé le 21 juillet 1741 (vendredi) - Boulbon (13017), à l'âge de 87 ans
+7;94;@I00085@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=15;3;0;0;2;forme2;21 novembre 1694 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 1er mars 1668 (jeudi) - Boulbon (13017)
+- Décédé le 24 août 1749 (dimanche) - Boulbon (13017), à l'âge de 81 ans
+- Ménager";0;
+8;130;@I00086@;Louis;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=gilles;2;0;0;2;forme2;;b'';;;;;0;"- Né le 28 avril 1655 (mercredi) - Boulbon (13017)
+- Décédé le 27 novembre 1731 (mardi) - Boulbon (13017), à l'âge de 76 ans";0;
+8;236;@I00087@;Jean Louis;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+louis&n=braye&oc=1;3;0;0;2;forme2;15 avril 1674 (dimanche);b'Boulbon (13017),';Maître Cordonnier;;;;0;"- Né vers 1653 - Boulbon (13017)
+- Décédé le 16 avril 1713 (dimanche) - Boulbon (13017), à l'âge d'environ 60 ans
+- Maître Cordonnier";0;
+8;136;@I00088@;Richard;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=richard&n=bechet&oc=2;3;0;0;2;forme2;;b'';Rentier de Campredon;;;;0;"- Né le 13 février 1657 (mardi) - Boulbon (13017)
+- Décédé le 12 septembre 1708 (mercredi) - Boulbon (13017), à l'âge de 51 ans
+- Rentier de Campredon";0;
+7;107;@I00089@;Marguerite;LAMOUROUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lamouroux&oc=3;2;0;0;2;forme2;9 janvier 1738 (jeudi);b'Boulbon (13017),';;;;;0;"- Née vers 1709
+- Décédée le 24 mars 1769 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+7;103;@I00090@;Catherine;BURAVAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=buravand;2;0;0;2;forme2;28 février 1724 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 9 novembre 1692 (dimanche) - Boulbon (13017)
+- Décédée le 15 avril 1775 (samedi) - Boulbon (13017), à l'âge de 82 ans";0;
+7;79;@I00091@;Marie Anne;CHOISITY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=choisity;2;0;0;2;forme2;13 août 1731 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 avril 1696 (lundi) - Boulbon (13017)
+- Décédée le 24 octobre 1755 (vendredi) - Boulbon (13017), à l'âge de 59 ans";0;
+7;87;@I00092@;Marie "Jeanne";JEAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+jeanne&n=jean&oc=3;2;0;1;2;forme2;26 novembre 1714 (lundi);b'Barbentane (13010),';;;;;0;"- Née en 1693
+- Décédée le 6 octobre 1733 (mardi) - Boulbon (13017), à l'âge de 40 ans";0;
+8;134;@I00094@;Barthélemy;JOUVE;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=jouve&oc=2;2;0;0;2;forme2;13 décembre 1705 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 6 mai 1677 (jeudi) - Boulbon (13017)
+- Décédé le 19 novembre 1752 (dimanche) - Boulbon (13017), à l'âge de 75 ans";0;
+8;238;@I00095@;Jean Michel;DURIEU;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+michel&n=durieu;2;0;0;0;;;b'';Ménager;;;;0;"- Décédé avant 1700
+- Ménager";0;
+8;140;@I00096@;Etienne;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=boudoy;2;0;0;2;forme2;19 mars 1724 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1669
+- Décédé le 18 février 1729 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+8;150;@I00098@;Jean;BARTHELEMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=barthelemy&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+8;216;@I00099@;Joseph;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=saint+michel&oc=43;2;0;0;2;forme2;6 février 1719 (lundi);b'Boulbon (13017),';;;;;0;"- Né en 1695
+- Décédé le 12 janvier 1722 (lundi) - Boulbon (13017), à l'âge de 27 ans";0;
+8;196;@I00100@;Paul;JOUBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=paul&n=joubert&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+8;144;@I00093@;Pierre;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=berlandier;3;0;0;2;forme2;29 juillet 1696 (dimanche);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 16 novembre 1671 (lundi) - Boulbon (13017)
+- Décédé le 29 novembre 1719 (mercredi) - Boulbon (13017), à l'âge de 48 ans
+- Travailleur";0;
+8;148;@I00097@;François;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=gilles&oc=1;2;0;0;2;forme2;4 mars 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1665 - Boulbon (13017)
+- Décédé le 11 mars 1752 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge d'environ 87 ans";0;
+7;95;@I00101@;Marie;GRANIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=granier&oc=3;2;0;0;2;forme2;21 novembre 1694 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 24 mars 1676 (mardi) - Boulbon (13017)
+- Décédée";0;
+8;135;@I00104@;Catherine;DURIEU;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=durieu;2;0;0;2;forme2;13 décembre 1705 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1688
+- Décédée le 28 mai 1760 (mercredi) - Boulbon (13017), à l'âge d'environ 72 ans";0;
+8;145;@I00106@;Françoise;GONTIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=gontier&oc=1;2;0;0;2;forme2;29 juillet 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1672
+- Décédée le 13 mai 1728 (jeudi) - Boulbon (13017), à l'âge d'environ 56 ans";0;
+8;239;@I00107@;Catherine;CARBONNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=carbonnel;2;0;0;0;;;b'';;;;;0;"- Née vers 1638
+- Décédée le 6 mai 1713 (samedi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
+8;151;@I00108@;Magdeleine;MOURET;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=mouret;0;0;0;0;;;b'';;;;;0;"";0;
+8;152;@I00102@;François;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=boudoy;2;0;0;2;forme2;1er septembre 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 9 octobre 1667 (dimanche) - Boulbon (13017)
+- Décédé le 9 août 1727 (samedi) - Boulbon (13017), à l'âge de 59 ans";0;
+8;168;@I00103@;Jacques;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=berlandier&oc=22;3;0;1;2;forme2;18 août 1659 (lundi);b'Boulbon (13017),';Meunier;;;;0;"- Né le 24 août 1635 (vendredi) - Boulbon (13017)
+- Décédé le 1er septembre 1684 (vendredi) - Boulbon (13017), à l'âge de 49 ans
+- Meunier";0;
+8;160;@I00105@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=11;3;0;0;2;forme2;31 août 1665 (lundi);b'Boulbon (13017),';Tailleur d'habits;;;;0;"- Né le 14 juillet 1642 (lundi) - Boulbon (13017)
+- Décédé le 9 août 1724 (mercredi) - Boulbon (13017), à l'âge de 82 ans
 - Tailleur d'habits";0;
-8;174;@I00293@;Louis;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=jean;3;0;2;0;;4 avril 1677 (dimanche);b'Barbentane (13010),';Ménager;;;;0;"- Né vers 1652 - Barbentane (13010)
+8;141;@I00109@;Louise Rose;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise+rose&n=bourges&oc=1;2;0;0;2;forme2;24 janvier 1704 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 19 juin 1680 (mercredi) - Boulbon (13017)
+- Décédée le 6 janvier 1723 (mercredi) - Boulbon (13017), à l'âge de 42 ans";0;
+8;149;@I00110@;Thérèse;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=bechet;2;0;0;2;forme2;4 mars 1696 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 4 janvier 1674 (jeudi) - Boulbon (13017)
+- Décédée le 23 décembre 1749 (mardi) - Boulbon (13017), à l'âge de 75 ans";0;
+8;184;@I00112@;Marin;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=marin&n=fabre;3;0;0;2;forme2;15 avril 1668 (dimanche);b'Boulbon (13017),';Berger, vigneron;;;;0;"- Né vers 1639
+- Décédé le 2 mars 1679 (jeudi) - Boulbon (13017), à l'âge d'environ 40 ans
+- Berger, vigneron";0;
+8;197;@I00119@;Charlotte;MARTIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=charlotte&n=martin&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+9;464;@I00111@;Jean;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=saint+michel;2;0;0;2;forme2;28 janvier 1652 (dimanche);b'Barbentane (13010),';;;;;0;"- Né le 31 juillet 1631 (jeudi) - Boulbon (13017)
+- Décédé le 23 décembre 1699 (mercredi) - Boulbon (13017), à l'âge de 68 ans";0;
+8;172;@I00113@;Etienne;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=blanc&oc=7;3;0;0;2;forme2;15 juin 1664 (dimanche);b'Boulbon (13017),';Ménager et second consul, puis premier consul;;;;0;"- Né le 29 septembre 1638 (mercredi) - Boulbon (13017)
+- Décédé le 17 septembre 1716 (jeudi) - Boulbon (13017), à l'âge de 77 ans
+- Ménager et second consul, puis premier consul";0;
+8;169;@I00114@;Marguerite;ARNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=arnaud&oc=8;2;0;2;2;forme2;18 août 1659 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er mars 1637 (dimanche) - Boulbon (13017)
+- Décédée le 13 octobre 1699 (mardi) - Boulbon (13017), à l'âge de 62 ans";0;
+8;212;@I00115@;Laurent;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=laurent&n=berlandier;3;0;0;2;forme2;28 décembre 1683 (mardi);b'Boulbon (13017),';Meunier - Second consul;;;;0;"- Né le 18 juillet 1661 (lundi) - Boulbon (13017)
+- Décédé le 2 avril 1718 (samedi) - Boulbon (13017), à l'âge de 56 ans
+- Meunier - Second consul";0;
+8;153;@I00116@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=mauche&oc=1;2;0;0;2;forme2;1er septembre 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 9 juin 1670 (lundi) - Boulbon (13017)
+- Décédée le 17 décembre 1736 (lundi) - Boulbon (13017), à l'âge de 66 ans";0;
+8;204;@I00117@;Guillaume;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=amy;3;0;0;2;forme2;;b'';Travailleur;;;;0;"- Né le 24 janvier 1668 (mardi) - Boulbon (13017)
+- Décédé le 19 mars 1733 (jeudi) - Boulbon (13017), à l'âge de 65 ans
+- Travailleur";0;
+8;161;@I00118@;Estiennette;MARGUERIT;F;https://gw.geneanet.org/danielr13?lang=fr&p=estiennette&n=marguerit;2;0;0;2;forme2;31 août 1665 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1649 - Boulbon (13017)
+- Décédée le 27 janvier 1714 (samedi) - Boulbon (13017), à l'âge d'environ 65 ans";0;
+8;174;@I00120@;Louis;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=jean;3;0;2;0;;4 avril 1677 (dimanche);b'Barbentane (13010),';Ménager;;;;0;"- Né vers 1652 - Barbentane (13010)
 - Décédé le 12 mai 1707 (jeudi) - Barbentane (13010), à l'âge d'environ 55 ans
 - Ménager";0;
-8;142;@I00294@;Alphonse;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=alphonse&n=poildavoine&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né le 19 novembre 1656 (dimanche) - Boulbon (13017)
-- Décédé le 9 juillet 1725 (lundi) - Boulbon (13017), à l'âge de 68 ans";0;
-8;143;@I00295@;Marthe;CHABERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=chabert;0;0;0;0;;;b'';;;;;0;"";0;
-10;722;@I00296@;Marcellin;BIGOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=bigot;1;0;0;2;forme2;;b'';;;;;0;"- Décédé le 23 août 1653 (samedi) - Boulbon (13017)";0;
-10;723;@I00297@;Toinette;CROZE;F;https://gw.geneanet.org/danielr13?lang=fr&p=toinette&n=croze;2;0;0;0;;;b'';;;;;0;"- Née en 1595
-- Décédée le 30 décembre 1645 (samedi) - Boulbon (13017), à l'âge de 50 ans";0;
-8;215;@I00298@;Magdeleine;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=bard;0;0;0;0;;9 septembre 1696 (dimanche);b'Tarascon Sainte-Marthe (13108),';;;;;0;"";0;
-11;1752;@I00299@;Honoré;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=honore&n=durand;0;0;0;0;;;b'';;;;;0;"";0;
-8;183;@I00300@;Louise;VIOLET;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=violet;0;0;0;0;;;b'';;;;;0;"";0;
-8;151;@I00301@;Magdeleine;MOURET;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=mouret;0;0;0;0;;;b'';;;;;0;"";0;
-9;257;@I00302@;Honorade;AGNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=honorade&n=agnier;0;0;0;0;;;b'';;;;;0;"";0;
-8;150;@I00303@;Jean;BARTHELEMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=barthelemy&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-9;273;@I00304@;Louise;LATARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=latard;2;0;0;0;;5 mars 1652 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1620
+8;158;@I00121@;Jean;CHOISITY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=choisity;3;0;0;2;forme2;9 janvier 1676 (jeudi);b'Boulbon (13017),';Marchand, viguier et lieutenant de juge, consul;;;;0;"- Né vers 1650 - Aramon (30012)
+- Décédé le 8 octobre 1698 (mercredi) - Boulbon (13017), à l'âge d'environ 48 ans
+- Marchand, viguier et lieutenant de juge, consul";0;
+8;206;@I00122@;Louis;BURAVAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=buravand;3;0;0;2;forme2;11 mai 1687 (dimanche);b'Boulbon (13017),';Tailleur d'habits;;;;0;"- Né le 26 janvier 1654 (lundi) - Boulbon (13017)
+- Décédé le 21 juillet 1741 (vendredi) - Boulbon (13017), à l'âge de 87 ans
+- Tailleur d'habits";0;
+9;272;@I00123@;Etienne;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=bechet;3;0;0;2;forme2;5 mars 1652 (mardi);b'Boulbon (13017),';Rentier de Campredon et Premier consul;;;;0;"- Né vers 1626 - Boulbon (13017)
+- Décédé le 3 août 1691 (vendredi) - Boulbon (13017), à l'âge d'environ 65 ans
+- Rentier de Campredon et Premier consul";0;
+8;214;@I00124@;Claude;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lamouroux&oc=5;2;0;0;2;forme2;9 septembre 1696 (dimanche);b'Tarascon Sainte-Marthe (13108),';;;;;0;"- Né le 28 mai 1667 (samedi) - Saint-Pierre-de-Mézoargues (13061)
+- Décédé le 28 août 1762 (samedi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 95 ans";0;
+9;269;@I00129@;Marguerite;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bourges&oc=3;2;0;0;0;;15 novembre 1670 (samedi);b'Tarascon (13108),';;;;;0;"- Née vers 1642
+- Décédée le 5 mars 1724 (dimanche) - Boulbon (13017), à l'âge d'environ 82 ans";0;
+9;268;@I00130@;Claude;JOUVE;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=jouve&oc=1;2;0;0;0;;15 novembre 1670 (samedi);b'Tarascon (13108),';;;;;0;"- Né vers 1639
+- Décédé le 23 août 1714 (jeudi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
+8;190;@I00125@;Guillaume;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=granier&oc=4;3;0;0;2;forme2;20 avril 1665 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né le 24 août 1643 (lundi) - Boulbon (13017)
+- Décédé le 11 mars 1719 (samedi) - Boulbon (13017), à l'âge de 75 ans
+- Vigneron";0;
+9;281;@I00126@;Marie;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=isaac;2;0;0;2;forme2;2 mai 1661 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 18 avril 1638 (dimanche) - Boulbon (13017)
+- Décédée le 20 novembre 1715 (mercredi) - Boulbon (13017), à l'âge de 77 ans";0;
+9;296;@I00127@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=2;3;0;0;2;forme2;28 décembre 1664 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 23 juin 1639 (jeudi) - Boulbon (13017)
+- Décédé le 27 septembre 1705 (dimanche) - Boulbon (13017), à l'âge de 66 ans
+- Ménager";0;
+9;280;@I00128@;Charles;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=charles&n=boudoy;3;0;0;2;forme2;2 mai 1661 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né le 17 septembre 1636 (mercredi) - Boulbon (13017)
+- Décédé le 11 mars 1709 (lundi) - Boulbon (13017), à l'âge de 72 ans
+- Vigneron";0;
+9;288;@I00131@;Nicolas;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=berlandier;3;0;0;2;forme2;30 septembre 1659 (mardi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 15 mars 1634 (mercredi) - Boulbon (13017)
+- Décédé le 22 avril 1708 (dimanche) - Boulbon (13017), à l'âge de 74 ans
+- Travailleur";0;
+9;283;@I00134@;Marguerite;DELEUZE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=deleuze;2;0;0;2;forme2;21 avril 1670 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 20 juillet 1651 (jeudi) - Boulbon (13017)
+- Décédée le 11 mai 1706 (mardi) - Boulbon (13017), à l'âge de 54 ans";0;
+9;290;@I00136@;Martial;GONTIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=martial&n=gontier;0;0;0;0;;;b'Ch?teaurenard (13027),';;;;;0;"";0;
+9;291;@I00137@;Jeanne;VINCENT;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=vincent&oc=2;0;0;0;0;;;b'Ch?teaurenard (13027),';;;;;0;"";0;
+9;289;@I00140@;Marie;GONTARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gontard;0;0;0;2;forme2;30 septembre 1659 (mardi);b'Boulbon (13017),';;;;;0;"";0;
+8;175;@I00142@;Jeanne;DEYDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=deydier;0;0;1;0;;4 avril 1677 (dimanche);b'Barbentane (13010),';;;;;0;"";0;
+8;215;@I00145@;Magdeleine;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=bard;0;0;0;0;;9 septembre 1696 (dimanche);b'Tarascon Sainte-Marthe (13108),';;;;;0;"";0;
+9;273;@I00146@;Louise;LATARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=latard;2;0;0;0;;5 mars 1652 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1620
 - Décédée le 9 mai 1668 (mercredi) - Boulbon (13017), à l'âge d'environ 48 ans";0;
-9;256;@I00305@;François;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=nicolas&oc=2;1;0;0;0;;;b'';;;;;0;"- Décédé le 29 mai 1696 (mardi) - Barbentane (13010)";0;
-9;277;@I00306@;Marguerite;NORMENDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=normende;0;0;0;0;;;b'';;;;;0;"";0;
-9;323;@I00307@;Faille;DE LATIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=faille&n=de+latis;0;0;0;0;;;b'';;;;;0;"";0;
-9;343;@I00310@;Françoise;SYBILLE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=sybille;1;0;0;2;forme2;28 mai 1662 (dimanche);b'Boulbon (13017),';;;;;1;"- Née le 10 novembre 1638 (mercredi) - Boulbon (13017)
-@todo note union à analyser pour Françoise SYBILLE : '..."laquelle SYBILLE a accusé ledit BAR de crime de rapt..."'";0;
-9;279;@I00308@;Magdaleine;PERRIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdaleine&n=perrier&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née vers 1613 - Boulbon (13017)
-- Décédée le 10 février 1674 (samedi) - Boulbon (13017), à l'âge d'environ 61 ans";0;
-9;399;@I00309@;Magdeleine;BOURREL;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=bourrel;2;0;2;2;forme2;;b'';;;;;0;"- Née le 21 février 1634 (mardi) - Graveson (13045)
-- Décédée le 20 juin 1705 (samedi) - Barbentane (13010), à l'âge de 71 ans
-@todo vérifier les événements pour Magdeleine BOURREL (1 erreur(s) détectée(s))";1;
-8;175;@I00312@;Jeanne;DEYDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=deydier;0;0;1;0;;4 avril 1677 (dimanche);b'Barbentane (13010),';;;;;0;"";0;
-10;566;@I00313@;Pierre;DELEUZE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=deleuze;3;0;0;0;;26 octobre 1645 (jeudi);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né vers 1609
-- Décédé le 9 juin 1659 (lundi) - Boulbon (13017), à l'âge d'environ 50 ans
-- Maréchal à forge";0;
-11;1753;@I00316@;Catherine;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=bourges&oc=1;1;0;0;2;forme2;;b'';;;;;0;"- Décédée le 20 septembre 1665 (dimanche) - Boulbon (13017)";0;
-9;380;@I00311@;Pierre;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=granier&oc=1;0;0;0;2;forme2;7 juin 1639 (mardi);b'Boulbon (13017),';;;;;0;"";0;
-8;207;@I00314@;Elizabeth;GUIRAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=guiraud&oc=1;2;0;0;2;forme2;11 mai 1687 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 12 janvier 1667 (mercredi) - Boulbon (13017)
+9;298;@I00132@;Antoine;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=bechet&oc=1;3;0;0;2;forme2;4 mars 1680 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 4 avril 1642 (vendredi) - Boulbon (13017)
+- Décédé le 19 février 1709 (mardi) - Boulbon (13017), à l'âge de 66 ans
+- Ménager";0;
+9;282;@I00133@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges&oc=1;3;0;0;2;forme2;21 avril 1670 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 1er janvier 1645 (dimanche) - Boulbon (13017)
+- Décédé avant 1707
+- Ménager";0;
+9;320;@I00135@;Jean;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=berlandier&oc=10;2;0;0;2;forme2;2 octobre 1622 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1601
+- Décédé le 8 octobre 1671 (jeudi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
+9;336;@I00138@;Thomas;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=thomas&n=berlandier;3;0;0;2;forme2;5 mars 1632 (vendredi);b'Boulbon (13017),';Meunier;;;;0;"- Né vers 1609 - Boulbon (13017)
+- Décédé le 13 août 1669 (mardi) - Boulbon (13017), à l'âge d'environ 60 ans
+- Meunier";0;
+8;191;@I00139@;Françoise;PETRIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=petris&oc=1;2;0;0;2;forme2;20 avril 1665 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 1er mai 1641 (mercredi) - Boulbon (13017)
+- Décédée le 9 septembre 1718 (vendredi) - Boulbon (13017), à l'âge de 77 ans";0;
+9;297;@I00141@;Jeanne;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=berlandier;2;0;0;2;forme2;28 décembre 1664 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 2 août 1644 (mardi) - Boulbon (13017)
+- Décédée le 11 octobre 1683 (lundi) - Boulbon (13017), à l'âge de 39 ans";0;
+8;159;@I00143@;Marie Jeanne;POILDAVOINE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+jeanne&n=poildavoine&oc=1;2;0;0;2;forme2;9 janvier 1676 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 7 novembre 1655 (dimanche) - Boulbon (13017)
+- Décédée le 21 mars 1732 (vendredi) - Boulbon (13017), à l'âge de 76 ans";0;
+8;207;@I00144@;Elizabeth;GUIRAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=guiraud&oc=1;2;0;0;2;forme2;11 mai 1687 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 12 janvier 1667 (mercredi) - Boulbon (13017)
 - Décédée le 13 novembre 1749 (jeudi) - Boulbon (13017), à l'âge de 82 ans";0;
-10;564;@I00315@;Jean;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bourges;2;0;0;2;forme2;18 février 1635 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1614 - Boulbon (13017)
-- Décédé le 14 novembre 1674 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-9;317;@I00317@;Louise;GUIRAUD (DE);F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=guiraud+de;0;0;0;0;;;b'';;;;;0;"";0;
-9;382;@I00318@;Jacques;PETRIS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=petris&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né peut-être en 1599
-- Décédé le 7 juin 1655 (lundi) - Boulbon (13017), peut-être à l'âge de 56 ans";0;
-9;316;@I00319@;Jean;CHOISITY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=choisity&oc=1;2;0;0;0;;;b'';Marchand;;;;0;"- Né - Aramon (30012)
+9;322;@I00147@;Toussaint;MARGUERIT;M;https://gw.geneanet.org/danielr13?lang=fr&p=toussaint&n=marguerit;0;0;0;0;;;b'';;;;;0;"";0;
+9;338;@I00149@;Jean;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=arnaud&oc=8;2;0;0;2;forme2;25 juin 1632 (vendredi);b'Boulbon (13017),';;;;;0;"- Né vers 1614
+- Décédé le 6 janvier 1684 (jeudi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
+9;344;@I00151@;Claude;BLANC;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=blanc&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+9;369;@I00152@;Jeanne;ARTAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=artaud;0;0;0;0;;;b'';;;;;0;"";0;
+9;368;@I00153@;Vincent;FABRE;M;https://gw.geneanet.org/danielr13?lang=fr&p=vincent&n=fabre;0;0;0;0;;;b'';;;;;0;"";0;
+9;299;@I00154@;Anne;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=guiot&oc=1;2;0;0;0;;21 avril 1670 (lundi);b'Boulbon (13017),';;;;;0;"- Née en 1656
+- Décédée le 12 janvier 1680 (vendredi) - Boulbon (13017), à l'âge de 24 ans";0;
+9;408;@I00148@;Claude;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=amy&oc=6;3;0;0;2;forme2;22 janvier 1652 (lundi);b'Boulbon (13017),';Ménager;;;;0;"- Né le 25 mai 1631 (dimanche) - Boulbon (13017)
+- Décédé le 26 mars 1683 (vendredi) - Boulbon (13017), à l'âge de 51 ans
+- Ménager";0;
+9;306;@I00150@;Etienne;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=mauche&oc=1;2;0;0;2;forme2;17 avril 1664 (jeudi);b'Boulbon (13017),';;;;;0;"- Né le 9 septembre 1636 (mardi) - Boulbon (13017)
+- Décédé le 30 octobre 1709 (mercredi) - Boulbon (13017), à l'âge de 73 ans";0;
+9;317;@I00157@;Louise;GUIRAUD (DE);F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=guiraud+de;0;0;0;0;;;b'';;;;;0;"";0;
+9;412;@I00158@;Richard;BURAVAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=richard&n=buravand;2;0;0;0;;;b'';;;;;0;"- Né vers 1606
+- Décédé le 17 septembre 1661 (samedi) - Boulbon (13017), à l'âge d'environ 55 ans";0;
+9;316;@I00159@;Jean;CHOISITY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=choisity&oc=1;2;0;0;0;;;b'';Marchand;;;;0;"- Né - Aramon (30012)
 - Marchand";0;
-10;797;@I00320@;Françoise;COSTET;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=costet;0;0;1;0;;27 avril 1635 (vendredi);b'Barbentane (13010),';;;;;0;"";0;
-10;796;@I00323@;Pierre;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=jean&oc=3;0;0;1;0;;27 avril 1635 (vendredi);b'Barbentane (13010),';;;;;0;"";0;
-9;318;@I00321@;Spérite Maximin;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=sperite+maximin&n=poildavoine;3;0;1;2;forme2;29 septembre 1650 (jeudi);b'Boulbon (13017),';Bourgeois;;;;0;"- Né vers 1618 - Boulbon (13017)
-- Décédé le 16 novembre 1668 (vendredi) - Boulbon (13017), à l'âge d'environ 50 ans
-- Bourgeois";0;
-9;381;@I00322@;Magdeleine;BARBERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=barberin;2;0;0;2;forme2;7 juin 1639 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1619
-- Décédée le 4 octobre 1679 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
-9;364;@I00325@;Pierre;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=tissot&oc=1;2;0;0;0;;10 juin 1653 (mardi);b'Boulbon (13017),';;;;;0;"- Né en 1617 - Boulbon (13017)
-- Décédé le 16 avril 1692 (mercredi) - Boulbon (13017), à l'âge de 75 ans";0;
-10;565;@I00324@;Catherine;LAMBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=lambert;2;0;0;2;forme2;18 février 1635 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1613
-- Décédée le 31 mars 1683 (mercredi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
-9;292;@I00326@;Jean Baptiste;BOSC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bosc&oc=3;0;0;0;0;;;b'';;;;;0;"";0;
-9;293;@I00327@;Jeanne;DALIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=dalis;0;0;0;0;;;b'';;;;;0;"";0;
-9;383;@I00329@;Jeanne;GIRARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=girard&oc=1;2;0;0;0;;;b'';;;;;0;"- Née vers 1600
-- Décédée le 10 janvier 1661 (lundi) - Boulbon (13017), à l'âge d'environ 61 ans";0;
-9;319;@I00330@;Béraude;ROUMIEUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=beraude&n=roumieux;2;0;1;0;;29 septembre 1650 (jeudi);b'Boulbon (13017),';;;;;0;"- Née en 1621
-- Décédée le 13 octobre 1674 (samedi) - Boulbon (13017), à l'âge de 53 ans";0;
-9;428;@I00328@;Jean;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=lamouroux&oc=5;2;3;0;2;forme2;29 août 1666 (dimanche);b'Vallabr?gues (30336),';;;;;0;"- Né le 15 août 1640 (mercredi) - Saint-Pierre-de-Mézoargues (13061)
+9;323;@I00160@;Faille;DE LATIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=faille&n=de+latis;0;0;0;0;;;b'';;;;;0;"";0;
+10;544;@I00155@;Pierre;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bechet&oc=8;3;0;0;2;forme2;;b'';Consul;;;;0;"- Né peut-être en 1590
+- Décédé le 29 octobre 1660 (vendredi) - Boulbon (13017), peut-être à l'âge de 70 ans
+- Consul";0;
+9;428;@I00156@;Jean;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=lamouroux&oc=5;2;3;0;2;forme2;29 août 1666 (dimanche);b'Vallabr?gues (30336),';;;;;0;"- Né le 15 août 1640 (mercredi) - Saint-Pierre-de-Mézoargues (13061)
 - Décédé le 23 décembre 1714 (dimanche) - Boulbon (13017), à l'âge de 74 ans
 @todo vérifier prise en compte événement 'Contrat de mariage (avec Magdeleine PERRIER)' pour Jean LAMOUROUX";0;
-10;686;@I00332@;Animon;SYBILLE;M;https://gw.geneanet.org/danielr13?lang=fr&p=animon&n=sybille;2;0;0;2;forme2;15 juillet 1663 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1617
-- Décédé le 15 avril 1676 (mercredi) - Boulbon (13017), à l'âge d'environ 59 ans";0;
-10;798;@I00333@;Jean;BOURREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bourrel;0;0;0;0;;;b'';;;;;0;"";0;
-10;558;@I00334@;?;?;M;https://gw.geneanet.org/danielr13?lang=fr&i=9994;0;0;0;0;;;b'';;;;;0;"";0;
-11;1445;@I00335@;Antoinette;REGINOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=reginoux;0;0;0;0;;;b'';;;;;0;"";0;
-9;284;@I00336@;Alphonse;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=alphonse&n=poildavoine;0;0;0;0;;17 décembre 1651 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
-11;1444;@I00337@;Poncet;BIGOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=poncet&n=bigot;0;0;0;0;;;b'';;;;;0;"";0;
-9;285;@I00338@;Jacquomette;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=jacquomette&n=durand;2;0;0;0;;17 décembre 1651 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1626
-- Décédée le 22 octobre 1701 (samedi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
-9;412;@I00339@;Richard;BURAVAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=richard&n=buravand;2;0;0;0;;;b'';;;;;0;"- Né vers 1606
-- Décédé le 17 septembre 1661 (samedi) - Boulbon (13017), à l'âge d'environ 55 ans";0;
-9;413;@I00340@;Delphine;AUDIGIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=delphine&n=audigier;2;0;0;0;;;b'';;;;;0;"- Née en 1621
+10;560;@I00161@;Jean;BOUDOY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=boudoy&oc=3;2;0;0;0;;;b'';;;;;0;"- Né en 1600 - Boulbon (13017)
+- Décédé le 14 juillet 1660 (mercredi) - Boulbon (13017), à l'âge de 60 ans";0;
+10;562;@I00162@;Jean;ISAAC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=isaac;0;0;0;0;;;b'';;;;;0;"";0;
+9;380;@I00164@;Pierre;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=granier&oc=1;0;0;0;2;forme2;7 juin 1639 (mardi);b'Boulbon (13017),';;;;;0;"";0;
+9;413;@I00166@;Delphine;AUDIGIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=delphine&n=audigier;2;0;0;0;;;b'';;;;;0;"- Née en 1621
 - Décédée le 1er avril 1691 (dimanche) - Boulbon (13017), à l'âge de 70 ans";0;
-9;365;@I00341@;Jeanne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=mauche&oc=1;1;0;0;0;;10 juin 1653 (mardi);b'Boulbon (13017),';;;;;0;"- Décédée le 4 mai 1675 (samedi) - Boulbon (13017)";0;
-10;687;@I00331@;Marguerite;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=isaac;2;0;0;2;forme2;15 février 1635 (jeudi);b'Boulbon (13017),';;;;;0;"- Née en 1616
-- Décédée le 10 décembre 1661 (samedi) - Boulbon (13017), à l'âge de 45 ans";0;
-12;3507;@I00343@;Espérite;FIRMIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=esperite&n=firmin;0;0;0;0;;;b'';;;;;0;"";0;
-9;429;@I00342@;Magdeleine;PERRIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=perrier;2;3;0;2;forme2;29 août 1666 (dimanche);b'Vallabr?gues (30336),';;;;;0;"- Née vers 1646
+9;409;@I00167@;Marthe;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=saint+michel&oc=1;2;0;0;0;;22 janvier 1652 (lundi);b'Boulbon (13017),';;Marie MICHEL;;;0;"- Née vers 1625
+- Décédée le 1er novembre 1705 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+10;545;@I00163@;Metheline;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=metheline&n=jullian&oc=1;0;0;0;2;forme2;;b'';;;;;0;"";0;
+9;429;@I00165@;Magdeleine;PERRIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=perrier;2;3;0;2;forme2;29 août 1666 (dimanche);b'Vallabr?gues (30336),';;;;;0;"- Née vers 1646
 - Décédée le 5 décembre 1700 (dimanche) - Saint-Pierre-de-Mézoargues (13061), à l'âge d'environ 54 ans
 @todo vérifier prise en compte événement 'Contrat de mariage (avec Jean LAMOUROUX)' pour Magdeleine PERRIER";0;
-11;1129;@I00344@;Esprite;FOURNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=esprite&n=fournier;0;0;0;0;;;b'';;;;;0;"";0;
-12;3506;@I00345@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges&oc=2;1;0;0;0;;;b'';;;;;0;"- Né le 10 mai 1615 (dimanche) - Boulbon (13017)";0;
-10;761;@I00346@;Catherine;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=jullian&oc=9;0;0;0;0;;;b'';;;;;0;"";0;
-11;1128;@I00347@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges;0;0;0;0;;;b'';;;;;0;"";0;
-10;799;@I00348@;Catherine;AILLAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=aillaud&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
-10;760;@I00349@;Pierre;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=granier&oc=2;2;0;0;0;;;b'';;dit "Le Capellan";;;0;"- Né vers 1586
-- Décédé le 18 septembre 1666 (samedi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
-10;559;@I00350@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=9995;0;0;0;0;;;b'';;;;;0;"";0;
-11;1130;@I00351@;Claude;LAMBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lambert;0;0;0;0;;;b'';;;;;0;"";0;
-11;1131;@I00352@;Louise;COLOMBIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=colombier;0;0;0;0;;;b'';;;;;0;"";0;
-10;762;@I00354@;Pierre;BARBERIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=barberin&oc=2;0;0;0;2;forme2;3 novembre 1613 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
-10;764;@I00356@;Pierre;PETRIS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=petris;2;0;0;0;;;b'';;;;;0;"- Né vers 1573
-- Décédé le 6 juin 1643 (samedi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
-10;765;@I00357@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29474;0;0;0;0;;;b'';;;;;0;"";0;
-10;637;@I00353@;Gabrielle;GROS;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=gros;2;0;1;2;forme2;6 février 1614 (jeudi);b'Ch?teaurenard (13027),';;;;;0;"- Née peut-être en 1585
-- Décédée le 7 mai 1645 (dimanche) - Boulbon (13017), peut-être à l'âge de 60 ans";0;
-10;636;@I00355@;Louis;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=poildavoine&oc=2;2;0;1;2;forme2;6 février 1614 (jeudi);b'Ch?teaurenard (13027),';;;;;0;"- Né vers 1580 - Boulbon (13017)
-- Décédé le 15 décembre 1653 (lundi), à l'âge d'environ 73 ans";0;
-10;763;@I00359@;Félize;FREDIERE;F;https://gw.geneanet.org/danielr13?lang=fr&p=felize&n=frediere;1;0;0;2;forme2;3 novembre 1613 (dimanche);b'Boulbon (13017),';;;;;0;"- Décédée le 2 novembre 1649 (mardi) - Boulbon (13017)";0;
-10;856;@I00358@;Claude;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lamouroux&oc=15;2;0;0;2;forme2;24 janvier 1633 (lundi);b'Boulbon (13017),';;;;;0;"- Né en 1610
+9;307;@I00168@;Anne;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bard&oc=1;2;0;0;2;forme2;17 avril 1664 (jeudi);b'Boulbon (13017),';;;;;1;"- Née le 30 juin 1638 (mercredi) - Boulbon (13017)
+- Décédée le 25 août 1705 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
+9;414;@I00169@;Vincent;GUIRAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=vincent&n=guiraud;3;0;0;0;;28 septembre 1660 (mardi);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né en 1627
+- Décédé le 16 novembre 1687 (dimanche) - Boulbon (13017), à l'âge de 60 ans
+- Maréchal à forge";0;
+10;579;@I00170@;Gabrielle;GRASSET;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=grasset;0;0;0;0;;;b'';;;;;0;"";0;
+10;578;@I00172@;Pierre;GONTARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=gontard&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+9;318;@I00171@;Spérite Maximin;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=sperite+maximin&n=poildavoine;3;0;1;2;forme2;29 septembre 1650 (jeudi);b'Boulbon (13017),';Bourgeois;;;;0;"- Né vers 1618 - Boulbon (13017)
+- Décédé le 16 novembre 1668 (vendredi) - Boulbon (13017), à l'âge d'environ 50 ans
+- Bourgeois";0;
+9;382;@I00173@;Jacques;PETRIS;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=petris&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né peut-être en 1599
+- Décédé le 7 juin 1655 (lundi) - Boulbon (13017), peut-être à l'âge de 56 ans";0;
+10;640;@I00174@;Marcellin;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=berlandier;2;0;0;2;forme2;27 février 1601 (mardi);b'Boulbon (13017),';Procureur Juridictionnel Du Comté de Boulbon;;;;0;"- Né en 1580 julien
+- Procureur Juridictionnel Du Comté de Boulbon";0;
+10;612;@I00176@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=3;3;0;0;0;;;b'';Maître tailleur d'habits;;;;0;"- Né vers 1601 - Boulbon (13017)
+- Décédé le 24 mai 1681 (samedi) - Boulbon (13017), à l'âge d'environ 80 ans
+- Maître tailleur d'habits";0;
+10;567;@I00175@;Louise;LAMOUROUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=lamouroux&oc=1;2;0;0;2;forme2;28 septembre 1660 (mardi);b'Boulbon (13017),';;;;;0;"- Née en 1622
+- Décédée le 2 mars 1685 (vendredi) - Boulbon (13017), à l'âge de 63 ans";0;
+10;677;@I00177@;Anne;COURANT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=courant;2;0;0;0;;;b'';;;;;0;"- Née en 1566
+- Décédée le 27 octobre 1646 (samedi) - Boulbon (13017), à l'âge de 80 ans";0;
+10;817;@I00178@;Magdeleine;BERTHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=berthet&oc=8543;2;0;0;0;;;b'';;;;;0;"- Née vers 1616
+- Décédée le 18 mars 1676 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+10;676;@I00179@;Claude;ARNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=arnaud&oc=3;0;0;0;0;;;b'';;;;;0;"";0;
+9;319;@I00180@;Béraude;ROUMIEUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=beraude&n=roumieux;2;0;1;0;;29 septembre 1650 (jeudi);b'Boulbon (13017),';;;;;0;"- Née en 1621
+- Décédée le 13 octobre 1674 (samedi) - Boulbon (13017), à l'âge de 53 ans";0;
+9;383;@I00181@;Jeanne;GIRARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=girard&oc=1;2;0;0;0;;;b'';;;;;0;"- Née vers 1600
+- Décédée le 10 janvier 1661 (lundi) - Boulbon (13017), à l'âge d'environ 61 ans";0;
+10;816;@I00182@;Jean;AMY;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=amy&oc=1;2;0;0;0;;;b'';;;;;0;"- Né vers 1612
+- Décédé le 8 juillet 1656 (samedi) - Boulbon (13017), à l'âge d'environ 44 ans";0;
+10;566;@I00185@;Pierre;DELEUZE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=deleuze;3;0;0;0;;26 octobre 1645 (jeudi);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né vers 1609
+- Décédé le 9 juin 1659 (lundi) - Boulbon (13017), à l'âge d'environ 50 ans
+- Maréchal à forge";0;
+10;561;@I00186@;Metheline;DAYRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=metheline&n=dayre&oc=2;2;0;0;0;;;b'';;;;;0;"- Née en 1616
+- Décédée le 12 juin 1676 (vendredi) - Boulbon (13017), à l'âge de 60 ans";0;
+10;563;@I00188@;Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=mauche&oc=3;2;0;0;0;;;b'';;;;;0;"- Née vers 1600
+- Décédée le 29 août 1645 (mardi) - Boulbon (13017), à l'âge d'environ 45 ans";0;
+10;641;@I00183@;Magdeleine;CHRISTOLIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=christolin;1;0;0;2;forme2;27 février 1601 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1581";0;
+10;565;@I00184@;Catherine;LAMBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=lambert;2;0;0;2;forme2;18 février 1635 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1613
+- Décédée le 31 mars 1683 (mercredi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
+10;564;@I00187@;Jean;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bourges;2;0;0;2;forme2;18 février 1635 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1614 - Boulbon (13017)
+- Décédé le 14 novembre 1674 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+11;1088;@I00190@;Jean;BECHET;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bechet&oc=11;2;0;0;0;;;b'';;;;;0;"- Né en 1567
+- Décédé le 27 avril 1637 (lundi) - Boulbon (13017), à l'âge de 70 ans";0;
+10;613;@I00191@;Anne;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=jouve&oc=2;1;0;0;0;;;b'';;;;;0;"- Décédée le 25 août 1653 (lundi) - Boulbon (13017)";0;
+10;929;@I00193@;Biellone;FREDIERE;F;https://gw.geneanet.org/danielr13?lang=fr&p=biellone&n=frediere;2;0;0;0;;;b'';;;;;0;"- Née peut-être en 1600
+- Décédée le 19 janvier 1663 (vendredi) - Boulbon (13017), peut-être à l'âge de 63 ans";0;
+9;339;@I00194@;Honnorate;VIDAL;F;https://gw.geneanet.org/danielr13?lang=fr&p=honnorate&n=vidal;2;0;0;0;;25 juin 1632 (vendredi);b'Boulbon (13017),';;dite "La Frizade";;;0;"- Née peut-être en 1616 - SERNHAC (30317)
+- Décédée le 8 janvier 1674 (lundi) - Boulbon (13017), peut-être à l'âge de 58 ans";0;
+9;345;@I00195@;Marie;JOUJOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=joujoux&oc=1;2;0;0;0;;;b'';;;;;0;"- Née vers 1604
+- Décédée le 8 octobre 1646 (lundi) - Boulbon (13017), à l'âge d'environ 42 ans";0;
+10;928;@I00197@;Marcellin;SAINT MICHEL;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=saint+michel&oc=8;1;0;0;0;;;b'';;;;;0;"- Décédé le 3 février 1660 (mardi) - Boulbon (13017)";0;
+9;473;@I00199@;Marguerite;NORMENDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=normende;0;0;0;0;;;b'';;;;;0;"";0;
+10;856;@I00189@;Claude;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lamouroux&oc=15;2;0;0;2;forme2;24 janvier 1633 (lundi);b'Boulbon (13017),';;;;;0;"- Né en 1610
 - Décédé le 4 décembre 1690 (lundi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 80 ans";0;
-10;858;@I00360@;Pierre;PERRIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=perrier&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
-11;1373;@I00361@;Gillette;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=gillette&n=jullian;2;0;0;0;;;b'';;;;;0;"- Née en 1584
-- Décédée le 25 juillet 1644 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
-11;1372;@I00362@;Pierre;SYBILLE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=sybille;2;0;0;0;;;b'';;;;;0;"- Né vers 1587
-- Décédé le 26 mars 1658 (mardi) - Boulbon (13017), à l'âge d'environ 71 ans";0;
-10;859;@I00364@;Lionne;JUSTAMON;F;https://gw.geneanet.org/danielr13?lang=fr&p=lionne&n=justamon;0;0;0;0;;;b'';;;;;0;"";0;
-10;857;@I00363@;Claire;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=claire&n=gibert;2;0;0;2;forme2;24 janvier 1633 (lundi);b'Boulbon (13017),';;;;;0;"- Née en 1612 - Boulbon (13017)
+9;381;@I00192@;Magdeleine;BARBERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=barberin;2;0;0;2;forme2;7 juin 1639 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1619
+- Décédée le 4 octobre 1679 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+9;321;@I00196@;Marguerite;VARCELLIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=varcellin;2;0;0;2;forme2;2 octobre 1622 (dimanche);b'Boulbon (13017),';;;;;0;"- Née peut-être en 1605
+- Décédée le 21 novembre 1665 (samedi) - Boulbon (13017), peut-être à l'âge de 60 ans";0;
+9;337;@I00198@;Marie;CHAPELIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=chapelier;2;0;0;2;forme2;5 mars 1632 (vendredi);b'Boulbon (13017),';;;;;0;"- Née vers 1608 - Embrun (05046)
+- Décédée le 28 octobre 1668 (dimanche) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+9;261;@I00200@;Magdeleine;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=tissot&oc=1;2;0;0;2;forme2;17 avril 1633 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1608 - Boulbon (13017)
+- Décédée le 11 août 1688 (mercredi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+8;189;@I00201@;Anne;BONNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bonnaud&oc=1;2;0;0;2;forme2;6 août 1656 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 30 juillet 1634 (dimanche) - Boulbon (13017)
+- Décédée le 6 septembre 1701 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
+10;858;@I00203@;Pierre;PERRIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=perrier&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+10;760;@I00204@;Pierre;GRANIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=granier&oc=2;2;0;0;0;;;b'';;dit "Le Capellan";;;0;"- Né vers 1586
+- Décédé le 18 septembre 1666 (samedi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+10;761;@I00205@;Catherine;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=jullian&oc=9;0;0;0;0;;;b'';;;;;0;"";0;
+11;1090;@I00207@;Gilbert;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=gilbert&n=jullian;0;0;0;0;;;b'';;;;;0;"";0;
+10;614;@I00202@;Barthélémy;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=bard;1;0;0;2;forme2;22 janvier 1635 (lundi);b'Boulbon (13017),';;;;;0;"- Né peut-être en 1613";0;
+10;857;@I00206@;Claire;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=claire&n=gibert;2;0;0;2;forme2;24 janvier 1633 (lundi);b'Boulbon (13017),';;;;;0;"- Née en 1612 - Boulbon (13017)
 - Décédée le 4 mai 1696 (vendredi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 84 ans";0;
-11;1272;@I00365@;François;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=poildavoine&oc=1;0;0;0;0;;4 avril 1576 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
-11;1525;@I00366@;Jeanne;CHABERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=chabert&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
-11;1524;@I00367@;Honoré;BARBERIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=honore&n=barberin;0;0;0;0;;;b'';;;;;0;"";0;
-11;1274;@I00368@;Toussaint;GROS;M;https://gw.geneanet.org/danielr13?lang=fr&p=toussaint&n=gros;0;0;0;0;;;b'';;;;;0;"";0;
-11;1275;@I00369@;Jeanne;DELEUTRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=deleutre;0;0;0;0;;;b'';;;;;0;"";0;
-11;1527;@I00370@;Dauphine;LAGARDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=dauphine&n=lagarde;0;0;0;0;;;b'';;;;;0;"";0;
-11;1273;@I00371@;Catherine;DE GUERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=de+guerin;0;0;0;0;;4 avril 1576 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
-11;1526;@I00372@;Gantelme;FREDIERE;M;https://gw.geneanet.org/danielr13?lang=fr&p=gantelme&n=frediere;0;0;0;0;;;b'';;;;;0;"";0;
-11;1714;@I00373@;Bertrand;GIBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=bertrand&n=gibert;1;0;1;0;;11 avril 1589 (mardi);b'Barbentane (13010),';;;;;0;"- Né - Vallabrègues (30336)";0;
-11;1715;@I00374@;Marguerite;BIJAUDY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bijaudy;0;0;1;0;;11 avril 1589 (mardi);b'Barbentane (13010),';;;;;0;"";0;
+11;1134;@I00208@;Antoine;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=lamouroux&oc=1;0;0;0;2;forme2;9 janvier 1602 (mercredi);b'Boulbon (13017),';;;;;0;"";0;
+11;1280;@I00209@;Guillaume;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=berlandier&oc=3;2;0;0;0;;;b'';Maître Maréchal;;;;0;"- Né vers 1535
+- Maître Maréchal";0;
+10;764;@I00210@;Pierre;PETRIS;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=petris;2;0;0;0;;;b'';;;;;0;"- Né vers 1573
+- Décédé le 6 juin 1643 (samedi) - Boulbon (13017), à l'âge d'environ 70 ans";0;
+11;1091;@I00213@;Marthe;MUTIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=mutin;0;0;0;0;;;b'';;;;;0;"";0;
+10;859;@I00214@;Lionne;JUSTAMON;F;https://gw.geneanet.org/danielr13?lang=fr&p=lionne&n=justamon;0;0;0;0;;;b'';;;;;0;"";0;
+11;1089;@I00215@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29426;0;0;0;0;;;b'';;;;;0;"";0;
+10;615;@I00211@;Catherine;GAIGNON;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=gaignon&oc=1;0;0;0;2;forme2;22 janvier 1635 (lundi);b'Boulbon (13017),';;;;;0;"";0;
+10;636;@I00212@;Louis;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=poildavoine&oc=2;2;0;1;2;forme2;6 février 1614 (jeudi);b'Ch?teaurenard (13027),';;;;;0;"- Né vers 1580 - Boulbon (13017)
+- Décédé le 15 décembre 1653 (lundi), à l'âge d'environ 73 ans";0;
+11;1128;@I00216@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges;0;0;0;0;;;b'';;;;;0;"";0;
+11;1129;@I00217@;Esprite;FOURNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=esprite&n=fournier;0;0;0;0;;;b'';;;;;0;"";0;
+11;1282;@I00218@;Reymond;CHRISTOLIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=reymond&n=christolin;2;0;0;0;;;b'';;;;;0;"- Né en 1560
+- Décédé après 1581";0;
+11;1130;@I00219@;Claude;LAMBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=lambert;0;0;0;0;;;b'';;;;;0;"";0;
+11;1135;@I00220@;Anne;GUIGUE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=guigue&oc=2;0;0;0;0;;9 janvier 1602 (mercredi);b'Boulbon (13017),';;;;;0;"";0;
+11;1281;@I00221@;Alione;GRANIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=alione&n=granier;1;0;0;0;;;b'';;;;;0;"- Née en 1540";0;
+10;765;@I00222@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29474;0;0;0;0;;;b'';;;;;0;"";0;
+9;378;@I00223@;Bernard;BONNAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=bernard&n=bonnaud;2;0;0;0;;;b'';;(Arnaud BONNAUD);;;0;"- Né en 1585
+- Décédé le 20 janvier 1665 (mardi) - Boulbon (13017), à l'âge de 80 ans";0;
+10;522;@I00224@;Balthazar;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=balthazar&n=tissot;2;0;0;0;;6 août 1637 (jeudi);b'Boulbon (13017),';;;;;0;"- Né vers 1571
+- Décédé le 3 septembre 1646 (lundi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
+10;674;@I00225@;Claude;CHAPELIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=chapelier;0;0;0;0;;;b'';;;;;0;"";0;
+10;762;@I00226@;Pierre;BARBERIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=barberin&oc=2;0;0;0;2;forme2;3 novembre 1613 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
+10;642;@I00227@;Guillaume;VARCELLIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=varcellin&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+11;1283;@I00228@;Biélone;DE GUERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=bielone&n=de+guerin;1;0;0;0;;;b'';;;;;0;"- Née en 1555";0;
+11;1131;@I00229@;Louise;COLOMBIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=colombier;0;0;0;0;;;b'';;;;;0;"";0;
+9;472;@I00230@;Michel;BRAYE;M;https://gw.geneanet.org/danielr13?lang=fr&p=michel&n=braye;0;0;0;0;;;b'';;;;;0;"";0;
+10;637;@I00231@;Gabrielle;GROS;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=gros;2;0;1;2;forme2;6 février 1614 (jeudi);b'Ch?teaurenard (13027),';;;;;0;"- Née peut-être en 1585
+- Décédée le 7 mai 1645 (dimanche) - Boulbon (13017), peut-être à l'âge de 60 ans";0;
+9;465;@I00232@;Elizabeth;PELENC;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=pelenc;2;0;0;2;forme2;28 janvier 1652 (dimanche);b'Barbentane (13010),';;(Alix PELENC);;;0;"- Née vers 1628
+- Décédée le 11 décembre 1708 (mardi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+9;260;@I00233@;Barthélemy;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=gilles&oc=1;2;0;0;2;forme2;17 avril 1633 (dimanche);b'Boulbon (13017),';;;;;0;"- Né en 1609
+- Décédé le 2 octobre 1669 (mercredi) - Boulbon (13017), à l'âge de 60 ans";0;
+8;188;@I00234@;Antoine;BERLANDIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=berlandier&oc=3;3;0;1;2;forme2;6 août 1656 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 16 janvier 1631 (jeudi) - Boulbon (13017)
+- Décédé le 27 novembre 1704 (jeudi) - Boulbon (13017), à l'âge de 73 ans
+- Ménager";0;
+11;1715;@I00236@;Marguerite;BIJAUDY;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bijaudy;0;0;1;0;;11 avril 1589 (mardi);b'Barbentane (13010),';;;;;0;"";0;
+8;173;@I00235@;Doucette;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=doucette&n=gilles;2;0;0;2;forme2;15 juin 1664 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 28 août 1645 (lundi) - Boulbon (13017)
+- Décédée le 31 mai 1721 (samedi) - Boulbon (13017), à l'âge de 75 ans";0;
+11;1714;@I00237@;Bertrand;GIBERT;M;https://gw.geneanet.org/danielr13?lang=fr&p=bertrand&n=gibert;1;0;1;0;;11 avril 1589 (mardi);b'Barbentane (13010),';;;;;0;"- Né - Vallabrègues (30336)";0;
+9;379;@I00239@;Marguerite;BRUNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=brunel&oc=3;2;0;0;0;;;b'';;;;;0;"- Née en 1600
+- Décédée le 9 janvier 1645 (lundi) - Boulbon (13017), à l'âge de 45 ans";0;
+10;675;@I00240@;Isabeau;BOUILLON;F;https://gw.geneanet.org/danielr13?lang=fr&p=isabeau&n=bouillon;0;0;0;0;;;b'';;;;;0;"";0;
+10;523;@I00241@;Jeanne;TREBILLON;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=trebillon;1;0;0;0;;;b'';;;;;0;"- Décédée avant 1637";0;
+10;643;@I00242@;Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=mauche&oc=4;2;0;0;0;;;b'';;;;;0;"- Née - Boulbon (13017)
+- Décédée";0;
+10;763;@I00243@;Félize;FREDIERE;F;https://gw.geneanet.org/danielr13?lang=fr&p=felize&n=frediere;1;0;0;2;forme2;3 novembre 1613 (dimanche);b'Boulbon (13017),';;;;;0;"- Décédée le 2 novembre 1649 (mardi) - Boulbon (13017)";0;
+8;185;@I00245@;Antoinette;MONIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=monier;2;0;0;2;forme2;20 octobre 1680 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1640 - Vallabrègues (30336)
+- Décédée le 11 mai 1705 (lundi) - Boulbon (13017), à l'âge de 65 ans";0;
+11;1228;@I00238@;Pierre;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bard;2;0;0;2;forme2;;b'';;;;;0;"- Né avant 1595 - Boulbon (13017)
+- Décédé en 1646 - Boulbon (13017)";0;
+8;213;@I00244@;Marcelle;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marcelle&n=mauche;2;0;0;2;forme2;28 décembre 1683 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 8 décembre 1657 (samedi) - Boulbon (13017)
+- Décédée le 24 décembre 1739 (jeudi) - Boulbon (13017), à l'âge de 82 ans";0;
+11;1272;@I00246@;François;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=poildavoine&oc=1;0;0;0;0;;4 avril 1576 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
+11;1230;@I00247@;Georges;GAIGNON;M;https://gw.geneanet.org/danielr13?lang=fr&p=georges&n=gaignon&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+11;1231;@I00248@;Bilionne;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=bilionne&n=jullian&oc=1;2;0;0;0;;;b'';;;;;0;"- Née en 1582
+- Décédée le 28 novembre 1642 (vendredi) - Boulbon (13017), à l'âge de 60 ans";0;
+12;2268;@I00249@;Jean;LAMOUROUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=lamouroux&oc=18;0;0;0;0;;;b'';;;;;0;"";0;
+12;2269;@I00250@;Jeanne;ICARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=icard&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+11;1229;@I00251@;Toinette;BERLANDIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=toinette&n=berlandier;0;0;0;0;;;b'';;;;;0;"";0;
+8;205;@I00252@;Marie;JOUVE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=jouve&oc=2;2;0;0;0;;;b'';;;;;0;"- Née vers 1671
+- Décédée le 26 octobre 1731 (vendredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+8;217;@I00253@;Jeanne;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=bechet;2;0;0;2;forme2;6 février 1719 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1697
+- Décédée le 15 juin 1757 (mercredi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+8;137;@I00256@;Elizabeth;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=elizabeth&n=guiot;2;0;0;0;;;b'';;;;;0;"- Née vers 1660
+- Décédée le 25 décembre 1725 (mardi) - Boulbon (13017), à l'âge d'environ 65 ans";0;
+8;237;@I00254@;Jeanne;JOUJOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=joujoux&oc=1;2;0;0;2;forme2;15 avril 1674 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 19 avril 1648 (dimanche) - Boulbon (13017)
+- Décédée le 3 mars 1717 (mercredi) - Boulbon (13017), à l'âge de 68 ans";0;
+8;131;@I00255@;Françoise;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=durand&oc=5;2;0;0;2;forme2;1er février 1682 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 24 septembre 1662 (dimanche) - Boulbon (13017)
+- Décédée le 2 février 1708 (jeudi) - Boulbon (13017), à l'âge de 45 ans";0;
+7;93;@I00257@;Thérèse;MAUREL;F;https://gw.geneanet.org/danielr13?lang=fr&p=therese&n=maurel&oc=2;2;0;0;2;forme2;6 avril 1704 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1680
+- Décédée le 31 mars 1717 (mercredi) - Boulbon (13017), à l'âge de 37 ans";0;
+11;1273;@I00258@;Catherine;DE GUERIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=de+guerin;0;0;0;0;;4 avril 1576 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
+8;233;@I00260@;Antoinette;GINOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=ginoux;2;0;0;0;;20 août 1685 (lundi);b'Ch?teaurenard (13027),';;;;;0;"- Née vers 1659
+- Décédée le 28 septembre 1739 (lundi) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+7;91;@I00259@;Anne;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=tissot;2;0;0;2;forme2;7 février 1716 (vendredi);b'Boulbon (13017),';;;;;0;"- Née vers 1692 - Boulbon (13017)
+- Décédée le 13 octobre 1734 (mercredi) - Boulbon (13017), à l'âge d'environ 42 ans";0;
+8;129;@I00261@;Anne;ROCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=roche&oc=1;2;0;0;2;forme2;18 janvier 1693 (dimanche);b'Barbentane (13010),';;;;;0;"- Née vers 1668
+- Décédée le 3 mars 1748 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+7;90;@I00262@;François;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=ellien;3;0;0;2;forme2;19 août 1737 (lundi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 27 octobre 1689 (jeudi) - Boulbon (13017)
+- Décédé le 13 juin 1773 (dimanche) - Boulbon (13017), à l'âge de 83 ans
+- Travailleur";0;
+10;930;@I00264@;Jean;PELENC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=pelenc;0;0;0;0;;;b'';;;;;0;"";0;
+10;520;@I00265@;Pierre;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=gilles;2;0;0;0;;;b'';;;;;0;"- Né vers 1555
+- Décédé le 20 avril 1639 (mercredi) - Boulbon (13017), à l'âge d'environ 84 ans";0;
+8;128;@I00263@;Durand;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=durand&n=nicolas;2;0;0;2;forme2;18 janvier 1693 (dimanche);b'Barbentane (13010),';;;;;0;"- Né le 13 mars 1666 (samedi) - Graveson (13045)
+- Décédé le 29 juillet 1734 (jeudi) - Boulbon (13017), à l'âge de 68 ans";0;
+11;1275;@I00266@;Jeanne;DELEUTRE;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=deleutre;0;0;0;0;;;b'';;;;;0;"";0;
+11;1274;@I00267@;Toussaint;GROS;M;https://gw.geneanet.org/danielr13?lang=fr&p=toussaint&n=gros;0;0;0;0;;;b'';;;;;0;"";0;
+11;1524;@I00268@;Honoré;BARBERIN;M;https://gw.geneanet.org/danielr13?lang=fr&p=honore&n=barberin;0;0;0;0;;;b'';;;;;0;"";0;
+11;1525;@I00269@;Jeanne;CHABERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=chabert&oc=5;0;0;0;0;;;b'';;;;;0;"";0;
+7;105;@I00270@;Magdeleine;MEYNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=meynier;2;0;0;2;forme2;9 février 1739 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 31 décembre 1714 (lundi) - Boulbon (13017)
+- Décédée le 1er complémentaire an IV (17 septembre 1796) (samedi) - Boulbon (13017), à l'âge de 81 ans";0;
+9;371;@I00272@;Marie;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=gibert&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+7;101;@I00271@;Marie Rose;MEYNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=meynier;2;0;0;2;forme2;10 janvier 1733 (samedi);b'Boulbon (13017),';;;;;0;"- Née le 27 août 1708 (lundi) - Boulbon (13017)
+- Décédée le 13 décembre 1787 (jeudi) - Boulbon (13017), à l'âge de 79 ans";0;
+9;427;@I00273@;Gabrielle;VINCENT;F;https://gw.geneanet.org/danielr13?lang=fr&p=gabrielle&n=vincent&oc=1;2;0;0;0;;20 janvier 1654 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1609
+- Décédée le 14 août 1659 (jeudi) - Boulbon (13017), à l'âge d'environ 50 ans";0;
+9;370;@I00274@;Jean;MONIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=monier;0;0;0;0;;;b'';;;;;0;"";0;
+9;426;@I00275@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=2;0;0;0;0;;20 janvier 1654 (mardi);b'Boulbon (13017),';;;;;0;"";0;
+11;1527;@I00276@;Dauphine;LAGARDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=dauphine&n=lagarde;0;0;0;0;;;b'';;;;;0;"";0;
+12;2456;@I00277@;Pons;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pons&n=bard;0;0;0;0;;;b'';;;;;0;"";0;
+11;1526;@I00278@;Gantelme;FREDIERE;M;https://gw.geneanet.org/danielr13?lang=fr&p=gantelme&n=frediere;0;0;0;0;;;b'';;;;;0;"";0;
+12;2457;@I00279@;Jeanne;BONNAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=bonnaud;0;0;0;0;;;b'';;;;;0;"";0;
+10;521;@I00280@;Marguerite;JAUFFRET;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=jauffret&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+10;931;@I00281@;Simone;GUIOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=simone&n=guiot;0;0;0;0;;;b'';;;;;0;"";0;
+9;474;@I00284@;Nicolas;JOUJOUX;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=joujoux;1;0;0;0;;;b'';;;;;0;"- Décédé le 13 mai 1658 (lundi) - Boulbon (13017)";0;
+7;81;@I00286@;Suzanne;PELLEGRIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=suzanne&n=pellegrin;2;0;0;0;;;b'';;;;;0;"- Née vers 1685
+- Décédée le 24 juillet 1741 (lundi) - Boulbon (13017), à l'âge d'environ 56 ans";0;
+7;71;@I00291@;Catherine;POILDAVOINE;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=poildavoine&oc=1;2;0;0;2;forme2;3 septembre 1725 (lundi);b'Boulbon (13017),';;;;;0;"- Née vers 1705
+- Décédée le 22 août 1765 (jeudi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+7;73;@I00292@;Marguerite;BOSC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=bosc;0;0;0;2;forme2;31 janvier 1729 (lundi);b'Boulbon (13017),';;;;;0;"";0;
+9;262;@I00282@;Nicolas;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=nicolas&n=durand&oc=4;3;0;0;2;forme2;23 février 1649 (mardi);b'Boulbon (13017),';Consul;;;;0;"- Né vers 1622
+- Décédé le 5 octobre 1676 (lundi) - Boulbon (13017), à l'âge d'environ 54 ans
+- Consul";0;
+7;77;@I00283@;Marie "Thérèse";GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+therese&n=gilles;2;0;0;2;forme2;22 avril 1725 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 25 février 1707 (vendredi) - Boulbon (13017)
+- Décédée le 20 novembre 1769 (lundi) - Boulbon (13017), à l'âge de 62 ans";0;
+7;85;@I00285@;Magdeleine;GUIRAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=guiraud;2;0;0;2;forme2;27 septembre 1703 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 25 septembre 1687 (jeudi) - Boulbon (13017)
+- Décédée le 11 septembre 1751 (samedi) - Boulbon (13017), à l'âge de 63 ans";0;
+7;99;@I00287@;Françoise;GUYON;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=guyon;2;0;3;2;forme2;10 mars 1732 (lundi);b'Barbentane (13010),';;;;;0;"- Née le 6 novembre 1711 (vendredi) - Barbentane (13010)
+- Décédée le 23 octobre 1784 (samedi) - Barbentane (13010), à l'âge de 72 ans";0;
+7;89;@I00288@;Catherine Rose;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine+rose&n=bechet&oc=2;2;0;0;2;forme2;3 septembre 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Née le 30 mai 1692 (vendredi) - Boulbon (13017)
+- Décédée le 25 septembre 1759 (mardi) - Boulbon (13017), à l'âge de 67 ans";0;
+7;88;@I00289@;Louis;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=gilles&oc=2;2;0;0;2;forme2;3 septembre 1714 (lundi);b'Boulbon (13017),';;;;;0;"- Né le 20 février 1674 (mardi) - Boulbon (13017)
+- Décédé le 5 décembre 1725 (mercredi) - Boulbon (13017), à l'âge de 51 ans";0;
+7;109;@I00290@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+anne&n=mauche&oc=4;2;0;0;2;forme2;3 février 1741 (vendredi);b'Boulbon (13017),';;;;;0;"- Née le 18 septembre 1717 (samedi) - Boulbon (13017)
+- Décédée le 2 mai 1745 (dimanche) - Boulbon (13017), à l'âge de 27 ans";0;
+9;257;@I00293@;Honorade;AGNIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=honorade&n=agnier;0;0;0;0;;;b'';;;;;0;"";0;
+9;256;@I00295@;François;NICOLAS;M;https://gw.geneanet.org/danielr13?lang=fr&p=francois&n=nicolas&oc=2;1;0;0;0;;;b'';;;;;0;"- Décédé le 29 mai 1696 (mardi) - Barbentane (13010)";0;
+9;258;@I00297@;Sébastien;ROCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=sebastien&n=roche;0;0;0;0;;;b'';;;;;0;"";0;
+8;187;@I00298@;Magdeleine;BOUDOY;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=boudoy&oc=2;2;0;0;2;forme2;;b'';;;;;0;"- Née le 18 novembre 1646 (dimanche) - Boulbon (13017)
+- Décédée le 22 juin 1725 (vendredi) - Boulbon (13017), à l'âge de 78 ans";0;
+8;186;@I00299@;Etienne;MAUREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=etienne&n=maurel;3;0;0;2;forme2;18 novembre 1669 (lundi);b'Boulbon (13017),';Vigneron;;;;0;"- Né en 1643 - Aulan (26018)
+- Décédé le 28 novembre 1679 (mardi) - Boulbon (13017), à l'âge de 36 ans
+- Vigneron";0;
+9;263;@I00301@;Françoise;BURAVAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=buravand;2;0;0;0;;23 février 1649 (mardi);b'Boulbon (13017),';;;;;0;"- Née vers 1621
+- Décédée le 23 janvier 1701 (dimanche) - Boulbon (13017), à l'âge d'environ 80 ans";0;
+8;180;@I00294@;Maximin;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=maximin&n=ellien;2;0;0;2;forme2;29 mai 1678 (dimanche);b'Boulbon (13017),';;;;;0;"- Né le 9 septembre 1654 (mercredi) - Boulbon (13017)
+- Décédé le 11 février 1702 (samedi), à l'âge de 47 ans";0;
+8;182;@I00296@;Joseph;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=tissot;2;0;0;2;forme2;;b'';;;;;0;"- Né le 1er février 1665 (dimanche) - Boulbon (13017)
+- Décédé";0;
+9;475;@I00300@;Magdaleine;PERRIER;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdaleine&n=perrier&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née vers 1613 - Boulbon (13017)
+- Décédée le 10 février 1674 (samedi) - Boulbon (13017), à l'âge d'environ 61 ans";0;
+8;183;@I00305@;Louise;VIOLET;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=violet;0;0;0;0;;;b'';;;;;0;"";0;
+9;259;@I00306@;Delphine;GRILLETTE;F;https://gw.geneanet.org/danielr13?lang=fr&p=delphine&n=grillette;0;0;0;0;;;b'';;;;;0;"";0;
+8;203;@I00302@;Marguerite Rose;BECHET;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite+rose&n=bechet&oc=2;2;0;0;2;forme2;10 juin 1700 (jeudi);b'Boulbon (13017),';;;;;0;"- Née le 6 octobre 1681 (lundi) - Boulbon (13017)
+- Décédée le 22 octobre 1756 (vendredi) - Saint-Pierre-de-Mézoargues (13061), à l'âge de 75 ans";0;
+8;210;@I00303@;Jean;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=meynier;2;0;0;2;forme2;10 juin 1700 (jeudi);b'Boulbon (13017),';;;;;0;"- Né le 11 septembre 1674 (mardi) - Boulbon (13017)
+- Décédé le 11 mai 1751 (mardi) - Boulbon (13017), à l'âge de 76 ans";0;
+8;181;@I00304@;Denise;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=denise&n=jullian;2;0;0;2;forme2;29 mai 1678 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 28 mars 1658 (jeudi) - Boulbon (13017)
+- Décédée le 12 septembre 1724 (mardi) - Boulbon (13017), à l'âge de 66 ans";0;
+8;147;@I00307@;Marguerite;LACROIX;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lacroix;0;0;0;0;;;b'';;;;;0;"";0;
+8;143;@I00309@;Marthe;CHABERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=chabert;0;0;0;0;;;b'';;;;;0;"";0;
+8;142;@I00310@;Alphonse;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=alphonse&n=poildavoine&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Né le 19 novembre 1656 (dimanche) - Boulbon (13017)
+- Décédé le 9 juillet 1725 (lundi) - Boulbon (13017), à l'âge de 68 ans";0;
+10;524;@I00316@;Honoré;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=honore&n=durand;0;0;0;0;;;b'';;;;;0;"";0;
+8;146;@I00308@;Jean Baptiste;BOSC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bosc;2;0;0;2;forme2;9 février 1728 (lundi);b'Boulbon (13017),';;;;;1;"- Né vers 1680
+- Décédé le 14 octobre 1755 (mardi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
+8;218;@I00311@;Jean;MAUCHE;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=mauche&oc=6;3;0;0;2;forme2;;b'';Ménager;;;;0;"- Né le 4 novembre 1672 (vendredi) - Boulbon (13017)
+- Décédé le 20 mai 1731 (dimanche) - Boulbon (13017), à l'âge de 58 ans
+- Ménager";0;
+8;170;@I00312@;Joseph;GUIRAUD;M;https://gw.geneanet.org/danielr13?lang=fr&p=joseph&n=guiraud;3;0;0;2;forme2;9 décembre 1685 (dimanche);b'Boulbon (13017),';Maréchal à forge;;;;0;"- Né le 11 novembre 1663 (dimanche) - Boulbon (13017)
+- Décédé le 27 mai 1735 (vendredi) - Boulbon (13017), à l'âge de 71 ans
+- Maréchal à forge";0;
+8;198;@I00313@;Louis;GUYON;M;https://gw.geneanet.org/danielr13?lang=fr&p=louis&n=guyon;3;0;0;2;forme2;21 avril 1689 (jeudi);b'Barbentane (13010),';Aubergiste;;;;0;"- Né le 23 mars 1652 (samedi) - PUYMERAS (84094)
+- Décédé le 14 avril 1736 (samedi) - Barbentane (13010), à l'âge de 84 ans
+- Aubergiste";0;
+8;155;@I00314@;Marie;SAINT MICHEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie&n=saint+michel&oc=1;2;0;0;2;forme2;5 mai 1697 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 3 novembre 1669 (dimanche) - Boulbon (13017)
+- Décédée le 26 janvier 1761 (lundi) - Boulbon (13017), à l'âge de 91 ans";0;
+8;154;@I00315@;Jacques;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=gilles&oc=1;3;0;0;2;forme2;5 mai 1697 (dimanche);b'Boulbon (13017),';Ménager;;;;0;"- Né le 26 février 1679 (dimanche) - Boulbon (13017)
+- Décédé le 1er août 1755 (vendredi) - Boulbon (13017), à l'âge de 76 ans
+- Ménager";0;
+10;950;@I00317@;?;?;M;https://gw.geneanet.org/danielr13?lang=fr&i=9994;0;0;0;0;;;b'';;;;;0;"";0;
+9;373;@I00318@;Catherine;BRUNEL;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=brunel;0;0;0;0;;;b'';;;;;0;"";0;
+9;364;@I00319@;Pierre;TISSOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=tissot&oc=1;2;0;0;0;;10 juin 1653 (mardi);b'Boulbon (13017),';;;;;0;"- Né en 1617 - Boulbon (13017)
+- Décédé le 16 avril 1692 (mercredi) - Boulbon (13017), à l'âge de 75 ans";0;
+9;365;@I00320@;Jeanne;MAUCHE;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=mauche&oc=1;1;0;0;0;;10 juin 1653 (mardi);b'Boulbon (13017),';;;;;0;"- Décédée le 4 mai 1675 (samedi) - Boulbon (13017)";0;
+9;372;@I00321@;Jacques;MAUREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jacques&n=maurel&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
+9;360;@I00324@;Gabriel;ELLIEN;M;https://gw.geneanet.org/danielr13?lang=fr&p=gabriel&n=ellien;3;0;0;0;;5 mars 1653 (mercredi);b'Boulbon (13017),';Ménager;;;;0;"- Né vers 1621
+- Décédé le 1er mai 1694 (samedi) - Boulbon (13017), à l'âge d'environ 73 ans
+- Ménager";0;
+10;525;@I00325@;Catherine;BOURGES;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=bourges&oc=1;1;0;0;2;forme2;;b'';;;;;0;"- Décédée le 20 septembre 1665 (dimanche) - Boulbon (13017)";0;
+8;199;@I00322@;Jeanne;JEAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=jean;2;0;1;2;forme2;21 avril 1689 (jeudi);b'Barbentane (13010),';;;;;0;"- Née le 22 janvier 1665 (jeudi) - Barbentane (13010)
+- Décédée le 5 décembre 1749 (vendredi) - Barbentane (13010), à l'âge de 84 ans";0;
+8;219;@I00323@;Marie Rose;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=marie+rose&n=durand&oc=1;2;0;0;2;forme2;;b'';;;;;0;"- Née le 15 février 1688 (dimanche) - Boulbon (13017)
+- Décédée le 22 janvier 1761 (jeudi) - Boulbon (13017), à l'âge de 72 ans";0;
+8;171;@I00326@;Claude;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=bard;2;0;0;2;forme2;9 décembre 1685 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 13 juillet 1665 (lundi) - Boulbon (13017)
+- Décédée le 25 octobre 1745 (lundi) - Boulbon (13017), à l'âge de 80 ans";0;
+10;951;@I00328@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=9995;0;0;0;0;;;b'';;;;;0;"";0;
+9;362;@I00327@;Guillaume;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=guillaume&n=jullian&oc=2;2;0;0;2;forme2;16 décembre 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1621 - Boulbon (13017)
+- Décédé le 1er août 1671 (samedi) - Boulbon (13017), à l'âge d'environ 50 ans";0;
+9;420;@I00329@;Jean;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=meynier&oc=1;3;0;0;2;forme2;16 décembre 1670 (mardi);b'Boulbon (13017),';Travailleur;;;;0;"- Né le 30 novembre 1642 (dimanche) - Boulbon (13017)
+- Décédé le 4 novembre 1699 (mercredi) - Boulbon (13017), à l'âge de 56 ans
+- Travailleur";0;
+9;361;@I00330@;Marthe;BIGOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marthe&n=bigot;2;0;0;2;forme2;5 mars 1653 (mercredi);b'Boulbon (13017),';;;;;0;"- Née vers 1626
+- Décédée le 23 mai 1686 (jeudi) - Boulbon (13017), à l'âge d'environ 60 ans";0;
+9;363;@I00331@;Anne;BARD;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=bard;2;0;0;2;forme2;16 décembre 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1615
+- Décédée le 1er août 1700 (dimanche) - Boulbon (13017), à l'âge d'environ 85 ans";0;
+9;308;@I00333@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=3;2;0;0;2;forme2;;b'';;;;;0;"- Né le 1er mai 1636 (jeudi) - Boulbon (13017)
+- Décédé le 10 juillet 1721 (jeudi) - Boulbon (13017), à l'âge de 85 ans";0;
+9;421;@I00332@;Marguerite;LAGARDE;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=lagarde;2;0;0;2;forme2;16 décembre 1670 (mardi);b'Boulbon (13017),';;;;;0;"- Née le 26 décembre 1649 (dimanche) - Boulbon (13017)
+- Décédée le 4 juillet 1700 (dimanche) - Boulbon (13017), à l'âge de 50 ans";0;
+9;284;@I00334@;Alphonse;POILDAVOINE;M;https://gw.geneanet.org/danielr13?lang=fr&p=alphonse&n=poildavoine;0;0;0;0;;17 décembre 1651 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
+9;396;@I00335@;Claude;GUYON;M;https://gw.geneanet.org/danielr13?lang=fr&p=claude&n=guyon;1;0;0;0;;;b'';;;;;0;"- Décédé avant 1697 - PUYMERAS (84094)";0;
+9;285;@I00336@;Jacquomette;DURAND;F;https://gw.geneanet.org/danielr13?lang=fr&p=jacquomette&n=durand;2;0;0;0;;17 décembre 1651 (dimanche);b'Boulbon (13017),';;;;;0;"- Née vers 1626
+- Décédée le 22 octobre 1701 (samedi) - Boulbon (13017), à l'âge d'environ 75 ans";0;
+9;292;@I00337@;Jean Baptiste;BOSC;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+baptiste&n=bosc&oc=3;0;0;0;0;;;b'';;;;;0;"";0;
+9;293;@I00338@;Jeanne;DALIS;F;https://gw.geneanet.org/danielr13?lang=fr&p=jeanne&n=dalis;0;0;0;0;;;b'';;;;;0;"";0;
+11;1050;@I00340@;Pierre;BOURGES;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bourges&oc=2;1;0;0;0;;;b'';;;;;0;"- Né le 10 mai 1615 (dimanche) - Boulbon (13017)";0;
+11;1051;@I00341@;Espérite;FIRMIN;F;https://gw.geneanet.org/danielr13?lang=fr&p=esperite&n=firmin;0;0;0;0;;;b'';;;;;0;"";0;
+9;309;@I00342@;Marguerite;CHARLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=charles;2;0;0;0;;;b'';;;;;0;"- Née peut-être en 1640
+- Décédée le 15 juillet 1719 (samedi) - Boulbon (13017), peut-être à l'âge de 79 ans";0;
+9;397;@I00345@;Elisabeth;SIBOURG;F;https://gw.geneanet.org/danielr13?lang=fr&p=elisabeth&n=sibourg;2;0;1;0;;;b'';;;;;0;"- Née vers 1617
+- Décédée le 4 février 1697 (lundi) - PUYMERAS (84094), à l'âge d'environ 80 ans";0;
+9;342;@I00339@;Pierre;BARD;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=bard&oc=1;1;0;0;2;forme2;28 mai 1662 (dimanche);b'Boulbon (13017),';;;;;1;"- Né le 31 octobre 1635 (mercredi) - Boulbon (13017)
+@todo note union à analyser pour Pierre BARD : '..."laquelle SYBILLE a accusé ledit BAR de crime de rapt..."'";0;
+9;398;@I00343@;Barthélemy;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=barthelemy&n=jean;2;0;1;2;forme2;;b'';;;;;0;"- Né le 1er mars 1636 (samedi) - Barbentane (13010)
+- Décédé en 1688 - Barbentane (13010), à l'âge de 52 ans";0;
+9;438;@I00344@;Jean Nicolas;DURAND;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean+nicolas&n=durand;2;0;1;2;forme2;18 octobre 1693 (dimanche);b'Boulbon (13017),';;dit "Grand Jean";;;0;"- Né le 23 juin 1651 (vendredi) - Boulbon (13017)
+- Décédé le 13 juin 1717 (dimanche) - Boulbon (13017), à l'âge de 65 ans";0;
+10;840;@I00346@;Antoine;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=meynier;1;0;0;2;forme2;;b'';;;;;0;"- Décédé le 12 septembre 1650 (lundi) - Boulbon (13017)";0;
+10;722;@I00347@;Marcellin;BIGOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=marcellin&n=bigot;1;0;0;2;forme2;;b'';;;;;0;"- Décédé le 23 août 1653 (samedi) - Boulbon (13017)";0;
+10;724;@I00348@;Raymond;JULLIAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=raymond&n=jullian&oc=1;2;0;0;0;;;b'';;;;;0;"- Né avant 1600 - Boulbon (13017)
+- Décédé";0;
+10;841;@I00349@;Anne;GIBERT;F;https://gw.geneanet.org/danielr13?lang=fr&p=anne&n=gibert;0;0;0;0;;;b'';;;;;0;"";0;
+9;343;@I00350@;Françoise;SYBILLE;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=sybille;1;0;0;2;forme2;28 mai 1662 (dimanche);b'Boulbon (13017),';;;;;1;"- Née le 10 novembre 1638 (mercredi) - Boulbon (13017)
+@todo note union à analyser pour Françoise SYBILLE : '..."laquelle SYBILLE a accusé ledit BAR de crime de rapt..."'";0;
+10;842;@I00353@;Pierre;LAGARDE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=lagarde;0;0;0;2;forme2;3 juin 1646 (dimanche);b'Boulbon (13017),';;;;;0;"";0;
+10;725;@I00354@;Isabeau;BOURBON;F;https://gw.geneanet.org/danielr13?lang=fr&p=isabeau&n=bourbon;0;0;0;0;;;b'';;;;;0;"";0;
+10;723;@I00355@;Toinette;CROZE;F;https://gw.geneanet.org/danielr13?lang=fr&p=toinette&n=croze;2;0;0;0;;;b'';;;;;0;"- Née en 1595
+- Décédée le 30 décembre 1645 (samedi) - Boulbon (13017), à l'âge de 50 ans";0;
+9;439;@I00351@;Esprite;GILLES;F;https://gw.geneanet.org/danielr13?lang=fr&p=esprite&n=gilles;2;0;0;2;forme2;1er février 1682 (dimanche);b'Boulbon (13017),';;;;;0;"- Née le 8 juin 1651 (jeudi) - Boulbon (13017)
+- Décédée le 14 avril 1693 (mardi) - Boulbon (13017), à l'âge de 41 ans";0;
+9;399;@I00352@;Magdeleine;BOURREL;F;https://gw.geneanet.org/danielr13?lang=fr&p=magdeleine&n=bourrel;2;0;2;2;forme2;;b'';;;;;0;"- Née le 21 février 1634 (mardi) - Graveson (13045)
+- Décédée le 20 juin 1705 (samedi) - Barbentane (13010), à l'âge de 71 ans
+@todo vérifier les événements pour Magdeleine BOURREL (1 erreur(s) détectée(s))";1;
+10;617;@I00357@;Marguerite;TISSOT;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=tissot&oc=1;0;0;0;0;;;b'';;;;;0;"";0;
+10;616;@I00358@;Jean;GILLES;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=gilles&oc=14;2;0;0;0;;;b'';;;;;0;"- Né en 1607
+- Décédé le 3 janvier 1667 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
+10;843;@I00356@;Louise;PINET;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=pinet;2;0;0;2;forme2;3 juin 1646 (dimanche);b'Boulbon (13017),';;;;;0;"- Née en 1616
+- Décédée le 28 juillet 1701 (jeudi) - Boulbon (13017), à l'âge de 85 ans";0;
+10;796;@I00359@;Pierre;JEAN;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=jean&oc=3;0;0;1;0;;27 avril 1635 (vendredi);b'Barbentane (13010),';;;;;0;"";0;
+10;797;@I00360@;Françoise;COSTET;F;https://gw.geneanet.org/danielr13?lang=fr&p=francoise&n=costet;0;0;1;0;;27 avril 1635 (vendredi);b'Barbentane (13010),';;;;;0;"";0;
+11;1685;@I00361@;Louise;CHAUDESSON;F;https://gw.geneanet.org/danielr13?lang=fr&p=louise&n=chaudesson;0;0;0;0;;;b'';;;;;0;"";0;
+11;1684;@I00362@;Pierre;LAGARDE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=lagarde&oc=1;1;0;0;0;;;b'';;;;;0;"- Décédé le 17 avril 1650 (dimanche) - Boulbon (13017)";0;
+10;798;@I00363@;Jean;BOURREL;M;https://gw.geneanet.org/danielr13?lang=fr&p=jean&n=bourrel;0;0;0;0;;;b'';;;;;0;"";0;
+11;1445;@I00366@;Antoinette;REGINOUX;F;https://gw.geneanet.org/danielr13?lang=fr&p=antoinette&n=reginoux;0;0;0;0;;;b'';;;;;0;"";0;
+11;1681;@I00367@;?;?;F;https://gw.geneanet.org/danielr13?lang=fr&i=29466;0;0;0;0;;;b'';;;;;0;"";0;
+11;1444;@I00368@;Poncet;BIGOT;M;https://gw.geneanet.org/danielr13?lang=fr&p=poncet&n=bigot;0;0;0;0;;;b'';;;;;0;"";0;
+11;1680;@I00369@;Antoine;MEYNIER;M;https://gw.geneanet.org/danielr13?lang=fr&p=antoine&n=meynier&oc=2;2;0;0;0;;;b'';;;;;0;"- Né en 1546
+- Décédé en novembre 1636 - Boulbon (13017), à l'âge de 90 ans";0;
+10;687;@I00364@;Marguerite;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=marguerite&n=isaac;2;0;0;2;forme2;15 février 1635 (jeudi);b'Boulbon (13017),';;;;;0;"- Née en 1616
+- Décédée le 10 décembre 1661 (samedi) - Boulbon (13017), à l'âge de 45 ans";0;
+10;686;@I00365@;Animon;SYBILLE;M;https://gw.geneanet.org/danielr13?lang=fr&p=animon&n=sybille;2;0;0;2;forme2;15 juillet 1663 (dimanche);b'Boulbon (13017),';;;;;0;"- Né vers 1617
+- Décédé le 15 avril 1676 (mercredi) - Boulbon (13017), à l'âge d'environ 59 ans";0;
+11;1687;@I00370@;Félise;ISAAC;F;https://gw.geneanet.org/danielr13?lang=fr&p=felise&n=isaac&oc=1;1;0;0;0;;;b'';;;;;0;"- Décédée le 22 février 1656 (mardi) - Boulbon (13017)";0;
+11;1686;@I00371@;Pierre;PINET;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=pinet&oc=2;2;0;0;0;;;b'';;;;;0;"- Né en 1592
+- Décédé le 8 mai 1642 (jeudi) - Boulbon (13017), à l'âge de 50 ans";0;
+10;799;@I00372@;Catherine;AILLAUD;F;https://gw.geneanet.org/danielr13?lang=fr&p=catherine&n=aillaud&oc=4;0;0;0;0;;;b'';;;;;0;"";0;
+11;1373;@I00373@;Gillette;JULLIAN;F;https://gw.geneanet.org/danielr13?lang=fr&p=gillette&n=jullian;2;0;0;0;;;b'';;;;;0;"- Née en 1584
+- Décédée le 25 juillet 1644 (lundi) - Boulbon (13017), à l'âge de 60 ans";0;
+11;1372;@I00374@;Pierre;SYBILLE;M;https://gw.geneanet.org/danielr13?lang=fr&p=pierre&n=sybille;2;0;0;0;;;b'';;;;;0;"- Né vers 1587
+- Décédé le 26 mars 1658 (mardi) - Boulbon (13017), à l'âge d'environ 71 ans";0;
 # 374 persons, 187 families, 12 generations, 0 titres de noblesse
 # 1 errors, 5 todo

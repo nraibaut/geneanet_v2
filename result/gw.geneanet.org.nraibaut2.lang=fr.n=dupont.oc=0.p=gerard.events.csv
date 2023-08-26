@@ -1,4 +1,4 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.3 23/08/2023 à 22:31
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.4 26/08/2023 à 17:14
 @I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Naissance;BIRT;22 mars 1882;22 MAR 1882;Paris, France;"Note1 sur la naissance
 Note2 sur la naissance";;"https://www.source_naissance.fr/";"Texte1 source naissance
 Texte2 source naissance";
