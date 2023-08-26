@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.3"
+    version = "1.0.4"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -35,9 +35,9 @@ class GeneanetSpider(scrapy.Spider):
     nb_scanned_pages = 0
     nb_saved_pages = 0
     nb_cached_pages = 0
-    list_tuples_child_of = []
-    parents_of = {} # dictionnaire des parents de chaque individu (index = <pointer>)
-    sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <pointer>)
+    parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
+    pointer_of = {} # dictionnaire des pointeurs (id) de chaque individu (index = <true_url>)
+    sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <true_url>)
     mariages_dates = {} # dictionnaire des dates de mariaqes (index = "<true_url_pere>;<true_url_mere>")
     mariages_places = {} # dictionnaire des lieux de mariages (index = "<true_url_pere>;<true_url_mere>")
     mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_pere_ou_mere>")
@@ -171,6 +171,12 @@ class GeneanetSpider(scrapy.Spider):
             result = url_parent2 + ";" + url_parent1
         return result
 
+    def set_parent_of(self, child_true_url, parent_true_url):
+        if child_true_url not in self.parents_of:
+            self.parents_of[child_true_url] = [parent_true_url]
+        else:
+            self.parents_of[child_true_url].append(parent_true_url)
+
     # On a déjà en cache la page et son url :
     def start_requests(self):
         result_name = self.url_to_filename(self.url)
@@ -247,6 +253,7 @@ class GeneanetSpider(scrapy.Spider):
         child_pointer = response.meta['child_pointer']
         self.nb_persons += 1
         pointer = "@I%05d@" % (self.nb_persons)
+        self.pointer_of[true_http_url] = pointer # on mémorise pour plus tard (élaboration des familles)
         nb_errors_indiv = 0
 
         #generation = 1
@@ -262,7 +269,7 @@ class GeneanetSpider(scrapy.Spider):
         if sexe not in ("M", "F") :
             nb_errors_indiv += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
-        self.sex_of[pointer] = [sexe]
+        self.sex_of[true_http_url] = [sexe]
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
         #pause = 0
         #if generation >= 3 :
@@ -272,15 +279,6 @@ class GeneanetSpider(scrapy.Spider):
         #    time.sleep(pause/1000)
         self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
         self.true_url_of[pointer] = true_http_url # pour retrouver les infos sur les mariages
-
-        if child_pointer != '' :
-            self.log(f"'{prenom}' '{nom}' parent de {child_pointer}")
-            self.list_tuples_child_of.append((child_pointer,pointer,sexe))
-            #self.parents_of[child_pointer] = "aaa" # .append((pointer,sexe))
-            if child_pointer not in self.parents_of :
-                self.parents_of[child_pointer] = [pointer]
-            else:
-                self.parents_of[child_pointer].append(pointer)
 
         source_personne = None
         person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
@@ -538,6 +536,7 @@ class GeneanetSpider(scrapy.Spider):
             self.log(f"URL parent {nb_parents} (forme 1) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
             parents_url[nb_parents]=true_url_parent
 
+            self.set_parent_of( true_http_url, true_url_parent)
             yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
 
         # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->"
@@ -584,6 +583,7 @@ class GeneanetSpider(scrapy.Spider):
                                 mariage_place = None
                             self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
+                self.set_parent_of( true_http_url, true_url_parent)
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
@@ -720,34 +720,30 @@ class GeneanetSpider(scrapy.Spider):
         self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
 
     def manage_families(self):
-        #print(self.list_tuples_child_of)
         #print(self.parents_of)
         #for item in self.parents_of.keys() :
         for item in self.parents_of.items() :
-            child = item[0]
-            husband = None
-            wife = None
-            for parent in item[1]:
+            child_url = item[0]
+            true_url_pere = None
+            true_url_mere = None
+            for parent_url in item[1]:
                 #print(f"child {child} : parent {parent}")
-                sexe = self.sex_of[parent][0]
-                if sexe == "M" and husband == None :
-                    husband = parent
-                elif sexe == "F" and wife == None :
-                    wife = parent
+                sexe = self.sex_of[parent_url][0]
+                if sexe == "M" and true_url_pere == None :
+                    true_url_pere = parent_url
+                elif sexe == "F" and true_url_mere == None :
+                    true_url_mere = parent_url
                 else :
                     self.nb_errors += 1
-                    self.logger.error(f"Problem with parents of '{child}' : actual husband='{husband}', actual wife='{wife}', new parent '{parent}' sex '{sexe}'.")
+                    self.logger.error(f"Problem with parents of '{child_url}' : actual husband='{true_url_pere}', actual wife='{true_url_mere}', new parent '{parent_url}' sex '{sexe}'.")
             self.nb_families += 1
             pointer_family = "@F%05d@" % (self.nb_families)
-            self.log(f"Famille '{pointer_family}' : enfant='{child}', père='{husband}', mère='{wife}'")
-            try:
-                true_url_pere = self.true_url_of[husband]
-            except:
-                pass
-            try:
-                true_url_mere = self.true_url_of[wife]
-            except:
-                pass
+            child_pointer = self.pointer_of[child_url]
+            husband_pointer = self.pointer_of[true_url_pere]
+            wife_pointer = self.pointer_of[true_url_mere]
+
+            self.log(f"Famille '{pointer_family}' : enfant='{child_url}', père='{true_url_pere}', mère='{true_url_mere}'")
+
             key = self.key_union(true_url_pere, true_url_mere)
             mariage_date = None
             mariage_place = None
@@ -772,8 +768,8 @@ class GeneanetSpider(scrapy.Spider):
             except:
                 pass
 
-            self.log(f"Famille '{pointer_family}' : enfant='{child}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
-            self.gedcomw_parser.add_family( pointer_family, child, husband, wife, mariage_date, mariage_place, mariage_source)
+            self.log(f"Famille '{pointer_family}' : enfant='{child_url}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
+            self.gedcomw_parser.add_family( pointer_family, child_pointer, husband_pointer, wife_pointer, mariage_date, mariage_place, mariage_source)
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
@@ -789,6 +785,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
         spider.logger.info(f"- nb_persons         = {self.nb_persons}")
         spider.logger.info(f"- nb_families        = {self.nb_families}")
+        spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
         spider.logger.info(f"- max_generations    = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
