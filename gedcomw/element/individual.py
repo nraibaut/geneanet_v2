@@ -215,7 +215,7 @@ class IndividualElement(Element):
 
             if csv_log is not None:
                 try:
-                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};{place};\"{notes}\";{tag_value}{type_value};\"{source}\";\"{notes_on_source}\";\n")
+                    csv_log.write(f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};\"{place}\";\"{notes}\";\"{tag_value}{type_value}\";\"{source}\";\"{notes_on_source}\";\n")
                 except:
                     #nb_errors += 1
                     self.logger.error( f"manage_events : ERROR write csv for {self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};'")

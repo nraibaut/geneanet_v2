@@ -30,6 +30,7 @@ class GeneanetSpider(scrapy.Spider):
     nb_families = 0
     nb_consanguinites = 0
     nb_titres_noblesse = 0
+    nb_notes_titres_noblesse = 0
     nb_sous_titres = 0
     max_generations = 0
     nb_errors = 0
@@ -361,7 +362,9 @@ class GeneanetSpider(scrapy.Spider):
         titre_noblesse = None
         note_titre_noblesse = None
 
-        info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
+        #info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
+        #info = response.xpath("//div[@id='person-title']/following-sibling::*[name()='em' and not(@class='sosa')][1]")
+        info = response.xpath("//div[@id='person-title']/following-sibling::em[not(@class='sosa')][1]")
         if info:
             lien_hyper = info.xpath("a")
             if lien_hyper:
@@ -371,12 +374,20 @@ class GeneanetSpider(scrapy.Spider):
                 texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
                 texte = texte.replace(f"\n", " ")
                 texte = texte.strip()
-                texte = re.sub(".*\(", "", texte)
-                texte = re.sub("\) *</em>$", "", texte)
+                # le texte est de la forme : "<em> <a href="xxxxx">Titre de noblesse</a>(commentaire)</em>'
+                texte = re.sub(".*</a> *", "", texte) # on enlève tout avant "</a>"
+                texte = re.sub(" *</em>$", "", texte) # on enlève le "</em>" final
+                texte = re.sub("^\(", "", texte) # on enlève l'éventuelle parenthèse de début
+                texte = re.sub("\)$", "", texte) # on enlève l'éventuelle parenthèse de fin
+                #self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
+                #self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
+                self.nb_titres_noblesse += 1
                 if texte != "":
                     note_titre_noblesse = texte
-                self.nb_titres_noblesse += 1
-                texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
+                    self.nb_notes_titres_noblesse += 1
+                    texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
+                else:
+                    texte_infos = texte_infos + f"- titre: {titre_noblesse}\n"
                 person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
             else:
@@ -723,7 +734,7 @@ class GeneanetSpider(scrapy.Spider):
             titre_noblesse = ""
         if note_titre_noblesse == None:
             note_titre_noblesse = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};{mariage_place};{profession};{sous_titre};{titre_noblesse};{note_titre_noblesse};{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
 
     def manage_families(self):
         #print(self.parents_of)
@@ -741,9 +752,9 @@ class GeneanetSpider(scrapy.Spider):
             for parent_url in item[1]:
                 #print(f"child {child} : parent {parent}")
                 sexe = self.sex_of[parent_url][0]
-                if sexe == "M" and true_url_pere == None :
+                if sexe == "M" and ((true_url_pere == None) or (true_url_pere == parent_url)) :
                     true_url_pere = parent_url
-                elif sexe == "F" and true_url_mere == None :
+                elif sexe == "F" and ((true_url_mere == None) or (true_url_mere == parent_url)) :
                     true_url_mere = parent_url
                 else :
                     self.nb_errors += 1
@@ -827,7 +838,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
         spider.logger.info(f"- nb_consanguinites  = {self.nb_consanguinites}")
         spider.logger.info(f"- max_generations    = {self.max_generations}")
-        spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
+        spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
         spider.logger.info(f"- nb_sous_titres     = {self.nb_sous_titres}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
         spider.logger.info(f"- nb_todo            = {self.nb_todo}")
