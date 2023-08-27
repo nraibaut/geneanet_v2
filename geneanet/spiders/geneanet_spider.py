@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.4"
+    version = "1.0.5"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -373,6 +373,7 @@ class GeneanetSpider(scrapy.Spider):
                 texte = re.sub("\) *</em>$", "", texte)
                 if texte != "":
                     note_titre_noblesse = texte
+                self.nb_titres_noblesse += 1
                 texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
                 person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
@@ -534,23 +535,24 @@ class GeneanetSpider(scrapy.Spider):
 
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
-            self.log(f"URL parent {nb_parents} (forme 1) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+            self.log(f"URL parent {nb_parents} (forme 1) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
             parents_url[nb_parents]=true_url_parent
 
             self.set_parent_of( true_http_url, true_url_parent)
             yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
 
-        # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->"
+        # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->")
+        # Parents forme 2b ("<!-- Parents evolue -->") : il ne faut pas prendre le premier lien hypertexte (qui contient la balise img)
         if nb_parents == 0 :
             for parent in response.xpath("//h2[span='Parents']/following-sibling::ul[1]/li"):
                 nb_parents += 1
-                url_parent = parent.xpath("a/@href").get()
+                url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte qui contient la balise img
                 url_parent = response.urljoin(url_parent)
                 presence_parents = "forme2"  # forme 2
 
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
-                self.log(f"URL parent {nb_parents} (forme 2) = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+                self.log(f"URL parent {nb_parents} (forme 2) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
                 parents_url[nb_parents] = true_url_parent
 
                 # On essaye de voir s'il y a une ligne "Marié le ... avec" sur le premier parent :
