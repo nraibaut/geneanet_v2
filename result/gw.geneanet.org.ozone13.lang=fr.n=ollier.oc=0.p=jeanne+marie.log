@@ -1,0 +1,457 @@
+[root] INFO: Starting GeneanetSpider 1.0.6
+[scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
+[scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'geneanet',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'geneanet.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['geneanet.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+[asyncio] DEBUG: Using selector: SelectSelector
+[scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[scrapy.extensions.telnet] INFO: Telnet Password: e65162c00c3dd88e
+[scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[geneanet] DEBUG: start_requests
+[geneanet] DEBUG: URL = https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
+[geneanet] DEBUG: result_name = gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie
+[geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.6 le 27/08/2023 à 20:27 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie' ...
+[geneanet] DEBUG: csv persons = result/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.csv
+[geneanet] DEBUG: csv events = result/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.events.csv
+[geneanet] DEBUG: csv unions = result/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.unions.csv
+[geneanet] DEBUG: Root URL = https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie (true='https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.html')
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.html> (referer: None)
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Jeanne Marie' 'OLLIER' (F) (https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie)
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : info = 'Née le 13 mars 1778 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : --> event_name2='Naissance' event_date2='13 mars 1778' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : info = 'Décédée le 13 octobre 1846 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 68 ans'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : --> event_name2='Décès' event_date2='13 octobre 1846' event_place2='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean+joseph.n=ollier.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean+joseph.n=ollier.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=michel.oc=1.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : union 1 = debut='* Mariée _le 14 août 1810, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Joseph ARNAUD' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=joseph&n=arnaud&oc=4' 
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Jeanne Marie' 'OLLIER' : name='Naissance', date='13 mars 1778', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Jeanne Marie' 'OLLIER' : name='Décès', date='13 octobre 1846', place='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Parents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Jeanne Marie OLLIER : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=michel.oc=1.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Jean Joseph' 'OLLIER' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier)
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : info = 'Né le 15 septembre 1728 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : --> event_name2='Naissance' event_date2='15 septembre 1728' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : info = 'Décédé le 27 août 1779 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 50 ans'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : --> event_name2='Décès' event_date2='27 août 1779' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : union 1 = debut='* Marié _le 7 février 1757, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Catherine MICHEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Jean Joseph' 'OLLIER' : name='Naissance', date='15 septembre 1728', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Jean Joseph' 'OLLIER' : name='Décès', date='27 août 1779', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean Joseph OLLIER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Catherine' 'MICHEL' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1)
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : info = 'Née le 19 avril 1733 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : --> event_name2='Naissance' event_date2='19 avril 1733' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : info = 'Décédée le 22 décembre 1809 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 76 ans'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : --> event_name2='Décès' event_date2='22 décembre 1809' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=andre.n=michel.oc=1.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=andre.n=michel.oc=1.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=queilus.html'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : union 1 = debut='* Mariée _le 7 février 1757, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Jean Joseph OLLIER' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier' 
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Catherine' 'MICHEL' : name='Naissance', date='19 avril 1733', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Catherine' 'MICHEL' : name='Décès', date='22 décembre 1809', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Catherine MICHEL : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=queilus.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00004@ : 'André' 'MICHEL' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1)
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : info = 'Né le 19 janvier 1687 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : --> event_name2='Naissance' event_date2='19 janvier 1687' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : info = 'Décédé le 4 avril 1756 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 69 ans'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : --> event_name2='Décès' event_date2='4 avril 1756' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=guillaume.n=michel.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=mus.oc=2.html'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : union 1 = debut='* Marié _le 26 novembre 1714, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Catherine QUEILUS' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus' 
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'André' 'MICHEL' : name='Naissance', date='19 janvier 1687', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'André' 'MICHEL' : name='Décès', date='4 avril 1756', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 6 : André MICHEL : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=catherine.n=mus.oc=2.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=guillaume.n=michel.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00005@ : 'Catherine' 'QUEILUS' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus)
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : info = 'Née le 2 avril 1692 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : --> event_name2='Naissance' event_date2='2 avril 1692' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : info = 'Décédée le 20 février 1762 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 69 ans'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : --> event_name2='Décès' event_date2='20 février 1762' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=benoit.n=queilus.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=benoit.n=queilus.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pierrette.n=pichon.html'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : union 1 = debut='* Mariée _le 26 novembre 1714, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='André MICHEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Catherine' 'QUEILUS' : name='Naissance', date='2 avril 1692', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Catherine' 'QUEILUS' : name='Décès', date='20 février 1762', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Catherine QUEILUS : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pierrette.n=pichon.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 13, id @I00006@ : 'Catherine' 'MUS' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2)
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : info = 'Née le 3 août 1650 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : --> event_name2='Naissance' event_date2='3 août 1650' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : info = 'Décédée avant 1729 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : --> event_name2='Décès' event_date2='avant 1729' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pierre.n=mus.html'
+[geneanet] DEBUG: Generation 4, sosa 12, id @I00007@ : 'Guillaume' 'MICHEL' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel)
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : info = 'Né le 22 mai 1650 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : --> event_name2='Naissance' event_date2='22 mai 1650' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : info = 'Décédé le 9 mars 1729 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 78 ans'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : --> event_name2='Décès' event_date2='9 mars 1729' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=michel.oc=6.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=michel.oc=6.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pierre.n=mus.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=sibille.n=tapie.html'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : union 1 = debut='* Mariée _le 16 septembre 1675, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Guillaume MICHEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel' 
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Catherine' 'MUS' : name='Naissance', date='3 août 1650', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Catherine' 'MUS' : name='Décès', date='avant 1729', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 13 : Catherine MUS : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=lucresse.n=brun.html'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : union 1 = debut='* Marié _le 16 septembre 1675, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Catherine MUS' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Guillaume' 'MICHEL' : name='Naissance', date='22 mai 1650', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Guillaume' 'MICHEL' : name='Décès', date='9 mars 1729', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 12 : Guillaume MICHEL : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=lucresse.n=brun.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=sibille.n=tapie.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 14, id @I00008@ : 'Benoit' 'QUEILUS' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus)
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : info = 'Né vers 1660 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : --> event_name2='Naissance' event_date2='vers 1660' event_place2='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : info = 'Décédé le 12 février 1727 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 67 ans'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : --> event_name2='Décès' event_date2='12 février 1727' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=amant.n=cailus.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=peironne.n=malosse.html'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : union 1 = debut='* Marié _le 8 janvier 1691, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Pierrette PICHON' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon' 
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Benoit' 'QUEILUS' : name='Naissance', date='vers 1660', place='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Benoit' 'QUEILUS' : name='Décès', date='12 février 1727', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 14 : Benoit QUEILUS : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=peironne.n=malosse.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=amant.n=cailus.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 15, id @I00009@ : 'Pierrette' 'PICHON' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon)
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : info = 'Née le 12 juin 1670 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : --> event_name2='Naissance' event_date2='12 juin 1670' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : info = 'Décédée le 5 juillet 1751 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 81 ans'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : --> event_name2='Décès' event_date2='5 juillet 1751' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=pichon.oc=2.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=pichon.oc=2.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jeanne.n=raoux.oc=1.html'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : union 1 = debut='* Mariée _le 8 janvier 1691, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Benoit QUEILUS' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus' 
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Pierrette' 'PICHON' : name='Naissance', date='12 juin 1670', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Pierrette' 'PICHON' : name='Décès', date='5 juillet 1751', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Pierrette PICHON : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jeanne.n=raoux.oc=1.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 24, id @I00010@ : 'Jean' 'MICHEL' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6)
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : info = 'Né en 1594'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : --> event_name2='Naissance' event_date2='1594' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : info = 'Décédé en 1673 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France, à l'âge de 79 ans'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : --> event_name2='Décès' event_date2='1673' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=andre.n=michel.oc=2.html'
+[geneanet] DEBUG: Generation 5, sosa 26, id @I00011@ : 'Pierre' 'MUS' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus)
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : info = 'Né en 1622 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : --> event_name2='Naissance' event_date2='1622' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : info = 'Décédé avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : --> event_name2='Décès' event_date2='avant 1675' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : union 1 = debut='* Marié _le 23 juin 1648, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Sibille TAPIE' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie' 
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Pierre' 'MUS' : name='Naissance', date='1622', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Pierre' 'MUS' : name='Décès', date='avant 1675', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 26 : Pierre MUS : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=honorade.n=blanc.html'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : union 1 = debut='* Marié _le 29 juin 1649, Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Lucresse BRUN' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun' 
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Jean' 'MICHEL' : name='Naissance', date='1594', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Jean' 'MICHEL' : name='Décès', date='1673', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 24 : Jean MICHEL : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=honorade.n=blanc.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=andre.n=michel.oc=2.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 25, id @I00012@ : 'Lucresse' 'BRUN' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun)
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : info = 'Décédée après 1675 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : --> event_name2='Décès' event_date2='après 1675' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=claude.n=brun.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=honorade.n=raybaud.html'
+[geneanet] DEBUG: Generation 5, sosa 27, id @I00013@ : 'Sibille' 'TAPIE' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie)
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : info = 'Née le 8 octobre 1628 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : --> event_name2='Naissance' event_date2='8 octobre 1628' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : info = 'Décédée avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : --> event_name2='Décès' event_date2='avant 1675' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : union 1 = debut='* Mariée _le 23 juin 1648, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Pierre MUS' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus' 
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Sibille' 'TAPIE' : name='Naissance', date='8 octobre 1628', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Sibille' 'TAPIE' : name='Décès', date='avant 1675', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 27 : Sibille TAPIE : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=honorade.n=raybaud.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=claude.n=brun.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : union 1 = debut='* Mariée _le 29 juin 1649, Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Jean MICHEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6' 
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'Lucresse' 'BRUN' : name='Décès', date='après 1675', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 25 : Lucresse BRUN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 29, id @I00014@ : 'Peironne' 'MALOSSE' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse)
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : info = 'Décédée avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France'
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : --> event_name2='Décès' event_date2='avant 1691' event_place2='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France' 
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : union 1 = debut='* Mariée _avant 1660, Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France,_' nom_conjoint='Amant CAILUS' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus' 
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Peironne' 'MALOSSE' : name='Décès', date='avant 1691', place='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 29 : Peironne MALOSSE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 28, id @I00015@ : 'Amant' 'CAILUS' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus)
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : info = 'Décédé avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France'
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : --> event_name2='Décès' event_date2='avant 1691' event_place2='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France' 
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : union 1 = debut='* Marié _avant 1660, Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France,_' nom_conjoint='Peironne MALOSSE' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse' 
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Amant' 'CAILUS' : name='Décès', date='avant 1691', place='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 28 : Amant CAILUS : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 30, id @I00016@ : 'Jean' 'PICHON' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2)
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : info = 'Né le 11 janvier 1634 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : --> event_name2='Naissance' event_date2='11 janvier 1634' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : info = 'Décédé le 29 août 1709 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 75 ans'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : --> event_name2='Décès' event_date2='29 août 1709' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : info = 'Cardeur en laine'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pons.n=pichon.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=marthe.n=ricard.oc=6.html'
+[geneanet] DEBUG: Generation 5, sosa 31, id @I00017@ : 'Jeanne' 'RAOUX' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1)
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : info = 'Née vers 1621 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : --> event_name2='Naissance' event_date2='vers 1621' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : info = 'Décédée le 10 juillet 1711 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 90 ans'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : --> event_name2='Décès' event_date2='10 juillet 1711' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : union 1 = debut='* Mariée _le 10 mars 1661, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Jean PICHON' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00017@ 'Jeanne' 'RAOUX' : name='Naissance', date='vers 1621', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00017@ 'Jeanne' 'RAOUX' : name='Décès', date='10 juillet 1711', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne RAOUX : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=marthe.n=ricard.oc=6.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=pons.n=pichon.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : union 1 = debut='* Marié _le 10 mars 1661, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Jeanne RAOUX' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Jean' 'PICHON' : name='Naissance', date='11 janvier 1634', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Jean' 'PICHON' : name='Décès', date='29 août 1709', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Jean' 'PICHON' : name='Profession', date='None', place='None', notes='Cardeur en laine', source='None'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Jean PICHON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 49, id @I00018@ : 'Honorade' 'BLANC' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc)
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : info = 'Décédée après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : --> event_name2='Décès' event_date2='après 1649' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : union 1 = debut='*' nom_conjoint='André MICHEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00018@ 'Honorade' 'BLANC' : name='Décès', date='après 1649', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 49 : Honorade BLANC : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 48, id @I00019@ : 'André' 'MICHEL' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2)
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : info = 'Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : --> event_name2='Décès' event_date2='après 1649' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : union 1 = debut='*' nom_conjoint='Honorade BLANC' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc' 
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'André' 'MICHEL' : name='Décès', date='après 1649', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 48 : André MICHEL : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 51, id @I00020@ : 'Honorade' 'RAYBAUD' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud)
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : info = 'Décédée après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : --> event_name2='Décès' event_date2='après 1649' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : union 1 = debut='* Mariée _avant 1629, Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Claude BRUN' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun' 
+[gedcomw.element.element] INFO: manage_events : @I00020@ 'Honorade' 'RAYBAUD' : name='Décès', date='après 1649', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 51 : Honorade RAYBAUD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 50, id @I00021@ : 'Claude' 'BRUN' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun)
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : info = 'Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : --> event_name2='Décès' event_date2='après 1649' event_place2='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : union 1 = debut='* Marié _avant 1629, Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Honorade RAYBAUD' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud' 
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Claude' 'BRUN' : name='Décès', date='après 1649', place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 50 : Claude BRUN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 61, id @I00022@ : 'Marthe' 'RICARD' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6)
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : info = 'Décédée en 1667 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : --> event_name2='Décès' event_date2='1667' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : union 1 = debut='* Mariée _le 24 juin 1632, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Pons PICHON' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon' 
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Marthe' 'RICARD' : name='Décès', date='1667', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 61 : Marthe RICARD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 60, id @I00023@ : 'Pons' 'PICHON' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon)
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : info = 'Né le 19 janvier 1607 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : --> event_name2='Naissance' event_date2='19 janvier 1607' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : info = 'Décédé'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : info = 'Cardeur'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=pichon.oc=3.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=marthe.n=amiel.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=marthe.n=amiel.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean.n=pichon.oc=3.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : union 1 = debut='* Marié _le 24 juin 1632, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Marthe RICARD' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6' 
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Pons' 'PICHON' : name='Naissance', date='19 janvier 1607', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Pons' 'PICHON' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Pons' 'PICHON' : name='Profession', date='None', place='None', notes='Cardeur', source='None'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 60 : Pons PICHON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 121, id @I00024@ : 'Marthe' 'AMIEL' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel)
+[geneanet] DEBUG: Generation 7, sosa 121 : Marthe AMIEL : union 1 = debut='* Mariée _le 8 avril 1606, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Jean PICHON' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3' 
+[geneanet] DEBUG: Generation 7, sosa 121 : Marthe AMIEL : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 121 : Marthe AMIEL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 121 : Marthe AMIEL : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 120, id @I00025@ : 'Jean' 'PICHON' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3)
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : info = 'Né - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : --> event_name2='Naissance' event_date2='' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : info = 'Décédé le 21 juin 1639 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : --> event_name2='Décès' event_date2='21 juin 1639' event_place2='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean+vieux.n=pichon.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3 = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7 (true='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=magdeleine.n=chabert.oc=7.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=magdeleine.n=chabert.oc=7.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.ozone13.lang=fr.pz=robert+jean+marie.nz=fraysse.p=jean+vieux.n=pichon.html> (referer: None)
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : union 1 = debut='* Marié _le 8 avril 1606, Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,_' nom_conjoint='Marthe AMIEL' url_conjoint='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel' 
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Jean' 'PICHON' : name='Naissance', date='', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Jean' 'PICHON' : name='Décès', date='21 juin 1639', place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : rubrique='Parents'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean PICHON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 241, id @I00026@ : 'Magdeleine' 'CHABERT' (F) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7)
+[geneanet] DEBUG: Generation 8, sosa 241 : Magdeleine CHABERT : union 1 = debut='* Mariée _avant 1575_' nom_conjoint='![sosa' url_conjoint='https://static.geneanet.org/geneweb/img/sosa_symbol_simple.png' 
+[geneanet] DEBUG: Generation 8, sosa 241 : Magdeleine CHABERT : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 241 : Magdeleine CHABERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 241 : Magdeleine CHABERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 240, id @I00027@ : 'Jean "Vieux"' 'PICHON' (M) (https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon)
+[geneanet] DEBUG: Generation 8, sosa 240 : Jean "Vieux" PICHON : union 1 = debut='* Marié _avant 1575_' nom_conjoint='![sosa' url_conjoint='https://static.geneanet.org/geneweb/img/sosa_symbol_simple.png' 
+[geneanet] DEBUG: Generation 8, sosa 240 : Jean "Vieux" PICHON : rubrique='Union(s), enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 240 : Jean "Vieux" PICHON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 240 : Jean "Vieux" PICHON : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] INFO: Closing spider (finished)
+[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1' mariage_date='7 février 1757' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus' mariage_date='26 novembre 1714' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2' mariage_date='16 septembre 1675' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00004@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00004@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon' mariage_date='8 janvier 1691' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00005@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00005@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie' mariage_date='23 juin 1648' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00006@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00006@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun' mariage_date='29 juin 1649' mariage_place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00007@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00007@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse' mariage_date='avant 1660' mariage_place='Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00008@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00008@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1' mariage_date='10 mars 1661' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00009@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00009@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00010@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00010@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud' mariage_date='avant 1629' mariage_place='Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00011@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00011@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6' mariage_date='24 juin 1632' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00012@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00012@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel' mariage_date='8 avril 1606' mariage_place='Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00013@' : père='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon', mère='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00013@' : enfant='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3', true_url_pere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon', true_url_mere='https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] INFO: NRa Spider 'geneanet' closed :
+[geneanet] INFO: - nb_persons         = 27
+[geneanet] INFO: - nb_families        = 13
+[geneanet] INFO: - 13 relations enfants / parents
+[geneanet] INFO: - nb_consanguinites  = 0
+[geneanet] INFO: - max_generations    = 8
+[geneanet] INFO: - nb_titres_noblesse = 0
+[geneanet] INFO: - nb_sous_titres     = 0
+[geneanet] INFO: - nb_errors          = 0
+[geneanet] INFO: - nb_todo            = 0
+[geneanet] INFO: - nb_scanned_pages   = 0
+[geneanet] INFO: - nb_saved_pages     = 0
+[geneanet] INFO: - nb_cached_pages    = 27
+[geneanet] INFO: Saving to 'result/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged'
+[gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged'
+[scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9550,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 2739450,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'elapsed_time_seconds': 1.248732,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 8, 27, 18, 27, 36, 396502),
+ 'log_count/DEBUG': 338,
+ 'log_count/INFO': 68,
+ 'request_depth_max': 7,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2023, 8, 27, 18, 27, 35, 147770)}
+[scrapy.core.engine] INFO: Spider closed (finished)

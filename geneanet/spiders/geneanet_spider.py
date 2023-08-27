@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.5"
+    version = "1.0.6"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -30,6 +30,7 @@ class GeneanetSpider(scrapy.Spider):
     nb_families = 0
     nb_consanguinites = 0
     nb_titres_noblesse = 0
+    nb_sous_titres = 0
     max_generations = 0
     nb_errors = 0
     nb_todo = 0
@@ -355,11 +356,12 @@ class GeneanetSpider(scrapy.Spider):
         # info = response.xpath("//div[@id='person-title']/following-sibling::em[1]")
         # Méthode 2 plus robuste : on prend le premier voisin, s'il est de type "em") :
         # info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
+        # Mais il ne faut pas prendre @class='sosa' (cas avec ref sosa)
         sous_titre = None
         titre_noblesse = None
         note_titre_noblesse = None
 
-        info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
+        info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
         if info:
             lien_hyper = info.xpath("a")
             if lien_hyper:
@@ -383,6 +385,7 @@ class GeneanetSpider(scrapy.Spider):
                 texte = texte.strip()
                 if texte != "":
                     sous_titre = texte
+                    self.nb_sous_titres += 1
                     self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
                     person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
 
@@ -825,6 +828,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- nb_consanguinites  = {self.nb_consanguinites}")
         spider.logger.info(f"- max_generations    = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse}")
+        spider.logger.info(f"- nb_sous_titres     = {self.nb_sous_titres}")
         spider.logger.info(f"- nb_errors          = {self.nb_errors}")
         spider.logger.info(f"- nb_todo            = {self.nb_todo}")
         spider.logger.info(f"- nb_scanned_pages   = {self.nb_scanned_pages}")
