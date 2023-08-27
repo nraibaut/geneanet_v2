@@ -96,6 +96,7 @@ class IndividualElement(Element):
         #"Personne" : "Personne???", # Uniquement source sur la personne (géré au niveau du parsing individu)
         "Profession" : "OCCU",
         "Retraite" : "RETI",
+        "Testament" : "WILL",
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
@@ -156,7 +157,7 @@ class IndividualElement(Element):
                 if event._source is not None:
                     event._source += "\n" + info
                 else:
-                    event._source += info
+                    event._source = info
                 nb_errors += 1
                 self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
                 pass

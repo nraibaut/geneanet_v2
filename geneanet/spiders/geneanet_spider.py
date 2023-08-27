@@ -47,6 +47,7 @@ class GeneanetSpider(scrapy.Spider):
     true_url_of = {} # dictionnaire des url (index = <pointer>)
     is_http_url = re.compile("^http[s]*:.*")
     #is_file_url = re.compile("^file:.*")
+    is_mariage = re.compile("^Mariage \(avec .*\).*")
     is_contrat_de_mariage = re.compile("^Contrat de mariage \(avec .*\).*")
     ligne_mariage = re.compile(".*Mari.*avec.*")
     union_regex = re.compile("(.*) [Aa]vec \[([^\]]*)\]\(([^\)]*)\).*")
@@ -443,9 +444,10 @@ class GeneanetSpider(scrapy.Spider):
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
-            if GeneanetSpider.is_contrat_de_mariage.match(event_name):
-                # Evénement de la forme "Contrat de mariage (avec <conjoint>) - <lieu>"
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
+            if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
+                # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
+                #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
                 # on ignore les infos (normalement, on les a via la fiche enfant)
                 self.nb_todo += 1
                 texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}' pour {prenom} {nom}\n"
