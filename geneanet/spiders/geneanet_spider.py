@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.6"
+    version = "1.0.7"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -504,7 +504,10 @@ class GeneanetSpider(scrapy.Spider):
             note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
             # Cas Notes individuelles :
             if note_text == "":
-                note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip()
+                #note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip() # plantage sur jeu de tests
+                note_indiv = note.xpath("following-sibling::div[@class='fiche-note-ind']").get()
+                if note_indiv:
+                    note_text = html2text.html2text(note_indiv).strip()
             note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
             #note_text = "?"
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} : note_type='{note_type}' note_text='{note_text}'")
