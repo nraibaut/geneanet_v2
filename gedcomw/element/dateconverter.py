@@ -25,6 +25,7 @@ class DateConverter(object):
     # "le 20 floréal an VIII  (10 mai 1800)"
     # On va chercher à extraire la partie entre parenthèses
     repcal = re.compile("(.*) *\((.*)\).*")
+    interval = re.compile("entre (.*) et (.*)")
     months = {
         "janvier"   : "JAN",
         "février"   : "FEB",
@@ -53,7 +54,6 @@ class DateConverter(object):
     def __init__(self, text):
         """Initialize Event
         :type text: str
-
         """
         self._orig = text
         self._qualificatif = "" # dans Geneanet
@@ -70,46 +70,59 @@ class DateConverter(object):
         text2 = text2.strip()
         text2 = text2.lower() # robustesse sur les mois
 
-        # On enlève le "le " ou "en " parfois présent au début :
-        text2 = re.sub("^le ", "", text2, 1)
-        text2 = re.sub("^en ", "", text2, 1)
+        isinterval = DateConverter.interval.match(text2)
+        if isinterval:
+            # C'est un intervalle "entre <date1> et <date2>"
+            # ==> on extrait les 2 dates et on génère le format GEDCOM "BET ... AND ..."
+            date1 = isinterval.groups(0)[0]
+            date2 = isinterval.groups(0)[1]
+            conv1 = DateConverter(date1)
+            conv2 = DateConverter(date2)
+            self._qualificatif = "entre"
+            text2 = "BET " + conv1.to_gedcom_string() + " AND " + conv2.to_gedcom_string()
+            self._text2 = text2.strip()
 
-        # On supprime le jour de la semaine parfois présent à la fin :
-        for jour in ("(lundi)", "(mardi)", "(mercredi)", "(jeudi)", "(vendredi)", "(samedi)", "(dimanche)") :
-            text2 = text2.replace(jour, "", 1)
-
-        # On regarde la présence éventuelle d'un qualificatif :
-        words = text2.split()
-        first_word = words[0]
-        #for qualificatif in ("avant", "après", "vers", "peut-être"):
-        try :
-            prefix = DateConverter.prefixes[first_word] # ok, ou exception "KeyError"
-            self._qualificatif = first_word
-            # on enlève d'abord le premier mot (Geneanet)
-            text2 = re.sub("^" + first_word + " ", "", text2, 1)
-            # On enlève le "le " ou "en " qui peut être après le qualificatif ("avant", "après", "vers", "peut-être") :
+        else:
+            # On enlève le "le " ou "en " parfois présent au début :
             text2 = re.sub("^le ", "", text2, 1)
             text2 = re.sub("^en ", "", text2, 1)
-            # On remet le prefixe (gedcom)
-            text2 = prefix + " " + text2
-        except KeyError:
-            pass
 
-        isrepublicain = DateConverter.repcal.match(text2)
-        if isrepublicain :
-            self._republican_date = isrepublicain.groups(0)[0].strip()
-            text2 = isrepublicain.groups(0)[1]
+            # On supprime le jour de la semaine parfois présent à la fin :
+            for jour in ("(lundi)", "(mardi)", "(mercredi)", "(jeudi)", "(vendredi)", "(samedi)", "(dimanche)"):
+                text2 = text2.replace(jour, "", 1)
 
-        text2 = re.sub("1er ", "1 ", text2, 1)
+            # On regarde la présence éventuelle d'un qualificatif :
+            words = text2.split()
+            first_word = words[0]
+            # for qualificatif in ("avant", "après", "vers", "peut-être"):
+            try:
+                prefix = DateConverter.prefixes[first_word]  # ok, ou exception "KeyError"
+                self._qualificatif = first_word
+                # on enlève d'abord le premier mot (Geneanet)
+                text2 = re.sub("^" + first_word + " ", "", text2, 1)
+                # On enlève le "le " ou "en " qui peut être après le qualificatif ("avant", "après", "vers", "peut-être") :
+                text2 = re.sub("^le ", "", text2, 1)
+                text2 = re.sub("^en ", "", text2, 1)
+                # On remet le prefixe (gedcom)
+                text2 = prefix + " " + text2
+            except KeyError:
+                pass
 
-        for mois1 in DateConverter.months.keys():
-            mois2 = DateConverter.months[mois1]
-            #print(f"{mois1} --> {mois2}")
-            text2 = text2.replace(mois1, mois2, 1)
+            isrepublicain = DateConverter.repcal.match(text2)
+            if isrepublicain:
+                self._republican_date = isrepublicain.groups(0)[0].strip()
+                text2 = isrepublicain.groups(0)[1]
 
-        text2 = text2.upper() # norme = majuscules
+            text2 = re.sub("1er ", "1 ", text2, 1)
 
-        self._text2 = text2.strip()
+            for mois1 in DateConverter.months.keys():
+                mois2 = DateConverter.months[mois1]
+                # print(f"{mois1} --> {mois2}")
+                text2 = text2.replace(mois1, mois2, 1)
+
+            text2 = text2.upper()  # norme = majuscules
+
+            self._text2 = text2.strip()
 
     def to_string(self):
         """Formats this element into a string
