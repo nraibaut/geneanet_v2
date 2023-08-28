@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.6 le 27/08/2023 à 20:27 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.7 le 29/08/2023 à 01:49 à partir de https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.6
+2 VERS 1.0.7
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 27 AUG 2023
-2 TIME 20:27:20
+1 DATE 29 AUG 2023
+2 TIME 01:49:52
 1 FILE gw.geneanet.org.evechevaleyre.lang=fr.n=brincat.oc=0.p=maria+anna.ged
 1 GEDC
 2 VERS 5.5.1
@@ -69,19 +69,25 @@
 0 @S00005@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=bartolo&oc=7
 1 TEXT
-0 @S00006@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat
-1 TEXT
 0 @I00007@ INDI
 1 NAME Margarita /ATTARD/
 2 GIVN Margarita
 2 SURN ATTARD
 1 SEX F
 1 SOUR @S00007@
+0 @S00006@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=rafaele&n=brincat
+1 TEXT
 0 @S00007@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=margarita&n=attard&oc=3
 1 TEXT
 0 @I00008@ INDI
+1 NAME Salvatore /ATTARD/
+2 GIVN Salvatore
+2 SURN ATTARD
+1 SEX M
+1 SOUR @S00009@
+0 @I00009@ INDI
 1 NAME Domenica /CHETCUTI/
 2 GIVN Domenica
 2 SURN CHETCUTI
@@ -90,51 +96,39 @@
 0 @S00008@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenica&n=chetcuti&oc=3
 1 TEXT @todo Anomalies détectées sur Domenica CHETCUTI. Vérifier la source.
-0 @I00009@ INDI
+0 @I00010@ INDI
 1 NAME Francesco /de BRINCAT/
 2 GIVN Francesco
 2 SURN de BRINCAT
 1 SEX M
 1 NOTE @N00001@
-1 SOUR @S00009@
+1 SOUR @S00010@
 0 @N00001@ NOTE son père est nommé BRINCAT Gioacchino Verifier la parenté
 0 @S00009@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10
+1 TEXT
+0 @S00010@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=de+brincat&oc=17
 1 TEXT @todo Anomalies détectées sur Francesco de BRINCAT. Vérifier la source.
-0 @I00010@ INDI
+0 @I00011@ INDI
 1 NAME Teodora /CIANTAR?/
 2 GIVN Teodora
 2 SURN CIANTAR?
 1 SEX F
-1 SOUR @S00010@
-0 @I00011@ INDI
-1 NAME Salvatore /ATTARD/
-2 GIVN Salvatore
-2 SURN ATTARD
-1 SEX M
 1 SOUR @S00011@
-0 @S00010@ SOUR
+0 @S00011@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teodora&n=ciantar&oc=2
 1 TEXT
-0 @S00011@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=10
-1 TEXT
 0 @I00012@ INDI
-1 NAME Teresa /MUSCAT/
-2 GIVN Teresa
-2 SURN MUSCAT
-1 SEX F
-1 SOUR @S00012@
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6
-1 TEXT
-0 @I00013@ INDI
 1 NAME Giacchi /de BRINCAT/
 2 GIVN Giacchi
 2 SURN de BRINCAT
 1 SEX M
-1 SOUR @S00015@
-0 @I00014@ INDI
+1 SOUR @S00012@
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat
+1 TEXT
+0 @I00013@ INDI
 1 NAME Maddalena /MAGRO?/
 2 GIVN Maddalena
 2 SURN MAGRO?
@@ -143,7 +137,7 @@
 0 @S00013@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=maddalena&n=magro&oc=15
 1 TEXT
-0 @I00015@ INDI
+0 @I00014@ INDI
 1 NAME Gregorio /CHETCUTI/
 2 GIVN Gregorio
 2 SURN CHETCUTI
@@ -152,28 +146,34 @@
 0 @S00014@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gregorio&n=chetcuti
 1 TEXT
-0 @S00015@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacchi&n=de+brincat
-1 TEXT
-0 @I00016@ INDI
+0 @I00015@ INDI
 1 NAME Domenico /ATTARD/
 2 GIVN Domenico
 2 SURN ATTARD
 1 SEX M
 1 BIRT
 2 PLAC Zejtun - Malte, , , ,
-1 SOUR @S00016@
-0 @S00016@ SOUR
+1 SOUR @S00015@
+0 @S00015@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24
 1 TEXT - Né - Zejtun - Malte, , , ,
-0 @I00017@ INDI
+0 @I00016@ INDI
 1 NAME Clara /BARTOLO?/
 2 GIVN Clara
 2 SURN BARTOLO?
 1 SEX F
+1 SOUR @S00016@
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2
+1 TEXT
+0 @I00017@ INDI
+1 NAME Teresa /MUSCAT/
+2 GIVN Teresa
+2 SURN MUSCAT
+1 SEX F
 1 SOUR @S00017@
 0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=bartolo&oc=2
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=teresa&n=muscat&oc=6
 1 TEXT
 0 @I00018@ INDI
 1 NAME Geronima /MIFSUD/
@@ -194,116 +194,116 @@
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=francesco&n=ciantar
 1 TEXT @todo Anomalies détectées sur Francesco CIANTAR. Vérifier la source.
 0 @I00020@ INDI
-1 NAME Angelica /NN/
-2 GIVN Angelica
-2 SURN NN
-1 SEX F
-1 SOUR @S00020@
-0 @S00020@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
-1 TEXT
-0 @I00021@ INDI
-1 NAME Gio Maria /MUSCAT/
-2 GIVN Gio Maria
-2 SURN MUSCAT
-1 SEX M
-1 BIRT
-2 PLAC Birkhirkara - Malte, , , ,
-1 SOUR @S00021@
-0 @S00021@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7
-1 TEXT - Né - Birkhirkara - Malte, , , ,
-0 @I00022@ INDI
 1 NAME Giacobina /NN/
 2 GIVN Giacobina
 2 SURN NN
 1 SEX F
-1 SOUR @S00022@
-0 @S00022@ SOUR
+1 SOUR @S00020@
+0 @S00020@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giacobina&n=nn&oc=2
 1 TEXT
-0 @I00023@ INDI
-1 NAME Clara /CHIRCOP/
-2 GIVN Clara
-2 SURN CHIRCOP
-1 SEX F
-1 SOUR @S00023@
-0 @S00023@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop
-1 TEXT
-0 @I00024@ INDI
+0 @I00021@ INDI
 1 NAME Marino /MAGRO/
 2 GIVN Marino
 2 SURN MAGRO
 1 SEX M
-1 SOUR @S00024@
-0 @S00024@ SOUR
+1 SOUR @S00021@
+0 @S00021@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marino&n=magro
 1 TEXT
-0 @I00025@ INDI
+0 @I00022@ INDI
+1 NAME Clara /CHIRCOP/
+2 GIVN Clara
+2 SURN CHIRCOP
+1 SEX F
+1 SOUR @S00022@
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=clara&n=chircop
+1 TEXT
+0 @I00023@ INDI
 1 NAME Giuseppe /BRINCATO/
 2 GIVN Giuseppe
 2 SURN BRINCATO
 1 SEX M
 1 BIRT
 2 PLAC Siggewi - Malte, , , ,
-1 SOUR @S00025@
-0 @S00025@ SOUR
+1 SOUR @S00023@
+0 @S00023@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato
 1 TEXT - Né - Siggewi - Malte, , , ,
-0 @I00026@ INDI
-1 NAME ? /?/
-2 GIVN ?
-2 SURN ?
-1 SEX F
-1 SOUR @S00026@
-0 @S00026@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697
-1 TEXT
-0 @I00027@ INDI
-1 NAME Valerio Valente /CIANTAR/
-2 GIVN Valerio Valente
-2 SURN CIANTAR
+0 @I00024@ INDI
+1 NAME Gio Maria /MUSCAT/
+2 GIVN Gio Maria
+2 SURN MUSCAT
 1 SEX M
-1 SOUR @S00027@
-0 @S00027@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar
-1 TEXT
-0 @I00028@ INDI
+1 BIRT
+2 PLAC Birkhirkara - Malte, , , ,
+1 SOUR @S00024@
+0 @S00024@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7
+1 TEXT - Né - Birkhirkara - Malte, , , ,
+0 @I00025@ INDI
 1 NAME Lucrezia /SALIBA/
 2 GIVN Lucrezia
 2 SURN SALIBA
 1 SEX F
-1 SOUR @S00028@
-0 @S00028@ SOUR
+1 SOUR @S00025@
+0 @S00025@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=saliba&oc=2
 1 TEXT
-0 @I00029@ INDI
-1 NAME Lucrezia /NN/
-2 GIVN Lucrezia
-2 SURN NN
-1 SEX F
-1 SOUR @S00029@
-0 @S00029@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
-1 TEXT
-0 @I00030@ INDI
+0 @I00026@ INDI
 1 NAME Lorenzo /BARTOLO/
 2 GIVN Lorenzo
 2 SURN BARTOLO
 1 SEX M
-1 SOUR @S00030@
-0 @S00030@ SOUR
+1 SOUR @S00026@
+0 @S00026@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lorenzo&n=bartolo&oc=2
 1 TEXT
-0 @I00031@ INDI
+0 @I00027@ INDI
+1 NAME Lucrezia /NN/
+2 GIVN Lucrezia
+2 SURN NN
+1 SEX F
+1 SOUR @S00027@
+0 @S00027@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=lucrezia&n=nn&oc=4
+1 TEXT
+0 @I00028@ INDI
 1 NAME Salvatore /ATTARD/
 2 GIVN Salvatore
 2 SURN ATTARD
 1 SEX M
+1 SOUR @S00028@
+0 @S00028@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+1 TEXT
+0 @I00029@ INDI
+1 NAME Angelica /NN/
+2 GIVN Angelica
+2 SURN NN
+1 SEX F
+1 SOUR @S00029@
+0 @S00029@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=angelica&n=nn&oc=23
+1 TEXT
+0 @I00030@ INDI
+1 NAME Valerio Valente /CIANTAR/
+2 GIVN Valerio Valente
+2 SURN CIANTAR
+1 SEX M
+1 SOUR @S00030@
+0 @S00030@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=valerio+valente&n=ciantar
+1 TEXT
+0 @I00031@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
 1 SOUR @S00031@
 0 @S00031@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=salvatore&n=attard&oc=11
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&i=43697
 1 TEXT
 0 @I00032@ INDI
 1 NAME Clemenza /NN/
@@ -324,26 +324,26 @@
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=marietta&n=nn&oc=18
 1 TEXT
 0 @I00034@ INDI
+1 NAME Bartolomeo /BRINCATO/
+2 GIVN Bartolomeo
+2 SURN BRINCATO
+1 SEX M
+1 SOUR @S00034@
+0 @S00034@ SOUR
+1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato
+1 TEXT
+0 @I00035@ INDI
 1 NAME Nicola /CHIRCOP/
 2 GIVN Nicola
 2 SURN CHIRCOP
 1 SEX M
 1 OCCU Mro
 2 NOTE @N00002@
-1 SOUR @S00034@
+1 SOUR @S00035@
 0 @N00002@ NOTE
-0 @S00034@ SOUR
+0 @S00035@ SOUR
 1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2
 1 TEXT - Mro
-0 @I00035@ INDI
-1 NAME Bartolomeo /BRINCATO/
-2 GIVN Bartolomeo
-2 SURN BRINCATO
-1 SEX M
-1 SOUR @S00035@
-0 @S00035@ SOUR
-1 TITL https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=bartolomeo&n=brincato
-1 TEXT
 0 @F00001@ FAM
 1 HUSB @I00003@
 1 WIFE @I00002@
@@ -363,80 +363,80 @@
 2 PLAC S.Paolo - Malte, , , ,,
 1 CHIL @I00003@
 0 @F00004@ FAM
-1 HUSB @I00009@
-1 WIFE @I00008@
+1 HUSB @I00010@
+1 WIFE @I00009@
 1 MARR
 2 DATE EST 8 APR 1709
 2 PLAC P.Salvo, , , ,,
 1 CHIL @I00004@
 0 @F00005@ FAM
-1 HUSB @I00011@
-1 WIFE @I00010@
+1 HUSB @I00008@
+1 WIFE @I00011@
 1 MARR
 2 DATE EST 19 JUL 1723
 2 PLAC Zejtun - Malte, , , ,,
 1 CHIL @I00007@
 0 @F00006@ FAM
 1 HUSB @I00015@
-1 WIFE @I00014@
+1 WIFE @I00016@
+1 MARR
+2 DATE EST 10 OCT 1693
+2 PLAC Ghaxaq,
+1 CHIL @I00008@
+0 @F00007@ FAM
+1 HUSB @I00014@
+1 WIFE @I00013@
 1 MARR
 2 DATE EST 14 JAN 1680
 2 PLAC P.Salvo, , , ,,
-1 CHIL @I00008@
-0 @F00007@ FAM
-1 HUSB @I00013@
-1 WIFE @I00012@
+1 CHIL @I00009@
+0 @F00008@ FAM
+1 HUSB @I00012@
+1 WIFE @I00017@
 1 MARR
 2 DATE 13 JUN 1683
 2 PLAC S.Paolo - Malte, , , ,,
-1 CHIL @I00009@
-0 @F00008@ FAM
+1 CHIL @I00010@
+0 @F00009@ FAM
 1 HUSB @I00019@
 1 WIFE @I00018@
 1 MARR
 2 DATE 22 APR 1686
 2 PLAC Zejtun - Malte, , , ,,
-1 CHIL @I00010@
-0 @F00009@ FAM
-1 HUSB @I00016@
-1 WIFE @I00017@
-1 MARR
-2 DATE EST 10 OCT 1693
-2 PLAC Ghaxaq,
 1 CHIL @I00011@
 0 @F00010@ FAM
-1 HUSB @I00021@
-1 WIFE @I00020@
-1 CHIL @I00012@
-0 @F00011@ FAM
-1 HUSB @I00025@
-1 WIFE @I00023@
+1 HUSB @I00023@
+1 WIFE @I00022@
 1 MARR
 2 DATE 6 NOV 1653
 2 PLAC P.Salvo,
+1 CHIL @I00012@
+0 @F00011@ FAM
+1 HUSB @I00021@
+1 WIFE @I00020@
 1 CHIL @I00013@
 0 @F00012@ FAM
-1 HUSB @I00024@
-1 WIFE @I00022@
-1 CHIL @I00014@
+1 HUSB @I00028@
+1 WIFE @I00027@
+1 CHIL @I00015@
 0 @F00013@ FAM
-1 HUSB @I00031@
-1 WIFE @I00029@
+1 HUSB @I00026@
+1 WIFE @I00025@
 1 CHIL @I00016@
 0 @F00014@ FAM
-1 HUSB @I00030@
-1 WIFE @I00028@
+1 HUSB @I00024@
+1 WIFE @I00029@
 1 CHIL @I00017@
 0 @F00015@ FAM
-1 HUSB @I00027@
-1 WIFE @I00026@
+1 HUSB @I00030@
+1 WIFE @I00031@
 1 CHIL @I00019@
 0 @F00016@ FAM
-1 HUSB @I00034@
-1 WIFE @I00033@
-1 CHIL @I00023@
-0 @F00017@ FAM
 1 HUSB @I00035@
+1 WIFE @I00033@
+1 CHIL @I00022@
+0 @F00017@ FAM
+1 HUSB @I00034@
 1 WIFE @I00032@
-1 CHIL @I00025@
+1 CHIL @I00023@
 0 TRLR

@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.6 le 27/08/2023 à 20:27 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.7 le 29/08/2023 à 01:50 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.6
+2 VERS 1.0.7
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 27 AUG 2023
-2 TIME 20:27:35
+1 DATE 29 AUG 2023
+2 TIME 01:50:07
 1 FILE gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged
 1 GEDC
 2 VERS 5.5.1
@@ -199,7 +199,10 @@
 1 DEAT
 2 DATE AFT 1675
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00013@
+1 SOUR @S00012@
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun
+1 TEXT - Décédée après 1675 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 0 @I00013@ INDI
 1 NAME Sibille /TAPIE/
 2 GIVN Sibille
@@ -211,14 +214,11 @@
 1 DEAT
 2 DATE BEF 1675
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00012@
-0 @S00012@ SOUR
+1 SOUR @S00013@
+0 @S00013@ SOUR
 1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie
 1 TEXT - Née le 8 octobre 1628 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @S00013@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun
-1 TEXT - Décédée après 1675 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 0 @I00014@ INDI
 1 NAME Peironne /MALOSSE/
 2 GIVN Peironne

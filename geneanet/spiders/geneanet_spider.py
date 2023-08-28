@@ -32,6 +32,7 @@ class GeneanetSpider(scrapy.Spider):
     nb_titres_noblesse = 0
     nb_notes_titres_noblesse = 0
     nb_sous_titres = 0
+    multiple_events_count = 0
     max_generations = 0
     nb_errors = 0
     nb_todo = 0
@@ -695,6 +696,11 @@ class GeneanetSpider(scrapy.Spider):
             self.nb_todo += 1
             texte_infos = texte_infos + f"@todo vérifier les événements pour {prenom} {nom} ({nb_err_events} erreur(s) détectée(s))\n"
         nb_errors_indiv += nb_err_events
+        # Pour debug / vérif exports précédents :
+        multiple_events_count = person.get_multiple_events_count()
+        if multiple_events_count > 0:
+            self.multiple_events_count += multiple_events_count
+            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : multiple_events_count={multiple_events_count}")
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
@@ -838,18 +844,19 @@ class GeneanetSpider(scrapy.Spider):
         self.gedcomw_parser.get_root_element().add_end_of_file()
 
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
-        spider.logger.info(f"- nb_persons         = {self.nb_persons}")
-        spider.logger.info(f"- nb_families        = {self.nb_families}")
+        spider.logger.info(f"- nb_persons            = {self.nb_persons}")
+        spider.logger.info(f"- nb_families           = {self.nb_families}")
         spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
-        spider.logger.info(f"- nb_consanguinites  = {self.nb_consanguinites}")
-        spider.logger.info(f"- max_generations    = {self.max_generations}")
-        spider.logger.info(f"- nb_titres_noblesse = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
-        spider.logger.info(f"- nb_sous_titres     = {self.nb_sous_titres}")
-        spider.logger.info(f"- nb_errors          = {self.nb_errors}")
-        spider.logger.info(f"- nb_todo            = {self.nb_todo}")
-        spider.logger.info(f"- nb_scanned_pages   = {self.nb_scanned_pages}")
-        spider.logger.info(f"- nb_saved_pages     = {self.nb_saved_pages}")
-        spider.logger.info(f"- nb_cached_pages    = {self.nb_cached_pages}")
+        spider.logger.info(f"- nb_consanguinites     = {self.nb_consanguinites}")
+        spider.logger.info(f"- max_generations       = {self.max_generations}")
+        spider.logger.info(f"- nb_titres_noblesse    = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
+        spider.logger.info(f"- nb_sous_titres        = {self.nb_sous_titres}")
+        spider.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
+        spider.logger.info(f"- nb_errors             = {self.nb_errors}")
+        spider.logger.info(f"- nb_todo               = {self.nb_todo}")
+        spider.logger.info(f"- nb_scanned_pages      = {self.nb_scanned_pages}")
+        spider.logger.info(f"- nb_saved_pages        = {self.nb_saved_pages}")
+        spider.logger.info(f"- nb_cached_pages       = {self.nb_cached_pages}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_todo} todo\n")

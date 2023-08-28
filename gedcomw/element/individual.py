@@ -100,8 +100,9 @@ class IndividualElement(Element):
         "Testament" : "WILL",
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
+    unique_events = [ "Baptême", "Décès", "Inhumation", "Naissance", "Retraite" ]
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
-    event_with_TYPE = [ "GRAD" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
+    event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
 
     def set_name(self, givenname, surname): # NRa
         # givenname = prénom = GEDCOM_TAG_GIVEN_NAME = "GIVN"
@@ -125,15 +126,38 @@ class IndividualElement(Element):
         element = Element( self.get_level()+1, pointer, gedcomw.tags.GEDCOM_TAG_SEX, sex, '\n', multi_line=False)
         self.add_child_element(element)
 
+    def get_event(self, name): # NRa
+        for e in self.list_of_events:
+            if e._name == name:
+                return e
+        return None
+    def get_multiple_events_count(self): # NRa
+        nb = 0
+        count = {}
+        for event in self.list_of_events:
+            if event._name in count:
+                count[event._name] += 1
+            else:
+                count[event._name] = 1
+        for name in count:
+            nb += count[name]-1
+        return nb
+
     def set_event(self, name, date=None, place=None, notes=None, source=None): # NRa
-        self.logger.debug(f"set_event : name='{name}', date='{date}', place='{place}', notes='{notes}', source='{source}'")
-        if name not in self.list_of_events:
-            self.logger.debug(f"set_event : nouvelle clé name='{name}'")
-            #event = Event(name, date, place, notes, source)
-            self.list_of_events[name]=Event(name=name, date=date, place=place, notes=notes, source=source)
+        is_unique = name in self.unique_events
+        self.logger.debug(f"set_event : name='{name}' (is_unique={is_unique}), date='{date}', place='{place}', notes='{notes}', source='{source}'")
+        if is_unique:
+            e = self.get_event(name)
+            if e:
+                self.logger.debug(f"set_event : mise à jour événement unique '{name}'")
+                e.update( date=date, place=place, notes=notes, source=source)
+            else:
+                self.logger.debug(f"set_event : ajout événement unique '{name}'")
+                self.list_of_events.append(Event(name=name, date=date, place=place, notes=notes, source=source))
         else:
-            self.logger.debug(f"set_event : maj clé existante name='{name}'")
-            self.list_of_events[name].update( date=date, place=place, notes=notes, source=source)
+            self.logger.debug(f"set_event : ajout événement multiple '{name}'")
+            self.nb_multiple_events += 1
+            self.list_of_events.append(Event(name=name, date=date, place=place, notes=notes, source=source))
 
     def manage_events(self, root_element, csv_log=None, url=''): # NRa
         """ Gère les événements d'un individu.
@@ -143,7 +167,7 @@ class IndividualElement(Element):
         """
         nb_errors = 0
 
-        for key, event in self.list_of_events.items():
+        for event in self.list_of_events:
             #self.logger.info(f"event : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
             self.logger.info(f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : name='{event._name}', date='{event._date}', place='{event._place}', notes='{event._notes}', source='{event._source}'")
             tag = "?"

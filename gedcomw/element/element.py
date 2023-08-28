@@ -93,7 +93,8 @@ class Element(object):
         self.__crlf = crlf
         self.__nbSources = 0 # NRa : utile pour root_element seulement a priori
         self.__nbNotes = 0 # NRa : utile pour root_element seulement a priori
-        self.list_of_events = {}  # NRa : dictionnaire des événements, utile pour IndividualElement seulement
+        self.list_of_events = []  # NRa : liste des événements, utile pour IndividualElement seulement
+        self.nb_multiple_events = 0 # NRa : pour stats/debug : nombre d'événemnts multiples
 
         # structuring
         self.__children = []
