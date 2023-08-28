@@ -176,7 +176,7 @@ class IndividualElement(Element):
                     # notes = lignes_notes[1:]
                     #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
                     notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
-            if (tag == "DEAT") and ((event._date is None) or (event._date is "")): # cas des morts sans date
+            if (tag == "DEAT") and ((event._date is None) or (event._date is "")) and ((event._place is None) or (event._place is "")): # cas des morts sans date ni lieu
                 tag_value = "Y"
             element_event = Element(self.get_level() + 1, '', tag, tag_value, '\n', multi_line=False)
             self.add_child_element(element_event)
