@@ -96,6 +96,7 @@ class IndividualElement(Element):
         #"Personne" : "Personne???", # Uniquement source sur la personne (géré au niveau du parsing individu)
         "Profession" : "OCCU",
         "Retraite" : "RETI",
+        "Résidence" : "RESI",
         "Testament" : "WILL",
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
