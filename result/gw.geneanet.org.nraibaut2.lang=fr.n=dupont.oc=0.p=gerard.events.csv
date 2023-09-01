@@ -1,4 +1,4 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.7 29/08/2023 à 01:49
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.8 01/09/2023 à 18:26
 @I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Naissance;BIRT;22 mars 1882;22 MAR 1882;"Paris, France";"Note1 sur la naissance
 Note2 sur la naissance";"";"https://www.source_naissance.fr/";"Texte1 source naissance
 Texte2 source naissance";
@@ -28,16 +28,16 @@ Texte2 source naissance";
 Note2 sur le décès";"";"https://www.source_deces.fr/";"Texte1 source décès
 Texte2 source décès";
 @I00004@;Jeanne;INN;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;Naissance;BIRT;;;"";"None";"";"";"";
-@I00005@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Naissance;BIRT;1580 julien;1580 JULIEN;"";"";"";"";"";
-@I00005@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Décès;DEAT;;;"";"None";"Y";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;"";"Date environ";"";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST 23 FEB 1803;"";"Date estimée";"";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;"";"Date calculée";"";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;;;"";"";"Laboureur, Eleveur, Tailleur de pierres";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;avant 1er janvier 1834;BEF 1 JAN 1834;"";"laps de temps avant";"Eleveur";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;entre 1er janvier 1835 et 31 décembre 1837;BET 1 JAN 1835 AND 31 DEC 1837;"";"laps de temps entre";"Laboureur";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;après 1er janvier 1837;AFT 1 JAN 1837;"";"Laps de temps après";"Tailleur de pierres";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;avant 1er janvier 1849;BEF 1 JAN 1849;"";"Période jusqu'au";"Rouen";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;entre 1er janvier 1850 et 1er janvier 1851;BET 1 JAN 1850 AND 1 JAN 1851;"";"Période du au";"Lyon";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;après 1er janvier 1852;AFT 1 JAN 1852;"";"Période du";"Paris";"";"";
-@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Retraite;RETI;vers 1872;ABT 1872;"";"Date interprêtée";"";"";"";
+@I00006@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Naissance;BIRT;1580 julien;1580 JULIEN;"";"";"";"";"";
+@I00006@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Décès;DEAT;;;"";"None";"Y";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;"";"Date environ";"";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST 23 FEB 1803;"";"Date estimée";"";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;"";"Date calculée";"";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;;;"";"";"Laboureur, Eleveur, Tailleur de pierres";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;avant 1er janvier 1834;BEF 1 JAN 1834;"";"laps de temps avant";"Eleveur";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;entre 1er janvier 1835 et 31 décembre 1837;BET 1 JAN 1835 AND 31 DEC 1837;"";"laps de temps entre";"Laboureur";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;après 1er janvier 1837;AFT 1 JAN 1837;"";"Laps de temps après";"Tailleur de pierres";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;avant 1er janvier 1849;BEF 1 JAN 1849;"";"Période jusqu'au";"Rouen";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;entre 1er janvier 1850 et 1er janvier 1851;BET 1 JAN 1850 AND 1 JAN 1851;"";"Période du au";"Lyon";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;après 1er janvier 1852;AFT 1 JAN 1852;"";"Période du";"Paris";"";"";
+@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Retraite;RETI;vers 1872;ABT 1872;"";"Date interprêtée";"";"";"";

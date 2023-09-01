@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.7 le 29/08/2023 à 01:49 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.8 le 01/09/2023 à 18:26 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.7
+2 VERS 1.0.8
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 29 AUG 2023
-2 TIME 01:49:47
+1 DATE 01 SEP 2023
+2 TIME 18:26:15
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -127,41 +127,41 @@
 1 BIRT
 2 DATE 1 SEP 1850
 2 NOTE @N00012@
-2 SOUR @S00009@
+2 SOUR @S00010@
 1 DEAT
 2 DATE 1 APR 1895
 2 NOTE @N00013@
-2 SOUR @S00010@
-1 SOUR @S00011@
+2 SOUR @S00011@
+1 SOUR @S00012@
 0 @I00003@ INDI
 1 NAME Marie Paule /DURAND/
 2 GIVN Marie Paule
 2 SURN DURAND
 1 SEX F
 1 NOTE @N00011@
-1 SOUR @S00012@
+1 SOUR @S00009@
 0 @N00011@ NOTE (Marie, Paule DURAND)
+0 @S00009@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
+1 TEXT @todo note 'Union avec Pierre DUPONT' de Marie Paule DURAND à analyser : 'Note1 sur le mariage
+2 CONT Note2 sur le mariage'
 0 @N00012@ NOTE Note1 sur la naissance
 1 CONT Note2 sur la naissance
-0 @S00009@ SOUR
+0 @S00010@ SOUR
 1 TITL https://www.source_naissance.fr/
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
 0 @N00013@ NOTE Note1 sur le décès
 1 CONT Note2 sur le décès
-0 @S00010@ SOUR
+0 @S00011@ SOUR
 1 TITL https://www.source_deces.fr/
 1 TEXT Texte1 source décès
 2 CONT Texte2 source décès
-0 @S00011@ SOUR
+0 @S00012@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
 1 TEXT - Né le 1er septembre 1850
 2 CONT - Décédé le 1er avril 1895, à l'âge de 44 ans
 2 CONT @todo note 'Union avec Marie Paule DURAND' de Pierre DUPONT à analyser : 'Note1 sur le mariage
-2 CONT Note2 sur le mariage'
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
-1 TEXT @todo note 'Union avec Pierre DUPONT' de Marie Paule DURAND à analyser : 'Note1 sur le mariage
 2 CONT Note2 sur le mariage'
 0 @I00004@ INDI
 1 NAME Jeanne /INN/
@@ -176,6 +176,15 @@
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
 1 TEXT @todo vérifier prise en compte événement 'Contrat de mariage (avec Jean DATES)' pour Jeanne INN
 0 @I00005@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00014@
+0 @S00014@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&i=6
+1 TEXT
+0 @I00006@ INDI
 1 NAME Jacques /DURAND/
 2 GIVN Jacques
 2 SURN DURAND
@@ -184,13 +193,13 @@
 2 DATE 1580 JULIEN
 2 NOTE @N00015@
 1 DEAT Y
-1 SOUR @S00014@
+1 SOUR @S00015@
 0 @N00015@ NOTE
-0 @S00014@ SOUR
+0 @S00015@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand
 1 TEXT - Né en 1580 julien
 2 CONT - Décédé
-0 @I00006@ INDI
+0 @I00007@ INDI
 1 NAME Jean /DATES/
 2 GIVN Jean
 2 SURN DATES
@@ -231,7 +240,7 @@
 1 RETI
 2 DATE ABT 1872
 2 NOTE @N00027@
-1 SOUR @S00015@
+1 SOUR @S00016@
 0 @N00016@ NOTE Retraite:
 0 @N00017@ NOTE Date environ
 0 @N00018@ NOTE Date estimée
@@ -244,22 +253,13 @@
 0 @N00025@ NOTE Période du au
 0 @N00026@ NOTE Période du
 0 @N00027@ NOTE Date interprêtée
-0 @S00015@ SOUR
+0 @S00016@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
 1 TEXT - Né vers juillet 1802
 2 CONT - Baptisé peut-être le 23 février 1803
 2 CONT - Décédé vers 1er juin 1885, à l'âge d'environ 82 ans
 2 CONT - Laboureur, Eleveur, Tailleur de pierres
 2 CONT @todo vérifier prise en compte événement 'Contrat de mariage (avec Jeanne INN)' pour Jean DATES
-0 @I00007@ INDI
-1 NAME ? /?/
-2 GIVN ?
-2 SURN ?
-1 SEX F
-1 SOUR @S00016@
-0 @S00016@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&i=6
-1 TEXT
 0 @S00017@ SOUR
 1 TITL
 1 TEXT <https://www.source_mariage.fr/>
@@ -274,13 +274,13 @@
 2 SOUR @S00017@
 1 CHIL @I00001@
 0 @F00002@ FAM
-1 HUSB @I00006@
+1 HUSB @I00007@
 1 WIFE @I00004@
 1 MARR
 2 DATE 1 MAR 1833
 1 CHIL @I00002@
 0 @F00003@ FAM
-1 HUSB @I00005@
-1 WIFE @I00007@
+1 HUSB @I00006@
+1 WIFE @I00005@
 1 CHIL @I00003@
 0 TRLR

@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.7"
+    version = "1.0.8"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -222,6 +222,7 @@ class GeneanetSpider(scrapy.Spider):
         url_to_scan = self.get_url_to_scan(true_url)
         self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
 
+        # @todo supprimer child_pointer
         yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':'', 'true_http_url':true_url} )
 
     def parse(self, response):
@@ -642,7 +643,8 @@ class GeneanetSpider(scrapy.Spider):
             if match_union:
                 debut = match_union.groups(0)[0].strip()
                 nom_conjoint = match_union.groups(0)[1]
-                url_conjoint = match_union.groups(0)[2]
+                #url_conjoint = match_union.groups(0)[2] # NON ! Ko si présence lien sosa
+                url_conjoint = union.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte qui contient la balise img
                 url_conjoint = response.urljoin(url_conjoint)
                 url_conjoint = self.url_to_true_http_url(true_http_url, url_conjoint)
 

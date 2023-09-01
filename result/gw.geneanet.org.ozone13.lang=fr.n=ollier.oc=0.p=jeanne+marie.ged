@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.7 le 29/08/2023 à 01:50 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.8 le 01/09/2023 à 18:26 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.7
+2 VERS 1.0.8
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 29 AUG 2023
-2 TIME 01:50:07
+1 DATE 01 SEP 2023
+2 TIME 18:26:35
 1 FILE gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged
 1 GEDC
 2 VERS 5.5.1
@@ -170,7 +170,11 @@
 1 DEAT
 2 DATE 1673
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00011@
+1 SOUR @S00010@
+0 @S00010@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6
+1 TEXT - Né en 1594
+2 CONT - Décédé en 1673 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France, à l'âge de 79 ans
 0 @I00011@ INDI
 1 NAME Pierre /MUS/
 2 GIVN Pierre
@@ -182,15 +186,11 @@
 1 DEAT
 2 DATE BEF 1675
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00010@
-0 @S00010@ SOUR
+1 SOUR @S00011@
+0 @S00011@ SOUR
 1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus
 1 TEXT - Né en 1622 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédé avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @S00011@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6
-1 TEXT - Né en 1594
-2 CONT - Décédé en 1673 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France, à l'âge de 79 ans
 0 @I00012@ INDI
 1 NAME Lucresse /BRUN/
 2 GIVN Lucresse
@@ -256,7 +256,13 @@
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 1 OCCU Cardeur en laine
 2 NOTE @N00001@
-1 SOUR @S00017@
+1 SOUR @S00016@
+0 @N00001@ NOTE
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2
+1 TEXT - Né le 11 janvier 1634 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédé le 29 août 1709 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 75 ans
+2 CONT - Cardeur en laine
 0 @I00017@ INDI
 1 NAME Jeanne /RAOUX/
 2 GIVN Jeanne
@@ -268,17 +274,11 @@
 1 DEAT
 2 DATE 10 JUL 1711
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00016@
-0 @S00016@ SOUR
+1 SOUR @S00017@
+0 @S00017@ SOUR
 1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1
 1 TEXT - Née vers 1621 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 10 juillet 1711 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 90 ans
-0 @N00001@ NOTE
-0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2
-1 TEXT - Né le 11 janvier 1634 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédé le 29 août 1709 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 75 ans
-2 CONT - Cardeur en laine
 0 @I00018@ INDI
 1 NAME Honorade /BLANC/
 2 GIVN Honorade
@@ -483,5 +483,7 @@
 0 @F00013@ FAM
 1 HUSB @I00027@
 1 WIFE @I00026@
+1 MARR
+2 DATE BEF 1575
 1 CHIL @I00025@
 0 TRLR
