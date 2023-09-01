@@ -515,14 +515,20 @@ class GeneanetSpider(scrapy.Spider):
                 self.mariages_sources[true_http_url] = source_mariage
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
             else:
-                # Cas particulier : on peur avoir en fait plusieurs événements concernés :
+                # Cas particulier : on peut avoir en fait plusieurs événements concernés :
                 # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13"
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
                 ev = event_name.split(",")
                 for e in ev:
                     e = e.strip().capitalize()
-                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name3='{e}' event_sources2='{event_sources}'")
-                    person.set_event(name=e, source=event_sources)
+                    if e == "Union" :
+                        # pas très joli : je fais comme quelques lignes plus haut pour le cas des unions :
+                        source_mariage = event_sources
+                        self.mariages_sources[true_http_url] = source_mariage
+                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
+                    else:
+                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name3='{e}' event_sources2='{event_sources}'")
+                        person.set_event(name=e, source=event_sources)
 
         nb_notes = 0
         # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
