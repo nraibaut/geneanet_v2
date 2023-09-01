@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.8"
+    version = "1.0.9"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -222,8 +222,7 @@ class GeneanetSpider(scrapy.Spider):
         url_to_scan = self.get_url_to_scan(true_url)
         self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
 
-        # @todo supprimer child_pointer
-        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'child_pointer':'', 'true_http_url':true_url} )
+        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'true_http_url':true_url} )
 
     def parse(self, response):
         url_source = response.request.url
@@ -256,7 +255,6 @@ class GeneanetSpider(scrapy.Spider):
         if generation > self.max_generations :
             self.max_generations = generation
         sosa = response.meta['sosa']
-        child_pointer = response.meta['child_pointer']
         self.nb_persons += 1
         pointer = "@I%05d@" % (self.nb_persons)
         self.pointer_of[true_http_url] = pointer # on mémorise pour plus tard (élaboration des familles)
@@ -560,7 +558,7 @@ class GeneanetSpider(scrapy.Spider):
             parents_url[nb_parents]=true_url_parent
 
             self.set_parent_of( true_http_url, true_url_parent)
-            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
+            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent})
 
         # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->")
         # Parents forme 2b ("<!-- Parents evolue -->") : il ne faut pas prendre le premier lien hypertexte (qui contient la balise img)
@@ -608,7 +606,7 @@ class GeneanetSpider(scrapy.Spider):
                             self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
                 self.set_parent_of( true_http_url, true_url_parent)
-                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'child_pointer':pointer,'true_http_url':true_url_parent})
+                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent})
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
             if mariage_date:
