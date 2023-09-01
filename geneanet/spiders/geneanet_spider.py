@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.9"
+    version = "1.0.10"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -70,6 +70,7 @@ class GeneanetSpider(scrapy.Spider):
         "Union(s)",
         "Union(s), enfant(s)",
         "Événements",
+        "Présences lors d'événements"
     ]
 
     # Configuration fichier de sortie log :
@@ -253,6 +254,11 @@ class GeneanetSpider(scrapy.Spider):
         else:
             self.nb_cached_pages += 1
             true_http_url = response.meta['true_http_url']
+
+        if true_http_url == "https://www.geneanet.org/bots/firewall":
+            self.nb_errors += 1
+            self.logger.error(f"Blocage robot : url='{true_http_url}' --> utiliser un VPN !")
+            return # ne pas aller plus loin dans le parsing de la page !
 
         generation = response.meta['generation'] + 1
         if generation > self.max_generations :
@@ -509,7 +515,7 @@ class GeneanetSpider(scrapy.Spider):
                 source_personne = event_sources
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
             elif event_name == "Union" :
-                # Cette source concerne concerne le mariage de la personne (autre événement de type mariage) :
+                # Cette source concerne le mariage de la personne (autre événement de type mariage) :
                 # --> on mémorise pour le restaurer lors de la génération des familles :
                 source_mariage = event_sources
                 self.mariages_sources[true_http_url] = source_mariage
@@ -799,7 +805,12 @@ class GeneanetSpider(scrapy.Spider):
             true_url_mere = None
             for parent_url in item[1]:
                 #print(f"child {child} : parent {parent}")
-                sexe = self.sex_of[parent_url][0]
+                try:
+                    sexe = self.sex_of[parent_url][0]
+                except KeyError:
+                    # robustesse si on n'a pas parcouru toutes les pages (cas blocage robot)
+                    sexe = "?"
+                    pass
                 if sexe == "M" and ((true_url_pere == None) or (true_url_pere == parent_url)) :
                     true_url_pere = parent_url
                 elif sexe == "F" and ((true_url_mere == None) or (true_url_mere == parent_url)) :
