@@ -228,6 +228,9 @@ class GeneanetSpider(scrapy.Spider):
         url_source = response.request.url
         # soit une "vraie" url (https://...) soit un fichier (file://...)
 
+        nb_infos = 0
+        texte_infos = ""
+
         is_http_url = GeneanetSpider.is_http_url.match(url_source)
 
         if is_http_url :
@@ -265,15 +268,45 @@ class GeneanetSpider(scrapy.Spider):
         #nom = response.xpath("//div[@id='person-title']//div//h1//a//text()")[1].extract()
         #prenom = response.xpath("//div[@id='person-title']//div//h1//a[1]//text()")[0].extract()
         #nom = response.xpath("//div[@id='person-title']//div//h1//a[2]//text()")[0].extract()
-        prenom = response.xpath("//div[@id='person-title']//div//h1//a[1]//text()").get()
-        nom = response.xpath("//div[@id='person-title']//div//h1//a[2]//text()").get()
-        sexe = response.xpath("//div[@id='person-title']//img//@title").get() # "H/F" en français, "M/F" en anglais
+        prenom = response.xpath("//div[@id='person-title']/div/h1/a[1]/text()").get()
+        nom = response.xpath("//div[@id='person-title']/div/h1/a[2]/text()").get()
+        extraire_surnom = False # cas avec surnom en tête, et liens nom/prénom plus loin
+        surnom = None
+        if prenom is None:
+            prenom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=P&')]/text()").get() # lien hypetexte contenant "&m=P&" (recherche par prénom)
+            extraire_surnom = True
+        if nom is None:
+            nom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=N&')]/text()").get() # lien hypetexte contenant "&m=N&" (recherche par nom)
+            extraire_surnom = True
+        if prenom is None :
+            nb_errors_indiv += 1
+            self.logger.error(f"Pas pu extraire le prénom pour {true_http_url} !")
+            prenom = "???"
+        if nom is None:
+            nb_errors_indiv += 1
+            self.logger.error(f"Pas pu extraire le nom pour {true_http_url} !")
+            nom = "???"
+        if extraire_surnom:
+            surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
+            # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
+            surnom = surnom.replace(u"\u00A0", " ")  # avant toute chose !
+            surnom = re.sub(".*\.png\) *", "", surnom) # suppression image de début
+            surnom = re.sub("_", "", surnom) # suppression caractères de formatage
+            surnom = surnom.strip()
+
+            texte_infos = texte_infos + "- surnom: " + surnom + '\n'
+            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : surnom='{surnom}'")
+
+
+        sexe = response.xpath("//div[@id='person-title']/div/h1/img/@title").get() # "H/F" en français, "M/F" en anglais
         if sexe == "H" :
             sexe = "M"
         if sexe not in ("M", "F") :
             nb_errors_indiv += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
         self.sex_of[true_http_url] = [sexe]
+
+
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
         #pause = 0
         #if generation >= 3 :
@@ -290,8 +323,6 @@ class GeneanetSpider(scrapy.Spider):
         person.set_sex(sexe)
         self.gedcomw_parser.get_root_element().add_child_element(person)
 
-        nb_infos = 0
-        texte_infos = ""
         profession = None
         #for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li"):
