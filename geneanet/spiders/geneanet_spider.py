@@ -549,6 +549,10 @@ class GeneanetSpider(scrapy.Spider):
             note_type = note.xpath("text()").get().strip()
             #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
             note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
+            if note_text == "":
+                following_text = note.xpath("following-sibling::text()[1]") # des cas où le texte est juste après
+                if following_text :
+                    note_text = following_text.get().strip()
             # Cas Notes individuelles :
             if note_text == "":
                 #note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip() # plantage sur jeu de tests
@@ -556,8 +560,11 @@ class GeneanetSpider(scrapy.Spider):
                 if note_indiv:
                     note_text = html2text.html2text(note_indiv).strip()
             note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
-            #note_text = "?"
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} : note_type='{note_type}' note_text='{note_text}'")
+            if note_text == "":
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') vide ! Vérifier le code...")
+            else :
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
             if note_type == "Notes individuelles":
                 person.add_note(self.gedcomw_parser.get_root_element(), note_text)
             elif (note_type == "Naissance") or (note_type == "Décès"):
@@ -582,9 +589,17 @@ class GeneanetSpider(scrapy.Spider):
             nb_notes += 1
             note_text = html2text.html2text(note.get()).strip()
             note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
-            self.nb_todo += 1
-            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
-            texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
+            if note_text == "":
+                # des cas où le text est dans la balise <p> suivante :
+                note_text = note.xpath("following-sibling::p/text()").get().strip()
+                note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+            if note_text == "":
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union vide ! Vérifier le code...")
+            else:
+                self.nb_todo += 1
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
+                texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
