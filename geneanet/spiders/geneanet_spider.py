@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.10"
+    version = "1.0.11"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -287,11 +287,11 @@ class GeneanetSpider(scrapy.Spider):
         if prenom is None :
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le prénom pour {true_http_url} !")
-            prenom = "???"
+            prenom = "????"
         if nom is None:
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le nom pour {true_http_url} !")
-            nom = "???"
+            nom = "????"
         if extraire_surnom:
             surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
             # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
@@ -591,7 +591,7 @@ class GeneanetSpider(scrapy.Spider):
         parents_url= {}
         for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
             nb_parents += 1
-            url_parent = parent.xpath("a/@href").get()
+            url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
             url_parent = response.urljoin(url_parent)
             presence_parents = "forme1" # forme 1
 
@@ -608,7 +608,7 @@ class GeneanetSpider(scrapy.Spider):
         if nb_parents == 0 :
             for parent in response.xpath("//h2[span='Parents']/following-sibling::ul[1]/li"):
                 nb_parents += 1
-                url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte qui contient la balise img
+                url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_parent = response.urljoin(url_parent)
                 presence_parents = "forme2"  # forme 2
 
@@ -685,7 +685,7 @@ class GeneanetSpider(scrapy.Spider):
                 debut = match_union.groups(0)[0].strip()
                 nom_conjoint = match_union.groups(0)[1]
                 #url_conjoint = match_union.groups(0)[2] # NON ! Ko si présence lien sosa
-                url_conjoint = union.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte qui contient la balise img
+                url_conjoint = union.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_conjoint = response.urljoin(url_conjoint)
                 url_conjoint = self.url_to_true_http_url(true_http_url, url_conjoint)
 
