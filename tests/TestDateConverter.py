@@ -265,6 +265,16 @@ liste = (
     "15 août 1640",
     "le 10 février 1674 (samedi)",
     "le 12 thermidor an X  (31 juillet 1802) (samedi)",
+
+    "16 mai 1577 julien",
+    "avant 8 septembre 1521 julien",
+    "après 22 octobre 1527 julien",
+    "entre 7 février 1559 et 10 juin 1561 julien",
+    "entre 7 février 1559 et 10 juin 1561 (1558/9) julien",
+    "2 mars 1518 (1517/8) julien",
+    "(@#DJULIAN@ CAL 1571)",
+    "@#DJULIAN@ CAL 1571",
+    "CAL @#DJULIAN@ 1571",
 )
 
 for text in liste:

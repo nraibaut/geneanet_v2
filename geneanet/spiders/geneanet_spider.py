@@ -410,7 +410,7 @@ class GeneanetSpider(scrapy.Spider):
                 #texte = info.xpath("text()").get()
                 texte = info.get()
                 texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-                texte = texte.replace(f"\n", " ")
+                texte = texte.replace("\n", " ")
                 texte = texte.strip()
                 # le texte est de la forme : "<em> <a href="xxxxx">Titre de noblesse</a>(commentaire)</em>'
                 texte = re.sub(".*</a> *", "", texte) # on enlève tout avant "</a>"
@@ -479,6 +479,8 @@ class GeneanetSpider(scrapy.Spider):
             if not lines is None:
                 event_date = html2text.html2text(lines).strip()
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
+                event_date = event_date.replace("\n", " ")  # certaines dates ont des retours chariot (avec "julien")
+                event_date = re.sub("  *", " ", event_date) # suppression espaces multiples
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
             if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
@@ -622,11 +624,11 @@ class GeneanetSpider(scrapy.Spider):
                     lignes = parent.extract()
                     lignes = html2text.html2text(lignes).strip()
                     lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-                    lignes = lignes.replace(f"\n", " ") # sinon le match ne matche pas !!!!
-                    lignes = lignes.replace(f"_", "")  # caractère de formatage introduit par html2text
+                    lignes = lignes.replace("\n", " ") # sinon le match ne matche pas !!!!
+                    lignes = lignes.replace("_", "")  # caractère de formatage introduit par html2text
                     info_debug_csv = lignes
-                    lignes = lignes.replace(f"Contrat de mariage", "Marié") # on peut avoir "Contrat de mariage" au lieu de "Marié"
-                    lignes = lignes.replace(f"Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
+                    lignes = lignes.replace("Contrat de mariage", "Marié") # on peut avoir "Contrat de mariage" au lieu de "Marié"
+                    lignes = lignes.replace("Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
                         #self.log( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
@@ -692,9 +694,9 @@ class GeneanetSpider(scrapy.Spider):
                 # La plupart du temps, on a forme "Marié ..." / "Mariée ...", sauf parfois :
                 # "Relation" ou "Contrat de mariage"
                 info = re.sub(".*Mariée* *", "", debut)  # suppression avant "Marié"
-                info = info.replace(f"* Contrat de mariage", "")
-                info = info.replace(f"* Relation", "")
-                info = info.replace(f"_", "")  # caractère de formatage introduit par html2text
+                info = info.replace("* Contrat de mariage", "")
+                info = info.replace("* Relation", "")
+                info = info.replace("_", "")  # caractère de formatage introduit par html2text
                 info = re.sub("^\** *", "", info)
 
                 mariage_date = re.sub(",.*$", "", info)
@@ -762,7 +764,7 @@ class GeneanetSpider(scrapy.Spider):
         for info in response.xpath("//h2[span/@class]/span[2]"):
             titre = info.xpath("text()").get();
             titre = titre.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-            titre = titre.replace(f"\n", " ")
+            titre = titre.replace("\n", " ")
             titre = re.sub( "  *", " ", titre)
             titre = titre.strip()
             self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")

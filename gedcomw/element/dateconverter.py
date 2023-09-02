@@ -21,9 +21,10 @@ import re
 class DateConverter(object):
     # regexp calendrier républicain :
     # Certaines dates sont de la forme :
-    # "le 12 thermidor an X  (31 juillet 1802)"
-    # "le 20 floréal an VIII  (10 mai 1800)"
+    # "le 12 thermidor an X  (31 juillet 1802)"
+    # "le 20 floréal an VIII  (10 mai 1800)"
     # On va chercher à extraire la partie entre parenthèses
+    # Attention : on a aussi des dates de la forme "2 mars 1518 (1517/8) julien"
     repcal = re.compile("(.*) *\((.*)\).*")
     interval = re.compile("entre (.*) et (.*)")
     months = {
@@ -50,8 +51,15 @@ class DateConverter(object):
         "avant"     : "BEF",
         "après"     : "AFT",
         "peut-être" : "EST",
+
+        "cal": "CAL", # j'ai des cas de dates déjà préfixées avec qualificatif gedcom (ex "CAL") --> on le répète
+        "abt": "ABT",
+        "bef": "BEF",
+        "aft": "AFT",
+        "est": "EST",
+        "int": "INT",
     }
-    def __init__(self, text):
+    def __init__(self, text, forceJulian=False):
         """Initialize Event
         :type text: str
         """
@@ -59,6 +67,7 @@ class DateConverter(object):
         self._qualificatif = "" # dans Geneanet
         self._prefix = ""
         self._republican_date = None
+        self._julien = False
         text2 = text
         #for c in text2:
         #    print("c='" + c + "' ", ord(c))
@@ -67,8 +76,22 @@ class DateConverter(object):
         # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
         text2 = text2.replace(u"\u00A0", " ") # avant toute chose !
 
+        text2 = text2.lower() # robustesse sur les mois / comparaisons de chaînes
+
+        # Est-ce une date du calendrier Julien ?
+        text3 = text2
+        text3 = text3.replace("@#djulian@", " ") # @#DJULIAN@
+        text3 = text3.replace("julien", " ")
+        text3 = text3.replace("julian", " ")
+        if text3 is not text2 :
+            self._julien = True
+            text2 = text3
+        if forceJulian:
+            self._julien = True
+
+        #text2 = re.sub("^[\( ]*", "", text2)  # suppression espaces / éventuelle parenthèse de début
+        #text2 = re.sub("[\) ]*$", "", text2)  # suppression espaces / éventuelle parenthèse de fin
         text2 = text2.strip()
-        text2 = text2.lower() # robustesse sur les mois
 
         isinterval = DateConverter.interval.match(text2)
         if isinterval:
@@ -76,8 +99,8 @@ class DateConverter(object):
             # ==> on extrait les 2 dates et on génère le format GEDCOM "BET ... AND ..."
             date1 = isinterval.groups(0)[0]
             date2 = isinterval.groups(0)[1]
-            conv1 = DateConverter(date1)
-            conv2 = DateConverter(date2)
+            conv1 = DateConverter(date1, self._julien) # forcer l'éventuel type julien auw 2 dates de l'intervalle
+            conv2 = DateConverter(date2, self._julien)
             self._qualificatif = "entre"
             text2 = "BET " + conv1.to_gedcom_string() + " AND " + conv2.to_gedcom_string()
             self._text2 = text2.strip()
@@ -103,15 +126,16 @@ class DateConverter(object):
                 # On enlève le "le " ou "en " qui peut être après le qualificatif ("avant", "après", "vers", "peut-être") :
                 text2 = re.sub("^le ", "", text2, 1)
                 text2 = re.sub("^en ", "", text2, 1)
-                # On remet le prefixe (gedcom)
-                text2 = prefix + " " + text2
+                # On remettra le prefixe (gedcom) plus tard
+                self._prefix = prefix
             except KeyError:
                 pass
 
-            isrepublicain = DateConverter.repcal.match(text2)
-            if isrepublicain:
-                self._republican_date = isrepublicain.groups(0)[0].strip()
-                text2 = isrepublicain.groups(0)[1]
+            if not self._julien :
+                isrepublicain = DateConverter.repcal.match(text2)
+                if isrepublicain:
+                    self._republican_date = isrepublicain.groups(0)[0].strip()
+                    text2 = isrepublicain.groups(0)[1]
 
             text2 = re.sub("1er ", "1 ", text2, 1)
 
@@ -120,6 +144,12 @@ class DateConverter(object):
                 # print(f"{mois1} --> {mois2}")
                 text2 = text2.replace(mois1, mois2, 1)
 
+            if self._julien :
+                text2 = "@#DJULIAN@ "+ text2
+            if self._prefix :
+                text2 = self._prefix + " "+ text2
+
+            text2 = re.sub("  *", " ", text2)  # suppression espaces multiples
             text2 = text2.upper()  # norme = majuscules
 
             self._text2 = text2.strip()
@@ -133,6 +163,8 @@ class DateConverter(object):
             result += " (" + self._qualificatif + ")"
         if self._republican_date:
             result += " (" + self._republican_date + ")"
+        if self._julien:
+            result += " (julien)"
         return result
 
     def to_gedcom_string(self):

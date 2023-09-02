@@ -98,9 +98,11 @@ class IndividualElement(Element):
         "Retraite" : "RETI",
         "Résidence" : "RESI",
         "Testament" : "WILL",
+        "Evenement" : "EVEN"
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
     unique_events = [ "Baptême", "Décès", "Inhumation", "Naissance", "Retraite" ]
+    geneanet_events = [ "Arrentement", "Bail", "Vente", "Quittance", "Reconnaissance", "Reconnaissance féodale" ] # événements ne figurant ni dans la norme ni dans Ancestris
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
 
@@ -173,18 +175,28 @@ class IndividualElement(Element):
             tag = "?"
             tag_value = ""
             type_value = ""
+            evenement_geneanet = False
             try:
                 tag = IndividualElement.event_dict[event._name]  # ok, ou exception "KeyError"
             except:
                 #tag = event._name + "???"
-                tag = "EVEN" # on génère un événement gedcom valide, avec une valeur @todo
-                info = f"@todo événement '{event._name}' inconnu pour {self.__givenname} {self.__surname}. Vérifier la source."
-                if event._source is not None:
-                    event._source += "\n" + info
+                tag = "EVEN" # on génère un événement gedcom valide, avec une valeur @todo s'il n'est pas dans la liste "connue" geneanet_events
+                if event._name in self.geneanet_events :
+                    evenement_geneanet = True # force la remontée en élément TYPE,
+                    #info = "Evénement de type '" + event._name + "'"
+                    info = event._name # sera remonté en élément TYPE, et affiché tel quel par Ancestris
+                    if event._notes is not None:
+                        event._notes = info + "\n" + event._notes
+                    else:
+                        event._notes = info
                 else:
-                    event._source = info
-                nb_errors += 1
-                self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
+                    info = f"@todo événement '{event._name}' inconnu pour {self.__givenname} {self.__surname}. Vérifier la source."
+                    if event._source is not None:
+                        event._source += "\n" + info
+                    else:
+                        event._source = info
+                    nb_errors += 1
+                    self.logger.error( f"manage_events : {self.get_pointer()} '{self.__givenname}' '{self.__surname}' : unknown event name : '{event._name}'")
                 pass
             notes = event._notes
             if tag in IndividualElement.event_with_value : # cas événements de type OCCU (profession) : on remonte la première ligne de la note sur le tag OCCU
@@ -194,7 +206,7 @@ class IndividualElement(Element):
                     # notes = lignes_notes[1:]
                     #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
                     notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
-            if tag in IndividualElement.event_with_TYPE :  # cas événements de type GRAD (diplôme) : on remonte la première ligne de la note en élément TYPE
+            if (tag in IndividualElement.event_with_TYPE) or evenement_geneanet :  # cas événements de type GRAD (diplôme) : on remonte la première ligne de la note en élément TYPE
                 if notes is not None:
                     lignes_notes = notes.splitlines()
                     type_value = lignes_notes[0]
