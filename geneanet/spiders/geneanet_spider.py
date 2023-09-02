@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.11"
+    version = "1.0.12"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -483,15 +483,17 @@ class GeneanetSpider(scrapy.Spider):
                 event_date = re.sub("  *", " ", event_date) # suppression espaces multiples
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
-            if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
-                # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
-                #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
-                # on ignore les infos (normalement, on les a via la fiche enfant)
-                self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}' pour {prenom} {nom}\n"
-            else:
-                person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
+            # 02/09/23 : finalement, je garde tous les événements, y compris mariages / contrats de mariage
+            # pour avoir les notes, parfois intéressantes
+            #if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
+            #    # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
+            #    #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
+            #    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
+            #    # on ignore les infos (normalement, on les a via la fiche enfant)
+            #    self.nb_todo += 1
+            #    texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}' pour {prenom} {nom}\n"
+            #else:
+            person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
         nb_sources = 0

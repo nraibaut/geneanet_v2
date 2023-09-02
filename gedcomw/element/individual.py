@@ -98,11 +98,18 @@ class IndividualElement(Element):
         "Retraite" : "RETI",
         "Résidence" : "RESI",
         "Testament" : "WILL",
-        "Evenement" : "EVEN"
+        "Evenement" : "EVEN",
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
     unique_events = [ "Baptême", "Décès", "Inhumation", "Naissance", "Retraite" ]
-    geneanet_events = [ "Arrentement", "Bail", "Vente", "Quittance", "Reconnaissance", "Reconnaissance féodale" ] # événements ne figurant ni dans la norme ni dans Ancestris
+    geneanet_events = [ # événements ne figurant ni dans la norme ni dans Ancestris
+                        # + Mariages / unions --> evt générique EVEN + TYPE
+                        "Arrentement", "Bail", "Vente", "Quittance", "Reconnaissance", "Reconnaissance féodale",
+                        "Quittance de dot", "Reconnaissance de dette", "Accord",
+                        #"Union",              # cas "Union avec xxx"
+                        "Mariage",            # cas "Mariage (avec xxx)"
+                        "Contrat de mariage", # cas "Contrat de mariage (avec xxx)"
+                        ]
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
 
@@ -181,7 +188,10 @@ class IndividualElement(Element):
             except:
                 #tag = event._name + "???"
                 tag = "EVEN" # on génère un événement gedcom valide, avec une valeur @todo s'il n'est pas dans la liste "connue" geneanet_events
-                if event._name in self.geneanet_events :
+                name = event._name
+                name = re.sub(" \(.*", "", name)  # suppression "(avec xxx)" pour mariages / contrats de mariage
+                #name = re.sub(" avec ", "", name)  # suppression " avec xxx" pour unions
+                if name in self.geneanet_events :
                     evenement_geneanet = True # force la remontée en élément TYPE,
                     #info = "Evénement de type '" + event._name + "'"
                     info = event._name # sera remonté en élément TYPE, et affiché tel quel par Ancestris
