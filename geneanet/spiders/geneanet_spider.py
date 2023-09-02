@@ -514,7 +514,7 @@ class GeneanetSpider(scrapy.Spider):
                 # Cette source concerne la personne elle-même, et non pas un événement :
                 source_personne = event_sources
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
-            elif event_name == "Union" :
+            elif (event_name == "Union") or (event_name == "Famille") :
                 # Cette source concerne le mariage de la personne (autre événement de type mariage) :
                 # --> on mémorise pour le restaurer lors de la génération des familles :
                 source_mariage = event_sources
@@ -527,7 +527,7 @@ class GeneanetSpider(scrapy.Spider):
                 ev = event_name.split(",")
                 for e in ev:
                     e = e.strip().capitalize()
-                    if e == "Union" :
+                    if (e == "Union") or (e == "Famille") :
                         # pas très joli : je fais comme quelques lignes plus haut pour le cas des unions :
                         source_mariage = event_sources
                         self.mariages_sources[true_http_url] = source_mariage
