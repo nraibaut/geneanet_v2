@@ -31,6 +31,8 @@ class GeneanetSpider(scrapy.Spider):
     nb_consanguinites = 0
     nb_titres_noblesse = 0
     nb_notes_titres_noblesse = 0
+    lg_min_notes_longues = 60
+    nb_notes_longues = 0
     nb_sous_titres = 0
     multiple_events_count = 0
     max_generations = 0
@@ -204,10 +206,10 @@ class GeneanetSpider(scrapy.Spider):
                    self.team, self.address, GeneanetSpider.gedcom_result_filename)
 
         # Sorties CSV :
-        csvfilename = self.result_dir + "/" + result_name + ".csv"
+        csvfilename = self.result_dir + "/" + result_name + ".persons.csv"
         self.log(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w") # encoding="utf-8" ?
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;infos;nb_err;{self.progname} {self.version} {date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
@@ -437,7 +439,7 @@ class GeneanetSpider(scrapy.Spider):
                     self.nb_sous_titres += 1
                     self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
                     person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
-
+        nb_notes_longues = 0
         nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
             nb_evenements += 1
@@ -459,6 +461,8 @@ class GeneanetSpider(scrapy.Spider):
                 #event_notes = html2text.html2text(event_notes)
                 event_notes = html2text.html2text(lines).strip()
                 event_notes = re.sub(" *\n", "\n", event_notes) # suppression des espaces ajoutés en fin de lignes
+                if len(event_notes) >= self.lg_min_notes_longues :
+                    nb_notes_longues += 1
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
 
             lines = event.xpath("td[2]/span[@class='ssource']").get()
@@ -564,6 +568,8 @@ class GeneanetSpider(scrapy.Spider):
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') vide ! Vérifier le code...")
             else :
+                if len(note_text) >= self.lg_min_notes_longues :
+                    nb_notes_longues += 1
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
             if note_type == "Notes individuelles":
                 person.add_note(self.gedcomw_parser.get_root_element(), note_text)
@@ -597,6 +603,8 @@ class GeneanetSpider(scrapy.Spider):
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union vide ! Vérifier le code...")
             else:
+                if len(note_text) >= self.lg_min_notes_longues:
+                    nb_notes_longues += 1
                 self.nb_todo += 1
                 self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
                 texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
@@ -794,6 +802,7 @@ class GeneanetSpider(scrapy.Spider):
         self.nb_errors += nb_errors_indiv
         texte_infos = texte_infos.strip()
         person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
+        self.nb_notes_longues += nb_notes_longues
 
         if profession == None:
             profession = ""
@@ -807,7 +816,7 @@ class GeneanetSpider(scrapy.Spider):
             titre_noblesse = ""
         if note_titre_noblesse == None:
             note_titre_noblesse = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};\"{texte_infos}\";{nb_errors_indiv};\n")
+        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n")
 
     def manage_families(self):
         #print(self.parents_of)
@@ -918,6 +927,7 @@ class GeneanetSpider(scrapy.Spider):
         spider.logger.info(f"- max_generations       = {self.max_generations}")
         spider.logger.info(f"- nb_titres_noblesse    = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
         spider.logger.info(f"- nb_sous_titres        = {self.nb_sous_titres}")
+        spider.logger.info(f"- nb_notes_longues      = {self.nb_notes_longues}")
         spider.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
         spider.logger.info(f"- nb_errors             = {self.nb_errors}")
         spider.logger.info(f"- nb_todo               = {self.nb_todo}")
