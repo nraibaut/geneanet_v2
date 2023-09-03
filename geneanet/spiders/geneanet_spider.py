@@ -518,31 +518,25 @@ class GeneanetSpider(scrapy.Spider):
                 event_sources = event_sources.replace("\\- ", "\n", 1)
             event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
             self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
-            if event_name == "Personne" :
-                # Cette source concerne la personne elle-même, et non pas un événement :
-                source_personne = event_sources
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
-            elif (event_name == "Union") or (event_name == "Famille") :
-                # Cette source concerne le mariage de la personne (autre événement de type mariage) :
-                # --> on mémorise pour le restaurer lors de la génération des familles :
-                source_mariage = event_sources
-                self.mariages_sources[true_http_url] = source_mariage
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
-            else:
+
+            event_list = event_name.split(",")
+            for event_name in event_list:
                 # Cas particulier : on peut avoir en fait plusieurs événements concernés :
-                # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13"
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_sources2='{event_sources}'")
-                ev = event_name.split(",")
-                for e in ev:
-                    e = e.strip().capitalize()
-                    if (e == "Union") or (e == "Famille") :
-                        # pas très joli : je fais comme quelques lignes plus haut pour le cas des unions :
-                        source_mariage = event_sources
-                        self.mariages_sources[true_http_url] = source_mariage
-                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
-                    else:
-                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name3='{e}' event_sources2='{event_sources}'")
-                        person.set_event(name=e, source=event_sources)
+                # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13", "Personne, famille: a d bouche du rhone"
+                event_name = event_name.strip().capitalize()
+                if event_name == "Personne" :
+                    # Cette source concerne la personne elle-même, et non pas un événement :
+                    source_personne = event_sources
+                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+                elif (event_name == "Union") or (event_name == "Famille") :
+                    # Cette source concerne le mariage de la personne (autre événement de type mariage) :
+                    # --> on mémorise pour le restaurer lors de la génération des familles :
+                    source_mariage = event_sources
+                    self.mariages_sources[true_http_url] = source_mariage
+                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
+                else:
+                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
+                    person.set_event(name=event_name, source=event_sources)
 
         nb_notes = 0
         # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
