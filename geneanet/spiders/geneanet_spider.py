@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.12"
+    version = "1.0.13"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -103,6 +103,7 @@ class GeneanetSpider(scrapy.Spider):
         result = result.replace("\\", ".")
         result = result.replace("&", ".")
         result = result.replace("?", ".")
+        result = result.replace("%", "_") # ex : https://gw.geneanet.org/boutch1?lang=fr&pz=marc&nz=vitelli&p=be%CC%81atrice+marguerite&n=de+faucigny
         return result
 
     def get_cache_files(self, http_url):
@@ -208,17 +209,17 @@ class GeneanetSpider(scrapy.Spider):
         # Sorties CSV :
         csvfilename = self.result_dir + "/" + result_name + ".persons.csv"
         self.log(f"csv persons = {csvfilename}")
-        self.csv = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv = open( csvfilename, "w", encoding="utf-8")
         self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
         self.log(f"csv events = {csvfilename}")
-        self.csv_events = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv_events = open( csvfilename, "w", encoding="utf-8")
         self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
         self.log(f"csv unions = {csvfilename}")
-        self.csv_unions = open( csvfilename, "w") # encoding="utf-8" ?
+        self.csv_unions = open( csvfilename, "w", encoding="utf-8")
         self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{self.progname} {self.version} {date}\n")
 
         true_url = self.url
@@ -683,9 +684,12 @@ class GeneanetSpider(scrapy.Spider):
                 mariage_place = ""
             if not info_debug_csv:
                 info_debug_csv = ""
-            mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-            info_debug_csv = info_debug_csv.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-            self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n")
+            #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+            #info_debug_csv = info_debug_csv.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+            ligne = f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n"
+            self.csv_unions.write(ligne)
+
+
 
         elif nb_parents > 2 :
             nb_errors_indiv += 1
@@ -746,9 +750,11 @@ class GeneanetSpider(scrapy.Spider):
                     self.mariages_places[key] = mariage_place
                 else:
                     mariage_place = ""
-                mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-                debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-                self.csv_unions.write(f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n")
+                #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+                #debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
+                ligne = f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n"
+                self.csv_unions.write(ligne)
+
             else:
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
@@ -810,7 +816,10 @@ class GeneanetSpider(scrapy.Spider):
             titre_noblesse = ""
         if note_titre_noblesse == None:
             note_titre_noblesse = ""
-        self.csv.write(f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n")
+
+        ligne = f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n"
+        self.csv.write(ligne)
+
 
     def manage_families(self):
         #print(self.parents_of)
