@@ -568,7 +568,7 @@ class GeneanetSpider(scrapy.Spider):
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
             if note_type == "Notes individuelles":
                 person.add_note(self.gedcomw_parser.get_root_element(), note_text)
-            elif (note_type == "Naissance") or (note_type == "Décès"):
+            elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
                 person.set_event(name=note_type, notes=note_text)
             elif GeneanetSpider.union_avec_regex.match(note_type):
                 self.nb_todo += 1
