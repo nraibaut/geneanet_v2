@@ -186,6 +186,46 @@ class GeneanetSpider(scrapy.Spider):
         else:
             self.parents_of[child_true_url].append(parent_true_url)
 
+    def post_trt_notes(self, texte):
+        """
+        Post-traitement des notes, notamment pour faire le ménage des datas superflues
+        de la généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio
+        :param texte:
+        :return:
+        """
+        result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
+        result = result.replace(u"\u00A0", " ")  # avant toute chose !
+
+        # Lignes "\-- GEDCOM (INDI) -- 1 SUBM @S6000000001808673965@" :
+        result = re.sub("([^\n]* GEDCOM .INDI. [^\n]*)\n", "", result )
+        # Lignes "  1 SUBM @S2304562@" :
+        result = re.sub("([ 0-9]* SUBM @S[0-9]*@ *)\n", "", result )
+
+        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
+
+        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
+        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
+
+        return result
+    def post_trt_sources(self, texte):
+        """
+        Post-traitement des sources, notamment pour faire le ménage des datas superflues
+        de la généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio
+        :param texte:
+        :return:
+        """
+        result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
+        result = result.replace(u"\u00A0", " ")  # avant toute chose !
+
+        # Lignes "\- - 26 APR 2021 - First Name" :
+        result = re.sub("(\\\\*- - [0-9]+ [A-Z]+ [0-9]+ - [^\n]*)\n", "", result )
+
+        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
+
+        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
+        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
+
+        return result
     # On a déjà en cache la page et son url :
     def start_requests(self):
         result_name = self.url_to_filename(self.url)
@@ -462,6 +502,7 @@ class GeneanetSpider(scrapy.Spider):
                 #event_notes = html2text.html2text(event_notes)
                 event_notes = html2text.html2text(lines).strip()
                 event_notes = re.sub(" *\n", "\n", event_notes) # suppression des espaces ajoutés en fin de lignes
+                event_notes = self.post_trt_notes(event_notes)
                 if len(event_notes) >= self.lg_min_notes_longues :
                     nb_notes_longues += 1
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
@@ -518,26 +559,34 @@ class GeneanetSpider(scrapy.Spider):
             if event_name == "Décès":
                 event_sources = event_sources.replace("\\- ", "\n", 1)
             event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
+            if event_sources == "":
+                # on teste avant ménage post-traitement
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source vide ! Vérifier le code...")
+            event_sources = self.post_trt_sources(event_sources)
 
-            event_list = event_name.split(",")
-            for event_name in event_list:
-                # Cas particulier : on peut avoir en fait plusieurs événements concernés :
-                # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13", "Personne, famille: a d bouche du rhone"
-                event_name = event_name.strip().capitalize()
-                if event_name == "Personne" :
-                    # Cette source concerne la personne elle-même, et non pas un événement :
-                    source_personne = event_sources
-                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
-                elif (event_name == "Union") or (event_name == "Famille") :
-                    # Cette source concerne le mariage de la personne (autre événement de type mariage) :
-                    # --> on mémorise pour le restaurer lors de la génération des familles :
-                    source_mariage = event_sources
-                    self.mariages_sources[true_http_url] = source_mariage
-                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
-                else:
-                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
-                    person.set_event(name=event_name, source=event_sources)
+            # après ménage, la source peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+            if event_sources != "":
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
+
+                event_list = event_name.split(",")
+                for event_name in event_list:
+                    # Cas particulier : on peut avoir en fait plusieurs événements concernés :
+                    # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13", "Personne, famille: a d bouche du rhone"
+                    event_name = event_name.strip().capitalize()
+                    if event_name == "Personne" :
+                        # Cette source concerne la personne elle-même, et non pas un événement :
+                        source_personne = event_sources
+                        self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+                    elif (event_name == "Union") or (event_name == "Famille") :
+                        # Cette source concerne le mariage de la personne (autre événement de type mariage) :
+                        # --> on mémorise pour le restaurer lors de la génération des familles :
+                        source_mariage = event_sources
+                        self.mariages_sources[true_http_url] = source_mariage
+                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
+                    else:
+                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
+                        person.set_event(name=event_name, source=event_sources)
 
         nb_notes = 0
         # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
@@ -560,25 +609,30 @@ class GeneanetSpider(scrapy.Spider):
                     note_text = html2text.html2text(note_indiv).strip()
             note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
             if note_text == "":
+                # on teste avant ménage post-traitement
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') vide ! Vérifier le code...")
             else :
-                if len(note_text) >= self.lg_min_notes_longues :
+                note_text = self.post_trt_notes(note_text)
+
+            # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+            if note_text != "":
+                if len(note_text) >= self.lg_min_notes_longues:
                     nb_notes_longues += 1
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
-            if note_type == "Notes individuelles":
-                person.add_note(self.gedcomw_parser.get_root_element(), note_text)
-            elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
-                person.set_event(name=note_type, notes=note_text)
-            elif GeneanetSpider.union_avec_regex.match(note_type):
-                self.nb_todo += 1
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
-                texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
-            else:
-                nb_errors_indiv += 1
-                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
-                self.nb_todo += 1
-                texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
+                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
+                if note_type == "Notes individuelles":
+                    person.add_note(self.gedcomw_parser.get_root_element(), note_text)
+                elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
+                    person.set_event(name=note_type, notes=note_text)
+                elif GeneanetSpider.union_avec_regex.match(note_type):
+                    self.nb_todo += 1
+                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
+                    texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
+                else:
+                    nb_errors_indiv += 1
+                    self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
+                    self.nb_todo += 1
+                    texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
 
         # Autres notes (certains cas, pas tous, de "Notes concernant l'union"
         #for note in response.xpath("//*[@name='note-wed-1']"):
@@ -598,11 +652,14 @@ class GeneanetSpider(scrapy.Spider):
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union vide ! Vérifier le code...")
             else:
-                if len(note_text) >= self.lg_min_notes_longues:
-                    nb_notes_longues += 1
-                self.nb_todo += 1
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
-                texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
+                note_text = self.post_trt_notes(note_text)
+                # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+                if note_text != "":
+                    if len(note_text) >= self.lg_min_notes_longues:
+                        nb_notes_longues += 1
+                    self.nb_todo += 1
+                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
+                    texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
 
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
