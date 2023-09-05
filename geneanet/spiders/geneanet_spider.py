@@ -486,8 +486,13 @@ class GeneanetSpider(scrapy.Spider):
             nb_evenements += 1
             #tmp = event.xpath("td[2]").get()
             #tmp = html2text.html2text(tmp)
-            event_name_and_place = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
-            # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation "Contrat de mariage (avec xxx)"
+            #event_name_and_place = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
+            event_name_and_place = html2text.html2text(event.xpath("td[2]/span[@class='nnom']").get())
+            event_name_and_place = event_name_and_place.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+            event_name_and_place = event_name_and_place.replace("\n", " ")
+            event_name_and_place = event_name_and_place.replace("_", "")
+            event_name_and_place = event_name_and_place.strip()
+            # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation "Contrat de mariage (avec xxx)" "Mariage (avec xxx)"
             # suivi éventuellement du lieu
             event_name = re.sub(" *- .*", "", event_name_and_place)  # suppression " - .*" final
             event_place = None

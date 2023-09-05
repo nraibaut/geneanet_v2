@@ -109,6 +109,7 @@ class IndividualElement(Element):
                         #"Union",              # cas "Union avec xxx"
                         "Mariage",            # cas "Mariage (avec xxx)"
                         "Contrat de mariage", # cas "Contrat de mariage (avec xxx)"
+                        "Non mariés",         # cas "Non mariés (avec xxx)
                         ]
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
@@ -248,7 +249,7 @@ class IndividualElement(Element):
             if notes is not None:
                 element_event.add_note(root_element, notes)
             else:
-                note = ""
+                notes = ""
             if event._source is not None:
                 source = event._source
                 # la chaîne contient :
@@ -262,7 +263,7 @@ class IndividualElement(Element):
                 element_event.add_source(root_element, source, notes_on_source)
 
             if csv_log is not None:
-                ligne = f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};{event._name};{tag};{date};{gedcom_date};\"{place}\";\"{notes}\";\"{tag_value}{type_value}\";\"{source}\";\"{notes_on_source}\";\n"
+                ligne = f"{self.get_pointer()};{self.__givenname};{self.__surname};{url};\"{event._name}\";{tag};{date};{gedcom_date};\"{place}\";\"{notes}\";\"{tag_value}{type_value}\";\"{source}\";\"{notes_on_source}\";\n"
                 csv_log.write(ligne)
 
         return nb_errors
