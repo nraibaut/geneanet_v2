@@ -27,6 +27,7 @@ class DateConverter(object):
     # Attention : on a aussi des dates de la forme "2 mars 1518 (1517/8) julien"
     repcal = re.compile("(.*) *\((.*)\).*")
     interval = re.compile("entre (.*) et (.*)")
+    parentheses = re.compile("^\((.*)\)$")
     months = {
         "janvier"   : "JAN",
         "février"   : "FEB",
@@ -89,6 +90,15 @@ class DateConverter(object):
         if forceJulian:
             self._julien = True
 
+        text2 = text2.strip()
+        isParentheses = DateConverter.parentheses.match(text2)
+        if isParentheses:
+            text2 = isParentheses.groups(0)[0]
+
+        # traitement des cas "2 mars 1518 (1517/8) julien"
+        # --> on supprime les chiffres et "/" entre parenthèses :
+        text2 = re.sub("\([0-9]+/[0-9]+\)", "", text2)
+
         #text2 = re.sub("^[\( ]*", "", text2)  # suppression espaces / éventuelle parenthèse de début
         #text2 = re.sub("[\) ]*$", "", text2)  # suppression espaces / éventuelle parenthèse de fin
         text2 = text2.strip()
@@ -134,8 +144,13 @@ class DateConverter(object):
             if not self._julien :
                 isrepublicain = DateConverter.repcal.match(text2)
                 if isrepublicain:
+                    # cas "le 9 messidor an XII  (28 juin 1804) (jeudi)"
                     self._republican_date = isrepublicain.groups(0)[0].strip()
                     text2 = isrepublicain.groups(0)[1]
+
+            if not self._republican_date :
+                # cas "18 novembre 1582 julien (28 novembre 1582)"
+                text2 = re.sub("\(.*\)", "", text2)
 
             text2 = re.sub("1er ", "1 ", text2, 1)
 

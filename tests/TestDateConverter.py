@@ -275,6 +275,7 @@ liste = (
     "(@#DJULIAN@ CAL 1571)",
     "@#DJULIAN@ CAL 1571",
     "CAL @#DJULIAN@ 1571",
+    "18 novembre 1582 julien (28 novembre 1582)",
 )
 
 for text in liste:
