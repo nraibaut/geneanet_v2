@@ -1,4 +1,4 @@
-[root] INFO: Starting GeneanetSpider 1.0.8
+[root] INFO: Starting GeneanetSpider 1.0.13
 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
 [scrapy.crawler] INFO: Overridden settings:
@@ -12,7 +12,7 @@
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: 56eed8cf6008c78b
+[scrapy.extensions.telnet] INFO: Telnet Password: 886d868e940b31ad
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -45,8 +45,8 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 [geneanet] DEBUG: result_name = gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.8 le 01/09/2023 à 18:26 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard' ...
-[geneanet] DEBUG: csv persons = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.csv
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 00:59 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard' ...
+[geneanet] DEBUG: csv persons = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.persons.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.events.csv
 [geneanet] DEBUG: csv unions = result/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.unions.csv
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard (true='https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.html')
@@ -62,14 +62,14 @@
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : --> event_name2='Inhumation' event_date2='11 avril 1912' event_place2='Nice, FRANCE' 
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : info = 'Profession de Gérard'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : titre_noblesse = 'Titre de noblesse de Gérard' (Note1 sur le titre)
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Naissance  - Paris, France' --> event_name='Naissance' event_place='Paris, France'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Naissance - Paris, France' --> event_name='Naissance' event_place='Paris, France'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur la naissance
 Note2 sur la naissance'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_naissance.fr/>
 Texte1 source naissance
 Texte2 source naissance'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '22 mars 1882'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Baptême  - Paris, France' --> event_name='Baptême' event_place='Paris, France'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Baptême - Paris, France' --> event_name='Baptême' event_place='Paris, France'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur le baptême
 Note2 sur le baptême'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_bapteme.fr/>
@@ -83,13 +83,13 @@ Note2 sur la profession'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_profession.fr/>
 Texte1 source profession
 Texte2 source profession'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Résidence  - Lyon, France' --> event_name='Résidence' event_place='Lyon, France'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Résidence - Lyon, France' --> event_name='Résidence' event_place='Lyon, France'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur la résidence
 Note2 sur la résidence'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_residence.fr/>
 Texte1 source résidence
 Texte2 source résidence'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Diplôme  - Nice, FRANCE' --> event_name='Diplôme' event_place='Nice, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Diplôme - Nice, FRANCE' --> event_name='Diplôme' event_place='Nice, FRANCE'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Certificat d'études
 Note1 sur diplôme
 Note2 sur diplôme'
@@ -99,14 +99,14 @@ Texte2 source diplôme'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '1er juillet 1897'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Testament' --> event_name='Testament' event_place='None'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '1911'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Décès  - Nice, FRANCE' --> event_name='Décès' event_place='Nice, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Décès - Nice, FRANCE' --> event_name='Décès' event_place='Nice, FRANCE'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur le décès
 Note2 sur le décès'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_deces.fr/>
 Texte1 source décès
 Texte2 source décès'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_date = '10 avril 1912'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Inhumation  - Nice, FRANCE' --> event_name='Inhumation' event_place='Nice, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : 'Inhumation - Nice, FRANCE' --> event_name='Inhumation' event_place='Nice, FRANCE'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_notes = 'Note1 sur l'inhumation
 Note2 sur l'inhumation'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : event_sources = '<https://www.source_inhumation.fr/>
@@ -119,7 +119,7 @@ Texte2 source général'
 [geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : --> source_personne='<https://www.source_general.fr/>
 Texte1 source général
 Texte2 source général'
-[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : note 1 : note_type='Notes individuelles' note_text='Texte1 note général
+[geneanet] DEBUG: Generation 1, sosa 1 : Gérard DUPONT : note 1 (type 'Notes individuelles') : note_text='Texte1 note général
 Texte2 note général'
 [geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&p=pierre&n=dupont (true='https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=pierre.n=dupont.html'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=pierre.n=dupont.html> (referer: None)
@@ -172,10 +172,7 @@ Texte2 source diplôme'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : source = '* Naissance: <https://www.source_naissance.fr/>  
 Texte1 source naissance  
 Texte2 source naissance'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> event_name2='Naissance' event_sources2='<https://www.source_naissance.fr/>
-Texte1 source naissance
-Texte2 source naissance'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> event_name3='Naissance' event_sources2='<https://www.source_naissance.fr/>
+[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> source 'Naissance' = '<https://www.source_naissance.fr/>
 Texte1 source naissance
 Texte2 source naissance'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : source = '* Union: <https://www.source_mariage.fr/>  
@@ -186,17 +183,14 @@ Texte1 source mariage
 Texte2 source mariage'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : source = '* Décès: <https://www.source_deces.fr/> \- Texte1 source décès  
 Texte2 source décès'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> event_name2='Décès' event_sources2='<https://www.source_deces.fr/>
+[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> source 'Décès' = '<https://www.source_deces.fr/>
 Texte1 source décès
 Texte2 source décès'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : --> event_name3='Décès' event_sources2='<https://www.source_deces.fr/>
-Texte1 source décès
-Texte2 source décès'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 1 : note_type='Naissance' note_text='Note1 sur la naissance
+[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 1 (type 'Naissance') : note_text='Note1 sur la naissance
 Note2 sur la naissance'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 2 : note_type='Décès' note_text='Note1 sur le décès
+[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 2 (type 'Décès') : note_text='Note1 sur le décès
 Note2 sur le décès'
-[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 3 : note_type='Union avec Marie Paule DURAND' note_text='Note1 sur le mariage
+[geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 3 (type 'Union avec Marie Paule DURAND') : note_text='Note1 sur le mariage
 Note2 sur le mariage'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : note 'Union avec Marie Paule DURAND' à analyser : 'Note1 sur le mariage
 Note2 sur le mariage'
@@ -209,19 +203,11 @@ Texte2 source mariage'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : --> mariages_sources[https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand]='<https://www.source_mariage.fr/>
 Texte1 source mariage
 Texte2 source mariage'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : note 1 : note_type='Union avec Pierre DUPONT' note_text='Note1 sur le mariage
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : note 1 (type 'Union avec Pierre DUPONT') : note_text='Note1 sur le mariage
 Note2 sur le mariage'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : note 'Union avec Pierre DUPONT' à analyser : 'Note1 sur le mariage
 Note2 sur le mariage'
 [geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&p=jacques&n=durand (true='https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jacques.n=durand.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&i=6 (true='https://gw.geneanet.org/nraibaut2?lang=fr&i=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.i=6.html'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : union 1 = debut='* Mariée _le 24 août 1877, Paris, France,_' nom_conjoint='Pierre DUPONT' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont' 
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Parents'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Union(s) et enfant(s)'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Notes concernant l'union'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Sources'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Photos & documents'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Aperçu de l'arbre'
 [geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&p=jeanne&n=inn (true='https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jeanne.n=inn.html'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : union 1 = debut='* Marié _le 24 août 1877, Paris, France,_' nom_conjoint='Marie Paule DURAND' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand' 
 [gedcomw.element.element] INFO: manage_events : @I00002@ 'Pierre' 'DUPONT' : name='Naissance', date='1er septembre 1850', place='None', notes='Note1 sur la naissance
@@ -240,9 +226,17 @@ Texte2 source décès'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 2, sosa 2 : Pierre DUPONT : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jeanne.n=inn.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.i=6.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jacques.n=durand.html> (referer: None)
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.p=jean.n=dates.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/nraibaut2?lang=fr&i=6 (true='https://gw.geneanet.org/nraibaut2?lang=fr&i=6', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.i=6.html'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : union 1 = debut='* Mariée _le 24 août 1877, Paris, France,_' nom_conjoint='Pierre DUPONT' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Sources'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Paule DURAND : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.nraibaut2.lang=fr.i=6.html> (referer: None)
 [geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Jeanne' 'INN' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn)
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : 'Naissance' --> event_name='Naissance' event_place='None'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : 'Contrat de mariage (avec Jean DATES)' --> event_name='Contrat de mariage (avec Jean DATES)' event_place='None'
@@ -252,37 +246,32 @@ Note2 sur contrat de mariage'
 Texte1 source contrat de mariage
 Texte2 source contrat de mariage'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : event_date = '1er mars 1833'
-[geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : événement 'Contrat de mariage (avec Jean DATES)' : date='1er mars 1833', place='None', notes='Note1 sur contrat de mariage
+[geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : note 1 (type 'Notes individuelles') : note_text=', @#FAM:MARC@'
+[geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : union 1 = debut='* Contrat de mariage _le 1er mars 1833_' nom_conjoint='Jean DATES' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates' 
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jeanne' 'INN' : name='Naissance', date='None', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jeanne' 'INN' : name='Contrat de mariage (avec Jean DATES)', date='1er mars 1833', place='None', notes='Note1 sur contrat de mariage
 Note2 sur contrat de mariage', source='<https://www.source_contrat_de_mariage.fr/>
 Texte1 source contrat de mariage
 Texte2 source contrat de mariage'
-[geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : note 1 : note_type='Notes individuelles' note_text=', @#FAM:MARC@'
-[geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : union 1 = debut='* Contrat de mariage _le 1er mars 1833_' nom_conjoint='Jean DATES' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates' 
-[gedcomw.element.element] INFO: manage_events : @I00004@ 'Jeanne' 'INN' : name='Naissance', date='None', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : rubrique='Événements'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : rubrique='Notes'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 5 : Jeanne INN : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00005@ : '?' '?' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&i=6)
-[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : union 1 = debut='*' nom_conjoint='Jacques DURAND' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand' 
-[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Union(s) et enfant(s)'
-[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Photos & documents'
-[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Jacques' 'DURAND' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand)
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00005@ : 'Jacques' 'DURAND' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand)
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : info = 'Né en 1580 julien'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : --> event_name2='Naissance' event_date2='1580 julien' event_place2='None' 
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : info = 'Décédé'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : --> event_name2='Décès' event_date2='' event_place2='None' 
-[geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : note 1 : note_type='Naissance' note_text=''
+[geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : note 1 (type 'Naissance') : note_text='date 1580 julien'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : union 1 = debut='*' nom_conjoint='? ?' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&i=6' 
-[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'DURAND' : name='Naissance', date='1580 julien', place='None', notes='', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'DURAND' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jacques' 'DURAND' : name='Naissance', date='1580 julien', place='None', notes='date 1580 julien', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jacques' 'DURAND' : name='Décès', date='', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : rubrique='Notes'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 6 : Jacques DURAND : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00007@ : 'Jean' 'DATES' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates)
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00006@ : 'Jean' 'DATES' (M) (https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates)
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : info = 'Né vers juillet 1802'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : --> event_name2='Naissance' event_date2='vers juillet 1802' event_place2='None' 
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : info = 'Baptisé peut-être le 23 février 1803'
@@ -303,10 +292,6 @@ Note2 sur contrat de mariage'
 Texte1 source contrat de mariage
 Texte2 source contrat de mariage'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = '1er mars 1833'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : événement 'Contrat de mariage (avec Jeanne INN)' : date='1er mars 1833', place='None', notes='Note1 sur contrat de mariage
-Note2 sur contrat de mariage', source='<https://www.source_contrat_de_mariage.fr/>
-Texte1 source contrat de mariage
-Texte2 source contrat de mariage'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : 'Profession' --> event_name='Profession' event_place='None'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Eleveur
 laps de temps avant'
@@ -337,31 +322,40 @@ Période du'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : 'Décès' --> event_name='Décès' event_place='None'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_notes = 'Date calculée'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : event_date = 'vers 1er juin 1885'
-[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : note 1 : note_type='Notes individuelles' note_text='Retraite:'
+[geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : note 1 (type 'Notes individuelles') : note_text='Retraite:'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : union 1 = debut='* Contrat de mariage _le 1er mars 1833_' nom_conjoint='Jeanne INN' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn' 
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Naissance', date='vers juillet 1802', place='None', notes='Date environ', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Baptême', date='peut-être 23 février 1803', place='None', notes='Date estimée', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Décès', date='vers 1er juin 1885', place='None', notes='Date calculée', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Profession', date='None', place='None', notes='Laboureur, Eleveur, Tailleur de pierres', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Profession', date='avant 1er janvier 1834', place='None', notes='Eleveur
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Naissance', date='vers juillet 1802', place='None', notes='Date environ', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Baptême', date='peut-être 23 février 1803', place='None', notes='Date estimée', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Décès', date='vers 1er juin 1885', place='None', notes='Date calculée', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Profession', date='None', place='None', notes='Laboureur, Eleveur, Tailleur de pierres', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Contrat de mariage (avec Jeanne INN)', date='1er mars 1833', place='None', notes='Note1 sur contrat de mariage
+Note2 sur contrat de mariage', source='<https://www.source_contrat_de_mariage.fr/>
+Texte1 source contrat de mariage
+Texte2 source contrat de mariage'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Profession', date='avant 1er janvier 1834', place='None', notes='Eleveur
 laps de temps avant', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Profession', date='entre 1er janvier 1835 et 31 décembre 1837', place='None', notes='Laboureur
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Profession', date='entre 1er janvier 1835 et 31 décembre 1837', place='None', notes='Laboureur
 laps de temps entre', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Profession', date='après 1er janvier 1837', place='None', notes='Tailleur de pierres
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Profession', date='après 1er janvier 1837', place='None', notes='Tailleur de pierres
 Laps de temps après', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Résidence', date='avant 1er janvier 1849', place='None', notes='Rouen
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Résidence', date='avant 1er janvier 1849', place='None', notes='Rouen
 Période jusqu'au', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Résidence', date='entre 1er janvier 1850 et 1er janvier 1851', place='None', notes='Lyon
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Résidence', date='entre 1er janvier 1850 et 1er janvier 1851', place='None', notes='Lyon
 Période du au', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Résidence', date='après 1er janvier 1852', place='None', notes='Paris
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Résidence', date='après 1er janvier 1852', place='None', notes='Paris
 Période du', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Jean' 'DATES' : name='Retraite', date='vers 1872', place='None', notes='Date interprêtée', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jean' 'DATES' : name='Retraite', date='vers 1872', place='None', notes='Date interprêtée', source='None'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : multiple_events_count=5
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : rubrique='Événements'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : rubrique='Notes'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 4 : Jean DATES : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00007@ : '?' '?' (F) (https://gw.geneanet.org/nraibaut2?lang=fr&i=6)
+[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : union 1 = debut='*' nom_conjoint='Jacques DURAND' url_conjoint='https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand' 
+[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : ? ? : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] INFO: Closing spider (finished)
 [geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont', mère='https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand', 1 enfant(s)
 [geneanet] DEBUG: Famille '@F00001@' : OK : mariages_sources[père]=mariages_sources[mère]='<https://www.source_mariage.fr/>
@@ -382,9 +376,10 @@ Texte2 source mariage'
 [geneanet] INFO: - max_generations       = 3
 [geneanet] INFO: - nb_titres_noblesse    = 1 (avec 1 notes(s))
 [geneanet] INFO: - nb_sous_titres        = 1
+[geneanet] INFO: - nb_notes_longues      = 1
 [geneanet] INFO: - multiple_events_count = 6
 [geneanet] INFO: - nb_errors             = 0
-[geneanet] INFO: - nb_todo               = 4
+[geneanet] INFO: - nb_todo               = 2
 [geneanet] INFO: - nb_scanned_pages      = 0
 [geneanet] INFO: - nb_saved_pages        = 0
 [geneanet] INFO: - nb_cached_pages       = 7
@@ -397,16 +392,16 @@ Texte2 source mariage'
  'downloader/response_bytes': 579878,
  'downloader/response_count': 7,
  'downloader/response_status_count/200': 7,
- 'elapsed_time_seconds': 0.476468,
+ 'elapsed_time_seconds': 0.480891,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 9, 1, 16, 26, 16, 369432),
- 'log_count/DEBUG': 199,
- 'log_count/INFO': 52,
+ 'finish_time': datetime.datetime(2023, 9, 7, 22, 59, 26, 600771),
+ 'log_count/DEBUG': 195,
+ 'log_count/INFO': 55,
  'request_depth_max': 2,
  'response_received_count': 7,
  'scheduler/dequeued': 7,
  'scheduler/dequeued/memory': 7,
  'scheduler/enqueued': 7,
  'scheduler/enqueued/memory': 7,
- 'start_time': datetime.datetime(2023, 9, 1, 16, 26, 15, 892964)}
+ 'start_time': datetime.datetime(2023, 9, 7, 22, 59, 26, 119880)}
 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.8 le 01/09/2023 à 18:26 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 00:59 à partir de https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.8
+2 VERS 1.0.13
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 01 SEP 2023
-2 TIME 18:26:15
+1 DATE 08 SEP 2023
+2 TIME 00:59:26
 1 FILE gw.geneanet.org.nraibaut2.lang=fr.n=dupont.oc=0.p=gerard.ged
 1 GEDC
 2 VERS 5.5.1
@@ -127,41 +127,41 @@
 1 BIRT
 2 DATE 1 SEP 1850
 2 NOTE @N00012@
-2 SOUR @S00010@
+2 SOUR @S00009@
 1 DEAT
 2 DATE 1 APR 1895
 2 NOTE @N00013@
-2 SOUR @S00011@
-1 SOUR @S00012@
+2 SOUR @S00010@
+1 SOUR @S00011@
 0 @I00003@ INDI
 1 NAME Marie Paule /DURAND/
 2 GIVN Marie Paule
 2 SURN DURAND
 1 SEX F
 1 NOTE @N00011@
-1 SOUR @S00009@
+1 SOUR @S00012@
 0 @N00011@ NOTE (Marie, Paule DURAND)
-0 @S00009@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
-1 TEXT @todo note 'Union avec Pierre DUPONT' de Marie Paule DURAND à analyser : 'Note1 sur le mariage
-2 CONT Note2 sur le mariage'
 0 @N00012@ NOTE Note1 sur la naissance
 1 CONT Note2 sur la naissance
-0 @S00010@ SOUR
+0 @S00009@ SOUR
 1 TITL https://www.source_naissance.fr/
 1 TEXT Texte1 source naissance
 2 CONT Texte2 source naissance
 0 @N00013@ NOTE Note1 sur le décès
 1 CONT Note2 sur le décès
-0 @S00011@ SOUR
+0 @S00010@ SOUR
 1 TITL https://www.source_deces.fr/
 1 TEXT Texte1 source décès
 2 CONT Texte2 source décès
-0 @S00012@ SOUR
+0 @S00011@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont
 1 TEXT - Né le 1er septembre 1850
 2 CONT - Décédé le 1er avril 1895, à l'âge de 44 ans
 2 CONT @todo note 'Union avec Marie Paule DURAND' de Pierre DUPONT à analyser : 'Note1 sur le mariage
+2 CONT Note2 sur le mariage'
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=marie+paule&n=durand
+1 TEXT @todo note 'Union avec Pierre DUPONT' de Marie Paule DURAND à analyser : 'Note1 sur le mariage
 2 CONT Note2 sur le mariage'
 0 @I00004@ INDI
 1 NAME Jeanne /INN/
@@ -170,97 +170,118 @@
 1 SEX F
 1 NOTE @N00014@
 1 BIRT
-1 SOUR @S00013@
-0 @N00014@ NOTE , @#FAM:MARC@
-0 @S00013@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
-1 TEXT @todo vérifier prise en compte événement 'Contrat de mariage (avec Jean DATES)' pour Jeanne INN
-0 @I00005@ INDI
-1 NAME ? /?/
-2 GIVN ?
-2 SURN ?
-1 SEX F
+1 EVEN
+2 TYPE Contrat de mariage (avec Jean DATES)
+2 DATE 1 MAR 1833
+2 NOTE @N00015@
+2 SOUR @S00013@
 1 SOUR @S00014@
+0 @N00014@ NOTE , @#FAM:MARC@
+0 @N00015@ NOTE Note1 sur contrat de mariage
+1 CONT Note2 sur contrat de mariage
+0 @S00013@ SOUR
+1 TITL https://www.source_contrat_de_mariage.fr/
+1 TEXT Texte1 source contrat de mariage
+2 CONT Texte2 source contrat de mariage
 0 @S00014@ SOUR
-1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&i=6
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn
 1 TEXT
-0 @I00006@ INDI
+0 @I00005@ INDI
 1 NAME Jacques /DURAND/
 2 GIVN Jacques
 2 SURN DURAND
 1 SEX M
 1 BIRT
-2 DATE 1580 JULIEN
-2 NOTE @N00015@
+2 DATE @#DJULIAN@ 1580
+2 NOTE @N00016@
 1 DEAT Y
 1 SOUR @S00015@
-0 @N00015@ NOTE
+0 @N00016@ NOTE date 1580 julien
 0 @S00015@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand
 1 TEXT - Né en 1580 julien
 2 CONT - Décédé
-0 @I00007@ INDI
+0 @I00006@ INDI
 1 NAME Jean /DATES/
 2 GIVN Jean
 2 SURN DATES
 1 SEX M
-1 NOTE @N00016@
+1 NOTE @N00017@
 1 BIRT
 2 DATE ABT JUL 1802
-2 NOTE @N00017@
+2 NOTE @N00018@
 1 CHR
 2 DATE EST 23 FEB 1803
-2 NOTE @N00018@
+2 NOTE @N00019@
 1 DEAT
 2 DATE ABT 1 JUN 1885
-2 NOTE @N00019@
-1 OCCU Laboureur, Eleveur, Tailleur de pierres
 2 NOTE @N00020@
+1 OCCU Laboureur, Eleveur, Tailleur de pierres
+2 NOTE @N00021@
+1 EVEN
+2 TYPE Contrat de mariage (avec Jeanne INN)
+2 DATE 1 MAR 1833
+2 NOTE @N00022@
+2 SOUR @S00016@
 1 OCCU Eleveur
 2 DATE BEF 1 JAN 1834
-2 NOTE @N00021@
+2 NOTE @N00023@
 1 OCCU Laboureur
 2 DATE BET 1 JAN 1835 AND 31 DEC 1837
-2 NOTE @N00022@
+2 NOTE @N00024@
 1 OCCU Tailleur de pierres
 2 DATE AFT 1 JAN 1837
-2 NOTE @N00023@
+2 NOTE @N00025@
 1 RESI
 2 TYPE Rouen
 2 DATE BEF 1 JAN 1849
-2 NOTE @N00024@
+2 NOTE @N00026@
 1 RESI
 2 TYPE Lyon
 2 DATE BET 1 JAN 1850 AND 1 JAN 1851
-2 NOTE @N00025@
+2 NOTE @N00027@
 1 RESI
 2 TYPE Paris
 2 DATE AFT 1 JAN 1852
-2 NOTE @N00026@
+2 NOTE @N00028@
 1 RETI
 2 DATE ABT 1872
-2 NOTE @N00027@
-1 SOUR @S00016@
-0 @N00016@ NOTE Retraite:
-0 @N00017@ NOTE Date environ
-0 @N00018@ NOTE Date estimée
-0 @N00019@ NOTE Date calculée
-0 @N00020@ NOTE
-0 @N00021@ NOTE laps de temps avant
-0 @N00022@ NOTE laps de temps entre
-0 @N00023@ NOTE Laps de temps après
-0 @N00024@ NOTE Période jusqu'au
-0 @N00025@ NOTE Période du au
-0 @N00026@ NOTE Période du
-0 @N00027@ NOTE Date interprêtée
+2 NOTE @N00029@
+1 SOUR @S00017@
+0 @N00017@ NOTE Retraite:
+0 @N00018@ NOTE Date environ
+0 @N00019@ NOTE Date estimée
+0 @N00020@ NOTE Date calculée
+0 @N00021@ NOTE
+0 @N00022@ NOTE Note1 sur contrat de mariage
+1 CONT Note2 sur contrat de mariage
 0 @S00016@ SOUR
+1 TITL https://www.source_contrat_de_mariage.fr/
+1 TEXT Texte1 source contrat de mariage
+2 CONT Texte2 source contrat de mariage
+0 @N00023@ NOTE laps de temps avant
+0 @N00024@ NOTE laps de temps entre
+0 @N00025@ NOTE Laps de temps après
+0 @N00026@ NOTE Période jusqu'au
+0 @N00027@ NOTE Période du au
+0 @N00028@ NOTE Période du
+0 @N00029@ NOTE Date interprêtée
+0 @S00017@ SOUR
 1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates
 1 TEXT - Né vers juillet 1802
 2 CONT - Baptisé peut-être le 23 février 1803
 2 CONT - Décédé vers 1er juin 1885, à l'âge d'environ 82 ans
 2 CONT - Laboureur, Eleveur, Tailleur de pierres
-2 CONT @todo vérifier prise en compte événement 'Contrat de mariage (avec Jeanne INN)' pour Jean DATES
-0 @S00017@ SOUR
+0 @I00007@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00018@
+0 @S00018@ SOUR
+1 TITL https://gw.geneanet.org/nraibaut2?lang=fr&i=6
+1 TEXT
+0 @S00019@ SOUR
 1 TITL
 1 TEXT <https://www.source_mariage.fr/>
 2 CONT Texte1 source mariage
@@ -271,16 +292,16 @@
 1 MARR
 2 DATE 24 AUG 1877
 2 PLAC Paris, France,
-2 SOUR @S00017@
+2 SOUR @S00019@
 1 CHIL @I00001@
 0 @F00002@ FAM
-1 HUSB @I00007@
+1 HUSB @I00006@
 1 WIFE @I00004@
 1 MARR
 2 DATE 1 MAR 1833
 1 CHIL @I00002@
 0 @F00003@ FAM
-1 HUSB @I00006@
-1 WIFE @I00005@
+1 HUSB @I00005@
+1 WIFE @I00007@
 1 CHIL @I00003@
 0 TRLR

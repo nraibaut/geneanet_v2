@@ -1,0 +1,1075 @@
+[root] INFO: Starting GeneanetSpider 1.0.13
+[scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
+[scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'geneanet',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'geneanet.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['geneanet.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+[asyncio] DEBUG: Using selector: SelectSelector
+[scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[scrapy.extensions.telnet] INFO: Telnet Password: e3bfbf10fbef478c
+[scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[geneanet] DEBUG: start_requests
+[geneanet] DEBUG: URL = https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne
+[geneanet] DEBUG: result_name = gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne
+[geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.ged
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 01:00 à partir de https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne' ...
+[geneanet] DEBUG: csv persons = result/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.persons.csv
+[geneanet] DEBUG: csv events = result/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.events.csv
+[geneanet] DEBUG: csv unions = result/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.unions.csv
+[geneanet] DEBUG: Root URL = https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne (true='https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.html')
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.html> (referer: None)
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Marie Anne' 'MAUCHE' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne)
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : info = 'Née le 29 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : --> event_name2='Naissance' event_date2='29 décembre 1711' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : info = 'Baptisée le 30 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : --> event_name2='Baptême' event_date2='30 décembre 1711' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : info = 'Décédée le 27 août 1789 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 77 ans'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : --> event_name2='Décès' event_date2='27 août 1789' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : 'Naissance - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Naissance' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_sources = 'Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+AD 13 en ligne'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_date = '29 décembre 1711'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : 'Baptême - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Baptême' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_sources = 'Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+AD 13 en ligne'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_date = '30 décembre 1711'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : 'Mariage (avec Jacques NICOLAS) - Boulbon, 13150, Bouches-du-Rhône, Provence- Alpes-Côte d'Azur, FRANCE' --> event_name='Mariage (avec Jacques NICOLAS)' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_sources = 'Acte de mariage - Nicolas jacques x Mauche marie 28 9 1733 - AD Gard
+- 4 / 5 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_date = '28 septembre 1733'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : 'Décès - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Décès' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_sources = 'Acte de sépulture - Mauche marie + 27 8 1789 - AD Gard - 3 / 4 - AD
+13 en ligne'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : event_date = '27 août 1789'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : note 1 (type 'Notes individuelles') : note_text='Signature: NO'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1 (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=mauche.oc=1.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=mauche.oc=1.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=marie+rose.n=durand.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : union 1 = debut='* Mariée _le 28 septembre 1733, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Jacques NICOLAS' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jacques&n=nicolas&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Marie Anne' 'MAUCHE' : name='Naissance', date='29 décembre 1711', place='Côte d'Azur, FRANCE', notes='None', source='Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+AD 13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Marie Anne' 'MAUCHE' : name='Baptême', date='30 décembre 1711', place='Côte d'Azur, FRANCE', notes='None', source='Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+AD 13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Marie Anne' 'MAUCHE' : name='Décès', date='27 août 1789', place='Côte d'Azur, FRANCE', notes='None', source='Acte de sépulture - Mauche marie + 27 8 1789 - AD Gard - 3 / 4 - AD
+13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Marie Anne' 'MAUCHE' : name='Mariage (avec Jacques NICOLAS)', date='28 septembre 1733', place='Côte d'Azur, FRANCE', notes='None', source='Acte de mariage - Nicolas jacques x Mauche marie 28 9 1733 - AD Gard
+- 4 / 5 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Parents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Événements'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Notes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Marie Anne MAUCHE : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=marie+rose.n=durand.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Jean' 'MAUCHE' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1)
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : info = 'Né le 4 novembre 1672 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : --> event_name2='Naissance' event_date2='4 novembre 1672' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : info = 'Décédé le 20 mai 1731 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 58 ans'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : --> event_name2='Décès' event_date2='20 mai 1731' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : info = 'Ménager (1711)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : source = '* Union: Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : --> mariages_sources[https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1]='Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : note 1 (type 'Naissance') : note_text='fils d'Etienn et Anne BARD'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : note 2 (type 'Union avec Marie Rose DURAND') : note_text='Heure: 10:00
+Généalogie de Pierre GENOUX
+Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+Gilles après les trois publications à nos messes de paroisse le huitième du
+présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+Monsieur le vicaire de Bourbon
+Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+de Jean Durand père de la fille ici présent et autres parents de l'un et
+l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : note 'Union avec Marie Rose DURAND' à analyser : 'Heure: 10:00
+Généalogie de Pierre GENOUX
+Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+Gilles après les trois publications à nos messes de paroisse le huitième du
+présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+Monsieur le vicaire de Bourbon
+Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+de Jean Durand père de la fille ici présent et autres parents de l'un et
+l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : union 1 = debut='* Marié _le 10 juin 1710, Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Marie Rose DURAND' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand' 
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Jean' 'MAUCHE' : name='Naissance', date='4 novembre 1672', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='fils d'Etienn et Anne BARD', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Jean' 'MAUCHE' : name='Décès', date='20 mai 1731', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Jean' 'MAUCHE' : name='Profession', date='None', place='None', notes='Ménager (1711)', source='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Notes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Sources'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Jean MAUCHE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Marie Rose' 'DURAND' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand)
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : info = 'Née le 14 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : --> event_name2='Naissance' event_date2='14 février 1688' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : info = 'Baptisée le 15 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : --> event_name2='Baptême' event_date2='15 février 1688' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : info = 'Décédée le 22 janvier 1761 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 72 ans'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : --> event_name2='Décès' event_date2='22 janvier 1761' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : 'Naissance - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Naissance' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_sources = 'Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+AD 13 en ligne'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_date = '14 février 1688'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : 'Baptême - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Baptême' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_sources = 'Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+AD 13 en ligne'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_date = '15 février 1688'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : 'Mariage (avec Jean MAUCHE) - Saint-Pierre-de-Mézoargues, 13150, Bouches-du- Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Mariage (avec Jean MAUCHE)' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_notes = 'Heure: 10:00
+Généalogie de Pierre GENOUX
+Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+Gilles après les trois publications à nos messes de paroisse le huitième du
+présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+Monsieur le vicaire de Bourbon
+Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+de Jean Durand père de la fille ici présent et autres parents de l'un et
+l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_sources = 'Relevés de registres paroissiaux et d'état civil de Provence. Base
+généalogique collaborative gratuite et bénévole. - GénéProvence -
+<http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités
+ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_date = '10 juin 1710'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : 'Décès - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Décès' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : event_date = '22 janvier 1761'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5 (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=durand.oc=5.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=sperite.n=gilles.html'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : union 1 = debut='* Mariée _le 10 juin 1710, Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Jean MAUCHE' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Marie Rose' 'DURAND' : name='Naissance', date='14 février 1688', place='Côte d'Azur, FRANCE', notes='None', source='Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+AD 13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Marie Rose' 'DURAND' : name='Baptême', date='15 février 1688', place='Côte d'Azur, FRANCE', notes='None', source='Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+AD 13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Marie Rose' 'DURAND' : name='Décès', date='22 janvier 1761', place='Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Marie Rose' 'DURAND' : name='Mariage (avec Jean MAUCHE)', date='10 juin 1710', place='Côte d'Azur, FRANCE', notes='Heure: 10:00
+Généalogie de Pierre GENOUX
+Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+Gilles après les trois publications à nos messes de paroisse le huitième du
+présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+Monsieur le vicaire de Bourbon
+Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+de Jean Durand père de la fille ici présent et autres parents de l'un et
+l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre', source='Relevés de registres paroissiaux et d'état civil de Provence. Base
+généalogique collaborative gratuite et bénévole. - GénéProvence -
+<http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités
+ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Demi-frères et demi-sœurs'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Événements'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marie Rose DURAND : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=sperite.n=gilles.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=durand.oc=5.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00004@ : 'Spérite' 'GILLES' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles)
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : info = 'Baptisée le 8 juin 1651 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : --> event_name2='Baptême' event_date2='8 juin 1651' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : info = 'Décédée le 14 avril 1693 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 41 ans'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : --> event_name2='Décès' event_date2='14 avril 1693' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : source = '* Baptême: Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : --> source 'Baptême' = 'Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : source = '* Union: Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : --> mariages_sources[https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles]='Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : note 1 (type 'Union avec Jean DURAND') : note_text='le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : note 'Union avec Jean DURAND' à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=barthelemy.n=gilles.html'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : surnom='Jean DURAND Petit'
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00005@ : 'Jean' 'DURAND' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5)
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : info = 'Né le 14 décembre 1659 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : --> event_name2='Naissance' event_date2='14 décembre 1659' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : info = 'Décédé'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : info = 'Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : titre_noblesse = 'Jean' (None)
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : source = '* Union 1: Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : --> source 'Union 1' = 'Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : source = '* Union 2: Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : --> source 'Union 2' = 'Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : note 1 (type 'Notes individuelles') : note_text='Signature: NO'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : note 2 (type 'Union avec Spérite GILLES') : note_text='le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : note 'Union avec Spérite GILLES' à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : union 1 = debut='* Marié _le 1er février 1682, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Spérite GILLES' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : union 2 = debut='* Marié _le 18 octobre 1693, Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Louise LAMOUROUX' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=louise&n=lamouroux&oc=2' 
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DURAND' : name='Naissance', date='14 décembre 1659', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DURAND' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DURAND' : name='Profession', date='None', place='None', notes='Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DURAND' : name='Union 1', date='None', place='None', notes='None', source='Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne'
+[gedcomw.element.element] ERROR: manage_events : @I00005@ 'Jean' 'DURAND' : unknown event name : 'Union 1'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Jean' 'DURAND' : name='Union 2', date='None', place='None', notes='None', source='Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[gedcomw.element.element] ERROR: manage_events : @I00005@ 'Jean' 'DURAND' : unknown event name : 'Union 2'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Sources'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 6 : Jean DURAND : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=magdelaine.n=tissot.html'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : union 1 = debut='* Mariée _le 1er février 1682, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='Jean _Petit_ DURAND' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5' 
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Spérite' 'GILLES' : name='Baptême', date='8 juin 1651', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne'
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Spérite' 'GILLES' : name='Décès', date='14 avril 1693', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Sources'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Spérite GILLES : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=magdelaine.n=tissot.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=barthelemy.n=gilles.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 15, id @I00006@ : 'Magdelaine' 'TISSOT' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot)
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : info = 'Née vers 1608 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : --> event_name2='Naissance' event_date2='vers 1608' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : info = 'Décédée le 11 août 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 80 ans'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : --> event_name2='Décès' event_date2='11 août 1688' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : 'Naissance - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Naissance' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : event_date = 'vers 1608'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : 'Mariage (avec Barthélemy GILLES) - Boulbon, 13150, Bouches-du-Rhône, Provence- Alpes-Côte d'Azur, FRANCE' --> event_name='Mariage (avec Barthélemy GILLES)' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : event_sources = 'Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+Le dix sept avril la donnation des corps a ete
+faite entre bartholomieu Gilles fils a pierre &
+margt Jausert d'une part et magdaleine
+Tissot fille de balthazar &feu jeanne trebillon
+d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : event_date = '17 avril 1633'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : 'Décès - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Décès' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : event_sources = 'Acte de sépulture - Tissot magdeleine + 11 8 1688 -
+L an mil six cent huitante huict & le onzieme du moy d aout
+*a ete ensevelie le 12me sur les cinq heures du soir magdaleine
+tissot veuve a barthelemi giles menger aagée environ
+de quatre vint ans
+a ete munie des sacrements pendant sa maladie en foy
+de ce me suis soubsigné a borbon les an & iours susd
+*est decedée et - AD Gard - 11 / 12 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : event_date = '11 août 1688'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=balthazar.n=tissot.html'
+[geneanet] DEBUG: Generation 4, sosa 14, id @I00007@ : 'Barthélemy' 'GILLES' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles)
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : info = 'Né vers 1609'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : --> event_name2='Naissance' event_date2='vers 1609' event_place2='None' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : info = 'Décédé le 2 octobre 1669 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 60 ans'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : --> event_name2='Décès' event_date2='2 octobre 1669' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : info = 'Ménager'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : source = '* Union: Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -   
+Le dix sept avril la donnation des corps a ete  
+faite entre bartholomieu Gilles fils a pierre &  
+margt Jausert d'une part et magdaleine  
+Tissot fille de balthazar &feu jeanne trebillon  
+d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : --> mariages_sources[https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles]='Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+Le dix sept avril la donnation des corps a ete
+faite entre bartholomieu Gilles fils a pierre &
+margt Jausert d'une part et magdaleine
+Tissot fille de balthazar &feu jeanne trebillon
+d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : source = '* Décès: Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois  
+d'octobre est decedé et le troisiesme a esté enseveli  
+Barthelemy gille mesnager , âgé de'environ  
+soixante ans ;muny des sacrements, au cimetiere  
+st marcellin'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : --> source 'Décès' = 'Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois
+d'octobre est decedé et le troisiesme a esté enseveli
+Barthelemy gille mesnager , âgé de'environ
+soixante ans ;muny des sacrements, au cimetiere
+st marcellin'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1 (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=pierre.n=gilles.oc=1.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jeanne.n=trebillon.html'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : union 1 = debut='* Mariée _le 17 avril 1633, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles' 
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Magdelaine' 'TISSOT' : name='Naissance', date='vers 1608', place='Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Magdelaine' 'TISSOT' : name='Décès', date='11 août 1688', place='Côte d'Azur, FRANCE', notes='None', source='Acte de sépulture - Tissot magdeleine + 11 8 1688 -
+L an mil six cent huitante huict & le onzieme du moy d aout
+*a ete ensevelie le 12me sur les cinq heures du soir magdaleine
+tissot veuve a barthelemi giles menger aagée environ
+de quatre vint ans
+a ete munie des sacrements pendant sa maladie en foy
+de ce me suis soubsigné a borbon les an & iours susd
+*est decedée et - AD Gard - 11 / 12 - Archives famille - Etat Civil - SOSA'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Magdelaine' 'TISSOT' : name='Mariage (avec Barthélemy GILLES)', date='17 avril 1633', place='Côte d'Azur, FRANCE', notes='None', source='Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+Le dix sept avril la donnation des corps a ete
+faite entre bartholomieu Gilles fils a pierre &
+margt Jausert d'une part et magdaleine
+Tissot fille de balthazar &feu jeanne trebillon
+d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Événements'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Magdelaine TISSOT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jeanne.n=trebillon.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=pierre.n=gilles.oc=1.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=balthazar.n=tissot.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=marguerite.n=jaussert.html'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : union 1 = debut='* Marié _le 17 avril 1633, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot' 
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Barthélemy' 'GILLES' : name='Naissance', date='vers 1609', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Barthélemy' 'GILLES' : name='Décès', date='2 octobre 1669', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois
+d'octobre est decedé et le troisiesme a esté enseveli
+Barthelemy gille mesnager , âgé de'environ
+soixante ans ;muny des sacrements, au cimetiere
+st marcellin'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Barthélemy' 'GILLES' : name='Profession', date='None', place='None', notes='Ménager', source='None'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Sources'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 14 : Barthélemy GILLES : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=marguerite.n=jaussert.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 31, id @I00008@ : 'Jeanne' 'TREBILLON' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon)
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : info = 'Née vers 1575 - Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : --> event_name2='Naissance' event_date2='vers 1575' event_place2='Vallabrègues, 30300, Gard, Occitanie, FRANCE' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : info = 'Décédée'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : 'Naissance - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Naissance' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : event_date = 'vers 1575'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : 'Contrat de mariage (avec Balthazar TISSOT) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Balthazar TISSOT)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : event_notes = 'page 410 / 3162
+entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+Madeleine porte aussi ses autres droits
+acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+et Honorat Meyer praticien.'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : event_date = '5 mai 1602'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=aymes.n=trebillon.html'
+[geneanet] DEBUG: Generation 5, sosa 28, id @I00009@ : 'Pierre' 'GILLES' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1)
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : info = 'Né vers 1555'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : --> event_name2='Naissance' event_date2='vers 1555' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : info = 'Décédé le 20 avril 1639 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 84 ans'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : --> event_name2='Décès' event_date2='20 avril 1639' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : source = '* Décès: Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé  
+d environ 84 ans .......'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : --> source 'Décès' = 'Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé
+d environ 84 ans .......'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert' 
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Pierre' 'GILLES' : name='Naissance', date='vers 1555', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Pierre' 'GILLES' : name='Décès', date='20 avril 1639', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé
+d environ 84 ans .......'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : rubrique='Sources'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 28 : Pierre GILLES : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 30, id @I00010@ : 'Balthazar' 'TISSOT' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot)
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : info = 'Né vers 1571 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : --> event_name2='Naissance' event_date2='vers 1571' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : info = 'Décédé le 3 septembre 1646 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 75 ans'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : --> event_name2='Décès' event_date2='3 septembre 1646' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : info = 'Laboureur (1602)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : 'Naissance - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Naissance' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_date = 'vers 1571'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : 'Contrat de mariage (avec Jeanne TREBILLON) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Jeanne TREBILLON)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_notes = 'page 410 / 3162
+entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+Madeleine porte aussi ses autres droits
+acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+et Honorat Meyer praticien.'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_date = '5 mai 1602'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : 'Décès - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Décès' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_sources = 'Acte de sépulture - Tissot balthazar + 3 9 1646 - AD Gard - 2 / 2 -
+AD 13 en ligne -
+1646
+Le 3 septembre est decedé Balthazar Tissot aagé
+d environ septante cinq ans ayant esté . . . . par
+Me jean martin . . . . . . . . . obit . . . . . . . . . . . . .
+sans . . . . . dans la parroisse . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . .'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : event_date = '3 septembre 1646'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=francois.n=tissot.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=francois.n=tissot.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=aymes.n=trebillon.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=esprite.n=gibert.html'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : union 1 = debut='* Contrat de mariage _le 5 mai 1602, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot' 
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Jeanne' 'TREBILLON' : name='Naissance', date='vers 1575', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Jeanne' 'TREBILLON' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Jeanne' 'TREBILLON' : name='Contrat de mariage (avec Balthazar TISSOT)', date='5 mai 1602', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 410 / 3162
+entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+Madeleine porte aussi ses autres droits
+acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+et Honorat Meyer praticien.', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Événements'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 31 : Jeanne TREBILLON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=magdelaine.n=rigaud.html'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : union 1 = debut='* Contrat de mariage _le 5 mai 1602, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon' 
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Balthazar' 'TISSOT' : name='Naissance', date='vers 1571', place='Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Balthazar' 'TISSOT' : name='Décès', date='3 septembre 1646', place='Côte d'Azur, FRANCE', notes='None', source='Acte de sépulture - Tissot balthazar + 3 9 1646 - AD Gard - 2 / 2 -
+AD 13 en ligne -
+1646
+Le 3 septembre est decedé Balthazar Tissot aagé
+d environ septante cinq ans ayant esté . . . . par
+Me jean martin . . . . . . . . . obit . . . . . . . . . . . . .
+sans . . . . . dans la parroisse . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . .'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Balthazar' 'TISSOT' : name='Profession', date='None', place='None', notes='Laboureur (1602)', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Balthazar' 'TISSOT' : name='Contrat de mariage (avec Jeanne TREBILLON)', date='5 mai 1602', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 410 / 3162
+entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+Madeleine porte aussi ses autres droits
+acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+et Honorat Meyer praticien.', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Événements'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Balthazar TISSOT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=magdelaine.n=rigaud.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=esprite.n=gibert.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 29, id @I00011@ : 'Marguerite' 'JAUSSERT' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert)
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : info = 'Née avant 1565'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : --> event_name2='Naissance' event_date2='avant 1565' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : info = 'Décédée'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=antoine.n=jaussert.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=laurence.n=registrel.html'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Marguerite' 'JAUSSERT' : name='Naissance', date='avant 1565', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Marguerite' 'JAUSSERT' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 29 : Marguerite JAUSSERT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=laurence.n=registrel.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=antoine.n=jaussert.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : surnom='François TISSOT de la Rieppe'
+[geneanet] DEBUG: Generation 6, sosa 60, id @I00012@ : 'François' 'TISSOT' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot)
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : info = 'Né vers 1540 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : --> event_name2='Naissance' event_date2='vers 1540' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : info = 'Décédé avant 1602'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : --> event_name2='Décès' event_date2='avant 1602' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : info = 'Laboureur'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : titre_noblesse = 'François' (None)
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : 'Naissance - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Naissance' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : event_date = 'vers 1540'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : 'Contrat de mariage (avec Magdelaine RIGAUD) - Tarascon, 13150, Bouches-du- Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Contrat de mariage (avec Magdelaine RIGAUD)' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : event_notes = 'source Geneanet François SALGE'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : event_date = '29 octobre 1561'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : 'Décès' --> event_name='Décès' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : event_date = 'avant 1602'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=tissot.html'
+[geneanet] DEBUG: Generation 6, sosa 62, id @I00013@ : 'Aymes' 'TREBILLON' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon)
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : info = 'Né vers 1545'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : --> event_name2='Naissance' event_date2='vers 1545' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : info = 'Décédé'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : info = 'Laboureur (1602)'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : titre_noblesse = 'Consul de Vallabrègues 1540-1608' (None)
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : 'Naissance' --> event_name='Naissance' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_date = 'vers 1545'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : 'Contrat de mariage (avec Esprite GIBERT) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Esprite GIBERT)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_notes = 'page 177 / 3162
+ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+même lieu
+donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+ensuite rémission de droits à Guillaume et Olivier ses frères'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_date = '1er octobre 1571'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : 'Testament - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Testament' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_notes = 'page 409 / 3162
+testament de Aymès TREBILLON laboureur habitant de Vallabrègue
+légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
+à Jeanne, Claude et Lyonne autres filles 7/20 l.
+héritier son fils Jean
+acte maison du testateur en présence de capitaine Jean Cayron, de Mathieu
+Nogaret charpentier, de Jean Romieu, Antoine Gibert, Jean Carrière fils de
+Pierre, Huguet Branche et Jehan Vinhe'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : event_date = '11 février 1602'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=pons+ou+pierre.n=trebillon.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922 (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.i=119922.html'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : union 1 = debut='* Contrat de mariage _le 29 octobre 1561, Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud' 
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'François' 'TISSOT' : name='Naissance', date='vers 1540', place='Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'François' 'TISSOT' : name='Décès', date='avant 1602', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'François' 'TISSOT' : name='Profession', date='None', place='None', notes='Laboureur', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'François' 'TISSOT' : name='Contrat de mariage (avec Magdelaine RIGAUD)', date='29 octobre 1561', place='Côte d'Azur, FRANCE', notes='source Geneanet François SALGE', source='None'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : rubrique='Événements'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 60 : François TISSOT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.i=119922.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=pons+ou+pierre.n=trebillon.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=tissot.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jaumette.n=malcane.html'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : union 1 = debut='* Contrat de mariage _le 1er octobre 1571, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert' 
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Aymes' 'TREBILLON' : name='Naissance', date='vers 1545', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Aymes' 'TREBILLON' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Aymes' 'TREBILLON' : name='Profession', date='None', place='None', notes='Laboureur (1602)', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Aymes' 'TREBILLON' : name='Contrat de mariage (avec Esprite GIBERT)', date='1er octobre 1571', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 177 / 3162
+ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+même lieu
+donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+ensuite rémission de droits à Guillaume et Olivier ses frères', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Aymes' 'TREBILLON' : name='Testament', date='11 février 1602', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 409 / 3162
+testament de Aymès TREBILLON laboureur habitant de Vallabrègue
+légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
+à Jeanne, Claude et Lyonne autres filles 7/20 l.
+héritier son fils Jean
+acte maison du testateur en présence de capitaine Jean Cayron, de Mathieu
+Nogaret charpentier, de Jean Romieu, Antoine Gibert, Jean Carrière fils de
+Pierre, Huguet Branche et Jehan Vinhe', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Événements'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 62 : Aymes TREBILLON : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jaumette.n=malcane.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 61, id @I00014@ : 'Magdelaine' 'RIGAUD' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud)
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : info = 'Née vers 1540'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : --> event_name2='Naissance' event_date2='vers 1540' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : info = 'Décédée après 1602'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : --> event_name2='Décès' event_date2='après 1602' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : 'Naissance' --> event_name='Naissance' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : event_date = 'vers 1540'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : 'Contrat de mariage (avec François de la Rieppe TISSOT) - Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' --> event_name='Contrat de mariage (avec François de la Rieppe TISSOT)' event_place='Côte d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : event_notes = 'source Geneanet François SALGE'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : event_date = '29 octobre 1561'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : 'Décès' --> event_name='Décès' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : event_date = 'après 1602'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=domergue.n=rigaud.html'
+[geneanet] DEBUG: Generation 6, sosa 63, id @I00015@ : 'Esprite' 'GIBERT' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert)
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : info = 'Née vers 1550'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : --> event_name2='Naissance' event_date2='vers 1550' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : info = 'Décédée avant 1602'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : --> event_name2='Décès' event_date2='avant 1602' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : 'Naissance' --> event_name='Naissance' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : event_date = 'vers 1550'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : 'Contrat de mariage (avec Aymes TREBILLON) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Aymes TREBILLON)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : event_notes = 'page 177 / 3162
+ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+même lieu
+donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+ensuite rémission de droits à Guillaume et Olivier ses frères'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : event_date = '1er octobre 1571'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : 'Décès' --> event_name='Décès' event_place='None'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : event_date = 'avant 1602'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=gibert.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jean.n=gibert.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=domergue.n=rigaud.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1 (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=catherine.n=baud.oc=1.html'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : union 1 = debut='* Contrat de mariage _le 29 octobre 1561, Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot' 
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Magdelaine' 'RIGAUD' : name='Naissance', date='vers 1540', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Magdelaine' 'RIGAUD' : name='Décès', date='après 1602', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Magdelaine' 'RIGAUD' : name='Contrat de mariage (avec François de la Rieppe TISSOT)', date='29 octobre 1561', place='Côte d'Azur, FRANCE', notes='source Geneanet François SALGE', source='None'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : rubrique='Événements'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 61 : Magdelaine RIGAUD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=francoise.n=rodier.html'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : union 1 = debut='* Contrat de mariage _le 1er octobre 1571, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon' 
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Esprite' 'GIBERT' : name='Naissance', date='vers 1550', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Esprite' 'GIBERT' : name='Décès', date='avant 1602', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Esprite' 'GIBERT' : name='Contrat de mariage (avec Aymes TREBILLON)', date='1er octobre 1571', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 177 / 3162
+ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+même lieu
+donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+ensuite rémission de droits à Guillaume et Olivier ses frères', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Événements'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 63 : Esprite GIBERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 58, id @I00016@ : 'Antoine' 'JAUSSERT' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert)
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : note 1 (type 'Naissance') : note_text='source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source'
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel' 
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Antoine' 'JAUSSERT' : name='Naissance', date='None', place='None', notes='source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source', source='None'
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : rubrique='Notes'
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 58 : Antoine JAUSSERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 59, id @I00017@ : 'Laurence' 'REGISTREL' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel)
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : note 1 (type 'Naissance') : note_text='source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source'
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert' 
+[gedcomw.element.element] INFO: manage_events : @I00017@ 'Laurence' 'REGISTREL' : name='Naissance', date='None', place='None', notes='source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source', source='None'
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : rubrique='Notes'
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 59 : Laurence REGISTREL : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=francoise.n=rodier.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=catherine.n=baud.oc=1.html> (referer: None)
+[geneanet] DEBUG: Generation 7, sosa 121, id @I00018@ : '?' '?' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922)
+[geneanet] DEBUG: Generation 7, sosa 121 : ? ? : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot' 
+[geneanet] DEBUG: Generation 7, sosa 121 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 121 : ? ? : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 121 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 124, id @I00019@ : 'Pons Ou Pierre' 'TREBILLON' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon)
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : info = 'Né vers 1496'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : --> event_name2='Naissance' event_date2='vers 1496' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : info = 'Décédé avant 12 février 1561'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : --> event_name2='Décès' event_date2='avant 12 février 1561' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : info = 'Pontanier du port de Comps (1532)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : 'Naissance' --> event_name='Naissance' event_place='None'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_date = 'vers 1496'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : 'Contrat de mariage (avec Jaumette MALCANE) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Jaumette MALCANE)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_notes = 'page 1995 / 3162
+contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+promesse de celebrer leur mariage à première réquisition
+en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+Jaumette
+
+= lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+les accoutrements le tout au jour de noces pour les robes et par solutions de
+3 l. à chaque st Michel
+= suivent les pactes
+= acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+André. Ytier, et de Michel Chayne'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_date = '18 septembre 1521'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : 'Quittance de dot - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Quittance de dot' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_notes = 'page 2012 / 3162
+reconnaissance de Pierre THEBÏLHAT de Vallabrègue comme mari de Jaumette
+Malcane faite à Antoine Malcan de Montfrin 10 florins venant à déduction de la
+constitution faite à Jaumette
+ct de mariage reçu du.notaire soussigné acte maison de noble Jean Garin tenue
+en arrenteinent par ledit Trebilhat en présence deGabriel Reynoard, de Simon
+Moret, de Louis Bonet, ht de Valabrègue'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_date = '10 décembre 1521'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : 'Reconnaissance de dette - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Reconnaissance de dette' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_notes = 'page 2422 / 3162
+present Pierre TREBILHAT du port de Comps qui confesse devoir à Pierre Daucono
+et Antoine Martin galafats d'Avignon 11 l. en déduction de plus grande pour
+travail fait au port dudit Comps
+acte chez le notaire en présence de Dalmas Bosquet et Pierre Gaud'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_date = '5 juin 1532'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : 'Décès' --> event_name='Décès' event_place='None'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_notes = 'Date du CM de sa fille Hélène où elle est dit fille de feu Pierre'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : event_date = 'avant 12 février 1561'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : union 1 = debut='* Contrat de mariage _le 18 septembre 1521, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane' 
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Naissance', date='vers 1496', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Décès', date='avant 12 février 1561', place='None', notes='Date du CM de sa fille Hélène où elle est dit fille de feu Pierre', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Profession', date='None', place='None', notes='Pontanier du port de Comps (1532)', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Contrat de mariage (avec Jaumette MALCANE)', date='18 septembre 1521', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 1995 / 3162
+contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+promesse de celebrer leur mariage à première réquisition
+en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+Jaumette
+
+= lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+les accoutrements le tout au jour de noces pour les robes et par solutions de
+3 l. à chaque st Michel
+= suivent les pactes
+= acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+André. Ytier, et de Michel Chayne', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Quittance de dot', date='10 décembre 1521', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 2012 / 3162
+reconnaissance de Pierre THEBÏLHAT de Vallabrègue comme mari de Jaumette
+Malcane faite à Antoine Malcan de Montfrin 10 florins venant à déduction de la
+constitution faite à Jaumette
+ct de mariage reçu du.notaire soussigné acte maison de noble Jean Garin tenue
+en arrenteinent par ledit Trebilhat en présence deGabriel Reynoard, de Simon
+Moret, de Louis Bonet, ht de Valabrègue', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Pons Ou Pierre' 'TREBILLON' : name='Reconnaissance de dette', date='5 juin 1532', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 2422 / 3162
+present Pierre TREBILHAT du port de Comps qui confesse devoir à Pierre Daucono
+et Antoine Martin galafats d'Avignon 11 l. en déduction de plus grande pour
+travail fait au port dudit Comps
+acte chez le notaire en présence de Dalmas Bosquet et Pierre Gaud', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : rubrique='Événements'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 124 : Pons Ou Pierre TREBILLON : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 120, id @I00020@ : 'Jean' 'TISSOT' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot)
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : info = 'Décédé avant 1595'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : --> event_name2='Décès' event_date2='avant 1595' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : note 1 (type 'Décès') : note_text='Généalogie de Raymond RIPERT'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922' 
+[gedcomw.element.element] INFO: manage_events : @I00020@ 'Jean' 'TISSOT' : name='Décès', date='avant 1595', place='None', notes='Généalogie de Raymond RIPERT', source='None'
+[geneanet] ERROR: Generation 7, sosa 120 : Jean TISSOT : Anomalies détectées sur Jean TISSOT. Vérifier la source.
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : rubrique='Notes'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 120 : Jean TISSOT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 125, id @I00021@ : 'Jaumette' 'MALCANE' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane)
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : info = 'Née vers 1501 - Montfrin, 30490, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : --> event_name2='Naissance' event_date2='vers 1501' event_place2='Montfrin, 30490, Gard, Occitanie, FRANCE' 
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : info = 'Décédée'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : 'Naissance - Montfrin, 30490, Gard, Occitanie, FRANCE' --> event_name='Naissance' event_place='Montfrin, 30490, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : event_date = 'vers 1501'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : 'Contrat de mariage (avec Pons Ou Pierre TREBILLON) - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Contrat de mariage (avec Pons Ou Pierre TREBILLON)' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : event_notes = 'page 1995 / 3162
+contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+promesse de celebrer leur mariage à première réquisition
+en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+Jaumette
+
+= lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+les accoutrements le tout au jour de noces pour les robes et par solutions de
+3 l. à chaque st Michel
+= suivent les pactes
+= acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+André. Ytier, et de Michel Chayne'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : event_date = '18 septembre 1521'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=antoine.n=malcan.html'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : surnom='Jean GIBERT du Roux'
+[geneanet] DEBUG: Generation 7, sosa 126, id @I00022@ : 'Jean' 'GIBERT' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert)
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : info = 'Né vers 1505 - Le Roux - Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : --> event_name2='Naissance' event_date2='vers 1505' event_place2='Le Roux - Vallabrègues, 30300, Gard, Occitanie, FRANCE' 
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : info = 'Décédé avant 1561'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : --> event_name2='Décès' event_date2='avant 1561' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : info = 'Laboureur (1558)'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : titre_noblesse = 'Jean' (None)
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : 'Naissance - Le Roux - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Naissance' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : event_date = 'vers 1505'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : 'Testament - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Testament' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : event_notes = 'page 42 / 3162
+testament de Jean GIBERT du Roux du lieu de Vallabrègue, laboureur
+légat en faveur de ses filles Esprite et Antonie 200 florins et deux robes
+héritiers Françoise Rodière, sa femme et Jean, Etienne, Guillaume, Olivier et
+Antoine, ses fils'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : event_date = '9 janvier 1559'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : 'Décès' --> event_name='Décès' event_place='None'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : event_date = 'avant 1561'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier' 
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Jean' 'GIBERT' : name='Naissance', date='vers 1505', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Jean' 'GIBERT' : name='Décès', date='avant 1561', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Jean' 'GIBERT' : name='Profession', date='None', place='None', notes='Laboureur (1558)', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Jean' 'GIBERT' : name='Testament', date='9 janvier 1559', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 42 / 3162
+testament de Jean GIBERT du Roux du lieu de Vallabrègue, laboureur
+légat en faveur de ses filles Esprite et Antonie 200 florins et deux robes
+héritiers Françoise Rodière, sa femme et Jean, Etienne, Guillaume, Olivier et
+Antoine, ses fils', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : rubrique='Événements'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 126 : Jean GIBERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 122, id @I00023@ : 'Domergue' 'RIGAUD' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud)
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : info = 'Né vers 1500'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : --> event_name2='Naissance' event_date2='vers 1500' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : info = 'Décédé'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : note 1 (type 'Naissance') : note_text='source Geneanet Famille SADOULET'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jaumin.n=rigaud.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=y....n=bremond.html'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1' 
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Domergue' 'RIGAUD' : name='Naissance', date='vers 1500', place='None', notes='source Geneanet Famille SADOULET', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Domergue' 'RIGAUD' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : rubrique='Parents'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : rubrique='Notes'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 122 : Domergue RIGAUD : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=y....n=bremond.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=jaumin.n=rigaud.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=antoine.n=malcan.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone (true='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=doulce.n=barone.html'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : union 1 = debut='* Contrat de mariage _le 18 septembre 1521, Vallabrègues, 30300, Gard, Occitanie, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon' 
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Jaumette' 'MALCANE' : name='Naissance', date='vers 1501', place='Montfrin, 30490, Gard, Occitanie, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Jaumette' 'MALCANE' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Jaumette' 'MALCANE' : name='Contrat de mariage (avec Pons Ou Pierre TREBILLON)', date='18 septembre 1521', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 1995 / 3162
+contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+promesse de celebrer leur mariage à première réquisition
+en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+Jaumette
+
+= lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+les accoutrements le tout au jour de noces pour les robes et par solutions de
+3 l. à chaque st Michel
+= suivent les pactes
+= acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+André. Ytier, et de Michel Chayne', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Parents'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Événements'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 125 : Jaumette MALCANE : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.dmdoyen.lang=fr.pz=jeremie+michel+maurice+julien.nz=doyen.p=doulce.n=barone.html> (referer: None)
+[geneanet] DEBUG: Generation 7, sosa 127, id @I00024@ : 'Françoise' 'RODIER' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier)
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : info = 'Née vers 1510'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : --> event_name2='Naissance' event_date2='vers 1510' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : info = 'Décédée après 1561'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : --> event_name2='Décès' event_date2='après 1561' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert' 
+[gedcomw.element.element] INFO: manage_events : @I00024@ 'Françoise' 'RODIER' : name='Naissance', date='vers 1510', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00024@ 'Françoise' 'RODIER' : name='Décès', date='après 1561', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : rubrique='Présences lors d'événements'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 127 : Françoise RODIER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 123, id @I00025@ : 'Catherine' 'BAUD' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1)
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : note 1 (type 'Naissance') : note_text='source Geneanet François SALGE 6 11 2012'
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud' 
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Catherine' 'BAUD' : name='Naissance', date='None', place='None', notes='source Geneanet François SALGE 6 11 2012', source='None'
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : rubrique='Notes'
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 123 : Catherine BAUD : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 245, id @I00026@ : 'Y...' 'BREMOND' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond)
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : note 1 (type 'Naissance') : note_text='source Geneanet Famille SADOULET'
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud' 
+[gedcomw.element.element] INFO: manage_events : @I00026@ 'Y...' 'BREMOND' : name='Naissance', date='None', place='None', notes='source Geneanet Famille SADOULET', source='None'
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : rubrique='Notes'
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 245 : Y... BREMOND : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 250, id @I00027@ : 'Antoine' 'MALCAN' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan)
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : info = 'Décédé avant 18 septembre 1521 - Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : --> event_name2='Décès' event_date2='avant 18 septembre 1521' event_place2='Vallabrègues, 30300, Gard, Occitanie, FRANCE' 
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone' 
+[gedcomw.element.element] INFO: manage_events : @I00027@ 'Antoine' 'MALCAN' : name='Décès', date='avant 18 septembre 1521', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='None', source='None'
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 250 : Antoine MALCAN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 251, id @I00028@ : 'Doulce' 'BARONE' (F) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone)
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : 'Accord - Vallabrègues, 30300, Gard, Occitanie, FRANCE' --> event_name='Accord' event_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : event_notes = 'page 2012 / 3162
+présente honeste femme Doulce BARONE comme mère et tutrice des enfants de feu
+Antoine Malcan laquelle quitte Guillaume Manyvet de Vallabrègue son gendre
+icelui payant pour les hoirs de Antoine Malcan susdite somme pour 19 florins
+que ledit Manyvet lui a avancé
+
+= en présence des précités'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : event_sources = 'Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : event_date = '10 décembre 1521'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan' 
+[gedcomw.element.element] INFO: manage_events : @I00028@ 'Doulce' 'BARONE' : name='Accord', date='10 décembre 1521', place='Vallabrègues, 30300, Gard, Occitanie, FRANCE', notes='page 2012 / 3162
+présente honeste femme Doulce BARONE comme mère et tutrice des enfants de feu
+Antoine Malcan laquelle quitte Guillaume Manyvet de Vallabrègue son gendre
+icelui payant pour les hoirs de Antoine Malcan susdite somme pour 19 florins
+que ledit Manyvet lui a avancé
+
+= en présence des précités', source='Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : rubrique='Événements'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 251 : Doulce BARONE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 8, sosa 244, id @I00029@ : 'Jaumin' 'RIGAUD' (M) (https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud)
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : info = 'Décédé vers 1526'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : --> event_name2='Décès' event_date2='vers 1526' event_place2='None' 
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : note 1 (type 'Décès') : note_text='source Geneanet Famille SADOULET'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond' 
+[gedcomw.element.element] INFO: manage_events : @I00029@ 'Jaumin' 'RIGAUD' : name='Décès', date='vers 1526', place='None', notes='source Geneanet Famille SADOULET', source='None'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : rubrique='Notes'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 8, sosa 244 : Jaumin RIGAUD : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] INFO: Closing spider (finished)
+[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand' mariage_date='10 juin 1710' mariage_place='Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,' mariage_source='Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY'
+[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles' mariage_date='1er février 1682' mariage_place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot' mariage_date='17 avril 1633' mariage_place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,' mariage_source='Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+Le dix sept avril la donnation des corps a ete
+faite entre bartholomieu Gilles fils a pierre &
+margt Jausert d'une part et magdaleine
+Tissot fille de balthazar &feu jeanne trebillon
+d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA'
+[geneanet] DEBUG: Famille '@F00004@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00004@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon' mariage_date='5 mai 1602' mariage_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00005@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00005@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00006@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00006@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert' mariage_date='1er octobre 1571' mariage_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00007@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00007@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud' mariage_date='29 octobre 1561' mariage_place='Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00008@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00008@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00009@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00009@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00010@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00010@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane' mariage_date='18 septembre 1521' mariage_place='Vallabrègues, 30300, Gard, Occitanie, FRANCE,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00011@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00011@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00012@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00012@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00013@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00013@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00014@' : père='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud', mère='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00014@' : enfant='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud', true_url_pere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud', true_url_mere='https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] INFO: NRa Spider 'geneanet' closed :
+[geneanet] INFO: - nb_persons            = 29
+[geneanet] INFO: - nb_families           = 14
+[geneanet] INFO: - 14 relations enfants / parents
+[geneanet] INFO: - nb_consanguinites     = 0
+[geneanet] INFO: - max_generations       = 8
+[geneanet] INFO: - nb_titres_noblesse    = 4 (avec 0 notes(s))
+[geneanet] INFO: - nb_sous_titres        = 0
+[geneanet] INFO: - nb_notes_longues      = 18
+[geneanet] INFO: - multiple_events_count = 0
+[geneanet] INFO: - nb_errors             = 3
+[geneanet] INFO: - nb_todo               = 5
+[geneanet] INFO: - nb_scanned_pages      = 0
+[geneanet] INFO: - nb_saved_pages        = 0
+[geneanet] INFO: - nb_cached_pages       = 29
+[geneanet] INFO: Saving to 'result/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.ged'
+[gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.ged'
+[scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10530,
+ 'downloader/request_count': 29,
+ 'downloader/request_method_count/GET': 29,
+ 'downloader/response_bytes': 2832564,
+ 'downloader/response_count': 29,
+ 'downloader/response_status_count/200': 29,
+ 'elapsed_time_seconds': 1.287145,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 9, 7, 23, 0, 20, 798290),
+ 'log_count/DEBUG': 557,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 103,
+ 'request_depth_max': 7,
+ 'response_received_count': 29,
+ 'scheduler/dequeued': 29,
+ 'scheduler/dequeued/memory': 29,
+ 'scheduler/enqueued': 29,
+ 'scheduler/enqueued/memory': 29,
+ 'start_time': datetime.datetime(2023, 9, 7, 23, 0, 19, 511145)}
+[scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,1394 @@
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.13 08/09/2023 à 01:00
+1;1;@I00001@;Marguerite;NICOLAS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&n=nicolas&oc=0&p=marguerite;2;0;1;2;forme2;9 février 1767;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née le 29 janvier 1743 - Boulbon 13, , , ,
+- Décédée en 1816 - Barbentane 13570, , , ,, à l'âge de 73 ans";0;
+2;3;@I00002@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie+anne&n=mauche;2;0;0;2;forme2;28 septembre 1733;"";"";"";"";"";0;0;"- Née en 1711
+- Décédée en 1789, à l'âge de 78 ans";0;
+2;2;@I00003@;Jacques;NICOLAS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacques&n=nicolas;2;0;0;2;forme2;28 septembre 1733;"";"";"";"";"";0;0;"- Né en 1706
+- Décédé en 1788, à l'âge de 82 ans";0;
+3;5;@I00005@;Anne;ROCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=roche;2;0;0;2;forme2;18 janvier 1693;"Barbentane 13570, , , ,,";"";"";"";"";0;0;"- Née en 1668
+- Décédée le 3 mars 1748 - Boulbon 13, , , ,, à l'âge de 80 ans";0;
+3;6;@I00007@;Jean;MAUCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=mauche&oc=2;2;0;1;2;forme2;10 juin 1710;"St Pierre de Mézoargues 13, , , ,,";"";"";"";"";0;0;"- Né en 1672
+- Décédé en 1731, à l'âge de 59 ans";0;
+3;7;@I00004@;Marie Rose;DURAND;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie+rose&n=durand;2;0;1;2;forme2;10 juin 1710;"St Pierre de Mézoargues 13, , , ,,";"";"";"";"";0;0;"- Née le 15 février 1688 - Boulbon 13, , , ,
+- Décédée le 22 janvier 1761 - Boulbon 13, , , ,, à l'âge de 72 ans";0;
+3;4;@I00006@;Durand;NICOLAS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=durand&n=nicolas;3;0;0;2;forme2;18 janvier 1693;"Barbentane 13570, , , ,,";"Ménager";"";"";"";0;0;"- Né en 1666
+- Décédé en 1734, à l'âge de 68 ans
+- Ménager";0;
+4;13;@I00008@;Anne;BENDE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=bende;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+4;12;@I00009@;Etienne;MAUCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne&n=mauche&oc=2;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+4;9;@I00010@;Honorade;AGNILLIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=honorade&n=agnillier;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée en 1670";0;
+4;8;@I00011@;François;NICOLAS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francois&n=nicolas;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1634 - Barbentane 13570, , , ,
+- Décédé";0;
+4;11;@I00012@;Delphine;GRILLETTE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=delphine&n=grillette;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée en 1691 - Barbentane 13570, , , ,";0;
+4;10;@I00013@;Sébastien;ROCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=sebastien&n=roche;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé en 1715 - Barbentane 13570, , , ,";0;
+4;14;@I00015@;Jean;DURAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=durand&oc=2;2;0;0;2;forme2;1er février 1682;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Né en 1659
+- Décédé";0;
+4;15;@I00014@;Espérite;GILLES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=esperite&n=gilles;2;0;0;2;forme2;1er février 1682;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1651
+- Décédée en 1693, à l'âge de 42 ans";0;
+5;17;@I00016@;Françoise;VERCOT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francoise&n=vercot;2;0;2;2;forme2;18 octobre 1633;"Barbentane 13570, , , ,,";"";"";"";"";0;0;"- Née le 10 décembre 1609 - Barbentane 13570, , , ,
+- Décédée le 10 décembre 1673 - Boulbon 13, , , ,, à l'âge de 64 ans";0;
+5;16;@I00017@;Pierre;NICOLAS ou NICOULAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=nicolas+ou+nicoulaud;2;0;2;2;forme2;18 octobre 1633;"Barbentane 13570, , , ,,";"";"";"";"";1;0;"- Né en 1612
+- Décédé le 20 octobre 1689 - Barbentane 13570, , , ,, à l'âge de 77 ans";0;
+5;29;@I00018@;Françoise;BURAVAND;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francoise&n=buravand;2;0;0;2;forme2;22 février 1649;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1621 - Boulbon 13, , , ,
+- Décédée le 23 janvier 1701 - Boulbon 13, , , ,, à l'âge de 80 ans";0;
+5;28;@I00019@;Nicolas;DURAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=nicolas&n=durand&oc=1;3;0;0;2;forme2;22 février 1649;"Boulbon 13, , , ,,";"Consul, ménager";"";"";"";0;0;"- Né en 1622 - Boulbon 13, , , ,
+- Décédé le 5 octobre 1676 - Boulbon 13, , , ,, à l'âge de 54 ans
+- Consul, ménager";0;
+5;31;@I00020@;Magdeleine;TISSOT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=magdeleine&n=tissot;2;0;0;2;forme2;17 avril 1633;"Boulbon 13, , , ,,";"";"";"";"";1;0;"- Née vers 1608 - Boulbon 13, , , ,
+- Décédée le 11 août 1688 - Boulbon 13, , , ,, à l'âge d'environ 80 ans";0;
+5;30;@I00021@;Barthélémy;GILLES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=barthelemy&n=gilles;3;0;0;2;forme2;17 avril 1633;"Boulbon 13, , , ,,";"Ménager";"";"";"";1;0;"- Né vers 1609 - Boulbon 13, , , ,
+- Décédé le 2 octobre 1669 - Boulbon 13, , , ,, à l'âge d'environ 60 ans
+- Ménager";0;
+6;32;@I00022@;Durand dit Ageteste;NICOLAS ou MICOULAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=durand+dit+ageteste&n=nicolas+ou+micoulaud;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé en 1626 - Barbentane 13570, , , ,";0;
+6;35;@I00023@;Catherine;COLOMBIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=catherine&n=colombin;1;0;0;0;;1605;"";"";"";"";"";0;0;"- Décédée en 1650";0;
+6;34;@I00024@;Thomas;VERCOT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=thomas&n=vercot;1;0;0;0;;1605;"";"";"";"";"";0;0;"- Décédé en 1616";0;
+6;33;@I00025@;Anne;JAUSSERAND ou JAUSSAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=jausserand+ou+jaussaud;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+6;63;@I00026@;Jeanne;TREBILLON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=trebillon;2;0;0;2;forme2;5 mai 1602;"Vallabrègues, 30336, Gard, Languedoc-Roussillon, France,";"";"";"";"";2;1;"- Née en 1575 - Vallabrègues, 30336, Gard, Languedoc-Roussillon, France
+- Décédée avant 1637
+@todo note 'Union avec Balthazar TISSOT' de Jeanne TREBILLON à analyser : 'contrat de mariage'
+@todo note union à analyser pour Jeanne TREBILLON : 'Il se remarie le 6/08/1637 avec Arbaud Espérite (veuve) à Boulbon.'";0;
+6;62;@I00027@;Balthazar;TISSOT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=balthazar&n=tissot;3;0;0;2;forme2;5 mai 1602;"Vallabrègues, 30336, Gard, Languedoc-Roussillon, France,";"Laboureur (1602)";"";"";"";3;1;"- Né entre 1565 et 1571 - Boulbon 13, , , ,
+- Décédé le 3 septembre 1646 - Boulbon 13, , , ,
+- Laboureur (1602)
+@todo note 'Union avec Jeanne TREBILLON' de Balthazar TISSOT à analyser : 'contrat de mariage'
+@todo note union à analyser pour Balthazar TISSOT : 'Il se remarie le 6/08/1637 avec Arbaud Espérite (veuve) à Boulbon.'";0;
+6;57;@I00028@;Catherine;BOURGES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=catherine&n=bourges;2;0;0;2;forme2;25 septembre 1622;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1597 - Boulbon 13, , , ,
+- Décédée le 20 septembre 1665 - Boulbon 13, , , ,, à l'âge de 68 ans";0;
+6;59;@I00029@;Jeanne;FRÉDIÈRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=frediere&oc=1;2;0;0;2;forme2;24 août 1608;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1590
+- Décédée le 25 juillet 1648 - Boulbon 13, , , ,, à l'âge de 58 ans";0;
+6;56;@I00030@;Honorat;DURAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=honorat&n=durand;3;0;0;2;forme2;25 septembre 1622;"Boulbon 13, , , ,,";"Ménager";"";"";"";1;0;"- Né en 1589 - Boulbon 13, , , ,
+- Décédé le 9 mars 1669 - Boulbon 13, , , ,, à l'âge de 80 ans
+- Ménager";0;
+6;58;@I00031@;Bernard;BURAVAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=buravand;2;0;0;2;forme2;24 août 1608;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Né vers 1585 - Boulbon 13, , , ,
+- Décédé le 29 janvier 1652 - Boulbon 13, , , ,, à l'âge d'environ 67 ans";0;
+6;60;@I00033@;Pierre;GILLES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=gilles;2;0;0;0;;vers 1615;"";"";"";"";"";1;0;"- Né vers 1555
+- Décédé le 20 avril 1639 - Boulbon 13, , , ,, à l'âge d'environ 84 ans";0;
+6;61;@I00032@;Marguerite;JAUFFRET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=jauffret;2;0;0;2;forme2;vers 1615;"";"";"";"";"";0;0;"- Née avant 1565
+- Décédée avant 1633";0;
+7;127;@I00034@;Esprite;GIBERT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=esprite&n=gibert;2;0;2;2;forme2;1er octobre 1571;"Vallabrègues 30, , , ,,";"";"";"";"";2;1;"- Née vers 1550
+- Décédée avant 1602
+@todo note 'Union avec Aymé TREBILLON' de Esprite GIBERT à analyser : 'CM du 2/09/1571 à Vallabrègues chez Me Balliard Marcelin'
+@todo note union à analyser pour Esprite GIBERT : '6 enfants vivants pour le testament du 11/02/1602 à Vallabrègues chez Me
+Rogier Gilbert.'";0;
+7;126;@I00035@;Aymé;TREBILLON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ayme&n=trebillon;3;0;2;2;forme2;1er octobre 1571;"Vallabrègues 30, , , ,,";"Laboureur, consul de Vallabrègues";"";"";"";2;1;"- Né en 1540 - Vallabrègues 30, , , ,
+- Décédé après 1608 - Vallabrègues 30, , , ,
+- Laboureur, consul de Vallabrègues
+@todo note 'Union avec Esprite GIBERT' de Aymé TREBILLON à analyser : 'CM du 2/09/1571 à Vallabrègues chez Me Balliard Marcelin'
+@todo note union à analyser pour Aymé TREBILLON : '6 enfants vivants pour le testament du 11/02/1602 à Vallabrègues chez Me
+Rogier Gilbert.'";0;
+7;124;@I00036@;François;TISSOT dit de la Rieppe;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francois&n=tissot+dit+de+la+rieppe&oc=1;3;0;1;2;forme2;19 octobre 1561;"Tarascon 13, , , ,,";"Laboureur";"";"";"";1;0;"- Né vers 1540 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé avant septembre 1592
+- Laboureur
+@todo note 'Union avec Magdeleine RIGAUD' de François TISSOT dit de la Rieppe à analyser : 'CM'";0;
+7;125;@I00040@;Magdeleine;RIGAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=magdeleine&n=rigaud;2;0;1;2;forme2;19 octobre 1561;"Tarascon 13, , , ,,";"";"";"";"";1;0;"- Née vers 1540 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédée le 4 janvier 1619 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 79 ans
+@todo note 'Union avec François TISSOT dit de la Rieppe' de Magdeleine RIGAUD à analyser : 'CM'";0;
+7;118;@I00041@;Pierre;FRÉDIÈRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=frediere;3;0;1;2;forme2;30 août 1580;"Boulbon 13, , , ,,";"Marchand";"";"";"";1;1;"- Né en 1558 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé avant 1605 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Marchand
+@todo note union à analyser pour Pierre FRÉDIÈRE : 'attention : filiation incertaine car 3 Louise Poildavoine à la même période
+???'";0;
+7;114;@I00042@;Pierre;BOURGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=bourges&oc=1;3;0;0;0;;1595;"Boulbon 13, , , ,,";"Berger";"";"";"";1;0;"- Né en 1570
+- Décédé le 10 mai 1615 - Boulbon 13, , , ,, à l'âge de 45 ans
+- Berger";0;
+7;116;@I00037@;Bastian;BURAVAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bastian&n=buravand;3;3;1;2;forme2;24 mars 1579;"Tarascon, 13108, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"Coustumier à Boulbon";"";"";"";0;0;"- Né en 1560 - Comps, 30089, Gard, Languedoc-Roussillon, France
+- Décédé
+- Coustumier à Boulbon";0;
+7;112;@I00038@;Etienne;DURAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne&n=durand;3;0;0;2;forme2;18 novembre 1582;"Boulbon 13, , , ,,";"Laboureur";"";"";"";1;0;"- Né entre 1540 et 1555 - Boulbon 13, , , ,
+- Décédé en 1615 - Boulbon 13, , , ,
+- Laboureur";0;
+7;119;@I00039@;Louyse;POILDAVOINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=louyse&n=poildavoine;2;0;1;2;forme2;30 août 1580;"Boulbon 13, , , ,,";"";"";"";"";1;1;"- Née vers 1560 - Boulbon 13, , , ,
+- Décédée vers 1608 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 48 ans
+@todo note union à analyser pour Louyse POILDAVOINE : 'attention : filiation incertaine car 3 Louise Poildavoine à la même période
+???'";0;
+7;115;@I00045@;Espérite;FIRMIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=esperite&n=firmin;2;0;0;0;;1595;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1575
+- Décédée";0;
+7;117;@I00043@;Jaumette;BLANC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jaumette&n=blanc;2;3;1;2;forme2;24 mars 1579;"Tarascon, 13108, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"";"";"";"";0;0;"- Née en 1565 - Ribeyret, 05117, Hautes-Alpes, Provence-Alpes-Côte d'Azur, France
+- Décédée";0;
+7;113;@I00044@;Trophimette;CAILLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=trophimette&n=caille;2;0;0;2;forme2;18 novembre 1582;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née en 1561 - Boulbon 13, , , ,
+- Décédée le 4 août 1641 - Boulbon 13, , , ,, à l'âge de 80 ans";0;
+7;123;@I00046@;Laurence;REGISTREL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=laurence&n=registrel;1;0;0;2;forme2;11 décembre 1547;"";"";"";"";"";0;0;"- Décédée";0;
+8;252;@I00048@;Pierre;TREBILLON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=trebillon;1;0;1;0;;8 septembre 1521;"Vallabrègues, 30336, Gard, Languedoc-Roussillon, France,";"";"";"";"";0;0;"- Décédé avant 1561";0;
+7;122;@I00047@;Anthoine;JAUFFRET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anthoine&n=jauffret;2;0;0;2;forme2;11 décembre 1547;"";"Brassier";"";"";"";0;0;"- Décédé entre 1576 et 1606
+- Brassier";0;
+8;254;@I00050@;Jean le Roux;GIBERT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean+le+roux&n=gibert;3;0;0;0;;;"";"Laboureur";"";"";"";0;0;"- Né vers 1505
+- Décédé avant 1561
+- Laboureur";0;
+8;248;@I00051@;Jean;TISSOT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=tissot&oc=2;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+8;255;@I00052@;Françoise;RODIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francoise&n=rodier;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1510
+- Décédée en 1561, à l'âge d'environ 51 ans";0;
+8;253;@I00049@;Jaumette;MALCANE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jaumette&n=malcane;2;0;1;2;forme2;8 septembre 1521;"Vallabrègues, 30336, Gard, Languedoc-Roussillon, France,";"";"";"";"";0;0;"- Née - Montfrin, 30179, Gard, Languedoc-Roussillon, France
+- Décédée";0;
+8;249;@I00053@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9233;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+8;236;@I00055@;Jean;FRÉDIÈRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=frediere&oc=3;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé vers 1575";0;
+8;251;@I00056@;Catherine;BAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=catherine&n=baud;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1500
+- Décédée
+@todo vérifier les événements pour Catherine BAUD (1 erreur(s) détectée(s))";1;
+8;239;@I00058@;Marguerite;BERNARD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=bernard;2;0;0;2;forme2;avant 1560;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Née - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédée avant 1595";0;
+8;224;@I00060@;Jean;DURAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=durand;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1498
+- Décédé";0;
+8;232;@I00061@;Pierre;BURAVAND;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=buravand;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1520
+- Décédé";0;
+8;237;@I00054@;Jacqueline;de GUERIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacqueline&n=de+guerin&oc=2;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée";0;
+8;250;@I00057@;Domergue;RIGAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=domergue&n=rigaud;2;0;1;2;forme2;avant 1532;"";"";"";"";"";0;0;"- Né vers 1500 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé avant 1561";0;
+8;238;@I00059@;Mathieu;POILDAVOINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathieu&n=poildavoine;1;0;0;2;forme2;avant 1560;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Décédé";0;
+8;225;@I00062@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=168;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+8;233;@I00063@;Marceline;ORGEYROL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marceline&n=orgeyrol;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 1525
+- Décédée";0;
+8;244;@I00064@;Jean;JAUFFRET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=jauffret;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé avant 1547";0;
+8;234;@I00066@;Guillaume;BLANC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=blanc;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé avant 1579";0;
+8;226;@I00067@;François;CAILLE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=francois&n=caille;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1535
+- Décédé avant 1582";0;
+8;246;@I00065@;Raymond;REGISTREL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=registrel;3;0;1;2;forme2;;"";"Laboureur";"";"";"";0;0;"- Né - Lançon-Provence, 13051, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé vers 1544 - Lançon-Provence, 13051, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Laboureur";0;
+9;506;@I00068@;Antoine;MALCANE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=antoine&n=malcane;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1465
+- Décédé avant 1521";0;
+8;245;@I00069@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8345;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+8;235;@I00072@;Anthonie;COURTELLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anthonie&n=courtelle;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée après 1579";0;
+9;507;@I00073@;Douce;BARON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=douce&n=baron;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée après 1525";0;
+8;247;@I00070@;Anne;MELCHION;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=melchion;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née - Les Vigneaux, 05180, Hautes Alpes, Provence-Alpes-Côte d'Azur, France
+- Décédée vers 1524 - Salon-de-Provence, 13103, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France";0;
+8;227;@I00071@;Jeanne;CHANAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=chanaud;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1540
+- Décédée après 1582";0;
+9;479;@I00075@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7960;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+9;478;@I00076@;Guillaume;BERNARD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=bernard;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé avant 1570";0;
+9;500;@I00077@;Jaumin;RIGAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jaumin&n=rigaud;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé vers 1526";0;
+9;476;@I00074@;Peyron;POILDAVOINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=peyron&n=poildavoine;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1515
+- Décédé après 1565";0;
+9;477;@I00079@;Anne;MAUCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=mauche&oc=1;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1520
+- Décédée avant 1576";0;
+9;474;@I00078@;Etienne;de GUERIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne&n=de+guerin;1;0;1;2;forme2;19 avril 1589;"Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"";"";"";"";0;0;"- Décédé le 16 juin 1642";0;
+9;501;@I00080@;N;BREMOND;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=n&n=bremond;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+9;475;@I00081@;Marguerite;POILDAVOINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=poildavoine;1;0;1;2;forme2;19 avril 1589;"Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"";"";"";"";0;0;"- Décédée après 1611";0;
+9;492;@I00082@;Etienne;REGISTREL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne&n=registrel;2;0;1;2;forme2;;"";"Laboureur";"";"";"";0;0;"- Décédé après 1544
+- Laboureur";0;
+9;494;@I00083@;Antoine;MELCHION;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=antoine&n=melchion;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+9;493;@I00085@;Antoinette;NOEL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=antoinette&n=noel;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée après 1544";0;
+9;495;@I00087@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8699;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+9;454;@I00084@;Jacques;CHANAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacques&n=chanaud;2;0;0;2;forme2;vers 1555;"Boulbon 13, , , ,,";"";"";"";"";0;0;"- Né vers 1520 - Boulbon 13, , , ,
+- Décédé avant 5 mars 1589 - Boulbon 13, , , ,";0;
+9;455;@I00086@;Jaumette;BONDON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jaumette&n=bondon;2;0;0;2;forme2;vers 1555;"Boulbon 13, , , ,,";"";"";"";"";1;0;"- Née vers 1525 - Boulbon 13, , , ,
+- Décédée le 5 mars 1589 - Boulbon 13, , , ,, à l'âge d'environ 64 ans";0;
+10;952;@I00090@;Matthieu;POILDAVOINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=matthieu&n=poildavoine;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1480
+- Décédé";0;
+10;948;@I00088@;Janosse;de GUÉRIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=janosse&n=de+guerin;3;0;0;2;forme2;;"";"Écuyer";"";"";"";0;0;"- Né vers 1524
+- Décédé après 1580
+- Écuyer";0;
+10;953;@I00089@;Marguerite;ICARD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=icard;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1485 - Arles, 13004, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédée";0;
+10;949;@I00091@;Urbane;JOUVE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=urbane&n=jouve;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1535
+- Décédée";0;
+10;985;@I00092@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8981;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+10;984;@I00093@;Bertrand;REGISTREL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=registrel;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+10;987;@I00095@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8977;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+10;910;@I00094@;Ludovic;BONDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ludovic&n=bondon;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1505
+- Décédé";0;
+10;986;@I00096@;Estienne;NOEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=estienne&n=noel;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédé";0;
+10;908;@I00097@;Claude;CHANAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=claude&n=chanaud&oc=2;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+10;911;@I00098@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=887;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+10;909;@I00099@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8252;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+11;1897;@I00103@;Philippa;d' ICARD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=philippa&n=d+icard;3;0;1;2;forme2;vers 1519;"";"Noble";"";"";"";0;0;"- Née vers 1500
+- Décédée en 1579, à l'âge d'environ 79 ans
+- Noble";0;
+11;1906;@I00100@;Bernard;ICARD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=icard;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1468
+- Décédé";0;
+11;1896;@I00101@;Jacques;de GUÉRIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacques&n=de+guerin;3;0;1;2;forme2;vers 1519;"";"Noble, écuyer";"";"";"";0;0;"- Né en 1495
+- Décédé avant 1561
+- Noble, écuyer";0;
+11;1907;@I00102@;Gillette;MEYRAN LAGOY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gillette&n=meyran+lagoy;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée";0;
+11;1821;@I00104@;Thonette;VALLIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=thonette&n=vallier;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1475
+- Décédée";0;
+11;1972;@I00105@;Jacques;NOEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacques&n=noel;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+11;1973;@I00106@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8979;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+11;1820;@I00107@;Pierre;BONDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=bondon;2;0;1;0;;;"";"";"";"";"";0;0;"- Né avant 1465
+- Décédé";0;
+12;3815;@I00108@;Jeanne;ARNAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=arnaud&oc=4;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+12;3814;@I00109@;Nicolas;MEYRAN LAGOY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=nicolas&n=meyran+lagoy;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédé";0;
+12;3813;@I00112@;Bitrone;CAVALIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bitrone&n=cavalier;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+12;3812;@I00113@;Anthoine;ICARD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anthoine&n=icard;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé en 1524";0;
+12;3793;@I00110@;Phélise;REGNOMAULLE ou ROCHEMORE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=phelise&n=regnomaulle+ou+rochemore;2;0;1;2;forme2;21 août 1481;"";"";"";"";"";0;0;"- Née vers 1465
+- Décédée";0;
+12;3792;@I00111@;Jean;de GUÉRIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=de+guerin;3;0;1;2;forme2;21 août 1481;"";"Seigneur de Boulbon, viguier d'Arles.";"";"";"";0;0;"- Né vers 1460
+- Décédé en 1526, à l'âge d'environ 66 ans
+- Seigneur de Boulbon, viguier d'Arles.";0;
+13;7628;@I00114@;Jean;MEYRAN LAGOY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=meyran+lagoy;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédé après 1488";0;
+13;7629;@I00115@;Marie;de COMIS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie&n=de+comis;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée en 1502";0;
+13;7584;@I00116@;Louis;de GUÉRIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=louis&n=de+guerin;2;0;1;0;;avant 1467;"";"";"";"";"";0;0;"- Né vers 1435
+- Décédé vers 1497 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 62 ans";0;
+13;7587;@I00119@;Catherine;del PUECH;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=catherine&n=del+puech;2;0;1;2;forme2;1460;"";"";"";"";"";0;0;"- Née vers 1435
+- Décédée après 24 mars 1491 - Lunel, 34145, Hérault, Languedoc-Roussillon, France";0;
+13;7586;@I00117@;Charles;de BORDES de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=charles&n=de+bordes+de+rochemore;3;0;1;2;forme2;1460;"";"Écuyer, seigneur de la Devèze et Tartuguières";"";"";"";0;0;"- Né vers 1415 - Lunel, 34145, Hérault, Languedoc-Roussillon, France
+- Décédé après 1474 - Lunel, 34145, Hérault, Languedoc-Roussillon, France
+- Écuyer, seigneur de la Devèze et Tartuguières";0;
+13;7585;@I00118@;Gassenette;de BOMPAR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gassenette&n=de+bompar;2;0;1;2;forme2;avant 1467;"";"";"";"";"";0;0;"- Née vers 1440 - Beaucaire 30, , , ,
+- Décédée vers 1496, à l'âge d'environ 56 ans";0;
+14;15257;@I00120@;Jeanne;GARRIGUE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=garrigue;1;0;1;0;;10 novembre 1396;"Arles, 13004, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"";"";"";"";0;0;"- Décédée avant 1453";0;
+14;15256;@I00121@;Bertrand 2 dit Garrignon;MEYRAN LAGOY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand+2+dit+garrignon&n=meyran+lagoy;1;0;1;2;forme2;10 novembre 1396;"Arles, 13004, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"";"";"";"";0;0;"- Décédé avant 1448";0;
+14;15258;@I00122@;Guillaume;de COMIS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+comis;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+14;15259;@I00123@;Méthoye dite Cotelier;MICHEL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=methoye+dite+cotelier&n=michel;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+14;15175;@I00124@;Phélise;de MOREIRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=phelise&n=de+moreire;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1400
+- Décédée en 1471, à l'âge de 71 ans";0;
+14;15173;@I00127@;Mandolie;de BORDES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mandolie&n=de+bordes;2;0;1;2;forme2;26 septembre 1408;"";"";"";"";"";0;0;"- Née vers 1388
+- Décédée en 1450, à l'âge d'environ 62 ans";0;
+14;15174;@I00125@;Arnaud;del PUECH;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=arnaud&n=del+puech;3;0;1;2;forme2;;"";"Écuyer ; seigneur de Blannaves, Montmoirac, St Martin de Valgalgues.";"";"";"";1;0;"- Né en 1395
+- Décédé en 1470, à l'âge de 75 ans
+- Écuyer ; seigneur de Blannaves, Montmoirac, St Martin de Valgalgues.";0;
+14;15170;@I00126@;Bérenger;de BOMPAR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berenger&n=de+bompar;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédé avant 1466";0;
+14;15172;@I00128@;Hermangaud;de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hermangaud&n=de+rochemore;3;0;1;2;forme2;26 septembre 1408;"";"Damoiseau, capitaine viguier et baronnie de Lunel";"";"";"";0;0;"- Né vers 1385
+- Décédé en 1438, à l'âge d'environ 53 ans
+- Damoiseau, capitaine viguier et baronnie de Lunel";0;
+14;15171;@I00129@;Doucle;ADALBERT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=doucle&n=adalbert;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée après 1492";0;
+15;30513;@I00130@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=11371;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+15;30512;@I00131@;Pierre 1er;MEYRAN LAGOY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre+1er&n=meyran+lagoy;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1340
+- Décédé";0;
+15;30347;@I00134@;Agnésie;de ROZES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnesie&n=de+rozes;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1370
+- Décédée";0;
+15;30349;@I00132@;Agnès;de LA ROQUE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=de+la+roque;2;0;1;2;forme2;vers 1395;"";"";"";"";"";0;0;"- Née en 1377
+- Décédée";0;
+15;30344;@I00133@;Jacques;de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jacques&n=de+rochemore;3;0;1;2;forme2;1380;"";"Co-seigneur de Maillane";"";"";"";0;0;"- Né en 1347
+- Décédé après 1438
+- Co-seigneur de Maillane";0;
+15;30346;@I00135@;Jean;de BORDES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=de+bordes;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1365
+- Décédé";0;
+15;30341;@I00136@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9639;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+15;30340;@I00137@;Bertrand;de BOMPAR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+bompar;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé après 1427";0;
+15;30345;@I00139@;Guillaumette;de PIERRE de BERNIS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaumette&n=de+pierre+de+bernis;2;0;1;2;forme2;1380;"";"";"";"";"";0;0;"- Née vers 1358
+- Décédée après 1408";0;
+15;30348;@I00138@;Bernard;del PUECH;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=del+puech;3;0;1;2;forme2;vers 1395;"";"Coseigneur de Montmoirac";"";"";"";1;0;"- Né en 1373
+- Décédé après 1401
+- Coseigneur de Montmoirac";0;
+15;30343;@I00140@;Catherine;PIERRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=catherine&n=pierre;1;0;1;0;;vers 1400;"";"";"";"";"";0;0;"- Décédée avant 1466";0;
+15;30342;@I00141@;Raymond;ADALBERT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=adalbert;3;0;1;2;forme2;vers 1400;"";"Lieutenant de Viguier";"";"";"";0;0;"- Né - Vallabrègues, 30336, Gard, Languedoc-Roussillon, France
+- Décédé avant 1465
+- Lieutenant de Viguier";0;
+16;60699;@I00142@;Marguerite;de CADOËNE de GABRIAC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=de+cadoene+de+gabriac;2;0;2;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1352
+- Décédée en 1408, à l'âge d'environ 56 ans";0;
+16;60688;@I00143@;Jean;de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=de+rochemore;3;0;0;2;forme2;;"";"Damoiseau";"";"";"";0;0;"- Né en 1310
+- Décédé en 1350, à l'âge de 40 ans
+- Damoiseau";0;
+16;60698;@I00144@;Raymond;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+la+roque;3;0;1;2;forme2;;"";"Seigneur de La Roche Aynier et de La Cadière";"";"";"";0;0;"- Né vers 1345
+- Décédé vers 1397, à l'âge d'environ 52 ans
+- Seigneur de La Roche Aynier et de La Cadière";0;
+16;60689;@I00145@;Jeanne;d'ASTENAY ou de JOSSAUD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=d+astenay+ou+de+jossaud;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1320
+- Décédée";0;
+16;60691;@I00146@;Helis;de ROY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helis&n=de+roy;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+16;60696;@I00148@;Séguin;del PUECH;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=seguin&n=del+puech;3;0;1;2;forme2;;"";"Seigneur de Cendras";"";"";"";0;0;"- Né en 1328
+- Décédé après 1403
+- Seigneur de Cendras";0;
+16;60690;@I00147@;Pons III;de PIERRE de BERNIS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons+iii&n=de+pierre+de+bernis;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédé en 1378";0;
+16;60684;@I00150@;Jehan;ADALBERT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jehan&n=adalbert;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+16;60685;@I00151@;Jeanne;X;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=x;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+16;60697;@I00149@;Dulcie;de SAINT-MAXIMIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=dulcie&n=de+saint+maximin;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1330 - St Maximin 30, , , ,
+- Décédée";0;
+17;121399;@I00152@;Agnès;de CHATEAUNEUF-RANDON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=de+chateauneuf+randon;3;0;1;2;forme2;;"";"Dame de St Denis en Margeride";"";"";"";1;0;"- Née vers 1330
+- Décédée
+- Dame de St Denis en Margeride
+@todo note union à analyser pour Agnès de CHATEAUNEUF-RANDON : 'Familles Cévenoles N° 3 p 34 Raymond VIERNE'";0;
+17;121396;@I00153@;Ricaud;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ricaud&n=de+la+roque;2;0;1;2;forme2;;"";"Seigneur de la Roque-Aynier et de la Cadière";"";"";"";0;0;"- Décédé avant 1399
+- Seigneur de la Roque-Aynier et de la Cadière";0;
+17;121376;@I00154@;Guillaume III;de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+iii&n=de+rochemore;2;0;0;2;forme2;;"";"";"";"";"";1;0;"- Né peut-être en 1280
+- Décédé avant novembre 1325";0;
+17;121398;@I00155@;Bernard;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+cadoene+de+gabriac;2;0;1;2;forme2;;"";"";"";"";"";2;1;"- Né vers 1328 - Gabriac, 48067, Lozère, Languedoc-Roussillon, France
+- Décédé vers 1405, à l'âge d'environ 77 ans
+@todo note union à analyser pour Bernard de CADOËNE de GABRIAC : 'Familles Cévenoles N° 3 p 34 Raymond VIERNE'";0;
+17;121377;@I00157@;Guillemette Anne;de ROMIEU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillemette+anne&n=de+romieu;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1280 - Arles, 13004, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédée";0;
+17;121397;@I00156@;Audette;de DIEU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=audette&n=de+dieu;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée après 1399";0;
+17;121393;@I00158@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=6459;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+17;121392;@I00159@;Pierre;del PUECH;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=del+puech;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1300
+- Décédé";0;
+17;121381;@I00160@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=5390;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+17;121380;@I00161@;Bertrand II;de PIERRE de BERNIS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand+ii&n=de+pierre+de+bernis;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+17;121394;@I00162@;Raymond;de SAINT-MAXIMIN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+saint+maximin;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+17;121395;@I00163@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=6651;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+18;242793;@I00164@;Jeanne;AUDOUARD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=audouard;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+18;242798;@I00165@;Guigon "Lo dumini";de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigon+lo+dumini&n=de+chateauneuf+randon;3;0;1;2;forme2;;"";"Seigneur de St-Denis en Gévaudan";"";"";"";1;1;"- Né entre 1312 et 1325
+- Décédé
+- Seigneur de St-Denis en Gévaudan
+@todo note union à analyser pour Guigon "Lo dumini" de CHATEAUNEUF-RANDON : 'autres parents selon C.Lauze :
+Lui : Dragonnet de Châteauneuf-Randon, seigneur de Joyeuse et Béatrix de Roquefeuil + 1287.
+Elle : Godefroy IV de Cayres 1265-1321/ et Guérine de Retourtour 1275...'";0;
+18;242792;@I00166@;Guillaume;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+la+roque;3;0;1;2;forme2;;"";"Damoiseau";"";"";"";0;0;"- Né en 1300
+- Décédé après 1350
+- Damoiseau";0;
+18;242796;@I00168@;Guillaume 2;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+2&n=de+cadoene+de+gabriac;3;0;1;2;forme2;;"";"Chevalier, seigneur de Gabriac, Pierrefort et Barre";"";"";"";0;0;"- Né vers 1302 - Gabriac, 48067, Lozère, Languedoc-Roussillon, France
+- Décédé
+- Chevalier, seigneur de Gabriac, Pierrefort et Barre";0;
+18;242752;@I00169@;Guillaume II;de ROCHEMORE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+ii&n=de+rochemore&oc=2;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1250
+- Décédé avant 1307";0;
+18;242753;@I00170@;Jeanne;de CODOL ou COUDOLS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=de+codol+ou+coudols;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1245
+- Décédée";0;
+18;242799;@I00167@;Aelïs ou Hélix;de CAYRES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aelis+ou+helix&n=de+cayres;2;0;1;2;forme2;;"";"";"";"";"";1;1;"- Née vers 1315
+- Décédée
+@todo note union à analyser pour Aelïs ou Hélix de CAYRES : 'autres parents selon C.Lauze :
+Lui : Dragonnet de Châteauneuf-Randon, seigneur de Joyeuse et Béatrix de Roquefeuil + 1287.
+Elle : Godefroy IV de Cayres 1265-1321/ et Guérine de Retourtour 1275...'";0;
+18;242797;@I00171@;Béatrix;de BARRES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+barres;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1310
+- Décédée";0;
+18;242755;@I00172@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=5547;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+18;242754;@I00173@;Bernard;de ROMIEU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+romieu;3;0;1;2;forme2;;"";"Chevalier co-seigneur de la Crau d'Arles";"";"";"";0;0;"- Né vers 1240
+- Décédé après 1292
+- Chevalier co-seigneur de la Crau d'Arles";0;
+18;242795;@I00174@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=6928;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+18;242794;@I00175@;Pierre;de DIEU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=de+dieu;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+19;485597;@I00176@;Guyonne;de PEYRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guyonne&n=de+peyre;2;0;1;2;forme2;10 novembre 1315;"";"";"";"";"";0;0;"- Née en 1292
+- Décédée après 1357";0;
+19;485584;@I00177@;Raimond;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raimond&n=de+la+roque;3;0;0;2;forme2;;"";"Seigneur de la Roque-Aynier";"";"";"";0;0;"- Né vers 1275
+- Décédé après 1342
+- Seigneur de la Roque-Aynier";0;
+19;485596;@I00178@;Lambert;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=lambert&n=de+chateauneuf+randon;3;0;1;2;forme2;10 novembre 1315;"";"Seigneur de Ste Remeze, coseigneur de Tine et d'Allenc";"";"";"";0;0;"- Né vers 1295
+- Décédé après 1342
+- Seigneur de Ste Remeze, coseigneur de Tine et d'Allenc";0;
+19;485585;@I00179@;Hélène;de FARAMOND;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helene&n=de+faramond;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédée";0;
+19;485599;@I00180@;N;de LESTRANGE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=n&n=de+lestrange;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1300
+- Décédée";0;
+19;485593;@I00181@;Aygline;de BARRES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aygline&n=de+barres;2;0;1;2;forme2;1290;"Gabriac, 48067, Lozère, Languedoc-Roussillon, France,";"";"";"";"";0;0;"- Née en 1275
+- Décédée après 1305";0;
+19;485592;@I00182@;Bertrand;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+cadoene+de+gabriac;3;0;1;2;forme2;1290;"Gabriac, 48067, Lozère, Languedoc-Roussillon, France,";"Seigneur de Pierrefort (15), de Gabriac, de Barrès, co-seigneur de Calberte.";"";"";"";0;0;"- Né vers 1279 - Gabriac, 48067, Lozère, Languedoc-Roussillon, France
+- Décédé vers 1333 - Aubenas, 07019, Ardèche, Rhône-Alpes, France, à l'âge d'environ 54 ans
+- Seigneur de Pierrefort (15), de Gabriac, de Barrès, co-seigneur de Calberte.
+@todo Anomalies détectées sur Bertrand de CADOËNE de GABRIAC. Vérifier la source.";1;
+19;485598;@I00183@;Albert Pons;de CAYRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=albert+pons&n=de+cayres;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1300
+- Décédé";0;
+19;485509;@I00184@;Aycarde;de CASTELLANE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aycarde&n=de+castellane;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+19;485508;@I00185@;Paul;de ROMIEU de VENCE de VILLENEUVE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=paul&n=de+romieu+de+vence+de+villeneuve;3;0;1;0;;;"";"2° baron de Vence";"";"";"";0;0;"- Né vers 1200
+- Décédé
+- 2° baron de Vence";0;
+20;971171;@I00186@;Ascie;de LANDORRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ascie&n=de+landorre;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+20;971170;@I00187@;Hugues;de FARAMOND de SALMIECH;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hugues&n=de+faramond+de+salmiech;2;0;1;0;;;"";"";"";"";"";0;0;"- Né avant 1238
+- Décédé après 1286";0;
+20;971193;@I00188@;Maragde;de CHATEAUNEUF d'APCHIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maragde&n=de+chateauneuf+d+apchier;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée en 1309";0;
+20;971192;@I00189@;Guillaume;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+chateauneuf+randon;2;0;1;2;forme2;;"";"";"";"";"";1;0;"- Né en 1278
+- Décédé en 1320, à l'âge de 42 ans";0;
+20;971169;@I00190@;Ferrande;de MOSTUEJOULS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ferrande&n=de+mostuejouls;2;0;1;2;forme2;vers 1270;"";"";"";"";"";0;0;"- Née vers 1250
+- Décédée";0;
+20;971195;@I00191@;Guérine;de CHATEAUNEUF-RANDON d'APCHIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerine&n=de+chateauneuf+randon+d+apchier;2;0;1;2;forme2;1292;"";"";"";"";"";0;0;"- Née en 1271
+- Décédée en 1317, à l'âge de 46 ans";0;
+20;971168;@I00192@;Frédol 2;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=fredol+2&n=de+la+roque;3;0;1;2;forme2;vers 1270;"";"Noble, seigneur de la Roche-Aynier";"";"";"";0;0;"- Né en 1250
+- Décédé
+- Noble, seigneur de la Roche-Aynier";0;
+20;971187;@I00194@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=6532;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+20;971194;@I00193@;Astorg 10 dit Astorget;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+10+dit+astorget&n=de+peyre;3;0;1;2;forme2;1292;"";"Seigneur de Cheylade, baron de Peyre";"";"";"";0;0;"- Né vers 1275 - St-Sauveur-de-Peyre, 48183, Lozère, Languedoc-Roussillon, France
+- Décédé en 1315, à l'âge d'environ 40 ans
+- Seigneur de Cheylade, baron de Peyre";0;
+20;971186;@I00198@;Guyon;de BARRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guyon&n=de+barres;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1245
+- Décédé";0;
+20;971197;@I00195@;Guérine Guanfia;de RETOURTOUR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerine+guanfia&n=de+retourtour;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1280
+- Décédée";0;
+20;971196;@I00196@;Geoffroi ou Godefroy 4;de CAYRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroi+ou+godefroy+4&n=de+cayres;3;0;1;2;forme2;;"";"Seigneur d'Agrain";"";"";"";0;0;"- Né en 1275
+- Décédé en 1318, à l'âge de 43 ans
+- Seigneur d'Agrain";0;
+20;971184;@I00197@;Guillaume 1;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1&n=de+cadoene+de+gabriac&oc=2;3;0;1;2;forme2;;"Gabriac, 48067, Lozère, Languedoc-Roussillon, France,";"Chevalier, croisé (1270), seigneur de Gabriac, seigneur de Peyrefort";"";"";"";2;1;"- Né en 1250 - Gabriac, 48067, Lozère, Languedoc-Roussillon, France
+- Décédé en 1307 - Gabriac, 48067, Lozère, Languedoc-Roussillon, France, à l'âge de 57 ans
+- Chevalier, croisé (1270), seigneur de Gabriac, seigneur de Peyrefort
+@todo note union à analyser pour Guillaume 1 de CADOËNE de GABRIAC : 'En 1269, il suivit St Louis dans sa seconde croisade.
+Ses armes sont à Versailles dans la salle des Croisades.
+Devise : Nescit pericula virtus.
+cf : armorial de la noblesse du Languedoc.'";0;
+20;971185;@I00199@;Béatrice Isabelle;de BARRES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrice+isabelle&n=de+barres;2;0;1;2;forme2;;"Gabriac, 48067, Lozère, Languedoc-Roussillon, France,";"";"";"";"";2;1;"- Née en 1248
+- Décédée en 1283, à l'âge de 35 ans
+@todo note union à analyser pour Béatrice Isabelle de BARRES : 'En 1269, il suivit St Louis dans sa seconde croisade.
+Ses armes sont à Versailles dans la salle des Croisades.
+Devise : Nescit pericula virtus.
+cf : armorial de la noblesse du Languedoc.'";0;
+21;1942385;@I00200@;Peytavine;de VALDUN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=peytavine&n=de+valdun;3;0;1;0;;;"";"Dame de St Remèze et de Bidons en Vivarais";"";"";"";0;0;"- Née en 1240
+- Décédée en 1278, à l'âge de 38 ans
+- Dame de St Remèze et de Bidons en Vivarais";0;
+21;1942384;@I00201@;Guy;de CHATEAUNEUF-RANDON d'ALLENC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy&n=de+chateauneuf+randon+d+allenc;3;0;1;2;forme2;;"";"Baron d'Allenc, seigneur de Tines";"";"";"";0;0;"- Né en 1238
+- Décédé en 1278, à l'âge de 40 ans
+- Baron d'Allenc, seigneur de Tines";0;
+21;1942388;@I00202@;Astorg 9;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+9&n=de+peyre&oc=2;3;0;1;2;forme2;vers 1272;"";"Baron de Peyre";"";"";"";1;0;"- Né en 1257
+- Décédé en 1316, à l'âge de 59 ans
+- Baron de Peyre";0;
+21;1942337;@I00203@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7312;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+21;1942391;@I00205@;Maralde;de CANILLAC de SEVERAC de COMBRET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maralde&n=de+canillac+de+severac+de+combret;2;0;1;2;forme2;avant 1264;"";"";"";"";"";0;0;"- Née vers 1245
+- Décédée";0;
+21;1942390;@I00206@;Guérin 4;de CHATEAUNEUF-RANDON d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin+4&n=de+chateauneuf+randon+d+apchier;3;0;1;2;forme2;avant 1264;"";"Seigneur d'Apchier, de st Chély, de St Auban (48)";"";"";"";0;0;"- Né vers 1245
+- Décédé en 1301, à l'âge d'environ 56 ans
+- Seigneur d'Apchier, de st Chély, de St Auban (48)";0;
+21;1942336;@I00204@;Aynier 2;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aynier+2&n=de+la+roque;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1230
+- Décédé vers 1279, à l'âge d'environ 49 ans";0;
+21;1942339;@I00207@;Lévezonne;de LEVEZOU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=levezonne&n=de+levezou;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1205
+- Décédée";0;
+21;1942338;@I00208@;Guillaume;de MOSTUEJOULS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+mostuejouls;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1200
+- Décédé";0;
+21;1942373;@I00209@;Bérangère;Y;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berangere&n=y;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1220
+- Décédée";0;
+21;1942372;@I00210@;Bertrand;de BARRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+barres;3;0;1;0;;;"";"Seigneur de Barre, coseigneur des Rousses";"";"";"";0;0;"- Né vers 1210
+- Décédé le 6 septembre 1283, à l'âge d'environ 73 ans
+- Seigneur de Barre, coseigneur des Rousses";0;
+21;1942369;@I00211@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=6528;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+21;1942392;@I00213@;Godefroy 3;de CAYRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=godefroy+3&n=de+cayres;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1240
+- Décédé vers 1289, à l'âge d'environ 49 ans";0;
+21;1942394;@I00215@;Armand;de RETOURTOUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=armand&n=de+retourtour;2;0;0;2;forme2;1274;"";"";"";"";"";0;0;"- Né en 1245
+- Décédé en 1310, à l'âge de 65 ans";0;
+21;1942389;@I00216@;Marguerite;de MURAT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=de+murat;3;0;1;2;forme2;vers 1272;"";"Dame de Chaylane de Valentinois et d'Auvergne";"";"";"";0;0;"- Née vers 1260
+- Décédée
+- Dame de Chaylane de Valentinois et d'Auvergne";0;
+21;1942368;@I00212@;Bernard;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+cadoene+de+gabriac&oc=2;3;0;0;2;forme2;;"";"Co-seigneur des châteaux de Mandement et de Calberte (48)";"";"";"";0;0;"- Né en 1230
+- Décédé en 1269, à l'âge de 39 ans
+- Co-seigneur des châteaux de Mandement et de Calberte (48)";0;
+21;1942395;@I00214@;Maragde;de CHATEAUNEUF-RANDON d'ALLENC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maragde&n=de+chateauneuf+randon+d+allenc;2;0;0;2;forme2;1274;"";"";"";"";"";0;0;"- Née en 1260
+- Décédée en 1309, à l'âge de 49 ans";0;
+21;1942393;@I00218@;Bermunde;N;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bermunde&n=n;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1250
+- Décédée";0;
+22;3884769;@I00217@;Maragde;d'ANDUZE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maragde&n=d+anduze;3;0;1;2;forme2;avant 1238;"";"Dame de Portes, Luc, Pradelles et St Laurent les Bains";"";"";"";1;0;"- Née en 1210
+- Décédée en 1252, à l'âge de 42 ans
+- Dame de Portes, Luc, Pradelles et St Laurent les Bains";0;
+22;3884768;@I00219@;Guillaume;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+chateauneuf+randon&oc=2;2;0;1;2;forme2;avant 1238;"";"";"";"";"";1;0;"- Né en 1210
+- Décédé en 1247, à l'âge de 37 ans";0;
+22;3884781;@I00220@;Béatrix;de CHATEAUNEUF de BARJAC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+chateauneuf+de+barjac;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1225
+- Décédée en 1263, à l'âge d'environ 38 ans";0;
+22;3884673;@I00224@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7316;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+22;3884672;@I00225@;Frédol 1;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=fredol+1&n=de+la+roque;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1210
+- Décédé";0;
+22;3884677;@I00227@;Aygline;VINCENS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aygline&n=vincens;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+22;3884776;@I00228@;Astorg 8;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+8&n=de+peyre&oc=3;2;0;1;2;forme2;vers 1270;"";"";"";"";"";0;0;"- Né en 1236
+- Décédé après 1302";0;
+22;3884780;@I00221@;Guérin 3;de CHATEAUNEUF-RANDON d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin+3&n=de+chateauneuf+randon+d+apchier&oc=2;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1210
+- Décédé en 1249, à l'âge de 39 ans";0;
+22;3884783;@I00222@;Méliore;de SAINT-URCIZE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=meliore&n=de+saint+urcize;2;0;0;2;forme2;1235;"";"";"";"";"";0;0;"- Née vers 1212
+- Décédée";0;
+22;3884782;@I00223@;Déodat;de CANILLAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=deodat&n=de+canillac;3;0;0;2;forme2;1235;"";"Seigneur de Canillac et de la Capelle";"";"";"";0;0;"- Né en 1217
+- Décédé après 1264
+- Seigneur de Canillac et de la Capelle";0;
+22;3884777;@I00226@;Marquèse;de MERCOEUR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marquese&n=de+mercoeur;3;0;1;2;forme2;vers 1270;"";"Dame de la baronnie de Clavelier en Auvergne";"";"";"";0;0;"- Née en 1240
+- Décédée après 1290
+- Dame de la baronnie de Clavelier en Auvergne";0;
+22;3884679;@I00229@;Régine;Y;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=regine&n=y;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1165
+- Décédée";0;
+22;3884676;@I00230@;Aymeric;de MOSTUEJOULS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aymeric&n=de+mostuejouls;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1170
+- Décédé après 1224";0;
+22;3884678;@I00231@;Bernard;de LEVEZOU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+levezou;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1160
+- Décédé";0;
+22;3884785;@I00236@;Béraude;N;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraude&n=n;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1215
+- Décédée en 1256, à l'âge d'environ 41 ans";0;
+22;3884784;@I00237@;Godefroy 2;de CAYRES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=godefroy+2&n=de+cayres&oc=2;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1210
+- Décédé vers 1261, à l'âge d'environ 51 ans";0;
+22;3884736;@I00238@;Raymond 1er;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+1er&n=de+cadoene+de+gabriac;3;0;0;2;forme2;;"";"Chevalier,seigneur de Cadoine";"";"";"";0;0;"- Né vers 1200
+- Décédé
+- Chevalier,seigneur de Cadoine";0;
+22;3884737;@I00241@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8172;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+22;3884779;@I00232@;Marquèze;de  PEYRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marqueze&n=de+peyre;2;0;1;2;forme2;1255;"";"";"";"";"";0;0;"- Née vers 1235
+- Décédée";0;
+22;3884778;@I00233@;Armand dit Pierre 4;de MURAT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=armand+dit+pierre+4&n=de+murat;3;0;1;2;forme2;1255;"";"Vicomte de Murat";"";"";"";0;0;"- Né en 1230
+- Décédé en 1274, à l'âge de 44 ans
+- Vicomte de Murat";0;
+22;3884789;@I00234@;Seigneuresse;de DUNIERES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=seigneuresse&n=de+dunieres;2;0;0;2;forme2;;"";"";"";"";"";1;0;"- Née en 1220
+- Décédée
+@todo note union à analyser pour Seigneuresse de DUNIERES : 'voir notes de Alain Rostoll.'";0;
+22;3884788;@I00235@;Maurice;de RETOURTOUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maurice&n=de+retourtour;2;0;0;2;forme2;;"";"";"";"";"";1;0;"- Né en 1210
+- Décédé après 1252
+@todo note union à analyser pour Maurice de RETOURTOUR : 'voir notes de Alain Rostoll.'";0;
+23;7769536;@I00239@;Guy Lo Comtor;de CHATEAUNEUF-RANDON de JOYEUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy+lo+comtor&n=de+chateauneuf+randon+de+joyeuse;3;0;1;2;forme2;1198;"";"Seigneur de Joyeuse";"";"";"";0;0;"- Né vers 1160
+- Décédé en 1219, à l'âge d'environ 59 ans
+- Seigneur de Joyeuse";0;
+23;7769538;@I00240@;Bernard 8;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+8&n=d+anduze;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1180
+- Décédé en 1223, à l'âge d'environ 43 ans";0;
+23;7769537;@I00242@;Almoys la Troubadouresse;de CHATEAUNEUF;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=almoys+la+troubadouresse&n=de+chateauneuf;1;0;1;0;;1198;"";"";"";"";"";0;0;"- Décédée";0;
+23;7769539;@I00243@;Vierne;du LUC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=vierne&n=du+luc;3;0;1;2;forme2;;"";"Dame du Luc, de Pradelles, de Joyeuse, de Genouillac.";"";"";"";0;0;"- Née en 1180
+- Décédée en 1223, à l'âge de 43 ans
+- Dame du Luc, de Pradelles, de Joyeuse, de Genouillac.";0;
+23;7769553;@I00244@;Guigonne;de CENARET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigonne&n=de+cenaret;2;0;1;2;forme2;1230;"";"";"";"";"";0;0;"- Née vers 1215
+- Décédée";0;
+23;7769552;@I00245@;Astorg 7;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+7&n=de+peyre&oc=4;3;0;1;2;forme2;1230;"";"Baron de Peyre";"";"";"";1;0;"- Né vers 1210 - St-Sauveur-de-Peyre, 48183, Lozère, Languedoc-Roussillon, France
+- Décédé en 1274, à l'âge d'environ 64 ans
+- Baron de Peyre";0;
+23;7769554;@I00246@;Béraud le Grand;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+le+grand&n=de+mercoeur;3;0;1;2;forme2;1238;"";"Sire de Mercoeur, connétable d'Auvergne, bailli du roi";"";"";"";2;1;"- Né peut-être en 1200
+- Décédé en 1294, peut-être à l'âge de 94 ans
+- Sire de Mercoeur, connétable d'Auvergne, bailli du roi
+@todo note union à analyser pour Béraud le Grand de MERCOEUR : 'possesseur du Château d'Alleuze (15)'";0;
+23;7769345;@I00247@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7318;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+23;7769344;@I00248@;Aynier 1;de LA ROQUE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aynier+1&n=de+la+roque;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1150
+- Décédé";0;
+23;7769567;@I00251@;Galliane;XX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=galliane&n=xx;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+23;7769561;@I00252@;Blanche;d'AUVERGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=blanche&n=d+auvergne;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1185
+- Décédée";0;
+23;7769560;@I00254@;Guérin 2;de CHATEAUNEUF-RANDON d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin+2&n=de+chateauneuf+randon+d+apchier;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1180
+- Décédé vers 1214, à l'âge d'environ 34 ans";0;
+23;7769555;@I00255@;Béatrix;de BOURBON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+bourbon;3;0;1;2;forme2;1238;"";"Dame de Cessel,";"";"";"";1;0;"- Née vers 1215
+- Décédée en 1281, à l'âge d'environ 66 ans
+- Dame de Cessel,
+@todo note union à analyser pour Béatrix de BOURBON : 'possesseur du Château d'Alleuze (15)'";0;
+23;7769565;@I00249@;Irdoine;de SEVERAC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=irdoine&n=de+severac;3;0;1;2;forme2;;"";"Héritière de la maison Séverac";"";"";"";0;0;"- Née vers 1180
+- Décédée en 1222, à l'âge d'environ 42 ans
+- Héritière de la maison Séverac";0;
+23;7769564;@I00250@;Déodat dit Le Cathare;de CAYLUS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=deodat+dit+le+cathare&n=de+caylus;3;0;2;2;forme2;;"";"Seigneur de Séverac, de Combret (12), de Canillac (19), de Caylus (82)";"";"";"";0;0;"- Né vers 1185 - Caylus, 82038, Tarn-et-Garonne, Midi-Pyrénées, France
+- Décédé en 1251, à l'âge d'environ 66 ans
+- Seigneur de Séverac, de Combret (12), de Canillac (19), de Caylus (82)
+@todo vérifier les événements pour Déodat dit Le Cathare de CAYLUS (2 erreur(s) détectée(s))";2;
+23;7769566;@I00253@;Pons;de SAINT-URCIZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons&n=de+saint+urcize;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1180 - Chaudes-Aigues, 15045, Cantal, Auvergne, France
+- Décédé en 1238, à l'âge de 58 ans";0;
+23;7769473;@I00259@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8174;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+23;7769472;@I00260@;Jean;de CADOËNE de GABRIAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jean&n=de+cadoene+de+gabriac;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1180
+- Décédé";0;
+23;7769576;@I00262@;Armand 1er;de RETOURTOUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=armand+1er&n=de+retourtour;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1175
+- Décédé après 1247";0;
+24;15539077;@I00256@;Marquise;de SAUVE de POSQUIERES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marquise&n=de+sauve+de+posquieres;2;0;1;2;forme2;avant 1180;"Vauvert, 30341, Gard, Languedoc-Roussillon, France,";"";"";"";"";0;0;"- Née vers 1165
+- Décédée en 1210, à l'âge d'environ 45 ans";0;
+24;15539072;@I00257@;Guillaume II;de CHATEAUNEUF de RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+ii&n=de+chateauneuf+de+randon;3;0;1;2;forme2;vers 1150;"";"Seigneur de Randon et du Cheylard, protecteur des troubadours";"";"";"";0;0;"- Né vers 1125
+- Décédé en 1175, à l'âge d'environ 50 ans
+- Seigneur de Randon et du Cheylard, protecteur des troubadours";0;
+24;15539076;@I00258@;Bernard 7;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+7&n=d+anduze;3;0;1;2;forme2;avant 1180;"Vauvert, 30341, Gard, Languedoc-Roussillon, France,";"Écuyer, seigneur d'Anduze, de Sauve, de Sommières et en partie d'Alès";"";"";"";0;0;"- Né vers 1165 - Anduze, 30010, Gard, Languedoc-Roussillon, France
+- Décédé en 1222, à l'âge d'environ 57 ans
+- Écuyer, seigneur d'Anduze, de Sauve, de Sommières et en partie d'Alès";0;
+23;7769578;@I00261@;Guigon II;de DUNIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigon+ii&n=de+dunieres;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1190
+- Décédé";0;
+23;7769556;@I00263@;Pierre 3;de MURAT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre+3&n=de+murat;3;0;1;2;forme2;;"";"Vicomte de Murat,";"";"";"";0;0;"- Né vers 1200
+- Décédé vers 1260, à l'âge d'environ 60 ans
+- Vicomte de Murat,";0;
+24;15539078;@I00265@;Bertrand;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+chateauneuf+randon;3;0;1;2;forme2;vers 1160;"";"Prince du Luc, seigneur de Joyeuse";"";"";"";0;0;"- Né vers 1130
+- Décédé vers 1185, à l'âge d'environ 55 ans
+- Prince du Luc, seigneur de Joyeuse";0;
+23;7769579;@I00266@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9336;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+23;7769577;@I00267@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9334;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+23;7769557;@I00268@;Gaillarde;de LA TOUR D'AUVERGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gaillarde&n=de+la+tour+d+auvergne;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1210
+- Décédée en 1270, à l'âge de 60 ans";0;
+24;15539079;@I00269@;Fias;de JOYEUSE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=fias&n=de+joyeuse;3;0;1;2;forme2;vers 1160;"";"Dame de Joyeuse";"";"";"";0;0;"- Née en 1142
+- Décédée en 1186, à l'âge de 44 ans
+- Dame de Joyeuse";0;
+24;15539073;@I00264@;Marie;du MAS de GROSFAU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie&n=du+mas+de+grosfau;2;0;1;2;forme2;vers 1150;"";"";"";"";"";0;0;"- Née vers 1125 - Joyeuse, 07110, Ardèche, Rhône-Alpes, France
+- Décédée en 1160, à l'âge d'environ 35 ans";0;
+24;15539121;@I00271@;Alix;d'APCHIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix&n=d+apchier;2;0;0;2;forme2;1160;"";"";"";"";"";0;0;"- Née vers 1145
+- Décédée vers 1180, à l'âge d'environ 35 ans";0;
+24;15539133;@I00274@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7466;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+24;15539107;@I00285@;Almodis;de PERIGORD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=almodis&n=de+perigord;2;0;1;2;forme2;1212;"";"";"";"";"";0;0;"- Née en 1195
+- Décédée";0;
+24;15539106;@I00286@;Bernard;de CENARET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+cenaret;3;0;1;2;forme2;1212;"";"Seigneur de Cénaret (12), chevalier";"";"";"";0;0;"- Né vers 1190
+- Décédé vers 1239, à l'âge d'environ 49 ans
+- Seigneur de Cénaret (12), chevalier";0;
+24;15539111;@I00270@;Béatrix;de MONTLUCON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+montlucon;3;0;1;2;forme2;avant 1215;"";"Dame de Montluçon";"";"";"";0;0;"- Née vers 1195
+- Décédée en 1238, à l'âge d'environ 43 ans
+- Dame de Montluçon";0;
+24;15539120;@I00272@;Guérin 1er ( Le Troubadour );de CHATEAUNEUF-RANDON d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin+1er+le+troubadour&n=de+chateauneuf+randon+d+apchier;2;0;0;2;forme2;1160;"";"";"";"";"";0;0;"- Né vers 1150
+- Décédé en 1185, à l'âge d'environ 35 ans
+@todo Anomalies détectées sur Guérin 1er ( Le Troubadour ) de CHATEAUNEUF-RANDON d'APCHIER. Vérifier la source.";1;
+24;15539110;@I00273@;Archambaud 8 le Grand;de BOURBON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=archambaud+8+le+grand&n=de+bourbon;3;0;1;2;forme2;avant 1215;"";"Seigneur de Bourbon, connétable de France";"";"";"";1;1;"- Né en 1192
+- Décédé le 30 août 1242 - Cognat-Lyonne, 03080, Allier, Auvergne, France, à l'âge de 50 ans
+- Seigneur de Bourbon, connétable de France";0;
+24;15539132;@I00275@;Bertrand;de SAINT-URCIZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+saint+urcize;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1150
+- Décédé";0;
+24;15539123;@I00276@;Guillemette Huguette;de COMBORN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillemette+huguette&n=de+comborn;3;0;1;2;forme2;;"";"Comtesse de Montferrand";"";"";"";0;0;"- Née en 1155
+- Décédée en 1199, à l'âge de 44 ans
+- Comtesse de Montferrand";0;
+24;15539122;@I00277@;Robert  1er Dauphin;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert+1er+dauphin&n=d+auvergne;3;0;1;2;forme2;;"";"Dauphin d'Auvergne, de Clermont,troubadour";"";"";"";0;0;"- Né en 1150
+- Décédé le 22 mars 1234, à l'âge de 84 ans
+- Dauphin d'Auvergne, de Clermont,troubadour";0;
+24;15539130;@I00278@;Guy 3;de SEVERAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy+3&n=de+severac;3;0;1;2;forme2;;"";"Chevalier, seigneur de Séverac";"";"";"";0;0;"- Né vers 1150
+- Décédé en 1181, à l'âge d'environ 31 ans
+- Chevalier, seigneur de Séverac";0;
+24;15539128;@I00279@;Pierre;de COMBRET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=de+combret;3;0;1;2;forme2;;"Ayssènes, 12017, Aveyron, Midi-Pyrénées, France,";"Vicomte d' Ayssènes et de Combret";"";"";"";0;0;"- Né vers 1165 - Ayssènes, 12017, Aveyron, Midi-Pyrénées, France
+- Décédé
+- Vicomte d' Ayssènes et de Combret";0;
+24;15539131;@I00280@;Béatrix;de CANILLAC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+canillac;3;0;1;2;forme2;;"";"Héritière de la maison de Canillac";"";"";"";0;0;"- Née vers 1160
+- Décédée en 1220, à l'âge d'environ 60 ans
+- Héritière de la maison de Canillac";0;
+24;15539109;@I00281@;Alix;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix&n=de+bourgogne;3;0;1;2;forme2;;"";"Dame de Chamalières";"";"";"";0;0;"- Née en 1177
+- Décédée en 1216, à l'âge de 39 ans
+- Dame de Chamalières";0;
+24;15539108;@I00282@;Béraud 7;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+7&n=de+mercoeur;3;0;1;2;forme2;;"";"Seigneur de Mercoeur, croisé en 1190";"";"";"";0;0;"- Né vers 1151
+- Décédé en 1208, à l'âge d'environ 57 ans
+- Seigneur de Mercoeur, croisé en 1190";0;
+24;15539105;@I00283@;Alamande;de PIERRE de GANGES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alamande&n=de+pierre+de+ganges;3;0;0;2;forme2;1205;"";"Demoiselle de Ganges";"";"";"";0;0;"- Née vers 1190
+- Décédée en 1252, à l'âge d'environ 62 ans
+- Demoiselle de Ganges";0;
+24;15539104;@I00284@;Astorg 6;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+6&n=de+peyre&oc=5;3;0;0;2;forme2;1205;"";"Baron de Peyre";"";"";"";1;0;"- Né en 1180
+- Décédé en 1230, à l'âge de 50 ans
+- Baron de Peyre";0;
+24;15539157;@I00288@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9338;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+24;15539112;@I00289@;Pierre  2;de MURAT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre+2&n=de+murat;3;0;1;2;forme2;;"";"Vicomte de Murat, chevalier en 1196, croisé en 1187";"";"";"";0;0;"- Né en 1160
+- Décédé en 1209, à l'âge de 49 ans
+- Vicomte de Murat, chevalier en 1196, croisé en 1187";0;
+24;15539156;@I00290@;Aymon;de DUNIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aymon&n=de+dunieres;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1150
+- Décédé";0;
+24;15539129;@I00287@;Marie;de CAYLUS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie&n=de+caylus;3;0;1;2;forme2;;"Ayssènes, 12017, Aveyron, Midi-Pyrénées, France,";"Dame de Caylus, de Bournac, de St Afrique et de Montaigut";"";"";"";0;0;"- Née vers 1165 - Caylus, 82038, Tarn-et-Garonne, Midi-Pyrénées, France
+- Décédée en 1196, à l'âge d'environ 31 ans
+- Dame de Caylus, de Bournac, de St Afrique et de Montaigut";0;
+25;31078152;@I00292@;Bernard 6;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+6&n=d+anduze;3;0;1;2;forme2;1170;"";"Seigneur d'Anduze, de Sauve";"";"";"";0;0;"- Né vers 1150
+- Décédé en 1198, à l'âge d'environ 48 ans
+- Seigneur d'Anduze, de Sauve";0;
+25;31078154;@I00294@;Elzéar;de POSQUIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=elzear&n=de+posquieres;3;0;1;2;forme2;1165;"";"Co-seigneur d'Uzès";"";"";"";0;0;"- Né en 1126
+- Décédé en 1196, à l'âge de 70 ans
+- Co-seigneur d'Uzès";0;
+25;31078144;@I00291@;Guérin;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin&n=de+chateauneuf+randon;3;0;0;2;forme2;;"";"Seigneur du Luc, coseigneur puis seigneur de Randon";"";"";"";0;0;"- Né en 1090
+- Décédé en 1134, à l'âge de 44 ans
+- Seigneur du Luc, coseigneur puis seigneur de Randon";0;
+25;31078155;@I00293@;Guillelma (Amic);de SABRAN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillelma+amic&n=de+sabran;2;0;1;2;forme2;1165;"";"";"";"";"";0;0;"- Née en 1135
+- Décédée";0;
+25;31078159;@I00295@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8317;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+24;15539115;@I00296@;Jeanne;de TOULOUSE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=de+toulouse;2;0;1;2;forme2;1218;"";"";"";"";"";0;0;"- Née vers 1195
+- Décédée le 28 mai 1255, à l'âge d'environ 60 ans";0;
+25;31078158;@I00297@;Nocher;de JOYEUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=nocher&n=de+joyeuse;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1123
+- Décédé";0;
+24;15539113;@I00298@;X;de THURET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=x&n=de+thuret&oc=4;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1170
+- Décédée";0;
+25;31078146;@I00300@;Astorg 3;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+3&n=de+peyre;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1077
+- Décédé en 1149, à l'âge d'environ 72 ans";0;
+25;31078147;@I00301@;Ausilente;de COMPTOR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ausilente&n=de+comptor;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 1080
+- Décédée";0;
+25;31078145;@I00303@;Alasie;de PEYRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alasie&n=de+peyre;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1105
+- Décédée";0;
+24;15539114;@I00299@;Bernard;de LA TOUR D'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+la+tour+d+auvergne;3;0;1;2;forme2;1218;"";"Seigneur de la Tour ..., croisé en 1250";"";"";"";0;0;"- Né en 1190
+- Décédé le 29 décembre 1253, à l'âge de 63 ans
+- Seigneur de la Tour ..., croisé en 1250";0;
+25;31078153;@I00302@;Ermessende;de NARBONNE-PELET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermessende&n=de+narbonne+pelet;3;0;1;2;forme2;1170;"";"Comtesse de Melgueil";"";"";"";0;0;"- Née vers 1150
+- Décédée en 1176, à l'âge d'environ 26 ans
+- Comtesse de Melgueil";0;
+25;31078213;@I00304@;Marcibilie;N.;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marcibilie&n=n.;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1155
+- Décédée";0;
+25;31078212;@I00305@;Bernard;de CENARET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+cenaret&oc=2;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+25;31078209;@I00306@;Guérine;de CHATEAUNEUF d'APCHIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerine&n=de+chateauneuf+d+apchier&oc=3;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1140
+- Décédée";0;
+25;31078263;@I00313@;Alixente;de POITIERS VALENTINOIS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alixente&n=de+poitiers+valentinois;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+25;31078262;@I00315@;Aldebert;de CANILLAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aldebert&n=de+canillac;3;0;1;0;;;"";"Seigneur de Canillac";"";"";"";0;0;"- Né en 1140
+- Décédé
+- Seigneur de Canillac";0;
+25;31078246;@I00320@;Archambaud 5;de COMBORN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=archambaud+5&n=de+comborn;3;0;1;2;forme2;avant 1150;"";"Vicomte de Comborn";"";"";"";0;0;"- Né en 1123
+- Décédé en 1184, à l'âge de 61 ans
+- Vicomte de Comborn";0;
+25;31078265;@I00321@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7664;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+25;31078264;@I00322@;Etienne;de SAINT-URCIZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne&n=de+saint+urcize;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né vers 1100
+- Décédé";0;
+25;31078220;@I00323@;Guy;de DAMPIERRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy&n=de+dampierre;3;0;1;2;forme2;;"";"Seigneur de Bourbon";"";"";"";0;0;"- Né en 1155
+- Décédé en 1216, à l'âge de 61 ans
+- Seigneur de Bourbon";0;
+25;31078243;@I00324@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7452;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+25;31078214;@I00307@;Hélie 7;de PERIGORD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helie+7&n=de+perigord;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1166
+- Décédé en 1210, à l'âge de 44 ans";0;
+25;31078215;@I00308@;Marguerite;de LIMOGES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=de+limoges;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1170
+- Décédée";0;
+25;31078208;@I00309@;Astorg 5;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+5&n=de+peyre&oc=6;3;0;1;2;forme2;;"";"Seigneur de Peyre";"";"";"";0;0;"- Né en 1140
+- Décédé en 1212, à l'âge de 72 ans
+- Seigneur de Peyre";0;
+25;31078211;@I00310@;Aygline;de SAINT MAURICE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aygline&n=de+saint+maurice;3;0;1;2;forme2;1180;"";"Dame de Ganges";"";"";"";0;0;"- Née vers 1160
+- Décédée après 1222
+- Dame de Ganges";0;
+25;31078216;@I00311@;Béraud 6;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+6&n=de+mercoeur;2;0;1;2;forme2;1151;"";"";"";"";"";0;0;"- Né vers 1115
+- Décédé en 1183, à l'âge d'environ 68 ans";0;
+25;31078210;@I00312@;Pons;de PIERRE de GANGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons&n=de+pierre+de+ganges;3;0;1;2;forme2;1180;"";"Baron de Ganges";"";"";"";0;0;"- Né vers 1150
+- Décédé vers 1218, à l'âge d'environ 68 ans
+- Baron de Ganges";0;
+25;31078218;@I00314@;Hugues 3 le Pacifique;de BOURGOGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hugues+3+le+pacifique&n=de+bourgogne;3;0;1;2;forme2;après 1165;"";"Chevalier, croisé en 1171 et 1174, duc de Bourgogne, comte du Charolais et de Langres";"";"";"";1;0;"- Né en 1148
+- Décédé le 1er septembre 1192 - Tyr, Israël, à l'âge de 44 ans
+- Chevalier, croisé en 1171 et 1174, duc de Bourgogne, comte du Charolais et de Langres";0;
+25;31078256;@I00316@;Rosselin;de COMBRET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rosselin&n=de+combret;2;0;1;2;forme2;vers 1160;"";"";"";"";"";0;0;"- Né en 1135
+- Décédé avant 1181";0;
+25;31078261;@I00317@;Sibylle;de BARCELONE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=sibylle&n=de+barcelone;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1125
+- Décédée";0;
+25;31078260;@I00318@;Guy 2;de SEVERAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy+2&n=de+severac&oc=2;3;0;1;2;forme2;;"";"Baron de Séverac";"";"";"";1;0;"- Né en 1120
+- Décédé le 5 avril 1181 - Montpellier 34, , , ,, à l'âge de 61 ans
+- Baron de Séverac";0;
+25;31078244;@I00319@;Guillaume;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=d+auvergne&oc=3;3;0;1;2;forme2;vers 1150;"";"Comte de Clermont, dauphin d'Auvergne, chevalier croisé";"";"";"";0;0;"- Né vers 1128
+- Décédé le 7 novembre 1169 - Abbaye des Ayes Crolles 38140 Isère, à l'âge d'environ 41 ans
+- Comte de Clermont, dauphin d'Auvergne, chevalier croisé";0;
+25;31078312;@I00325@;Guigon 1er;de DUNIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigon+1er&n=de+dunieres;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1120
+- Décédé";0;
+25;31078313;@I00326@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=9340;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+25;31078225;@I00328@;xx;xx;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=xx&n=xx;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+25;31078259;@I00329@;Alix;de CLERMONT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix&n=de+clermont;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1145
+- Décédée";0;
+25;31078257;@I00334@;Rique;NN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rique&n=nn;2;0;1;0;;vers 1160;"";"";"";"";"";0;0;"- Née en 1140
+- Décédée";0;
+25;31078222;@I00338@;Archambaud;de MONTLUCON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=archambaud&n=de+montlucon;3;0;1;2;forme2;;"";"Seigneur de Montluçon";"";"";"";0;0;"- Né vers 1165
+- Décédé en 1216, à l'âge d'environ 51 ans
+- Seigneur de Montluçon";0;
+25;31078223;@I00339@;x;de PIERREMONT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=x&n=de+pierremont;3;0;1;0;;;"";"Dame de Pierremont";"";"";"";0;0;"- Née en 1165
+- Décédée
+- Dame de Pierremont";0;
+25;31078224;@I00327@;Guillaume 2;de MURAT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+2&n=de+murat;3;0;1;2;forme2;;"";"Vicomte en 1135";"";"";"";0;0;"- Né vers 1100
+- Décédé
+- Vicomte en 1135";0;
+25;31078217;@I00330@;Judith;d'AUVERGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=judith&n=d+auvergne;2;0;1;2;forme2;1151;"";"";"";"";"";0;0;"- Née vers 1130 - Montferrand, Puy-de-Dôme
+- Décédée en 1194, à l'âge d'environ 64 ans";0;
+25;31078258;@I00331@;Déodat;de CAYLUS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=deodat&n=de+caylus&oc=3;3;0;1;2;forme2;;"";"Seigneur de Caylus";"";"";"";1;0;"- Né en 1135
+- Décédé en 1182, à l'âge de 47 ans
+- Seigneur de Caylus";0;
+25;31078219;@I00332@;Alix;de LORRAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix&n=de+lorraine;2;0;1;2;forme2;après 1165;"";"";"";"";"";0;0;"- Née en 1145
+- Décédée en 1200, à l'âge de 55 ans";0;
+25;31078245;@I00333@;Marquise;d'ALBON de VIENNOIS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marquise&n=d+albon+de+viennois;2;0;1;2;forme2;vers 1150;"";"";"";"";"";0;0;"- Née vers 1130
+- Décédée en 1196, à l'âge d'environ 66 ans";0;
+25;31078247;@I00335@;Jourdaine;de PERIGORD;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jourdaine&n=de+perigord;2;0;1;2;forme2;avant 1150;"";"";"";"";"";0;0;"- Née avant 1135 - Périgueux, 24322, Dordogne, Aquitaine, France
+- Décédée - Orgnac-sur-Vézère, 19154, Corrèze, Limousin, France";0;
+25;31078221;@I00336@;Mathilde;de BOURBON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde&n=de+bourbon;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1165
+- Décédée en 1218, à l'âge de 53 ans";0;
+25;31078242;@I00337@;Henri 2;d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=henri+2&n=d+apchier;3;0;1;2;forme2;;"";"Baron d'Apchier";"";"";"";0;0;"- Né vers 1120
+- Décédé vers 1155, à l'âge d'environ 35 ans
+- Baron d'Apchier";0;
+26;62156309;@I00340@;Roscie;du CAYLAR des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=roscie&n=du+caylar+des+baux;2;0;0;2;forme2;vers 1145;"";"";"";"";"";0;0;"- Née vers 1110
+- Décédée en 1192, à l'âge d'environ 82 ans";0;
+26;62156305;@I00341@;Adélaïs;de ROQUEFEUIL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelais&n=de+roquefeuil;2;0;1;2;forme2;vers 1150;"";"";"";"";"";0;0;"- Née en 1135
+- Décédée en 1189, à l'âge de 54 ans";0;
+26;62156310;@I00342@;Rostaing 2;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rostaing+2&n=de+sabran;2;0;1;2;forme2;vers 1145;"";"";"";"";"";0;0;"- Né en 1115 - Tresques, 30331, Gard, Languedoc-Roussillon, France
+- Décédé en 1181, à l'âge de 66 ans
+@todo vérifier les événements pour Rostaing 2 de SABRAN (1 erreur(s) détectée(s))";1;
+26;62156308;@I00343@;Bermond;de POSQUIERES d' UZES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bermond&n=de+posquieres+d+uzes;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1110
+- Décédé en 1181, à l'âge de 71 ans
+@todo vérifier les événements pour Bermond de POSQUIERES d' UZES (1 erreur(s) détectée(s))";1;
+26;62156304;@I00344@;Bertrand;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=d+anduze;3;0;1;2;forme2;vers 1150;"";"Seigneur d'Anduze, de Portes et de Lecques.";"";"";"";0;0;"- Né en 1130
+- Décédé en 1170, à l'âge de 40 ans
+- Seigneur d'Anduze, de Portes et de Lecques.";0;
+26;62156288;@I00345@;Guillaume I;de CHATEAUNEUF-RANDON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+i&n=de+chateauneuf+randon&oc=3;3;0;1;2;forme2;;"";"Seigneur de Randon";"";"";"";0;0;"- Né avant 1070
+- Décédé en 1126
+- Seigneur de Randon";0;
+26;62156293;@I00347@;Maragde dite Marguerite;d' ARPAJON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maragde+dite+marguerite&n=d+arpajon;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156292;@I00348@;Astorg 2;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+2&n=de+peyre;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1040
+- Décédé en 1099, à l'âge de 59 ans";0;
+26;62156306;@I00346@;Bernard;de NARBONNE-PELET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+narbonne+pelet;3;0;1;2;forme2;1145;"";"Seigneur d'Alès, comte de Melgueil";"";"";"";0;0;"- Né vers 1115
+- Décédé vers 1170, à l'âge d'environ 55 ans
+- Seigneur d'Alès, comte de Melgueil";0;
+25;31078229;@I00349@;Judith;de MERCOEUR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=judith&n=de+mercoeur;2;0;1;2;forme2;1190;"";"";"";"";"";0;0;"- Née vers 1165
+- Décédée en 1208, à l'âge d'environ 43 ans";0;
+25;31078228;@I00350@;Bertrand II;de LA TOUR D'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand+ii&n=de+la+tour+d+auvergne;2;0;1;2;forme2;1190;"";"";"";"";"";0;0;"- Né en 1130
+- Décédé en 1213, à l'âge de 83 ans";0;
+26;62156441;@I00352@;Emengarde;de TOUCY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emengarde&n=de+toucy;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1135
+- Décédée en 1209, à l'âge d'environ 74 ans";0;
+25;31078231;@I00351@;Jeanne;PLANTAGENÊT ou d'ANGLETERRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=plantagenet+ou+d+angleterre;3;0;1;2;forme2;8 octobre 1196;"Rouen, 76540, Seine-Maritime, Normandie, France,";"Reine de Sicile, comtesse de Toulouse,Abbesse de Fontevrault (49)";"";"";"";1;0;"- Née le 8 octobre 1165 - Angers, 49007, Maine et Loire, Pays de la Loire, France
+- Décédée le 24 septembre 1199 - Fontevraud-l'Abbaye, 49140, Maine et Loire, Pays de la Loire, France, à l'âge de 33 ans
+- Reine de Sicile, comtesse de Toulouse,Abbesse de Fontevrault (49)
+@todo note union à analyser pour Jeanne PLANTAGENÊT ou d'ANGLETERRE : 'elle : second mariage'";0;
+26;62156529;@I00353@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7666;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+26;62156440;@I00354@;Guillaume 1;de DAMPIERRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1&n=de+dampierre;3;0;1;0;;;"";"Seigneur de Dampierre, Saint Just et Saint Dizier";"";"";"";0;0;"- Né vers 1130
+- Décédé en 1174, à l'âge d'environ 44 ans
+- Seigneur de Dampierre, Saint Just et Saint Dizier";0;
+26;62156528;@I00356@;Robert;de SAINT-URCIZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert&n=de+saint+urcize;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+26;62156492;@I00355@;Archambaud 4 Le Barbu;de COMBORN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=archambaud+4+le+barbu&n=de+comborn;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1098
+- Décédé en 1137, à l'âge de 39 ans";0;
+26;62156493;@I00357@;Umberge ou Brunissende;de LIMOGES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=umberge+ou+brunissende&n=de+limoges;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1090
+- Décédée";0;
+26;62156488;@I00358@;Robert 4;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert+4&n=d+auvergne;3;0;0;2;forme2;;"";"Comte d'Auvergne, croisé (2e croisade)";"";"";"";1;1;"- Né en 1095
+- Décédé en 1147 - en Palestine, à l'âge de 52 ans
+- Comte d'Auvergne, croisé (2e croisade)";0;
+26;62156445;@I00359@;Béatrix;de CHATELDON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+chateldon;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1140
+- Décédée";0;
+26;62156444;@I00360@;Guillaume 3;de MONTLUCON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+3&n=de+montlucon;3;0;1;0;;;"";"Seigneur de Montluçon";"";"";"";0;0;"- Né en 1135
+- Décédé
+- Seigneur de Montluçon";0;
+26;62156442;@I00362@;Archambaud 7;de BOURBON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=archambaud+7&n=de+bourbon;2;0;1;0;;1164;"";"";"";"";"";0;0;"- Né en 1140
+- Décédé en 1169, à l'âge de 29 ans";0;
+26;62156484;@I00363@;Hélie;d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helie&n=d+apchier;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1090
+- Décédé";0;
+26;62156491;@I00365@;Marguerite;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marguerite&n=de+bourgogne;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1096
+- Décédée en 1163, à l'âge de 67 ans";0;
+26;62156438;@I00367@;Mathieu;de LORRAINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathieu&n=de+lorraine;3;0;1;0;;;"";"Duc de Haute-Lorraine, comte de Boulogne-sur-Mer";"";"";"";0;0;"- Né en 1120
+- Décédé en 1173, à l'âge de 53 ans
+- Duc de Haute-Lorraine, comte de Boulogne-sur-Mer";0;
+26;62156516;@I00368@;Séguin;de CAYLUS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=seguin&n=de+caylus;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1075
+- Décédé après 1102";0;
+26;62156519;@I00371@;Ermengarde;de MURVIEL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=de+murviel;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156434;@I00372@;Guillaume;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=d+auvergne;3;0;1;2;forme2;;"";"Comte d'Auvergne";"";"";"";0;0;"- Né vers 1092
+- Décédé vers 1182, à l'âge d'environ 90 ans
+- Comte d'Auvergne";0;
+26;62156518;@I00373@;Aymeri;de CLERMONT-LODEVE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aymeri&n=de+clermont+lodeve;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+26;62156448;@I00374@;Pierre 1;de MURAT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre+1&n=de+murat;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé avant 1120";0;
+26;62156521;@I00375@;Ermengarde;NN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=nn;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156489;@I00376@;Mathilde;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde&n=de+bourgogne;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédée le 22 juillet 1202 - inhumée à l'Abbaye du Bouschet-Vauluisant - Yronde et Buron 63472, Puy-de-Dôme";0;
+26;62156437;@I00377@;Marie;de BLOIS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie&n=de+blois;2;0;1;0;;1145;"";"Abbesse de Fontvrault";"";"";"";0;0;"- Décédée le 14 août 1190 - Fontevraud-l'Abbaye, 49140, Maine et Loire, Pays de la Loire, France
+- Abbesse de Fontvrault";0;
+26;62156513;@I00378@;Rosseline;NN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rosseline&n=nn;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1110
+- Décédée";0;
+26;62156421;@I00379@;Vierne;d'ANDUZE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=vierne&n=d+anduze;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156423;@I00380@;Agnès;N;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=n;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156443;@I00361@;Alix ou Adélaïde;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix+ou+adelaide&n=de+bourgogne&oc=2;3;0;1;2;forme2;1164;"";"Abbesse de Fontevrault";"";"";"";0;0;"- Née en 1146
+- Décédée en 1192 - Fontevraud-l'Abbaye, 49140, Maine et Loire, Pays de la Loire, France, à l'âge de 46 ans
+- Abbesse de Fontevrault";0;
+26;62156495;@I00364@;Brunichilde;de FOIX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=brunichilde&n=de+foix;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1120
+- Décédée en 1160, à l'âge de 40 ans";0;
+26;62156494;@I00366@;Hélie;de PERIGORD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helie&n=de+perigord&oc=2;3;0;1;2;forme2;;"";"Comte de Périgord";"";"";"";0;0;"- Né vers 1085
+- Décédé vers 1144, à l'âge d'environ 59 ans
+- Comte de Périgord";0;
+26;62156490;@I00369@;Guigue;d'ALBON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigue&n=d+albon;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1095
+- Décédé en 1142, à l'âge de 47 ans";0;
+26;62156435;@I00370@;Anne;de NEVERS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=de+nevers;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1110
+- Décédée vers 1180, à l'âge d'environ 70 ans";0;
+27;124312577;@I00382@;Antoinette;de MERCOEUR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=antoinette&n=de+mercoeur;1;0;1;0;;17 janvier 1057;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156433;@I00381@;Alix;de CHAMALIERES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alix&n=de+chamalieres;2;0;1;2;forme2;;"";"Dame de Chamalières et de Gerzat";"";"";"";0;0;"- Décédée
+- Dame de Chamalières et de Gerzat";0;
+27;124312610;@I00387@;Henri;de ROQUEFEUIL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=henri&n=de+roquefeuil;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+27;124312611;@I00388@;Maria;X.;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=maria&n=x.;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+27;124312618;@I00389@;Rainon 1;du CAYLAR des BAUX;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rainon+1&n=du+caylar+des+baux;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1090
+- Décédé en 1160, à l'âge de 70 ans";0;
+26;62156439;@I00391@;Berthe;de SOUABE de HOHENSTAUFEN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berthe&n=de+souabe+de+hohenstaufen;2;0;1;0;;;"";"";"";"";"";0;0;"- Née après 1121
+- Décédée en 1195";0;
+26;62156485;@I00392@;Guillemette;d'ALBERET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillemette&n=d+alberet;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156517;@I00393@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7674;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+26;62156449;@I00394@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7413;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+26;62156417;@I00395@;Rothberge;de COMBORN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rothberge&n=de+comborn;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1120
+- Décédée";0;
+27;124312620;@I00383@;Guillaume 2;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+2&n=de+sabran;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1095
+- Décédé en 1159, à l'âge de 64 ans";0;
+27;124312616;@I00384@;Raymond Decan (d' Avignon);de POSQUIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+decan+d+avignon&n=de+posquieres;3;0;1;2;forme2;1090;"";"Seigneur d'Uzès et de Posquières";"";"";"";0;0;"- Né en 1075 - Avignon, 84007, Vaucluse, Provence-Alpes-Côte d'Azur, France
+- Décédé le 6 septembre 1138 - Saint-Laurent-d'Aigouze, 30276, Gard, Languedoc-Roussillon, France, à l'âge de 63 ans
+- Seigneur d'Uzès et de Posquières";0;
+27;124312576;@I00385@;Guillaume;de CHATEAUNEUF;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+chateauneuf&oc=3;2;0;1;2;forme2;17 janvier 1057;"";"Seigneur de Châteauneuf-en-Boutières (07)";"";"";"";0;0;"- Décédé après 1062
+- Seigneur de Châteauneuf-en-Boutières (07)";0;
+27;124312608;@I00386@;Bernard 4;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+4&n=d+anduze;3;0;0;2;forme2;;"";"Seigneur d'Anduze,Lecques,Montpezat et Portes.";"";"";"";0;0;"- Né en 1110
+- Décédé en 1162, à l'âge de 52 ans
+- Seigneur d'Anduze,Lecques,Montpezat et Portes.";0;
+27;124312619;@I00390@;Béatrice;d' UZES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrice&n=d+uzes;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1095
+- Décédée";0;
+26;62156456;@I00397@;Bertrand;de LA TOUR D'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bertrand&n=de+la+tour+d+auvergne;2;0;1;2;forme2;1129;"";"";"";"";"";0;0;"- Né en 1080
+- Décédé en 1150, à l'âge de 70 ans";0;
+27;124312585;@I00398@;Pétronille;de CARLAT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=petronille&n=de+carlat;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+27;124312584;@I00399@;Astorg 1er dit d'Orlac;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+1er+dit+d+orlac&n=de+peyre;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1010
+- Décédé";0;
+27;124312612;@I00400@;Raymond " le Croisé ";de NARBONNE-PELET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+le+croise&n=de+narbonne+pelet;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1075
+- Décédé";0;
+27;124312609;@I00401@;Sybille;de MONTPELLIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=sybille&n=de+montpellier;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156462;@I00396@;Henri 2 (Courtemanche);PLANTAGENÊT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=henri+2+courtemanche&n=plantagenet;3;0;1;2;forme2;18 mai 1152;"Bordeaux, 33063, Gironde, Aquitaine, France,";"Roi d'Angleterre de 1154 à 1189";"";"";"";0;0;"- Né le 5 mars 1133 - Le Mans 72
+- Décédé le 3 juillet 1189 - Chinon, 37072, Indre et Loire, Centre, France, à l'âge de 56 ans
+- Roi d'Angleterre de 1154 à 1189";0;
+27;124312987;@I00403@;Graille;d'ANGOULËME;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=graille&n=d+angouleme;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1060
+- Décédée en 1112, à l'âge de 52 ans";0;
+27;124312986;@I00404@;Adémar;de LIMOGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ademar&n=de+limoges;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1050
+- Décédé en 1133, à l'âge de 83 ans";0;
+27;124312984;@I00406@;Bernard;de COMBORN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+comborn;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1038
+- Décédé en 1129, à l'âge de 91 ans";0;
+27;124312613;@I00407@;Agnès;X;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=x;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1085
+- Décédée";0;
+27;124312976;@I00402@;Guillaume;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=d+auvergne&oc=2;3;0;1;2;forme2;;"";"Comte d'Auvergne";"";"";"";0;0;"- Né en 1060
+- Décédé en 1136, à l'âge de 76 ans
+- Comte d'Auvergne";0;
+26;62156463;@I00405@;Aliénor;d'AQUITAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alienor&n=d+aquitaine;3;0;2;2;forme2;18 mai 1152;"Bordeaux, 33063, Gironde, Aquitaine, France,";"Reine de France";"";"";"";0;0;"- Née en 1122 - Blaye, 33058, Gironde, Aquitaine, France
+- Décédée le 1er avril 1204 - Fontevraud-l'Abbaye, 49140, Maine et Loire, Pays de la Loire, France, à l'âge de 82 ans
+- Reine de France
+@todo vérifier les événements pour Aliénor d'AQUITAINE (2 erreur(s) détectée(s))";2;
+27;124312866;@I00409@;Robert;de CLERMONT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert&n=de+clermont;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1095
+- Décédé";0;
+26;62156457;@I00408@;Matheline;de BEZIERS de NIMES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=matheline&n=de+beziers+de+nimes;2;0;1;2;forme2;1129;"";"";"";"";"";0;0;"- Née en 1106
+- Décédée en 1136, à l'âge de 30 ans";0;
+27;124312981;@I00410@;Mathilde Régine;de SICILE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde+regine&n=de+sicile;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+27;124312988;@I00412@;Adalbert Cadoirac Camus;de PERIGORD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adalbert+cadoirac+camus&n=de+perigord;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1032
+- Décédé vers 1104, à l'âge d'environ 72 ans";0;
+27;124312983;@I00413@;Béatrix;de LORRAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix&n=de+lorraine;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 1060
+- Décédée en 1112, à l'âge de 52 ans";0;
+27;124312980;@I00414@;Guigues;d'ALBON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guigues&n=d+albon;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1069
+- Décédé vers 1125, à l'âge d'environ 56 ans";0;
+27;124312982;@I00415@;Etienne dit Tête Hardie;de BOURGOGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etienne+dit+tete+hardie&n=de+bourgogne;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1065
+- Décédé en 1102, à l'âge de 37 ans";0;
+27;124312990;@I00416@;Roger;de FOIX;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=roger&n=de+foix;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+27;124312985;@I00418@;Ermengarde Garcin;de COURSON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde+garcin&n=de+courson;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1050
+- Décédée vers 1110, à l'âge d'environ 60 ans";0;
+27;124312870;@I00411@;Guillaume;de NEVERS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume&n=de+nevers;3;0;1;2;forme2;;"";"Comte de Nevers, d'Auxerre et de Tonnerre";"";"";"";0;0;"- Né en 1082
+- Décédé en 1147, à l'âge de 65 ans
+- Comte de Nevers, d'Auxerre et de Tonnerre";0;
+27;124312977;@I00417@;Emma;de SICILE de HAUTEVILLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emma&n=de+sicile+de+hauteville;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1070
+- Décédée en 1142, à l'âge de 72 ans";0;
+28;248625216;@I00419@;Bernard 3;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+3&n=d+anduze;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1080
+- Décédé en 1128, à l'âge de 48 ans";0;
+28;248625152;@I00420@;Hugues;de CHATEAUNEUF;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hugues&n=de+chateauneuf;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé après 1062";0;
+27;124312867;@I00422@;Jeanne;de CALABRE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=de+calabre;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+28;248625240;@I00423@;Guillaume 1;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1&n=de+sabran;2;0;1;2;forme2;1090;"";"";"";"";"";0;0;"- Né en 1050
+- Décédé en 1127, à l'âge de 77 ans";0;
+27;124312989;@I00424@;Asceline;de SALAGNAC de GRIGNOLS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=asceline&n=de+salagnac+de+grignols;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1045
+- Décédée en 1090, à l'âge de 45 ans";0;
+27;124312871;@I00425@;Adélaïde;de BOURBON-LANCY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide&n=de+bourbon+lancy;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1092
+- Décédée en 1151, à l'âge de 59 ans";0;
+27;124312991;@I00426@;Chimène Diaz;de BARCELONE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=chimene+diaz&n=de+barcelone;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1105
+- Décédée";0;
+27;124312621;@I00428@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8488;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+26;62156431;@I00430@;Sarah;de CORNOUAILLES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=sarah&n=de+cornouailles;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1130
+- Décédée en 1216, à l'âge de 86 ans";0;
+26;62156512;@I00433@;Ermengaud;de COMBRET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengaud&n=de+combret;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1110
+- Décédé en 1146, à l'âge de 36 ans";0;
+26;62156420;@I00435@;Raymond;de PIERRE de GANGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+pierre+de+ganges;2;0;0;0;;;"";"Baron de Ganges";"";"";"";0;0;"- Décédé après 1172
+- Baron de Ganges";0;
+26;62156436;@I00436@;Eudes 2;de BOURGOGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=eudes+2&n=de+bourgogne;3;0;1;0;;1145;"";"Duc de Bourgogne";"";"";"";0;0;"- Né en 1118
+- Décédé en 1162, à l'âge de 44 ans
+- Duc de Bourgogne";0;
+26;62156432;@I00437@;Béraud 5;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+5&n=de+mercoeur;3;0;1;2;forme2;;"";"Seigneur";"";"";"";0;0;"- Né vers 1075
+- Décédé
+- Seigneur";0;
+26;62156422;@I00438@;Raymond;de SAINT MAURICE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+saint+maurice;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+26;62156416;@I00439@;Astorg 4;de PEYRE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=astorg+4&n=de+peyre&oc=7;3;0;1;2;forme2;;"";"Seigneur de Peyre, Marchastel et Genebrier";"";"";"";0;0;"- Né en 1110
+- Décédé en 1151, à l'âge de 41 ans
+- Seigneur de Peyre, Marchastel et Genebrier";0;
+28;248625232;@I00421@;Raymond;d'AVIGNON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=d+avignon;3;0;1;2;forme2;1075;"";"Doyen d'Avignon "Decanus", vicomte d'Avignon, seigneur de Rognonas";"";"";"";1;0;"- Né vers 1040 - Avignon, 84007, Vaucluse, Provence-Alpes-Côte d'Azur, France
+- Décédé le 18 juillet 1096, à l'âge d'environ 56 ans
+- Doyen d'Avignon "Decanus", vicomte d'Avignon, seigneur de Rognonas";0;
+27;124312617;@I00427@;Marie;d' UZES du CAYLAR;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=marie&n=d+uzes+du+caylar;3;0;1;2;forme2;1090;"";"Baronne d'Uzès et de Posquières";"";"";"";0;0;"- Née vers 1075 - Uzès, 30334, Gard, Languedoc-Roussillon, France
+- Décédée après 1175 - Uzès, 30334, Gard, Languedoc-Roussillon, France
+- Baronne d'Uzès et de Posquières";0;
+26;62156429;@I00429@;Raymonde;de TURENNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymonde&n=de+turenne;1;0;1;2;forme2;;"";"";"";"";"";1;1;"- Décédée
+@todo note union à analyser pour Raymonde de TURENNE : 'attention : autre version :
+autre épouse de Helie 6 et mère d'Almodis : Marguerite de Limoges 1170 ( H. Pichot)'";0;
+26;62156520;@I00431@;Déodat;de SEVERAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=deodat&n=de+severac;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1095
+- Décédé";0;
+26;62156523;@I00432@;Douce dite Douce d'Arles;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=douce+dite+douce+d+arles&n=de+provence;3;0;1;2;forme2;1112;"Marseille, 13055, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"Héritière de la Provence";"";"";"";2;1;"- Née en 1090
+- Décédée en 1129, à l'âge de 39 ans
+- Héritière de la Provence
+@todo note 'Union avec Raimond Bérenger 3 de BARCELONE' de Douce dite Douce d'Arles de PROVENCE à analyser : 'à Saint Victor'";0;
+26;62156522;@I00434@;Raimond Bérenger 3;de BARCELONE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raimond+berenger+3&n=de+barcelone;3;0;1;2;forme2;1112;"Marseille, 13055, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France,";"Comte de Barcelone et 1er comte de Provence";"";"";"";1;0;"- Né en 1082
+- Décédé en 1131, à l'âge de 49 ans
+- Comte de Barcelone et 1er comte de Provence
+@todo note 'Union avec Douce dite Douce d'Arles de PROVENCE' de Raimond Bérenger 3 de BARCELONE à analyser : 'à Saint Victor'";0;
+27;124312913;@I00441@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7482;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+28;248625219;@I00440@;Ermessende;de MERGUEIL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermessende&n=de+mergueil;2;0;1;2;forme2;vers 1086;"";"";"";"";"";0;0;"- Née vers 1060
+- Décédée après 1156";0;
+28;248625218;@I00442@;Guillaume 5;de MONTPELLIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+5&n=de+montpellier;3;0;1;2;forme2;vers 1086;"";"Seigneur de Montpellier";"";"";"";0;0;"- Né en 1075
+- Décédé en 1122, à l'âge de 47 ans
+- Seigneur de Montpellier
+@todo Anomalies détectées sur Guillaume 5 de MONTPELLIER. Vérifier la source.";1;
+27;124312912;@I00443@;Bernard;de LA TOUR D'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+la+tour+d+auvergne&oc=2;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+27;124312924;@I00444@;Geoffroy 5 le Bel;PLANTAGENÊT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroy+5+le+bel&n=plantagenet;2;0;1;2;forme2;17 juin 1128;"Le Mans 72,";"";"";"";"";0;0;"- Né le 24 août 1113
+- Décédé le 7 septembre 1151 - Château-du-Loir, 72071, Sarthe, Pays de la Loire, France, à l'âge de 38 ans";0;
+28;248625153;@I00445@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7417;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+28;248625217;@I00446@;Aneth;N.;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aneth&n=n.;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156430;@I00449@;Adhémar 5 Boson;de LIMOGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adhemar+5+boson&n=de+limoges;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1135
+- Décédé en 1199, à l'âge de 64 ans";0;
+26;62156419;@I00451@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8354;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+26;62156418;@I00452@;Guérin 4;de CHATEAUNEUF d'APCHIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guerin+4&n=de+chateauneuf+d+apchier;3;0;1;0;;;"";"Seigneur d'Apchier St Auban";"";"";"";0;0;"- Né vers 1115
+- Décédé
+- Seigneur d'Apchier St Auban";0;
+27;124312926;@I00454@;Guillaume 10;d'AQUITAINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+10&n=d+aquitaine;2;0;1;2;forme2;1119;"";"";"";"";"";0;0;"- Né en 1099
+- Décédé en 1137, à l'âge de 38 ans";0;
+27;124312925;@I00457@;Mathilde l'Impératrice;de NORMANDIE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde+l+imperatrice&n=de+normandie;2;0;1;2;forme2;17 juin 1128;"Le Mans 72,";"";"";"";"";0;0;"- Née en août 1102 - Londres, , , , Angleterre
+- Décédée le 10 septembre 1169 - Rouen, 76540, Seine-Maritime, Normandie, France, à l'âge de 67 ans";0;
+28;248625233;@I00447@;Béatrix ou Marie;de POSQUIERES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrix+ou+marie&n=de+posquieres;3;0;1;2;forme2;1075;"";"Dame de Posquières (Vauvert)";"";"";"";0;0;"- Née vers 1050
+- Décédée
+- Dame de Posquières (Vauvert)";0;
+28;248625241;@I00448@;Adélaïde (Amici);de FORCALQUIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide+amici&n=de+forcalquier;2;0;1;2;forme2;1090;"";"";"";"";"";0;0;"- Née en 1075
+- Décédée en 1142, à l'âge de 67 ans";0;
+26;62156428;@I00450@;Hélie 6;de PERIGORD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=helie+6&n=de+perigord;2;0;1;2;forme2;;"";"";"";"";"";1;1;"- Né en 1137
+- Décédé en 1205, à l'âge de 68 ans
+@todo note union à analyser pour Hélie 6 de PERIGORD : 'attention : autre version :
+autre épouse de Helie 6 et mère d'Almodis : Marguerite de Limoges 1170 ( H. Pichot)'";0;
+27;124312914;@I00453@;Bernard;de TRENCAVEL de BEZIERS de NIMES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+trencavel+de+beziers+de+nimes;3;0;1;2;forme2;;"";"Vicomte de Carcassonne et de Béziers";"";"";"";0;0;"- Né vers 1066
+- Décédé en 1130, à l'âge d'environ 64 ans
+- Vicomte de Carcassonne et de Béziers";0;
+28;248625952;@I00455@;Robert;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert&n=d+auvergne;3;0;1;2;forme2;1069;"";"Comte d'Auvergne et de Gévaudan";"";"";"";0;0;"- Né en 1028
+- Décédé en 1096, à l'âge de 68 ans
+- Comte d'Auvergne et de Gévaudan";0;
+26;62156307;@I00456@;Béatrice;de MELGUEIL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrice&n=de+melgueil;3;0;1;2;forme2;1145;"";"Comtesse de Provence, héritière de Melgueil";"";"";"";0;0;"- Née vers 1125
+- Décédée
+- Comtesse de Provence, héritière de Melgueil
+@todo vérifier les événements pour Béatrice de MELGUEIL (1 erreur(s) détectée(s))
+@todo Anomalies détectées sur Béatrice de MELGUEIL. Vérifier la source.";2;
+28;248625954;@I00459@;Roger dit Bosso le Grand;de HAUTEVILLE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=roger+dit+bosso+le+grand&n=de+hauteville;3;0;1;0;;;"";"Comte de Hauteville";"";"";"";0;0;"- Né en 1031
+- Décédé en 1101, à l'âge de 70 ans
+- Comte de Hauteville";0;
+25;31078230;@I00458@;Raymond 6;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+6&n=de+toulouse;3;0;1;2;forme2;8 octobre 1196;"Rouen, 76540, Seine-Maritime, Normandie, France,";"Margrave de Provence, comte de Toulouse";"";"";"";1;0;"- Né le 27 octobre 1156 - Toulouse, 31555, Haute Garonne, Midi-Pyrénées, France
+- Décédé le 2 août 1222 - Toulouse, 31555, Haute Garonne, Midi-Pyrénées, France, à l'âge de 65 ans
+- Margrave de Provence, comte de Toulouse
+@todo note union à analyser pour Raymond 6 de TOULOUSE : 'elle : second mariage'";0;
+27;124312915;@I00460@;Cécile;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=cecile&n=de+provence;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1070
+- Décédée en 1150, à l'âge d'environ 80 ans";0;
+28;248625740;@I00461@;Renaud;de NEVERS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=renaud&n=de+nevers;3;0;1;0;;;"";"Comte de Nevers et d'Auxerre";"";"";"";0;0;"- Né en 1050
+- Décédé en 1097, à l'âge de 47 ans
+- Comte de Nevers et d'Auxerre";0;
+28;248625741;@I00462@;Agnès;de BEAUGENCY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=de+beaugency;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1065
+- Décédée en 1083, à l'âge de 18 ans";0;
+27;124312927;@I00463@;Aliénor;de CHATELLERAULT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alienor&n=de+chatellerault;2;0;1;0;;1119;"";"";"";"";"";0;0;"- Née en 1103
+- Décédée en 1130, à l'âge de 27 ans";0;
+28;248625953;@I00464@;Judith;de MERGUEIL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=judith&n=de+mergueil;2;0;1;2;forme2;1069;"";"";"";"";"";0;0;"- Née en 1043
+- Décédée en 1110, à l'âge de 67 ans";0;
+27;124312865;@I00466@;Aldéarde;d' AUVERGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aldearde&n=d+auvergne;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédée";0;
+26;62156311;@I00465@;Constance (Amic);de VEDENE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=constance+amic&n=de+vedene;2;0;1;2;forme2;vers 1130;"";"";"";"";"";0;0;"- Née en 1110
+- Décédée en 1136, à l'âge de 26 ans";0;
+27;124312864;@I00467@;Béraud 4;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+4&n=de+mercoeur;1;0;0;2;forme2;;"";"";"";"";"";0;0;"- Décédé";0;
+27;124313044;@I00469@;Raimond Bérenger;de BARCELONE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raimond+berenger&n=de+barcelone&oc=2;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1055
+- Décédé en 1082, à l'âge de 27 ans";0;
+27;124313040;@I00470@;Guy 1er;de SEVERAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guy+1er&n=de+severac&oc=3;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1070
+- Décédé vers 1116, à l'âge d'environ 46 ans";0;
+27;124313041;@I00471@;Aldoinie;NN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aldoinie&n=nn;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1075
+- Décédée vers 1116, à l'âge d'environ 41 ans";0;
+28;248625234;@I00474@;Elzéar ( du Caylar );d' UZES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=elzear+du+caylar&n=d+uzes;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédé après 1125";0;
+29;497250480;@I00477@;Rostaing 1;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rostaing+1&n=de+sabran;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1020
+- Décédé en 1050, à l'âge de 30 ans";0;
+29;497250481;@I00478@;Constance;de VEDENE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=constance&n=de+vedene;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1010
+- Décédée";0;
+27;124313046;@I00468@;Gerbert;de GEVAUDAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerbert&n=de+gevaudan;3;0;1;2;forme2;1073;"";"Comte de Provence, comte Gévaudan, comte de Millau";"";"";"";1;0;"- Né vers 1055
+- Décédé en 1111, à l'âge d'environ 56 ans
+- Comte de Provence, comte Gévaudan, comte de Millau";0;
+27;124312858;@I00472@;Raymond;de TURENNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+turenne;3;0;1;2;forme2;1165;"";"Vicomte de Turenne";"";"";"";1;0;"- Né le 8 octobre 1143
+- Décédé en 1191 - St Jean d'Acre, Palestine, à l'âge de 48 ans
+- Vicomte de Turenne";0;
+27;124312859;@I00473@;Elise;de CASTELNAU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=elise&n=de+castelnau;2;0;1;2;forme2;1165;"";"";"";"";"";0;0;"- Née en 1145
+- Décédée en 1214, à l'âge de 69 ans";0;
+28;248625743;@I00475@;Giselberthe;de TERNANT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=giselberthe&n=de+ternant;2;0;1;2;forme2;1068;"";"";"";"";"";0;0;"- Née en 1055 - Ternant, 58289, Nièvre, Bourgogne, France
+- Décédée en 1119 - Bourbon-Lancy, 71047, Saône et Loire, Bourgogne, France, à l'âge de 64 ans";0;
+28;248625742;@I00476@;Foulques;de BOURBON-LANCY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=foulques&n=de+bourbon+lancy;3;0;1;2;forme2;1068;"";"Écuyer, seigneur de Bourbon-Lancy";"";"";"";0;0;"- Né en 1042 - Bourbon-Lancy, 71047, Saône et Loire, Bourgogne, France
+- Décédé en 1118, à l'âge de 76 ans
+- Écuyer, seigneur de Bourbon-Lancy";0;
+27;124313045;@I00482@;Mathilde;de HAUTEVILLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde&n=de+hauteville;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 1064
+- Décédée en 1107, à l'âge de 43 ans";0;
+28;248625235;@I00483@;Engelrade;de POSQUIERES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=engelrade&n=de+posquieres;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1050
+- Décédée";0;
+29;497250465;@I00485@;Gerberge;de SISTERON de NICE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=de+sisteron+de+nice;3;0;0;0;;;"";"Vicomtesse de Sisteron";"";"";"";0;0;"- Née vers 1000
+- Décédée en 1080, à l'âge d'environ 80 ans
+- Vicomtesse de Sisteron";0;
+29;497250464;@I00486@;Béranger;d' AVIGNON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beranger&n=d+avignon;3;0;0;0;;;"";"Juge de Provence de 1033 à 1036, proconsul d'Avignon";"";"";"";0;0;"- Né en 1000
+- Décédé en 1065, à l'âge de 65 ans
+- Juge de Provence de 1033 à 1036, proconsul d'Avignon";0;
+28;248625955;@I00487@;Judith;d' EVREUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=judith&n=d+evreux;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1040
+- Décédée vers 1080, à l'âge d'environ 40 ans";0;
+26;62156289;@I00488@;Elisabeth;d'EPERNON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=elisabeth&n=d+epernon;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1070
+- Décédée";0;
+29;497250437;@I00479@;Ermengarde;de NARBONNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=de+narbonne;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1025
+- Décédée après 1093";0;
+29;497250436;@I00480@;Guillaume Bernat;de MONTPELLIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+bernat&n=de+montpellier;3;0;1;2;forme2;;"";"Seigneur de Montpellier";"";"";"";0;0;"- Né vers 1020
+- Décédé vers 1076, à l'âge d'environ 56 ans
+- Seigneur de Montpellier";0;
+29;497250438;@I00481@;Pierre 1er;de MERGUEIL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre+1er&n=de+mergueil;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1045
+- Décédé";0;
+27;124313047;@I00484@;Gerberge;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=de+provence;3;0;1;2;forme2;1073;"";"Comtesse d'Arles";"";"";"";0;0;"- Née en 1061
+- Décédée en 1115, à l'âge de 54 ans
+- Comtesse d'Arles";0;
+28;248625851;@I00490@;Mathilde;d'ECOSSE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde&n=d+ecosse;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1080
+- Décédée en 1118, à l'âge de 38 ans";0;
+28;248625850;@I00491@;Henri 1er;de NORMANDIE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=henri+1er&n=de+normandie;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1068
+- Décédé en 1135, à l'âge de 67 ans";0;
+27;124312614;@I00492@;Bernard;de MELGUEIL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+melgueil;2;0;1;0;;25 janvier 1120;"";"";"";"";"";0;0;"- Né en 1091
+- Décédé en 1132, à l'âge de 41 ans";0;
+29;497251905;@I00493@;Philippa;de GEVAUDAN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=philippa&n=de+gevaudan;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée en 1049";0;
+29;497251904;@I00494@;Guillaume 3;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+3&n=d+auvergne;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né en 1000
+- Décédé en 1064, à l'âge de 64 ans";0;
+28;248625829;@I00497@;Emengarde;de CARCASSONNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emengarde&n=de+carcassonne;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1051
+- Décédée en 1112, à l'âge d'environ 61 ans";0;
+28;248625828;@I00498@;Raymond Bernard;de TRENCAVEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+bernard&n=de+trencavel;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 1036
+- Décédé en 1074, à l'âge d'environ 38 ans";0;
+29;497250466;@I00499@;Rostaing 1;de POSQUIERES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rostaing+1&n=de+posquieres;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1030
+- Décédé en 1065, à l'âge de 35 ans";0;
+29;497250482;@I00500@;Guiraud;AMIC (de FORCALQUIER);M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guiraud&n=amic+de+forcalquier;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+28;248625849;@I00501@;Emmengarde ou Eremburge;de BEAUGENCY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emmengarde+ou+eremburge&n=de+beaugency;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 1096
+- Décédée en 1126, à l'âge de 30 ans";0;
+28;248625848;@I00502@;Foulques 5 le Jeune;PLANTAGENÊT d'ANJOU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=foulques+5+le+jeune&n=plantagenet+d+anjou;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 1092
+- Décédé le 10 novembre 1142 - St Jean d'Acre, à l'âge de 50 ans";0;
+26;62156460;@I00489@;Raymond 5;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+5&n=de+toulouse;3;0;1;2;forme2;1154;"";"Comte de Toulouse, duc de Narbonne, margrave de Provence, comte de Tripoli";"";"";"";1;0;"- Né en 1134
+- Décédé en 1194 - Nîmes, 30189, Gard, Languedoc-Roussillon, France, à l'âge de 60 ans
+- Comte de Toulouse, duc de Narbonne, margrave de Provence, comte de Tripoli
+@todo note 'Union avec Constance de FRANCE   CAPET' de Raymond 5 de TOULOUSE à analyser : 'elle : second mariage divorcés en 1165'";0;
+28;248625853;@I00495@;Mathilde Philippa;de TOULOUSE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde+philippa&n=de+toulouse;2;0;1;2;forme2;1094;"";"";"";"";"";0;0;"- Née en 1073
+- Décédée en 1118, à l'âge de 45 ans";0;
+28;248625852;@I00496@;Guilaume 9 Le Troubadour;d'AQUITAINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guilaume+9+le+troubadour&n=d+aquitaine;2;0;1;2;forme2;1094;"";"";"";"";"";0;0;"- Né en 1071
+- Décédé en 1126, à l'âge de 55 ans";0;
+27;124312623;@I00503@;Ayalmus;??;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ayalmus&n=;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+29;497250483;@I00508@;Avelmna;XX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=avelmna&n=xx;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+27;124312622;@I00504@;Guiraud 1er;de VEDENE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guiraud+1er&n=de+vedene;3;0;0;2;forme2;;"";"Seigneur de Vedène";"";"";"";0;0;"- Né vers 1080
+- Décédé vers 1113, à l'âge d'environ 33 ans
+- Seigneur de Vedène";0;
+26;62156461;@I00505@;Constance;de FRANCE   CAPET;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=constance&n=de+france+capet;2;0;1;2;forme2;1154;"";"";"";"";"";1;0;"- Née vers 1128
+- Décédée en 1177, à l'âge d'environ 49 ans
+@todo note 'Union avec Raymond 5 de TOULOUSE' de Constance de FRANCE   CAPET à analyser : 'elle : second mariage divorcés en 1165'";0;
+29;497251906;@I00506@;Raymond;de MERGUEIL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+mergueil;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1015
+- Décédé en 1079, à l'âge de 64 ans";0;
+27;124312615;@I00507@;Guillemette;de MONTPELLIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillemette&n=de+montpellier;2;0;1;2;forme2;25 janvier 1120;"";"";"";"";"";0;0;"- Née vers 1095
+- Décédée";0;
+29;497250439;@I00509@;Almodis;de TOULOUSE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=almodis&n=de+toulouse;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1047
+- Décédée";0;
+29;497250467;@I00510@;Ermessinde;de TRANCAVEL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermessinde&n=de+trancavel;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1035
+- Décédée en 1065, à l'âge de 30 ans";0;
+30;994500960;@I00512@;Emmenon;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emmenon&n=de+sabran;3;0;0;2;forme2;;"";"Seigneur de Tresques";"";"";"";0;0;"- Né vers 990
+- Décédé en 1043, à l'âge d'environ 53 ans
+- Seigneur de Tresques";0;
+29;497251485;@I00513@;Agnès;N;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=n&oc=2;2;0;1;0;;avant 1042;"";"";"";"";"";0;0;"- Née en 1020
+- Décédée avant 1080";0;
+29;497251486;@I00514@;Geoffroi 1;de TERNANT;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroi+1&n=de+ternant;2;0;1;0;;avant 1055;"";"";"";"";"";0;0;"- Né en 1025 - Ternant, 58289, Nièvre, Bourgogne, France
+- Décédé en 1098, à l'âge de 73 ans";0;
+29;497251484;@I00515@;Dalmace ou Dalmas;de BOURBON-LANCY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=dalmace+ou+dalmas&n=de+bourbon+lancy;2;0;1;0;;avant 1042;"";"";"";"";"";0;0;"- Né en 1013 - Bourbon-Lancy, 71047, Saône et Loire, Bourgogne, France
+- Décédé en 1096, à l'âge de 83 ans";0;
+29;497250469;@I00516@;Giraude;de SABRAN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=giraude&n=de+sabran;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1025
+- Décédée";0;
+28;248625719;@I00517@;Ermengarde;de GRAMAT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=de+gramat;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+29;497250468;@I00518@;Bermond;d' UZES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bermond&n=d+uzes;2;0;1;0;;;"";"";"";"";"";0;0;"- Né - Uzeste, 33537, Gironde, Aquitaine, France
+- Décédé";0;
+28;248625718;@I00519@;Bernard;de CASTELNAU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+castelnau;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1130
+- Décédé en 1212, à l'âge d'environ 82 ans";0;
+28;248625716;@I00520@;Boson 2;de TURENNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=boson+2&n=de+turenne;3;0;0;2;forme2;1142;"";"Vicomte de Turenne";"";"";"";1;0;"- Né en 1110
+- Décédé le 26 juin 1143 - St-Paul-la-Roche, 24481, Dordogne, Aquitaine, France, à l'âge de 33 ans
+- Vicomte de Turenne";0;
+28;248626089;@I00521@;Almodis;de LA MARCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=almodis&n=de+la+marche;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1020
+- Décédée le 1er novembre 1073, à l'âge de 53 ans
+@todo vérifier les événements pour Almodis de LA MARCHE (1 erreur(s) détectée(s))";1;
+28;248626088;@I00522@;Raimond Bérenger Le Vieux;de BARCELONE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raimond+berenger+le+vieux&n=de+barcelone;2;0;0;0;;;"";"Comte de Barcelone";"";"";"";0;0;"- Décédé en 1076
+- Comte de Barcelone";0;
+30;994500961;@I00511@;Ermengarde Gersende;de BEZIERS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde+gersende&n=de+beziers;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 990
+- Décédée en 1037, à l'âge d'environ 47 ans";0;
+27;124312579;@I00523@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=8342;0;0;1;0;;;"";"";"";"";"";0;0;"";0;
+27;124312578;@I00525@;Amaury;d'EPERNON;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=amaury&n=d+epernon;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1050
+- Décédé";0;
+30;994500872;@I00526@;Guillaume Bernard 2;de MONTPELLIER;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+bernard+2&n=de+montpellier;3;0;1;0;;;"";"Seigneur de Montpellier";"";"";"";0;0;"- Né vers 995
+- Décédé avant 1059
+- Seigneur de Montpellier";0;
+30;994500873;@I00527@;Béliarde;??;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beliarde&n=;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1000
+- Décédée après 1058";0;
+30;994500875;@I00528@;Gersende;de BESALU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gersende&n=de+besalu;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 995
+- Décédée après 1067";0;
+30;994500874;@I00529@;Bérenger;de NARBONNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berenger&n=de+narbonne;3;0;1;0;;;"";"Vicomte de Narbonne";"";"";"";0;0;"- Né vers 985
+- Décédé vers 1067, à l'âge d'environ 82 ans
+- Vicomte de Narbonne";0;
+29;497251487;@I00530@;Arlette;de LUZY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=arlette&n=de+luzy;2;0;1;0;;avant 1055;"";"";"";"";"";0;0;"- Née en 1038 - Luzy, 58149, Nièvre, Bourgogne, France
+- Décédée en 1084 - Ternant, 58289, Nièvre, Bourgogne, France, à l'âge de 46 ans";0;
+28;248626093;@I00532@;Agnès Adèle;de CARLAT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes+adele&n=de+carlat;3;0;0;0;;;"";"Vicomtesse de Carlat et de Lodève";"";"";"";0;0;"- Née en 1035
+- Décédée
+- Vicomtesse de Carlat et de Lodève";0;
+28;248625729;@I00534@;?;?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&i=7882;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+28;248626094;@I00524@;Geoffroi 1;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroi+1&n=de+provence;3;0;1;2;forme2;vers 1040;"";"Comte et marquis de Provence";"";"";"";1;1;"- Né en 1013
+- Décédé en 1063, à l'âge de 50 ans
+- Comte et marquis de Provence";0;
+28;248625717;@I00531@;Eustorgie;d'ANDUZE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=eustorgie&n=d+anduze;2;0;0;2;forme2;1142;"";"";"";"";"";1;0;"- Née en 1120
+- Décédée en 1182, à l'âge de 62 ans";0;
+28;248626092;@I00533@;Bérenger 2 Richard;de MILHAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berenger+2+richard&n=de+milhaud;3;0;0;2;forme2;;"";"Vicomte de Millau et de Rodez";"";"";"";0;0;"- Né en 1035
+- Décédé
+- Vicomte de Millau et de Rodez";0;
+29;497251704;@I00535@;Guillaume 8;d'AQUITAINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+8&n=d+aquitaine;2;0;1;0;;1069;"";"";"";"";"";0;0;"- Né en 1024
+- Décédé en 1086, à l'âge de 62 ans";0;
+30;994503809;@I00536@;Hermengarde;de PROVENCE (ARLES);F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hermengarde&n=de+provence+arles;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 971
+- Décédée en 1032, à l'âge de 61 ans";0;
+29;497251706;@I00537@;Guillaume 4;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+4&n=de+toulouse;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1040
+- Décédé en 1094, à l'âge de 54 ans";0;
+30;994503808;@I00539@;Robert;d'AUVERGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert&n=d+auvergne&oc=2;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 965
+- Décédé en 1032, à l'âge de 67 ans";0;
+29;497251907;@I00542@;Béatrice;d' AQUITAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrice&n=d+aquitaine;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1027
+- Décédée en 1109, à l'âge de 82 ans";0;
+28;248625728;@I00543@;Béraud 3;de MERCOEUR;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beraud+3&n=de+mercoeur;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+27;124312921;@I00538@;Faydide;d'UZES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=faydide&n=d+uzes;2;0;2;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1105
+- Décédée vers 1147, à l'âge d'environ 42 ans
+@todo vérifier les événements pour Faydide d'UZES (2 erreur(s) détectée(s))";2;
+28;248626095;@I00540@;Etiennette Douce;de MARSEILLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etiennette+douce&n=de+marseille;2;0;1;2;forme2;vers 1040;"";"";"";"";"";0;0;"- Née en 1024
+- Décédée en 1095, à l'âge de 71 ans";0;
+27;124312920;@I00541@;Alphonse Jourdain;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alphonse+jourdain&n=de+toulouse;2;0;1;2;forme2;30 septembre 1125;"Uzès, 30334, Gard, Languedoc-Roussillon, France,";"";"";"";"";0;0;"- Né en 1103
+- Décédé en 1148, à l'âge de 45 ans";0;
+30;994503812;@I00548@;Bernard;de MERGUEIL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+mergueil;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 985
+- Décédé vers 1055, à l'âge d'environ 70 ans";0;
+29;497251705;@I00550@;Hildegarde;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hildegarde&n=de+bourgogne;2;0;1;0;;1069;"";"";"";"";"";0;0;"- Née en 1051
+- Décédée en 1104, à l'âge de 53 ans";0;
+28;248625244;@I00551@;Pierre;AMIC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pierre&n=amic;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé en 1113";0;
+29;497251707;@I00552@;Emma;de MORTAIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emma&n=de+mortain;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+30;994500935;@I00544@;Rangearde;de la MARCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rangearde&n=de+la+marche;2;0;1;2;forme2;1033;"";"";"";"";"";0;0;"- Née en 1017
+- Décédée le 23 octobre 1075 - Barcelona, , Barcelona, Cataluña, Espagne, à l'âge de 58 ans";0;
+30;994500878;@I00545@;Pons II;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons+ii&n=de+toulouse;3;0;1;2;forme2;1040;"";"Comte de Toulouse, d'Albi, d'Agen, du Quercy";"";"";"";0;0;"- Né vers 1000
+- Décédé en 1060 - Toulouse, 31555, Haute Garonne, Midi-Pyrénées, France, à l'âge d'environ 60 ans
+- Comte de Toulouse, d'Albi, d'Agen, du Quercy";0;
+30;994500934;@I00546@;Bernard Aton 3;de TRANCAVEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+aton+3&n=de+trancavel;3;0;1;2;forme2;1033;"";"Vicomte d'Albi, de Nîmes, d'Uzès, seigneur d'Ambialet";"";"";"";0;0;"- Né en 1010
+- Décédé en 1060, à l'âge de 50 ans
+- Vicomte d'Albi, de Nîmes, d'Uzès, seigneur d'Ambialet";0;
+27;124312923;@I00547@;Adélaïde;de SAVOIE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide&n=de+savoie;3;0;1;2;forme2;3 août 1115;"Paris, , , ,,";"Comtesse de Savoie";"";"";"";1;0;"- Née vers 1092
+- Décédée le 18 novembre 1154 - Abbaye de Montmartre Savoie, à l'âge d'environ 62 ans
+- Comtesse de Savoie
+@todo note 'Union avec Louis 6 Le Gros de FRANCE   CAPET' de Adélaïde de SAVOIE à analyser : 'lui : 2eme mariage'";0;
+27;124312922;@I00549@;Louis 6 Le Gros;de FRANCE   CAPET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=louis+6+le+gros&n=de+france+capet;3;0;1;2;forme2;3 août 1115;"Paris, , , ,,";"Roi de France de 1108 à 1137";"";"";"";1;0;"- Né en 1081 - Paris, , , ,
+- Décédé le 8 août 1137 - Paris Château de Bethisy, à l'âge de 56 ans
+- Roi de France de 1108 à 1137
+@todo note 'Union avec Adélaïde de SAVOIE' de Louis 6 Le Gros de FRANCE   CAPET à analyser : 'lui : 2eme mariage'";0;
+29;497251433;@I00554@;Mathilde ( Maud );du PERCHE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=mathilde+maud&n=du+perche;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1085
+- Décédée en 1143, à l'âge d'environ 58 ans";0;
+31;1989001921;@I00556@;Beltrude;des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beltrude&n=des+baux;2;0;0;0;;;"";"";"";"";"";0;0;"- Née en 965
+- Décédée";0;
+29;497251432;@I00557@;Raymond 1er;de TURENNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+1er&n=de+turenne;3;0;0;2;forme2;;"";"Vicomte de Turenne";"";"";"";0;0;"- Né en 1070
+- Décédé en 1123, à l'âge de 53 ans
+- Vicomte de Turenne";0;
+31;1989001923;@I00558@;Ermentrude;des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermentrude&n=des+baux;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 955
+- Décédée";0;
+31;1989001920;@I00559@;Rostaing;de SABRAN;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rostaing&n=de+sabran;3;0;0;0;;;"";"Seigneur de Tresques et de Lirac";"";"";"";0;0;"- Né vers 960
+- Décédé vers 1006, à l'âge d'environ 46 ans
+- Seigneur de Tresques et de Lirac";0;
+31;1989001922;@I00560@;Guillaume 2;de BEZIERS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+2&n=de+beziers;3;0;0;0;;;"";"Vicomte de Béziers";"";"";"";0;0;"- Né après 950
+- Décédé en 993
+- Vicomte de Béziers";0;
+30;994503813;@I00561@;Adélaïde;de SUBSTANTION;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide&n=de+substantion;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 990
+- Décédée avant 1066";0;
+28;248625245;@I00562@;Agnès;de FRANCONIE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=de+franconie;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée vers 1113";0;
+29;497252179;@I00553@;Amélie;de RAZES de MONTIGNAC;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=amelie&n=de+razes+de+montignac;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 1000
+- Décédée en 1072, à l'âge de 72 ans";0;
+29;497252178;@I00555@;Bernard;de LA MARCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard&n=de+la+marche;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 980
+- Décédé en 1047, à l'âge de 67 ans";0;
+29;497252184;@I00563@;Richard 2;de MILHAUD;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=richard+2&n=de+milhaud;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1006
+- Décédé en 1051, à l'âge de 45 ans";0;
+29;497252185;@I00564@;Roxinde;de NARBONNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=roxinde&n=de+narbonne;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1020
+- Décédée en 1080, à l'âge de 60 ans";0;
+29;497251435;@I00565@;Sibylle;de MONTPELLIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=sibylle&n=de+montpellier;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1094
+- Décédée en 1159, à l'âge de 65 ans";0;
+29;497251434;@I00566@;Bernard (Raymond 2);d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+raymond+2&n=d+anduze;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 1080
+- Décédé en 1128, à l'âge de 48 ans";0;
+29;497252188;@I00567@;Guillaume2 le Pieux;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume2+le+pieux&n=de+provence;3;0;1;2;forme2;1002;"";"Comte de Provence";"";"";"";0;0;"- Né vers 986
+- Décédé le 4 mars 1018, à l'âge d'environ 32 ans
+- Comte de Provence";0;
+30;994503815;@I00568@;Agnès;de BOURGOGNE-COMTE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=agnes&n=de+bourgogne+comte;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 995
+- Décédée en 1067, à l'âge de 72 ans";0;
+30;994503814;@I00569@;Guillaume 5 le Grand;d' AQUITAINE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+5+le+grand&n=d+aquitaine;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 969
+- Décédé en 1030, à l'âge de 61 ans";0;
+28;248625840;@I00571@;Raymond 4 ( Raymond d'Orient);de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+4+raymond+d+orient&n=de+toulouse;3;0;1;2;forme2;1094;"";"Comte de Toulouse, duc de Narbonne, comte de Tripoli";"";"";"";0;0;"- Né en 1042 - Toulouse, 31555, Haute Garonne, Midi-Pyrénées, France
+- Décédé le 28 février 1105 - Tripoli, Libye, à l'âge de 63 ans
+- Comte de Toulouse, duc de Narbonne, comte de Tripoli";0;
+28;248625841;@I00570@;Elvire;de CASTILLE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=elvire&n=de+castille;3;0;1;2;forme2;1094;"";"Infante de Castille";"";"";"";0;0;"- Née en 1080
+- Décédée en 1151, à l'âge de 71 ans
+- Infante de Castille";0;
+29;497252191;@I00572@;Stéphanie;des BAUX de RIANS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=stephanie&n=des+baux+de+rians;3;0;1;2;forme2;1019;"";"Dame des Baux-Rians, vicomtesse de Marseille";"";"";"";1;0;"- Née en 1005 - Les Baux-de-Provence, 13011, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédée en 1055, à l'âge de 50 ans
+- Dame des Baux-Rians, vicomtesse de Marseille
+@todo note union à analyser pour Stéphanie des BAUX de RIANS : 'bienfaiteur de l'Abbaye St Victor à Marseille.'";0;
+29;497252190;@I00573@;Guillaume 2 le Gros;de MARSEILLE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+2+le+gros&n=de+marseille;3;0;1;2;forme2;;"";"Vicomte de Marseille";"";"";"";1;1;"- Né en 970 - Marseille, 13055, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé en 1047 - Marseille, 13055, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 77 ans
+- Vicomte de Marseille
+@todo note union à analyser pour Guillaume 2 le Gros de MARSEILLE : '**Union avec Stéphanie des BAUX de RIANS** :
+bienfaiteur de l'Abbaye St Victor à Marseille.'
+@todo vérifier les événements pour Guillaume 2 le Gros de MARSEILLE (1 erreur(s) détectée(s))";1;
+29;497252189;@I00574@;Gerberge;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=de+bourgogne;3;0;1;2;forme2;1002;"";"Comtesse de Macon et de Besançon";"";"";"";1;0;"- Née en 985
+- Décédée en 1024, à l'âge de 39 ans
+- Comtesse de Macon et de Besançon";0;
+28;248625846;@I00577@;Humbert 2;de SAVOIE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=humbert+2&n=de+savoie;3;0;1;2;forme2;;"";"Comte de Savoie et de Maurienne";"";"";"";0;0;"- Né vers 1070
+- Décédé le 18 septembre 1103 - Moûtiers Savoie, à l'âge d'environ 33 ans
+- Comte de Savoie et de Maurienne";0;
+28;248625844;@I00575@;Philippe 1er;de FRANCE CAPET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=philippe+1er&n=de+france+capet;3;0;1;2;forme2;1072;"";"Roi de France de 1060 à 1108";"";"";"";0;0;"- Né en 1052
+- Décédé le 5 août 1108 - Melun, 77288, Seine et Marne, Ile-de-France, France, à l'âge de 56 ans
+- Roi de France de 1060 à 1108";0;
+31;1989001869;@I00576@;Gerberge;des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=des+baux;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 980
+- Décédée";0;
+31;1989001868;@I00578@;Bernard Aton 3;de LAUTREC de TRANCAVEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+aton+3&n=de+lautrec+de+trancavel;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 955
+- Décédé en 1032, à l'âge de 77 ans";0;
+31;1989001756;@I00579@;Guillaume 3 dit Taillefer;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+3+dit+taillefer&n=de+toulouse;3;0;1;2;forme2;1019;"";"Comte de Toulouse, Albi, Quercy";"";"";"";0;0;"- Né vers 967
+- Décédé en 1037 - Toulouse, 31555, Haute Garonne, Midi-Pyrénées, France, à l'âge d'environ 70 ans
+- Comte de Toulouse, Albi, Quercy";0;
+30;994502864;@I00580@;Boson 1;de TURENNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=boson+1&n=de+turenne;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1030
+- Décédé en 1092, à l'âge d'environ 62 ans";0;
+30;994502865;@I00581@;Gerberge;de TERRASSON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=de+terrasson;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1045
+- Décédée en 1103, à l'âge de 58 ans";0;
+30;994502867;@I00582@;Béatrice;de MONTDIDIER;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=beatrice&n=de+montdidier;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1054
+- Décédée en 1113, à l'âge de 59 ans";0;
+30;994504356;@I00583@;Aldebert 1er;de LA MARCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aldebert+1er&n=de+la+marche;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 945
+- Décédé en 997, à l'âge d'environ 52 ans";0;
+30;994502866;@I00584@;Geoffroy;du PERCHE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroy&n=du+perche;3;0;1;0;;;"";"Comte du Perche";"";"";"";0;0;"- Né en 1054
+- Décédé en 1100, à l'âge de 46 ans
+- Comte du Perche";0;
+30;994504359;@I00586@;Lucie;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=lucie&n=de+provence;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 983
+- Décédée";0;
+30;994504358;@I00587@;Arnaud 2;de RAZES de MONTIGNAC;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=arnaud+2&n=de+razes+de+montignac;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 975
+- Décédé en 1037, à l'âge de 62 ans";0;
+28;248625845;@I00585@;Berthe;de HOLLANDE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=berthe&n=de+hollande;2;0;1;2;forme2;1072;"";"";"";"";"";0;0;"- Née en 1058
+- Décédée le 30 juillet 1093 - Montreuil, 62588, Pas-de-Calais, Nord-Pas-de-Calais, France, à l'âge de 35 ans";0;
+31;1989001757;@I00588@;Emma;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emma&n=de+provence;3;0;1;2;forme2;1019;"";"Comtesse de Provence";"";"";"";0;0;"- Née vers 975
+- Décédée en 1063, à l'âge d'environ 88 ans
+- Comtesse de Provence";0;
+28;248625847;@I00589@;Gisèle;de BOURGOGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gisele&n=de+bourgogne;3;0;1;2;forme2;;"";"Comtesse Palatine de Bourgogne";"";"";"";0;0;"- Née en 1075
+- Décédée en 1133 - Chambéry 73, , , ,, à l'âge de 58 ans
+- Comtesse Palatine de Bourgogne";0;
+30;994502868;@I00591@;Raymond 1er;d'ANDUZE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond+1er&n=d+anduze;3;0;1;0;;;"";"Seigneur d'Anduze, Barres et des Portes";"";"";"";0;0;"- Né en 1055
+- Décédé en 1109, à l'âge de 54 ans
+- Seigneur d'Anduze, Barres et des Portes";0;
+30;994502869;@I00592@;Ermengarde;de MERGUEIL;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=de+mergueil;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1055
+- Décédée";0;
+30;994504357;@I00594@;Emma;de LIMOGES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emma&n=de+limoges;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 960
+- Décédée en 1001, à l'âge d'environ 41 ans";0;
+30;994504377;@I00590@;Adélaïde Blanche;d'ANJOU;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide+blanche&n=d+anjou;2;0;3;2;forme2;;"";"";"";"";"";1;1;"- Née en 947
+- Décédée vers 1026 - Arles, 13004, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 79 ans
+@todo note union à analyser pour Adélaïde Blanche d'ANJOU : '**Union avec Louis 5 le Fainéant de FRANCE** :
+Adélaïde Blanche a été mariée 5 fois.'
+@todo vérifier les événements pour Adélaïde Blanche d'ANJOU (3 erreur(s) détectée(s))";3;
+30;994504376;@I00593@;Guillaume 1 le Libérateur;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1+le+liberateur&n=de+provence;2;0;1;2;forme2;vers 983;"";"";"";"";"";0;0;"- Né en 955
+- Décédé en 993, à l'âge de 38 ans";0;
+30;994504383;@I00597@;Scocie;de RIEZ;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=scocie&n=de+riez;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 985
+- Décédée en 1060, à l'âge de 75 ans";0;
+29;497251682;@I00598@;Alphonse 6 le Brave;de CASTILLE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alphonse+6+le+brave&n=de+castille;3;0;1;0;;;"";"Roi de Léon, roi de Castille, empereur des Espagnes";"";"";"";0;0;"- Né en 1039 - St Jacques de Compostelle, Espagne
+- Décédé le 30 juin 1109 - Tolède, Espagne, à l'âge de 70 ans
+- Roi de Léon, roi de Castille, empereur des Espagnes";0;
+30;994504382;@I00599@;Geoffroi;de RIANS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=geoffroi&n=de+rians;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 982 - Martigues, 13056, Bouches du Rhône, Provence-Alpes-Côte d'Azur, France
+- Décédé en 1061, à l'âge de 79 ans";0;
+30;994504378;@I00595@;Otte Guillaume;de BOURGOGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=otte+guillaume&n=de+bourgogne;3;0;1;2;forme2;;"";"Comte de Bourgogne";"";"";"";0;0;"- Né vers 962
+- Décédé en 1026, à l'âge d'environ 64 ans
+- Comte de Bourgogne";0;
+30;994504380;@I00596@;Guillaume 1;de MARSEILLE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1&n=de+marseille;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 935
+- Décédé en 1004, à l'âge de 69 ans";0;
+32;3978003512;@I00600@;Raymond;de TOULOUSE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=raymond&n=de+toulouse;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 945
+- Décédé en 978, à l'âge de 33 ans";0;
+32;3978003736;@I00602@;Bernard Aton 2;de LAUTREC-TRENCAVEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bernard+aton+2&n=de+lautrec+trencavel;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 925
+- Décédé en 984, à l'âge de 59 ans";0;
+32;3978003739;@I00605@;Profecta;de la TOUR de MARIGNANE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=profecta&n=de+la+tour+de+marignane;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 950
+- Décédée";0;
+30;994504379;@I00606@;Ermentrude;de ROUCY;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermentrude&n=de+roucy;1;0;1;2;forme2;;"";"";"";"";"";0;0;"- Décédée en 1005";0;
+29;497251689;@I00607@;Anne;de KIEV (de RUSSIE);F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=anne&n=de+kiev+de+russie;2;0;1;0;;4 mai 1051;"Reims, 51454, Marne, Champagne-Ardenne, France,";"";"";"";"";0;0;"- Née en 1024
+- Décédée en 1075, à l'âge de 51 ans";0;
+30;994504381;@I00608@;Bilielde;d'ARLES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bilielde&n=d+arles;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née en 940
+- Décédée en 993, à l'âge de 53 ans";0;
+29;497251683;@I00610@;Chimène;de BIERZO;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=chimene&n=de+bierzo;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1060
+- Décédée en 1128, à l'âge de 68 ans";0;
+32;3978003737;@I00611@;Gaucianne (Gaucia);de NÎMES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gaucianne+gaucia&n=de+nimes;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 930
+- Décédée";0;
+29;497251692;@I00601@;Amédée 2;de SAVOIE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=amedee+2&n=de+savoie;3;0;1;2;forme2;;"";"Comte de Maurienne";"";"";"";0;0;"- Né vers 1034
+- Décédé le 26 janvier 1080, à l'âge d'environ 46 ans
+- Comte de Maurienne";0;
+29;497251693;@I00603@;Jeanne;de GENEVE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=jeanne&n=de+geneve;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1050
+- Décédée en 1095, à l'âge d'environ 45 ans";0;
+32;3978003738;@I00604@;Pons le Jeune;des BAUX;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons+le+jeune&n=des+baux;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né en 945
+- Décédé en 1025, à l'âge de 80 ans";0;
+29;497251688;@I00609@;Henri 1er;CAPET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=henri+1er&n=capet;3;0;1;2;forme2;4 mai 1051;"Reims, 51454, Marne, Champagne-Ardenne, France,";"Roi de France de 1031 à 1060";"";"";"";0;0;"- Né le 4 mai 1008
+- Décédé le 4 août 1060 - Vitry-aux-Loges, 45346, Loiret, Centre, France, à l'âge de 52 ans
+- Roi de France de 1031 à 1060";0;
+29;497251694;@I00612@;Guillaume 1er Le Grand ou Tête Hardie;de BOURGOGNE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1er+le+grand+ou+tete+hardie&n=de+bourgogne;3;0;1;0;;;"";"Comte palatin de Bourgogne";"";"";"";0;0;"- Né vers 1017
+- Décédé le 17 novembre 1087 - Besançon, 25056, Doubs, Franche-Comté, France, à l'âge d'environ 70 ans
+- Comte palatin de Bourgogne";0;
+31;1989008717;@I00614@;Altrude;de RAZES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=altrude&n=de+razes;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 955
+- Décédée";0;
+31;1989008716;@I00615@;Odon;de RAZES de COMMINGES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=odon&n=de+razes+de+comminges;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 944
+- Décédé vers 1011, à l'âge d'environ 67 ans";0;
+29;497251690;@I00616@;Floris ou Florent;de HOLLANDE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=floris+ou+florent&n=de+hollande;3;0;1;0;;1050;"";"Comte de Hollande et de Frise Occidentale";"";"";"";0;0;"- Né vers 1010
+- Décédé le 4 juillet 1061, à l'âge d'environ 51 ans
+- Comte de Hollande et de Frise Occidentale";0;
+32;3978003514;@I00613@;Rotbold 3;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rotbold+3&n=de+provence;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Né vers 957
+- Décédé en 1008, à l'âge d'environ 51 ans";0;
+31;1989008754;@I00617@;Foulques 2 le Bon Foulco;d'ANJOU;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=foulques+2+le+bon+foulco&n=d+anjou;3;0;1;0;;;"";"Comte d'Anjou";"";"";"";0;0;"- Né vers 910
+- Décédé en 960, à l'âge d'environ 50 ans
+- Comte d'Anjou";0;
+31;1989008752;@I00618@;Boson;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=boson&n=de+provence;3;0;1;2;forme2;;"";"Comte de Provence et d'Arles";"";"";"";0;0;"- Né vers 928
+- Décédé en 968, à l'âge d'environ 40 ans
+- Comte de Provence et d'Arles";0;
+32;3978003515;@I00619@;Emildis;de GEVAUDAN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=emildis&n=de+gevaudan;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 958
+- Décédée";0;
+29;497251695;@I00620@;Etiennette, Stéphanie;de LONGWY-METZ;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=etiennette+stephanie&n=de+longwy+metz;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 1035
+- Décédée en 1092, à l'âge d'environ 57 ans";0;
+29;497251691;@I00621@;Gertrude;de SAXE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gertrude&n=de+saxe;2;0;1;0;;1050;"";"";"";"";"";0;0;"- Née vers 1028
+- Décédée le 11 août 1113 - Furnes Belgique, à l'âge d'environ 85 ans";0;
+31;1989008760;@I00622@;Pons " Major";de FOS;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=pons+major&n=de+fos;2;0;2;0;;;"";"";"";"";"";0;0;"- Né en 910
+- Décédé en 979, à l'âge de 69 ans
+@todo vérifier les événements pour Pons " Major" de FOS (2 erreur(s) détectée(s))";2;
+31;1989008756;@I00623@;Adalbert 2;d'IVREE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adalbert+2&n=d+ivree;2;0;0;0;;;"";"";"";"";"";0;0;"- Né en 936
+- Décédé en 971, à l'âge de 35 ans";0;
+31;1989008753;@I00624@;Constance;de PROVENCE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=constance&n=de+provence;2;0;1;2;forme2;;"";"";"";"";"";0;0;"- Née vers 935
+- Décédée vers 965, à l'âge d'environ 30 ans";0;
+31;1989008755;@I00625@;Gerberge;du MAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=du+maine;2;0;1;0;;;"";"";"";"";"";0;0;"- Née vers 915
+- Décédée vers 977, à l'âge d'environ 62 ans";0;
+31;1989008762;@I00628@;Arinulfe;d'ARLES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=arinulfe&n=d+arles;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 920
+- Décédé en 965, à l'âge de 45 ans";0;
+31;1989008763;@I00629@;Odoacre;X ?;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=odoacre&n=x;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+31;1989008759;@I00630@;Albérade;de HAINAUT;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=alberade&n=de+hainaut;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+31;1989008758;@I00631@;Renaud;de ROUCY;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=renaud&n=de+roucy;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé en 967";0;
+33;7956007477;@I00632@;Bellitrude;des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=bellitrude&n=des+baux;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 920
+- Décédée";0;
+30;994503387;@I00633@;Thetberge;de RHEINFELDEN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=thetberge&n=de+rheinfelden;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 1032
+- Décédée en 1094, à l'âge de 62 ans";0;
+30;994503386;@I00634@;Gérold 2;de GENEVE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerold+2&n=de+geneve;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1015
+- Décédé en 1061, à l'âge d'environ 46 ans";0;
+33;7956007473;@I00635@;Diafronisse;des BAUX;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=diafronisse&n=des+baux;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+30;994503384;@I00636@;Odon;de SAVOIE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=odon&n=de+savoie;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 1020
+- Décédé en 1057, à l'âge de 37 ans";0;
+33;7956007472;@I00637@;Aton 2;de LAUTREC-TRENCAVEL;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=aton+2&n=de+lautrec+trencavel;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 900
+- Décédé en 958, à l'âge de 58 ans";0;
+31;1989008761;@I00638@;Judith;de BRETAGNE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=judith&n=de+bretagne;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 920
+- Décédée";0;
+30;994503385;@I00639@;Adélaïde;de TURIN;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide&n=de+turin;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée en 1091";0;
+31;1989008757;@I00640@;Gerberge;de CHALON;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=gerberge&n=de+chalon;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+30;994503377;@I00626@;Constance;de PROVENCE ou d'ARLES;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=constance&n=de+provence+ou+d+arles;2;0;1;2;forme2;1003;"";"";"";"";"";1;0;"- Née en 984
+- Décédée le 25 juillet 1032 - Melun, 77288, Seine et Marne, Ile-de-France, France, à l'âge de 48 ans
+@todo note 'Union avec Robert 2 Le Pieux CAPET' de Constance de PROVENCE ou d'ARLES à analyser : 'lui : 3eme mariage'";0;
+30;994503376;@I00627@;Robert 2 Le Pieux;CAPET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=robert+2+le+pieux&n=capet;3;0;1;2;forme2;1003;"";"Roi de France de 996 à 1031";"";"";"";1;0;"- Né le 27 mars 972 - Orléans, 45234, Loiret, Centre, France
+- Décédé le 20 juillet 1031 - Melun, 77288, Seine et Marne, Ile-de-France, France, à l'âge de 59 ans
+- Roi de France de 996 à 1031
+@todo note 'Union avec Constance de PROVENCE ou d'ARLES' de Robert 2 Le Pieux CAPET à analyser : 'lui : 3eme mariage'";0;
+32;3978017507;@I00641@;Theuberge;de SENS;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=theuberge&n=de+sens;2;0;1;0;;;"";"";"";"";"";0;0;"- Née en 909
+- Décédée après 962";0;
+32;3978017506;@I00642@;Charles Constantin;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=charles+constantin&n=de+provence;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 910
+- Décédé après 963";0;
+32;3978017504;@I00643@;Rotbald;de PROVENCE;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=rotbald&n=de+provence;2;0;1;0;;;"";"";"";"";"";0;0;"- Né en 907
+- Décédé en 950, à l'âge de 43 ans";0;
+32;3978017505;@I00644@;Ermengarde;d'AQUITAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=ermengarde&n=d+aquitaine;1;0;1;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+31;1989006753;@I00645@;Adélaïde;de POITIERS ou d'AQUITAINE;F;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=adelaide&n=de+poitiers+ou+d+aquitaine;2;0;1;0;;958;"";"";"";"";"";0;0;"- Née vers 945
+- Décédée le 15 juin 1006, à l'âge d'environ 61 ans";0;
+31;1989006752;@I00646@;Hugues 1er;CAPET;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=hugues+1er&n=capet;3;0;1;0;;958;"";"Roi de France de 987 à 996";"";"";"";0;0;"- Né vers 941 - Noyon, 60471, Oise, Picardie, France
+- Décédé le 24 octobre 996, à l'âge d'environ 55 ans
+- Roi de France de 987 à 996";0;
+31;1989006754;@I00647@;Guillaume 1;de PROVENCE ou d'ARLES;M;https://gw.geneanet.org/oollierbolvin?lang=fr&pz=odile+marie+henriette+francoise&nz=ollier&p=guillaume+1&n=de+provence+ou+d+arles;2;0;0;0;;;"";"";"";"";"";0;0;"- Né vers 955
+- Décédé après 993";0;
+# 647 persons, 325 families, 33 generations, 0 titres de noblesse
+# 21 errors, 52 todo

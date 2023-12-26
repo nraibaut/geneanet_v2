@@ -1,0 +1,931 @@
+0 HEAD
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 01:00 à partir de https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne
+1 SUBM @B00001@
+1 PLAC
+1 SOUR GeneanetSpider
+2 VERS 1.0.13
+2 NAME GeneanetSpider
+2 CORP Nicolas Raibaut
+3 ADDR raibaut.nicolas@gmail.com
+1 DEST ANY
+1 DATE 08 SEP 2023
+2 TIME 01:00:19
+1 FILE gw.geneanet.org.dmdoyen.lang=fr.n=mauche.oc=1.p=marie+anne.ged
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @B00001@ SUBM
+0 @I00001@ INDI
+1 NAME Marie Anne /MAUCHE/
+2 GIVN Marie Anne
+2 SURN MAUCHE
+1 SEX F
+1 NOTE @N00001@
+1 BIRT
+2 DATE 29 DEC 1711
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00001@
+1 CHR
+2 DATE 30 DEC 1711
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00002@
+1 DEAT
+2 DATE 27 AUG 1789
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00003@
+1 EVEN
+2 TYPE Mariage (avec Jacques NICOLAS)
+2 DATE 28 SEP 1733
+2 PLAC Côte d'Azur, FRANCE
+2 NOTE @N00002@
+2 SOUR @S00004@
+1 SOUR @S00005@
+0 @N00001@ NOTE Signature: NO
+0 @S00001@ SOUR
+1 TITL Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+1 TEXT AD 13 en ligne
+0 @S00002@ SOUR
+1 TITL Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -
+1 TEXT AD 13 en ligne
+0 @S00003@ SOUR
+1 TITL Acte de sépulture - Mauche marie + 27 8 1789 - AD Gard - 3 / 4 - AD
+1 TEXT 13 en ligne
+0 @N00002@ NOTE
+0 @S00004@ SOUR
+1 TITL Acte de mariage - Nicolas jacques x Mauche marie 28 9 1733 - AD Gard
+1 TEXT - 4 / 5 - AD 13 en ligne
+0 @S00005@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne
+1 TEXT - Née le 29 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Baptisée le 30 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédée le 27 août 1789 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 77 ans
+0 @I00002@ INDI
+1 NAME Jean /MAUCHE/
+2 GIVN Jean
+2 SURN MAUCHE
+1 SEX M
+1 BIRT
+2 DATE 4 NOV 1672
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 NOTE @N00003@
+1 DEAT
+2 DATE 20 MAY 1731
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+1 OCCU Ménager (1711)
+2 NOTE @N00004@
+1 SOUR @S00006@
+0 @N00003@ NOTE fils d'Etienn et Anne BARD
+0 @N00004@ NOTE
+0 @S00006@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1
+1 TEXT - Né le 4 novembre 1672 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédé le 20 mai 1731 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 58 ans
+2 CONT - Ménager (1711)
+2 CONT @todo note 'Union avec Marie Rose DURAND' de Jean MAUCHE à analyser : 'Heure: 10:00
+2 CONT Généalogie de Pierre GENOUX
+2 CONT Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+2 CONT matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+2 CONT Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+2 CONT légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+2 CONT Gilles après les trois publications à nos messes de paroisse le huitième du
+2 CONT présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+2 CONT suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+2 CONT Monsieur le vicaire de Bourbon
+2 CONT Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+2 CONT foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+2 CONT de Jean Durand père de la fille ici présent et autres parents de l'un et
+2 CONT l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+2 CONT Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+2 CONT Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre'
+0 @I00003@ INDI
+1 NAME Marie Rose /DURAND/
+2 GIVN Marie Rose
+2 SURN DURAND
+1 SEX F
+1 BIRT
+2 DATE 14 FEB 1688
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00007@
+1 CHR
+2 DATE 15 FEB 1688
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00008@
+1 DEAT
+2 DATE 22 JAN 1761
+2 PLAC Côte d'Azur, FRANCE
+1 EVEN
+2 TYPE Mariage (avec Jean MAUCHE)
+2 DATE 10 JUN 1710
+2 PLAC Côte d'Azur, FRANCE
+2 NOTE @N00005@
+2 SOUR @S00009@
+1 SOUR @S00010@
+0 @S00007@ SOUR
+1 TITL Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+1 TEXT AD 13 en ligne
+0 @S00008@ SOUR
+1 TITL Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -
+1 TEXT AD 13 en ligne
+0 @N00005@ NOTE Heure: 10:00
+1 CONT Généalogie de Pierre GENOUX
+1 CONT Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
+1 CONT matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
+1 CONT Estienne aussi ménager et à feu Anne Barde et honnête fille Rose DURAND fille
+1 CONT légitime à Jean Durand, ménager habitant de cette paroisse et à feu Espérite
+1 CONT Gilles après les trois publications à nos messes de paroisse le huitième du
+1 CONT présent mois jour du dimanche et fête de la paroisse et aux deux fêtes
+1 CONT suivantes, sans qu'il nous ait paru aucun empêchement et vu l'attestation de
+1 CONT Monsieur le vicaire de Bourbon
+1 CONT Foy des trois publications déjà parus et ayant ce sont donnés l'un l'autre la
+1 CONT foy du mariage et ayant reçu de nous la bénédiction nuptiale du consentement
+1 CONT de Jean Durand père de la fille ici présent et autres parents de l'un et
+1 CONT l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
+1 CONT Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
+1 CONT Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre
+0 @S00009@ SOUR
+1 TITL Relevés de registres paroissiaux et d'état civil de Provence. Base
+1 TEXT généalogique collaborative gratuite et bénévole. - GénéProvence -
+2 CONT <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités
+2 CONT ont été relevés par Marianne de BERNARDI et Sébastien AVY
+0 @S00010@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand
+1 TEXT - Née le 14 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Baptisée le 15 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédée le 22 janvier 1761 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 72 ans
+0 @I00004@ INDI
+1 NAME Spérite /GILLES/
+2 GIVN Spérite
+2 SURN GILLES
+1 SEX F
+1 CHR
+2 DATE 8 JUN 1651
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 SOUR @S00014@
+1 DEAT
+2 DATE 14 APR 1693
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+1 SOUR @S00015@
+0 @I00005@ INDI
+1 NAME Jean /DURAND/
+2 GIVN Jean
+2 SURN DURAND
+1 SEX M
+1 TITL Jean
+1 NOTE @N00006@
+1 BIRT
+2 DATE 14 DEC 1659
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+1 DEAT Y
+1 OCCU Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)
+2 NOTE @N00007@
+1 EVEN
+2 SOUR @S00011@
+1 EVEN
+2 SOUR @S00012@
+1 SOUR @S00013@
+0 @N00006@ NOTE Signature: NO
+0 @N00007@ NOTE
+0 @S00011@ SOUR
+1 TITL Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne
+1 TEXT @todo événement 'Union 1' inconnu pour Jean DURAND. Vérifier la source.
+0 @S00012@ SOUR
+1 TITL Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY
+1 TEXT @todo événement 'Union 2' inconnu pour Jean DURAND. Vérifier la source.
+0 @S00013@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5
+1 TEXT - surnom: Jean DURAND Petit
+2 CONT - Né le 14 décembre 1659 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédé
+2 CONT - Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)
+2 CONT - titre: Jean
+2 CONT @todo note 'Union avec Spérite GILLES' de Jean DURAND à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+2 CONT @todo vérifier les événements pour Jean DURAND (2 erreur(s) détectée(s))
+0 @S00014@ SOUR
+1 TITL Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne
+1 TEXT
+0 @S00015@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles
+1 TEXT - Baptisée le 8 juin 1651 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédée le 14 avril 1693 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 41 ans
+2 CONT @todo note 'Union avec Jean DURAND' de Spérite GILLES à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
+0 @I00006@ INDI
+1 NAME Magdelaine /TISSOT/
+2 GIVN Magdelaine
+2 SURN TISSOT
+1 SEX F
+1 BIRT
+2 DATE ABT 1608
+2 PLAC Côte d'Azur, FRANCE
+1 DEAT
+2 DATE 11 AUG 1688
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00016@
+1 EVEN
+2 TYPE Mariage (avec Barthélemy GILLES)
+2 DATE 17 APR 1633
+2 PLAC Côte d'Azur, FRANCE
+2 NOTE @N00008@
+2 SOUR @S00017@
+1 SOUR @S00018@
+0 @I00007@ INDI
+1 NAME Barthélemy /GILLES/
+2 GIVN Barthélemy
+2 SURN GILLES
+1 SEX M
+1 BIRT
+2 DATE ABT 1609
+1 DEAT
+2 DATE 2 OCT 1669
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 SOUR @S00019@
+1 OCCU Ménager
+2 NOTE @N00009@
+1 SOUR @S00020@
+0 @S00016@ SOUR
+1 TITL Acte de sépulture - Tissot magdeleine + 11 8 1688 -
+1 TEXT L an mil six cent huitante huict & le onzieme du moy d aout
+2 CONT *a ete ensevelie le 12me sur les cinq heures du soir magdaleine
+2 CONT tissot veuve a barthelemi giles menger aagée environ
+2 CONT de quatre vint ans
+2 CONT a ete munie des sacrements pendant sa maladie en foy
+2 CONT de ce me suis soubsigné a borbon les an & iours susd
+2 CONT *est decedée et - AD Gard - 11 / 12 - Archives famille - Etat Civil - SOSA
+0 @N00008@ NOTE
+0 @S00017@ SOUR
+1 TITL Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+1 TEXT Le dix sept avril la donnation des corps a ete
+2 CONT faite entre bartholomieu Gilles fils a pierre &
+2 CONT margt Jausert d'une part et magdaleine
+2 CONT Tissot fille de balthazar &feu jeanne trebillon
+2 CONT d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA
+0 @S00018@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot
+1 TEXT - Née vers 1608 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédée le 11 août 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 80 ans
+0 @S00019@ SOUR
+1 TITL Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois
+1 TEXT d'octobre est decedé et le troisiesme a esté enseveli
+2 CONT Barthelemy gille mesnager , âgé de'environ
+2 CONT soixante ans ;muny des sacrements, au cimetiere
+2 CONT st marcellin
+0 @N00009@ NOTE
+0 @S00020@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles
+1 TEXT - Né vers 1609
+2 CONT - Décédé le 2 octobre 1669 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 60 ans
+2 CONT - Ménager
+0 @I00008@ INDI
+1 NAME Jeanne /TREBILLON/
+2 GIVN Jeanne
+2 SURN TREBILLON
+1 SEX F
+1 BIRT
+2 DATE ABT 1575
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+1 DEAT Y
+1 EVEN
+2 TYPE Contrat de mariage (avec Balthazar TISSOT)
+2 DATE 5 MAY 1602
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00010@
+2 SOUR @S00023@
+1 SOUR @S00024@
+0 @I00009@ INDI
+1 NAME Pierre /GILLES/
+2 GIVN Pierre
+2 SURN GILLES
+1 SEX M
+1 BIRT
+2 DATE ABT 1555
+1 DEAT
+2 DATE 20 APR 1639
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 SOUR @S00021@
+1 SOUR @S00022@
+0 @S00021@ SOUR
+1 TITL Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé
+1 TEXT d environ 84 ans .......
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1
+1 TEXT - Né vers 1555
+2 CONT - Décédé le 20 avril 1639 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 84 ans
+0 @I00010@ INDI
+1 NAME Balthazar /TISSOT/
+2 GIVN Balthazar
+2 SURN TISSOT
+1 SEX M
+1 BIRT
+2 DATE ABT 1571
+2 PLAC Côte d'Azur, FRANCE
+1 DEAT
+2 DATE 3 SEP 1646
+2 PLAC Côte d'Azur, FRANCE
+2 SOUR @S00025@
+1 OCCU Laboureur (1602)
+2 NOTE @N00011@
+1 EVEN
+2 TYPE Contrat de mariage (avec Jeanne TREBILLON)
+2 DATE 5 MAY 1602
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00012@
+2 SOUR @S00026@
+1 SOUR @S00027@
+0 @N00010@ NOTE page 410 / 3162
+1 CONT entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+1 CONT lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+1 CONT de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+1 CONT paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+1 CONT Madeleine porte aussi ses autres droits
+1 CONT acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+1 CONT Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+1 CONT et Honorat Meyer praticien.
+0 @S00023@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00024@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon
+1 TEXT - Née vers 1575 - Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 CONT - Décédée
+0 @S00025@ SOUR
+1 TITL Acte de sépulture - Tissot balthazar + 3 9 1646 - AD Gard - 2 / 2 -
+1 TEXT AD 13 en ligne -
+2 CONT 1646
+2 CONT Le 3 septembre est decedé Balthazar Tissot aagé
+2 CONT d environ septante cinq ans ayant esté . . . . par
+2 CONT Me jean martin . . . . . . . . . obit . . . . . . . . . . . . .
+2 CONT sans . . . . . dans la parroisse . . . . . . . . . . . . . . . .
+2 CONT . . . . . . . . . . . . . . . .
+0 @N00011@ NOTE
+0 @N00012@ NOTE page 410 / 3162
+1 CONT entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+1 CONT lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+1 CONT de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+1 CONT paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+1 CONT Madeleine porte aussi ses autres droits
+1 CONT acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+1 CONT Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+1 CONT et Honorat Meyer praticien.
+0 @S00026@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00027@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot
+1 TEXT - Né vers 1571 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédé le 3 septembre 1646 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 75 ans
+2 CONT - Laboureur (1602)
+0 @I00011@ INDI
+1 NAME Marguerite /JAUSSERT/
+2 GIVN Marguerite
+2 SURN JAUSSERT
+1 SEX F
+1 BIRT
+2 DATE BEF 1565
+1 DEAT Y
+1 SOUR @S00028@
+0 @S00028@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert
+1 TEXT - Née avant 1565
+2 CONT - Décédée
+0 @I00012@ INDI
+1 NAME François /TISSOT/
+2 GIVN François
+2 SURN TISSOT
+1 SEX M
+1 TITL François
+1 BIRT
+2 DATE ABT 1540
+2 PLAC Côte d'Azur, FRANCE
+1 DEAT
+2 DATE BEF 1602
+1 OCCU Laboureur
+2 NOTE @N00013@
+1 EVEN
+2 TYPE Contrat de mariage (avec Magdelaine RIGAUD)
+2 DATE 29 OCT 1561
+2 PLAC Côte d'Azur, FRANCE
+2 NOTE @N00014@
+1 SOUR @S00029@
+0 @I00013@ INDI
+1 NAME Aymes /TREBILLON/
+2 GIVN Aymes
+2 SURN TREBILLON
+1 SEX M
+1 TITL Consul de Vallabrègues 1540-1608
+1 BIRT
+2 DATE ABT 1545
+1 DEAT Y
+1 OCCU Laboureur (1602)
+2 NOTE @N00015@
+1 EVEN
+2 TYPE Contrat de mariage (avec Esprite GIBERT)
+2 DATE 1 OCT 1571
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00016@
+2 SOUR @S00030@
+1 WILL
+2 DATE 11 FEB 1602
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00017@
+2 SOUR @S00031@
+1 SOUR @S00032@
+0 @N00013@ NOTE
+0 @N00014@ NOTE source Geneanet François SALGE
+0 @S00029@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot
+1 TEXT - surnom: François TISSOT de la Rieppe
+2 CONT - Né vers 1540 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2 CONT - Décédé avant 1602
+2 CONT - Laboureur
+2 CONT - titre: François
+0 @N00015@ NOTE
+0 @N00016@ NOTE page 177 / 3162
+1 CONT ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+1 CONT Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+1 CONT même lieu
+1 CONT donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+1 CONT ensuite rémission de droits à Guillaume et Olivier ses frères
+0 @S00030@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @N00017@ NOTE page 409 / 3162
+1 CONT testament de Aymès TREBILLON laboureur habitant de Vallabrègue
+1 CONT légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
+1 CONT à Jeanne, Claude et Lyonne autres filles 7/20 l.
+1 CONT héritier son fils Jean
+1 CONT acte maison du testateur en présence de capitaine Jean Cayron, de Mathieu
+1 CONT Nogaret charpentier, de Jean Romieu, Antoine Gibert, Jean Carrière fils de
+1 CONT Pierre, Huguet Branche et Jehan Vinhe
+0 @S00031@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00032@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon
+1 TEXT - Né vers 1545
+2 CONT - Décédé
+2 CONT - Laboureur (1602)
+2 CONT - titre: Consul de Vallabrègues 1540-1608
+0 @I00014@ INDI
+1 NAME Magdelaine /RIGAUD/
+2 GIVN Magdelaine
+2 SURN RIGAUD
+1 SEX F
+1 BIRT
+2 DATE ABT 1540
+1 DEAT
+2 DATE AFT 1602
+1 EVEN
+2 TYPE Contrat de mariage (avec François de la Rieppe TISSOT)
+2 DATE 29 OCT 1561
+2 PLAC Côte d'Azur, FRANCE
+2 NOTE @N00018@
+1 SOUR @S00033@
+0 @I00015@ INDI
+1 NAME Esprite /GIBERT/
+2 GIVN Esprite
+2 SURN GIBERT
+1 SEX F
+1 BIRT
+2 DATE ABT 1550
+1 DEAT
+2 DATE BEF 1602
+1 EVEN
+2 TYPE Contrat de mariage (avec Aymes TREBILLON)
+2 DATE 1 OCT 1571
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00019@
+2 SOUR @S00034@
+1 SOUR @S00035@
+0 @N00018@ NOTE source Geneanet François SALGE
+0 @S00033@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud
+1 TEXT - Née vers 1540
+2 CONT - Décédée après 1602
+0 @N00019@ NOTE page 177 / 3162
+1 CONT ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+1 CONT Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+1 CONT même lieu
+1 CONT donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+1 CONT ensuite rémission de droits à Guillaume et Olivier ses frères
+0 @S00034@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00035@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert
+1 TEXT - Née vers 1550
+2 CONT - Décédée avant 1602
+0 @I00016@ INDI
+1 NAME Antoine /JAUSSERT/
+2 GIVN Antoine
+2 SURN JAUSSERT
+1 SEX M
+1 BIRT
+2 NOTE @N00020@
+1 SOUR @S00036@
+0 @N00020@ NOTE source Généanet : Généalogie de Jean Pierre ISNARD
+1 CONT sans aucune source
+0 @S00036@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert
+1 TEXT
+0 @I00017@ INDI
+1 NAME Laurence /REGISTREL/
+2 GIVN Laurence
+2 SURN REGISTREL
+1 SEX F
+1 BIRT
+2 NOTE @N00021@
+1 SOUR @S00037@
+0 @N00021@ NOTE source Généanet : Généalogie de Jean Pierre ISNARD
+1 CONT sans aucune source
+0 @S00037@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel
+1 TEXT
+0 @I00018@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00038@
+0 @S00038@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922
+1 TEXT
+0 @I00019@ INDI
+1 NAME Pons Ou Pierre /TREBILLON/
+2 GIVN Pons Ou Pierre
+2 SURN TREBILLON
+1 SEX M
+1 BIRT
+2 DATE ABT 1496
+1 DEAT
+2 DATE BEF 12 FEB 1561
+2 NOTE @N00022@
+1 OCCU Pontanier du port de Comps (1532)
+2 NOTE @N00023@
+1 EVEN
+2 TYPE Contrat de mariage (avec Jaumette MALCANE)
+2 DATE 18 SEP 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00024@
+2 SOUR @S00039@
+1 EVEN
+2 TYPE Quittance de dot
+2 DATE 10 DEC 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00025@
+2 SOUR @S00040@
+1 EVEN
+2 TYPE Reconnaissance de dette
+2 DATE 5 JUN 1532
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00026@
+2 SOUR @S00041@
+1 SOUR @S00042@
+0 @N00022@ NOTE Date du CM de sa fille Hélène où elle est dit fille de feu Pierre
+0 @N00023@ NOTE
+0 @N00024@ NOTE page 1995 / 3162
+1 CONT contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+1 CONT et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+1 CONT de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+1 CONT promesse de celebrer leur mariage à première réquisition
+1 CONT en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+1 CONT Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+1 CONT Jaumette
+1 CONT
+1 CONT = lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+1 CONT les accoutrements le tout au jour de noces pour les robes et par solutions de
+1 CONT 3 l. à chaque st Michel
+1 CONT = suivent les pactes
+1 CONT = acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+1 CONT Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+1 CONT André. Ytier, et de Michel Chayne
+0 @S00039@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @N00025@ NOTE page 2012 / 3162
+1 CONT reconnaissance de Pierre THEBÏLHAT de Vallabrègue comme mari de Jaumette
+1 CONT Malcane faite à Antoine Malcan de Montfrin 10 florins venant à déduction de la
+1 CONT constitution faite à Jaumette
+1 CONT ct de mariage reçu du.notaire soussigné acte maison de noble Jean Garin tenue
+1 CONT en arrenteinent par ledit Trebilhat en présence deGabriel Reynoard, de Simon
+1 CONT Moret, de Louis Bonet, ht de Valabrègue
+0 @S00040@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @N00026@ NOTE page 2422 / 3162
+1 CONT present Pierre TREBILHAT du port de Comps qui confesse devoir à Pierre Daucono
+1 CONT et Antoine Martin galafats d'Avignon 11 l. en déduction de plus grande pour
+1 CONT travail fait au port dudit Comps
+1 CONT acte chez le notaire en présence de Dalmas Bosquet et Pierre Gaud
+0 @S00041@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00042@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon
+1 TEXT - Né vers 1496
+2 CONT - Décédé avant 12 février 1561
+2 CONT - Pontanier du port de Comps (1532)
+0 @I00020@ INDI
+1 NAME Jean /TISSOT/
+2 GIVN Jean
+2 SURN TISSOT
+1 SEX M
+1 DEAT
+2 DATE BEF 1595
+2 NOTE @N00027@
+1 SOUR @S00043@
+0 @N00027@ NOTE Généalogie de Raymond RIPERT
+0 @S00043@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot
+1 TEXT - Décédé avant 1595
+2 CONT @todo Anomalies détectées sur Jean TISSOT. Vérifier la source.
+0 @I00021@ INDI
+1 NAME Jaumette /MALCANE/
+2 GIVN Jaumette
+2 SURN MALCANE
+1 SEX F
+1 BIRT
+2 DATE ABT 1501
+2 PLAC Montfrin, 30490, Gard, Occitanie, FRANCE
+1 DEAT Y
+1 EVEN
+2 TYPE Contrat de mariage (avec Pons Ou Pierre TREBILLON)
+2 DATE 18 SEP 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00031@
+2 SOUR @S00047@
+1 SOUR @S00048@
+0 @I00022@ INDI
+1 NAME Jean /GIBERT/
+2 GIVN Jean
+2 SURN GIBERT
+1 SEX M
+1 TITL Jean
+1 BIRT
+2 DATE ABT 1505
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+1 DEAT
+2 DATE BEF 1561
+1 OCCU Laboureur (1558)
+2 NOTE @N00028@
+1 WILL
+2 DATE 9 JAN 1559
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00029@
+2 SOUR @S00044@
+1 SOUR @S00045@
+0 @N00028@ NOTE
+0 @N00029@ NOTE page 42 / 3162
+1 CONT testament de Jean GIBERT du Roux du lieu de Vallabrègue, laboureur
+1 CONT légat en faveur de ses filles Esprite et Antonie 200 florins et deux robes
+1 CONT héritiers Françoise Rodière, sa femme et Jean, Etienne, Guillaume, Olivier et
+1 CONT Antoine, ses fils
+0 @S00044@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00045@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert
+1 TEXT - surnom: Jean GIBERT du Roux
+2 CONT - Né vers 1505 - Le Roux - Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 CONT - Décédé avant 1561
+2 CONT - Laboureur (1558)
+2 CONT - titre: Jean
+0 @I00023@ INDI
+1 NAME Domergue /RIGAUD/
+2 GIVN Domergue
+2 SURN RIGAUD
+1 SEX M
+1 BIRT
+2 DATE ABT 1500
+2 NOTE @N00030@
+1 DEAT Y
+1 SOUR @S00046@
+0 @N00030@ NOTE source Geneanet Famille SADOULET
+0 @S00046@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud
+1 TEXT - Né vers 1500
+2 CONT - Décédé
+0 @N00031@ NOTE page 1995 / 3162
+1 CONT contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
+1 CONT et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
+1 CONT de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
+1 CONT promesse de celebrer leur mariage à première réquisition
+1 CONT en faveur duquel mariage Doulce Barone mère Guillaume Manyvert beau frère et
+1 CONT Jeanne Malcane soeur et autres parents et amis donnent licence à ladite
+1 CONT Jaumette
+1 CONT
+1 CONT = lesquels Doulce Barone et Guillaume Manyvert consituent en dot 12 livres et
+1 CONT les accoutrements le tout au jour de noces pour les robes et par solutions de
+1 CONT 3 l. à chaque st Michel
+1 CONT = suivent les pactes
+1 CONT = acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
+1 CONT Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
+1 CONT André. Ytier, et de Michel Chayne
+0 @S00047@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00048@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane
+1 TEXT - Née vers 1501 - Montfrin, 30490, Gard, Occitanie, FRANCE
+2 CONT - Décédée
+0 @I00024@ INDI
+1 NAME Françoise /RODIER/
+2 GIVN Françoise
+2 SURN RODIER
+1 SEX F
+1 BIRT
+2 DATE ABT 1510
+1 DEAT
+2 DATE AFT 1561
+1 SOUR @S00049@
+0 @S00049@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier
+1 TEXT - Née vers 1510
+2 CONT - Décédée après 1561
+0 @I00025@ INDI
+1 NAME Catherine /BAUD/
+2 GIVN Catherine
+2 SURN BAUD
+1 SEX F
+1 BIRT
+2 NOTE @N00032@
+1 SOUR @S00050@
+0 @N00032@ NOTE source Geneanet François SALGE 6 11 2012
+0 @S00050@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1
+1 TEXT
+0 @I00026@ INDI
+1 NAME Y... /BREMOND/
+2 GIVN Y...
+2 SURN BREMOND
+1 SEX F
+1 BIRT
+2 NOTE @N00033@
+1 SOUR @S00051@
+0 @N00033@ NOTE source Geneanet Famille SADOULET
+0 @S00051@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond
+1 TEXT
+0 @I00027@ INDI
+1 NAME Antoine /MALCAN/
+2 GIVN Antoine
+2 SURN MALCAN
+1 SEX M
+1 DEAT
+2 DATE BEF 18 SEP 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+1 SOUR @S00052@
+0 @S00052@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan
+1 TEXT - Décédé avant 18 septembre 1521 - Vallabrègues, 30300, Gard, Occitanie, FRANCE
+0 @I00028@ INDI
+1 NAME Doulce /BARONE/
+2 GIVN Doulce
+2 SURN BARONE
+1 SEX F
+1 EVEN
+2 TYPE Accord
+2 DATE 10 DEC 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE
+2 NOTE @N00034@
+2 SOUR @S00053@
+1 SOUR @S00054@
+0 @N00034@ NOTE page 2012 / 3162
+1 CONT présente honeste femme Doulce BARONE comme mère et tutrice des enfants de feu
+1 CONT Antoine Malcan laquelle quitte Guillaume Manyvet de Vallabrègue son gendre
+1 CONT icelui payant pour les hoirs de Antoine Malcan susdite somme pour 19 florins
+1 CONT que ledit Manyvet lui a avancé
+1 CONT
+1 CONT = en présence des précités
+0 @S00053@ SOUR
+1 TITL Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°
+1 TEXT - Geneanet - Internet -
+2 CONT [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=liv
+2 CONC re&search_type=livre&tk=f26cbe6f375c94c7)
+0 @S00054@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone
+1 TEXT
+0 @I00029@ INDI
+1 NAME Jaumin /RIGAUD/
+2 GIVN Jaumin
+2 SURN RIGAUD
+1 SEX M
+1 DEAT
+2 DATE ABT 1526
+2 NOTE @N00035@
+1 SOUR @S00055@
+0 @N00035@ NOTE source Geneanet Famille SADOULET
+0 @S00055@ SOUR
+1 TITL https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud
+1 TEXT - Décédé vers 1526
+0 @S00056@ SOUR
+1 TITL
+1 TEXT Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNAR
+2 CONC DI et Sébastien AVY
+0 @F00001@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 MARR
+2 DATE 10 JUN 1710
+2 PLAC Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,
+2 SOUR @S00056@
+1 CHIL @I00001@
+0 @F00002@ FAM
+1 HUSB @I00005@
+1 WIFE @I00004@
+1 MARR
+2 DATE 1 FEB 1682
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,
+1 CHIL @I00003@
+0 @S00057@ SOUR
+1 TITL
+1 TEXT Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -
+2 CONT Le dix sept avril la donnation des corps a ete
+2 CONT faite entre bartholomieu Gilles fils a pierre &
+2 CONT margt Jausert d'une part et magdaleine
+2 CONT Tissot fille de balthazar &feu jeanne trebillon
+2 CONT d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA
+0 @F00003@ FAM
+1 HUSB @I00007@
+1 WIFE @I00006@
+1 MARR
+2 DATE 17 APR 1633
+2 PLAC Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,
+2 SOUR @S00057@
+1 CHIL @I00004@
+0 @F00004@ FAM
+1 HUSB @I00010@
+1 WIFE @I00008@
+1 MARR
+2 DATE 5 MAY 1602
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE,
+1 CHIL @I00006@
+0 @F00005@ FAM
+1 HUSB @I00009@
+1 WIFE @I00011@
+1 CHIL @I00007@
+0 @F00006@ FAM
+1 HUSB @I00013@
+1 WIFE @I00015@
+1 MARR
+2 DATE 1 OCT 1571
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE,
+1 CHIL @I00008@
+0 @F00007@ FAM
+1 HUSB @I00012@
+1 WIFE @I00014@
+1 MARR
+2 DATE 29 OCT 1561
+2 PLAC Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,
+1 CHIL @I00010@
+0 @F00008@ FAM
+1 HUSB @I00016@
+1 WIFE @I00017@
+1 CHIL @I00011@
+0 @F00009@ FAM
+1 HUSB @I00020@
+1 WIFE @I00018@
+1 CHIL @I00012@
+0 @F00010@ FAM
+1 HUSB @I00019@
+1 WIFE @I00021@
+1 MARR
+2 DATE 18 SEP 1521
+2 PLAC Vallabrègues, 30300, Gard, Occitanie, FRANCE,
+1 CHIL @I00013@
+0 @F00011@ FAM
+1 HUSB @I00023@
+1 WIFE @I00025@
+1 CHIL @I00014@
+0 @F00012@ FAM
+1 HUSB @I00022@
+1 WIFE @I00024@
+1 CHIL @I00015@
+0 @F00013@ FAM
+1 HUSB @I00027@
+1 WIFE @I00028@
+1 CHIL @I00021@
+0 @F00014@ FAM
+1 HUSB @I00029@
+1 WIFE @I00026@
+1 CHIL @I00023@
+0 TRLR

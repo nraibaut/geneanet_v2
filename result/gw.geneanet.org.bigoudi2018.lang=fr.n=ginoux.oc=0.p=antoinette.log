@@ -1,0 +1,298 @@
+[root] INFO: Starting GeneanetSpider 1.0.13
+[scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
+[scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'geneanet',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'geneanet.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['geneanet.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+[asyncio] DEBUG: Using selector: SelectSelector
+[scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[scrapy.extensions.telnet] INFO: Telnet Password: 4d6e2d854f934952
+[scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[geneanet] DEBUG: start_requests
+[geneanet] DEBUG: URL = https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette
+[geneanet] DEBUG: result_name = gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette
+[geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.ged
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 00:59 à partir de https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette' ...
+[geneanet] DEBUG: csv persons = result/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.persons.csv
+[geneanet] DEBUG: csv events = result/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.events.csv
+[geneanet] DEBUG: csv unions = result/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.unions.csv
+[geneanet] DEBUG: Root URL = https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette (true='https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.html')
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.html> (referer: None)
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Antoinette' 'GINOUX' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette)
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : info = 'Née vers 1663 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : --> event_name2='Naissance' event_date2='vers 1663' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : info = 'Décédée'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : source = '* Naissance, union: Généprovence'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : --> source 'Naissance' = 'Généprovence'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : --> mariages_sources[https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette]='Généprovence'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=michel.n=ginoux.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=michel.n=ginoux.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=elisabeth.n=roux.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : union 1 = debut='* Mariée _le 20 août 1685, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='Jean SAINT MICHEL' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=saint+michel' 
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Antoinette' 'GINOUX' : name='Naissance', date='vers 1663', place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France', notes='None', source='Généprovence'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Antoinette' 'GINOUX' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Parents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Union(s)'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Demi-frères et demi-sœurs'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Sources'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Antoinette GINOUX : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=elisabeth.n=roux.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Michel' 'GINOUX' (M) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux)
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : info = 'Né le 23 août 1643 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : --> event_name2='Naissance' event_date2='23 août 1643' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : info = 'Décédé le 20 mars 1733 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 89 ans'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : --> event_name2='Décès' event_date2='20 mars 1733' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : source = '* Union 1, union 2: Généprovence'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : --> source 'Union 1' = 'Généprovence'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : --> source 'Union 2' = 'Généprovence'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : source = '* Décès: 203 E 230 1733 vur 5/15'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : --> source 'Décès' = '203 E 230 1733 vur 5/15'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : note 1 (type 'Naissance') : note_text='à vérifier'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : note 2 (type 'Décès') : note_text='dans l'acte agé d'environ 90 ans et veuf en seconde noces de Françoise PAULEAU'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : note 3 (type 'Union avec Françoise PAULEAU') : note_text='contrat de mariage chez BERGE Claude ref: 415 E 236 283'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : note 'Union avec Françoise PAULEAU' à analyser : 'contrat de mariage chez BERGE Claude ref: 415 E 236 283'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=mathieu.n=ginoux.html'
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Elisabeth' 'ROUX' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux)
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : source = '* Union: Généprovence'
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : --> mariages_sources[https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux]='Généprovence'
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : union 1 = debut='* Mariée _le 10 juin 1663, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : rubrique='Sources'
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Elisabeth ROUX : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=antoinette.n=chabert.html'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : union 1 = debut='* Marié _le 10 juin 1663, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='Elisabeth ROUX' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : union 2 = debut='* Marié _le 11 février 1672, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=francoise&n=pauleau' 
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Michel' 'GINOUX' : name='Naissance', date='23 août 1643', place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France', notes='à vérifier', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Michel' 'GINOUX' : name='Décès', date='20 mars 1733', place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France', notes='dans l'acte agé d'environ 90 ans et veuf en seconde noces de Françoise PAULEAU', source='203 E 230 1733 vur 5/15'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Michel' 'GINOUX' : name='Union 1', date='None', place='None', notes='None', source='Généprovence'
+[gedcomw.element.element] ERROR: manage_events : @I00002@ 'Michel' 'GINOUX' : unknown event name : 'Union 1'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Michel' 'GINOUX' : name='Union 2', date='None', place='None', notes='None', source='Généprovence'
+[gedcomw.element.element] ERROR: manage_events : @I00002@ 'Michel' 'GINOUX' : unknown event name : 'Union 2'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Notes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Sources'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Michel GINOUX : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=antoinette.n=chabert.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=mathieu.n=ginoux.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Antoinette' 'CHABERT' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert)
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : info = 'Décédée'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : source = '* Union: Généprovence 203 E 293'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : --> mariages_sources[https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert]='Généprovence 203 E 293'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : note 1 (type 'Union avec Mathieu GINOUX') : note_text='acte non filiation'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : note 'Union avec Mathieu GINOUX' à analyser : 'acte non filiation'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : union 1 = debut='* Mariée _le 9 février 1624, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux' 
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Antoinette' 'CHABERT' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : rubrique='Sources'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 5 : Antoinette CHABERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Mathieu' 'GINOUX' (M) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux)
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : info = 'Né le 23 février 1595 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : --> event_name2='Naissance' event_date2='23 février 1595' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : info = 'Décédé le 1er décembre 1671 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 76 ans'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : --> event_name2='Décès' event_date2='1er décembre 1671' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : source = '* Union: Généprovence 203 E 293'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : --> mariages_sources[https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux]='Généprovence 203 E 293'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : note 1 (type 'Naissance') : note_text='à vérifier'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : note 2 (type 'Décès') : note_text='à vérifier'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : note 3 (type 'Union avec Antoinette CHABERT') : note_text='acte non filiation'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : note 'Union avec Antoinette CHABERT' à analyser : 'acte non filiation'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jacques.n=ginoux.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jacques.n=ginoux.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=helene.n=benoit.html'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : union 1 = debut='* Marié _le 9 février 1624, Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert' 
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Mathieu' 'GINOUX' : name='Naissance', date='23 février 1595', place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France', notes='à vérifier', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Mathieu' 'GINOUX' : name='Décès', date='1er décembre 1671', place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France', notes='à vérifier', source='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Sources'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Mathieu GINOUX : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=helene.n=benoit.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 8, id @I00006@ : 'Jacques' 'GINOUX' (M) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux)
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : info = 'Né vers 1571'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : --> event_name2='Naissance' event_date2='vers 1571' event_place2='None' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : info = 'Décédé le 9 janvier 1623 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 52 ans'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : --> event_name2='Décès' event_date2='9 janvier 1623' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : 'Naissance' --> event_name='Naissance' event_place='None'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_sources = 'arbre généanet: framboise13o9'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_date = 'vers 1571'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : 'Mariage (avec Hélène BENOIT)' --> event_name='Mariage (avec Hélène BENOIT)' event_place='None'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : 'Contrat de mariage (avec Hélène BENOIT) - Châteaurenard, 13027, Bouches-du- Rhône, Provence-Alpes-Côte d'Azur, France' --> event_name='Contrat de mariage (avec Hélène BENOIT)' event_place='Côte d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_notes = 'acte de filiation Notaire : ROY JEAN à 415 E 110'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_sources = 'Généprovence'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_date = '19 avril 1592'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : 'Décès - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' --> event_name='Décès' event_place='Côte d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_notes = 'à vérifier'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : event_date = '9 janvier 1623'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jean.n=ginoux.html'
+[geneanet] DEBUG: Generation 4, sosa 9, id @I00007@ : 'Hélène' 'BENOIT' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit)
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : info = 'Décédée le 15 décembre 1622 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : --> event_name2='Décès' event_date2='15 décembre 1622' event_place2='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : 'Mariage (avec Jacques GINOUX)' --> event_name='Mariage (avec Jacques GINOUX)' event_place='None'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : 'Contrat de mariage (avec Jacques GINOUX) - Châteaurenard, 13027, Bouches-du- Rhône, Provence-Alpes-Côte d'Azur, France' --> event_name='Contrat de mariage (avec Jacques GINOUX)' event_place='Côte d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : event_notes = 'acte de filiation Notaire : ROY JEAN à 415 E 110'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : event_sources = 'Généprovence'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : event_date = '19 avril 1592'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : 'Décès - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France' --> event_name='Décès' event_place='Côte d'Azur, France'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : event_notes = 'à vérifier'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : event_date = '15 décembre 1622'
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jacques.n=benoit.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jacques.n=benoit.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=jean.n=ginoux.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=marguerite.n=roux.html'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : union 1 = debut='* Marié' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit' 
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'GINOUX' : name='Naissance', date='vers 1571', place='None', notes='None', source='arbre généanet: framboise13o9'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'GINOUX' : name='Décès', date='9 janvier 1623', place='Côte d'Azur, France', notes='à vérifier', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'GINOUX' : name='Mariage (avec Hélène BENOIT)', date='None', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Jacques' 'GINOUX' : name='Contrat de mariage (avec Hélène BENOIT)', date='19 avril 1592', place='Côte d'Azur, France', notes='acte de filiation Notaire : ROY JEAN à 415 E 110', source='Généprovence'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Événements'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Jacques GINOUX : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe (true='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=richarde.n=chappe.html'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : union 1 = debut='* Mariée' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux' 
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Hélène' 'BENOIT' : name='Décès', date='15 décembre 1622', place='Côte d'Azur, France', notes='à vérifier', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Hélène' 'BENOIT' : name='Mariage (avec Jacques GINOUX)', date='None', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Hélène' 'BENOIT' : name='Contrat de mariage (avec Jacques GINOUX)', date='19 avril 1592', place='Côte d'Azur, France', notes='acte de filiation Notaire : ROY JEAN à 415 E 110', source='Généprovence'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : rubrique='Événements'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Hélène BENOIT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=richarde.n=chappe.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.bigoudi2018.lang=fr.pz=patricia+marthe+madeleine+elise.nz=bressy.ocz=62.p=marguerite.n=roux.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 18, id @I00008@ : 'Jacques' 'BENOIT' (M) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit)
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : info = 'Décédé'
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : union 1 = debut='* Marié' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe' 
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Jacques' 'BENOIT' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 18 : Jacques BENOIT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : surnom='Jean GINOUX dit le vieux'
+[geneanet] DEBUG: Generation 5, sosa 16, id @I00009@ : 'Jean' 'GINOUX' (M) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux)
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : info = 'Décédé le 11 décembre 1597 - chateaurenard'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : --> event_name2='Décès' event_date2='11 décembre 1597' event_place2='chateaurenard' 
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : titre_noblesse = 'Jean' (None)
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : note 1 (type 'Décès') : note_text='à vérifier'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : union 1 = debut='* Marié' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux' 
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Jean' 'GINOUX' : name='Décès', date='11 décembre 1597', place='chateaurenard', notes='à vérifier', source='None'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 16 : Jean GINOUX : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 19, id @I00010@ : 'Richarde' 'CHAPPE' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe)
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : info = 'Décédée'
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : union 1 = debut='* Mariée' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit' 
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Richarde' 'CHAPPE' : name='Décès', date='', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 19 : Richarde CHAPPE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 17, id @I00011@ : 'Marguerite' 'ROUX' (F) (https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux)
+[geneanet] DEBUG: Generation 5, sosa 17 : Marguerite ROUX : union 1 = debut='* Mariée' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Marguerite ROUX : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 17 : Marguerite ROUX : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 17 : Marguerite ROUX : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] INFO: Closing spider (finished)
+[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux', mère='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', true_url_pere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux', true_url_mere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux' mariage_date='10 juin 1663' mariage_place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux', mère='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00002@' : OK : mariages_sources[père]=mariages_sources[mère]='Généprovence 203 E 293'
+[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', true_url_pere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux', true_url_mere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert' mariage_date='9 février 1624' mariage_place='Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,' mariage_source='Généprovence 203 E 293'
+[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux', mère='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', true_url_pere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux', true_url_mere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00004@' : père='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux', mère='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00004@' : enfant='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', true_url_pere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux', true_url_mere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00005@' : père='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit', mère='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00005@' : enfant='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit', true_url_pere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit', true_url_mere='https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] INFO: NRa Spider 'geneanet' closed :
+[geneanet] INFO: - nb_persons            = 11
+[geneanet] INFO: - nb_families           = 5
+[geneanet] INFO: - 5 relations enfants / parents
+[geneanet] INFO: - nb_consanguinites     = 0
+[geneanet] INFO: - max_generations       = 5
+[geneanet] INFO: - nb_titres_noblesse    = 1 (avec 0 notes(s))
+[geneanet] INFO: - nb_sous_titres        = 0
+[geneanet] INFO: - nb_notes_longues      = 1
+[geneanet] INFO: - multiple_events_count = 0
+[geneanet] INFO: - nb_errors             = 2
+[geneanet] INFO: - nb_todo               = 4
+[geneanet] INFO: - nb_scanned_pages      = 0
+[geneanet] INFO: - nb_saved_pages        = 0
+[geneanet] INFO: - nb_cached_pages       = 11
+[geneanet] INFO: Saving to 'result/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.ged'
+[gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.ged'
+[scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4104,
+ 'downloader/request_count': 11,
+ 'downloader/request_method_count/GET': 11,
+ 'downloader/response_bytes': 1030585,
+ 'downloader/response_count': 11,
+ 'downloader/response_status_count/200': 11,
+ 'elapsed_time_seconds': 0.750674,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 9, 7, 23, 0, 0, 280047),
+ 'log_count/DEBUG': 197,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 47,
+ 'request_depth_max': 4,
+ 'response_received_count': 11,
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 11,
+ 'scheduler/enqueued/memory': 11,
+ 'start_time': datetime.datetime(2023, 9, 7, 22, 59, 59, 529373)}
+[scrapy.core.engine] INFO: Spider closed (finished)

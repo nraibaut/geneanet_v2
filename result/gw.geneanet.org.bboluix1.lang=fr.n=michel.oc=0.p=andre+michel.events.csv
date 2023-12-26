@@ -1,0 +1,5 @@
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.13 08/09/2023 à 01:00
+@I00001@;André Michel;Michel;https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel;"Naissance";BIRT;12 avril 1563;12 APR 1563;"Apt, 84003, Vaucluse, Provence-Alpes-Côte d'Azur, France";"22?";"";"";"";
+@I00001@;André Michel;Michel;https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel;"Décès";DEAT;après 1649;AFT 1649;"Apt, 84003, Vaucluse, Provence-Alpes-Côte d'Azur, France";"";"";"";"";
+@I00002@;Jean;Michel;https://gw.geneanet.org/bboluix1?lang=fr&iz=122&p=jean&n=michel&oc=3;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00003@;Guillaumette;Gourdon;https://gw.geneanet.org/bboluix1?lang=fr&iz=122&p=guillaumette&n=gourdon;"Décès";DEAT;;;"";"";"Y";"";"";

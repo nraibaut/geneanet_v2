@@ -1,43 +1,49 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.8 01/09/2023 à 18:26
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Naissance;BIRT;22 mars 1882;22 MAR 1882;"Paris, France";"Note1 sur la naissance
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.13 08/09/2023 Ã  00:59
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"Naissance";BIRT;22 mars 1882;22 MAR 1882;"Paris, France";"Note1 sur la naissance
 Note2 sur la naissance";"";"https://www.source_naissance.fr/";"Texte1 source naissance
 Texte2 source naissance";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Baptême;CHR;18 mai 1882;18 MAY 1882;"Paris, France";"Note1 sur le baptême
-Note2 sur le baptême";"";"https://www.source_bapteme.fr/";"Texte1 source baptême
-Texte2 source baptême";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Décès;DEAT;10 avril 1912;10 APR 1912;"Nice, FRANCE";"Note1 sur le décès
-Note2 sur le décès";"";"https://www.source_deces.fr/";"Texte1 source décès
-Texte2 source décès";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Inhumation;BURI;11 avril 1912;11 APR 1912;"Nice, FRANCE";"Note1 sur l'inhumation
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"BaptÃªme";CHR;18 mai 1882;18 MAY 1882;"Paris, France";"Note1 sur le baptÃªme
+Note2 sur le baptÃªme";"";"https://www.source_bapteme.fr/";"Texte1 source baptÃªme
+Texte2 source baptÃªme";
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"DÃ©cÃ¨s";DEAT;10 avril 1912;10 APR 1912;"Nice, FRANCE";"Note1 sur le dÃ©cÃ¨s
+Note2 sur le dÃ©cÃ¨s";"";"https://www.source_deces.fr/";"Texte1 source dÃ©cÃ¨s
+Texte2 source dÃ©cÃ¨s";
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"Inhumation";BURI;11 avril 1912;11 APR 1912;"Nice, FRANCE";"Note1 sur l'inhumation
 Note2 sur l'inhumation";"";"https://www.source_inhumation.fr/";"Texte1 source inhumation
 Texte2 source inhumation";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Profession;OCCU;;;"";"";"Profession de Gérard";"";"";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Profession;OCCU;;;"";"Note1 sur la profession
-Note2 sur la profession";"Profession de Gérard";"https://www.source_profession.fr/";"Texte1 source profession
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"Profession";OCCU;;;"";"";"Profession de GÃ©rard";"";"";
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"Profession";OCCU;;;"";"Note1 sur la profession
+Note2 sur la profession";"Profession de GÃ©rard";"https://www.source_profession.fr/";"Texte1 source profession
 Texte2 source profession";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Résidence;RESI;;;"Lyon, France";"Note2 sur la résidence";"Note1 sur la résidence";"https://www.source_residence.fr/";"Texte1 source résidence
-Texte2 source résidence";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Diplôme;GRAD;1er juillet 1897;1 JUL 1897;"Nice, FRANCE";"Note1 sur diplôme
-Note2 sur diplôme";"Certificat d'études";"https://www.source_diplome.fr/";"Texte1 source diplôme
-Texte2 source diplôme";
-@I00001@;Gérard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;Testament;WILL;1911;1911;"";"None";"";"";"";
-@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Naissance;BIRT;1er septembre 1850;1 SEP 1850;"";"Note1 sur la naissance
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"RÃ©sidence";RESI;;;"Lyon, France";"Note2 sur la rÃ©sidence";"Note1 sur la rÃ©sidence";"https://www.source_residence.fr/";"Texte1 source rÃ©sidence
+Texte2 source rÃ©sidence";
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"DiplÃ´me";GRAD;1er juillet 1897;1 JUL 1897;"Nice, FRANCE";"Note1 sur diplÃ´me
+Note2 sur diplÃ´me";"Certificat d'Ã©tudes";"https://www.source_diplome.fr/";"Texte1 source diplÃ´me
+Texte2 source diplÃ´me";
+@I00001@;GÃ©rard;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard;"Testament";WILL;1911;1911;"";"";"";"";"";
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;"Naissance";BIRT;1er septembre 1850;1 SEP 1850;"";"Note1 sur la naissance
 Note2 sur la naissance";"";"https://www.source_naissance.fr/";"Texte1 source naissance
 Texte2 source naissance";
-@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;Décès;DEAT;1er avril 1895;1 APR 1895;"";"Note1 sur le décès
-Note2 sur le décès";"";"https://www.source_deces.fr/";"Texte1 source décès
-Texte2 source décès";
-@I00004@;Jeanne;INN;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;Naissance;BIRT;;;"";"None";"";"";"";
-@I00006@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Naissance;BIRT;1580 julien;1580 JULIEN;"";"";"";"";"";
-@I00006@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;Décès;DEAT;;;"";"None";"Y";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Naissance;BIRT;vers juillet 1802;ABT JUL 1802;"";"Date environ";"";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Baptême;CHR;peut-être 23 février 1803;EST 23 FEB 1803;"";"Date estimée";"";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Décès;DEAT;vers 1er juin 1885;ABT 1 JUN 1885;"";"Date calculée";"";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;;;"";"";"Laboureur, Eleveur, Tailleur de pierres";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;avant 1er janvier 1834;BEF 1 JAN 1834;"";"laps de temps avant";"Eleveur";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;entre 1er janvier 1835 et 31 décembre 1837;BET 1 JAN 1835 AND 31 DEC 1837;"";"laps de temps entre";"Laboureur";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Profession;OCCU;après 1er janvier 1837;AFT 1 JAN 1837;"";"Laps de temps après";"Tailleur de pierres";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;avant 1er janvier 1849;BEF 1 JAN 1849;"";"Période jusqu'au";"Rouen";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;entre 1er janvier 1850 et 1er janvier 1851;BET 1 JAN 1850 AND 1 JAN 1851;"";"Période du au";"Lyon";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Résidence;RESI;après 1er janvier 1852;AFT 1 JAN 1852;"";"Période du";"Paris";"";"";
-@I00007@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;Retraite;RETI;vers 1872;ABT 1872;"";"Date interprêtée";"";"";"";
+@I00002@;Pierre;DUPONT;https://gw.geneanet.org/nraibaut2?lang=fr&p=pierre&n=dupont;"DÃ©cÃ¨s";DEAT;1er avril 1895;1 APR 1895;"";"Note1 sur le dÃ©cÃ¨s
+Note2 sur le dÃ©cÃ¨s";"";"https://www.source_deces.fr/";"Texte1 source dÃ©cÃ¨s
+Texte2 source dÃ©cÃ¨s";
+@I00004@;Jeanne;INN;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;"Naissance";BIRT;;;"";"";"";"";"";
+@I00004@;Jeanne;INN;https://gw.geneanet.org/nraibaut2?lang=fr&p=jeanne&n=inn;"Contrat de mariage (avec Jean DATES)";EVEN;1er mars 1833;1 MAR 1833;"";"Note1 sur contrat de mariage
+Note2 sur contrat de mariage";"Contrat de mariage (avec Jean DATES)";"https://www.source_contrat_de_mariage.fr/";"Texte1 source contrat de mariage
+Texte2 source contrat de mariage";
+@I00005@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;"Naissance";BIRT;1580 julien;@#DJULIAN@ 1580;"";"date 1580 julien";"";"";"";
+@I00005@;Jacques;DURAND;https://gw.geneanet.org/nraibaut2?lang=fr&p=jacques&n=durand;"DÃ©cÃ¨s";DEAT;;;"";"";"Y";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Naissance";BIRT;vers juillet 1802;ABT JUL 1802;"";"Date environ";"";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"BaptÃªme";CHR;peut-Ãªtre 23 fÃ©vrier 1803;EST 23 FEB 1803;"";"Date estimÃ©e";"";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"DÃ©cÃ¨s";DEAT;vers 1er juin 1885;ABT 1 JUN 1885;"";"Date calculÃ©e";"";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Profession";OCCU;;;"";"";"Laboureur, Eleveur, Tailleur de pierres";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Contrat de mariage (avec Jeanne INN)";EVEN;1er mars 1833;1 MAR 1833;"";"Note1 sur contrat de mariage
+Note2 sur contrat de mariage";"Contrat de mariage (avec Jeanne INN)";"https://www.source_contrat_de_mariage.fr/";"Texte1 source contrat de mariage
+Texte2 source contrat de mariage";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Profession";OCCU;avant 1er janvier 1834;BEF 1 JAN 1834;"";"laps de temps avant";"Eleveur";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Profession";OCCU;entre 1er janvier 1835 et 31 dÃ©cembre 1837;BET 1 JAN 1835 AND 31 DEC 1837;"";"laps de temps entre";"Laboureur";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Profession";OCCU;aprÃ¨s 1er janvier 1837;AFT 1 JAN 1837;"";"Laps de temps aprÃ¨s";"Tailleur de pierres";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"RÃ©sidence";RESI;avant 1er janvier 1849;BEF 1 JAN 1849;"";"PÃ©riode jusqu'au";"Rouen";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"RÃ©sidence";RESI;entre 1er janvier 1850 et 1er janvier 1851;BET 1 JAN 1850 AND 1 JAN 1851;"";"PÃ©riode du au";"Lyon";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"RÃ©sidence";RESI;aprÃ¨s 1er janvier 1852;AFT 1 JAN 1852;"";"PÃ©riode du";"Paris";"";"";
+@I00006@;Jean;DATES;https://gw.geneanet.org/nraibaut2?lang=fr&p=jean&n=dates;"Retraite";RETI;vers 1872;ABT 1872;"";"Date interprÃªtÃ©e";"";"";"";
