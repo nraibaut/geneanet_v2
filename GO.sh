@@ -27,11 +27,12 @@ scrapy crawl geneanet -a url="https://gw.geneanet.org/oollierbolvin?lang=fr&n=ni
 scrapy crawl geneanet -a url="https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne" # 29 personnes, 8 générations
 
 # autre Marie Anne Mauche (aussi dans mon arbre)
+# complète quelques ancêtres en plus de danielr13
 scrapy crawl geneanet -a url="https://gw.geneanet.org/fapoja?lang=fr&n=mauche&oc=0&p=marie+anne" # 45 personnes, 8 générations
 }
 function go4()
 {
-scrapy crawl geneanet -a url="https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # 641 personnes, 24 générations
+scrapy crawl geneanet -a url="https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # 641 personnes, 24 générations, beaucoup d'anomalies Geneanet
 }
 function go()
 {
@@ -42,6 +43,7 @@ go4
 }
 
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
+mkdir -p "result/pages"
 #scrapy crawl geneanet -a url="https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # 641 personnes, 24 générations
 
 go
@@ -59,23 +61,24 @@ egrep -H 'Traceback|During handling of the above exception, another exception oc
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Erreurs :"
 #egrep -H 'Traceback|ERROR' result/*.log
-grep -H 'ERROR' result/*.log
+grep -H 'ERROR' result/*.log | sed -e 's;@I[0-9]*@;@Ixxxxx@;g' -e 's; sosa [0-9]* ; sosa xxxxxx ;g' | sort
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Anomalies ged / csv :"
-egrep -H ' None | None$|\?\?\?\?' result/*.ged
+egrep -H ' None | None$|\?\?\?\?' result/*.ged | sort
 grep -c sosa_symbol result/*.csv | grep -v ':0$'
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Anomalies Geneanet :"
-grep -H 'Anomalies détectées' result/*.log
+grep -H 'Anomalies détectées' result/*.log | sed -e 's; sosa [0-9]* ; sosa xxxxxx ;g' | sort
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Consanguinité :"
-grep -H "enfants dans la famille" result/*.log
+grep -H "enfants dans la famille" result/*.log | sed -e 's;@F[0-9]*@;@Fxxxxx@;g' | sort
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Todo :"
-grep -H '@todo' result/*.ged | grep -v '_ancestris'
+grep -H '@todo' result/*.ged | sort | grep -v '_ancestris'
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Statistiques :"
 grep -H 'INFO: - ' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
 }
 go_logs | tee result/synthese.log.txt
+
