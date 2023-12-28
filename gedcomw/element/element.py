@@ -352,7 +352,7 @@ class Element(object):
         element_source = Element(0, source_pointer, gedcomw.tags.GEDCOM_TAG_SOURCE, '', '\n', multi_line=False)
         element_title = Element(1, '', gedcomw.tags.GEDCOM_TAG_TITLE, title, '\n', multi_line=False)
         element_source.add_child_element(element_title)
-        if text is not None :
+        if (text is not None) and (text != ""):  # pour éviter erreur "Le tag SOUR:TEXT n'a pas de valeur" lors du contrôle de validité par Ancestris
             element_text = Element(1, '', gedcomw.tags.GEDCOM_TAG_TEXT, text, '\n', multi_line=True)
             element_source.add_child_element(element_text)
         root_element.add_child_element(element_source)

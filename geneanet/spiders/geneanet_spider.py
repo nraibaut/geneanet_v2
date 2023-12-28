@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.13"
+    version = "1.0.14"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
