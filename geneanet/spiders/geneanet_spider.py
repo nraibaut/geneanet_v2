@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.14"
+    version = "1.0.15"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -335,6 +335,8 @@ class GeneanetSpider(scrapy.Spider):
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le nom pour {true_http_url} !")
             nom = "????"
+        prenom = re.sub("^\.\.*\.$", "", prenom) # cas de certains prénoms valant "..." --> vide
+        nom = re.sub("^\.\.*\.$", "", nom) # cas de certains prénoms valant "..." --> vide
         if extraire_surnom:
             surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
             # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
