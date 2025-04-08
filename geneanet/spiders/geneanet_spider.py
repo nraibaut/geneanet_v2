@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.15"
+    version = "1.0.16"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -74,6 +74,22 @@ class GeneanetSpider(scrapy.Spider):
         "Événements",
         "Présences lors d'événements"
     ]
+    # 29/03/25 : Method 2: Use Scrapy-Fake-Useragent :
+    # voir https://scrapeops.io/python-scrapy-playbook/scrapy-403-unhandled-forbidden-error/#use-fake-user-agents
+    # voir aussi settings.py
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Cache-Control": "max-age=0",
+    }
 
     # Configuration fichier de sortie log :
     # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -266,7 +282,7 @@ class GeneanetSpider(scrapy.Spider):
         url_to_scan = self.get_url_to_scan(true_url)
         self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
 
-        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'true_http_url':true_url} )
+        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'true_http_url':true_url}, headers=self.HEADERS)
 
     def parse(self, response):
         url_source = response.request.url
@@ -680,6 +696,10 @@ class GeneanetSpider(scrapy.Spider):
             url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
             url_parent = response.urljoin(url_parent)
             presence_parents = "forme1" # forme 1
+            # mars 2025 : beaucoup d'erreurs 403, dont certaines systématiques sur des url contenant "&iz=12"
+            # (cas arbo https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus : https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=maria+joanna&n=pieters)
+            # Etrangement, en supprimant ce champ "iz=", les erreurs disparaissent...
+            url_parent = re.sub("&iz=[0-9]*", "", url_parent)  # suppression "&iz=xxx"
 
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
@@ -687,7 +707,7 @@ class GeneanetSpider(scrapy.Spider):
             parents_url[nb_parents]=true_url_parent
 
             self.set_parent_of( true_http_url, true_url_parent)
-            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent})
+            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
 
         # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->")
         # Parents forme 2b ("<!-- Parents evolue -->") : il ne faut pas prendre le premier lien hypertexte (qui contient la balise img)
@@ -697,6 +717,7 @@ class GeneanetSpider(scrapy.Spider):
                 url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_parent = response.urljoin(url_parent)
                 presence_parents = "forme2"  # forme 2
+                url_parent = re.sub("&iz=[0-9]*", "", url_parent)  # suppression "&iz=xxx" (voir explication plus haut)
 
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
@@ -735,7 +756,7 @@ class GeneanetSpider(scrapy.Spider):
                             self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
                 self.set_parent_of( true_http_url, true_url_parent)
-                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent})
+                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
             if mariage_date:
