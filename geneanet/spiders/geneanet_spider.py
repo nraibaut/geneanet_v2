@@ -21,12 +21,13 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.16"
+    version = "1.0.17"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
     result_name = "tbd.tmp" # sera connu plus tard
     nb_persons = 0
+    nb_masked_persons = 0
     nb_families = 0
     nb_consanguinites = 0
     nb_titres_noblesse = 0
@@ -336,13 +337,22 @@ class GeneanetSpider(scrapy.Spider):
         prenom = response.xpath("//div[@id='person-title']/div/h1/a[1]/text()").get()
         nom = response.xpath("//div[@id='person-title']/div/h1/a[2]/text()").get()
         extraire_surnom = False # cas avec surnom en tête, et liens nom/prénom plus loin
-        surnom = None
         if prenom is None:
             prenom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=P&')]/text()").get() # lien hypetexte contenant "&m=P&" (recherche par prénom)
             extraire_surnom = True
         if nom is None:
             nom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=N&')]/text()").get() # lien hypetexte contenant "&m=N&" (recherche par nom)
             extraire_surnom = True
+        if prenom is None and nom is None:
+            # Cas personne masquée ?
+            is_masked = response.xpath("//span[@class='masked-person']/text()").get()
+            #if is_masked == "\nPersonne masquée":
+            if is_masked != None:
+                prenom = "?"
+                nom = "?"
+                texte_infos = texte_infos + "Personne masquée\n"
+                self.nb_masked_persons += 1
+                extraire_surnom = False
         if prenom is None :
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le prénom pour {true_http_url} !")
@@ -1009,6 +1019,7 @@ class GeneanetSpider(scrapy.Spider):
 
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
         spider.logger.info(f"- nb_persons            = {self.nb_persons}")
+        spider.logger.info(f"- nb_masked_persons     = {self.nb_masked_persons}")
         spider.logger.info(f"- nb_families           = {self.nb_families}")
         spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
         spider.logger.info(f"- nb_consanguinites     = {self.nb_consanguinites}")
