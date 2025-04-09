@@ -90,6 +90,7 @@ class IndividualElement(Element):
         #"Contrat de mariage" : "???", # Evénements "Contrat de mariage" ignorés en amont (unions gérées séparément)
         "Diplôme" : "GRAD",
         "Domicile" : "RESI",
+        "Domicilie" : "RESI",
         "Décès" : "DEAT",
         "Inhumation" : "BURI",
         "Naissance" : "BIRT",
@@ -110,6 +111,7 @@ class IndividualElement(Element):
                         "Mariage",            # cas "Mariage (avec xxx)"
                         "Contrat de mariage", # cas "Contrat de mariage (avec xxx)"
                         "Non mariés",         # cas "Non mariés (avec xxx)
+                        "Service militaire",
                         ]
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
