@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.18"
+    version = "1.0.19"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -231,6 +231,7 @@ class GeneanetSpider(scrapy.Spider):
         result = re.sub("([ 0-9]* SUBM @S[0-9]*@ *)\n", "", result )
 
         result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
+        result = re.sub("\n\\\\", "\n", result)  # suppression des caractères "\" en début de lignes
 
         result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
         result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
