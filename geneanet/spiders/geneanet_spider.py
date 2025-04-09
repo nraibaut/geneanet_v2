@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.17"
+    version = "1.0.18"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -180,6 +180,18 @@ class GeneanetSpider(scrapy.Spider):
             #result = "file:" + cache_html_page # KO... visiblement, il FAUT un chemin absolu !!!!
             #result = "file:D:/Users/Nicolas/Documents/Python/geneanet/" + cache_html_page
             result = "file:" + os.getcwd() + "/" + cache_html_page
+
+        return result
+    def patch_url(self, url):
+        result = url
+        # mars 2025 : beaucoup d'erreurs 403, dont certaines systématiques sur des url contenant "&iz=12"
+        # (cas arbo https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus : https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=maria+joanna&n=pieters)
+        # Etrangement, en supprimant ce champ "iz=", les erreurs disparaissent...
+        result = re.sub("&iz=[^&]*", "", result)  # suppression "&iz=xxx"
+        # complément avril 2025 : même problème avec "&pz=xxx" et "&nz=xxx"
+        # (cas arbo https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
+        result = re.sub("&pz=[^&]*", "", result)  # suppression "&pz=xxx"
+        result = re.sub("&nz=[^&]*", "", result)  # suppression "&nz=xxx"
 
         return result
 
@@ -363,6 +375,7 @@ class GeneanetSpider(scrapy.Spider):
             nom = "????"
         prenom = re.sub("^\.\.*\.$", "", prenom) # cas de certains prénoms valant "..." --> vide
         nom = re.sub("^\.\.*\.$", "", nom) # cas de certains prénoms valant "..." --> vide
+        nom = nom.upper() # Nom en majuscules
         if extraire_surnom:
             surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
             # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
@@ -709,7 +722,7 @@ class GeneanetSpider(scrapy.Spider):
             # mars 2025 : beaucoup d'erreurs 403, dont certaines systématiques sur des url contenant "&iz=12"
             # (cas arbo https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus : https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=maria+joanna&n=pieters)
             # Etrangement, en supprimant ce champ "iz=", les erreurs disparaissent...
-            url_parent = re.sub("&iz=[0-9]*", "", url_parent)  # suppression "&iz=xxx"
+            url_parent = self.patch_url(url_parent)
 
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
@@ -727,7 +740,7 @@ class GeneanetSpider(scrapy.Spider):
                 url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_parent = response.urljoin(url_parent)
                 presence_parents = "forme2"  # forme 2
-                url_parent = re.sub("&iz=[0-9]*", "", url_parent)  # suppression "&iz=xxx" (voir explication plus haut)
+                url_parent = self.patch_url(url_parent) # suppression "&iz=xxx", "&pz=xxx", "&nz=xxx",... (voir explication plus haut)
 
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
@@ -873,11 +886,15 @@ class GeneanetSpider(scrapy.Spider):
         # Détection encart "Anomalies détectées"
         #if response.xpath("//gw-individual-anomalies"):
         #if response.xpath("//script[contains(text(),'gntGeneweb.person.anomalies')]"):
-        if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies', [])\")]"):
+        #if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies', [])\")]"): # KO avril 2025
+        # avril 2025 : avant, pour une personne sans anomalie on avait "GeneanetKeys.add('gntGeneweb.person.anomalies', []);"
+        # maintenant : "GeneanetKeys.add('gntGeneweb.person.anomalies',
+        # 		   JSON.parse('[]'.replace(/&lt;/..."
+        if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies'\") and contains(text(),\"JSON.parse('[]'\")]"):
             nb_errors_indiv += 1
-            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Anomalies détectées sur {prenom} {nom}. Vérifier la source.")
+            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.")
             self.nb_todo += 1
-            texte_infos = texte_infos + f"@todo Anomalies détectées sur {prenom} {nom}. Vérifier la source.\n"
+            texte_infos = texte_infos + f"@todo Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.\n"
 
         # Liste/contrôle des rubriques
         #for info in response.xpath("//h2[span/@class]/span[2]/text()"): # NON à cause § "Union(s), enfant(s)"... : extraire text() après for
