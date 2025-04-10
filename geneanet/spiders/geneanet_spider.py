@@ -192,6 +192,7 @@ class GeneanetSpider(scrapy.Spider):
         # (cas arbo https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna)
         result = re.sub("&pz=[^&]*", "", result)  # suppression "&pz=xxx"
         result = re.sub("&nz=[^&]*", "", result)  # suppression "&nz=xxx"
+        result = re.sub("&ocz=[^&]*", "", result)  # suppression "&ocz=xxx"
 
         return result
 
@@ -893,7 +894,7 @@ class GeneanetSpider(scrapy.Spider):
         # 		   JSON.parse('[]'.replace(/&lt;/..."
         if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies'\") and contains(text(),\"JSON.parse('[]'\")]"):
             nb_errors_indiv += 1
-            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.")
+            self.logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.")
             self.nb_todo += 1
             texte_infos = texte_infos + f"@todo Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.\n"
 
