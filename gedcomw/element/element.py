@@ -242,6 +242,20 @@ class Element(object):
         """
         return self.__children
 
+    def nra_get_child_element_by_tag_and_pointer(self, tag, pointer):
+        """Renvoie l'élément fils correspondant à tag/pointeur
+        """
+        #self.logger.info(f"nra_get_child_element_by_tag_and_pointer '{tag}' '{pointer}'")
+
+        for child in self.__children :
+            if child.get_tag() == tag and child.get_pointer() == pointer :
+                return child
+            else:
+                ret = child.nra_get_child_element_by_tag_and_pointer( tag, pointer)
+                if ret != None:
+                    return ret
+        return None
+
     def new_child_element(self, tag, pointer="", value=""):
         """Creates and returns a new child element of this element
 

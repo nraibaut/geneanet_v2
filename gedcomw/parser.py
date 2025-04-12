@@ -673,9 +673,17 @@ class Parser(object):
         if pointer_husband != None :
             element_husb = Element(1, '', gedcomw.tags.GEDCOM_TAG_HUSBAND, pointer_husband, '\n', multi_line=False)
             element_fam.add_child_element(element_husb)
+            person = self.get_root_element().nra_get_child_element_by_tag_and_pointer(gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, pointer_husband)
+            if person != None :
+                element_fams = Element(1, '', gedcomw.tags.GEDCOM_TAG_FAMILY_SPOUSE, pointer_family, '\n', multi_line=False)
+                person.add_child_element(element_fams)
         if pointer_wife != None :
             element_wife = Element(1, '', gedcomw.tags.GEDCOM_TAG_WIFE, pointer_wife, '\n', multi_line=False)
             element_fam.add_child_element(element_wife)
+            person = self.get_root_element().nra_get_child_element_by_tag_and_pointer(gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, pointer_wife)
+            if person != None :
+                element_fams = Element(1, '', gedcomw.tags.GEDCOM_TAG_FAMILY_SPOUSE, pointer_family, '\n', multi_line=False)
+                person.add_child_element(element_fams)
         if (mariage_date != None) or (mariage_place != None) or (mariage_source != None) or (mariage_note != None) :
             element_marriage = Element(1, '', gedcomw.tags.GEDCOM_TAG_MARRIAGE, '', '\n', multi_line=False)
             element_fam.add_child_element(element_marriage)
@@ -706,6 +714,10 @@ class Parser(object):
         for pointer_child in children_pointers:
             element_child = Element(1, '', gedcomw.tags.GEDCOM_TAG_CHILD, pointer_child, '\n', multi_line=False)
             element_fam.add_child_element(element_child)
+            person = self.get_root_element().nra_get_child_element_by_tag_and_pointer(gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, pointer_child)
+            if person != None :
+                element_fams = Element(1, '', gedcomw.tags.GEDCOM_TAG_FAMILY_CHILD, pointer_family, '\n', multi_line=False)
+                person.add_child_element(element_fams)
 
         self.get_root_element().add_child_element(element_fam)
 
