@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.19"
+    version = "1.0.20"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -48,6 +48,7 @@ class GeneanetSpider(scrapy.Spider):
     mariages_dates = {} # dictionnaire des dates de mariaqes (index = "<true_url_pere>;<true_url_mere>")
     mariages_places = {} # dictionnaire des lieux de mariages (index = "<true_url_pere>;<true_url_mere>")
     mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_pere_ou_mere>")
+    mariages_note_union = {} # dictionnaire des notes sur les unions (index = "<true_url_pere>;<true_url_mere>")
     true_url_of = {} # dictionnaire des url (index = <pointer>)
     is_http_url = re.compile("^http[s]*:.*")
     #is_file_url = re.compile("^file:.*")
@@ -682,33 +683,6 @@ class GeneanetSpider(scrapy.Spider):
                     self.nb_todo += 1
                     texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
 
-        # Autres notes (certains cas, pas tous, de "Notes concernant l'union"
-        #for note in response.xpath("//*[@name='note-wed-1']"):
-        #for note in response.xpath("//p[a/@name='note-wed-1']"):
-        # le seul cas rencontré est :
-        # <p><a name="note-wed-1"></a>...&#34;laquelle SYBILLE a accusé ledit BAR de crime de rapt...&#34;</p>
-        # Par robustesse, je prends tout ce qui a @name='note-wed-1' (pas seulement balise "a" dans balise "p") :
-        for note in response.xpath("//*[*/@name='note-wed-1']"):
-            nb_notes += 1
-            note_text = html2text.html2text(note.get()).strip()
-            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
-            if note_text == "":
-                # des cas où le text est dans la balise <p> suivante :
-                note_text = note.xpath("following-sibling::p/text()").get().strip()
-                note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
-            if note_text == "":
-                nb_errors_indiv += 1
-                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union vide ! Vérifier le code...")
-            else:
-                note_text = self.post_trt_notes(note_text)
-                # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
-                if note_text != "":
-                    if len(note_text) >= self.lg_min_notes_longues:
-                        nb_notes_longues += 1
-                    self.nb_todo += 1
-                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union à analyser : '{note_text}'")
-                    texte_infos = texte_infos + f"@todo note union à analyser pour {prenom} {nom} : '{note_text}'\n"
-
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
         presence_parents=""
@@ -800,7 +774,6 @@ class GeneanetSpider(scrapy.Spider):
             self.csv_unions.write(ligne)
 
 
-
         elif nb_parents > 2 :
             nb_errors_indiv += 1
             self.logger.error(f"{nb_parents} parents for {prenom} {nom} ({true_http_url}) !")
@@ -860,6 +833,33 @@ class GeneanetSpider(scrapy.Spider):
                     self.mariages_places[key] = mariage_place
                 else:
                     mariage_place = ""
+
+                # Autres notes (certains cas, pas tous, de "Notes concernant l'union"
+                # for note in response.xpath("//*[@name='note-wed-1']"):
+                # for note in response.xpath("//p[a/@name='note-wed-1']"):
+                # le seul cas rencontré est :
+                # <p><a name="note-wed-1"></a>...&#34;laquelle SYBILLE a accusé ledit BAR de crime de rapt...&#34;</p>
+                # Par robustesse, je prends tout ce qui a @name='note-wed-*' (pas seulement balise "a" dans balise "p") :
+                for note in response.xpath(f"//*[*/@name='note-wed-{nb_unions}']"):
+                    nb_notes += 1
+                    note_text = html2text.html2text(note.get()).strip()
+                    note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+                    if note_text == "":
+                        # des cas où le text est dans la balise <p> suivante :
+                        note_text = note.xpath("following-sibling::p/text()").get().strip()
+                        note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+                    if note_text == "":
+                        nb_errors_indiv += 1
+                        self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union vide ! Vérifier le code...")
+                    else:
+                        note_text = self.post_trt_notes(note_text)
+                        # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+                        if note_text != "":
+                            if len(note_text) >= self.lg_min_notes_longues:
+                                nb_notes_longues += 1
+                            self.mariages_note_union[key] = note_text
+                            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union {nb_unions} : '{note_text}'")
+
                 #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
                 #debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
                 ligne = f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n"
@@ -1008,6 +1008,14 @@ class GeneanetSpider(scrapy.Spider):
                 pass
             try:
                 mariage_place = self.mariages_places[key]
+            except:
+                pass
+            try:
+                mariage_note_union = self.mariages_note_union[key]
+                if mariage_note == None:
+                    mariage_note = mariage_note_union
+                else :
+                    mariage_note = f"{mariage_note}\n{mariage_note_union}"
             except:
                 pass
             try:
