@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.20"
+    version = "1.0.21"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -556,6 +556,32 @@ class GeneanetSpider(scrapy.Spider):
                     nb_notes_longues += 1
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
 
+            lines = event.xpath("td[2]/p").get()
+            #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines paragraphe  = '{lines}'")
+            event_notes_complementaires = None # infos de type témoins, parrains, ...
+            if not lines is None:
+                #event_notes = html2text.html2text(event_notes)
+                event_notes_complementaires = html2text.html2text(lines).strip()
+                event_notes_complementaires = re.sub(" *\n", "\n", event_notes_complementaires) # suppression des espaces ajoutés en fin de lignes
+                event_notes_complementaires = self.post_trt_notes(event_notes_complementaires)
+                if len(event_notes_complementaires) >= self.lg_min_notes_longues :
+                    nb_notes_longues += 1
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes_complementaires = '{event_notes_complementaires}'")
+
+            # Concaténetion event_notes + event_notes_complementaires
+            event_notes2 = ""
+            if not event_notes is None:
+                event_notes2 = event_notes
+            if not event_notes_complementaires is None:
+                if event_notes2 == "":
+                    event_notes2 = event_notes_complementaires
+                else:
+                    event_notes2 = event_notes2 + "\n" + event_notes_complementaires
+
+            # on remplace event_notes avec l'éventuelle concaténetion de event_notes + event_notes_complementaires
+            if not event_notes2 == "":
+                event_notes = event_notes2
+
             lines = event.xpath("td[2]/span[@class='ssource']").get()
             event_sources = None
             #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
@@ -579,11 +605,16 @@ class GeneanetSpider(scrapy.Spider):
                 self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
             # 02/09/23 : finalement, je garde tous les événements, y compris mariages / contrats de mariage
-            # pour avoir les notes, parfois intéressantes
-            #if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
-            #    # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
-            #    #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
-            #    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
+            # pour avoir les notes, parfois intéressantes.
+            # Complément avril 25 : je signale ceux n'apportant ni note ni source
+            if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
+                # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
+                #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement de type mariage / contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
+                if event_notes is None and event_sources is None :
+                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : redondance probable événement de type mariage / contrat de mariage SANS note ou source '{event_name}' : date='{event_date}', place='{event_place}'")
+                    event_notes = f"@todo événement de type mariage probablement redondant pour {prenom} {nom}"
+
             #    # on ignore les infos (normalement, on les a via la fiche enfant)
             #    self.nb_todo += 1
             #    texte_infos = texte_infos + f"@todo vérifier prise en compte événement '{event_name}' pour {prenom} {nom}\n"
