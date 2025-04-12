@@ -708,7 +708,7 @@ class Parser(object):
                 element_source.add_child_element(element_text)
                 self.get_root_element().add_child_element(element_source)
             if mariage_note != None :
-                element_marriage_note = Element(2, '', gedcomw.tags.GEDCOM_TAG_NOTE, mariage_note, '\n', multi_line=False)
+                element_marriage_note = Element(2, '', gedcomw.tags.GEDCOM_TAG_NOTE, mariage_note, '\n', multi_line=True)
                 element_marriage.add_child_element(element_marriage_note)
 
         for pointer_child in children_pointers:
