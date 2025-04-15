@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.24"
+    version = "1.0.25"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -206,10 +206,12 @@ class GeneanetSpider(scrapy.Spider):
         :param url_parent2:
         :return:
         """
-        if url_parent1 > url_parent2:
-            result = url_parent1 + ";" + url_parent2
+        url_parent1b = self.patch_url(url_parent1) # robustesse : ne pas considérer "&pz=xxxx&nz=xxxx" , "&iz=xxx" dans la clé
+        url_parent2b = self.patch_url(url_parent2)
+        if url_parent1b > url_parent2b:
+            result = url_parent1b + ";" + url_parent2b
         else:
-            result = url_parent2 + ";" + url_parent1
+            result = url_parent2b + ";" + url_parent1b
         return result
 
     def set_parent_of(self, child_true_url, parent_true_url):
@@ -359,6 +361,13 @@ class GeneanetSpider(scrapy.Spider):
         if nom is None:
             nom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=N&')]/text()").get() # lien hypetexte contenant "&m=N&" (recherche par nom)
             extraire_surnom = True
+        # Certains noms/prénoms sont à côté de "div[@id='person-title'", mais avec un niveau "span" supplémentaire
+        if prenom is None:
+            prenom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=P&')]/text()").get()  # lien hypetexte contenant "&m=P&" (recherche par prénom)
+            extraire_surnom = True
+        if nom is None:
+            nom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=N&')]/text()").get()  # lien hypetexte contenant "&m=N&" (recherche par nom)
+            extraire_surnom = True
         if prenom is None and nom is None:
             # Cas personne masquée ?
             is_masked = response.xpath("//span[@class='masked-person']/text()").get()
@@ -377,12 +386,14 @@ class GeneanetSpider(scrapy.Spider):
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le nom pour {true_http_url} !")
             nom = "????"
-        prenom = re.sub("^\.\.*\.$", "", prenom) # cas de certains prénoms valant "..." --> vide
-        nom = re.sub("^\.\.*\.$", "", nom) # cas de certains prénoms valant "..." --> vide
+        prenom = re.sub("^\.\.*\.$", "?", prenom) # cas de certains prénoms valant "..." --> vide
+        nom = re.sub("^\.\.*\.$", "?", nom) # cas de certains prénoms valant "..." --> vide
         nom = nom.upper() # Nom en majuscules
         if extraire_surnom:
-            surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
-            # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
+            surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1/em").get()) # on tente d'extraire la partie "em"
+            if surnom is None:
+                surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
+                # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
             surnom = surnom.replace(u"\u00A0", " ")  # avant toute chose !
             surnom = re.sub(".*\.png\) *", "", surnom) # suppression image de début
             surnom = re.sub("_", "", surnom) # suppression caractères de formatage
@@ -829,11 +840,13 @@ class GeneanetSpider(scrapy.Spider):
             match_union = self.union_regex.match(line)
             if match_union:
                 debut = match_union.groups(0)[0].strip()
-                nom_conjoint = match_union.groups(0)[1]
+                #nom_conjoint = match_union.groups(0)[1] KO si présence lien sosa
                 #url_conjoint = match_union.groups(0)[2] # NON ! Ko si présence lien sosa
                 url_conjoint = union.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_conjoint = response.urljoin(url_conjoint)
                 url_conjoint = self.url_to_true_http_url(true_http_url, url_conjoint)
+                url_conjoint = self.patch_url(url_conjoint) # pour supprimer "&pz=xxxx&nz=xxxx" dans le cas sosa (important, car ne doit pas figurer dans la clé)
+                nom_conjoint = union.xpath("a[count(img)=0]/text()").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
 
                 # La plupart du temps, on a forme "Marié ..." / "Mariée ...", sauf parfois :
                 # "Relation" ou "Contrat de mariage"
