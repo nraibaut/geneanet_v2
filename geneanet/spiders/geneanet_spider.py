@@ -21,7 +21,7 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.23"
+    version = "1.0.24"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -42,6 +42,7 @@ class GeneanetSpider(scrapy.Spider):
     nb_scanned_pages = 0
     nb_saved_pages = 0
     nb_cached_pages = 0
+    http_delay = 2 # pause supplémentaire pour lectures http (en plus de DOWNLOAD_DELAY, applicable aux lectures http et fichiers en cache)
     parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
     pointer_of = {} # dictionnaire des pointeurs (id) de chaque individu (index = <true_url>)
     sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <true_url>)
@@ -737,6 +738,9 @@ class GeneanetSpider(scrapy.Spider):
             parents_url[nb_parents]=true_url_parent
 
             self.set_parent_of( true_http_url, true_url_parent)
+            if not url_parent_to_scan.startswith('file:') :
+                self.log( f"Pause before scraping '{url_parent_to_scan}'")
+                time.sleep(self.http_delay)
             yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
 
         # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->")
@@ -786,6 +790,9 @@ class GeneanetSpider(scrapy.Spider):
                             self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
                 self.set_parent_of( true_http_url, true_url_parent)
+                if not url_parent_to_scan.startswith('file:'):
+                    self.log(f"Pause before scraping '{url_parent_to_scan}'")
+                    time.sleep(self.http_delay)
                 yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
