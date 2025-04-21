@@ -21,12 +21,13 @@ import tempfile
 class GeneanetSpider(scrapy.Spider):
     name = "geneanet"
     progname = "GeneanetSpider"
-    version = "1.0.25"
+    version = "1.0.26"
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
     result_name = "tbd.tmp" # sera connu plus tard
     nb_persons = 0
+    nb_alias = 0
     nb_masked_persons = 0
     nb_families = 0
     nb_consanguinites = 0
@@ -411,6 +412,22 @@ class GeneanetSpider(scrapy.Spider):
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
         self.sex_of[true_http_url] = [sexe]
 
+        # Dans la section "<span ng-non-bindable>" juste après le nom, on peut avoir des infos supplémentaires "sous-titre".
+        # Chaque ligne est une balise "em".
+        # Cette section se termine par "<br class="separateur"><br >".
+        # Ignorer les éventuelles lignes "(<a href="boutch1?lang=fr&pz=marc&nz=vitelli&m=P&v=agnes">Agnès</a>", déjà traitées par ailleurs.
+        #for info in response.xpath("//div[@id='person-title']/following-sibling::span[1]/em"):
+        for info in response.xpath("//div[@id='person-title']/following-sibling::span[count(br[@class='separateur'])>0]/em[count(a/@href)=0]"):
+            line = html2text.html2text(info.get()).strip()
+            line = re.sub("^\* *", "", line)
+            line = line.replace(u"\u00A0", " ")  # avant toute chose !
+            line = re.sub(" * ", " ", line) # suppression espaces multiples
+            line = re.sub("_", "", line) # suppression caractères de formatage
+            line = re.sub("^, *", "", line) # suppression ", " en début de ligne
+            if len(line) > 0:
+                self.nb_alias += 1
+                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info sous-titre / alias = '{line}'")
+                texte_infos = texte_infos + "* " + line + '\n'
 
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
         #pause = 0
@@ -1097,6 +1114,7 @@ class GeneanetSpider(scrapy.Spider):
 
         spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
         spider.logger.info(f"- nb_persons            = {self.nb_persons}")
+        spider.logger.info(f"- nb_alias              = {self.nb_alias}")
         spider.logger.info(f"- nb_masked_persons     = {self.nb_masked_persons}")
         spider.logger.info(f"- nb_families           = {self.nb_families}")
         spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
