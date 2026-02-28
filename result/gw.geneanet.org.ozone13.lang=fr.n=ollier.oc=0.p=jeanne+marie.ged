@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 00:59 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.26 le 18/04/2025 à 01:10 à partir de https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.13
+2 VERS 1.0.26
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 08 SEP 2023
-2 TIME 00:59:46
+1 DATE 18 APR 2025
+2 TIME 01:10:29
 1 FILE gw.geneanet.org.ozone13.lang=fr.n=ollier.oc=0.p=jeanne+marie.ged
 1 GEDC
 2 VERS 5.5.1
@@ -28,27 +28,12 @@
 2 DATE 13 OCT 1846
 2 PLAC Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 1 SOUR @S00001@
+1 FAMC @F00001@
 0 @S00001@ SOUR
 1 TITL https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie
 1 TEXT - Née le 13 mars 1778 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 13 octobre 1846 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 68 ans
 0 @I00002@ INDI
-1 NAME Jean Joseph /OLLIER/
-2 GIVN Jean Joseph
-2 SURN OLLIER
-1 SEX M
-1 BIRT
-2 DATE 15 SEP 1728
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 DEAT
-2 DATE 27 AUG 1779
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00002@
-0 @S00002@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+joseph&n=ollier
-1 TEXT - Né le 15 septembre 1728 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédé le 27 août 1779 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 50 ans
-0 @I00003@ INDI
 1 NAME Catherine /MICHEL/
 2 GIVN Catherine
 2 SURN MICHEL
@@ -60,27 +45,30 @@
 2 DATE 22 DEC 1809
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 1 SOUR @S00003@
+1 FAMS @F00001@
+1 FAMC @F00002@
+0 @I00003@ INDI
+1 NAME Jean Joseph /OLLIER/
+2 GIVN Jean Joseph
+2 SURN OLLIER
+1 SEX M
+1 BIRT
+2 DATE 15 SEP 1728
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 DEAT
+2 DATE 27 AUG 1779
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00002@
+1 FAMS @F00001@
+0 @S00002@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jean+joseph&n=ollier
+1 TEXT - Né le 15 septembre 1728 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédé le 27 août 1779 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 50 ans
 0 @S00003@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=michel&oc=1
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=catherine&n=michel&oc=1
 1 TEXT - Née le 19 avril 1733 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 22 décembre 1809 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 76 ans
 0 @I00004@ INDI
-1 NAME André /MICHEL/
-2 GIVN André
-2 SURN MICHEL
-1 SEX M
-1 BIRT
-2 DATE 19 JAN 1687
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 DEAT
-2 DATE 4 APR 1756
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00004@
-0 @S00004@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=1
-1 TEXT - Né le 19 janvier 1687 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédé le 4 avril 1756 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 69 ans
-0 @I00005@ INDI
 1 NAME Catherine /QUEILUS/
 2 GIVN Catherine
 2 SURN QUEILUS
@@ -91,28 +79,32 @@
 1 DEAT
 2 DATE 20 FEB 1762
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00005@
-0 @S00005@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=queilus
+1 SOUR @S00004@
+1 FAMS @F00002@
+1 FAMC @F00003@
+0 @S00004@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=catherine&n=queilus
 1 TEXT - Née le 2 avril 1692 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 20 février 1762 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 69 ans
-0 @I00006@ INDI
-1 NAME Guillaume /MICHEL/
-2 GIVN Guillaume
+0 @I00005@ INDI
+1 NAME André /MICHEL/
+2 GIVN André
 2 SURN MICHEL
 1 SEX M
 1 BIRT
-2 DATE 22 MAY 1650
-2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 DEAT
-2 DATE 9 MAR 1729
+2 DATE 19 JAN 1687
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00006@
-0 @S00006@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=guillaume&n=michel
-1 TEXT - Né le 22 mai 1650 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédé le 9 mars 1729 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 78 ans
-0 @I00007@ INDI
+1 DEAT
+2 DATE 4 APR 1756
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00005@
+1 FAMS @F00002@
+1 FAMC @F00004@
+0 @S00005@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=andre&n=michel&oc=1
+1 TEXT - Né le 19 janvier 1687 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédé le 4 avril 1756 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 69 ans
+0 @I00006@ INDI
 1 NAME Catherine /MUS/
 2 GIVN Catherine
 2 SURN MUS
@@ -123,28 +115,32 @@
 1 DEAT
 2 DATE BEF 1729
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00007@
-0 @S00007@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=catherine&n=mus&oc=2
+1 SOUR @S00006@
+1 FAMS @F00004@
+1 FAMC @F00005@
+0 @S00006@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=catherine&n=mus&oc=2
 1 TEXT - Née le 3 août 1650 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée avant 1729 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @I00008@ INDI
-1 NAME Benoit /QUEILUS/
-2 GIVN Benoit
-2 SURN QUEILUS
+0 @I00007@ INDI
+1 NAME Guillaume /MICHEL/
+2 GIVN Guillaume
+2 SURN MICHEL
 1 SEX M
 1 BIRT
-2 DATE ABT 1660
-2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+2 DATE 22 MAY 1650
+2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 1 DEAT
-2 DATE 12 FEB 1727
+2 DATE 9 MAR 1729
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00008@
-0 @S00008@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=benoit&n=queilus
-1 TEXT - Né vers 1660 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
-2 CONT - Décédé le 12 février 1727 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 67 ans
-0 @I00009@ INDI
+1 SOUR @S00007@
+1 FAMS @F00004@
+1 FAMC @F00006@
+0 @S00007@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=guillaume&n=michel
+1 TEXT - Né le 22 mai 1650 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédé le 9 mars 1729 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 78 ans
+0 @I00008@ INDI
 1 NAME Pierrette /PICHON/
 2 GIVN Pierrette
 2 SURN PICHON
@@ -155,95 +151,32 @@
 1 DEAT
 2 DATE 5 JUL 1751
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00009@
-0 @S00009@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierrette&n=pichon
+1 SOUR @S00008@
+1 FAMS @F00003@
+1 FAMC @F00007@
+0 @S00008@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=pierrette&n=pichon
 1 TEXT - Née le 12 juin 1670 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 5 juillet 1751 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 81 ans
+0 @I00009@ INDI
+1 NAME Benoit /QUEILUS/
+2 GIVN Benoit
+2 SURN QUEILUS
+1 SEX M
+1 BIRT
+2 DATE ABT 1660
+2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+1 DEAT
+2 DATE 12 FEB 1727
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00009@
+1 FAMS @F00003@
+1 FAMC @F00008@
+0 @S00009@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=benoit&n=queilus
+1 TEXT - Né vers 1660 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+2 CONT - Décédé le 12 février 1727 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 67 ans
 0 @I00010@ INDI
-1 NAME Jean /MICHEL/
-2 GIVN Jean
-2 SURN MICHEL
-1 SEX M
-1 BIRT
-2 DATE 1594
-1 DEAT
-2 DATE 1673
-2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00010@
-0 @S00010@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=michel&oc=6
-1 TEXT - Né en 1594
-2 CONT - Décédé en 1673 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France, à l'âge de 79 ans
-0 @I00011@ INDI
-1 NAME Lucresse /BRUN/
-2 GIVN Lucresse
-2 SURN BRUN
-1 SEX F
-1 DEAT
-2 DATE AFT 1675
-2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00011@
-0 @S00011@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=lucresse&n=brun
-1 TEXT - Décédée après 1675 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-0 @I00012@ INDI
-1 NAME Pierre /MUS/
-2 GIVN Pierre
-2 SURN MUS
-1 SEX M
-1 BIRT
-2 DATE 1622
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 DEAT
-2 DATE BEF 1675
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00012@
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pierre&n=mus
-1 TEXT - Né en 1622 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédé avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @I00013@ INDI
-1 NAME Sibille /TAPIE/
-2 GIVN Sibille
-2 SURN TAPIE
-1 SEX F
-1 BIRT
-2 DATE 8 OCT 1628
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 DEAT
-2 DATE BEF 1675
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00013@
-0 @S00013@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=sibille&n=tapie
-1 TEXT - Née le 8 octobre 1628 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-2 CONT - Décédée avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @I00014@ INDI
-1 NAME Peironne /MALOSSE/
-2 GIVN Peironne
-2 SURN MALOSSE
-1 SEX F
-1 DEAT
-2 DATE BEF 1691
-2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
-1 SOUR @S00014@
-0 @S00014@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=peironne&n=malosse
-1 TEXT - Décédée avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
-0 @I00015@ INDI
-1 NAME Amant /CAILUS/
-2 GIVN Amant
-2 SURN CAILUS
-1 SEX M
-1 DEAT
-2 DATE BEF 1691
-2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
-1 SOUR @S00015@
-0 @S00015@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=amant&n=cailus
-1 TEXT - Décédé avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
-0 @I00016@ INDI
 1 NAME Jean /PICHON/
 2 GIVN Jean
 2 SURN PICHON
@@ -256,14 +189,81 @@
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 1 OCCU Cardeur en laine
 2 NOTE @N00001@
-1 SOUR @S00016@
+1 SOUR @S00011@
+1 FAMS @F00007@
+1 FAMC @F00009@
+0 @I00011@ INDI
+1 NAME Lucresse /BRUN/
+2 GIVN Lucresse
+2 SURN BRUN
+1 SEX F
+1 DEAT
+2 DATE AFT 1675
+2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00012@
+1 FAMS @F00006@
+1 FAMC @F00010@
+0 @I00012@ INDI
+1 NAME Jean /MICHEL/
+2 GIVN Jean
+2 SURN MICHEL
+1 SEX M
+1 BIRT
+2 DATE 1594
+1 DEAT
+2 DATE 1673
+2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00010@
+1 FAMS @F00006@
+1 FAMC @F00011@
+0 @S00010@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jean&n=michel&oc=5
+1 TEXT - Né en 1594
+2 CONT - Décédé en 1673 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France, à l'âge de 79 ans
 0 @N00001@ NOTE
-0 @S00016@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=2
+0 @S00011@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jean&n=pichon&oc=2
 1 TEXT - Né le 11 janvier 1634 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédé le 29 août 1709 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge de 75 ans
 2 CONT - Cardeur en laine
-0 @I00017@ INDI
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=lucresse&n=brun
+1 TEXT - Décédée après 1675 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+0 @I00013@ INDI
+1 NAME Sibille /TAPIE/
+2 GIVN Sibille
+2 SURN TAPIE
+1 SEX F
+1 BIRT
+2 DATE 8 OCT 1628
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 DEAT
+2 DATE BEF 1675
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00013@
+1 FAMS @F00005@
+0 @S00013@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=sibille&n=tapie
+1 TEXT - Née le 8 octobre 1628 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédée avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+0 @I00014@ INDI
+1 NAME Pierre /MUS/
+2 GIVN Pierre
+2 SURN MUS
+1 SEX M
+1 BIRT
+2 DATE 1622
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 DEAT
+2 DATE BEF 1675
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00014@
+1 FAMS @F00005@
+0 @S00014@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=pierre&n=mus
+1 TEXT - Né en 1622 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+2 CONT - Décédé avant 1675 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+0 @I00015@ INDI
 1 NAME Jeanne /RAOUX/
 2 GIVN Jeanne
 2 SURN RAOUX
@@ -274,12 +274,52 @@
 1 DEAT
 2 DATE 10 JUL 1711
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00017@
-0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jeanne&n=raoux&oc=1
+1 SOUR @S00015@
+1 FAMS @F00007@
+0 @S00015@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jeanne&n=raoux&oc=1
 1 TEXT - Née vers 1621 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédée le 10 juillet 1711 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France, à l'âge d'environ 90 ans
+0 @I00016@ INDI
+1 NAME Peironne /MALOSSE/
+2 GIVN Peironne
+2 SURN MALOSSE
+1 SEX F
+1 DEAT
+2 DATE BEF 1691
+2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+1 SOUR @S00016@
+1 FAMS @F00008@
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=peironne&n=malosse
+1 TEXT - Décédée avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+0 @I00017@ INDI
+1 NAME Amant /CAILUS/
+2 GIVN Amant
+2 SURN CAILUS
+1 SEX M
+1 DEAT
+2 DATE BEF 1691
+2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
+1 SOUR @S00017@
+1 FAMS @F00008@
+0 @S00017@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=amant&n=cailus
+1 TEXT - Décédé avant 1691 - Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France
 0 @I00018@ INDI
+1 NAME Marthe /RICHARD/
+2 GIVN Marthe
+2 SURN RICHARD
+1 SEX F
+1 DEAT
+2 DATE 1667
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00018@
+1 FAMS @F00009@
+0 @S00018@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=marthe&n=richard&oc=1
+1 TEXT - Décédée en 1667 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
+0 @I00019@ INDI
 1 NAME Honorade /BLANC/
 2 GIVN Honorade
 2 SURN BLANC
@@ -287,11 +327,12 @@
 1 DEAT
 2 DATE AFT 1649
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00018@
-0 @S00018@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=blanc
+1 SOUR @S00019@
+1 FAMS @F00011@
+0 @S00019@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=honorade&n=blanc
 1 TEXT - Décédée après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-0 @I00019@ INDI
+0 @I00020@ INDI
 1 NAME André /MICHEL/
 2 GIVN André
 2 SURN MICHEL
@@ -299,22 +340,11 @@
 1 DEAT
 2 DATE AFT 1649
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00019@
-0 @S00019@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=andre&n=michel&oc=2
-1 TEXT - Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
-0 @I00020@ INDI
-1 NAME Honorade /RAYBAUD/
-2 GIVN Honorade
-2 SURN RAYBAUD
-1 SEX F
-1 DEAT
-2 DATE AFT 1649
-2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 1 SOUR @S00020@
+1 FAMS @F00011@
 0 @S00020@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=honorade&n=raybaud
-1 TEXT - Décédée après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=andre&n=michel&oc=2
+1 TEXT - Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 0 @I00021@ INDI
 1 NAME Claude /BRUN/
 2 GIVN Claude
@@ -324,22 +354,11 @@
 2 DATE AFT 1649
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 1 SOUR @S00021@
+1 FAMS @F00010@
 0 @S00021@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=claude&n=brun
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=claude&n=brun
 1 TEXT - Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 0 @I00022@ INDI
-1 NAME Marthe /RICARD/
-2 GIVN Marthe
-2 SURN RICARD
-1 SEX F
-1 DEAT
-2 DATE 1667
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-1 SOUR @S00022@
-0 @S00022@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=ricard&oc=6
-1 TEXT - Décédée en 1667 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
-0 @I00023@ INDI
 1 NAME Pons /PICHON/
 2 GIVN Pons
 2 SURN PICHON
@@ -350,22 +369,37 @@
 1 DEAT Y
 1 OCCU Cardeur
 2 NOTE @N00002@
-1 SOUR @S00023@
+1 SOUR @S00022@
+1 FAMS @F00009@
+1 FAMC @F00012@
 0 @N00002@ NOTE
-0 @S00023@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=pons&n=pichon
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=pons&n=pichon
 1 TEXT - Né le 19 janvier 1607 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédé
 2 CONT - Cardeur
+0 @I00023@ INDI
+1 NAME Honorade /RAYBAUD/
+2 GIVN Honorade
+2 SURN RAYBAUD
+1 SEX F
+1 DEAT
+2 DATE AFT 1649
+2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+1 SOUR @S00023@
+1 FAMS @F00010@
+0 @S00023@ SOUR
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=honorade&n=raybaud
+1 TEXT - Décédée après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
 0 @I00024@ INDI
 1 NAME Marthe /AMIEL/
 2 GIVN Marthe
 2 SURN AMIEL
 1 SEX F
 1 SOUR @S00024@
+1 FAMS @F00012@
 0 @S00024@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=marthe&n=amiel
-1 TEXT
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=marthe&n=amiel
 0 @I00025@ INDI
 1 NAME Jean /PICHON/
 2 GIVN Jean
@@ -377,8 +411,10 @@
 2 DATE 21 JUN 1639
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 1 SOUR @S00025@
+1 FAMS @F00012@
+1 FAMC @F00013@
 0 @S00025@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean&n=pichon&oc=3
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jean&n=pichon&oc=3
 1 TEXT - Né - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 2 CONT - Décédé le 21 juin 1639 - Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France
 0 @I00026@ INDI
@@ -387,99 +423,93 @@
 2 SURN CHABERT
 1 SEX F
 1 SOUR @S00026@
+1 FAMS @F00013@
 0 @S00026@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=magdeleine&n=chabert&oc=7
-1 TEXT
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=magdeleine&n=chabert&oc=7
 0 @I00027@ INDI
 1 NAME Jean "Vieux" /PICHON/
 2 GIVN Jean "Vieux"
 2 SURN PICHON
 1 SEX M
 1 SOUR @S00027@
+1 FAMS @F00013@
 0 @S00027@ SOUR
-1 TITL https://gw.geneanet.org/ozone13?lang=fr&pz=robert+jean+marie&nz=fraysse&p=jean+vieux&n=pichon
-1 TEXT
+1 TITL https://gw.geneanet.org/ozone13?lang=fr&p=jean+vieux&n=pichon
 0 @F00001@ FAM
-1 HUSB @I00002@
-1 WIFE @I00003@
+1 HUSB @I00003@
+1 WIFE @I00002@
 1 MARR
 2 DATE 7 FEB 1757
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
 1 CHIL @I00001@
 0 @F00002@ FAM
-1 HUSB @I00004@
-1 WIFE @I00005@
-1 MARR
-2 DATE 26 NOV 1714
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
-1 CHIL @I00003@
+1 HUSB @I00005@
+1 WIFE @I00004@
+1 CHIL @I00002@
 0 @F00003@ FAM
-1 HUSB @I00006@
-1 WIFE @I00007@
-1 MARR
-2 DATE 16 SEP 1675
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
-1 CHIL @I00004@
-0 @F00004@ FAM
-1 HUSB @I00008@
-1 WIFE @I00009@
+1 HUSB @I00009@
+1 WIFE @I00008@
 1 MARR
 2 DATE 8 JAN 1691
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
+1 CHIL @I00004@
+0 @F00004@ FAM
+1 HUSB @I00007@
+1 WIFE @I00006@
 1 CHIL @I00005@
 0 @F00005@ FAM
-1 HUSB @I00010@
-1 WIFE @I00011@
-1 MARR
-2 DATE 29 JUN 1649
-2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,
-1 CHIL @I00006@
-0 @F00006@ FAM
-1 HUSB @I00012@
+1 HUSB @I00014@
 1 WIFE @I00013@
 1 MARR
 2 DATE 23 JUN 1648
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
+1 CHIL @I00006@
+0 @F00006@ FAM
+1 HUSB @I00012@
+1 WIFE @I00011@
+1 MARR
+2 DATE 29 JUN 1649
+2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,
 1 CHIL @I00007@
 0 @F00007@ FAM
-1 HUSB @I00015@
-1 WIFE @I00014@
-1 MARR
-2 DATE BEF 1660
-2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France,
-1 CHIL @I00008@
-0 @F00008@ FAM
-1 HUSB @I00016@
-1 WIFE @I00017@
+1 HUSB @I00010@
+1 WIFE @I00015@
 1 MARR
 2 DATE 10 MAR 1661
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
+1 CHIL @I00008@
+0 @F00008@ FAM
+1 HUSB @I00017@
+1 WIFE @I00016@
+1 MARR
+2 DATE BEF 1660
+2 PLAC Villeneuve-lès-Avignon, 30351, Gard, Languedoc-Roussillon, France,
 1 CHIL @I00009@
 0 @F00009@ FAM
-1 HUSB @I00019@
+1 HUSB @I00022@
 1 WIFE @I00018@
+1 MARR
+2 DATE 24 JUN 1632
+2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
 1 CHIL @I00010@
 0 @F00010@ FAM
 1 HUSB @I00021@
-1 WIFE @I00020@
+1 WIFE @I00023@
 1 MARR
 2 DATE BEF 1629
 2 PLAC Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France,
 1 CHIL @I00011@
 0 @F00011@ FAM
-1 HUSB @I00023@
-1 WIFE @I00022@
-1 MARR
-2 DATE 24 JUN 1632
-2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
-1 CHIL @I00016@
+1 HUSB @I00020@
+1 WIFE @I00019@
+1 CHIL @I00012@
 0 @F00012@ FAM
 1 HUSB @I00025@
 1 WIFE @I00024@
 1 MARR
 2 DATE 8 APR 1606
 2 PLAC Barbentane, 13010, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, France,
-1 CHIL @I00023@
+1 CHIL @I00022@
 0 @F00013@ FAM
 1 HUSB @I00027@
 1 WIFE @I00026@

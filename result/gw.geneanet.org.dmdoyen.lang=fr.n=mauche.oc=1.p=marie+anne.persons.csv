@@ -1,8 +1,8 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.13 08/09/2023 à 01:00
-1;1;@I00001@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;3;4;0;2;forme1;28 septembre 1733;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";1;0;"- Née le 29 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.26 18/04/2025 à 01:11
+1;1;@I00001@;Marie Anne;MAUCHE;F;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;3;4;0;2;forme1;28 septembre 1733;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";1;1;"- Née le 29 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Baptisée le 30 décembre 1711 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédée le 27 août 1789 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 77 ans";0;
-2;2;@I00002@;Jean;MAUCHE;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1;3;0;1;0;;10 juin 1710;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager (1711)";"";"";"";2;1;"- Né le 4 novembre 1672 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2;2;@I00002@;Jean;MAUCHE;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=mauche&oc=1;3;0;1;0;;10 juin 1710;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager (1711)";"";"";"";2;1;"- Né le 4 novembre 1672 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédé le 20 mai 1731 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 58 ans
 - Ménager (1711)
 @todo note 'Union avec Marie Rose DURAND' de Jean MAUCHE à analyser : 'Heure: 10:00
@@ -21,69 +21,66 @@ de Jean Durand père de la fille ici présent et autres parents de l'un et
 l'autre parti présent se sont dans la forme du rituel. Présent Sieur Joseph
 Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
 Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre'";0;
-2;3;@I00003@;Marie Rose;DURAND;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand;3;4;0;2;forme1;10 juin 1710;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;1;"- Née le 14 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2;3;@I00003@;Marie Rose;DURAND;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=marie+rose&n=durand;3;4;0;2;forme1;10 juin 1710;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;2;"- Née le 14 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Baptisée le 15 février 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédée le 22 janvier 1761 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 72 ans";0;
-3;6;@I00005@;Jean;DURAND;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;3;0;2;0;;18 octobre 1693;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)";"";"Jean";"";2;1;"- surnom: Jean DURAND Petit
+3;6;@I00004@;Jean;DURAND;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;3;0;2;0;;18 octobre 1693;"Saint-Pierre-de-Mézoargues, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)";"";"";"";2;1;"- surnom: Petit
 - Né le 14 décembre 1659 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédé
 - Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)
-- titre: Jean
 @todo note 'Union avec Spérite GILLES' de Jean DURAND à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'
 @todo vérifier les événements pour Jean DURAND (2 erreur(s) détectée(s))";2;
-3;7;@I00004@;Spérite;GILLES;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles;2;0;2;2;forme1;1er février 1682;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";1;1;"- Baptisée le 8 juin 1651 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
-- Décédée le 14 avril 1693 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge de 41 ans
+3;7;@I00005@;Spérite;GILLES;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=sperite&n=gilles;2;0;2;2;forme1;1er février 1682;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";1;1;"- Baptisée le 8 juin 1651 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+- Décédée le 14 avril 1693 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 41 ans
 @todo note 'Union avec Jean DURAND' de Spérite GILLES à analyser : 'le même jour un frère et une soeur DURAND épouse un frère et une soeur GILLES'";0;
-4;15;@I00006@;Magdelaine;TISSOT;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot;2;3;0;2;forme1;17 avril 1633;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;0;"- Née vers 1608 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
-- Décédée le 11 août 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 80 ans";0;
-4;14;@I00007@;Barthélemy;GILLES;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles;3;0;2;2;forme1;17 avril 1633;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager";"";"";"";0;0;"- Né vers 1609
+4;14;@I00006@;Barthélemy;GILLES;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=barthelemy&n=gilles;3;0;2;2;forme1;17 avril 1633;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Ménager";"";"";"";0;0;"- Né vers 1609
 - Décédé le 2 octobre 1669 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 60 ans
 - Ménager";0;
-5;28;@I00009@;Pierre;GILLES;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1555
-- Décédé le 20 avril 1639 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 84 ans";0;
-5;31;@I00008@;Jeanne;TREBILLON;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon;2;2;0;2;forme1;5 mai 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;1;"- Née vers 1575 - Vallabrègues, 30300, Gard, Occitanie, FRANCE
+4;15;@I00007@;Magdelaine;TISSOT;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=tissot;2;3;0;2;forme1;17 avril 1633;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;1;"- Née vers 1608 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+- Décédée le 11 août 1688 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 80 ans";0;
+5;29;@I00009@;Marguerite;JAUSSERT;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=marguerite&n=jaussert;2;0;0;2;forme1;;"";"";"";"";"";0;0;"- Née avant 1565
 - Décédée";0;
-5;30;@I00010@;Balthazar;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot;3;3;0;2;forme1;5 mai 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Laboureur (1602)";"";"";"";0;1;"- Né vers 1571 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+5;28;@I00010@;Pierre;GILLES;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=pierre&n=gilles&oc=1;2;0;1;0;;;"";"";"";"";"";0;0;"- Né vers 1555
+- Décédé le 20 avril 1639 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 84 ans";0;
+5;30;@I00008@;Balthazar;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=balthazar&n=tissot;3;3;0;2;forme1;5 mai 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Laboureur (1602)";"";"";"";0;1;"- Né vers 1571 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédé le 3 septembre 1646 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 75 ans
 - Laboureur (1602)";0;
-5;29;@I00011@;Marguerite;JAUSSERT;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert;2;0;0;2;forme1;;"";"";"";"";"";0;0;"- Née avant 1565
+5;31;@I00011@;Jeanne;TREBILLON;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=jeanne&n=trebillon;2;2;0;2;forme1;5 mai 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;1;"- Née vers 1575 - Vallabrègues, 30300, Gard, Occitanie, FRANCE
 - Décédée";0;
-6;60;@I00012@;François;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot;3;3;0;2;forme1;29 octobre 1561;"Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Laboureur";"";"François";"";0;0;"- surnom: François TISSOT de la Rieppe
+6;59;@I00014@;Laurence;REGISTREL;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=laurence&n=registrel;0;0;0;0;;;"";"";"";"";"";1;1;"";0;
+6;58;@I00015@;Antoine;JAUSSERT;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=antoine&n=jaussert;0;0;0;0;;;"";"";"";"";"";1;1;"";0;
+6;63;@I00012@;Esprite;GIBERT;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=esprite&n=gibert;2;3;0;2;forme1;1er octobre 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;1;"- Née vers 1550
+- Décédée avant 1602";0;
+6;62;@I00013@;Aymes;TREBILLON;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;3;3;0;2;forme1;1er octobre 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Laboureur (1602)";"";"";"";0;3;"- Né vers 1545
+- Décédé
+- Laboureur (1602)";0;
+6;60;@I00016@;François;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=francois&n=tissot;3;3;0;2;forme1;29 octobre 1561;"Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"Laboureur";"";"";"";0;0;"- surnom: de la Rieppe
 - Né vers 1540 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
 - Décédé avant 1602
-- Laboureur
-- titre: François";0;
-6;62;@I00013@;Aymes;TREBILLON;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;3;3;0;2;forme1;1er octobre 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Laboureur (1602)";"";"Consul de Vallabrègues 1540-1608";"";0;2;"- Né vers 1545
-- Décédé
-- Laboureur (1602)
-- titre: Consul de Vallabrègues 1540-1608";0;
-6;61;@I00014@;Magdelaine;RIGAUD;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud;2;3;0;2;forme1;29 octobre 1561;"Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;0;"- Née vers 1540
+- Laboureur";0;
+6;61;@I00017@;Magdelaine;RIGAUD;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=rigaud;2;3;0;2;forme1;29 octobre 1561;"Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;0;"- Née vers 1540
 - Décédée après 1602";0;
-6;63;@I00015@;Esprite;GIBERT;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert;2;3;0;2;forme1;1er octobre 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;1;"- Née vers 1550
-- Décédée avant 1602";0;
-6;58;@I00016@;Antoine;JAUSSERT;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert;0;0;0;0;;;"";"";"";"";"";1;1;"";0;
-6;59;@I00017@;Laurence;REGISTREL;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel;0;0;0;0;;;"";"";"";"";"";1;1;"";0;
-7;121;@I00018@;?;?;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&i=119922;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
-7;124;@I00019@;Pons Ou Pierre;TREBILLON;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;3;5;0;0;;18 septembre 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Pontanier du port de Comps (1532)";"";"";"";0;4;"- Né vers 1496
+7;127;@I00018@;Françoise;RODIER;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=francoise&n=rodier;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1510
+- Décédée après 1561";0;
+7;120;@I00019@;Jean;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=tissot;1;0;0;0;;;"";"";"";"";"";1;0;"- Décédé avant 1595
+@todo Geneanet signale des anomalies sur Jean TISSOT. Vérifier la source.";1;
+7;124;@I00020@;Pons Ou Pierre;TREBILLON;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;3;5;0;0;;18 septembre 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"Pontanier du port de Comps (1532)";"";"";"";0;6;"- Né vers 1496
 - Décédé avant 12 février 1561
 - Pontanier du port de Comps (1532)";0;
-7;120;@I00020@;Jean;TISSOT;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot;1;0;0;0;;;"";"";"";"";"";1;0;"- Décédé avant 1595
-@todo Anomalies détectées sur Jean TISSOT. Vérifier la source.";1;
-7;126;@I00022@;Jean;GIBERT;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert;3;3;0;0;;;"";"Laboureur (1558)";"";"Jean";"";0;1;"- surnom: Jean GIBERT du Roux
+7;126;@I00021@;Jean;GIBERT;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;3;4;0;0;;;"";"Laboureur (1558)";"";"";"";0;2;"- surnom: du Roux
 - Né vers 1505 - Le Roux - Vallabrègues, 30300, Gard, Occitanie, FRANCE
 - Décédé avant 1561
 - Laboureur (1558)
-- titre: Jean";0;
-7;122;@I00023@;Domergue;RIGAUD;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud;2;0;0;2;forme1;;"";"";"";"";"";1;0;"- Né vers 1500
+@todo vérifier les événements pour Jean GIBERT (1 erreur(s) détectée(s))";1;
+7;121;@I00022@;?;?;F;https://gw.geneanet.org/dmdoyen?lang=fr&i=38312;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+7;123;@I00023@;Catherine;BAUD;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=catherine&n=baud&oc=1;0;0;0;0;;;"";"";"";"";"";1;0;"";0;
+7;122;@I00024@;Domergue;RIGAUD;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=domergue&n=rigaud;2;0;0;2;forme1;;"";"";"";"";"";1;0;"- Né vers 1500
 - Décédé";0;
-7;125;@I00021@;Jaumette;MALCANE;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane;2;2;0;2;forme1;18 septembre 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;1;"- Née vers 1501 - Montfrin, 30490, Gard, Occitanie, FRANCE
+7;125;@I00025@;Jaumette;MALCANE;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumette&n=malcane;2;2;0;2;forme1;18 septembre 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE,";"";"";"";"";0;2;"- Née vers 1501 - Montfrin, 30490, Gard, Occitanie, FRANCE
 - Décédée";0;
-7;127;@I00024@;Françoise;RODIER;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1510
-- Décédée après 1561";0;
-7;123;@I00025@;Catherine;BAUD;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1;0;0;0;0;;;"";"";"";"";"";1;0;"";0;
-8;245;@I00026@;Y...;BREMOND;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond;0;0;0;0;;;"";"";"";"";"";1;0;"";0;
-8;250;@I00027@;Antoine;MALCAN;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé avant 18 septembre 1521 - Vallabrègues, 30300, Gard, Occitanie, FRANCE";0;
-8;251;@I00028@;Doulce;BARONE;F;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone;0;1;0;0;;;"";"";"";"";"";0;1;"";0;
-8;244;@I00029@;Jaumin;RIGAUD;M;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud;1;0;0;0;;;"";"";"";"";"";1;0;"- Décédé vers 1526";0;
-# 29 persons, 14 families, 8 generations, 4 titres de noblesse
-# 3 errors, 5 todo
+8;251;@I00026@;Doulce;BARONE;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=doulce&n=barone;0;2;0;0;;;"";"";"";"";"";0;1;"@todo vérifier les événements pour Doulce BARONE (1 erreur(s) détectée(s))";1;
+8;250;@I00027@;Antoine;MALCAN;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=antoine&n=malcan;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé avant 18 septembre 1521 - Vallabrègues, 30300, Gard, Occitanie, FRANCE";0;
+8;245;@I00028@;Y...;BREMOND;F;https://gw.geneanet.org/dmdoyen?lang=fr&p=y...&n=bremond;0;0;0;0;;;"";"";"";"";"";1;0;"";0;
+8;244;@I00029@;Jaumin;RIGAUD;M;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumin&n=rigaud;1;0;0;0;;;"";"";"";"";"";1;0;"- Décédé vers 1526";0;
+# 29 persons, 14 families, 8 generations, 0 titres de noblesse
+# 5 errors, 7 todo

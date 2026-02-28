@@ -1,7 +1,7 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.13 08/09/2023 à 01:00
-1;1;@I00001@;André Michel;Michel;M;https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel;2;0;0;2;forme2;vers 1594;"";"";"";"";"";1;0;"- Né le 12 avril 1563 - Apt, 84003, Vaucluse, Provence-Alpes-Côte d'Azur, France
-- Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte d'Azur, France";0;
-2;2;@I00002@;Jean;Michel;M;https://gw.geneanet.org/bboluix1?lang=fr&iz=122&p=jean&n=michel&oc=3;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
-2;3;@I00003@;Guillaumette;Gourdon;F;https://gw.geneanet.org/bboluix1?lang=fr&iz=122&p=guillaumette&n=gourdon;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.26 18/04/2025 à 01:10
+1;1;@I00001@;André Michel;MICHEL;M;https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel;2;0;0;2;forme2;vers 1594;"";"";"";"";"";1;0;"- Né le 12 avril 1563 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France
+- Décédé après 1649 - Apt, 84003, Vaucluse, Provence-Alpes-Côte-d'Azur, France";0;
+2;2;@I00002@;Jean;MICHEL;M;https://gw.geneanet.org/bboluix1?lang=fr&p=jean&n=michel&oc=3;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé";0;
+2;3;@I00003@;Guillaumette;GOURDON;F;https://gw.geneanet.org/bboluix1?lang=fr&p=guillaumette&n=gourdon;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée";0;
 # 3 persons, 1 families, 2 generations, 0 titres de noblesse
 # 0 errors, 0 todo

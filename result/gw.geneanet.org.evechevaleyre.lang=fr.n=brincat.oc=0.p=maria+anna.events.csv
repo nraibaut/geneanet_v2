@@ -1,6 +1,6 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.13 08/09/2023 à 00:59
-@I00003@;Giovanna rosa;BARTOLO;https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giovanna+rosa&n=bartolo;"Décès";DEAT;avant 11 janvier 1818;BEF 11 JAN 1818;"";"";"";"";"";
-@I00013@;Domenico;ATTARD;https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=domenico&n=attard&oc=24;"Naissance";BIRT;;;"Zejtun - Malte, , , ,";"";"";"";"";
-@I00027@;Gio Maria;MUSCAT;https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=gio+maria&n=muscat&oc=7;"Naissance";BIRT;;;"Birkhirkara - Malte, , , ,";"";"";"";"";
-@I00030@;Giuseppe;BRINCATO;https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=giuseppe&n=brincato;"Naissance";BIRT;;;"Siggewi - Malte, , , ,";"";"";"";"";
-@I00035@;Nicola;CHIRCOP;https://gw.geneanet.org/evechevaleyre?lang=fr&pz=evelyne&nz=cassar&p=nicola&n=chircop&oc=2;"Profession";OCCU;;;"";"";"Mro";"";"";
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.26 18/04/2025 à 01:10
+@I00002@;Giovanna rosa;BARTOLO;https://gw.geneanet.org/evechevaleyre?lang=fr&p=giovanna+rosa&n=bartolo;"Décès";DEAT;avant 11 janvier 1818;BEF 11 JAN 1818;"";"";"";"";"";
+@I00013@;Domenico;ATTARD;https://gw.geneanet.org/evechevaleyre?lang=fr&p=domenico&n=attard&oc=24;"Naissance";BIRT;;;"Zejtun - Malte";"";"";"";"";
+@I00027@;Giuseppe;BRINCATO;https://gw.geneanet.org/evechevaleyre?lang=fr&p=giuseppe&n=brincato;"Naissance";BIRT;;;"Siggewi - Malte";"";"";"";"";
+@I00029@;Gio Maria;MUSCAT;https://gw.geneanet.org/evechevaleyre?lang=fr&p=gio+maria&n=muscat&oc=7;"Naissance";BIRT;;;"Birkhirkara - Malte";"";"";"";"";
+@I00034@;Nicola;CHIRCOP;https://gw.geneanet.org/evechevaleyre?lang=fr&p=nicola&n=chircop&oc=2;"Profession";OCCU;;;"";"";"Mro";"";"";

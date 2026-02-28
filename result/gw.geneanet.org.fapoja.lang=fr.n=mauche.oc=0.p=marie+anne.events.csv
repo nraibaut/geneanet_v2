@@ -1,61 +1,44 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.13 08/09/2023 à 01:00
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.26 18/04/2025 à 01:11
 @I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&n=mauche&oc=0&p=marie+anne;"Naissance";BIRT;18 septembre 1717;18 SEP 1717;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
 @I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&n=mauche&oc=0&p=marie+anne;"Décès";DEAT;2 mai 1745;2 MAY 1745;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00002@;Marie Rose;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=marie+rose&n=durand;"Naissance";BIRT;15 février 1688;15 FEB 1688;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°6";
-@I00002@;Marie Rose;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=marie+rose&n=durand;"Décès";DEAT;22 janvier 1761;22 JAN 1761;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°1";
-@I00003@;Jean;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=mauche;"Naissance";BIRT;4 novembre 1672;4 NOV 1672;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°4";
-@I00003@;Jean;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=mauche;"Décès";DEAT;19 mai 1731;19 MAY 1731;"Cimetière de Saint Marcellin - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"Heure: 14:0";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°5";
-@I00005@;Etienne;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=etienne&n=mauche;"Profession";OCCU;;;"";"";"Travailleur";"";"";
-@I00004@;Esprite;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=esprite&n=gilles;"Naissance";BIRT;8 juin 1651;8 JUN 1651;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°2";
-@I00004@;Esprite;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=esprite&n=gilles;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Naissance";BIRT;14 décembre 1659;14 DEC 1659;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Profession";OCCU;;;"";"";"Ménager";"";"";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Mariage (avec Esprite GILLES)";EVEN;1er février 1682;1 FEB 1682;"Côte d'Azur, FRANCE";"";"Mariage (avec Esprite GILLES)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Mariage (avec Louise LAMOUROUX)";EVEN;18 octobre 1693;18 OCT 1693;"Côte d'Azur, FRANCE";"";"Mariage (avec Louise LAMOUROUX)";"Actes - 0057 - Généanet - Internet";"Note sebavy";
-@I00006@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=durand&oc=1;"Contrat de mariage (avec Louise LAMOUROUX)";EVEN;18 octobre 1693;18 OCT 1693;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"Contrat de mariage (avec Louise LAMOUROUX)";"Actes - 0033 - Archives Departementales du Gard";"Note 07 2015 ph 27";
-@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=barthelemy&n=gilles&oc=2;"Naissance";BIRT;vers 1609;ABT 1609;"";"";"";"";"";
-@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=barthelemy&n=gilles&oc=2;"Décès";DEAT;2 octobre 1669;2 OCT 1669;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°2";
-@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=barthelemy&n=gilles&oc=2;"Profession";OCCU;;;"";"";"Ménager";"";"";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Naissance";BIRT;vers 1616;ABT 1616;"";"";"";"";"";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Décès";DEAT;5 octobre 1676;5 OCT 1676;"Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Inhumation";BURI;6 octobre 1676;6 OCT 1676;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Profession";OCCU;;;"";"";"Ménager Consul";"";"";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Mariage (avec Françoise BUVANAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"Chercher le CM";"Mariage (avec Françoise BUVANAND)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
-@I00008@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand;"Contrat de mariage (avec Françoise BUVANAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"CM 203 E221 N°75";"Contrat de mariage (avec Françoise BUVANAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
-@I00010@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=buvanand;"Naissance";BIRT;vers 1621;ABT 1621;"";"";"";"";"";
-@I00010@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=buvanand;"Décès";DEAT;22 janvier 1701;22 JAN 1701;"Côte d'Azur, FRANCE";"veuve de feu Nicolas Durand à 19:00";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
-@I00010@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=buvanand;"Mariage (avec Nicolas DURAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"Chercher le CM";"Mariage (avec Nicolas DURAND)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
-@I00010@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=buvanand;"Contrat de mariage (avec Nicolas DURAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"CM 203 E221 N°75";"Contrat de mariage (avec Nicolas DURAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
-@I00011@;Magdeleine;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=magdeleine&n=tissot;"Naissance";BIRT;vers 1608;ABT 1608;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00011@;Magdeleine;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=magdeleine&n=tissot;"Décès";DEAT;12 août 1688;12 AUG 1688;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°11";
-@I00013@;Pierre;GILLES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre&n=gilles&oc=1;"Décès";DEAT;20 avril 1639;20 APR 1639;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
-@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=honore&n=durand;"Naissance";BIRT;vers 1589;ABT 1589;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=honore&n=durand;"Décès";DEAT;9 mars 1669;9 MAR 1669;"Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note P 1";
-@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=honore&n=durand;"Profession";OCCU;;;"";"";"Ménager";"";"";
-@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=honore&n=durand;"Mariage (avec Catherine BOURGES)";EVEN;25 septembre 1622;25 SEP 1622;"Côte d'Azur, FRANCE";"";"Mariage (avec Catherine BOURGES)";"Actes - 0021 - Généanet - Internet";"";
-@I00015@;Catherine;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=catherine&n=bourges;"Naissance";BIRT;vers 1597;ABT 1597;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00015@;Catherine;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=catherine&n=bourges;"Décès";DEAT;20 septembre 1665;20 SEP 1665;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"Femme d'Honoré Durand";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 6";
-@I00017@;Bernard;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=bernard&n=buvanand;"Décès";DEAT;26 janvier 1652;26 JAN 1652;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
-@I00016@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=balthazar&n=tissot;"Naissance";BIRT;(@#DJULIAN@ CAL 1571);CAL @#DJULIAN@ 1571;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00016@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=balthazar&n=tissot;"Décès";DEAT;3 septembre 1646;3 SEP 1646;"Côte d'Azur, FRANCE";"Le 3 septembre est décédé Balthazar TISSOT agé
-d'environ septemte cinq ans ayant testé reçu par
-Maître Jean MARTIN notaire ..est enseveli dans la paroisse";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
-@I00016@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=balthazar&n=tissot;"Contrat de mariage (avec Jeanne TREBILLON)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Balthazard TISSOT fils de feu François et Madeleine
-RIGAUDE laboureur du lieu de Boulbon et
-Jeanne TREBILLONE fille de Eymes TREBILLON consul du lieu de Vallabrègues et
-de feue Esprite GIBERT
-Laquelle reçoit 50 écus pour droits paternels payable 35 au jour des
-épousailles et solde fête de Sainte Marie Madeleine
-porte aussi ses autres droits
-Acte maison dudit TREBILLON
-Présents Mre Claude BERLANDIER,noble Jean ADALBERT,Loys FONTAINES,Etienne
-GIBERT laboureurs,de sire Jean RAOULX consul et Honorat MEZYER praticien.
-Acte passé devant Maître Gibert ROGIER,notaire de Vallabrègues.";"Contrat de mariage (avec Jeanne TREBILLON)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
-Note N°409 7 2 /188 Gilbert Rogier notaire de Vallabrègues";
-@I00019@;Jeanne;FREDIERE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jeanne&n=frediere&oc=2;"Décès";DEAT;25 juillet 1648;25 JUL 1648;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"femme de Bernard Buravand";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
-@I00018@;Jeanne;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jeanne&n=trebillon&oc=1;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00018@;Jeanne;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jeanne&n=trebillon&oc=1;"Contrat de mariage (avec Balthazar TISSOT)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Balthazard TISSOT fils de feu François et Madeleine
+@I00002@;Marie Rose;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=marie+rose&n=durand;"Naissance";BIRT;15 février 1688;15 FEB 1688;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°6";
+@I00002@;Marie Rose;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=marie+rose&n=durand;"Décès";DEAT;22 janvier 1761;22 JAN 1761;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°1";
+@I00003@;Jean;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=mauche;"Naissance";BIRT;4 novembre 1672;4 NOV 1672;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°4";
+@I00003@;Jean;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=mauche;"Décès";DEAT;19 mai 1731;19 MAY 1731;"Cimetière de Saint Marcellin - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"Heure: 14:0";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°5";
+@I00005@;Etienne;MAUCHE;https://gw.geneanet.org/fapoja?lang=fr&p=etienne&n=mauche;"Profession";OCCU;;;"";"";"Travailleur";"";"";
+@I00006@;Esprite;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=esprite&n=gilles;"Naissance";BIRT;8 juin 1651;8 JUN 1651;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°2";
+@I00006@;Esprite;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=esprite&n=gilles;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Naissance";BIRT;14 décembre 1659;14 DEC 1659;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Profession";OCCU;;;"";"";"Ménager";"";"";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Mariage (avec Esprite GILLES)";EVEN;1er février 1682;1 FEB 1682;"Côte d'Azur, FRANCE";"";"Mariage (avec Esprite GILLES)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Contrat de mariage (avec Louise LAMOUROUX)";EVEN;18 octobre 1693;18 OCT 1693;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"Contrat de mariage (avec Louise LAMOUROUX)";"Actes - 0033 - Archives Departementales du Gard -";"Note 07 2015 ph 27";
+@I00007@;Jean;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=durand&oc=1;"Mariage (avec Louise LAMOUROUX)";EVEN;18 octobre 1693;18 OCT 1693;"Côte d'Azur, FRANCE";"";"Mariage (avec Louise LAMOUROUX)";"Actes - 0057 - Généanet - Internet";"Note sebavy";
+@I00008@;Magdeleine;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=magdeleine&n=tissot;"Naissance";BIRT;vers 1608;ABT 1608;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00008@;Magdeleine;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=magdeleine&n=tissot;"Décès";DEAT;12 août 1688;12 AUG 1688;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°11";
+@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=barthelemy&n=gilles&oc=2;"Naissance";BIRT;vers 1609;ABT 1609;"";"";"";"";"";
+@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=barthelemy&n=gilles&oc=2;"Décès";DEAT;2 octobre 1669;2 OCT 1669;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note N°2";
+@I00009@;Barthélémy;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=barthelemy&n=gilles&oc=2;"Profession";OCCU;;;"";"";"Ménager";"";"";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Naissance";BIRT;vers 1616;ABT 1616;"";"";"";"";"";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Décès";DEAT;5 octobre 1676;5 OCT 1676;"Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Inhumation";BURI;6 octobre 1676;6 OCT 1676;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Profession";OCCU;;;"";"";"Ménager Consul";"";"";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Contrat de mariage (avec Françoise BUVANAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"CM 203 E221 N°75";"Contrat de mariage (avec Françoise BUVANAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
+@I00010@;Nicolas;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=nicolas&n=durand;"Mariage (avec Françoise BUVANAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"Chercher le CM";"Mariage (avec Françoise BUVANAND)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
+@I00011@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=buvanand;"Naissance";BIRT;vers 1621;ABT 1621;"";"";"";"";"";
+@I00011@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=buvanand;"Décès";DEAT;22 janvier 1701;22 JAN 1701;"Côte d'Azur, FRANCE";"veuve de feu Nicolas Durand à 19:00";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
+@I00011@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=buvanand;"Contrat de mariage (avec Nicolas DURAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"CM 203 E221 N°75";"Contrat de mariage (avec Nicolas DURAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
+@I00011@;Françoise;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=buvanand;"Mariage (avec Nicolas DURAND)";EVEN;22 février 1649;22 FEB 1649;"Côte d'Azur, FRANCE";"Chercher le CM";"Mariage (avec Nicolas DURAND)";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
+@I00012@;Bernard;BUVANAND;https://gw.geneanet.org/fapoja?lang=fr&p=bernard&n=buvanand;"Décès";DEAT;26 janvier 1652;26 JAN 1652;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
+@I00015@;Pierre;GILLES;https://gw.geneanet.org/fapoja?lang=fr&p=pierre&n=gilles&oc=1;"Décès";DEAT;20 avril 1639;20 APR 1639;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
+@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=honore&n=durand;"Naissance";BIRT;vers 1589;ABT 1589;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=honore&n=durand;"Décès";DEAT;9 mars 1669;9 MAR 1669;"Côte d'Azur, FRANCE";"Présent : [Nicolas
+DURAND](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=durand),
+ca 1616-1676, fils du défunt";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note P 1";
+@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=honore&n=durand;"Profession";OCCU;;;"";"";"Ménager";"";"";
+@I00014@;Honoré;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=honore&n=durand;"Mariage (avec Catherine BOURGES)";EVEN;25 septembre 1622;25 SEP 1622;"Côte d'Azur, FRANCE";"";"Mariage (avec Catherine BOURGES)";"Actes - 0021 - Généanet - Internet";"";
+@I00016@;Jeanne;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=jeanne&n=trebillon&oc=1;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00016@;Jeanne;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=jeanne&n=trebillon&oc=1;"Contrat de mariage (avec Balthazar TISSOT)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Balthazard TISSOT fils de feu François et Madeleine
 RIGAUDE laboureur du lieu de Boulbon et
 Jeanne TREBILLONE fille de Eymes TREBILLON consul du lieu de Vallabrègues et
 de feue Esprite GIBERT
@@ -67,44 +50,60 @@ Présents Mre Claude BERLANDIER,noble Jean ADALBERT,Loys FONTAINES,Etienne
 GIBERT laboureurs,de sire Jean RAOULX consul et Honorat MEZYER praticien.
 Acte passé devant Maître Gibert ROGIER,notaire de Vallabrègues.";"Contrat de mariage (avec Balthazar TISSOT)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note N°409 7 2 /188 Gilbert Rogier notaire de Vallabrègues";
-@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=etienne&n=durand;"Profession";OCCU;;;"";"";"Laboureur";"";"";
-@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=etienne&n=durand;"Contrat de mariage (avec Trophimette CAILLE)";EVEN;18 novembre 1582 julien (28 novembre 1582);@#DJULIAN@ 18 NOV 1582;"Côte d'Azur, FRANCE";"Maître E Vincent f°174";"Contrat de mariage (avec Trophimette CAILLE)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
-@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=etienne&n=durand;"Mariage (avec Trophimette CAILLE)";EVEN;8 décembre 1582 julien (18 décembre 1582);@#DJULIAN@ 8 DEC 1582;"Côte d'Azur, FRANCE";"";"Mariage (avec Trophimette CAILLE)";"Actes - 0021 - Généanet - Internet";"Note rhumf";
-@I00021@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=trophimette&n=caille;"Naissance";BIRT;(@#DJULIAN@ CAL 1561);CAL @#DJULIAN@ 1561;"";"";"";"";"";
-@I00021@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=trophimette&n=caille;"Décès";DEAT;4 août 1641;4 AUG 1641;"Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
-@I00021@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=trophimette&n=caille;"Contrat de mariage (avec Etienne DURAND)";EVEN;18 novembre 1582 julien (28 novembre 1582);@#DJULIAN@ 18 NOV 1582;"Côte d'Azur, FRANCE";"Maître E Vincent f°174";"Contrat de mariage (avec Etienne DURAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
-@I00021@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=trophimette&n=caille;"Mariage (avec Etienne DURAND)";EVEN;8 décembre 1582 julien (18 décembre 1582);@#DJULIAN@ 8 DEC 1582;"Côte d'Azur, FRANCE";"";"Mariage (avec Etienne DURAND)";"Actes - 0021 - Généanet - Internet";"Note rhumf";
-@I00022@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francois&n=tissot&oc=1;"Décès";DEAT;avant 6 septembre 1592;BEF 6 SEP 1592;"";"Date du contrat de mariage de son fils Antoine où il est dit décédé";"";"";"";
-@I00022@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francois&n=tissot&oc=1;"Profession";OCCU;;;"";"";"Laboureur";"";"";
-@I00022@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francois&n=tissot&oc=1;"Contrat de mariage (avec Madeleine RIGAUD)";EVEN;19 octobre 1561 julien;@#DJULIAN@ 19 OCT 1561;"Côte d'Azur, FRANCE";"";"Contrat de mariage (avec Madeleine RIGAUD)";"Actes - 0057 - Généanet - Internet";"Note François Salge";
-@I00023@;Pierre;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre&n=bourges&oc=1;"Décès";DEAT;10 mai 1615;10 MAY 1615;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
-@I00024@;Madeleine;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=madeleine&n=rigaud;"Contrat de mariage (avec François TISSOT)";EVEN;19 octobre 1561 julien;@#DJULIAN@ 19 OCT 1561;"Côte d'Azur, FRANCE";"";"Contrat de mariage (avec François TISSOT)";"Actes - 0057 - Généanet - Internet";"Note François Salge";
-@I00029@;Pierre;FREDIERE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre&n=frediere&oc=1;"Profession";OCCU;;;"";"";"Marchand";"";"";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Décès";DEAT;après 29 juin 1611;AFT 29 JUN 1611;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Profession";OCCU;;;"";"";"Consul Laboureur";"";"";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Contrat de mariage (avec Esprite GIBERT)";EVEN;2 septembre 1571 julien;@#DJULIAN@ 2 SEP 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Aymès TREBILLON natif et habitant Vallabrègue et
+@I00017@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=balthazar&n=tissot;"Naissance";BIRT;(@#DJULIAN@ CAL 1571);CAL @#DJULIAN@ 1571;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00017@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=balthazar&n=tissot;"Décès";DEAT;3 septembre 1646;3 SEP 1646;"Côte d'Azur, FRANCE";"Le 3 septembre est décédé Balthazar TISSOT agé
+d'environ septemte cinq ans ayant testé reçu par
+Maître Jean MARTIN notaire ..est enseveli dans la paroisse";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
+@I00017@;Balthazar;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=balthazar&n=tissot;"Contrat de mariage (avec Jeanne TREBILLON)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Balthazard TISSOT fils de feu François et Madeleine
+RIGAUDE laboureur du lieu de Boulbon et
+Jeanne TREBILLONE fille de Eymes TREBILLON consul du lieu de Vallabrègues et
+de feue Esprite GIBERT
+Laquelle reçoit 50 écus pour droits paternels payable 35 au jour des
+épousailles et solde fête de Sainte Marie Madeleine
+porte aussi ses autres droits
+Acte maison dudit TREBILLON
+Présents Mre Claude BERLANDIER,noble Jean ADALBERT,Loys FONTAINES,Etienne
+GIBERT laboureurs,de sire Jean RAOULX consul et Honorat MEZYER praticien.
+Acte passé devant Maître Gibert ROGIER,notaire de Vallabrègues.";"Contrat de mariage (avec Jeanne TREBILLON)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Note N°409 7 2 /188 Gilbert Rogier notaire de Vallabrègues";
+@I00018@;Jeanne;FREDIERE;https://gw.geneanet.org/fapoja?lang=fr&p=jeanne&n=frediere&oc=2;"Décès";DEAT;25 juillet 1648;25 JUL 1648;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"femme de Bernard Buravand";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 2";
+@I00019@;Catherine;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&p=catherine&n=bourges;"Naissance";BIRT;vers 1597;ABT 1597;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00019@;Catherine;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&p=catherine&n=bourges;"Décès";DEAT;20 septembre 1665;20 SEP 1665;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"Femme d'Honoré Durand";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 6";
+@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=etienne&n=durand;"Profession";OCCU;;;"";"";"Laboureur";"";"";
+@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=etienne&n=durand;"Contrat de mariage (avec Trophimette CAILLE)";EVEN;18 novembre 1582 julien (28 novembre 1582);@#DJULIAN@ 18 NOV 1582;"Côte d'Azur, FRANCE";"Maître E Vincent f°174";"Contrat de mariage (avec Trophimette CAILLE)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
+@I00020@;Etienne;DURAND;https://gw.geneanet.org/fapoja?lang=fr&p=etienne&n=durand;"Mariage (avec Trophimette CAILLE)";EVEN;8 décembre 1582 julien (18 décembre 1582);@#DJULIAN@ 8 DEC 1582;"Côte d'Azur, FRANCE";"";"Mariage (avec Trophimette CAILLE)";"Actes - 0021 - Généanet - Internet";"Note rhumf";
+@I00023@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=trophimette&n=caille;"Naissance";BIRT;(@#DJULIAN@ CAL 1561);CAL @#DJULIAN@ 1561;"";"";"";"";"";
+@I00023@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=trophimette&n=caille;"Décès";DEAT;4 août 1641;4 AUG 1641;"Côte d'Azur, FRANCE";"";"";"Actes - 0046 - A.D des Bouches du Rhône - Internet - Internet";"Note p 1";
+@I00023@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=trophimette&n=caille;"Contrat de mariage (avec Etienne DURAND)";EVEN;18 novembre 1582 julien (28 novembre 1582);@#DJULIAN@ 18 NOV 1582;"Côte d'Azur, FRANCE";"Maître E Vincent f°174";"Contrat de mariage (avec Etienne DURAND)";"Actes - 0057 - Généanet - Internet";"Note rhumf";
+@I00023@;Trophimette;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=trophimette&n=caille;"Mariage (avec Etienne DURAND)";EVEN;8 décembre 1582 julien (18 décembre 1582);@#DJULIAN@ 8 DEC 1582;"Côte d'Azur, FRANCE";"";"Mariage (avec Etienne DURAND)";"Actes - 0021 - Généanet - Internet";"Note rhumf";
+@I00024@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=francois&n=tissot&oc=1;"Décès";DEAT;avant 6 septembre 1592;BEF 6 SEP 1592;"";"Date du contrat de mariage de son fils Antoine où il est dit décédé";"";"";"";
+@I00024@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=francois&n=tissot&oc=1;"Profession";OCCU;;;"";"";"Laboureur";"";"";
+@I00024@;François;TISSOT;https://gw.geneanet.org/fapoja?lang=fr&p=francois&n=tissot&oc=1;"Contrat de mariage (avec Madeleine RIGAUD)";EVEN;19 octobre 1561 julien;@#DJULIAN@ 19 OCT 1561;"Côte d'Azur, FRANCE";"";"Contrat de mariage (avec Madeleine RIGAUD)";"Actes - 0057 - Généanet - Internet";"Note François Salge";
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Décès";DEAT;après 29 juin 1611;AFT 29 JUN 1611;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Datede son testament.";"";"";"";
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Profession";OCCU;;;"";"";"Consul Laboureur";"";"";
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Contrat de mariage (avec Esprite GIBERT)";EVEN;2 septembre 1571 julien;@#DJULIAN@ 2 SEP 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Aymès TREBILLON natif et habitant Vallabrègue et
 Esprite GIBERTE fille de Jean dit le Roux et de Françoise RODIERE du même lieu
 donne 200 florins petits et 30 florins pour les robes laquelle fait ensuite
 rémission de droits à Guillaume et Olivier ses frères .
 Acte devant Maître Marcelin de BALLARD,notaire de Vallabrègues.";"Contrat de mariage (avec Esprite GIBERT)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note N°176 72/173";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Evenement";EVEN;16 mai 1577 julien;@#DJULIAN@ 16 MAY 1577;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Aymés TREBILLON a vendu à Jean VINCENS écuier de Beaucaire une jument à poil
-rouge pour 17 écus Acte passé devant Marcellin de BALLARD notaire de
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Evenement";EVEN;16 mai 1577 julien;@#DJULIAN@ 16 MAY 1577;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Aymés TREBILLON a vendu à Jean VINCENS écuier de Beaucaire une jument à poil
+rouge pour 17 écus Acte passé devant Maître Marcellin de BALLARD notaire de
 Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v1 p 211 2E 72/176";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Evenement";EVEN;20 octobre 1586;20 OCT 1586;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Sires Jean ESPIARD et Aymés TREBILLON consuls de Vallabrègues passent prix
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Evenement";EVEN;20 octobre 1586;20 OCT 1586;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Sires Jean ESPIARD et Aymés TREBILLON consuls de Vallabrègues passent prix
 fait à François TOURNAIRE maçon à rebatir une brèche que le débordement de la
 rivière de Rhône a fait aux murailles des maisons et du moulin à vent .
 Acte passé devant Maître Guillaume CAYRON notaire de Vallbrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v1 p 159 2E 72/172";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Arrentement";EVEN;8 septembre 1588;8 SEP 1588;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Intervient puissant seigneur messire Georges de BAUFREMOND comte de Crouzilles
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Arrentement";EVEN;8 septembre 1588;8 SEP 1588;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Intervient puissant seigneur messire Georges de BAUFREMOND comte de Crouzilles
 seigneur d'Aramon et de Vallabrègues qui arrente à Aymés TREBILLON 5 saumées
 de terre qu'il a dans ledit terroir pour 4 ans moyennant 10 saumées froment
 par an .
 Acte passé devant Maître Guillaume CAYRON notaire de Vallabrègues.";"Arrentement";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v1 p 164 2E 72/172";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Bail";EVEN;5 juillet 1598;5 JUL 1598;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail de bétail établi en leurs personnes Sébastien VANEL et Aymès TREBILLON
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Bail";EVEN;5 juillet 1598;5 JUL 1598;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail de bétail établi en leurs personnes Sébastien VANEL et Aymès TREBILLON
 laboureurs habitants Vallabrègues lesquels arrentent à Michel CHABANEL
 laboureur de Comps savoir ledit Vanel 5 bêtes à laine et trois agneaux
 femelles et ledit TREBILLON 10 bêtes de port et 4 agneaux savoir trois mâles
@@ -116,9 +115,12 @@ ayant lait et enfin sera tenu de rendre au bout du temps à chacun desdits
 VANEL et TREBILLON leurs bêtes tel qu'il a été marqué de leurs marques.
 Acte maison du notaire
 En présence de Pierre DARLAC et de Pierre VIAL dudit Vallabrègues.
-Acte devant Maître Gilbert ROGIER notaire de Vallabrègues.";"Bail";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Acte devant Maître Gilbert ROGIER notaire de Vallabrègues.
+Témoin : [Sébastien
+VANEL](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=sebastien&n=vanel),
+†1607..1608";"Bail";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v1 p 295 2E 72/184";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Testament";WILL;11 février 1602;11 FEB 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Testament d'Aymès TREBILLON laboureur habitant de Vallabrègues
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Testament";WILL;11 février 1602;11 FEB 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Testament d'Aymès TREBILLON laboureur habitant de Vallabrègues
 légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
 à Jeanne ,Claude et Lyonne autres filles 20 livres
 Héritier son fils Jean
@@ -127,59 +129,26 @@ En présence du Capitaine Jean CAYRON,de Mathieu NOGARET charpentier,de Jean
 ROMIEU,Antoine GIBERT,Jean CARRIERE fils,de Pierre Huguet....
 Acte passé devant Maître Gilbert ROGIER,notaire de Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note N°408 72/188";
-@I00030@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=aymes&n=trebillon;"Testament";WILL;29 juin 1611;29 JUN 1611;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"0099 - Brozer ACGC - Internet";"Note Relevés de Mr William ROUVIERE notariat de Montfrin 2E 35/135";
-@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=esprite&n=gibert;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=esprite&n=gibert;"Décès";DEAT;entre 15 novembre 1592 et 5 mai 1602;BET 15 NOV 1592 AND 5 MAY 1602;"";"entre le CM de sa fille Marie et le CM de sa fille Jeanne";"";"";"";
-@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=esprite&n=gibert;"Contrat de mariage (avec Aymés TREBILLON)";EVEN;2 septembre 1571 julien;@#DJULIAN@ 2 SEP 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Aymès TREBILLON natif et habitant Vallabrègue et
+@I00025@;Aymés;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=aymes&n=trebillon;"Testament";WILL;29 juin 1611;29 JUN 1611;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"0099 - Brozer ACGC - Internet";"Note Relevés de Mr William ROUVIERE notariat de Montfrin 2E 35/135";
+@I00027@;Pierre;BOURGES;https://gw.geneanet.org/fapoja?lang=fr&p=pierre&n=bourges&oc=1;"Décès";DEAT;10 mai 1615;10 MAY 1615;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Actes - 0021 - Généanet - Internet";"";
+@I00029@;Pierre;FREDIERE;https://gw.geneanet.org/fapoja?lang=fr&p=pierre&n=frediere&oc=1;"Profession";OCCU;;;"";"";"Marchand";"";"";
+@I00030@;Madeleine;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&p=madeleine&n=rigaud;"Contrat de mariage (avec François TISSOT)";EVEN;19 octobre 1561 julien;@#DJULIAN@ 19 OCT 1561;"Côte d'Azur, FRANCE";"";"Contrat de mariage (avec François TISSOT)";"Actes - 0057 - Généanet - Internet";"Note François Salge";
+@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=esprite&n=gibert;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=esprite&n=gibert;"Décès";DEAT;entre 15 novembre 1592 et 5 mai 1602;BET 15 NOV 1592 AND 5 MAY 1602;"";"entre le CM de sa fille Marie et le CM de sa fille Jeanne";"";"";"";
+@I00031@;Esprite;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=esprite&n=gibert;"Contrat de mariage (avec Aymés TREBILLON)";EVEN;2 septembre 1571 julien;@#DJULIAN@ 2 SEP 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Aymès TREBILLON natif et habitant Vallabrègue et
 Esprite GIBERTE fille de Jean dit le Roux et de Françoise RODIERE du même lieu
 donne 200 florins petits et 30 florins pour les robes laquelle fait ensuite
 rémission de droits à Guillaume et Olivier ses frères .
 Acte devant Maître Marcelin de BALLARD,notaire de Vallabrègues.";"Contrat de mariage (avec Aymés TREBILLON)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note N°176 72/173";
-@I00032@;François;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francois&n=caille;"Naissance";BIRT;vers 1535 julien;ABT @#DJULIAN@ 1535;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00032@;François;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francois&n=caille;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00036@;Domergue;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=domergue&n=rigaud;"Mariage (avec Catherine BAUD)";EVEN;avant 17 avril 1529 julien;BEF @#DJULIAN@ 17 APR 1529;"";"";"Mariage (avec Catherine BAUD)";"";"";
-@I00036@;Domergue;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=domergue&n=rigaud;"Evenement";EVEN;6 mai 1532 julien;@#DJULIAN@ 6 MAY 1532;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Présent Domergue RIGAUD du lieu de Bourbon comme mari de Catherine BAUDE qui
-fait vente et baille à Jean AMANS et Jean FORNIER faisant aussi pour les hoirs
-de François FORNIER des revenus et fruits et ususfruits des biens de ladite
-BAUDE aux appartenances de Vallabrègues dans l'isle dudit lieu confrontés pour
-5 années moyennant 6 livres bien retirés.
-Acte à Vallabrègues maison desdits hoirs
-En présence de Guillaume DELAFONT ,André JULIER et Antoine FABRE dit
-Rencontre.
-Acte reçu par Maître Guillaume RIVIERE notaire de Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
-Note v2 p 828 1/744 maître Guillaume RIVIERE";
-@I00039@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=gibert&oc=20;"Décès";DEAT;entre 7 février 1559 et 10 juin 1561 (1558/9) julien;BET @#DJULIAN@ 7 FEB 1559 AND @#DJULIAN@ 10 JUN 1561;"";"entre le contrat de mariage de son fils Jean et reconnaissance féodale le 10
-juin 1561 : Françoise Rodiere veuve de Jean Gibert";"";"";"";
-@I00039@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=gibert&oc=20;"Profession";OCCU;;;"";"";"Laboureur";"";"";
-@I00039@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=gibert&oc=20;"Testament";WILL;11 août 1545 julien;@#DJULIAN@ 11 AUG 1545;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Testament de Jean GIBERT dit le Roux habitant Vallabrègues se trouve détenu
-malade
-Sépulture au cimetière dudit lieu
-pour son âme et légat pie 30 florins pour une fois tant seulement
-à honeste femme Françoise RODIERE sa femme
-à autres de sa parentèle 5 sous.
-Héritier Jean,Gabriel,Etienne et Guillaume GIBERT ses fils et aussi au
-posthume au ventre de sa femme
-si c'était une fille recevrait 100 florins et deux robes outre son entretien
-Exécuteurs Pierre GIBERT vieux et Vincent BERARD
-Acte à Vallabrègues
-En présence de Mre Etienne GOYS,Vincent BERARD,Simon VINCENS,Rostang TINEL
-Jaume BERARD fils de Vincent.
-Acte passé devant Maître André DUPIN notaire.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
-Note 2E 1/188 André Dupin";
-@I00039@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jean&n=gibert&oc=20;"Testament";WILL;30 décembre 1558 julien;@#DJULIAN@ 30 DEC 1558;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Testament le 30 décembre 1558 de Jean GIBERT dit Roux du lieu de Vallabrègues
-laboureur légat en faveur de ses filles Esprite et Antonie 200 florins et deux
-robes
-Héritiers Françoise RODIERE sa femme et Jean,Etienne,Guillaume,Olivier et
-Antoine ses fils.
-Acte passé devant Maître Guillaume CAYRON,notaire de Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
-Note N°41 72/163 Guillaume Cayron";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Décès";DEAT;avant 2 février 1564 (1563/4) julien;BEF @#DJULIAN@ 2 FEB 1564;"";"Date du contrat de mariage de sa fille Hélène où il est dit fille de feu
+@I00035@;François;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=francois&n=caille;"Naissance";BIRT;vers 1535 julien;ABT @#DJULIAN@ 1535;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00035@;François;CAILLE;https://gw.geneanet.org/fapoja?lang=fr&p=francois&n=caille;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Naissance";BIRT;;;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Décès";DEAT;avant 2 février 1564 (1563/4) julien;BEF @#DJULIAN@ 2 FEB 1564;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Date du contrat de mariage de sa fille Hélène où il est dit fille de feu
 Pierre";"";"";"";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Profession";OCCU;;;"";"";"Pontonier";"";"";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Vente";EVEN;7 avril 1516 julien;@#DJULIAN@ 7 APR 1516;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"Vente";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Bail";EVEN;14 avril 1517 julien;@#DJULIAN@ 14 APR 1517;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail à enchères publiques des ports des iles de Valabrègues alias du Port des
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Profession";OCCU;;;"";"";"Pontonier";"";"";
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Vente";EVEN;7 avril 1516 julien;@#DJULIAN@ 7 APR 1516;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"Vente";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet";
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Bail";EVEN;14 avril 1517 julien;@#DJULIAN@ 14 APR 1517;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail à enchères publiques des ports des iles de Valabrègues alias du Port des
 Iles de Valabrègues
 par noble et honorable Raimond ADALBERT sindic des nobis, Jean DUELLE et
 Thibaud ARLHAC sindic des bourgeois
@@ -202,21 +171,21 @@ Acte à Valabrègue chez le notaire
 En présence Antoine ESCAYRE de Colias, de Pierre ACHARD de Villeneuve-de Fesc
 en Auvergne, de Guillaume DUSEU et Etienne RAFFARD
 Acte devant Maître André CARRIERE notaire de Valalbrègues.";"Bail";"Relevés - 0072 - Généanet Mr Chassin du Guerny - Internet";"";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;2 mars 1518 (1517/8) julien;@#DJULIAN@ 2 MAR 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Pierre TREBILHON natif de Vallabrègues confesse devoir à Jacques GALINE
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;2 mars 1518 (1517/8) julien;@#DJULIAN@ 2 MAR 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Pierre TREBILHON natif de Vallabrègues confesse devoir à Jacques GALINE
 cardeur à laines du même lieu 3 livres sur denrées En présence de Guillaume
 MANYVET de Vallabrègue et pierre DUROURE familier de Jean CHAPELLE fustier
 De même Guillaume MANYVET débiteur de TREBILHON pour 3 livres promet de rendre
 à prochaine fête de Sainte Marie Madeleine.Acte devant Maître Guillaume
 RIVIERE notaire.";"Quittance";"Relevés - 0072 - Généanet Mr Chassin du Guerny - Internet";"Note ph 1882";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;2 mars 1518 (1517/8) julien;@#DJULIAN@ 2 MAR 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Quittance de Jean de LUETZ seigneur d'Aramon et de Valalbrègues faite à Pierre
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;2 mars 1518 (1517/8) julien;@#DJULIAN@ 2 MAR 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Quittance de Jean de LUETZ seigneur d'Aramon et de Valalbrègues faite à Pierre
 TREBILHON et à Guillaume MANIVET une salmée et demi seigle pour raison d'un
 arrentement passé audit TREBILHON";"Quittance";"Relevés - 0072 - Généanet Mr Chassin du Guerny - Internet";"Note ph 1882";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;19 juin 1518 julien;@#DJULIAN@ 19 JUN 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Pierre TREBILHAC pontanier du port de Vallabrègues confesse devoir à noble
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Quittance";EVEN;19 juin 1518 julien;@#DJULIAN@ 19 JUN 1518;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Pierre TREBILHAC pontanier du port de Vallabrègues confesse devoir à noble
 Gaspard de LUETZ seigneur dudit lieu 5 florins petits pour vente Promet de
 rendre à prochaine fête de Sainte Marie Madeleine.acte dans la maison de noble
 François MOURGUE En présence d'Etienne CANONGE teissier et de Pierre BELFORT
 Acte devant Maître Guillaume RIVIERE notaire de Vallabrègues.";"Quittance";"Relevés - 0072 - Généanet Mr Chassin du Guerny - Internet";"Note ph 1880 2E 1/727";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Contrat de mariage (avec Jaumette MALCANE)";EVEN;8 septembre 1521 julien;@#DJULIAN@ 8 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Pierre TREBILHAT habitant de Vallabrègues d'une part
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Contrat de mariage (avec Jaumette MALCANE)";EVEN;8 septembre 1521 julien;@#DJULIAN@ 8 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Pierre TREBILHAT habitant de Vallabrègues d'une part
 et honeste fille Jaumette MALCANE fille de feu Antoine MALCANE et de Doulce
 BARONE native de Montfrin et à présent habitante de Vallabrègues avec promesse
 de célébrer leur mariage à première réquisition en faveur duquel mariage
@@ -227,41 +196,85 @@ les accoutrements le tout au jour des noces pour les robes et par solutions de
 3 livres à chaque Saint Michel suivent les pactes Acte à Vallabrègues maison
 de Jean GARIN de Tarascon En présence de Jean ROMIEU,Nicolas DAUTAVES,Pierre
 GAUDIN,de Cirice GUIN,Antoine DELON,André YTIER et de Michel CHAYNE.
-Acte par- devant maître Guillaume ROUVIERE notaire.";"Contrat de mariage (avec Jaumette MALCANE)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Acte par- devant maître Guillaume ROUVIERE notaire.
+Présent :
+[![sosa](https://static.geneanet.org/geneweb/img/sosa_symbol_simple.png)](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&m=RL&i1=36770&i2=13168&b1=1&b2=22952)
+[Nicolas
+DAUTANEZ](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=dautanez),
+_Probe homme_ , †1527..1529";"Contrat de mariage (avec Jaumette MALCANE)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v2 p 399 2E 1/731";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Reconnaissance";EVEN;30 novembre 1521 julien;@#DJULIAN@ 30 NOV 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Reconnaissance de Pierre TREBILHAT de Vallabrègues comme mari de Jaumette
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Reconnaissance";EVEN;30 novembre 1521 julien;@#DJULIAN@ 30 NOV 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Reconnaissance de Pierre TREBILHAT de Vallabrègues comme mari de Jaumette
 MALCANE faite à Antoine MALCAN de Montfrin 10 florins venant à déduction faite
 à Jaumette et de mariage reçu du notaire sousigné Acte maison de noble Jean
-GARIN tenue en arrentement par ledit TREBILHAT En présence de Gabriel
+GARINtenue en arrentement par ledit TREBILHAT En présence de Gabriel
 REYNOARD,de Simon MORET,de Louis BONNET habitant de Vallabrègues. Acte devant
 Maître Guillaume ROUVIERE notaire de Vallabrègues.";"Reconnaissance";"Relevés - 0072 - Généanet Mr Chassin du Guerny - Internet";"Note ph 2012";
-@I00040@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=pierre+ou+pons&n=trebillon;"Bail";EVEN;19 juillet 1534 julien;@#DJULIAN@ 19 JUL 1534;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail du port de Comps faite à Pierre TREBILLON à commenser à la Saint Michel
+@I00036@;Pierre ou Pons;TREBILLON;https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon;"Bail";EVEN;19 juillet 1534 julien;@#DJULIAN@ 19 JUL 1534;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Bail du port de Comps faite à Pierre TREBILLON à commenser à la Saint Michel
 prochaine.";"Bail";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v2 p 887 2E 1/745";
-@I00042@;Françoise;RODIERE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=rodiere;"Décès";DEAT;après 14 août 1575 julien;AFT @#DJULIAN@ 14 AUG 1575;"";"date du contrat de mariage de sa fille Antonie";"";"";"";
-@I00042@;Françoise;RODIERE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=francoise&n=rodiere;"Reconnaissance féodale";EVEN;10 juin 1561 julien;@#DJULIAN@ 10 JUN 1561;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Reconnaissances féodales en faveur de haute et puissante Diane de POSTIER
+@I00037@;Jaumette;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&p=jaumette&n=malcane;"Naissance";BIRT;;;"Montfrin, 30490, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00037@;Jaumette;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&p=jaumette&n=malcane;"Contrat de mariage (avec Pierre ou Pons TREBILLON)";EVEN;8 septembre 1521 julien;@#DJULIAN@ 8 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Pierre TREBILHAT habitant de Vallabrègues d'une part
+et honeste fille Jaumette MALCANE fille de feu Antoine MALCANE et de Doulce
+BARONE native de Montfrin et à présent habitante de Vallabrègues avec promesse
+de célébrer leur mariage à première réquisition en faveur duquel mariage
+Doulce BARONE mère,Guillaume MANIVET beau frère et Jeanne MALCANE soeur et
+autres parents et amis donnent licence à ledite Jaumette
+Lesquels Doulce BARONE et Guillaume MANYVERT constituent en dot 12 livres et
+les accoutrements le tout au jour des noces pour les robes et par solutions de
+3 livres à chaque Saint Michel suivent les pactes Acte à Vallabrègues maison
+de Jean GARIN de Tarascon En présence de Jean ROMIEU,Nicolas DAUTAVES,Pierre
+GAUDIN,de Cirice GUIN,Antoine DELON,André YTIER et de Michel CHAYNE.
+Acte par- devant maître Guillaume ROUVIERE notaire.
+Présent :
+[![sosa](https://static.geneanet.org/geneweb/img/sosa_symbol_simple.png)](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&m=RL&i1=36770&i2=13168&b1=1&b2=22952)
+[Nicolas
+DAUTANEZ](fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=nicolas&n=dautanez),
+_Probe homme_ , †1527..1529";"Contrat de mariage (avec Pierre ou Pons TREBILLON)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Note v2 p 399 2E 1/731";
+@I00040@;Domergue;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&p=domergue&n=rigaud;"Mariage (avec Catherine BAUD)";EVEN;avant 17 avril 1529 julien;BEF @#DJULIAN@ 17 APR 1529;"";"@todo événement de type mariage probablement redondant pour Domergue RIGAUD";"Mariage (avec Catherine BAUD)";"";"";
+@I00040@;Domergue;RIGAUD;https://gw.geneanet.org/fapoja?lang=fr&p=domergue&n=rigaud;"Evenement";EVEN;6 mai 1532 julien;@#DJULIAN@ 6 MAY 1532;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Présent Domergue RIGAUD du lieu de Bourbon comme mari de Catherine BAUDE qui
+fait vente et baille à Jean AMANS et Jean FORNIER faisant aussi pour les hoirs
+de François FORNIER des revenus et fruits et ususfruits des biens de ladite
+BAUDE aux appartenances de Vallabrègues dans l'isle dudit lieu confrontés pour
+5 années moyennant 6 livres bien retirés.
+Acte à Vallabrègues maison desdits hoirs
+En présence de Guillaume DELAFONT ,André JULIER et Antoine FABRE dit
+Rencontre.
+Acte reçu par Maître Guillaume RIVIERE notaire de Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Note v2 p 828 1/744 maître Guillaume RIVIERE";
+@I00042@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=gibert&oc=20;"Décès";DEAT;entre 7 février 1559 et 10 juin 1561 (1558/9) julien;BET @#DJULIAN@ 7 FEB 1559 AND @#DJULIAN@ 10 JUN 1561;"";"entre le contrat de mariage de son fils Jean et reconnaissance féodale le 10
+juin 1561 : Françoise Rodiere veuve de Jean Gibert";"";"";"";
+@I00042@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=gibert&oc=20;"Profession";OCCU;;;"";"";"Laboureur";"";"";
+@I00042@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=gibert&oc=20;"Testament";WILL;11 août 1545 julien;@#DJULIAN@ 11 AUG 1545;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"de Jean GIBERT dit le Roux habitant Vallabrègues se trouve détenu malade
+Sépulture au cimetière dudit lieu
+pour son âme et légat pie 30 florins pour une fois tant seulement
+à honeste femme Françoise RODIERE sa femme
+à autres de sa parentèle 5 sous.
+Héritier Jean,Gabriel,Etienne et Guillaume GIBERT ses fils et aussi au
+posthume au ventre de sa femme
+si c'était une fille recevrait 100 florins et deux robes outre son entretien
+Exécuteurs Pierre GIBERT vieux et Vincent BERARD
+Acte à Vallabrègues
+En présence de Mre Etienne GOYS,Vincent BERARD,Simon VINCENS,Rostang TINEL
+Jaume BERARD fils de Vincent.
+Acte passé devant Maître André DUPIN notaire.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Note 2E 1/188 André Dupin";
+@I00042@;Jean;GIBERT;https://gw.geneanet.org/fapoja?lang=fr&p=jean&n=gibert&oc=20;"Testament";WILL;30 décembre 1558 julien;@#DJULIAN@ 30 DEC 1558;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"de Jean GIBERT dit Roux du lieu de Vallabrègues laboureur légat en faveur de
+ses filles Esprite et Antonie 200 florins et deux robes
+Héritiers Françoise RODIERE sa femme et Jean,Etienne,Guillaume,Olivier et
+Antoine ses fils.
+Acte passé devant Maître Guillaume CAYRON,notaire de Vallabrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
+Note N°41 72/163 Guillaume Cayron";
+@I00043@;Françoise;RODIERE;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=rodiere;"Décès";DEAT;après 14 août 1575 julien;AFT @#DJULIAN@ 14 AUG 1575;"";"date du contrat de mariage de sa fille Antonie";"";"";"";
+@I00043@;Françoise;RODIERE;https://gw.geneanet.org/fapoja?lang=fr&p=francoise&n=rodiere;"Reconnaissance féodale";EVEN;10 juin 1561 julien;@#DJULIAN@ 10 JUN 1561;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Reconnaissances féodales en faveur de haute et puissante Diane de POSTIER
 duchesse de Valentinois dame du lieu de Vallabrègues par ses tenaciers dudit
 Vallabrègues ...Françoise RODIERE veuve de Jean GIBERT...
 Maître Guillaume CAYRON notaire de Vallabrègues.";"Reconnaissance féodale";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note 2E 72/163p 51";
-@I00043@;Jaumette;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jaumette&n=malcane;"Naissance";BIRT;;;"Montfrin, 30490, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00043@;Jaumette;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=jaumette&n=malcane;"Contrat de mariage (avec Pierre ou Pons TREBILLON)";EVEN;8 septembre 1521 julien;@#DJULIAN@ 8 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Contrat de mariage entre Pierre TREBILHAT habitant de Vallabrègues d'une part
-et honeste fille Jaumette MALCANE fille de feu Antoine MALCANE et de Doulce
-BARONE native de Montfrin et à présent habitante de Vallabrègues avec promesse
-de célébrer leur mariage à première réquisition en faveur duquel mariage
-Doulce BARONE mère,Guillaume MANIVET beau frère et Jeanne MALCANE soeur et
-autres parents et amis donnent licence à ledite Jaumette
-Lesquels Doulce BARONE et Guillaume MANYVERT constituent en dot 12 livres et
-les accoutrements le tout au jour des noces pour les robes et par solutions de
-3 livres à chaque Saint Michel suivent les pactes Acte à Vallabrègues maison
-de Jean GARIN de Tarascon En présence de Jean ROMIEU,Nicolas DAUTAVES,Pierre
-GAUDIN,de Cirice GUIN,Antoine DELON,André YTIER et de Michel CHAYNE.
-Acte par- devant maître Guillaume ROUVIERE notaire.";"Contrat de mariage (avec Pierre ou Pons TREBILLON)";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
-Note v2 p 399 2E 1/731";
-@I00044@;Doulce;BARONE OU BARRINE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=doulce&n=barone+ou+barrine;"Décès";DEAT;après 22 octobre 1527 julien;AFT @#DJULIAN@ 22 OCT 1527;"";"Date du mariage de sa fille Gilette";"";"";"";
-@I00044@;Doulce;BARONE OU BARRINE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=doulce&n=barone+ou+barrine;"Evenement";EVEN;30 novembre 1521 julien;@#DJULIAN@ 30 NOV 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Honeste femme Doulce BARRINE comme mère et tutrice d'Antoine MALCAN laquelle
+@I00044@;Antoine;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&p=antoine&n=malcane;"Décès";DEAT;avant 8 septembre 1521 julien;BEF @#DJULIAN@ 8 SEP 1521;"";"Avant le contrat de mariage de sa fille Jaumette";"";"";"";
+@I00045@;Doulce;BARONE OU BARRINE;https://gw.geneanet.org/fapoja?lang=fr&p=doulce&n=barone+ou+barrine;"Décès";DEAT;après 22 octobre 1527 julien;AFT @#DJULIAN@ 22 OCT 1527;"";"Date du mariage de sa fille Gilette";"";"";"";
+@I00045@;Doulce;BARONE OU BARRINE;https://gw.geneanet.org/fapoja?lang=fr&p=doulce&n=barone+ou+barrine;"Evenement";EVEN;30 novembre 1521 julien;@#DJULIAN@ 30 NOV 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"Honeste femme Doulce BARRINE comme mère et tutrice d'Antoine MALCAN laquelle
 quitte Guillaume MANYVET de Valalbrègues son gendre icelui payant pour les
 hoirs d'Antoine MALCAN la somme de 19 florins que ledit MANYVET lui a avancé.
 Acte devant Maître Guillaume RIVIERE notaire de Valalbrègues.";"";"Relevés - 0060 - ACGC Relevés de Monsieur CHASSIN du GUERNY -";"Internet
 Note v2 p 416";
-@I00045@;Antoine;MALCANE;https://gw.geneanet.org/fapoja?lang=fr&pz=jacqueline+francoise&nz=farde&p=antoine&n=malcane;"Décès";DEAT;avant 8 septembre 1521 julien;BEF @#DJULIAN@ 8 SEP 1521;"";"Avant le contrat de mariage de sa fille Jaumette";"";"";"";

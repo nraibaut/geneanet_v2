@@ -1,14 +1,14 @@
-generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.13 08/09/2023 à 01:00
-1;1;@I00001@;Anne;GUIOT;F;https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne;2;0;0;2;forme2;21 avril 1670;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,";"";"";"";"";0;0;"- Née vers 1650 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
-- Décédée le 12 janvier 1680 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 30 ans";0;
-2;3;@I00002@;Marthe;MARTIN;F;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1624
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.26 18/04/2025 à 01:10
+1;1;@I00001@;Anne;GUIOT;F;https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne;2;0;0;2;forme2;21 avril 1670;"Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE,";"";"";"";"";0;0;"- Née vers 1650 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE
+- Décédée le 12 janvier 1680 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE, à l'âge d'environ 30 ans";0;
+2;3;@I00002@;Marthe;MARTIN;F;https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née vers 1624
 - Décédée après 1683";0;
-2;2;@I00003@;Gibert;GUIOT;M;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot;3;0;0;2;forme2;;"";"Ménager";"";"";"";0;0;"- Né avant 1630
-- Décédé le 13 juin 1662 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE
+2;2;@I00003@;Gibert;GUIOT;M;https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot;3;0;0;2;forme2;;"";"Ménager";"";"";"";0;0;"- Né avant 1630
+- Décédé le 13 juin 1662 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE
 - Ménager";0;
-3;5;@I00004@;Marguerite;ICARD;F;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée vers 1652";0;
-3;4;@I00005@;Michel;GUIOT;M;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
-3;7;@I00006@;Rostagne;MATHEY;F;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
-3;6;@I00007@;Pierre;MARTIN;M;https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé le 19 janvier 1679 - Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";0;
+3;5;@I00004@;Marguerite;ICARD;F;https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée vers 1652";0;
+3;4;@I00005@;Michel;GUIOT;M;https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+3;6;@I00006@;Pierre;MARTIN;M;https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé le 19 janvier 1679 - Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";0;
+3;7;@I00007@;Rostagne;MATHEY;F;https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
 # 7 persons, 3 families, 3 generations, 0 titres de noblesse
 # 0 errors, 0 todo

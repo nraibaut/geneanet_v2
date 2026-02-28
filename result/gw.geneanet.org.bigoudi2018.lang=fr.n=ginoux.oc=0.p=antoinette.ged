@@ -1,15 +1,15 @@
 0 HEAD
-1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 00:59 à partir de https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.26 le 18/04/2025 à 01:10 à partir de https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette
 1 SUBM @B00001@
 1 PLAC
 1 SOUR GeneanetSpider
-2 VERS 1.0.13
+2 VERS 1.0.26
 2 NAME GeneanetSpider
 2 CORP Nicolas Raibaut
 3 ADDR raibaut.nicolas@gmail.com
 1 DEST ANY
-1 DATE 08 SEP 2023
-2 TIME 00:59:59
+1 DATE 18 APR 2025
+2 TIME 01:10:44
 1 FILE gw.geneanet.org.bigoudi2018.lang=fr.n=ginoux.oc=0.p=antoinette.ged
 1 GEDC
 2 VERS 5.5.1
@@ -27,14 +27,23 @@
 2 SOUR @S00001@
 1 DEAT Y
 1 SOUR @S00002@
+1 FAMC @F00001@
 0 @S00001@ SOUR
 1 TITL Généprovence
-1 TEXT
 0 @S00002@ SOUR
 1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette
 1 TEXT - Née vers 1663 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
 2 CONT - Décédée
 0 @I00002@ INDI
+1 NAME Elisabeth /ROUX/
+2 GIVN Elisabeth
+2 SURN ROUX
+1 SEX F
+1 SOUR @S00003@
+1 FAMS @F00001@
+0 @S00003@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=elisabeth&n=roux
+0 @I00003@ INDI
 1 NAME Michel /GINOUX/
 2 GIVN Michel
 2 SURN GINOUX
@@ -48,25 +57,22 @@
 2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
 2 NOTE @N00002@
 2 SOUR @S00004@
+1 BURI
+2 DATE 20 MAR 1733
+2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 NOTE @N00003@
 1 EVEN
 2 SOUR @S00005@
 1 EVEN
 2 SOUR @S00006@
 1 SOUR @S00007@
-0 @I00003@ INDI
-1 NAME Elisabeth /ROUX/
-2 GIVN Elisabeth
-2 SURN ROUX
-1 SEX F
-1 SOUR @S00003@
-0 @S00003@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=elisabeth&n=roux
-1 TEXT
+1 FAMS @F00001@
+1 FAMC @F00002@
 0 @N00001@ NOTE à vérifier
 0 @N00002@ NOTE dans l'acte agé d'environ 90 ans et veuf en seconde noces de Françoise PAULEAU
 0 @S00004@ SOUR
 1 TITL 203 E 230 1733 vur 5/15
-1 TEXT
+0 @N00003@ NOTE inhumation dans l'église paroissiale
 0 @S00005@ SOUR
 1 TITL Généprovence
 1 TEXT @todo événement 'Union 1' inconnu pour Michel GINOUX. Vérifier la source.
@@ -74,23 +80,13 @@
 1 TITL Généprovence
 1 TEXT @todo événement 'Union 2' inconnu pour Michel GINOUX. Vérifier la source.
 0 @S00007@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=michel&n=ginoux
-1 TEXT - Né le 23 août 1643 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
-2 CONT - Décédé le 20 mars 1733 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 89 ans
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=michel&n=ginoux
+1 TEXT - Né le 23 août 1643 (dimanche) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédé le 20 mars 1733 (vendredi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 89 ans
+2 CONT - Inhumé le 20 mars 1733 (vendredi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
 2 CONT @todo note 'Union avec Françoise PAULEAU' de Michel GINOUX à analyser : 'contrat de mariage chez BERGE Claude ref: 415 E 236 283'
 2 CONT @todo vérifier les événements pour Michel GINOUX (2 erreur(s) détectée(s))
 0 @I00004@ INDI
-1 NAME Antoinette /CHABERT/
-2 GIVN Antoinette
-2 SURN CHABERT
-1 SEX F
-1 DEAT Y
-1 SOUR @S00008@
-0 @S00008@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=chabert
-1 TEXT - Décédée
-2 CONT @todo note 'Union avec Mathieu GINOUX' de Antoinette CHABERT à analyser : 'acte non filiation'
-0 @I00005@ INDI
 1 NAME Mathieu /GINOUX/
 2 GIVN Mathieu
 2 SURN GINOUX
@@ -98,42 +94,136 @@
 1 BIRT
 2 DATE 23 FEB 1595
 2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
-2 NOTE @N00003@
+2 NOTE @N00004@
 1 DEAT
 2 DATE 1 DEC 1671
 2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
-2 NOTE @N00004@
-1 SOUR @S00009@
-0 @N00003@ NOTE à vérifier
+2 NOTE @N00005@
+1 SOUR @S00008@
+1 FAMS @F00002@
+1 FAMC @F00003@
 0 @N00004@ NOTE à vérifier
-0 @S00009@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=mathieu&n=ginoux
-1 TEXT - Né le 23 février 1595 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
-2 CONT - Décédé le 1er décembre 1671 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 76 ans
+0 @N00005@ NOTE à vérifier
+0 @S00008@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=mathieu&n=ginoux
+1 TEXT - Né le 23 février 1595 (jeudi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédé le 1er décembre 1671 (mardi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 76 ans
 2 CONT @todo note 'Union avec Antoinette CHABERT' de Mathieu GINOUX à analyser : 'acte non filiation'
+0 @I00005@ INDI
+1 NAME Antoinette /CHABERT/
+2 GIVN Antoinette
+2 SURN CHABERT
+1 SEX F
+1 BIRT
+2 DATE 25 JUL 1602
+2 PLAC Côte d'Azur, France
+2 SOUR @S00009@
+1 CHR
+2 DATE 25 JUL 1602
+2 PLAC Côte d'Azur, France
+2 NOTE @N00006@
+1 DEAT
+2 DATE 1 DEC 1671
+2 PLAC Côte d'Azur, France
+2 NOTE @N00007@
+2 SOUR @S00010@
+1 BURI
+2 DATE 2 DEC 1671
+2 PLAC Côte d'Azur, France
+2 NOTE @N00008@
+1 EVEN
+2 TYPE Mariage (avec Mathieu GINOUX)
+2 DATE 9 FEB 1624
+2 PLAC Côte d'Azur, France
+2 NOTE @N00009@
+2 SOUR @S00011@
+1 SOUR @S00012@
+1 FAMS @F00002@
+1 FAMC @F00004@
+0 @S00009@ SOUR
+1 TITL vue 4/6
+0 @N00006@ NOTE Parrain : [Jacques
+1 CONT CLAVY](bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=clavy)
+1 CONT Marraine : [Antoinette
+1 CONT X?](bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=antoinette&n=x&oc=1)
+0 @N00007@ NOTE dans l'acte elle est l'épouse de Ginoulx Mathieu et agée de 75 ans
+0 @S00010@ SOUR
+1 TITL Généprovence
+0 @N00008@ NOTE inhumée dans l'Église paroissiale
+0 @N00009@ NOTE acte non filiation
+0 @S00011@ SOUR
+1 TITL Généprovence 203 E 293
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=antoinette&n=chabert
+1 TEXT - Née le 25 juillet 1602 (jeudi) - Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT - Baptisée le 25 juillet 1602 (jeudi) - Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédée le 1er décembre 1671 (mardi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 69 ans
+2 CONT - Inhumée le 2 décembre 1671 (mercredi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
 0 @I00006@ INDI
+1 NAME Pierre /CHABERT/
+2 GIVN Pierre
+2 SURN CHABERT
+1 SEX M
+1 BIRT
+2 DATE 1575
+2 PLAC Aiguilles, 05003, Hautes-Alpes, Provence-Alpes-Côte d'Azur, France
+2 NOTE @N00010@
+1 DEAT
+2 DATE 16 NOV 1626
+2 PLAC Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 SOUR @S00013@
+1 SOUR @S00014@
+1 FAMS @F00004@
+0 @N00010@ NOTE à vérifier
+0 @S00013@ SOUR
+1 TITL Vue 1/2
+0 @S00014@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=pierre&n=chabert&oc=2
+1 TEXT - Né en 1575 - Aiguilles, 05003, Hautes-Alpes, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédé le 16 novembre 1626 (lundi) - Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 51 ans
+0 @I00007@ INDI
 1 NAME Jacques /GINOUX/
 2 GIVN Jacques
 2 SURN GINOUX
 1 SEX M
 1 BIRT
-2 DATE ABT 1571
-2 SOUR @S00010@
+2 DATE 1 JAN 1550
+2 PLAC Côte d'Azur, France
+2 NOTE @N00014@
 1 DEAT
 2 DATE 9 JAN 1623
 2 PLAC Côte d'Azur, France
-2 NOTE @N00005@
-1 EVEN
-2 TYPE Mariage (avec Hélène BENOIT)
-2 NOTE @N00006@
+2 NOTE @N00015@
+2 SOUR @S00019@
 1 EVEN
 2 TYPE Contrat de mariage (avec Hélène BENOIT)
 2 DATE 19 APR 1592
 2 PLAC Côte d'Azur, France
-2 NOTE @N00007@
-2 SOUR @S00011@
-1 SOUR @S00012@
-0 @I00007@ INDI
+2 NOTE @N00016@
+2 SOUR @S00020@
+1 EVEN
+2 TYPE Mariage (avec Hélène BENOIT)
+2 NOTE @N00017@
+1 SOUR @S00021@
+1 FAMS @F00003@
+1 FAMC @F00005@
+0 @I00008@ INDI
+1 NAME Honorade /BIJAUDY/
+2 GIVN Honorade
+2 SURN BIJAUDY
+1 SEX F
+1 DEAT
+2 DATE 5 JUL 1606
+2 PLAC Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 SOUR @S00015@
+1 SOUR @S00016@
+1 FAMS @F00004@
+0 @S00015@ SOUR
+1 TITL vue 2
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=honorade&n=bijaudy
+1 TEXT - Décédée le 5 juillet 1606 (mercredi) - Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+0 @I00009@ INDI
 1 NAME Hélène /BENOIT/
 2 GIVN Hélène
 2 SURN BENOIT
@@ -141,113 +231,141 @@
 1 DEAT
 2 DATE 15 DEC 1622
 2 PLAC Côte d'Azur, France
-2 NOTE @N00008@
-1 EVEN
-2 TYPE Mariage (avec Jacques GINOUX)
-2 NOTE @N00009@
+2 NOTE @N00011@
 1 EVEN
 2 TYPE Contrat de mariage (avec Jacques GINOUX)
 2 DATE 19 APR 1592
 2 PLAC Côte d'Azur, France
-2 NOTE @N00010@
-2 SOUR @S00013@
-1 SOUR @S00014@
-0 @S00010@ SOUR
-1 TITL arbre généanet: framboise13o9
-1 TEXT
-0 @N00005@ NOTE à vérifier
-0 @N00006@ NOTE
-0 @N00007@ NOTE acte de filiation Notaire : ROY JEAN à 415 E 110
-0 @S00011@ SOUR
-1 TITL Généprovence
-1 TEXT
-0 @S00012@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=ginoux
-1 TEXT - Né vers 1571
-2 CONT - Décédé le 9 janvier 1623 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge d'environ 52 ans
-0 @N00008@ NOTE à vérifier
-0 @N00009@ NOTE
-0 @N00010@ NOTE acte de filiation Notaire : ROY JEAN à 415 E 110
-0 @S00013@ SOUR
-1 TITL Généprovence
-1 TEXT
-0 @S00014@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=helene&n=benoit
-1 TEXT - Décédée le 15 décembre 1622 - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
-0 @I00008@ INDI
-1 NAME Jacques /BENOIT/
-2 GIVN Jacques
-2 SURN BENOIT
-1 SEX M
-1 DEAT Y
-1 SOUR @S00015@
-0 @S00015@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jacques&n=benoit
-1 TEXT - Décédé
-0 @I00009@ INDI
-1 NAME Jean /GINOUX/
-2 GIVN Jean
-2 SURN GINOUX
-1 SEX M
-1 TITL Jean
-1 DEAT
-2 DATE 11 DEC 1597
-2 PLAC chateaurenard
-2 NOTE @N00011@
-1 SOUR @S00016@
+2 NOTE @N00012@
+2 SOUR @S00017@
+1 EVEN
+2 TYPE Mariage (avec Jacques GINOUX)
+2 NOTE @N00013@
+1 SOUR @S00018@
+1 FAMS @F00003@
+1 FAMC @F00006@
 0 @N00011@ NOTE à vérifier
-0 @S00016@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=jean&n=ginoux
-1 TEXT - surnom: Jean GINOUX dit le vieux
-2 CONT - Décédé le 11 décembre 1597 - chateaurenard
-2 CONT - titre: Jean
+0 @N00012@ NOTE acte de filiation Notaire : ROY JEAN à 415 E 110
+0 @S00017@ SOUR
+1 TITL Généprovence
+0 @N00013@ NOTE @todo événement de type mariage probablement redondant pour Hélène BENOIT
+0 @S00018@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=helene&n=benoit
+1 TEXT - Décédée le 15 décembre 1622 (jeudi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+0 @N00014@ NOTE à vérifier
+0 @N00015@ NOTE acte non filiatif
+0 @S00019@ SOUR
+1 TITL Généprovence
+0 @N00016@ NOTE acte de filiation Notaire : ROY JEAN à 415 E 110
+0 @S00020@ SOUR
+1 TITL Généprovence
+0 @N00017@ NOTE @todo événement de type mariage probablement redondant pour Jacques GINOUX
+0 @S00021@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=jacques&n=ginoux
+1 TEXT - Né le 1er janvier 1550 (dimanche) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédé le 9 janvier 1623 (lundi) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France, à l'âge de 73 ans
 0 @I00010@ INDI
 1 NAME Richarde /CHAPPE/
 2 GIVN Richarde
 2 SURN CHAPPE
 1 SEX F
 1 DEAT Y
-1 SOUR @S00017@
-0 @S00017@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=richarde&n=chappe
+1 SOUR @S00022@
+1 FAMS @F00006@
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=richarde&n=chappe
 1 TEXT - Décédée
 0 @I00011@ INDI
+1 NAME Jacques /BENOIT/
+2 GIVN Jacques
+2 SURN BENOIT
+1 SEX M
+1 DEAT Y
+1 SOUR @S00023@
+1 FAMS @F00006@
+0 @S00023@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=jacques&n=benoit
+1 TEXT - Décédé
+0 @I00012@ INDI
+1 NAME Jean /GINOUX/
+2 GIVN Jean
+2 SURN GINOUX
+1 SEX M
+1 DEAT
+2 DATE 11 DEC 1597
+2 PLAC Chateaurenard
+2 NOTE @N00018@
+1 SOUR @S00024@
+1 FAMS @F00005@
+0 @N00018@ NOTE à vérifier
+0 @S00024@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=jean&n=ginoux
+1 TEXT - surnom: dit le vieux
+2 CONT - Décédé le 11 décembre 1597 (jeudi) - Chateaurenard
+2 CONT @todo note 'Union avec Marguerite ROUX' de Jean GINOUX à analyser : 'à vérifier'
+0 @I00013@ INDI
 1 NAME Marguerite /ROUX/
 2 GIVN Marguerite
 2 SURN ROUX
 1 SEX F
-1 SOUR @S00018@
-0 @S00018@ SOUR
-1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&pz=patricia+marthe+madeleine+elise&nz=bressy&ocz=62&p=marguerite&n=roux
-1 TEXT
+1 BIRT
+2 PLAC Avignon, 84000, Vaucluse, Provence-Alpes-Côte d'Azur, France
+2 NOTE @N00019@
+1 DEAT
+2 DATE 19 APR 1592
+2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 NOTE @N00020@
+1 SOUR @S00025@
+1 FAMS @F00005@
+0 @N00019@ NOTE à vérifier
+0 @N00020@ NOTE à vérifier ou 13/12/1622
+0 @S00025@ SOUR
+1 TITL https://gw.geneanet.org/bigoudi2018?lang=fr&p=marguerite&n=roux
+1 TEXT - Née - Avignon, 84000, Vaucluse, Provence-Alpes-Côte d'Azur, France
+2 CONT - Décédée le 19 avril 1592 (dimanche) - Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France
+2 CONT @todo note 'Union avec Jean GINOUX' de Marguerite ROUX à analyser : 'à vérifier'
 0 @F00001@ FAM
-1 HUSB @I00002@
-1 WIFE @I00003@
+1 HUSB @I00003@
+1 WIFE @I00002@
 1 MARR
 2 DATE 10 JUN 1663
 2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,
 1 CHIL @I00001@
-0 @S00019@ SOUR
+0 @S00026@ SOUR
 1 TITL
 1 TEXT Généprovence 203 E 293
 0 @F00002@ FAM
-1 HUSB @I00005@
-1 WIFE @I00004@
+1 HUSB @I00004@
+1 WIFE @I00005@
 1 MARR
 2 DATE 9 FEB 1624
 2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,
-2 SOUR @S00019@
-1 CHIL @I00002@
+2 SOUR @S00026@
+1 CHIL @I00003@
 0 @F00003@ FAM
-1 HUSB @I00006@
-1 WIFE @I00007@
-1 CHIL @I00005@
+1 HUSB @I00007@
+1 WIFE @I00009@
+1 CHIL @I00004@
+0 @S00027@ SOUR
+1 TITL
+1 TEXT relevé collaboratif
 0 @F00004@ FAM
-1 HUSB @I00009@
-1 WIFE @I00011@
-1 CHIL @I00006@
+1 HUSB @I00006@
+1 WIFE @I00008@
+1 MARR
+2 DATE 28 APR 1591
+2 PLAC Barbentane, 13010, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,
+2 SOUR @S00027@
+1 CHIL @I00005@
 0 @F00005@ FAM
-1 HUSB @I00008@
-1 WIFE @I00010@
+1 HUSB @I00012@
+1 WIFE @I00013@
+1 MARR
+2 DATE 16 APR 1592
+2 PLAC Châteaurenard, 13027, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France,
 1 CHIL @I00007@
+0 @F00006@ FAM
+1 HUSB @I00011@
+1 WIFE @I00010@
+1 CHIL @I00009@
 0 TRLR

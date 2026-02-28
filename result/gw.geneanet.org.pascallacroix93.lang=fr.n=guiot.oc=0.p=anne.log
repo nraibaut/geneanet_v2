@@ -1,33 +1,88 @@
-[root] INFO: Starting GeneanetSpider 1.0.13
+[root] INFO: Starting GeneanetSpider 1.0.26
 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
-[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22621-SP0
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22631-SP0
 [scrapy.crawler] INFO: Overridden settings:
 {'BOT_NAME': 'geneanet',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': '0',
  'FEED_EXPORT_ENCODING': 'utf-8',
  'NEWSPIDER_MODULE': 'geneanet.spiders',
  'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
- 'ROBOTSTXT_OBEY': True,
  'SPIDER_MODULES': ['geneanet.spiders'],
- 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) '
+                'Gecko/20100101 Firefox/98.0',)}
 [asyncio] DEBUG: Using selector: SelectSelector
 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
-[scrapy.extensions.telnet] INFO: Telnet Password: ded6a82604839c99
+[scrapy.extensions.telnet] INFO: Telnet Password: ca6e7ebbbd5493cf
 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.logstats.LogStats']
+[faker.factory] DEBUG: Not in REPL -> leaving logger event level as is.
+[scrapy_fake_useragent.middleware] INFO: Error loading User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.address`.
+[faker.factory] DEBUG: Provider `faker.providers.address` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.automotive`.
+[faker.factory] DEBUG: Provider `faker.providers.automotive` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.bank`.
+[faker.factory] DEBUG: Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.barcode`.
+[faker.factory] DEBUG: Provider `faker.providers.barcode` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.color`.
+[faker.factory] DEBUG: Provider `faker.providers.color` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.company`.
+[faker.factory] DEBUG: Provider `faker.providers.company` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[faker.factory] DEBUG: Provider `faker.providers.credit_card` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.currency`.
+[faker.factory] DEBUG: Provider `faker.providers.currency` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.date_time`.
+[faker.factory] DEBUG: Provider `faker.providers.date_time` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.geo`.
+[faker.factory] DEBUG: Provider `faker.providers.geo` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.internet`.
+[faker.factory] DEBUG: Provider `faker.providers.internet` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.isbn`.
+[faker.factory] DEBUG: Provider `faker.providers.isbn` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.job`.
+[faker.factory] DEBUG: Provider `faker.providers.job` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.lorem`.
+[faker.factory] DEBUG: Provider `faker.providers.lorem` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.misc`.
+[faker.factory] DEBUG: Provider `faker.providers.misc` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.passport`.
+[faker.factory] DEBUG: Provider `faker.providers.passport` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.person`.
+[faker.factory] DEBUG: Provider `faker.providers.person` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[faker.factory] DEBUG: Provider `faker.providers.phone_number` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.ssn`.
+[faker.factory] DEBUG: Provider `faker.providers.ssn` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[scrapy_fake_useragent.middleware] DEBUG: Loaded User-Agent provider: scrapy_fake_useragent.providers.FakerProvider
+[scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakerProvider'>' as the User-Agent provider
+[scrapy_fake_useragent.middleware] INFO: Error loading User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+[scrapy_fake_useragent.middleware] DEBUG: Loaded User-Agent provider: scrapy_fake_useragent.providers.FakerProvider
+[scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakerProvider'>' as the User-Agent provider
 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
- 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware',
  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
 [scrapy.middleware] INFO: Enabled spider middlewares:
@@ -45,97 +100,99 @@
 [geneanet] DEBUG: URL = https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne
 [geneanet] DEBUG: result_name = gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne
 [geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.ged
-[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.13 le 08/09/2023 à 01:00 à partir de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne' ...
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.26 le 18/04/2025 à 01:10 à partir de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne' ...
 [geneanet] DEBUG: csv persons = result/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.persons.csv
 [geneanet] DEBUG: csv events = result/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.events.csv
 [geneanet] DEBUG: csv unions = result/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.unions.csv
 [geneanet] DEBUG: Root URL = https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne (true='https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.html')
 [scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.html> (referer: None)
 [geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Anne' 'GUIOT' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne)
-[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : info = 'Née vers 1650 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
-[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : --> event_name2='Naissance' event_date2='vers 1650' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
-[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : info = 'Décédée le 12 janvier 1680 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE, à l'âge d'environ 30 ans'
-[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : --> event_name2='Décès' event_date2='12 janvier 1680' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
-[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=gibert.n=guiot.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=marthe.n=martin.html'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=marthe.n=martin.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=gibert.n=guiot.html> (referer: None)
-[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : union 1 = debut='* Mariée _le 21 avril 1670, Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE,_' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=antoine&n=bechet' 
-[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anne' 'GUIOT' : name='Naissance', date='vers 1650', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anne' 'GUIOT' : name='Décès', date='12 janvier 1680', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : info = 'Née vers 1650 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : --> event_name2='Naissance' event_date2='vers 1650' event_place2='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : info = 'Décédée le 12 janvier 1680 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE, à l'âge d'environ 30 ans'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : --> event_name2='Décès' event_date2='12 janvier 1680' event_place2='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=gibert&n=guiot (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=gibert.n=guiot.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=marthe&n=martin (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=marthe.n=martin.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : union 1 = debut='* Mariée _le 21 avril 1670, Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE,_' nom_conjoint='Antoine BECHET' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=antoine&n=bechet' 
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anne' 'GUIOT' : name='Naissance', date='vers 1650', place='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anne' 'GUIOT' : name='Décès', date='12 janvier 1680', place='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE', notes='None', source='None'
 [geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : rubrique='Parents'
 [geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 1, sosa 1 : Anne GUIOT : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Marthe' 'MARTIN' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=marthe.n=martin.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=gibert.n=guiot.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00002@ : 'Marthe' 'MARTIN' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin)
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : info = 'Née vers 1624'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : --> event_name2='Naissance' event_date2='vers 1624' event_place2='None' 
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : info = 'Décédée après 1683'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : --> event_name2='Décès' event_date2='après 1683' event_place2='None' 
-[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=pierre.n=martin.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=rostagne.n=mathey.html'
-[geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=pierre&n=martin (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=pierre.n=martin.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=rostagne&n=mathey (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=rostagne.n=mathey.html'
+[geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : union 1 = debut='*' nom_conjoint='Gibert GUIOT' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot' 
 [gedcomw.element.element] INFO: manage_events : @I00002@ 'Marthe' 'MARTIN' : name='Naissance', date='vers 1624', place='None', notes='None', source='None'
 [gedcomw.element.element] INFO: manage_events : @I00002@ 'Marthe' 'MARTIN' : name='Décès', date='après 1683', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : rubrique='Parents'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 2, sosa 3 : Marthe MARTIN : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'Gibert' 'GUIOT' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00003@ : 'Gibert' 'GUIOT' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot)
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : info = 'Né avant 1630'
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : --> event_name2='Naissance' event_date2='avant 1630' event_place2='None' 
-[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : info = 'Décédé le 13 juin 1662 - Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
-[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : --> event_name2='Décès' event_date2='13 juin 1662' event_place2='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : info = 'Décédé le 13 juin 1662 - Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE'
+[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : --> event_name2='Décès' event_date2='13 juin 1662' event_place2='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE' 
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : info = 'Ménager'
-[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=michel.n=guiot.html'
-[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard (true='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=marguerite.n=icard.html'
-[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin' 
+[geneanet] DEBUG: URL parent 1 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=michel&n=guiot (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=michel.n=guiot.html'
+[geneanet] DEBUG: URL parent 2 (forme 2) de https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/pascallacroix93?lang=fr&p=marguerite&n=icard (true='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=marguerite.n=icard.html'
+[geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : union 1 = debut='*' nom_conjoint='Marthe MARTIN' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin' 
 [gedcomw.element.element] INFO: manage_events : @I00003@ 'Gibert' 'GUIOT' : name='Naissance', date='avant 1630', place='None', notes='None', source='None'
-[gedcomw.element.element] INFO: manage_events : @I00003@ 'Gibert' 'GUIOT' : name='Décès', date='13 juin 1662', place='Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Gibert' 'GUIOT' : name='Décès', date='13 juin 1662', place='Boulbon, 13017, Bouches du Rhône, Provence-Alpes-Côte-d'Azur, FRANCE', notes='None', source='None'
 [gedcomw.element.element] INFO: manage_events : @I00003@ 'Gibert' 'GUIOT' : name='Profession', date='None', place='None', notes='Ménager', source='None'
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : rubrique='Parents'
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 2, sosa 2 : Gibert GUIOT : rubrique='Aperçu de l'arbre'
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=marguerite.n=icard.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=michel.n=guiot.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=rostagne.n=mathey.html> (referer: None)
-[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.iz=5.p=pierre.n=martin.html> (referer: None)
-[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Marguerite' 'ICARD' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=marguerite.n=icard.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=michel.n=guiot.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=rostagne.n=mathey.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.pascallacroix93.lang=fr.p=pierre.n=martin.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Marguerite' 'ICARD' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard)
 [geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : info = 'Décédée vers 1652'
 [geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : --> event_name2='Décès' event_date2='vers 1652' event_place2='None' 
-[geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : union 1 = debut='*' nom_conjoint='Michel GUIOT' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot' 
 [gedcomw.element.element] INFO: manage_events : @I00004@ 'Marguerite' 'ICARD' : name='Décès', date='vers 1652', place='None', notes='None', source='None'
 [geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 5 : Marguerite ICARD : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Michel' 'GUIOT' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot)
-[geneanet] DEBUG: Generation 3, sosa 4 : Michel GUIOT : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard' 
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00005@ : 'Michel' 'GUIOT' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot)
+[geneanet] DEBUG: Generation 3, sosa 4 : Michel GUIOT : union 1 = debut='*' nom_conjoint='Marguerite ICARD' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard' 
 [geneanet] DEBUG: Generation 3, sosa 4 : Michel GUIOT : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 4 : Michel GUIOT : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 4 : Michel GUIOT : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 7, id @I00006@ : 'Rostagne' 'MATHEY' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey)
-[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin' 
-[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Union(s) et enfant(s)'
-[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Photos & documents'
-[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Aperçu de l'arbre'
-[geneanet] DEBUG: Generation 3, sosa 6, id @I00007@ : 'Pierre' 'MARTIN' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin)
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00006@ : 'Pierre' 'MARTIN' (M) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin)
 [geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : info = 'Décédé le 19 janvier 1679 - Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE'
 [geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : --> event_name2='Décès' event_date2='19 janvier 1679' event_place2='Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE' 
-[geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : union 1 = debut='*' nom_conjoint='![sosa' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey' 
-[gedcomw.element.element] INFO: manage_events : @I00007@ 'Pierre' 'MARTIN' : name='Décès', date='19 janvier 1679', place='Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : union 1 = debut='*' nom_conjoint='Rostagne MATHEY' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey' 
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Pierre' 'MARTIN' : name='Décès', date='19 janvier 1679', place='Tarascon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE', notes='None', source='None'
 [geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : rubrique='Union(s) et enfant(s)'
 [geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : rubrique='Photos & documents'
 [geneanet] DEBUG: Generation 3, sosa 6 : Pierre MARTIN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00007@ : 'Rostagne' 'MATHEY' (F) (https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey)
+[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : union 1 = debut='*' nom_conjoint='Pierre MARTIN' url_conjoint='https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Rostagne MATHEY : rubrique='Aperçu de l'arbre'
 [scrapy.core.engine] INFO: Closing spider (finished)
-[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin', 1 enfant(s)
-[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marthe&n=martin' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey', 1 enfant(s)
-[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=pierre&n=martin', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=rostagne&n=mathey' mariage_date='None' mariage_place='None' mariage_source='None'
-[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard', 1 enfant(s)
-[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=michel&n=guiot', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&iz=5&p=marguerite&n=icard' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marthe&n=martin' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=pierre&n=martin', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=rostagne&n=mathey' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot', mère='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/pascallacroix93?lang=fr&p=gibert&n=guiot', true_url_pere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=michel&n=guiot', true_url_mere='https://gw.geneanet.org/pascallacroix93?lang=fr&p=marguerite&n=icard' mariage_date='None' mariage_place='None' mariage_source='None'
 [geneanet] INFO: NRa Spider 'geneanet' closed :
 [geneanet] INFO: - nb_persons            = 7
+[geneanet] INFO: - nb_alias              = 0
+[geneanet] INFO: - nb_masked_persons     = 0
 [geneanet] INFO: - nb_families           = 3
 [geneanet] INFO: - 3 relations enfants / parents
 [geneanet] INFO: - nb_consanguinites     = 0
@@ -152,22 +209,22 @@
 [geneanet] INFO: Saving to 'result/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.ged'
 [gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.pascallacroix93.lang=fr.n=guiot.oc=0.p=anne.ged'
 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 2331,
+{'downloader/request_bytes': 4065,
  'downloader/request_count': 7,
  'downloader/request_method_count/GET': 7,
- 'downloader/response_bytes': 601238,
+ 'downloader/response_bytes': 545719,
  'downloader/response_count': 7,
  'downloader/response_status_count/200': 7,
- 'elapsed_time_seconds': 0.472422,
+ 'elapsed_time_seconds': 0.426045,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 9, 7, 23, 0, 2, 501100),
- 'log_count/DEBUG': 85,
- 'log_count/INFO': 37,
+ 'finish_time': datetime.datetime(2025, 4, 17, 23, 10, 47, 38057),
+ 'log_count/DEBUG': 133,
+ 'log_count/INFO': 43,
  'request_depth_max': 2,
  'response_received_count': 7,
  'scheduler/dequeued': 7,
  'scheduler/dequeued/memory': 7,
  'scheduler/enqueued': 7,
  'scheduler/enqueued/memory': 7,
- 'start_time': datetime.datetime(2023, 9, 7, 23, 0, 2, 28678)}
+ 'start_time': datetime.datetime(2025, 4, 17, 23, 10, 46, 612012)}
 [scrapy.core.engine] INFO: Spider closed (finished)

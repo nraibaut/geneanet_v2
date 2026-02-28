@@ -1,0 +1,1144 @@
+[root] INFO: Starting GeneanetSpider 1.0.26
+[scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: geneanet)
+[scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.10.4, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:50:54) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.0, Platform Windows-10-10.0.22631-SP0
+[scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'geneanet',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': '0',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'geneanet.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['geneanet.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) '
+                'Gecko/20100101 Firefox/98.0',)}
+[asyncio] DEBUG: Using selector: SelectSelector
+[scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+[scrapy.extensions.telnet] INFO: Telnet Password: 361d4870bfb44683
+[scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[faker.factory] DEBUG: Not in REPL -> leaving logger event level as is.
+[scrapy_fake_useragent.middleware] INFO: Error loading User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.address`.
+[faker.factory] DEBUG: Provider `faker.providers.address` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.automotive`.
+[faker.factory] DEBUG: Provider `faker.providers.automotive` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.bank`.
+[faker.factory] DEBUG: Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.barcode`.
+[faker.factory] DEBUG: Provider `faker.providers.barcode` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.color`.
+[faker.factory] DEBUG: Provider `faker.providers.color` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.company`.
+[faker.factory] DEBUG: Provider `faker.providers.company` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[faker.factory] DEBUG: Provider `faker.providers.credit_card` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.currency`.
+[faker.factory] DEBUG: Provider `faker.providers.currency` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.date_time`.
+[faker.factory] DEBUG: Provider `faker.providers.date_time` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.geo`.
+[faker.factory] DEBUG: Provider `faker.providers.geo` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.internet`.
+[faker.factory] DEBUG: Provider `faker.providers.internet` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.isbn`.
+[faker.factory] DEBUG: Provider `faker.providers.isbn` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.job`.
+[faker.factory] DEBUG: Provider `faker.providers.job` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.lorem`.
+[faker.factory] DEBUG: Provider `faker.providers.lorem` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.misc`.
+[faker.factory] DEBUG: Provider `faker.providers.misc` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.passport`.
+[faker.factory] DEBUG: Provider `faker.providers.passport` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.person`.
+[faker.factory] DEBUG: Provider `faker.providers.person` has been localized to `en_US`.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[faker.factory] DEBUG: Provider `faker.providers.phone_number` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[faker.factory] DEBUG: Looking for locale `en_US` in provider `faker.providers.ssn`.
+[faker.factory] DEBUG: Provider `faker.providers.ssn` has been localized to `en_US`.
+[faker.factory] DEBUG: Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[scrapy_fake_useragent.middleware] DEBUG: Loaded User-Agent provider: scrapy_fake_useragent.providers.FakerProvider
+[scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakerProvider'>' as the User-Agent provider
+[scrapy_fake_useragent.middleware] INFO: Error loading User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+[scrapy_fake_useragent.middleware] DEBUG: Loaded User-Agent provider: scrapy_fake_useragent.providers.FakerProvider
+[scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakerProvider'>' as the User-Agent provider
+[scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[geneanet] DEBUG: start_requests
+[geneanet] DEBUG: URL = https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana
+[geneanet] DEBUG: result_name = gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana
+[geneanet] DEBUG: gedcom_result_filename = gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.ged
+[gedcomw.parser] INFO: nra_set_header : set_header : note='Cette généalogie a été créée par GeneanetSpider 1.0.26 le 18/04/2025 à 01:11 à partir de https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana' ...
+[geneanet] DEBUG: csv persons = result/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.persons.csv
+[geneanet] DEBUG: csv events = result/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.events.csv
+[geneanet] DEBUG: csv unions = result/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.unions.csv
+[geneanet] DEBUG: Root URL = https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana (true='https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.html')
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.html> (referer: None)
+[geneanet] DEBUG: Generation 1, sosa 1, id @I00001@ : 'Anna Juliana' 'VERMEULEN' (F) (https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana)
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : info = 'Née le 26 septembre 1818 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : --> event_name2='Naissance' event_date2='26 septembre 1818' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : info = 'Décédée'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : --> event_name2='Décès' event_date2='' event_place2='None' 
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : info = 'Hekeleresse'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : note 1 (type 'Notes individuelles') : note_text='Getuigen geboorteakte:
+- Jacques Augustinus Vermeulen, 30 jaar, wever, wonende te Lokeren
+- Judocus Francies Van Ranst, 52 jaar, metserdiender, wonende te Lokeren'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=livinus+joannes&n=vermeulen (true='https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus+joannes.n=vermeulen.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus+joannes.n=vermeulen.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=petronella+theresia&n=de+donder (true='https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petronella+theresia.n=de+donder.html'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : union 1 = debut='* Mariée _le 26 avril 1838, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Eduardus Van Brussel' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=eduardus&n=van+brussel' 
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anna Juliana' 'VERMEULEN' : name='Naissance', date='26 septembre 1818', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anna Juliana' 'VERMEULEN' : name='Décès', date='', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00001@ 'Anna Juliana' 'VERMEULEN' : name='Profession', date='None', place='None', notes='Hekeleresse', source='None'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Union(s)'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Notes'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 1, sosa 1 : Anna Juliana VERMEULEN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petronella+theresia.n=de+donder.html> (referer: None)
+[geneanet] DEBUG: Generation 2, sosa 2, id @I00002@ : 'Livinus Joannes' 'VERMEULEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen)
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : info = 'Né le 18 avril 1778 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : --> event_name2='Naissance' event_date2='18 avril 1778' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : info = 'Décédé le 7 novembre 1851 - Lokeren, Oost-Vlaanderen, à l'âge de 73 ans'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : --> event_name2='Décès' event_date2='7 novembre 1851' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : info = 'Metser'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : 'Naissance - Lokeren, Oost-Vlaanderen' --> event_name='Naissance' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : event_date = '18 avril 1778'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : 'Mariage (avec Petronella Theresia De Donder) - Lokeren, Oost-Vlaanderen' --> event_name='Mariage (avec Petronella Theresia De Donder)' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : event_date = '12 octobre 1805'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : événement de type mariage / contrat de mariage 'Mariage (avec Petronella Theresia De Donder)' : date='12 octobre 1805', place='Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Petronella Theresia De Donder)' : date='12 octobre 1805', place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : 'Décès - Lokeren, Oost-Vlaanderen' --> event_name='Décès' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : event_date = '7 novembre 1851'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : note 1 (type 'Notes individuelles') : note_text='Woonde in 1814 in de Zelestraat met vrouw en 4 kinderen jonger dan 12j.
+
+Getuigen overlijdensakte:
+- Franciscus Bouez, zonder beroep, 72 jaar, wonende te Lokeren, gebuur van de
+overledene
+- Mattheus Smet, hovenier, 48 jaar, wonende te Lokeren, gebuur van de
+overledene
+Overleden in het gasthuis gestaan aan het Kerkstraatje'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes+petrus&n=vermeulen (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes+petrus.n=vermeulen.html'
+[geneanet] DEBUG: Generation 2, sosa 3, id @I00003@ : 'Petronella Theresia' 'DE DONDER' (F) (https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder)
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : info = 'Née le 21 janvier 1780 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : --> event_name2='Naissance' event_date2='21 janvier 1780' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : info = 'Décédée le 26 novembre 1835 - Lokeren, Oost-Vlaanderen, à l'âge de 55 ans'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : --> event_name2='Décès' event_date2='26 novembre 1835' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : 'Naissance - Lokeren, Oost-Vlaanderen' --> event_name='Naissance' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : event_date = '21 janvier 1780'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : 'Mariage (avec Livinus Joannes Vermeulen) - Lokeren, Oost-Vlaanderen' --> event_name='Mariage (avec Livinus Joannes Vermeulen)' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : event_date = '12 octobre 1805'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : événement de type mariage / contrat de mariage 'Mariage (avec Livinus Joannes Vermeulen)' : date='12 octobre 1805', place='Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Livinus Joannes Vermeulen)' : date='12 octobre 1805', place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : 'Décès - Lokeren, Oost-Vlaanderen' --> event_name='Décès' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : event_date = '26 novembre 1835'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Antonius De Donder, wonende te Lokeren
+- Joanna Petronella Van Selle, wonende te Daknam
+
+Getuigen overlijdensakte:
+- Petrus Francies Schrap, winkelier, 60 jaar, wonende te Lokeren, gebuur van
+de overledene
+- Judocus Joannes De Lee, wever, 34 jaar, wonende te Lokeren, gebuur van de
+overledene'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes+baptista&n=de+donder (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes+baptista.n=de+donder.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=anna+maria&n=van+cauteren (true='https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna+maria.n=van+cauteren.html'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : union 1 = debut='* Marié _le 12 octobre 1805, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Petronella Theresia De Donder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder' 
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : note union 1 : 'Getuigen trouwakte:
+- Jacobus Willems, boodschapper, 53 jaar, wonende tot Lokeren
+- Cosmus Bernard Vyt, kleermaker, 59 jaar, wonende tot Lokeren
+- Joannes Antonius Vyt, 23 jaar, wonende tot Lokeren
+- Josephus ?, hoedenmaker, 35 jaar, wonende tot Lokeren'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Naissance', date='18 avril 1778', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Décès', date='7 novembre 1851', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Profession', date='None', place='None', notes='Metser', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00002@ 'Livinus Joannes' 'VERMEULEN' : name='Mariage (avec Petronella Theresia De Donder)', date='12 octobre 1805', place='Vlaanderen', notes='@todo événement de type mariage probablement redondant pour Livinus Joannes VERMEULEN', source='None'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : multiple_events_count=1
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Événements'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Notes'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 2 : Livinus Joannes VERMEULEN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna+maria.n=van+cauteren.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes+baptista.n=de+donder.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes+petrus.n=vermeulen.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=angelina&n=van+selle (true='https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=angelina.n=van+selle.html'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : union 1 = debut='* Mariée _le 12 octobre 1805, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Livinus Joannes Vermeulen' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen' 
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : note union 1 : 'Getuigen trouwakte:
+- Jacobus Willems, boodschapper, 53 jaar, wonende tot Lokeren
+- Cosmus Bernard Vyt, kleermaker, 59 jaar, wonende tot Lokeren
+- Joannes Antonius Vyt, 23 jaar, wonende tot Lokeren
+- Josephus ?, hoedenmaker, 35 jaar, wonende tot Lokeren'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Petronella Theresia' 'DE DONDER' : name='Naissance', date='21 janvier 1780', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Petronella Theresia' 'DE DONDER' : name='Décès', date='26 novembre 1835', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Petronella Theresia' 'DE DONDER' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Petronella Theresia' 'DE DONDER' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00003@ 'Petronella Theresia' 'DE DONDER' : name='Mariage (avec Livinus Joannes Vermeulen)', date='12 octobre 1805', place='Vlaanderen', notes='@todo événement de type mariage probablement redondant pour Petronella Theresia DE DONDER', source='None'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : multiple_events_count=1
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Parents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Événements'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Notes'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 2, sosa 3 : Petronella Theresia DE DONDER : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=angelina.n=van+selle.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 5, id @I00004@ : 'Anna Maria' 'VAN CAUTEREN' (F) (https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren)
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : info = 'Née le 29 février 1756 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : --> event_name2='Naissance' event_date2='29 février 1756' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : info = 'Décédée le 24 janvier 1802 - Lokeren, Oost-Vlaanderen, à l'âge de 45 ans'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : --> event_name2='Décès' event_date2='24 janvier 1802' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Franciscus Wuylens
+- Catharina Angela Hubert
+
+Getuigen overlijdensakte:
+- Jacques Geerinckx, schoonbroer van de overledene, wonende te Lokeren
+- André Jacques Vermeulen, arbeider, wonende te Lokeren, schoonbroer van de
+overledene'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren (true='https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=gregorius+nicolaus.n=van+cauteren.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joanna+martina&n=back (true='https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joanna+martina.n=back.html'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : union 1 = debut='* Mariée _le 9 novembre 1777, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes Petrus Vermeulen' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen' 
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Anna Maria' 'VAN CAUTEREN' : name='Naissance', date='29 février 1756', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00004@ 'Anna Maria' 'VAN CAUTEREN' : name='Décès', date='24 janvier 1802', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 5 : Anna Maria VAN CAUTEREN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 6, id @I00005@ : 'Joannes Baptista' 'DE DONDER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder)
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : info = 'Né vers 1750 - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : --> event_name2='Naissance' event_date2='vers 1750' event_place2='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : info = 'Décédé le 16 novembre 1831 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 81 ans'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : --> event_name2='Décès' event_date2='16 novembre 1831' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : info = 'Arbeider'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : note 1 (type 'Notes individuelles') : note_text='Geboren te Sint-Gillis (= Dendermonde of Brussel?)'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=martinus&n=de+donder (true='https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=martinus.n=de+donder.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=regina+judoca&n=mannaert (true='https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=regina+judoca.n=mannaert.html'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : union 1 = debut='* Marié _le 3 novembre 1778, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Angelina Van Selle' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle' 
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Joannes Baptista' 'DE DONDER' : name='Naissance', date='vers 1750', place='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Joannes Baptista' 'DE DONDER' : name='Décès', date='16 novembre 1831', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00005@ 'Joannes Baptista' 'DE DONDER' : name='Profession', date='None', place='None', notes='Arbeider', source='None'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 6 : Joannes Baptista DE DONDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 3, sosa 4, id @I00006@ : 'Joannes Petrus' 'VERMEULEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen)
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : info = 'Né le 11 juillet 1754 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : --> event_name2='Naissance' event_date2='11 juillet 1754' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : info = 'Décédé le 9 octobre 1807 - Lokeren, Oost-Vlaanderen, à l'âge de 53 ans'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : --> event_name2='Décès' event_date2='9 octobre 1807' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : info = 'Metser'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : 'Naissance - Lokeren, Oost-Vlaanderen' --> event_name='Naissance' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : event_date = '11 juillet 1754'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : 'Mariage (avec Anna Maria Van Cauteren) - Lokeren, Oost-Vlaanderen' --> event_name='Mariage (avec Anna Maria Van Cauteren)' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : event_date = '9 novembre 1777'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : événement de type mariage / contrat de mariage 'Mariage (avec Anna Maria Van Cauteren)' : date='9 novembre 1777', place='Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Anna Maria Van Cauteren)' : date='9 novembre 1777', place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : 'Mariage (avec Maria Theresia Josepha Mille)' --> event_name='Mariage (avec Maria Theresia Josepha Mille)' event_place='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : événement de type mariage / contrat de mariage 'Mariage (avec Maria Theresia Josepha Mille)' : date='None', place='None', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Maria Theresia Josepha Mille)' : date='None', place='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : 'Décès - Lokeren, Oost-Vlaanderen' --> event_name='Décès' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : event_date = '9 octobre 1807'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Joannes Van Wathem
+- Petronilla Vermeulen
+
+Getuigen overlijdensakte:
+- André Jacques Vermeulen, metser, 42 jaar, wonende te Lokeren, broer van de
+overledene
+- Livin Jean Vermeulen, metser, 28 jaar, wonende te Lokeren, zoon van de
+overledene'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen (true='https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus+guilielmus.n=vermeulen.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus+guilielmus.n=vermeulen.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=regina+judoca.n=mannaert.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=martinus.n=de+donder.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joanna+martina.n=back.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=gregorius+nicolaus.n=van+cauteren.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=judoca+maria&n=van+watthem (true='https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=judoca+maria.n=van+watthem.html'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : union 1 = debut='* Marié _le 9 novembre 1777, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Anna Maria Van Cauteren' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren' 
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : union 2 = debut='* Marié' nom_conjoint='Maria Theresia Josepha Mille' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia+josepha&n=mille' 
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Naissance', date='11 juillet 1754', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Décès', date='9 octobre 1807', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Profession', date='None', place='None', notes='Metser', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Mariage (avec Anna Maria Van Cauteren)', date='9 novembre 1777', place='Vlaanderen', notes='@todo événement de type mariage probablement redondant pour Joannes Petrus VERMEULEN', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00006@ 'Joannes Petrus' 'VERMEULEN' : name='Mariage (avec Maria Theresia Josepha Mille)', date='None', place='None', notes='@todo événement de type mariage probablement redondant pour Joannes Petrus VERMEULEN', source='None'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Événements'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 4 : Joannes Petrus VERMEULEN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=judoca+maria.n=van+watthem.html> (referer: None)
+[geneanet] DEBUG: Generation 3, sosa 7, id @I00007@ : 'Angelina' 'VAN SELLE' (F) (https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle)
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : info = 'Née le 7 juin 1752 - Daknam (Lokeren), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : --> event_name2='Naissance' event_date2='7 juin 1752' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : info = 'Décédée le 24 juin 1827 - Lokeren, Oost-Vlaanderen, à l'âge de 75 ans'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : --> event_name2='Décès' event_date2='24 juin 1827' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : info = 'Dagloonster'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : 'Naissance - Daknam (Lokeren), Oost-Vlaanderen' --> event_name='Naissance' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : event_date = '7 juin 1752'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : 'Mariage (avec Joannes Baptista De Donder) - Lokeren, Oost-Vlaanderen' --> event_name='Mariage (avec Joannes Baptista De Donder)' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : event_date = '3 novembre 1778'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : événement de type mariage / contrat de mariage 'Mariage (avec Joannes Baptista De Donder)' : date='3 novembre 1778', place='Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Joannes Baptista De Donder)' : date='3 novembre 1778', place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : 'Décès - Lokeren, Oost-Vlaanderen' --> event_name='Décès' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : event_date = '24 juin 1827'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : note 1 (type 'Notes individuelles') : note_text='Ookwel Vascelle
+
+Getuigen doopakte:
+- Georgius Baeke
+- Joanna Van Bunder
+
+Woonde in 1814 in de Brugstraat met Felix De Donder en Julie De Donder (=
+dochter?) en Seraphina De Decker (hekelaarster)
+
+Getuigen overlijdensakte:
+- Judocus Ludovicus Callebaut, 29 jaar, wever, wonende te Lokeren, gebuur van
+de overledene
+- Petrus Judocus Carreman, 27 jaar, wever, wonende te Lokeren, gebuur van de
+overledene'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=livinus&n=van+selle (true='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus.n=van+selle.html'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus.n=van+selle.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=catharina&n=van+den+bunder (true='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=van+den+bunder.html'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : union 1 = debut='* Mariée _le 3 novembre 1778, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes Baptista De Donder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder' 
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Angelina' 'VAN SELLE' : name='Naissance', date='7 juin 1752', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Angelina' 'VAN SELLE' : name='Décès', date='24 juin 1827', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Angelina' 'VAN SELLE' : name='Profession', date='None', place='None', notes='Dagloonster', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Angelina' 'VAN SELLE' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00007@ 'Angelina' 'VAN SELLE' : name='Mariage (avec Joannes Baptista De Donder)', date='3 novembre 1778', place='Vlaanderen', notes='@todo événement de type mariage probablement redondant pour Angelina VAN SELLE', source='None'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Parents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Événements'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Notes'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 3, sosa 7 : Angelina VAN SELLE : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=van+den+bunder.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 8, id @I00008@ : 'Livinus Guilielmus' 'VERMEULEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen)
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : info = 'Né le 19 juillet 1727 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : --> event_name2='Naissance' event_date2='19 juillet 1727' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : info = 'Décédé le 23 juillet 1781 - Lokeren, Oost-Vlaanderen, à l'âge de 54 ans'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : --> event_name2='Décès' event_date2='23 juillet 1781' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Guilielmus Roels
+- Livina Poppe'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=livinus&n=vermeulen (true='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus.n=vermeulen.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=maria+anna&n=de+meyer (true='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+anna.n=de+meyer.html'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : union 1 = debut='* Marié _le 22 juillet 1753, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Judoca Maria Van Watthem' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem' 
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : note union 1 : 'Getuigen huwelijksakte:
+- Oliverius Vermeulen
+- Maria Anna Van der Veken'
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Livinus Guilielmus' 'VERMEULEN' : name='Naissance', date='19 juillet 1727', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00008@ 'Livinus Guilielmus' 'VERMEULEN' : name='Décès', date='23 juillet 1781', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 8 : Livinus Guilielmus VERMEULEN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+anna.n=de+meyer.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livinus.n=vermeulen.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 13, id @I00009@ : 'Regina Judoca' 'MANNAERT' (F) (https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert)
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : info = 'Née - Lebbeke, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : --> event_name2='Naissance' event_date2='' event_place2='Lebbeke, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : info = 'Décédée - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : --> event_name2='Décès' event_date2='' event_place2='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : union 1 = debut='* Mariée' nom_conjoint='Martinus De Donder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder' 
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Regina Judoca' 'MANNAERT' : name='Naissance', date='', place='Lebbeke, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00009@ 'Regina Judoca' 'MANNAERT' : name='Décès', date='', place='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 13 : Regina Judoca MANNAERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 12, id @I00010@ : 'Martinus' 'DE DONDER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder)
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : info = 'Né - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : --> event_name2='Naissance' event_date2='' event_place2='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : info = 'Décédé - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : --> event_name2='Décès' event_date2='' event_place2='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : union 1 = debut='* Marié' nom_conjoint='Regina Judoca Mannaert' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert' 
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Martinus' 'DE DONDER' : name='Naissance', date='', place='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00010@ 'Martinus' 'DE DONDER' : name='Décès', date='', place='Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 12 : Martinus DE DONDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 11, id @I00011@ : 'Joanna Martina' 'BACK' (F) (https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back)
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : info = 'Née le 28 octobre 1731 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : --> event_name2='Naissance' event_date2='28 octobre 1731' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : info = 'Décédée le 27 avril 1803 - Lokeren, Oost-Vlaanderen, à l'âge de 71 ans'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : --> event_name2='Décès' event_date2='27 avril 1803' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : 'Naissance - Lokeren, Oost-Vlaanderen' --> event_name='Naissance' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : event_date = '28 octobre 1731'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : 'Domicilie' --> event_name='Domicilie' event_place='None'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : event_notes = 'Adres:
+Adres:'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : 'Mariage (avec Gregorius Nicolaus Van Cauteren) - Lokeren, Oost-Vlaanderen' --> event_name='Mariage (avec Gregorius Nicolaus Van Cauteren)' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : event_date = '8 décembre 1751'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : événement de type mariage / contrat de mariage 'Mariage (avec Gregorius Nicolaus Van Cauteren)' : date='8 décembre 1751', place='Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : redondance probable événement de type mariage / contrat de mariage SANS note ou source 'Mariage (avec Gregorius Nicolaus Van Cauteren)' : date='8 décembre 1751', place='Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : 'Décès - Lokeren, Oost-Vlaanderen' --> event_name='Décès' event_place='Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : event_date = '27 avril 1803'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Balduinus Back
+- Joanna Martina De Keyser
+
+Getuigen overlijdensakte:
+- Jacques Geerinckx, wever, wonende te Lokeren, schoonzoon van de overledene
+- Livin Verlinden, wever, wonende te Lokeren, gebuur van de overledene'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=back (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=back.html'
+[geneanet] DEBUG: Generation 4, sosa 9, id @I00012@ : 'Judoca Maria' 'VAN WATTHEM' (F) (https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem)
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : info = 'Née le 25 septembre 1732 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : --> event_name2='Naissance' event_date2='25 septembre 1732' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : info = 'Décédée le 22 mars 1769 - Lokeren, Oost-Vlaanderen, à l'âge de 36 ans'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : --> event_name2='Décès' event_date2='22 mars 1769' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Joannes De Langhe
+- Judoca Boeke?'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=van+watthem (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+watthem.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=maria+anna&n=van+der+veken (true='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+anna.n=van+der+veken.html'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : union 1 = debut='* Mariée _le 22 juillet 1753, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Livinus Guilielmus Vermeulen' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen' 
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : note union 1 : 'Getuigen huwelijksakte:
+- Oliverius Vermeulen
+- Maria Anna Van der Veken'
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'Judoca Maria' 'VAN WATTHEM' : name='Naissance', date='25 septembre 1732', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00012@ 'Judoca Maria' 'VAN WATTHEM' : name='Décès', date='22 mars 1769', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 9 : Judoca Maria VAN WATTHEM : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 10, id @I00013@ : 'Gregorius Nicolaus' 'VAN CAUTEREN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren)
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : info = 'Né le 9 septembre 1727 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : --> event_name2='Naissance' event_date2='9 septembre 1727' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : info = 'Décédé le 23 février 1781 - Lokeren, Oost-Vlaanderen, à l'âge de 53 ans'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : --> event_name2='Décès' event_date2='23 février 1781' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Petrus Raes
+- Joanna Vandermessche?'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=van+cauteren (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+cauteren.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=maria+theresia&n=de+cock (true='https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+theresia.n=de+cock.html'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : union 1 = debut='* Marié _le 8 décembre 1751, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joanna Martina Back' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back' 
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : note union 1 : 'Getuigen huwelijksakte:
+- Joannes Van Cauteren
+- Catharina Gaens'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Gregorius Nicolaus' 'VAN CAUTEREN' : name='Naissance', date='9 septembre 1727', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00013@ 'Gregorius Nicolaus' 'VAN CAUTEREN' : name='Décès', date='23 février 1781', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 10 : Gregorius Nicolaus VAN CAUTEREN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+theresia.n=de+cock.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+cauteren.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria+anna.n=van+der+veken.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+watthem.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=back.html> (referer: None)
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=anna&n=de+keyser (true='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna.n=de+keyser.html'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : union 1 = debut='* Mariée _le 8 décembre 1751, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Gregorius Nicolaus Van Cauteren' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren' 
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : note union 1 : 'Getuigen huwelijksakte:
+- Joannes Van Cauteren
+- Catharina Gaens'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Joanna Martina' 'BACK' : name='Naissance', date='28 octobre 1731', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Joanna Martina' 'BACK' : name='Décès', date='27 avril 1803', place='Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Joanna Martina' 'BACK' : name='Domicilie', date='None', place='None', notes='Adres:
+Adres:', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00011@ 'Joanna Martina' 'BACK' : name='Mariage (avec Gregorius Nicolaus Van Cauteren)', date='8 décembre 1751', place='Vlaanderen', notes='@todo événement de type mariage probablement redondant pour Joanna Martina BACK', source='None'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Événements'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 11 : Joanna Martina BACK : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna.n=de+keyser.html> (referer: None)
+[geneanet] DEBUG: Generation 4, sosa 14, id @I00014@ : 'Livinus' 'VAN SELLE' (M) (https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle)
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : info = 'Né vers 1723'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : --> event_name2='Naissance' event_date2='vers 1723' event_place2='None' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : info = 'Décédé le 13 octobre 1773 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 50 ans'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : --> event_name2='Décès' event_date2='13 octobre 1773' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : union 1 = debut='* Marié _le 18 janvier 1749, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Catharina Van den Bunder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder' 
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : note union 1 : 'Getuigen huwelijksakte:
+- Georgius Baecke
+- Petronilla Van Doosselaer'
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Livinus' 'VAN SELLE' : name='Naissance', date='vers 1723', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00014@ 'Livinus' 'VAN SELLE' : name='Décès', date='13 octobre 1773', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 14 : Livinus VAN SELLE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 4, sosa 15, id @I00015@ : 'Catharina' 'VAN DEN BUNDER' (F) (https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder)
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : info = 'Née le 1er octobre 1722 - Daknam (Lokeren), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : --> event_name2='Naissance' event_date2='1er octobre 1722' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : info = 'Décédée le 29 juin 1780 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge de 57 ans'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : --> event_name2='Décès' event_date2='29 juin 1780' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- ...? Zaman
+- Catharina Van Kerckhove'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=egidius&n=van+bunder (true='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=egidius.n=van+bunder.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=margareta&n=de+witte&oc=1 (true='https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=margareta.n=de+witte.oc=1.html'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : union 1 = debut='* Mariée _le 18 janvier 1749, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Livinus Van Selle' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle' 
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : note union 1 : 'Getuigen huwelijksakte:
+- Georgius Baecke
+- Petronilla Van Doosselaer'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Catharina' 'VAN DEN BUNDER' : name='Naissance', date='1er octobre 1722', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00015@ 'Catharina' 'VAN DEN BUNDER' : name='Décès', date='29 juin 1780', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Parents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Demi-frères et demi-sœurs'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Notes'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 4, sosa 15 : Catharina VAN DEN BUNDER : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=margareta.n=de+witte.oc=1.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=egidius.n=van+bunder.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 17, id @I00016@ : 'Maria Anna' 'DE MEYER' (F) (https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer)
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : info = 'Née le 14 mai 1703 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : --> event_name2='Naissance' event_date2='14 mai 1703' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : info = 'Décédée le 16 septembre 1742 - Lokeren, Oost-Vlaanderen, à l'âge de 39 ans'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : --> event_name2='Décès' event_date2='16 septembre 1742' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Petrus Van Peteghem
+- Catharina Staelens
+
+Ookwel "Meyers"'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=jacobus&n=de+meyer (true='https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=jacobus.n=de+meyer.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2 (true='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=van+peteghem.oc=2.html'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : union 1 = debut='* Mariée _le 2 juin 1722, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Livinus Vermeulen' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : note union 1 : '**Union avec Livinus Vermeulen** :
+Getuigen huwelijksakte:
+- Oliverius Vermeulen
+- Ludovicus De Bock'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : union 2 = debut='* Mariée _le 4 mars 1741, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes De Strooper' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=de+strooper' 
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : note union 2 : '**Union avec Joannes De Strooper** :
+Getuigen huwelijksakte:
+- Jacobus De Strooper
+- Joanna Feyt'
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Maria Anna' 'DE MEYER' : name='Naissance', date='14 mai 1703', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00016@ 'Maria Anna' 'DE MEYER' : name='Décès', date='16 septembre 1742', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 17 : Maria Anna DE MEYER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 16, id @I00017@ : 'Livinus' 'VERMEULEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen)
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : info = 'Né vers 1700'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : --> event_name2='Naissance' event_date2='vers 1700' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : info = 'Décédé le 20 février 1740 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 40 ans'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : --> event_name2='Décès' event_date2='20 février 1740' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=olevirius&n=vermeulen (true='https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=olevirius.n=vermeulen.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7144 (true='https://gw.geneanet.org/sh1?lang=fr&i=7144', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7144.html'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : union 1 = debut='* Marié _le 2 juin 1722, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Maria Anna De Meyer' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer' 
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : note union 1 : 'Getuigen huwelijksakte:
+- Oliverius Vermeulen
+- Ludovicus De Bock'
+[gedcomw.element.element] INFO: manage_events : @I00017@ 'Livinus' 'VERMEULEN' : name='Naissance', date='vers 1700', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00017@ 'Livinus' 'VERMEULEN' : name='Décès', date='20 février 1740', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 16 : Livinus VERMEULEN : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7144.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=olevirius.n=vermeulen.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=van+peteghem.oc=2.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=jacobus.n=de+meyer.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 21, id @I00018@ : 'Maria Theresia' 'DE COCK' (F) (https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock)
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : info = 'Née vers 1696'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : --> event_name2='Naissance' event_date2='vers 1696' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : info = 'Décédée le 11 février 1736 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 40 ans'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : --> event_name2='Décès' event_date2='11 février 1736' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=melchior&n=de+cock (true='https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=melchior.n=de+cock.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7118 (true='https://gw.geneanet.org/sh1?lang=fr&i=7118', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7118.html'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : union 1 = debut='* Mariée _le 28 janvier 1720, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes Van Cauteren' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren' 
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : note union 1 : 'Getuigen huwelijksakte:
+- Cornelis Heeckman?
+- Petrus De Poorter'
+[gedcomw.element.element] INFO: manage_events : @I00018@ 'Maria Theresia' 'DE COCK' : name='Naissance', date='vers 1696', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00018@ 'Maria Theresia' 'DE COCK' : name='Décès', date='11 février 1736', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 21 : Maria Theresia DE COCK : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 20, id @I00019@ : 'Joannes' 'VAN CAUTEREN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren)
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : info = 'Né vers 1692'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : --> event_name2='Naissance' event_date2='vers 1692' event_place2='None' 
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : info = 'Décédé le 29 octobre 1767 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 75 ans'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : --> event_name2='Décès' event_date2='29 octobre 1767' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1 (true='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petrus.n=van+cauteren.oc=1.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7119 (true='https://gw.geneanet.org/sh1?lang=fr&i=7119', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7119.html'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : union 1 = debut='* Marié _le 28 janvier 1720, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Maria Theresia De Cock' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock' 
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : note union 1 : 'Getuigen huwelijksakte:
+- Cornelis Heeckman?
+- Petrus De Poorter'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Joannes' 'VAN CAUTEREN' : name='Naissance', date='vers 1692', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00019@ 'Joannes' 'VAN CAUTEREN' : name='Décès', date='29 octobre 1767', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 20 : Joannes VAN CAUTEREN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 19, id @I00020@ : 'Maria Anna' 'VAN DER VEKEN' (F) (https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken)
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : info = 'Née le 18 mars 1697 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : --> event_name2='Naissance' event_date2='18 mars 1697' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : info = 'Décédée le 22 avril 1773 - Lokeren, Oost-Vlaanderen, à l'âge de 76 ans'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : --> event_name2='Décès' event_date2='22 avril 1773' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Martinus Rubbens
+- Maria Anna ...?'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=cornelius&n=van+der+veken (true='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=cornelius.n=van+der+veken.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=anna&n=rubbens (true='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna.n=rubbens.html'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : union 1 = debut='* Mariée _le 24 février 1726, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes Van Watthem' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem' 
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : note union 1 : 'Getuigen huwelijksakte:
+- Abraham Van Watthem
+- Joannes Van ...?'
+[gedcomw.element.element] INFO: manage_events : @I00020@ 'Maria Anna' 'VAN DER VEKEN' : name='Naissance', date='18 mars 1697', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00020@ 'Maria Anna' 'VAN DER VEKEN' : name='Décès', date='22 avril 1773', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Grands parents paternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 19 : Maria Anna VAN DER VEKEN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 18, id @I00021@ : 'Joannes' 'VAN WATTHEM' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem)
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : info = 'Né le 9 mars 1701 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : --> event_name2='Naissance' event_date2='9 mars 1701' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : info = 'Décédé le 2 novembre 1762 - Lokeren, Oost-Vlaanderen, à l'âge de 61 ans'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : --> event_name2='Décès' event_date2='2 novembre 1762' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Joannes Geldof
+- Anna Tack'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=abraham&n=van+watthem (true='https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=abraham.n=van+watthem.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=catharina&n=alexander (true='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=alexander.html'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : union 1 = debut='* Marié _le 24 février 1726, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Maria Anna Van der Veken' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken' 
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : note union 1 : 'Getuigen huwelijksakte:
+- Abraham Van Watthem
+- Joannes Van ...?'
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Joannes' 'VAN WATTHEM' : name='Naissance', date='9 mars 1701', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00021@ 'Joannes' 'VAN WATTHEM' : name='Décès', date='2 novembre 1762', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 18 : Joannes VAN WATTHEM : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 22, id @I00022@ : 'Joannes' 'BACK' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back)
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : info = 'Né le 29 novembre 1710 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : --> event_name2='Naissance' event_date2='29 novembre 1710' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : info = 'Décédé le 9 novembre 1758 - Lokeren, Oost-Vlaanderen, à l'âge de 47 ans'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : --> event_name2='Décès' event_date2='9 novembre 1758' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Joannes Bogaert
+- Petronella Jacob'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=balduinus&n=back (true='https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=balduinus.n=back.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=livina&n=bogaert (true='https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livina.n=bogaert.html'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : union 1 = debut='* Marié _le 15 juillet 1730, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Anna De Keyser' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : note union 1 : '**Union avec Anna De Keyser** :
+Getuigen huwelijksakte:
+- Balduinus Back
+- Joannes Jacob'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : union 2 = debut='* Marié _le 13 septembre 1740, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Catharina Gaens' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=gaens' 
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : note union 2 : '**Union avec Catharina Gaens** :
+Getuigen huwelijksakte:
+- Petrus Gans
+- Joanna Louppens'
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Joannes' 'BACK' : name='Naissance', date='29 novembre 1710', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00022@ 'Joannes' 'BACK' : name='Décès', date='9 novembre 1758', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Grands parents maternels, oncles et tantes'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 22 : Joannes BACK : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=livina.n=bogaert.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=balduinus.n=back.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=catharina.n=alexander.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=abraham.n=van+watthem.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=anna.n=rubbens.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=cornelius.n=van+der+veken.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7119.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petrus.n=van+cauteren.oc=1.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7118.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=melchior.n=de+cock.html> (referer: None)
+[geneanet] DEBUG: Generation 5, sosa 23, id @I00023@ : 'Anna' 'DE KEYSER' (F) (https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser)
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : info = 'Née le 5 juillet 1700 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : --> event_name2='Naissance' event_date2='5 juillet 1700' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : info = 'Décédée le 10 février 1740 - Lokeren, Oost-Vlaanderen, à l'âge de 39 ans'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : --> event_name2='Décès' event_date2='10 février 1740' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Anna ...?
+- Egidius Baert'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=egidius&n=de+keyser (true='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=egidius.n=de+keyser.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=maria&n=baert&oc=2 (true='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria.n=baert.oc=2.html'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : union 1 = debut='* Mariée _le 15 juillet 1730, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joannes Back' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back' 
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : note union 1 : 'Getuigen huwelijksakte:
+- Balduinus Back
+- Joannes Jacob'
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Anna' 'DE KEYSER' : name='Naissance', date='5 juillet 1700', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00023@ 'Anna' 'DE KEYSER' : name='Décès', date='10 février 1740', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : rubrique='Notes'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 23 : Anna DE KEYSER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 31, id @I00024@ : 'Margareta' 'DE WITTE' (F) (https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1)
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : info = 'Née vers 1687 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : --> event_name2='Naissance' event_date2='vers 1687' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : info = 'Décédée le 18 avril 1742 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 55 ans'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : --> event_name2='Décès' event_date2='18 avril 1742' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : union 1 = debut='* Mariée _le 20 novembre 1708, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Egidius Van Bunder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder' 
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : note union 1 : '**Union avec Egidius Van Bunder** :
+Getuigen huwelijksakte:
+- Joannes De Loose
+- Elisabetha Brugman'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : union 2 = debut='* Mariée _le 28 août 1723, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Victor Noppe' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=victor&n=noppe' 
+[gedcomw.element.element] INFO: manage_events : @I00024@ 'Margareta' 'DE WITTE' : name='Naissance', date='vers 1687', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00024@ 'Margareta' 'DE WITTE' : name='Décès', date='18 avril 1742', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 31 : Margareta DE WITTE : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 5, sosa 30, id @I00025@ : 'Egidius' 'VAN BUNDER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder)
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : info = 'Né le 19 octobre 1686 - Daknam (Lokeren), Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : --> event_name2='Naissance' event_date2='19 octobre 1686' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : info = 'Décédé le 20 juin 1723 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge de 36 ans'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : --> event_name2='Décès' event_date2='20 juin 1723' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=petrus&n=van+bunder (true='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petrus.n=van+bunder.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=maria&n=saman (true='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria.n=saman.html'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : union 1 = debut='* Marié _le 20 novembre 1708, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Margareta De Witte' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1' 
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : note union 1 : 'Getuigen huwelijksakte:
+- Joannes De Loose
+- Elisabetha Brugman'
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Egidius' 'VAN BUNDER' : name='Naissance', date='19 octobre 1686', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00025@ 'Egidius' 'VAN BUNDER' : name='Décès', date='20 juin 1723', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : rubrique='Parents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 5, sosa 30 : Egidius VAN BUNDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 33, id @I00026@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7144)
+[geneanet] DEBUG: Generation 6, sosa 33 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Olevirius Vermeulen' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen' 
+[geneanet] DEBUG: Generation 6, sosa 33 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 33 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 32, id @I00027@ : 'Olevirius' 'VERMEULEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen)
+[geneanet] DEBUG: Generation 6, sosa 32 : Olevirius VERMEULEN : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7144' 
+[geneanet] DEBUG: Generation 6, sosa 32 : Olevirius VERMEULEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 32 : Olevirius VERMEULEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 32 : Olevirius VERMEULEN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 35, id @I00028@ : 'Catharina' 'VAN PETEGHEM' (F) (https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2)
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : union 1 = debut='* Mariée _le 10 août 1699, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Jacobus De Meyer' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer' 
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : note union 1 : 'Getuigen huwelijksakte:
+- Petrus ...?
+- Maria Anna De Meyer'
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 35 : Catharina VAN PETEGHEM : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 34, id @I00029@ : 'Jacobus' 'DE MEYER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer)
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : info = 'Né vers 1679'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : --> event_name2='Naissance' event_date2='vers 1679' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : info = 'Décédé le 9 avril 1723 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 44 ans'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : --> event_name2='Décès' event_date2='9 avril 1723' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : union 1 = debut='* Marié _le 10 août 1699, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Catharina Van Peteghem' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2' 
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : note union 1 : 'Getuigen huwelijksakte:
+- Petrus ...?
+- Maria Anna De Meyer'
+[gedcomw.element.element] INFO: manage_events : @I00029@ 'Jacobus' 'DE MEYER' : name='Naissance', date='vers 1679', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00029@ 'Jacobus' 'DE MEYER' : name='Décès', date='9 avril 1723', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 34 : Jacobus DE MEYER : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria.n=saman.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=petrus.n=van+bunder.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=maria.n=baert.oc=2.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=egidius.n=de+keyser.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 45, id @I00030@ : 'Livina' 'BOGAERT' (F) (https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert)
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : info = 'Née vers 1685'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : --> event_name2='Naissance' event_date2='vers 1685' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : info = 'Décédée le 1er février 1730 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 45 ans'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : --> event_name2='Décès' event_date2='1er février 1730' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=bogaert&oc=1 (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=bogaert.oc=1.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7123 (true='https://gw.geneanet.org/sh1?lang=fr&i=7123', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7123.html'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : union 1 = debut='* Mariée _le 16 février 1708, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Balduinus Back' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back' 
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : note union 1 : 'Getuigen huwelijksakte:
+- Joannes Back
+- Egidius Back'
+[gedcomw.element.element] INFO: manage_events : @I00030@ 'Livina' 'BOGAERT' : name='Naissance', date='vers 1685', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00030@ 'Livina' 'BOGAERT' : name='Décès', date='1er février 1730', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 45 : Livina BOGAERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 44, id @I00031@ : 'Balduinus' 'BACK' (M) (https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back)
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : union 1 = debut='* Marié _le 16 février 1708, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Livina Bogaert' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert' 
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : note union 1 : 'Getuigen huwelijksakte:
+- Joannes Back
+- Egidius Back'
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 44 : Balduinus BACK : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 39, id @I00032@ : 'Anna' 'RUBBENS' (F) (https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens)
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : info = 'Née vers 1662'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : --> event_name2='Naissance' event_date2='vers 1662' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : info = 'Décédée le 3 juillet 1724 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 62 ans'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : --> event_name2='Décès' event_date2='3 juillet 1724' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=rubbens (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=rubbens.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7145 (true='https://gw.geneanet.org/sh1?lang=fr&i=7145', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7145.html'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : union 1 = debut='* Mariée' nom_conjoint='Cornelius Van der Veken' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken' 
+[gedcomw.element.element] INFO: manage_events : @I00032@ 'Anna' 'RUBBENS' : name='Naissance', date='vers 1662', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00032@ 'Anna' 'RUBBENS' : name='Décès', date='3 juillet 1724', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 39 : Anna RUBBENS : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 37, id @I00033@ : 'Catharina' 'ALEXANDER' (F) (https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander)
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : info = 'Née le 12 mai 1664 - Lokeren, Oost-Vlaanderen'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : --> event_name2='Naissance' event_date2='12 mai 1664' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : info = 'Décédée le 23 avril 1720 - Lokeren, Oost-Vlaanderen, à l'âge de 55 ans'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : --> event_name2='Décès' event_date2='23 avril 1720' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : note 1 (type 'Notes individuelles') : note_text='Getuigen doopakte:
+- Livinus Alexander
+- Catharina Blanckaert'
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=christianus&n=alexander (true='https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=christianus.n=alexander.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=andrea&n=blanckaert (true='https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=andrea.n=blanckaert.html'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : union 1 = debut='* Mariée _le 14 novembre 1694, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Abraham Van Watthem' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem' 
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : note union 1 : 'Getuigen huwelijksakte:
+- Petrus Pooters?
+- Susanna De Backer'
+[gedcomw.element.element] INFO: manage_events : @I00033@ 'Catharina' 'ALEXANDER' : name='Naissance', date='12 mai 1664', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00033@ 'Catharina' 'ALEXANDER' : name='Décès', date='23 avril 1720', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Fratrie'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Demi-frères et demi-sœurs'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Notes'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 37 : Catharina ALEXANDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 36, id @I00034@ : 'Abraham' 'VAN WATTHEM' (M) (https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem)
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : info = 'Né vers 1664'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : --> event_name2='Naissance' event_date2='vers 1664' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : info = 'Décédé le 30 juillet 1744 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 80 ans'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : --> event_name2='Décès' event_date2='30 juillet 1744' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : note 1 (type 'Notes individuelles') : note_text='Vader = Egidius Van Wattijn (°+- 1635 - †7 mei 1695 te Lokeren)?'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : union 1 = debut='* Marié _le 14 novembre 1694, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Catharina Alexander' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander' 
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : note union 1 : 'Getuigen huwelijksakte:
+- Petrus Pooters?
+- Susanna De Backer'
+[gedcomw.element.element] INFO: manage_events : @I00034@ 'Abraham' 'VAN WATTHEM' : name='Naissance', date='vers 1664', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00034@ 'Abraham' 'VAN WATTHEM' : name='Décès', date='30 juillet 1744', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : rubrique='Notes'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 36 : Abraham VAN WATTHEM : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 38, id @I00035@ : 'Cornelius' 'VAN DER VEKEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken)
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : info = 'Né vers 1662'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : --> event_name2='Naissance' event_date2='vers 1662' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : info = 'Décédé le 7 avril 1722 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 60 ans'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : --> event_name2='Décès' event_date2='7 avril 1722' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: URL parent 1 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&p=joannes&n=van+der+veken (true='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+der+veken.html'
+[geneanet] DEBUG: URL parent 2 (forme 1) de https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken = file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/sh1?lang=fr&i=7146 (true='https://gw.geneanet.org/sh1?lang=fr&i=7146', to_scan='file:D:\Users\Nicolas\Documents\Python\geneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7146.html'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : union 1 = debut='* Marié' nom_conjoint='Anna Rubbens' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens' 
+[gedcomw.element.element] INFO: manage_events : @I00035@ 'Cornelius' 'VAN DER VEKEN' : name='Naissance', date='vers 1662', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00035@ 'Cornelius' 'VAN DER VEKEN' : name='Décès', date='7 avril 1722', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : rubrique='Parents'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 38 : Cornelius VAN DER VEKEN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 41, id @I00036@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7119)
+[geneanet] DEBUG: Generation 6, sosa 41 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Petrus Van Cauteren' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1' 
+[geneanet] DEBUG: Generation 6, sosa 41 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 41 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 40, id @I00037@ : 'Petrus' 'VAN CAUTEREN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1)
+[geneanet] DEBUG: Generation 6, sosa 40 : Petrus VAN CAUTEREN : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7119' 
+[geneanet] DEBUG: Generation 6, sosa 40 : Petrus VAN CAUTEREN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 40 : Petrus VAN CAUTEREN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 40 : Petrus VAN CAUTEREN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 43, id @I00038@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7118)
+[geneanet] DEBUG: Generation 6, sosa 43 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Melchior De Cock' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock' 
+[geneanet] DEBUG: Generation 6, sosa 43 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 43 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 42, id @I00039@ : 'Melchior' 'DE COCK' (M) (https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock)
+[geneanet] DEBUG: Generation 6, sosa 42 : Melchior DE COCK : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7118' 
+[geneanet] DEBUG: Generation 6, sosa 42 : Melchior DE COCK : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 42 : Melchior DE COCK : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 42 : Melchior DE COCK : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7146.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=van+der+veken.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=andrea.n=blanckaert.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=christianus.n=alexander.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7145.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=rubbens.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.i=7123.html> (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) <GET file:///D:%5CUsers%5CNicolas%5CDocuments%5CPython%5Cgeneanet/result/pages/gw.geneanet.org.sh1.lang=fr.p=joannes.n=bogaert.oc=1.html> (referer: None)
+[geneanet] DEBUG: Generation 6, sosa 61, id @I00040@ : 'Maria' 'SAMAN' (F) (https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman)
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : info = 'Née vers 1656'
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : --> event_name2='Naissance' event_date2='vers 1656' event_place2='None' 
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : info = 'Décédée le 8 juillet 1688 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 32 ans'
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : --> event_name2='Décès' event_date2='8 juillet 1688' event_place2='Daknam (Lokeren), Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : union 1 = debut='* Mariée _le 27 mars 1680, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Petrus Van Bunder' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder' 
+[gedcomw.element.element] INFO: manage_events : @I00040@ 'Maria' 'SAMAN' : name='Naissance', date='vers 1656', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00040@ 'Maria' 'SAMAN' : name='Décès', date='8 juillet 1688', place='Daknam (Lokeren), Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 61 : Maria SAMAN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 60, id @I00041@ : 'Petrus' 'VAN BUNDER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder)
+[geneanet] DEBUG: Generation 6, sosa 60 : Petrus VAN BUNDER : union 1 = debut='* Marié _le 27 mars 1680, Daknam (Lokeren), Oost-Vlaanderen,_' nom_conjoint='Maria Saman' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman' 
+[geneanet] DEBUG: Generation 6, sosa 60 : Petrus VAN BUNDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 60 : Petrus VAN BUNDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 60 : Petrus VAN BUNDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 47, id @I00042@ : 'Maria' 'BAERT' (F) (https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2)
+[geneanet] DEBUG: Generation 6, sosa 47 : Maria BAERT : union 1 = debut='* Mariée' nom_conjoint='Egidius De Keyser' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser' 
+[geneanet] DEBUG: Generation 6, sosa 47 : Maria BAERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 47 : Maria BAERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 47 : Maria BAERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 6, sosa 46, id @I00043@ : 'Egidius' 'DE KEYSER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser)
+[geneanet] DEBUG: Generation 6, sosa 46 : Egidius DE KEYSER : union 1 = debut='* Marié' nom_conjoint='Maria Baert' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2' 
+[geneanet] DEBUG: Generation 6, sosa 46 : Egidius DE KEYSER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 6, sosa 46 : Egidius DE KEYSER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 6, sosa 46 : Egidius DE KEYSER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 77, id @I00044@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7146)
+[geneanet] DEBUG: Generation 7, sosa 77 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Joannes Van der Veken' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken' 
+[geneanet] DEBUG: Generation 7, sosa 77 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 77 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 76, id @I00045@ : 'Joannes' 'VAN DER VEKEN' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken)
+[geneanet] DEBUG: Generation 7, sosa 76 : Joannes VAN DER VEKEN : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7146' 
+[geneanet] DEBUG: Generation 7, sosa 76 : Joannes VAN DER VEKEN : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 76 : Joannes VAN DER VEKEN : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 76 : Joannes VAN DER VEKEN : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 75, id @I00046@ : 'Andrea' 'BLANCKAERT' (F) (https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert)
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : info = 'Née vers 1632'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : --> event_name2='Naissance' event_date2='vers 1632' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : info = 'Décédée le 1er novembre 1693 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 61 ans'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : --> event_name2='Décès' event_date2='1er novembre 1693' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : note 1 (type 'Notes individuelles') : note_text='Ookwel Judoca Blanckaert'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : union 1 = debut='* Mariée _le 24 juillet 1663, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Christianus Alexander' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander' 
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : note union 1 : 'Getuigen huwelijksakte:
+- Egidius Alexander
+- Livinus Alexander'
+[gedcomw.element.element] INFO: manage_events : @I00046@ 'Andrea' 'BLANCKAERT' : name='Naissance', date='vers 1632', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00046@ 'Andrea' 'BLANCKAERT' : name='Décès', date='1er novembre 1693', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : rubrique='Notes'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 75 : Andrea BLANCKAERT : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 74, id @I00047@ : 'Christianus' 'ALEXANDER' (M) (https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander)
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : info = 'Né vers 1625'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : --> event_name2='Naissance' event_date2='vers 1625' event_place2='None' 
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : info = 'Décédé le 4 décembre 1675 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 50 ans'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : --> event_name2='Décès' event_date2='4 décembre 1675' event_place2='Lokeren, Oost-Vlaanderen' 
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : union 1 = debut='* Marié _le 26 janvier 1647, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Joanna Van Doorslaer' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joanna&n=van+doorslaer&oc=1' 
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : note union 1 : '**Union avec Joanna Van Doorslaer** :
+Getuigen huwelijksakte:
+- Egidius Alexander
+- Livinus Van ...?'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : union 2 = debut='* Marié _le 24 juillet 1663, Lokeren, Oost-Vlaanderen,_' nom_conjoint='Andrea Blanckaert' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert' 
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : note union 2 : '**Union avec Andrea Blanckaert** :
+Getuigen huwelijksakte:
+- Egidius Alexander
+- Livinus Alexander'
+[gedcomw.element.element] INFO: manage_events : @I00047@ 'Christianus' 'ALEXANDER' : name='Naissance', date='vers 1625', place='None', notes='None', source='None'
+[gedcomw.element.element] INFO: manage_events : @I00047@ 'Christianus' 'ALEXANDER' : name='Décès', date='4 décembre 1675', place='Lokeren, Oost-Vlaanderen', notes='None', source='None'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : rubrique='Notes concernant l'union'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 74 : Christianus ALEXANDER : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 79, id @I00048@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7145)
+[geneanet] DEBUG: Generation 7, sosa 79 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Joannes Rubbens' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens' 
+[geneanet] DEBUG: Generation 7, sosa 79 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 79 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 78, id @I00049@ : 'Joannes' 'RUBBENS' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens)
+[geneanet] DEBUG: Generation 7, sosa 78 : Joannes RUBBENS : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7145' 
+[geneanet] DEBUG: Generation 7, sosa 78 : Joannes RUBBENS : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 78 : Joannes RUBBENS : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 78 : Joannes RUBBENS : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 91, id @I00050@ : '?' '?' (F) (https://gw.geneanet.org/sh1?lang=fr&i=7123)
+[geneanet] DEBUG: Generation 7, sosa 91 : ? ? : union 1 = debut='* Mariée' nom_conjoint='Joannes Bogaert' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1' 
+[geneanet] DEBUG: Generation 7, sosa 91 : ? ? : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 91 : ? ? : rubrique='Aperçu de l'arbre'
+[geneanet] DEBUG: Generation 7, sosa 90, id @I00051@ : 'Joannes' 'BOGAERT' (M) (https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1)
+[geneanet] DEBUG: Generation 7, sosa 90 : Joannes BOGAERT : union 1 = debut='* Marié' nom_conjoint='None' url_conjoint='https://gw.geneanet.org/sh1?lang=fr&i=7123' 
+[geneanet] DEBUG: Generation 7, sosa 90 : Joannes BOGAERT : rubrique='Union(s) et enfant(s)'
+[geneanet] DEBUG: Generation 7, sosa 90 : Joannes BOGAERT : rubrique='Photos & documents'
+[geneanet] DEBUG: Generation 7, sosa 90 : Joannes BOGAERT : rubrique='Aperçu de l'arbre'
+[scrapy.core.engine] INFO: Closing spider (finished)
+[geneanet] DEBUG: Famille '@F00001@' : père='https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen', mère='https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00001@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder' mariage_date='12 octobre 1805' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00002@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen', mère='https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00002@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren' mariage_date='9 novembre 1777' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00003@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder', mère='https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00003@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle' mariage_date='3 novembre 1778' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00004@' : père='https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren', mère='https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00004@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back' mariage_date='8 décembre 1751' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00005@' : père='https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder', mère='https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00005@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00006@' : père='https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen', mère='https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00006@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem' mariage_date='22 juillet 1753' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00007@' : père='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle', mère='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00007@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder' mariage_date='18 janvier 1749' mariage_place='Daknam (Lokeren), Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00008@' : père='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen', mère='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00008@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer' mariage_date='2 juin 1722' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00009@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back', mère='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00009@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser' mariage_date='15 juillet 1730' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00010@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem', mère='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00010@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken' mariage_date='24 février 1726' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00011@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren', mère='https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00011@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock' mariage_date='28 janvier 1720' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00012@' : père='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder', mère='https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00012@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1' mariage_date='20 novembre 1708' mariage_place='Daknam (Lokeren), Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00013@' : père='https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer', mère='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00013@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2' mariage_date='10 août 1699' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00014@' : père='https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen', mère='https://gw.geneanet.org/sh1?lang=fr&i=7144', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00014@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7144' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00015@' : père='https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock', mère='https://gw.geneanet.org/sh1?lang=fr&i=7118', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00015@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7118' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00016@' : père='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1', mère='https://gw.geneanet.org/sh1?lang=fr&i=7119', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00016@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7119' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00017@' : père='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', mère='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00017@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00018@' : père='https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem', mère='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00018@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander' mariage_date='14 novembre 1694' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00019@' : père='https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back', mère='https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00019@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert' mariage_date='16 février 1708' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00020@' : père='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser', mère='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00020@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00021@' : père='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder', mère='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00021@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman' mariage_date='27 mars 1680' mariage_place='Daknam (Lokeren), Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00022@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1', mère='https://gw.geneanet.org/sh1?lang=fr&i=7123', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00022@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7123' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00023@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens', mère='https://gw.geneanet.org/sh1?lang=fr&i=7145', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00023@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7145' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00024@' : père='https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander', mère='https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00024@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert' mariage_date='24 juillet 1663' mariage_place='Lokeren, Oost-Vlaanderen,' mariage_source='None'
+[geneanet] DEBUG: Famille '@F00025@' : père='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken', mère='https://gw.geneanet.org/sh1?lang=fr&i=7146', 1 enfant(s)
+[geneanet] DEBUG: Famille '@F00025@' : enfant='https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken', true_url_pere='https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken', true_url_mere='https://gw.geneanet.org/sh1?lang=fr&i=7146' mariage_date='None' mariage_place='None' mariage_source='None'
+[geneanet] INFO: NRa Spider 'geneanet' closed :
+[geneanet] INFO: - nb_persons            = 51
+[geneanet] INFO: - nb_alias              = 0
+[geneanet] INFO: - nb_masked_persons     = 6
+[geneanet] INFO: - nb_families           = 25
+[geneanet] INFO: - 25 relations enfants / parents
+[geneanet] INFO: - nb_consanguinites     = 0
+[geneanet] INFO: - max_generations       = 7
+[geneanet] INFO: - nb_titres_noblesse    = 0 (avec 0 notes(s))
+[geneanet] INFO: - nb_sous_titres        = 0
+[geneanet] INFO: - nb_notes_longues      = 34
+[geneanet] INFO: - multiple_events_count = 2
+[geneanet] INFO: - nb_errors             = 0
+[geneanet] INFO: - nb_todo               = 0
+[geneanet] INFO: - nb_scanned_pages      = 0
+[geneanet] INFO: - nb_saved_pages        = 0
+[geneanet] INFO: - nb_cached_pages       = 51
+[geneanet] INFO: Saving to 'result/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.ged'
+[gedcomw.parser] INFO: nra_save_gedcom : saving gedcom to 'result/gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.ged'
+[scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 29218,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 4204545,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'elapsed_time_seconds': 1.24789,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 4, 17, 23, 11, 36, 785644),
+ 'log_count/DEBUG': 814,
+ 'log_count/INFO': 120,
+ 'request_depth_max': 6,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2025, 4, 17, 23, 11, 35, 537754)}
+[scrapy.core.engine] INFO: Spider closed (finished)

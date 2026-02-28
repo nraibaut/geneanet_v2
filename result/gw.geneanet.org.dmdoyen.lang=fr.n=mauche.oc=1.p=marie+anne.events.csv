@@ -1,15 +1,19 @@
-id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.13 08/09/2023 à 01:00
+id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;GeneanetSpider 1.0.26 18/04/2025 à 01:11
 @I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;"Naissance";BIRT;29 décembre 1711;29 DEC 1711;"Côte d'Azur, FRANCE";"";"";"Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -";"AD 13 en ligne";
-@I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;"Baptême";CHR;30 décembre 1711;30 DEC 1711;"Côte d'Azur, FRANCE";"";"";"Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -";"AD 13 en ligne";
+@I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;"Baptême";CHR;30 décembre 1711;30 DEC 1711;"Côte d'Azur, FRANCE";"Parrain : [Jean _Petit_
+DURAND](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jean&n=durand&oc=5),
+1659-, son grand père maternel";"";"Acte de baptême - Mauche marie anne ° 29 12 1711 - AD Gard - 8 / 8 -";"AD 13 en ligne";
 @I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;"Décès";DEAT;27 août 1789;27 AUG 1789;"Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Mauche marie + 27 8 1789 - AD Gard - 3 / 4 - AD";"13 en ligne";
 @I00001@;Marie Anne;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne;"Mariage (avec Jacques NICOLAS)";EVEN;28 septembre 1733;28 SEP 1733;"Côte d'Azur, FRANCE";"";"Mariage (avec Jacques NICOLAS)";"Acte de mariage - Nicolas jacques x Mauche marie 28 9 1733 - AD Gard";"- 4 / 5 - AD 13 en ligne";
-@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1;"Naissance";BIRT;4 novembre 1672;4 NOV 1672;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"fils d'Etienn et Anne BARD";"";"";"";
-@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1;"Décès";DEAT;20 mai 1731;20 MAY 1731;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=mauche&oc=1;"Profession";OCCU;;;"";"";"Ménager (1711)";"";"";
-@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand;"Naissance";BIRT;14 février 1688;14 FEB 1688;"Côte d'Azur, FRANCE";"";"";"Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -";"AD 13 en ligne";
-@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand;"Baptême";CHR;15 février 1688;15 FEB 1688;"Côte d'Azur, FRANCE";"";"";"Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -";"AD 13 en ligne";
-@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand;"Décès";DEAT;22 janvier 1761;22 JAN 1761;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marie+rose&n=durand;"Mariage (avec Jean MAUCHE)";EVEN;10 juin 1710;10 JUN 1710;"Côte d'Azur, FRANCE";"Heure: 10:00
+@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=mauche&oc=1;"Naissance";BIRT;4 novembre 1672;4 NOV 1672;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"fils d'Etienn et Anne BARD";"";"";"";
+@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=mauche&oc=1;"Décès";DEAT;20 mai 1731;20 MAY 1731;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00002@;Jean;MAUCHE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=mauche&oc=1;"Profession";OCCU;;;"";"";"Ménager (1711)";"";"";
+@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=marie+rose&n=durand;"Naissance";BIRT;14 février 1688;14 FEB 1688;"Côte d'Azur, FRANCE";"";"";"Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -";"AD 13 en ligne";
+@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=marie+rose&n=durand;"Baptême";CHR;15 février 1688;15 FEB 1688;"Côte d'Azur, FRANCE";"Parrain : [Louis
+GILLES](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=louis&n=gilles&oc=1),
+1655-1731, son oncle";"";"Acte de baptême - Durand marie rose ° 14 2 1688 - AD Gard - 6 / 12 -";"AD 13 en ligne";
+@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=marie+rose&n=durand;"Décès";DEAT;22 janvier 1761;22 JAN 1761;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00003@;Marie Rose;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=marie+rose&n=durand;"Mariage (avec Jean MAUCHE)";EVEN;10 juin 1710;10 JUN 1710;"Côte d'Azur, FRANCE";"Heure: 10:00
 Généalogie de Pierre GENOUX
 Année que dessus et le dixième juin, dans l'église St Pierre à dix heures du
 matin Jean MAUCHE originaire et habitant de Bourbon, fils légitime à feu
@@ -27,56 +31,51 @@ Lespiard, Bernard Gervais, Jean Frédière, Joseph Guiraud maréchal de Boutray.
 Signés ; Guiraud, Frédière, Lespiard, Bondon prêtre";"Mariage (avec Jean MAUCHE)";"Relevés de registres paroissiaux et d'état civil de Provence. Base";"généalogique collaborative gratuite et bénévole. - GénéProvence -
 <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités
 ont été relevés par Marianne de BERNARDI et Sébastien AVY";
-@I00005@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;"Naissance";BIRT;14 décembre 1659;14 DEC 1659;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00005@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00005@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;"Profession";OCCU;;;"";"";"Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)";"";"";
-@I00005@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;"Union 1";EVEN;;;"";"";"";"Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne";"@todo événement 'Union 1' inconnu pour Jean DURAND. Vérifier la source.";
-@I00005@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=durand&oc=5;"Union 2";EVEN;;;"";"";"";"Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY";"@todo événement 'Union 2' inconnu pour Jean DURAND. Vérifier la source.";
-@I00004@;Spérite;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles;"Baptême";CHR;8 juin 1651;8 JUN 1651;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne";"";
-@I00004@;Spérite;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=sperite&n=gilles;"Décès";DEAT;14 avril 1693;14 APR 1693;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
-@I00006@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot;"Naissance";BIRT;vers 1608;ABT 1608;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00006@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot;"Décès";DEAT;11 août 1688;11 AUG 1688;"Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Tissot magdeleine + 11 8 1688 -";"L an mil six cent huitante huict & le onzieme du moy d aout
+@I00004@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;"Naissance";BIRT;14 décembre 1659;14 DEC 1659;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00004@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00004@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;"Profession";OCCU;;;"";"";"Ménager (1684), rentier de Campredon (1692), rentier de Mr Degras de Tarascon (1710)";"";"";
+@I00004@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;"Union 1";EVEN;;;"";"";"";"Acte de mariage - Durand jean x Gilles sperite 1 2 1682 - AD Gard - 2 / 11 - AD 13 en ligne";"@todo événement 'Union 1' inconnu pour Jean DURAND. Vérifier la source.";
+@I00004@;Jean;DURAND;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=durand&oc=5;"Union 2";EVEN;;;"";"";"";"Relevés de registres paroissiaux et d'état civil de Provence. Base généalogique collaborative gratuite et bénévole. - GénéProvence - <http://actes.geneprovence.com/> \- - Numerisation - de nombreux actes cités ont été relevés par Marianne de BERNARDI et Sébastien AVY";"@todo événement 'Union 2' inconnu pour Jean DURAND. Vérifier la source.";
+@I00005@;Spérite;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=sperite&n=gilles;"Baptême";CHR;8 juin 1651;8 JUN 1651;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de baptême - Gilles sperite ° 8 6 1651 - AD Gard - 2 / 2 - AD 13 en ligne";"";
+@I00005@;Spérite;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=sperite&n=gilles;"Décès";DEAT;14 avril 1693;14 APR 1693;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"";"";
+@I00006@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=barthelemy&n=gilles;"Naissance";BIRT;vers 1609;ABT 1609;"";"";"";"";"";
+@I00006@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=barthelemy&n=gilles;"Décès";DEAT;2 octobre 1669;2 OCT 1669;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois";"d'octobre est decedé et le troisiesme a esté enseveli
+Barthelemy gille mesnager , âgé de'environ
+soixante ans ;muny des sacrements, au cimetiere
+st marcellin";
+@I00006@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=barthelemy&n=gilles;"Profession";OCCU;;;"";"";"Ménager";"";"";
+@I00007@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=tissot;"Naissance";BIRT;vers 1608;ABT 1608;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00007@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=tissot;"Décès";DEAT;11 août 1688;11 AUG 1688;"Côte d'Azur, FRANCE";"Présent : [Louis
+GILLES](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=louis&n=gilles&oc=1),
+1655-1731, son fils
+Présent : [Jean
+GILLES](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jean&n=gilles&oc=2),
+1639-1705, son fils";"";"Acte de sépulture - Tissot magdeleine + 11 8 1688 -";"L an mil six cent huitante huict & le onzieme du moy d aout
 *a ete ensevelie le 12me sur les cinq heures du soir magdaleine
 tissot veuve a barthelemi giles menger aagée environ
 de quatre vint ans
 a ete munie des sacrements pendant sa maladie en foy
 de ce me suis soubsigné a borbon les an & iours susd
 *est decedée et - AD Gard - 11 / 12 - Archives famille - Etat Civil - SOSA";
-@I00006@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=tissot;"Mariage (avec Barthélemy GILLES)";EVEN;17 avril 1633;17 APR 1633;"Côte d'Azur, FRANCE";"";"Mariage (avec Barthélemy GILLES)";"Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -";"Le dix sept avril la donnation des corps a ete
+@I00007@;Magdelaine;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=tissot;"Mariage (avec Barthélemy GILLES)";EVEN;17 avril 1633;17 APR 1633;"Côte d'Azur, FRANCE";"";"Mariage (avec Barthélemy GILLES)";"Acte de mariage - Gilles barthelemy x Tissot magdeleine 17 4 1633 -";"Le dix sept avril la donnation des corps a ete
 faite entre bartholomieu Gilles fils a pierre &
 margt Jausert d'une part et magdaleine
 Tissot fille de balthazar &feu jeanne trebillon
 d'autre . . . . . - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA";
-@I00007@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles;"Naissance";BIRT;vers 1609;ABT 1609;"";"";"";"";"";
-@I00007@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles;"Décès";DEAT;2 octobre 1669;2 OCT 1669;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Gilles barthelemy + 2 10 1669 - AD Gard - 2 / 4 - Archives famille - Etat Civil - SOSA - L'an que dessus et le second du mois";"d'octobre est decedé et le troisiesme a esté enseveli
-Barthelemy gille mesnager , âgé de'environ
-soixante ans ;muny des sacrements, au cimetiere
-st marcellin";
-@I00007@;Barthélemy;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=barthelemy&n=gilles;"Profession";OCCU;;;"";"";"Ménager";"";"";
-@I00009@;Pierre;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1;"Naissance";BIRT;vers 1555;ABT 1555;"";"";"";"";"";
-@I00009@;Pierre;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pierre&n=gilles&oc=1;"Décès";DEAT;20 avril 1639;20 APR 1639;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé";"d environ 84 ans .......";
-@I00008@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon;"Naissance";BIRT;vers 1575;ABT 1575;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00008@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00008@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jeanne&n=trebillon;"Contrat de mariage (avec Balthazar TISSOT)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 410 / 3162
-entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
-lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
-de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
-paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
-Madeleine porte aussi ses autres droits
-acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
-Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
-et Honorat Meyer praticien.";"Contrat de mariage (avec Balthazar TISSOT)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
-[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00010@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot;"Naissance";BIRT;vers 1571;ABT 1571;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00010@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot;"Décès";DEAT;3 septembre 1646;3 SEP 1646;"Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Tissot balthazar + 3 9 1646 - AD Gard - 2 / 2 -";"AD 13 en ligne -
+@I00009@;Marguerite;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=marguerite&n=jaussert;"Naissance";BIRT;avant 1565;BEF 1565;"";"";"";"";"";
+@I00009@;Marguerite;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=marguerite&n=jaussert;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00010@;Pierre;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=pierre&n=gilles&oc=1;"Naissance";BIRT;vers 1555;ABT 1555;"";"";"";"";"";
+@I00010@;Pierre;GILLES;https://gw.geneanet.org/dmdoyen?lang=fr&p=pierre&n=gilles&oc=1;"Décès";DEAT;20 avril 1639;20 APR 1639;"Boulbon, 13150, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Gilles pierre + 20 4 1639 - AD Gard - 1 / 2 - Archives famille - Etat Civil - SOSA - Le 20avril 1639 est decede Pierre Gilles aagé";"d environ 84 ans .......";
+@I00008@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=balthazar&n=tissot;"Naissance";BIRT;vers 1571;ABT 1571;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00008@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=balthazar&n=tissot;"Décès";DEAT;3 septembre 1646;3 SEP 1646;"Côte d'Azur, FRANCE";"";"";"Acte de sépulture - Tissot balthazar + 3 9 1646 - AD Gard - 2 / 2 -";"AD 13 en ligne -
 1646
 Le 3 septembre est decedé Balthazar Tissot aagé
 d environ septante cinq ans ayant esté . . . . par
 Me jean martin . . . . . . . . . obit . . . . . . . . . . . . .
 sans . . . . . dans la parroisse . . . . . . . . . . . . . . . .
 . . . . . . . . . . . . . . . .";
-@I00010@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot;"Profession";OCCU;;;"";"";"Laboureur (1602)";"";"";
-@I00010@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=balthazar&n=tissot;"Contrat de mariage (avec Jeanne TREBILLON)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 410 / 3162
+@I00008@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=balthazar&n=tissot;"Profession";OCCU;;;"";"";"Laboureur (1602)";"";"";
+@I00008@;Balthazar;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=balthazar&n=tissot;"Contrat de mariage (avec Jeanne TREBILLON)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 410 / 3162
 entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
 lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
 de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
@@ -86,51 +85,82 @@ acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
 Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
 et Honorat Meyer praticien.";"Contrat de mariage (avec Jeanne TREBILLON)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00011@;Marguerite;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert;"Naissance";BIRT;avant 1565;BEF 1565;"";"";"";"";"";
-@I00011@;Marguerite;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=marguerite&n=jaussert;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00012@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot;"Naissance";BIRT;vers 1540;ABT 1540;"Côte d'Azur, FRANCE";"";"";"";"";
-@I00012@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot;"Décès";DEAT;avant 1602;BEF 1602;"";"";"";"";"";
-@I00012@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot;"Profession";OCCU;;;"";"";"Laboureur";"";"";
-@I00012@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francois&n=tissot;"Contrat de mariage (avec Magdelaine RIGAUD)";EVEN;29 octobre 1561;29 OCT 1561;"Côte d'Azur, FRANCE";"source Geneanet François SALGE";"Contrat de mariage (avec Magdelaine RIGAUD)";"";"";
-@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;"Naissance";BIRT;vers 1545;ABT 1545;"";"";"";"";"";
-@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;"Profession";OCCU;;;"";"";"Laboureur (1602)";"";"";
-@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;"Contrat de mariage (avec Esprite GIBERT)";EVEN;1er octobre 1571;1 OCT 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 177 / 3162
-ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
-Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
-même lieu
-donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
-ensuite rémission de droits à Guillaume et Olivier ses frères";"Contrat de mariage (avec Esprite GIBERT)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+@I00011@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=jeanne&n=trebillon;"Naissance";BIRT;vers 1575;ABT 1575;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00011@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=jeanne&n=trebillon;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00011@;Jeanne;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=jeanne&n=trebillon;"Contrat de mariage (avec Balthazar TISSOT)";EVEN;5 mai 1602;5 MAY 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 410 / 3162
+entre Balthazar TISSOT fils à feu François et Madeleine Rigaude laboureur du
+lieu de Boulbon et Jeanne TREBILLONE fille de Eymes Trebillon consul du lieu
+de Vallabrègue et de feue Esprite Gibert laquelle reçoit 50 écus pour droits
+paternels payabe 1/2 au jour des épousailles et solde fête de Ste-Marie
+Madeleine porte aussi ses autres droits
+acte maison dudit Trebillon présent Mre Claude Berlandier, noble Jean
+Adalbert, Loys Fontaines Etienne Gibert laboureurs, de sire Jean Raoulx consul
+et Honorat Meyer praticien.";"Contrat de mariage (avec Balthazar TISSOT)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=aymes&n=trebillon;"Testament";WILL;11 février 1602;11 FEB 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 409 / 3162
-testament de Aymès TREBILLON laboureur habitant de Vallabrègue
-légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
-à Jeanne, Claude et Lyonne autres filles 7/20 l.
-héritier son fils Jean
-acte maison du testateur en présence de capitaine Jean Cayron, de Mathieu
-Nogaret charpentier, de Jean Romieu, Antoine Gibert, Jean Carrière fils de
-Pierre, Huguet Branche et Jehan Vinhe";"";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
-[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00014@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud;"Naissance";BIRT;vers 1540;ABT 1540;"";"";"";"";"";
-@I00014@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud;"Décès";DEAT;après 1602;AFT 1602;"";"";"";"";"";
-@I00014@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=magdelaine&n=rigaud;"Contrat de mariage (avec François de la Rieppe TISSOT)";EVEN;29 octobre 1561;29 OCT 1561;"Côte d'Azur, FRANCE";"source Geneanet François SALGE";"Contrat de mariage (avec François de la Rieppe TISSOT)";"";"";
-@I00015@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert;"Naissance";BIRT;vers 1550;ABT 1550;"";"";"";"";"";
-@I00015@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert;"Décès";DEAT;avant 1602;BEF 1602;"";"";"";"";"";
-@I00015@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=esprite&n=gibert;"Contrat de mariage (avec Aymes TREBILLON)";EVEN;1er octobre 1571;1 OCT 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 177 / 3162
+@I00014@;Laurence;REGISTREL;https://gw.geneanet.org/dmdoyen?lang=fr&p=laurence&n=registrel;"Naissance";BIRT;;;"";"source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source";"";"";"";
+@I00015@;Antoine;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=antoine&n=jaussert;"Naissance";BIRT;;;"";"source Généanet : Généalogie de Jean Pierre ISNARD
+sans aucune source";"";"";"";
+@I00012@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=esprite&n=gibert;"Naissance";BIRT;vers 1550;ABT 1550;"";"";"";"";"";
+@I00012@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=esprite&n=gibert;"Décès";DEAT;avant 1602;BEF 1602;"";"";"";"";"";
+@I00012@;Esprite;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=esprite&n=gibert;"Contrat de mariage (avec Aymes TREBILLON)";EVEN;1er octobre 1571;1 OCT 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 177 / 3162
 ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
 Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
 même lieu
 donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
 ensuite rémission de droits à Guillaume et Olivier ses frères";"Contrat de mariage (avec Aymes TREBILLON)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00016@;Antoine;JAUSSERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=jaussert;"Naissance";BIRT;;;"";"source Généanet : Généalogie de Jean Pierre ISNARD
-sans aucune source";"";"";"";
-@I00017@;Laurence;REGISTREL;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=laurence&n=registrel;"Naissance";BIRT;;;"";"source Généanet : Généalogie de Jean Pierre ISNARD
-sans aucune source";"";"";"";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Naissance";BIRT;vers 1496;ABT 1496;"";"";"";"";"";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Décès";DEAT;avant 12 février 1561;BEF 12 FEB 1561;"";"Date du CM de sa fille Hélène où elle est dit fille de feu Pierre";"";"";"";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Profession";OCCU;;;"";"";"Pontanier du port de Comps (1532)";"";"";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Contrat de mariage (avec Jaumette MALCANE)";EVEN;18 septembre 1521;18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 1995 / 3162
+@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;"Naissance";BIRT;vers 1545;ABT 1545;"";"";"";"";"";
+@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;"Profession";OCCU;;;"";"";"Laboureur (1602)";"";"";
+@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;"Contrat de mariage (avec Esprite GIBERT)";EVEN;1er octobre 1571;1 OCT 1571;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 177 / 3162
+ct de mariage entre Aymès TREBILLON natif et habitant de Vallabrègue et
+Esprite GIBBRTE fille de Jean Gibert dit lou Roux et de Françoise Rodière du
+même lieu
+donne 200 florins petits à 12 g. et 30 florins pour les robes laquelle fait
+ensuite rémission de droits à Guillaume et Olivier ses frères";"Contrat de mariage (avec Esprite GIBERT)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
+@I00013@;Aymes;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=aymes&n=trebillon;"Testament";WILL;11 février 1602;11 FEB 1602;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 409 / 3162
+testament de Aymès TREBILLON laboureur habitant de Vallabrègue
+légat à Jaumette et Marie ses filles outre leurs contrats de mariage 6 livres
+à Jeanne, Claude et Lyonne autres filles 7/20 l.
+héritier son fils Jean
+acte maison du testateur en présence de capitaine Jean Cayron, de Mathieu
+Nogaret charpentier, de Jean Romieu, Antoine Gibert, Jean Carrière fils de
+Pierre, Huguet Branche et Jehan Vinhe
+Témoin : [Jaumette
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jaumette&n=trebillon),
+ca 1575-, Heir, sa fille
+Témoin : [Marie
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=marie&n=trebillon),
+ca 1570-, Heir, sa fille
+Témoin : [Jeanne
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jeanne&n=trebillon),
+ca 1575-, Heir, sa fille
+Témoin : [Claude
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=claude&n=trebillon),
+ca 1585-, Heir, sa fille
+Témoin : [Lyonne
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=lyonne&n=trebillon),
+Heir, sa fille
+Témoin : [Jean
+TREBILLON](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jean&n=trebillon), ca
+1583-, Heir, son fils";"";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+[http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
+@I00016@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=francois&n=tissot;"Naissance";BIRT;vers 1540;ABT 1540;"Côte d'Azur, FRANCE";"";"";"";"";
+@I00016@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=francois&n=tissot;"Décès";DEAT;avant 1602;BEF 1602;"";"";"";"";"";
+@I00016@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=francois&n=tissot;"Profession";OCCU;;;"";"";"Laboureur";"";"";
+@I00016@;François;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=francois&n=tissot;"Contrat de mariage (avec Magdelaine RIGAUD)";EVEN;29 octobre 1561;29 OCT 1561;"Côte d'Azur, FRANCE";"source Geneanet François SALGE";"Contrat de mariage (avec Magdelaine RIGAUD)";"";"";
+@I00017@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=rigaud;"Naissance";BIRT;vers 1540;ABT 1540;"";"";"";"";"";
+@I00017@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=rigaud;"Décès";DEAT;après 1602;AFT 1602;"";"";"";"";"";
+@I00017@;Magdelaine;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=magdelaine&n=rigaud;"Contrat de mariage (avec François de la Rieppe TISSOT)";EVEN;29 octobre 1561;29 OCT 1561;"Côte d'Azur, FRANCE";"source Geneanet François SALGE";"Contrat de mariage (avec François de la Rieppe TISSOT)";"";"";
+@I00018@;Françoise;RODIER;https://gw.geneanet.org/dmdoyen?lang=fr&p=francoise&n=rodier;"Naissance";BIRT;vers 1510;ABT 1510;"";"";"";"";"";
+@I00018@;Françoise;RODIER;https://gw.geneanet.org/dmdoyen?lang=fr&p=francoise&n=rodier;"Décès";DEAT;après 1561;AFT 1561;"";"";"";"";"";
+@I00019@;Jean;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=tissot;"Décès";DEAT;avant 1595;BEF 1595;"";"Généalogie de Raymond RIPERT";"";"";"";
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Naissance";BIRT;vers 1496;ABT 1496;"";"";"";"";"";
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Décès";DEAT;avant 12 février 1561;BEF 12 FEB 1561;"";"Date du CM de sa fille Hélène où elle est dit fille de feu Pierre";"";"";"";
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Profession";OCCU;;;"";"";"Pontanier du port de Comps (1532)";"";"";
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Contrat de mariage (avec Jaumette MALCANE)";EVEN;18 septembre 1521;18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 1995 / 3162
 contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
 et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
 de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
@@ -145,37 +175,68 @@ les accoutrements le tout au jour de noces pour les robes et par solutions de
 = suivent les pactes
 = acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
 Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
-André. Ytier, et de Michel Chayne";"Contrat de mariage (avec Jaumette MALCANE)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+André. Ytier, et de Michel Chayne
+Témoin : [Guillaume
+MANYVET](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=guillaume&n=manyvet),
+beau frère de la mariant
+Témoin : [Jeanne
+MALCANE](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jeanne&n=malcane),
+soeur de la mariante";"Contrat de mariage (avec Jaumette MALCANE)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Quittance de dot";EVEN;10 décembre 1521;10 DEC 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2012 / 3162
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Quittance de dot";EVEN;10 décembre 1521;10 DEC 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2012 / 3162
 reconnaissance de Pierre THEBÏLHAT de Vallabrègue comme mari de Jaumette
 Malcane faite à Antoine Malcan de Montfrin 10 florins venant à déduction de la
 constitution faite à Jaumette
 ct de mariage reçu du.notaire soussigné acte maison de noble Jean Garin tenue
 en arrenteinent par ledit Trebilhat en présence deGabriel Reynoard, de Simon
-Moret, de Louis Bonet, ht de Valabrègue";"Quittance de dot";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+Moret, de Louis Bonet, ht de Valabrègue
+Mentionné : [Antoine
+MALCANE](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=antoine&n=malcane), son
+beau frère";"Quittance de dot";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00019@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=pons+ou+pierre&n=trebillon;"Reconnaissance de dette";EVEN;5 juin 1532;5 JUN 1532;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2422 / 3162
+@I00020@;Pons Ou Pierre;TREBILLON;https://gw.geneanet.org/dmdoyen?lang=fr&p=pons+ou+pierre&n=trebillon;"Reconnaissance de dette";EVEN;5 juin 1532;5 JUN 1532;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2422 / 3162
 present Pierre TREBILHAT du port de Comps qui confesse devoir à Pierre Daucono
 et Antoine Martin galafats d'Avignon 11 l. en déduction de plus grande pour
 travail fait au port dudit Comps
 acte chez le notaire en présence de Dalmas Bosquet et Pierre Gaud";"Reconnaissance de dette";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00020@;Jean;TISSOT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=tissot;"Décès";DEAT;avant 1595;BEF 1595;"";"Généalogie de Raymond RIPERT";"";"";"";
-@I00022@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert;"Naissance";BIRT;vers 1505;ABT 1505;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00022@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert;"Décès";DEAT;avant 1561;BEF 1561;"";"";"";"";"";
-@I00022@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert;"Profession";OCCU;;;"";"";"Laboureur (1558)";"";"";
-@I00022@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jean&n=gibert;"Testament";WILL;9 janvier 1559;9 JAN 1559;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 42 / 3162
+@I00021@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;"Naissance";BIRT;vers 1505;ABT 1505;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00021@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;"Décès";DEAT;avant 1561;BEF 1561;"";"";"";"";"";
+@I00021@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;"Profession";OCCU;;;"";"";"Laboureur (1558)";"";"";
+@I00021@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;"Testament";WILL;9 janvier 1559;9 JAN 1559;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 42 / 3162
 testament de Jean GIBERT du Roux du lieu de Vallabrègue, laboureur
 légat en faveur de ses filles Esprite et Antonie 200 florins et deux robes
 héritiers Françoise Rodière, sa femme et Jean, Etienne, Guillaume, Olivier et
-Antoine, ses fils";"";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+Antoine, ses fils
+Témoin : [Anthonie
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=anthonie&n=gibert), ca
+1543-, Heir, sa fille
+Témoin : [Esprite
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=esprite&n=gibert), ca
+1550-/1602, Heir, sa fille
+Témoin : [Françoise
+RODIER](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=francoise&n=rodier), ca
+1510-1561/, Heir, son épouse
+Témoin : [Jean _Loup_
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jean&n=gibert&oc=1), ca
+1535-, Heir, son fils
+Témoin : [Étienne
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=etienne&n=gibert), ca
+1537-, Heir, son fils
+Témoin : [Guillaume
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=guillaume&n=gibert), ca
+1545-, Heir, son fils
+Témoin : [Olivier
+GIBERT](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=olivier&n=gibert),
+†1574/, Heir, son fils";"";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00023@;Domergue;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud;"Naissance";BIRT;vers 1500;ABT 1500;"";"source Geneanet Famille SADOULET";"";"";"";
-@I00023@;Domergue;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=domergue&n=rigaud;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00021@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane;"Naissance";BIRT;vers 1501;ABT 1501;"Montfrin, 30490, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00021@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane;"Décès";DEAT;;;"";"";"Y";"";"";
-@I00021@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumette&n=malcane;"Contrat de mariage (avec Pons Ou Pierre TREBILLON)";EVEN;18 septembre 1521;18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 1995 / 3162
+@I00021@;Jean;GIBERT;https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=gibert;"Pas de mention (avec Françoise RODIER)";EVEN;;;"";"";"";"@todo événement 'Pas de mention (avec Françoise RODIER)' inconnu pour Jean GIBERT. Vérifier la source.";"";
+@I00023@;Catherine;BAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=catherine&n=baud&oc=1;"Naissance";BIRT;;;"";"source Geneanet François SALGE 6 11 2012";"";"";"";
+@I00024@;Domergue;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=domergue&n=rigaud;"Naissance";BIRT;vers 1500;ABT 1500;"";"source Geneanet Famille SADOULET";"";"";"";
+@I00024@;Domergue;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=domergue&n=rigaud;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00025@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumette&n=malcane;"Naissance";BIRT;vers 1501;ABT 1501;"Montfrin, 30490, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00025@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumette&n=malcane;"Décès";DEAT;;;"";"";"Y";"";"";
+@I00025@;Jaumette;MALCANE;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumette&n=malcane;"Contrat de mariage (avec Pons Ou Pierre TREBILLON)";EVEN;18 septembre 1521;18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 1995 / 3162
 contrat de mariage entré Pierre TREBILHAT ht de Valabrègue d' une part
 et honeste fille Jaumette MALCANE fille de feu Antoine Malcane ou Malcain et
 de Doulce Barone native de Montfrin et à présent habitante de Valabrègue avec
@@ -190,14 +251,15 @@ les accoutrements le tout au jour de noces pour les robes et par solutions de
 = suivent les pactes
 = acte Valabrègue maison de noble Jean Garin de Tarascon en présence de Jean
 Romieu ,Nicolas Dautevés, de Pierre Gaudin, de Cirice Guin, Antoine Delon, de
-André. Ytier, et de Michel Chayne";"Contrat de mariage (avec Pons Ou Pierre TREBILLON)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
+André. Ytier, et de Michel Chayne
+Témoin : [Guillaume
+MANYVET](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=guillaume&n=manyvet),
+beau frère de la mariant
+Témoin : [Jeanne
+MALCANE](dmdoyen?lang=fr&pz=marie+chretienne&nz=beuf&p=jeanne&n=malcane),
+soeur de la mariante";"Contrat de mariage (avec Pons Ou Pierre TREBILLON)";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00024@;Françoise;RODIER;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier;"Naissance";BIRT;vers 1510;ABT 1510;"";"";"";"";"";
-@I00024@;Françoise;RODIER;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=francoise&n=rodier;"Décès";DEAT;après 1561;AFT 1561;"";"";"";"";"";
-@I00025@;Catherine;BAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=catherine&n=baud&oc=1;"Naissance";BIRT;;;"";"source Geneanet François SALGE 6 11 2012";"";"";"";
-@I00026@;Y...;BREMOND;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=y...&n=bremond;"Naissance";BIRT;;;"";"source Geneanet Famille SADOULET";"";"";"";
-@I00027@;Antoine;MALCAN;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=antoine&n=malcan;"Décès";DEAT;avant 18 septembre 1521;BEF 18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
-@I00028@;Doulce;BARONE;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=doulce&n=barone;"Accord";EVEN;10 décembre 1521;10 DEC 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2012 / 3162
+@I00026@;Doulce;BARONE;https://gw.geneanet.org/dmdoyen?lang=fr&p=doulce&n=barone;"Accord";EVEN;10 décembre 1521;10 DEC 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"page 2012 / 3162
 présente honeste femme Doulce BARONE comme mère et tutrice des enfants de feu
 Antoine Malcan laquelle quitte Guillaume Manyvet de Vallabrègue son gendre
 icelui payant pour les hoirs de Antoine Malcan susdite somme pour 19 florins
@@ -205,4 +267,7 @@ que ledit Manyvet lui a avancé
 
 = en présence des précités";"Accord";"Yves Chassin du Guerny 1985 - 1995 - VALLABREGUES Notariat XVI°-XVII°";"- Geneanet - Internet -
 [http://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7](https://www.geneanet.org/archives/ouvrages/index.php?action=detail&livre_id=540224&page=1&book_type=livre&search_type=livre&tk=f26cbe6f375c94c7)";
-@I00029@;Jaumin;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&pz=jeremie+michel+maurice+julien&nz=doyen&p=jaumin&n=rigaud;"Décès";DEAT;vers 1526;ABT 1526;"";"source Geneanet Famille SADOULET";"";"";"";
+@I00026@;Doulce;BARONE;https://gw.geneanet.org/dmdoyen?lang=fr&p=doulce&n=barone;"Pas de mention (avec Antoine MALCAN)";EVEN;;;"";"";"";"@todo événement 'Pas de mention (avec Antoine MALCAN)' inconnu pour Doulce BARONE. Vérifier la source.";"";
+@I00027@;Antoine;MALCAN;https://gw.geneanet.org/dmdoyen?lang=fr&p=antoine&n=malcan;"Décès";DEAT;avant 18 septembre 1521;BEF 18 SEP 1521;"Vallabrègues, 30300, Gard, Occitanie, FRANCE";"";"";"";"";
+@I00028@;Y...;BREMOND;https://gw.geneanet.org/dmdoyen?lang=fr&p=y...&n=bremond;"Naissance";BIRT;;;"";"source Geneanet Famille SADOULET";"";"";"";
+@I00029@;Jaumin;RIGAUD;https://gw.geneanet.org/dmdoyen?lang=fr&p=jaumin&n=rigaud;"Décès";DEAT;vers 1526;ABT 1526;"";"source Geneanet Famille SADOULET";"";"";"";

@@ -1,0 +1,1147 @@
+0 HEAD
+1 NOTE Cette généalogie a été créée par GeneanetSpider 1.0.26 le 18/04/2025 à 01:11 à partir de https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana
+1 SUBM @B00001@
+1 PLAC
+1 SOUR GeneanetSpider
+2 VERS 1.0.26
+2 NAME GeneanetSpider
+2 CORP Nicolas Raibaut
+3 ADDR raibaut.nicolas@gmail.com
+1 DEST ANY
+1 DATE 18 APR 2025
+2 TIME 01:11:35
+1 FILE gw.geneanet.org.sh1.lang=fr.n=vermeulen.oc=0.p=anna+juliana.ged
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @B00001@ SUBM
+0 @I00001@ INDI
+1 NAME Anna Juliana /VERMEULEN/
+2 GIVN Anna Juliana
+2 SURN VERMEULEN
+1 SEX F
+1 NOTE @N00001@
+1 BIRT
+2 DATE 26 SEP 1818
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT Y
+1 OCCU Hekeleresse
+2 NOTE @N00002@
+1 SOUR @S00001@
+1 FAMC @F00001@
+0 @N00001@ NOTE Getuigen geboorteakte:
+1 CONT - Jacques Augustinus Vermeulen, 30 jaar, wever, wonende te Lokeren
+1 CONT - Judocus Francies Van Ranst, 52 jaar, metserdiender, wonende te Lokeren
+0 @N00002@ NOTE
+0 @S00001@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana
+1 TEXT - Née le 26 septembre 1818 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée
+2 CONT - Hekeleresse
+0 @I00002@ INDI
+1 NAME Livinus Joannes /VERMEULEN/
+2 GIVN Livinus Joannes
+2 SURN VERMEULEN
+1 SEX M
+1 NOTE @N00003@
+1 BIRT
+2 DATE 18 APR 1778
+2 PLAC Vlaanderen
+1 DEAT
+2 DATE 7 NOV 1851
+2 PLAC Vlaanderen
+1 OCCU Metser
+2 NOTE @N00005@
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00006@
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00007@
+1 EVEN
+2 TYPE Mariage (avec Petronella Theresia De Donder)
+2 DATE 12 OCT 1805
+2 PLAC Vlaanderen
+2 NOTE @N00008@
+1 SOUR @S00002@
+1 FAMS @F00001@
+1 FAMC @F00002@
+0 @N00003@ NOTE Woonde in 1814 in de Zelestraat met vrouw en 4 kinderen jonger dan 12j.
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - Franciscus Bouez, zonder beroep, 72 jaar, wonende te Lokeren, gebuur van de
+1 CONT overledene
+1 CONT - Mattheus Smet, hovenier, 48 jaar, wonende te Lokeren, gebuur van de
+1 CONT overledene
+1 CONT Overleden in het gasthuis gestaan aan het Kerkstraatje
+0 @I00003@ INDI
+1 NAME Petronella Theresia /DE DONDER/
+2 GIVN Petronella Theresia
+2 SURN DE DONDER
+1 SEX F
+1 NOTE @N00004@
+1 BIRT
+2 DATE 21 JAN 1780
+2 PLAC Vlaanderen
+1 DEAT
+2 DATE 26 NOV 1835
+2 PLAC Vlaanderen
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00009@
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00010@
+1 EVEN
+2 TYPE Mariage (avec Livinus Joannes Vermeulen)
+2 DATE 12 OCT 1805
+2 PLAC Vlaanderen
+2 NOTE @N00011@
+1 SOUR @S00003@
+1 FAMS @F00001@
+1 FAMC @F00003@
+0 @N00004@ NOTE Getuigen doopakte:
+1 CONT - Antonius De Donder, wonende te Lokeren
+1 CONT - Joanna Petronella Van Selle, wonende te Daknam
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - Petrus Francies Schrap, winkelier, 60 jaar, wonende te Lokeren, gebuur van
+1 CONT de overledene
+1 CONT - Judocus Joannes De Lee, wever, 34 jaar, wonende te Lokeren, gebuur van de
+1 CONT overledene
+0 @N00005@ NOTE
+0 @N00006@ NOTE Adres:
+0 @N00007@ NOTE Adres:
+0 @N00008@ NOTE @todo événement de type mariage probablement redondant pour Livinus Joannes VERMEULEN
+0 @S00002@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=livinus+joannes&n=vermeulen
+1 TEXT - Né le 18 avril 1778 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 7 novembre 1851 - Lokeren, Oost-Vlaanderen, à l'âge de 73 ans
+2 CONT - Metser
+0 @N00009@ NOTE Adres:
+0 @N00010@ NOTE Adres:
+0 @N00011@ NOTE @todo événement de type mariage probablement redondant pour Petronella Theresia DE DONDER
+0 @S00003@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=petronella+theresia&n=de+donder
+1 TEXT - Née le 21 janvier 1780 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 26 novembre 1835 - Lokeren, Oost-Vlaanderen, à l'âge de 55 ans
+0 @I00004@ INDI
+1 NAME Anna Maria /VAN CAUTEREN/
+2 GIVN Anna Maria
+2 SURN VAN CAUTEREN
+1 SEX F
+1 NOTE @N00012@
+1 BIRT
+2 DATE 29 FEB 1756
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 24 JAN 1802
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00004@
+1 FAMS @F00002@
+1 FAMC @F00004@
+0 @N00012@ NOTE Getuigen doopakte:
+1 CONT - Franciscus Wuylens
+1 CONT - Catharina Angela Hubert
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - Jacques Geerinckx, schoonbroer van de overledene, wonende te Lokeren
+1 CONT - André Jacques Vermeulen, arbeider, wonende te Lokeren, schoonbroer van de
+1 CONT overledene
+0 @S00004@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=anna+maria&n=van+cauteren
+1 TEXT - Née le 29 février 1756 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 24 janvier 1802 - Lokeren, Oost-Vlaanderen, à l'âge de 45 ans
+0 @I00005@ INDI
+1 NAME Joannes Baptista /DE DONDER/
+2 GIVN Joannes Baptista
+2 SURN DE DONDER
+1 SEX M
+1 NOTE @N00013@
+1 BIRT
+2 DATE ABT 1750
+2 PLAC Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+1 DEAT
+2 DATE 16 NOV 1831
+2 PLAC Lokeren, Oost-Vlaanderen
+1 OCCU Arbeider
+2 NOTE @N00014@
+1 SOUR @S00005@
+1 FAMS @F00003@
+1 FAMC @F00005@
+0 @N00013@ NOTE Geboren te Sint-Gillis (= Dendermonde of Brussel?)
+0 @N00014@ NOTE
+0 @S00005@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes+baptista&n=de+donder
+1 TEXT - Né vers 1750 - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+2 CONT - Décédé le 16 novembre 1831 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 81 ans
+2 CONT - Arbeider
+0 @I00006@ INDI
+1 NAME Joannes Petrus /VERMEULEN/
+2 GIVN Joannes Petrus
+2 SURN VERMEULEN
+1 SEX M
+1 NOTE @N00015@
+1 BIRT
+2 DATE 11 JUL 1754
+2 PLAC Vlaanderen
+1 DEAT
+2 DATE 9 OCT 1807
+2 PLAC Vlaanderen
+1 OCCU Metser
+2 NOTE @N00016@
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00017@
+1 EVEN
+2 TYPE Mariage (avec Anna Maria Van Cauteren)
+2 DATE 9 NOV 1777
+2 PLAC Vlaanderen
+2 NOTE @N00018@
+1 EVEN
+2 TYPE Mariage (avec Maria Theresia Josepha Mille)
+2 NOTE @N00019@
+1 SOUR @S00006@
+1 FAMS @F00002@
+1 FAMC @F00006@
+0 @N00015@ NOTE Getuigen doopakte:
+1 CONT - Joannes Van Wathem
+1 CONT - Petronilla Vermeulen
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - André Jacques Vermeulen, metser, 42 jaar, wonende te Lokeren, broer van de
+1 CONT overledene
+1 CONT - Livin Jean Vermeulen, metser, 28 jaar, wonende te Lokeren, zoon van de
+1 CONT overledene
+0 @N00016@ NOTE
+0 @N00017@ NOTE Adres:
+0 @N00018@ NOTE @todo événement de type mariage probablement redondant pour Joannes Petrus VERMEULEN
+0 @N00019@ NOTE @todo événement de type mariage probablement redondant pour Joannes Petrus VERMEULEN
+0 @S00006@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes+petrus&n=vermeulen
+1 TEXT - Né le 11 juillet 1754 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 9 octobre 1807 - Lokeren, Oost-Vlaanderen, à l'âge de 53 ans
+2 CONT - Metser
+0 @I00007@ INDI
+1 NAME Angelina /VAN SELLE/
+2 GIVN Angelina
+2 SURN VAN SELLE
+1 SEX F
+1 NOTE @N00020@
+1 BIRT
+2 DATE 7 JUN 1752
+2 PLAC Vlaanderen
+1 DEAT
+2 DATE 24 JUN 1827
+2 PLAC Vlaanderen
+1 OCCU Dagloonster
+2 NOTE @N00021@
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00022@
+1 EVEN
+2 TYPE Mariage (avec Joannes Baptista De Donder)
+2 DATE 3 NOV 1778
+2 PLAC Vlaanderen
+2 NOTE @N00023@
+1 SOUR @S00007@
+1 FAMS @F00003@
+1 FAMC @F00007@
+0 @N00020@ NOTE Ookwel Vascelle
+1 CONT
+1 CONT Getuigen doopakte:
+1 CONT - Georgius Baeke
+1 CONT - Joanna Van Bunder
+1 CONT
+1 CONT Woonde in 1814 in de Brugstraat met Felix De Donder en Julie De Donder (=
+1 CONT dochter?) en Seraphina De Decker (hekelaarster)
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - Judocus Ludovicus Callebaut, 29 jaar, wever, wonende te Lokeren, gebuur van
+1 CONT de overledene
+1 CONT - Petrus Judocus Carreman, 27 jaar, wever, wonende te Lokeren, gebuur van de
+1 CONT overledene
+0 @N00021@ NOTE
+0 @N00022@ NOTE Adres:
+0 @N00023@ NOTE @todo événement de type mariage probablement redondant pour Angelina VAN SELLE
+0 @S00007@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=angelina&n=van+selle
+1 TEXT - Née le 7 juin 1752 - Daknam (Lokeren), Oost-Vlaanderen
+2 CONT - Décédée le 24 juin 1827 - Lokeren, Oost-Vlaanderen, à l'âge de 75 ans
+2 CONT - Dagloonster
+0 @I00008@ INDI
+1 NAME Livinus Guilielmus /VERMEULEN/
+2 GIVN Livinus Guilielmus
+2 SURN VERMEULEN
+1 SEX M
+1 NOTE @N00024@
+1 BIRT
+2 DATE 19 JUL 1727
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 23 JUL 1781
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00008@
+1 FAMS @F00006@
+1 FAMC @F00008@
+0 @N00024@ NOTE Getuigen doopakte:
+1 CONT - Guilielmus Roels
+1 CONT - Livina Poppe
+0 @S00008@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=livinus+guilielmus&n=vermeulen
+1 TEXT - Né le 19 juillet 1727 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 23 juillet 1781 - Lokeren, Oost-Vlaanderen, à l'âge de 54 ans
+0 @I00009@ INDI
+1 NAME Regina Judoca /MANNAERT/
+2 GIVN Regina Judoca
+2 SURN MANNAERT
+1 SEX F
+1 BIRT
+2 PLAC Lebbeke, Oost-Vlaanderen
+1 DEAT
+2 PLAC Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+1 SOUR @S00009@
+1 FAMS @F00005@
+0 @S00009@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=regina+judoca&n=mannaert
+1 TEXT - Née - Lebbeke, Oost-Vlaanderen
+2 CONT - Décédée - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+0 @I00010@ INDI
+1 NAME Martinus /DE DONDER/
+2 GIVN Martinus
+2 SURN DE DONDER
+1 SEX M
+1 BIRT
+2 PLAC Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+1 DEAT
+2 PLAC Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+1 SOUR @S00010@
+1 FAMS @F00005@
+0 @S00010@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=martinus&n=de+donder
+1 TEXT - Né - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+2 CONT - Décédé - Sint-Gillis-bij-Dendermonde (Dendermonde), Oost-Vlaanderen
+0 @I00011@ INDI
+1 NAME Joanna Martina /BACK/
+2 GIVN Joanna Martina
+2 SURN BACK
+1 SEX F
+1 NOTE @N00025@
+1 BIRT
+2 DATE 28 OCT 1731
+2 PLAC Vlaanderen
+1 DEAT
+2 DATE 27 APR 1803
+2 PLAC Vlaanderen
+1 RESI
+2 TYPE Adres:
+2 NOTE @N00028@
+1 EVEN
+2 TYPE Mariage (avec Gregorius Nicolaus Van Cauteren)
+2 DATE 8 DEC 1751
+2 PLAC Vlaanderen
+2 NOTE @N00029@
+1 SOUR @S00013@
+1 FAMS @F00004@
+1 FAMC @F00009@
+0 @N00025@ NOTE Getuigen doopakte:
+1 CONT - Balduinus Back
+1 CONT - Joanna Martina De Keyser
+1 CONT
+1 CONT Getuigen overlijdensakte:
+1 CONT - Jacques Geerinckx, wever, wonende te Lokeren, schoonzoon van de overledene
+1 CONT - Livin Verlinden, wever, wonende te Lokeren, gebuur van de overledene
+0 @I00012@ INDI
+1 NAME Judoca Maria /VAN WATTHEM/
+2 GIVN Judoca Maria
+2 SURN VAN WATTHEM
+1 SEX F
+1 NOTE @N00026@
+1 BIRT
+2 DATE 25 SEP 1732
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 22 MAR 1769
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00011@
+1 FAMS @F00006@
+1 FAMC @F00010@
+0 @N00026@ NOTE Getuigen doopakte:
+1 CONT - Joannes De Langhe
+1 CONT - Judoca Boeke?
+0 @S00011@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=judoca+maria&n=van+watthem
+1 TEXT - Née le 25 septembre 1732 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 22 mars 1769 - Lokeren, Oost-Vlaanderen, à l'âge de 36 ans
+0 @I00013@ INDI
+1 NAME Gregorius Nicolaus /VAN CAUTEREN/
+2 GIVN Gregorius Nicolaus
+2 SURN VAN CAUTEREN
+1 SEX M
+1 NOTE @N00027@
+1 BIRT
+2 DATE 9 SEP 1727
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 23 FEB 1781
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00012@
+1 FAMS @F00004@
+1 FAMC @F00011@
+0 @N00027@ NOTE Getuigen doopakte:
+1 CONT - Petrus Raes
+1 CONT - Joanna Vandermessche?
+0 @S00012@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=gregorius+nicolaus&n=van+cauteren
+1 TEXT - Né le 9 septembre 1727 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 23 février 1781 - Lokeren, Oost-Vlaanderen, à l'âge de 53 ans
+0 @N00028@ NOTE Adres:
+0 @N00029@ NOTE @todo événement de type mariage probablement redondant pour Joanna Martina BACK
+0 @S00013@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joanna+martina&n=back
+1 TEXT - Née le 28 octobre 1731 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 27 avril 1803 - Lokeren, Oost-Vlaanderen, à l'âge de 71 ans
+0 @I00014@ INDI
+1 NAME Livinus /VAN SELLE/
+2 GIVN Livinus
+2 SURN VAN SELLE
+1 SEX M
+1 BIRT
+2 DATE ABT 1723
+1 DEAT
+2 DATE 13 OCT 1773
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 SOUR @S00014@
+1 FAMS @F00007@
+0 @S00014@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=van+selle
+1 TEXT - Né vers 1723
+2 CONT - Décédé le 13 octobre 1773 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 50 ans
+0 @I00015@ INDI
+1 NAME Catharina /VAN DEN BUNDER/
+2 GIVN Catharina
+2 SURN VAN DEN BUNDER
+1 SEX F
+1 NOTE @N00030@
+1 BIRT
+2 DATE 1 OCT 1722
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 DEAT
+2 DATE 29 JUN 1780
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 SOUR @S00015@
+1 FAMS @F00007@
+1 FAMC @F00012@
+0 @N00030@ NOTE Getuigen doopakte:
+1 CONT - ...? Zaman
+1 CONT - Catharina Van Kerckhove
+0 @S00015@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+den+bunder
+1 TEXT - Née le 1er octobre 1722 - Daknam (Lokeren), Oost-Vlaanderen
+2 CONT - Décédée le 29 juin 1780 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge de 57 ans
+0 @I00016@ INDI
+1 NAME Maria Anna /DE MEYER/
+2 GIVN Maria Anna
+2 SURN DE MEYER
+1 SEX F
+1 NOTE @N00031@
+1 BIRT
+2 DATE 14 MAY 1703
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 16 SEP 1742
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00016@
+1 FAMS @F00008@
+1 FAMC @F00013@
+0 @N00031@ NOTE Getuigen doopakte:
+1 CONT - Petrus Van Peteghem
+1 CONT - Catharina Staelens
+1 CONT
+1 CONT Ookwel "Meyers"
+0 @S00016@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=de+meyer
+1 TEXT - Née le 14 mai 1703 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 16 septembre 1742 - Lokeren, Oost-Vlaanderen, à l'âge de 39 ans
+0 @I00017@ INDI
+1 NAME Livinus /VERMEULEN/
+2 GIVN Livinus
+2 SURN VERMEULEN
+1 SEX M
+1 BIRT
+2 DATE ABT 1700
+1 DEAT
+2 DATE 20 FEB 1740
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00017@
+1 FAMS @F00008@
+1 FAMC @F00014@
+0 @S00017@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=livinus&n=vermeulen
+1 TEXT - Né vers 1700
+2 CONT - Décédé le 20 février 1740 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 40 ans
+0 @I00018@ INDI
+1 NAME Maria Theresia /DE COCK/
+2 GIVN Maria Theresia
+2 SURN DE COCK
+1 SEX F
+1 BIRT
+2 DATE ABT 1696
+1 DEAT
+2 DATE 11 FEB 1736
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00018@
+1 FAMS @F00011@
+1 FAMC @F00015@
+0 @S00018@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=maria+theresia&n=de+cock
+1 TEXT - Née vers 1696
+2 CONT - Décédée le 11 février 1736 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 40 ans
+0 @I00019@ INDI
+1 NAME Joannes /VAN CAUTEREN/
+2 GIVN Joannes
+2 SURN VAN CAUTEREN
+1 SEX M
+1 BIRT
+2 DATE ABT 1692
+1 DEAT
+2 DATE 29 OCT 1767
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00019@
+1 FAMS @F00011@
+1 FAMC @F00016@
+0 @S00019@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+cauteren
+1 TEXT - Né vers 1692
+2 CONT - Décédé le 29 octobre 1767 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 75 ans
+0 @I00020@ INDI
+1 NAME Maria Anna /VAN DER VEKEN/
+2 GIVN Maria Anna
+2 SURN VAN DER VEKEN
+1 SEX F
+1 NOTE @N00032@
+1 BIRT
+2 DATE 18 MAR 1697
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 22 APR 1773
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00020@
+1 FAMS @F00010@
+1 FAMC @F00017@
+0 @N00032@ NOTE Getuigen doopakte:
+1 CONT - Martinus Rubbens
+1 CONT - Maria Anna ...?
+0 @S00020@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=maria+anna&n=van+der+veken
+1 TEXT - Née le 18 mars 1697 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 22 avril 1773 - Lokeren, Oost-Vlaanderen, à l'âge de 76 ans
+0 @I00021@ INDI
+1 NAME Joannes /VAN WATTHEM/
+2 GIVN Joannes
+2 SURN VAN WATTHEM
+1 SEX M
+1 NOTE @N00033@
+1 BIRT
+2 DATE 9 MAR 1701
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 2 NOV 1762
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00021@
+1 FAMS @F00010@
+1 FAMC @F00018@
+0 @N00033@ NOTE Getuigen doopakte:
+1 CONT - Joannes Geldof
+1 CONT - Anna Tack
+0 @S00021@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+watthem
+1 TEXT - Né le 9 mars 1701 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 2 novembre 1762 - Lokeren, Oost-Vlaanderen, à l'âge de 61 ans
+0 @I00022@ INDI
+1 NAME Joannes /BACK/
+2 GIVN Joannes
+2 SURN BACK
+1 SEX M
+1 NOTE @N00034@
+1 BIRT
+2 DATE 29 NOV 1710
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 9 NOV 1758
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00022@
+1 FAMS @F00009@
+1 FAMC @F00019@
+0 @N00034@ NOTE Getuigen doopakte:
+1 CONT - Joannes Bogaert
+1 CONT - Petronella Jacob
+0 @S00022@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=back
+1 TEXT - Né le 29 novembre 1710 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédé le 9 novembre 1758 - Lokeren, Oost-Vlaanderen, à l'âge de 47 ans
+0 @I00023@ INDI
+1 NAME Anna /DE KEYSER/
+2 GIVN Anna
+2 SURN DE KEYSER
+1 SEX F
+1 NOTE @N00035@
+1 BIRT
+2 DATE 5 JUL 1700
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 10 FEB 1740
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00023@
+1 FAMS @F00009@
+1 FAMC @F00020@
+0 @N00035@ NOTE Getuigen doopakte:
+1 CONT - Anna ...?
+1 CONT - Egidius Baert
+0 @S00023@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=anna&n=de+keyser
+1 TEXT - Née le 5 juillet 1700 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 10 février 1740 - Lokeren, Oost-Vlaanderen, à l'âge de 39 ans
+0 @I00024@ INDI
+1 NAME Margareta /DE WITTE/
+2 GIVN Margareta
+2 SURN DE WITTE
+1 SEX F
+1 BIRT
+2 DATE ABT 1687
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 18 APR 1742
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 SOUR @S00024@
+1 FAMS @F00012@
+0 @S00024@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=margareta&n=de+witte&oc=1
+1 TEXT - Née vers 1687 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 18 avril 1742 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 55 ans
+0 @I00025@ INDI
+1 NAME Egidius /VAN BUNDER/
+2 GIVN Egidius
+2 SURN VAN BUNDER
+1 SEX M
+1 BIRT
+2 DATE 19 OCT 1686
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 DEAT
+2 DATE 20 JUN 1723
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 SOUR @S00025@
+1 FAMS @F00012@
+1 FAMC @F00021@
+0 @S00025@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=van+bunder
+1 TEXT - Né le 19 octobre 1686 - Daknam (Lokeren), Oost-Vlaanderen
+2 CONT - Décédé le 20 juin 1723 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge de 36 ans
+0 @I00026@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00026@
+1 FAMS @F00014@
+0 @S00026@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7144
+1 TEXT Personne masquée
+0 @I00027@ INDI
+1 NAME Olevirius /VERMEULEN/
+2 GIVN Olevirius
+2 SURN VERMEULEN
+1 SEX M
+1 SOUR @S00027@
+1 FAMS @F00014@
+0 @S00027@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=olevirius&n=vermeulen
+0 @I00028@ INDI
+1 NAME Catharina /VAN PETEGHEM/
+2 GIVN Catharina
+2 SURN VAN PETEGHEM
+1 SEX F
+1 SOUR @S00028@
+1 FAMS @F00013@
+0 @S00028@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=van+peteghem&oc=2
+0 @I00029@ INDI
+1 NAME Jacobus /DE MEYER/
+2 GIVN Jacobus
+2 SURN DE MEYER
+1 SEX M
+1 BIRT
+2 DATE ABT 1679
+1 DEAT
+2 DATE 9 APR 1723
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00029@
+1 FAMS @F00013@
+0 @S00029@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=jacobus&n=de+meyer
+1 TEXT - Né vers 1679
+2 CONT - Décédé le 9 avril 1723 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 44 ans
+0 @I00030@ INDI
+1 NAME Livina /BOGAERT/
+2 GIVN Livina
+2 SURN BOGAERT
+1 SEX F
+1 BIRT
+2 DATE ABT 1685
+1 DEAT
+2 DATE 1 FEB 1730
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00030@
+1 FAMS @F00019@
+1 FAMC @F00022@
+0 @S00030@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=livina&n=bogaert
+1 TEXT - Née vers 1685
+2 CONT - Décédée le 1er février 1730 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 45 ans
+0 @I00031@ INDI
+1 NAME Balduinus /BACK/
+2 GIVN Balduinus
+2 SURN BACK
+1 SEX M
+1 SOUR @S00031@
+1 FAMS @F00019@
+0 @S00031@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=balduinus&n=back
+0 @I00032@ INDI
+1 NAME Anna /RUBBENS/
+2 GIVN Anna
+2 SURN RUBBENS
+1 SEX F
+1 BIRT
+2 DATE ABT 1662
+1 DEAT
+2 DATE 3 JUL 1724
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00032@
+1 FAMS @F00017@
+1 FAMC @F00023@
+0 @S00032@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=anna&n=rubbens
+1 TEXT - Née vers 1662
+2 CONT - Décédée le 3 juillet 1724 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 62 ans
+0 @I00033@ INDI
+1 NAME Catharina /ALEXANDER/
+2 GIVN Catharina
+2 SURN ALEXANDER
+1 SEX F
+1 NOTE @N00036@
+1 BIRT
+2 DATE 12 MAY 1664
+2 PLAC Lokeren, Oost-Vlaanderen
+1 DEAT
+2 DATE 23 APR 1720
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00033@
+1 FAMS @F00018@
+1 FAMC @F00024@
+0 @N00036@ NOTE Getuigen doopakte:
+1 CONT - Livinus Alexander
+1 CONT - Catharina Blanckaert
+0 @S00033@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=catharina&n=alexander
+1 TEXT - Née le 12 mai 1664 - Lokeren, Oost-Vlaanderen
+2 CONT - Décédée le 23 avril 1720 - Lokeren, Oost-Vlaanderen, à l'âge de 55 ans
+0 @I00034@ INDI
+1 NAME Abraham /VAN WATTHEM/
+2 GIVN Abraham
+2 SURN VAN WATTHEM
+1 SEX M
+1 NOTE @N00037@
+1 BIRT
+2 DATE ABT 1664
+1 DEAT
+2 DATE 30 JUL 1744
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00034@
+1 FAMS @F00018@
+0 @N00037@ NOTE Vader = Egidius Van Wattijn (°+- 1635 - †7 mei 1695 te Lokeren)?
+0 @S00034@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=abraham&n=van+watthem
+1 TEXT - Né vers 1664
+2 CONT - Décédé le 30 juillet 1744 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 80 ans
+0 @I00035@ INDI
+1 NAME Cornelius /VAN DER VEKEN/
+2 GIVN Cornelius
+2 SURN VAN DER VEKEN
+1 SEX M
+1 BIRT
+2 DATE ABT 1662
+1 DEAT
+2 DATE 7 APR 1722
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00035@
+1 FAMS @F00017@
+1 FAMC @F00025@
+0 @S00035@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=cornelius&n=van+der+veken
+1 TEXT - Né vers 1662
+2 CONT - Décédé le 7 avril 1722 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 60 ans
+0 @I00036@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00036@
+1 FAMS @F00016@
+0 @S00036@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7119
+1 TEXT Personne masquée
+0 @I00037@ INDI
+1 NAME Petrus /VAN CAUTEREN/
+2 GIVN Petrus
+2 SURN VAN CAUTEREN
+1 SEX M
+1 SOUR @S00037@
+1 FAMS @F00016@
+0 @S00037@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+cauteren&oc=1
+0 @I00038@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00038@
+1 FAMS @F00015@
+0 @S00038@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7118
+1 TEXT Personne masquée
+0 @I00039@ INDI
+1 NAME Melchior /DE COCK/
+2 GIVN Melchior
+2 SURN DE COCK
+1 SEX M
+1 SOUR @S00039@
+1 FAMS @F00015@
+0 @S00039@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=melchior&n=de+cock
+0 @I00040@ INDI
+1 NAME Maria /SAMAN/
+2 GIVN Maria
+2 SURN SAMAN
+1 SEX F
+1 BIRT
+2 DATE ABT 1656
+1 DEAT
+2 DATE 8 JUL 1688
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen
+1 SOUR @S00040@
+1 FAMS @F00021@
+0 @S00040@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=maria&n=saman
+1 TEXT - Née vers 1656
+2 CONT - Décédée le 8 juillet 1688 - Daknam (Lokeren), Oost-Vlaanderen, à l'âge d'environ 32 ans
+0 @I00041@ INDI
+1 NAME Petrus /VAN BUNDER/
+2 GIVN Petrus
+2 SURN VAN BUNDER
+1 SEX M
+1 SOUR @S00041@
+1 FAMS @F00021@
+0 @S00041@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=petrus&n=van+bunder
+0 @I00042@ INDI
+1 NAME Maria /BAERT/
+2 GIVN Maria
+2 SURN BAERT
+1 SEX F
+1 SOUR @S00042@
+1 FAMS @F00020@
+0 @S00042@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=maria&n=baert&oc=2
+0 @I00043@ INDI
+1 NAME Egidius /DE KEYSER/
+2 GIVN Egidius
+2 SURN DE KEYSER
+1 SEX M
+1 SOUR @S00043@
+1 FAMS @F00020@
+0 @S00043@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=egidius&n=de+keyser
+0 @I00044@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00044@
+1 FAMS @F00025@
+0 @S00044@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7146
+1 TEXT Personne masquée
+0 @I00045@ INDI
+1 NAME Joannes /VAN DER VEKEN/
+2 GIVN Joannes
+2 SURN VAN DER VEKEN
+1 SEX M
+1 SOUR @S00045@
+1 FAMS @F00025@
+0 @S00045@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=van+der+veken
+0 @I00046@ INDI
+1 NAME Andrea /BLANCKAERT/
+2 GIVN Andrea
+2 SURN BLANCKAERT
+1 SEX F
+1 NOTE @N00038@
+1 BIRT
+2 DATE ABT 1632
+1 DEAT
+2 DATE 1 NOV 1693
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00046@
+1 FAMS @F00024@
+0 @N00038@ NOTE Ookwel Judoca Blanckaert
+0 @S00046@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=andrea&n=blanckaert
+1 TEXT - Née vers 1632
+2 CONT - Décédée le 1er novembre 1693 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 61 ans
+0 @I00047@ INDI
+1 NAME Christianus /ALEXANDER/
+2 GIVN Christianus
+2 SURN ALEXANDER
+1 SEX M
+1 BIRT
+2 DATE ABT 1625
+1 DEAT
+2 DATE 4 DEC 1675
+2 PLAC Lokeren, Oost-Vlaanderen
+1 SOUR @S00047@
+1 FAMS @F00024@
+0 @S00047@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=christianus&n=alexander
+1 TEXT - Né vers 1625
+2 CONT - Décédé le 4 décembre 1675 - Lokeren, Oost-Vlaanderen, à l'âge d'environ 50 ans
+0 @I00048@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00048@
+1 FAMS @F00023@
+0 @S00048@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7145
+1 TEXT Personne masquée
+0 @I00049@ INDI
+1 NAME Joannes /RUBBENS/
+2 GIVN Joannes
+2 SURN RUBBENS
+1 SEX M
+1 SOUR @S00049@
+1 FAMS @F00023@
+0 @S00049@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=rubbens
+0 @I00050@ INDI
+1 NAME ? /?/
+2 GIVN ?
+2 SURN ?
+1 SEX F
+1 SOUR @S00050@
+1 FAMS @F00022@
+0 @S00050@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&i=7123
+1 TEXT Personne masquée
+0 @I00051@ INDI
+1 NAME Joannes /BOGAERT/
+2 GIVN Joannes
+2 SURN BOGAERT
+1 SEX M
+1 SOUR @S00051@
+1 FAMS @F00022@
+0 @S00051@ SOUR
+1 TITL https://gw.geneanet.org/sh1?lang=fr&p=joannes&n=bogaert&oc=1
+0 @F00001@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 MARR
+2 DATE 12 OCT 1805
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen trouwakte:
+3 CONT - Jacobus Willems, boodschapper, 53 jaar, wonende tot Lokeren
+3 CONT - Cosmus Bernard Vyt, kleermaker, 59 jaar, wonende tot Lokeren
+3 CONT - Joannes Antonius Vyt, 23 jaar, wonende tot Lokeren
+3 CONT - Josephus ?, hoedenmaker, 35 jaar, wonende tot Lokeren
+1 CHIL @I00001@
+0 @F00002@ FAM
+1 HUSB @I00006@
+1 WIFE @I00004@
+1 MARR
+2 DATE 9 NOV 1777
+2 PLAC Lokeren, Oost-Vlaanderen,
+1 CHIL @I00002@
+0 @F00003@ FAM
+1 HUSB @I00005@
+1 WIFE @I00007@
+1 MARR
+2 DATE 3 NOV 1778
+2 PLAC Lokeren, Oost-Vlaanderen,
+1 CHIL @I00003@
+0 @F00004@ FAM
+1 HUSB @I00013@
+1 WIFE @I00011@
+1 MARR
+2 DATE 8 DEC 1751
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Joannes Van Cauteren
+3 CONT - Catharina Gaens
+1 CHIL @I00004@
+0 @F00005@ FAM
+1 HUSB @I00010@
+1 WIFE @I00009@
+1 CHIL @I00005@
+0 @F00006@ FAM
+1 HUSB @I00008@
+1 WIFE @I00012@
+1 MARR
+2 DATE 22 JUL 1753
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Oliverius Vermeulen
+3 CONT - Maria Anna Van der Veken
+1 CHIL @I00006@
+0 @F00007@ FAM
+1 HUSB @I00014@
+1 WIFE @I00015@
+1 MARR
+2 DATE 18 JAN 1749
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Georgius Baecke
+3 CONT - Petronilla Van Doosselaer
+1 CHIL @I00007@
+0 @F00008@ FAM
+1 HUSB @I00017@
+1 WIFE @I00016@
+1 MARR
+2 DATE 2 JUN 1722
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Oliverius Vermeulen
+3 CONT - Ludovicus De Bock
+1 CHIL @I00008@
+0 @F00009@ FAM
+1 HUSB @I00022@
+1 WIFE @I00023@
+1 MARR
+2 DATE 15 JUL 1730
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Balduinus Back
+3 CONT - Joannes Jacob
+1 CHIL @I00011@
+0 @F00010@ FAM
+1 HUSB @I00021@
+1 WIFE @I00020@
+1 MARR
+2 DATE 24 FEB 1726
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Abraham Van Watthem
+3 CONT - Joannes Van ...?
+1 CHIL @I00012@
+0 @F00011@ FAM
+1 HUSB @I00019@
+1 WIFE @I00018@
+1 MARR
+2 DATE 28 JAN 1720
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Cornelis Heeckman?
+3 CONT - Petrus De Poorter
+1 CHIL @I00013@
+0 @F00012@ FAM
+1 HUSB @I00025@
+1 WIFE @I00024@
+1 MARR
+2 DATE 20 NOV 1708
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Joannes De Loose
+3 CONT - Elisabetha Brugman
+1 CHIL @I00015@
+0 @F00013@ FAM
+1 HUSB @I00029@
+1 WIFE @I00028@
+1 MARR
+2 DATE 10 AUG 1699
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Petrus ...?
+3 CONT - Maria Anna De Meyer
+1 CHIL @I00016@
+0 @F00014@ FAM
+1 HUSB @I00027@
+1 WIFE @I00026@
+1 CHIL @I00017@
+0 @F00015@ FAM
+1 HUSB @I00039@
+1 WIFE @I00038@
+1 CHIL @I00018@
+0 @F00016@ FAM
+1 HUSB @I00037@
+1 WIFE @I00036@
+1 CHIL @I00019@
+0 @F00017@ FAM
+1 HUSB @I00035@
+1 WIFE @I00032@
+1 CHIL @I00020@
+0 @F00018@ FAM
+1 HUSB @I00034@
+1 WIFE @I00033@
+1 MARR
+2 DATE 14 NOV 1694
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Petrus Pooters?
+3 CONT - Susanna De Backer
+1 CHIL @I00021@
+0 @F00019@ FAM
+1 HUSB @I00031@
+1 WIFE @I00030@
+1 MARR
+2 DATE 16 FEB 1708
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE Getuigen huwelijksakte:
+3 CONT - Joannes Back
+3 CONT - Egidius Back
+1 CHIL @I00022@
+0 @F00020@ FAM
+1 HUSB @I00043@
+1 WIFE @I00042@
+1 CHIL @I00023@
+0 @F00021@ FAM
+1 HUSB @I00041@
+1 WIFE @I00040@
+1 MARR
+2 DATE 27 MAR 1680
+2 PLAC Daknam (Lokeren), Oost-Vlaanderen,
+1 CHIL @I00025@
+0 @F00022@ FAM
+1 HUSB @I00051@
+1 WIFE @I00050@
+1 CHIL @I00030@
+0 @F00023@ FAM
+1 HUSB @I00049@
+1 WIFE @I00048@
+1 CHIL @I00032@
+0 @F00024@ FAM
+1 HUSB @I00047@
+1 WIFE @I00046@
+1 MARR
+2 DATE 24 JUL 1663
+2 PLAC Lokeren, Oost-Vlaanderen,
+2 NOTE **Union avec Andrea Blanckaert** :
+3 CONT Getuigen huwelijksakte:
+3 CONT - Egidius Alexander
+3 CONT - Livinus Alexander
+1 CHIL @I00033@
+0 @F00025@ FAM
+1 HUSB @I00045@
+1 WIFE @I00044@
+1 CHIL @I00035@
+0 TRLR

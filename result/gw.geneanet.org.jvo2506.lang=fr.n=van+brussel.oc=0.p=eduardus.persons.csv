@@ -1,0 +1,99 @@
+generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;GeneanetSpider 1.0.26 18/04/2025 à 01:11
+1;1;@I00001@;Eduardus;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus;3;0;0;2;forme2;26 avril 1838 (jeudi);"Lokeren,";"Wever";"";"";"";0;0;"- Né le 20 décembre 1815 (mercredi) - Lokeren
+- Décédé le 2 octobre 1857 (vendredi) - Lokeren, à l'âge de 41 ans
+- Wever";0;
+2;3;@I00003@;Maria Theresia Catharina;DE BLOCK;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria+theresia+catharina&n=de+block;3;0;0;0;;2 décembre 1813 (jeudi);"Lokeren,";"Kantwerkster";"";"";"";0;0;"- Née le 25 juillet 1788 (vendredi) - Kortrijk
+- Décédée le 15 décembre 1859 (jeudi) - Lokeren, à l'âge de 71 ans
+- Kantwerkster";0;
+2;2;@I00002@;Jan Baptist;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&p=jan+baptist&n=van+brussel;3;0;0;2;forme2;2 décembre 1813 (jeudi);"Lokeren,";"Kuiper";"";"";"";0;0;"- Né le 23 juin 1790 (mercredi) - Lokeren
+- Décédé le 7 avril 1856 (lundi) - Lokeren, à l'âge de 65 ans
+- Kuiper";0;
+3;5;@I00004@;Maria Joanna;PIETERS;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria+joanna&n=pieters;2;4;0;2;forme2;22 février 1778 (dimanche);"Zeveneken,";"";"";"";"";0;3;"- Née le 24 septembre 1755 (mercredi) - Eksaarde
+- Décédée le 2 mai 1813 (dimanche) - Lokeren, à l'âge de 57 ans";0;
+3;4;@I00005@;Laurent;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&p=laurent&n=van+brussel;3;3;0;2;forme2;22 février 1778 (dimanche);"Zeveneken,";"Kuiper";"";"";"";0;3;"- Né le 3 juin 1751 (jeudi) - Moerbeke-Waas
+- Décédé le 1er janvier 1821 (lundi) - Lokeren, à l'âge de 69 ans
+- Kuiper";0;
+4;11;@I00006@;Judoca;DE GELDER;F;https://gw.geneanet.org/jvo2506?lang=fr&p=judoca&n=de+gelder;2;0;0;2;forme2;27 novembre 1749 (jeudi);"Eksaarde,";"";"";"";"";0;0;"- Née le 5 août 1730 (samedi) - Eksaarde
+- Décédée le 19 septembre 1806 (vendredi) - Lokeren, à l'âge de 76 ans";0;
+4;10;@I00008@;Joannes;PIETERS;M;https://gw.geneanet.org/jvo2506?lang=fr&p=joannes&n=pieters;2;0;0;2;forme2;27 novembre 1749 (jeudi);"Eksaarde,";"";"";"";"";0;0;"- Né le 9 avril 1726 (mardi) - Lokeren
+- Décédé le 31 juillet 1770 (mardi) - Eksaarde, à l'âge de 44 ans";0;
+4;8;@I00007@;Andreas;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&p=andreas&n=van+brussel;2;4;0;2;forme2;24 septembre 1748 (mardi);"Moerbeke-Waas,";"";"";"";"";0;3;"- Né le 8 janvier 1717 (vendredi) - Zeveneken
+- Décédé le 25 avril 1781 (mercredi) - Moerbeke-Waas, à l'âge de 64 ans";0;
+4;9;@I00009@;Maria Jacoba;ERSEKE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria+jacoba&n=erseke;2;3;0;2;forme2;24 septembre 1748 (mardi);"Moerbeke-Waas,";"";"";"";"";0;1;"* (Maria Jacoba Herseke)
+- Née le 1er novembre 1720 (vendredi) - Moerbeke-Waas
+- Décédée le 26 novembre 1767 (jeudi) - Moerbeke-Waas, à l'âge de 47 ans";0;
+5;21;@I00010@;Catharina;BROECKAERT;F;https://gw.geneanet.org/jvo2506?lang=fr&p=catharina&n=broeckaert;2;0;0;2;forme2;14 avril 1723 (mercredi);"Lokeren,";"";"";"";"";0;0;"- Née le 13 décembre 1683 (lundi) - Lokeren
+- Décédée le 18 juin 1767 (jeudi) - Zeveneken, à l'âge de 83 ans";0;
+5;20;@I00011@;Jacobus;PIETERS;M;https://gw.geneanet.org/jvo2506?lang=fr&p=jacobus&n=pieters;2;0;0;2;forme2;14 avril 1723 (mercredi);"Lokeren,";"";"";"";"";0;0;"- Né vers 1700
+- Décédé le 12 juillet 1774 (mardi) - Zeveneken, à l'âge d'environ 74 ans";0;
+5;16;@I00012@;Petrus;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&p=petrus&n=van+brussel;2;4;0;2;forme2;21 juin 1703 (jeudi);"Breda RK kerk Nieuwstraat (NL),";"";"";"";"";0;3;"- Né peut-être le 8 mars 1676 - Moerbeke-Waas ?
+- Décédé le 14 juin 1739 (dimanche) - Zeveneken, peut-être à l'âge de 63 ans";0;
+5;22;@I00013@;Egidius;DE GELDER;M;https://gw.geneanet.org/jvo2506?lang=fr&p=egidius&n=de+gelder;2;0;0;2;forme2;18 juin 1730 (dimanche);"Eksaarde,";"";"";"";"";0;0;"- Né le 23 mars 1678 (mercredi) - Eksaarde
+- Décédé le 13 février 1750 (vendredi) - Eksaarde, à l'âge de 71 ans";0;
+5;23;@I00014@;Joanna;CLAUWAERT;F;https://gw.geneanet.org/jvo2506?lang=fr&p=joanna&n=clauwaert;2;0;0;2;forme2;18 juin 1730 (dimanche);"Eksaarde,";"";"";"";"";0;0;"- Née le 9 janvier 1701 (dimanche) - Eksaarde
+- Décédée le 23 octobre 1747 (lundi) - Eksaarde, à l'âge de 46 ans";0;
+5;18;@I00015@;Franciscus;VAN HERSEEKE;M;https://gw.geneanet.org/jvo2506?lang=fr&p=franciscus&n=van+herseeke;2;0;0;0;;entre 1716 et 1720;"";"";"";"";"";0;0;"* (Franciscus Herseke)
+* (Franciscus Erseke)
+- Né avant 1698
+- Décédé le 28 mars 1723 (dimanche) - Moerbeke-Waas";0;
+5;17;@I00016@;Marie;PLASBEECKE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=marie&n=plasbeecke;2;4;0;0;;21 juin 1703 (jeudi);"Breda RK kerk Nieuwstraat (NL),";"";"";"";"";0;1;"* (Marie Plaetleck)
+- Née - Kaiserswerth (Kr. Düsseldorf) (D) ?
+- Décédée";0;
+5;19;@I00017@;Elisabeth;AUGUSTIJN;F;https://gw.geneanet.org/jvo2506?lang=fr&p=elisabeth&n=augustijn;2;0;0;2;forme2;23 mars 1724 (jeudi);"Moerbeke-Waas,";"";"";"";"";0;0;"- Née le 29 juillet 1699 (mercredi) - Moerbeke-Waas
+- Décédée le 25 février 1751 (jeudi) - Moerbeke-Waas, à l'âge de 51 ans";0;
+6;32;@I00018@;Ludovicus ?;VAN BRUSSEL;M;https://gw.geneanet.org/jvo2506?lang=fr&p=ludovicus&n=van+brussel;0;0;0;0;;;"";"";"";"";"";1;1;"@todo note 'Union avec Petronella ? Stevens ?' de Ludovicus ? VAN BRUSSEL à analyser : 'Als dit koppel inderdaad de ouders zijn van Petrus, werd deze geboren op 08/03/1676 en had hij nog een broer en twee zussen…'";0;
+6;41;@I00019@;(Voornaam onbekend);(FAMILIENAAM ONBEKEND);F;https://gw.geneanet.org/jvo2506?lang=fr&p=voornaam+onbekend&n=familienaam+onbekend&oc=17;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+6;43;@I00020@;Elisabeth;VAN DUYSE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=elisabeth&n=van+duyse;2;0;0;2;forme2;1er février 1681 (samedi);"Lokeren,";"";"";"";"";0;0;"- Née entre 1644 et 1647
+- Décédée le 18 avril 1740 (lundi) - Lokeren";0;
+6;40;@I00021@;Philippus;PIETERS;M;https://gw.geneanet.org/jvo2506?lang=fr&p=philippus&n=pieters;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+6;42;@I00022@;Cornelius;BROECKAERT;M;https://gw.geneanet.org/jvo2506?lang=fr&p=cornelius&n=broeckaert;1;0;0;2;forme2;1er février 1681 (samedi);"Lokeren,";"";"";"";"";0;0;"- Né peut-être le 12 mai 1660 - Lokeren";0;
+6;33;@I00023@;Petronella ?;STEVENS ?;F;https://gw.geneanet.org/jvo2506?lang=fr&p=petronella&n=stevens;0;0;0;0;;;"";"";"";"";"";1;1;"@todo note 'Union avec Ludovicus ? Van Brussel' de Petronella ? STEVENS ? à analyser : 'Als dit koppel inderdaad de ouders zijn van Petrus, werd deze geboren op 08/03/1676 en had hij nog een broer en twee zussen…'";0;
+6;47;@I00024@;Petronilla;DE MAESSCHALK;F;https://gw.geneanet.org/jvo2506?lang=fr&p=petronilla&n=de+maesschalk;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Née le 9 février 1671 (lundi) - Eksaarde
+- Décédée le 29 décembre 1761 (mardi) - Eksaarde, à l'âge de 90 ans";0;
+6;46;@I00025@;Joannes;CLAUWAERT;M;https://gw.geneanet.org/jvo2506?lang=fr&p=joannes&n=clauwaert;2;0;0;2;forme2;;"";"";"";"";"";0;0;"- Né le 8 février 1669 (vendredi) - Eksaarde
+- Décédé";0;
+6;45;@I00026@;Catharina;WUYTACK;F;https://gw.geneanet.org/jvo2506?lang=fr&p=catharina&n=wuytack;2;0;0;0;;;"";"";"";"";"";0;0;"- Née vers 1640
+- Décédée le 12 mars 1705 (jeudi) - Eksaarde, à l'âge d'environ 65 ans";0;
+6;44;@I00027@;Laurentius;DE GELDER;M;https://gw.geneanet.org/jvo2506?lang=fr&p=laurentius&n=de+gelder;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé le 19 décembre 1686 (jeudi) - Eksaarde";0;
+6;38;@I00028@;Judocus;AUGUSTIJN;M;https://gw.geneanet.org/jvo2506?lang=fr&p=judocus&n=augustijn;2;0;0;2;forme2;24 juillet 1689 (dimanche);"Moerbeke-Waas,";"";"";"";"";0;0;"- Né le 23 avril 1658 (mardi) - Moerbeke-Waas
+- Décédé le 23 décembre 1714 (dimanche) - Moerbeke-Waas, à l'âge de 56 ans";0;
+6;39;@I00029@;Joanna;DE WITTE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=joanna&n=de+witte;2;0;0;2;forme2;24 juillet 1689 (dimanche);"Moerbeke-Waas,";"";"";"";"";0;0;"- Née le 29 août 1658 (jeudi) - Moerbeke-Waas
+- Décédée le 20 janvier 1702 (vendredi) - Moerbeke-Waas, à l'âge de 43 ans";0;
+7;85;@I00030@;Elisabeth?;JACOBS?;F;https://gw.geneanet.org/jvo2506?lang=fr&p=elisabeth&n=jacobs&oc=2;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+7;84;@I00031@;Jan?;BROECKAERT;M;https://gw.geneanet.org/jvo2506?lang=fr&p=jan&n=broeckaert;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+7;87;@I00032@;Beatrix;VERTENTEN;F;https://gw.geneanet.org/jvo2506?lang=fr&p=beatrix&n=vertenten;2;0;0;2;forme2;2 février 1644 (mardi);"Lokeren,";"";"";"";"";0;0;"- Née peut-être le 6 janvier 1614 - Lokeren
+- Décédée le 5 février 1647 (mardi) - Lokeren, peut-être à l'âge de 33 ans";0;
+7;86;@I00033@;Petrus;VAN DUYSE;M;https://gw.geneanet.org/jvo2506?lang=fr&p=petrus&n=van+duyse;0;0;0;0;;2 février 1644 (mardi);"Lokeren,";"";"";"";"";0;0;"";0;
+7;93;@I00034@;Judoca;VAN DAMME;F;https://gw.geneanet.org/jvo2506?lang=fr&p=judoca&n=van+damme;2;0;0;2;forme2;7 juin 1667 (mardi);"Eksaarde,";"";"";"";"";0;0;"- Née le 17 avril 1642 (jeudi) - Eksaarde
+- Décédée après 22 septembre 1676";0;
+7;92;@I00035@;Petrus;CLAUWAERT;M;https://gw.geneanet.org/jvo2506?lang=fr&p=petrus&n=clauwaert;2;0;0;2;forme2;7 juin 1667 (mardi);"Eksaarde,";"";"";"";"";0;0;"- Né le 8 septembre 1649 (mercredi) - Eksaarde
+- Décédé le 22 septembre 1676 (mardi) - Eksaarde, à l'âge de 27 ans";0;
+7;95;@I00036@;Elisabeth;SWEEMERS;F;https://gw.geneanet.org/jvo2506?lang=fr&p=elisabeth&n=sweemers;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+7;94;@I00037@;Marinus;DE MAESSCHALK;M;https://gw.geneanet.org/jvo2506?lang=fr&p=marinus&n=de+maesschalk;0;0;0;0;;;"";"";"";"";"";0;0;"";0;
+7;79;@I00038@;Amelberga;NYS;F;https://gw.geneanet.org/jvo2506?lang=fr&p=amelberga&n=nys;2;0;0;2;forme2;25 juillet 1654 (samedi);"Belsele,";"";"";"";"";0;0;"- Née le 18 mars 1630 (lundi) - Belsele
+- Décédée avant 20 novembre 1690";0;
+7;77;@I00039@;Maria;DUYCX;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria&n=duycx;2;0;0;2;forme2;7 mars 1655 (dimanche);"Moerbeke-Waas,";"";"";"";"";0;0;"* (Maeijken Duycx)
+- Née le 27 janvier 1634 (vendredi) - Moerbeke-Waas
+- Décédée le 14 janvier 1680 (dimanche) - Moerbeke-Waas, à l'âge de 45 ans";0;
+7;78;@I00040@;Passchasius;DE WITTE;M;https://gw.geneanet.org/jvo2506?lang=fr&p=passchasius&n=de+witte;2;0;0;0;;25 juillet 1654 (samedi);"Belsele,";"";"";"";"";0;0;"- Né avant 1634
+- Décédé avant 20 novembre 1690";0;
+7;76;@I00041@;Balthazar;AUGUSTIJN;M;https://gw.geneanet.org/jvo2506?lang=fr&p=balthazar&n=augustijn;2;0;0;2;forme2;7 mars 1655 (dimanche);"Moerbeke-Waas,";"";"";"";"";0;0;"- Né le 7 janvier 1629 (dimanche) - Moerbeke-Waas
+- Décédé le 1er août 1702 (mardi) - Moerbeke-Waas, à l'âge de 73 ans";0;
+8;175;@I00042@;Maria;(VAN) WAELVELDE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria&n=van+waelvelde;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédée le 12 octobre 1646 (vendredi) - Lokeren";0;
+8;174;@I00043@;Petrus;VERTENTEN;M;https://gw.geneanet.org/jvo2506?lang=fr&p=petrus&n=vertenten;1;0;0;0;;;"";"";"";"";"";0;0;"- Décédé avant 12 octobre 1646 - Lokeren";0;
+8;153;@I00044@;Joanna;BLIECKX;F;https://gw.geneanet.org/jvo2506?lang=fr&p=joanna&n=blieckx;1;0;0;0;;27 février 1629 (mardi);"Moerbeke-Waas,";"";"";"";"";0;0;"- Décédée";0;
+8;155;@I00045@;Joanna;BIENAIMÉ;F;https://gw.geneanet.org/jvo2506?lang=fr&p=joanna&n=bienaime;0;0;0;0;;avant 1631;"";"";"";"";"";0;0;"";0;
+8;152;@I00046@;Jacobus;AUGUSTIJN;M;https://gw.geneanet.org/jvo2506?lang=fr&p=jacobus&n=augustijn;1;0;0;0;;27 février 1629 (mardi);"Moerbeke-Waas,";"";"";"";"";0;0;"- Décédé";0;
+8;159;@I00047@;Maria;VAN REMOORTERE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=maria&n=van+remoortere;2;0;0;2;forme2;11 février 1623 (samedi);"Belsele,";"";"";"";"";0;0;"- Née le 20 décembre 1598 (dimanche) - Belsele
+- Décédée le 23 février 1657 (vendredi) - Belsele, à l'âge de 58 ans";0;
+8;158;@I00048@;Judocus;NYS;M;https://gw.geneanet.org/jvo2506?lang=fr&p=judocus&n=nys;2;0;0;0;;11 février 1623 (samedi);"Belsele,";"";"";"";"";0;0;"- Né avant 1603
+- Décédé le 19 février 1662 (dimanche) - Belsele";0;
+8;154;@I00049@;Joannes;DUYCX;M;https://gw.geneanet.org/jvo2506?lang=fr&p=joannes&n=duycx;0;0;0;0;;avant 1631;"";"";"";"";"";0;0;"";0;
+8;185;@I00050@;Livina;VAN WALLE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=livina&n=van+walle;1;0;0;0;;9 février 1640 (jeudi);"Eksaarde,";"";"";"";"";0;0;"- Décédée le 6 mars 1693 (vendredi) - Eksaarde";0;
+8;184;@I00051@;Livinus;CLAUWAERT;M;https://gw.geneanet.org/jvo2506?lang=fr&p=livinus&n=clauwaert;1;0;0;0;;9 février 1640 (jeudi);"Eksaarde,";"";"";"";"";0;0;"- Décédé avant 6 mars 1693";0;
+8;187;@I00052@;Joanna;BONNE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=joanna&n=bonne;1;0;0;0;;28 septembre 1639 (mercredi);"Eksaarde,";"";"";"";"";0;0;"- Décédée le 2 janvier 1648 (jeudi) - Eksaarde";0;
+8;186;@I00053@;Petrus;VAN DAMME;M;https://gw.geneanet.org/jvo2506?lang=fr&p=petrus&n=van+damme;0;0;0;0;;28 septembre 1639 (mercredi);"Eksaarde,";"";"";"";"";0;0;"";0;
+9;319;@I00054@;Ghislaine;VAN LAERE;F;https://gw.geneanet.org/jvo2506?lang=fr&p=ghislaine&n=van+laere;0;0;0;0;;avant 1589;"";"";"";"";"";0;0;"";0;
+9;318;@I00055@;Baldwinus;VAN REMOORTERE;M;https://gw.geneanet.org/jvo2506?lang=fr&p=baldwinus&n=van+remoortere;0;0;0;0;;avant 1589;"";"";"";"";"";0;0;"";0;
+# 55 persons, 27 families, 9 generations, 0 titres de noblesse
+# 0 errors, 2 todo
