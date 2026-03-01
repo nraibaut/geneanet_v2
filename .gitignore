@@ -9,8 +9,9 @@ download/
 *.zip
 *.tgz
 *.tar.gz
-#result/
-result/pages/
+result*/
+result/
+#result/pages/
 tmp/
 *.tmp*
 *.old*
