@@ -1,27 +1,62 @@
 # -*- coding: utf-8 -*-
 import os
 
-import scrapy
+#import scrapy
 from scrapy import signals
 import html2text
 import logging
-from scrapy.utils.log import configure_logging
+#from scrapy.utils.log import configure_logging
 import gedcomw
 from gedcomw.parser import Parser
 import gedcomw.element
 from gedcomw.element.individual import IndividualElement
 from datetime import datetime
 #import sys
-import atexit
+#import atexit
 import shutil # pour copyfile final
-import time # pour pause
+#import time # pour pause
 import re
 import tempfile
+from crawler import FirefoxCrawler
+from scrapy.http import HtmlResponse
+#from scrapy.selector import Selector
+import sys
+import argparse
 
-class GeneanetSpider(scrapy.Spider):
+# Configuration fichier de sortie log :
+# problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
+# mais on n'a pas encore l'url, à partir de laquelle on veut construire le nom du log.
+# Contournement : on écrit dans un log tmp et on renomme à la fin...
+tmplogfile = tempfile.NamedTemporaryFile(suffix=".log.tmp", prefix="fscrapy.", dir="tmp", delete=False)
+tmplogfile.close() # selon Le Chat : "évite le double descripteur ouvert (important sur Windows)."
+# configure_logging(install_root_handler=False)
+#logging.basicConfig(
+#    #filename=tmplogfile,
+#    # format='%(asctime)s [%(name)s] %(levelname)s: %(message)s',
+#    format='[%(name)s] %(levelname)s: %(message)s',
+#    encoding='utf-8', # sinon les grep (de git bash) dans les logs ne fonctionnent pas sur les lignes accentuées !
+#    level=logging.DEBUG
+#)
+
+# Handler stdout
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(FirefoxCrawler.get_formatter())
+# Handler fichier
+file_handler = logging.FileHandler(tmplogfile.name)
+file_handler.setFormatter(FirefoxCrawler.get_formatter())
+logger = logging.getLogger("GeneanetSpider")  # Logger NRa
+logger.propagate = False  # ← ne remonte pas au root logger
+logger.addHandler(stream_handler)
+logger.addHandler(file_handler)
+logger.setLevel(logging.INFO)
+logging.getLogger("FirefoxCrawler").addHandler(file_handler)
+#print('Logger GeneanetSpider initialisé.', flush=True)
+
+
+class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
-    progname = "GeneanetSpider"
-    version = "1.0.26"
+    progname = "GeneanetFSpider" # "F" comme Firefox
+    version = "2.0.0" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -40,10 +75,6 @@ class GeneanetSpider(scrapy.Spider):
     max_generations = 0
     nb_errors = 0
     nb_todo = 0
-    nb_scanned_pages = 0
-    nb_saved_pages = 0
-    nb_cached_pages = 0
-    http_delay = 2 # pause supplémentaire pour lectures http (en plus de DOWNLOAD_DELAY, applicable aux lectures http et fichiers en cache)
     parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
     pointer_of = {} # dictionnaire des pointeurs (id) de chaque individu (index = <true_url>)
     sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <true_url>)
@@ -76,42 +107,22 @@ class GeneanetSpider(scrapy.Spider):
         "Union(s)",
         "Union(s), enfant(s)",
         "Événements",
-        "Présences lors d'événements"
+        "Présences lors d'événements",
+        "Arbre généalogique (aperçu)" # nouveau mars 2026
     ]
-    # 29/03/25 : Method 2: Use Scrapy-Fake-Useragent :
-    # voir https://scrapeops.io/python-scrapy-playbook/scrapy-403-unhandled-forbidden-error/#use-fake-user-agents
-    # voir aussi settings.py
-    HEADERS = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Accept-Encoding": "gzip, deflate",
-        "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-        "Sec-Fetch-Dest": "document",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-Site": "none",
-        "Sec-Fetch-User": "?1",
-        "Cache-Control": "max-age=0",
-    }
 
-    # Configuration fichier de sortie log :
-    # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
-    # mais on n'a pas encore l'url, à partir de laquelle on veut construire le nom du log.
-    # Contournement : on écrit dans un log tmp et on renomme à la fin...
-    tmplogfile = tempfile.NamedTemporaryFile(suffix=".log.tmp", prefix="scrapy.", dir="tmp").name
-    configure_logging(install_root_handler=False)
-    logging.basicConfig(
-        filename=tmplogfile,
-        # format='%(asctime)s [%(name)s] %(levelname)s: %(message)s',
-        format='[%(name)s] %(levelname)s: %(message)s',
-        encoding='utf-8', # sinon les grep (de git bash) dans les logs ne fonctionnent pas sur les lignes accentuées !
-        level=logging.DEBUG
-    )
-    logging.info(f"Starting {progname} {version}")
+    #def __init__(self, max_pages=50)
+    def __init__(self, max_pages=50, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
 
-    # Initialize the parser
-    gedcomw_parser = None
+        logger.info(f"Starting {self.progname} {self.version}")
+        super().get_logger().addHandler(file_handler)
+        super().__init__(max_pages=max_pages, max_cloudflare_errors=max_cloudflare_errors, min_delay=min_delay, max_delay=max_delay, headless=headless)
+
+        # Initialize the parser
+        self.gedcomw_parser = None
+        self.logger = logger # pour compatibilité ascendante v1.x
+
+        logger.info(f"Init {self.progname} {self.version} OK")
 
     def url_to_filename(self, url):
         result = url
@@ -125,21 +136,6 @@ class GeneanetSpider(scrapy.Spider):
         result = result.replace("?", ".")
         result = result.replace("%", "_") # ex : https://gw.geneanet.org/boutch1?lang=fr&pz=marc&nz=vitelli&p=be%CC%81atrice+marguerite&n=de+faucigny
         return result
-
-    def get_cache_files(self, http_url):
-        """
-        donne les noms des fichiers cache
-        :param url:
-        :return:
-        """
-        # url = une vraie URL http (https://...)
-        # (pas "file:///compte?lang=fr&p=pierre&n=dupont"...)
-
-        cache_base = self.result_dir + "/pages/" + self.url_to_filename(http_url)
-        cache_html_page = cache_base + ".html"
-        cache_url_file = cache_base + ".url.txt"
-
-        return [cache_html_page, cache_url_file]
 
     def url_to_true_http_url(self, current_true_http_url, url_to_scan):
         """
@@ -164,25 +160,17 @@ class GeneanetSpider(scrapy.Spider):
 
     def get_url_to_scan(self, true_http_url):
         """
-        Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
+        Historiquement : Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
+        A partir v2.0 / fev 2026 : adapte si besoin en ajoutant "&type=fiche" (absent du texte html, mais ajouté à la volée par l'IHM
         :param url:
         :return:
         """
         # url = forcément une vraie URL http (https://...)
-
         result = true_http_url    # par défaut
 
-        cache_files = self.get_cache_files(true_http_url)
-        cache_html_page = cache_files[0]
-        cache_url_file = cache_files[1]
-        #self.log(f"Test pour true_http_url = '{true_http_url}' :")
-        #self.log(f"os.path.isfile({cache_html_page}) = {os.path.isfile(cache_html_page)}")
-        #self.log(f"os.path.isfile({cache_url_file}) = {os.path.isfile(cache_url_file)}")
-
-        if os.path.isfile(cache_html_page) and os.path.isfile(cache_url_file):
-            #result = "file:" + cache_html_page # KO... visiblement, il FAUT un chemin absolu !!!!
-            #result = "file:D:/Users/Nicolas/Documents/Python/geneanet/" + cache_html_page
-            result = "file:" + os.getcwd() + "/" + cache_html_page
+        if not "&type=fiche" in result:
+            logger.info(f"Patch type=fiche pour {result}")
+            result = result + "&type=fiche"
 
         return result
     def patch_url(self, url):
@@ -262,87 +250,78 @@ class GeneanetSpider(scrapy.Spider):
         result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
 
         return result
-    # On a déjà en cache la page et son url :
-    def start_requests(self):
-        result_name = self.url_to_filename(self.url)
+
+    def start(self, start_url):
+        result_name = self.url_to_filename(start_url)
         GeneanetSpider.result_name = result_name
 
-        self.log("start_requests")
-        self.log(f"URL = {self.url}")
-        self.log(f"result_name = {result_name}")
+        logger.info(f"Starting parsing : start_url = {start_url}")
+        logger.info(f"result_name = {result_name}")
 
         # Initialisation parser
         self.gedcomw_parser = Parser()
 
-        GeneanetSpider.gedcom_result_filename = result_name + ".ged"
-        self.log(f"gedcom_result_filename = {GeneanetSpider.gedcom_result_filename}")
+        self.gedcom_result_filename = result_name + ".ged"
+        logger.info(f"gedcom_result_filename = {self.gedcom_result_filename}")
         now = datetime.now()  # current date and time
         date = now.strftime("%d/%m/%Y à %H:%M")
-        header_text = f"Cette généalogie a été créée par {self.progname} {self.version} le {date} à partir de {self.url}"
+        header_text = f"Cette généalogie a été créée par {self.progname} {self.version} le {date} à partir de {start_url}"
         self.gedcomw_parser.nra_set_header(header_text, self.progname, self.version, self.progname,
-                   self.team, self.address, GeneanetSpider.gedcom_result_filename)
+                   self.team, self.address, self.gedcom_result_filename)
 
         # Sorties CSV :
         csvfilename = self.result_dir + "/" + result_name + ".persons.csv"
-        self.log(f"csv persons = {csvfilename}")
+        logger.info(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w", encoding="utf-8")
         self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".events.csv"
-        self.log(f"csv events = {csvfilename}")
+        logger.info(f"csv events = {csvfilename}")
         self.csv_events = open( csvfilename, "w", encoding="utf-8")
         self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
-        self.log(f"csv unions = {csvfilename}")
+        logger.info(f"csv unions = {csvfilename}")
         self.csv_unions = open( csvfilename, "w", encoding="utf-8")
         self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{self.progname} {self.version} {date}\n")
 
-        true_url = self.url
-        url_to_scan = self.get_url_to_scan(true_url)
-        self.log(f"Root URL = {self.url} (true='{true_url}', to_scan='{url_to_scan}')")
+        url_to_scan = self.get_url_to_scan(start_url)
+        logger.info(f"Root URL = {start_url} (to_scan='{url_to_scan}')")
 
-        yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'true_http_url':true_url}, headers=self.HEADERS)
+        #yield scrapy.Request(url=url_to_scan, callback=self.parse, meta={'generation':0, 'sosa':1, 'true_http_url':true_url}, headers=self.HEADERS)
+        """Démarre le crawl avec l'URL de départ et métadonnées initiales."""
+        self.crawl(start_url, meta={'generation': 0, 'sosa': 1})
+        self.close()
 
-    def parse(self, response):
-        url_source = response.request.url
-        # soit une "vraie" url (https://...) soit un fichier (file://...)
+    def parse_page(self, url, html_content, meta):
 
+        #def parse(self, response):
+        #url_source = response.request.url
+        # avant (v1.x) : soit une "vraie" url (https://...) soit un fichier (file://...)
+        # maintenant (v2.x) : géré par le crawler, toujours https://...
+        true_http_url = url_source = url
+        response = HtmlResponse(
+            url=url,
+            body=html_content.encode('utf-8'),  # Le contenu doit être en bytes
+            encoding='utf-8',
+        )
         nb_infos = 0
         texte_infos = ""
 
-        is_http_url = GeneanetSpider.is_http_url.match(url_source)
-
-        if is_http_url :
-            true_http_url = url_source
-            cache_files = self.get_cache_files(true_http_url)
-            cache_html_page = cache_files[0]
-            cache_url_file = cache_files[1]
-            self.nb_scanned_pages += 1
-            if (not os.path.isfile(cache_html_page)) or (not os.path.isfile(cache_url_file)):
-                # C'est une "vraie" url qu'on n'a pas encore en cache :
-                self.log(f"Saving page {url_source} to '{cache_html_page}'")
-                with open( cache_html_page, "wb") as f:
-                    f.write(response.body)
-                    f.close()
-                self.log(f"Saving URL to '{cache_url_file}'")
-                with open( cache_url_file, "w") as f:
-                    f.writelines(url_source)
-                    f.close()
-                self.nb_saved_pages += 1
-        else:
-            self.nb_cached_pages += 1
-            true_http_url = response.meta['true_http_url']
+        # is_http_url = GeneanetSpider.is_http_url.match(url_source)
+        # désormais inutile
+        # self.nb_scanned_pages et self.nb_cached_pages calculés par le crawler
+        # + mise en cache faite par le crawler
 
         if true_http_url == "https://www.geneanet.org/bots/firewall":
             self.nb_errors += 1
             self.logger.error(f"Blocage robot : url='{true_http_url}' --> utiliser un VPN !")
             return # ne pas aller plus loin dans le parsing de la page !
 
-        generation = response.meta['generation'] + 1
+        generation = meta['generation'] + 1
         if generation > self.max_generations :
             self.max_generations = generation
-        sosa = response.meta['sosa']
+        sosa = meta['sosa']
         self.nb_persons += 1
         pointer = "@I%05d@" % (self.nb_persons)
         self.pointer_of[true_http_url] = pointer # on mémorise pour plus tard (élaboration des familles)
@@ -401,11 +380,17 @@ class GeneanetSpider(scrapy.Spider):
             surnom = surnom.strip()
 
             texte_infos = texte_infos + "- surnom: " + surnom + '\n'
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : surnom='{surnom}'")
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : surnom='{surnom}'")
 
 
         sexe = response.xpath("//div[@id='person-title']/div/h1/img/@title").get() # "H/F" en français, "M/F" en anglais
-        if sexe == "H" :
+        if sexe == None:
+            sexe = response.xpath("//div[@id='person-title']/div/h1/img/@alt").get() # "Homme" ou "Femme" en français # nouveau format mars 2026
+        if sexe == "Homme" :
+           sexe = "M"
+        elif sexe == "Femme":
+           sexe = "F"
+        elif sexe == "H" :
             sexe = "M"
         if sexe not in ("M", "F") :
             nb_errors_indiv += 1
@@ -426,7 +411,7 @@ class GeneanetSpider(scrapy.Spider):
             line = re.sub("^, *", "", line) # suppression ", " en début de ligne
             if len(line) > 0:
                 self.nb_alias += 1
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info sous-titre / alias = '{line}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info sous-titre / alias = '{line}'")
                 texte_infos = texte_infos + "* " + line + '\n'
 
         # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
@@ -436,7 +421,7 @@ class GeneanetSpider(scrapy.Spider):
         #    #pause = 1000
         #    pause = 0
         #    time.sleep(pause/1000)
-        self.log(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
+        logger.info(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
         self.true_url_of[pointer] = true_http_url # pour retrouver les infos sur les mariages
 
         source_personne = None
@@ -459,7 +444,7 @@ class GeneanetSpider(scrapy.Spider):
             line = re.sub(" * ", " ", line) # suppression espaces multiples
             texte_infos = texte_infos + "- " + line + '\n'
 
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info = '{line}'")
             # on coupe la fin, inutile, de la forme ", à l'âge...", ", peut-être à l'âge...", ...
             line = re.sub(",[^,]* l'âge .*", "", line)
             words = line.split()
@@ -488,7 +473,7 @@ class GeneanetSpider(scrapy.Spider):
             try:
                 event_name = event_dict[premier_mot]  # ok, ou exception "KeyError"
                 # C'est un événement connu :
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> event_name2='{event_name}' event_date2='{event_date}' event_place2='{event_place}' ")
                 person.set_event(name=event_name, date=event_date, place=event_place)
             except:
                 # Ce n'est pas un événement connu : peut-être la profession ? (sur la dernière ligne)
@@ -533,8 +518,8 @@ class GeneanetSpider(scrapy.Spider):
                 texte = re.sub(" *</em>$", "", texte) # on enlève le "</em>" final
                 texte = re.sub("^\(", "", texte) # on enlève l'éventuelle parenthèse de début
                 texte = re.sub("\)$", "", texte) # on enlève l'éventuelle parenthèse de fin
-                #self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
-                #self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
+                #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
+                #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
                 self.nb_titres_noblesse += 1
                 if texte != "":
                     note_titre_noblesse = texte
@@ -543,7 +528,7 @@ class GeneanetSpider(scrapy.Spider):
                 else:
                     texte_infos = texte_infos + f"- titre: {titre_noblesse}\n"
                 person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
+                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
             else:
                 texte = info.xpath("text()").get()
                 texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
@@ -551,7 +536,7 @@ class GeneanetSpider(scrapy.Spider):
                 if texte != "":
                     sous_titre = texte
                     self.nb_sous_titres += 1
-                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
+                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
                     person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
         nb_notes_longues = 0
         nb_evenements=0
@@ -571,10 +556,10 @@ class GeneanetSpider(scrapy.Spider):
             event_place = None
             if " - " in event_name_and_place:
                 event_place = re.sub(".* *- *", "", event_name_and_place)
-            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : '{event_name_and_place}' --> event_name='{event_name}' event_place='{event_place}'")
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : '{event_name_and_place}' --> event_name='{event_name}' event_place='{event_place}'")
 
             lines = event.xpath("td[2]/div[@class='nnotes']").get()
-            #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
+            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
             event_notes = None
             if not lines is None:
                 #event_notes = html2text.html2text(event_notes)
@@ -583,10 +568,10 @@ class GeneanetSpider(scrapy.Spider):
                 event_notes = self.post_trt_notes(event_notes)
                 if len(event_notes) >= self.lg_min_notes_longues :
                     nb_notes_longues += 1
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
 
             lines = event.xpath("td[2]/p").get()
-            #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines paragraphe  = '{lines}'")
+            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines paragraphe  = '{lines}'")
             event_notes_complementaires = None # infos de type témoins, parrains, ...
             if not lines is None:
                 #event_notes = html2text.html2text(event_notes)
@@ -595,7 +580,7 @@ class GeneanetSpider(scrapy.Spider):
                 event_notes_complementaires = self.post_trt_notes(event_notes_complementaires)
                 if len(event_notes_complementaires) >= self.lg_min_notes_longues :
                     nb_notes_longues += 1
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes_complementaires = '{event_notes_complementaires}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes_complementaires = '{event_notes_complementaires}'")
 
             # Concaténetion event_notes + event_notes_complementaires
             event_notes2 = ""
@@ -613,7 +598,7 @@ class GeneanetSpider(scrapy.Spider):
 
             lines = event.xpath("td[2]/span[@class='ssource']").get()
             event_sources = None
-            #self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
+            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
             if not lines is None:
                 #event_sources = html2text.html2text(tmp)
                 event_sources = html2text.html2text(lines).strip()
@@ -622,7 +607,7 @@ class GeneanetSpider(scrapy.Spider):
                     event_sources = event_sources.replace( "\\- ", "\n", 1)
                 event_sources = re.sub(" *\n", "\n", event_sources) # suppression des espaces ajoutés en fin de lignes
                 event_sources = re.sub("^Sources: *", "", event_sources) # texte "Sources: " en début de source
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
 
             lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
             event_date = None
@@ -631,7 +616,7 @@ class GeneanetSpider(scrapy.Spider):
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 event_date = event_date.replace("\n", " ")  # certaines dates ont des retours chariot (avec "julien")
                 event_date = re.sub("  *", " ", event_date) # suppression espaces multiples
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_date = '{event_date}'")
 
             # 02/09/23 : finalement, je garde tous les événements, y compris mariages / contrats de mariage
             # pour avoir les notes, parfois intéressantes.
@@ -639,9 +624,9 @@ class GeneanetSpider(scrapy.Spider):
             if GeneanetSpider.is_mariage.match(event_name) or GeneanetSpider.is_contrat_de_mariage.match(event_name) :
                 # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
                 #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement de type mariage / contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement de type mariage / contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
                 if event_notes is None and event_sources is None :
-                    self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : redondance probable événement de type mariage / contrat de mariage SANS note ou source '{event_name}' : date='{event_date}', place='{event_place}'")
+                    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : redondance probable événement de type mariage / contrat de mariage SANS note ou source '{event_name}' : date='{event_date}', place='{event_place}'")
                     event_notes = f"@todo événement de type mariage probablement redondant pour {prenom} {nom}"
 
             #    # on ignore les infos (normalement, on les a via la fiche enfant)
@@ -676,7 +661,7 @@ class GeneanetSpider(scrapy.Spider):
 
             # après ménage, la source peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
             if event_sources != "":
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
 
                 event_list = event_name.split(",")
                 for event_name in event_list:
@@ -686,15 +671,15 @@ class GeneanetSpider(scrapy.Spider):
                     if event_name == "Personne" :
                         # Cette source concerne la personne elle-même, et non pas un événement :
                         source_personne = event_sources
-                        self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+                        logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
                     elif (event_name == "Union") or (event_name == "Famille") :
                         # Cette source concerne le mariage de la personne (autre événement de type mariage) :
                         # --> on mémorise pour le restaurer lors de la génération des familles :
                         source_mariage = event_sources
                         self.mariages_sources[true_http_url] = source_mariage
-                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
+                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
                     else:
-                        self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
+                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
                         person.set_event(name=event_name, source=event_sources)
 
         nb_notes = 0
@@ -728,14 +713,14 @@ class GeneanetSpider(scrapy.Spider):
             if note_text != "":
                 if len(note_text) >= self.lg_min_notes_longues:
                     nb_notes_longues += 1
-                self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
+                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
                 if note_type == "Notes individuelles":
                     person.add_note(self.gedcomw_parser.get_root_element(), note_text)
                 elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
                     person.set_event(name=note_type, notes=note_text)
                 elif GeneanetSpider.union_avec_regex.match(note_type):
                     self.nb_todo += 1
-                    self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
+                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
                     texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
                 else:
                     nb_errors_indiv += 1
@@ -762,14 +747,12 @@ class GeneanetSpider(scrapy.Spider):
 
             true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
-            self.log(f"URL parent {nb_parents} (forme 1) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+            logger.info(f"URL parent {nb_parents} (forme 1) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
             parents_url[nb_parents]=true_url_parent
 
             self.set_parent_of( true_http_url, true_url_parent)
-            if not url_parent_to_scan.startswith('file:') :
-                self.log( f"Pause before scraping '{url_parent_to_scan}'")
-                time.sleep(self.http_delay)
-            yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
+            #yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
+            self.add_link(url_parent_to_scan, meta={'generation':generation,'sosa':sosa*2+nb_parents-1})
 
         # Parents forme 2 ("<!-- Parents simple -->" ou "<!-- Parents complet -->")
         # Parents forme 2b ("<!-- Parents evolue -->") : il ne faut pas prendre le premier lien hypertexte (qui contient la balise img)
@@ -783,7 +766,7 @@ class GeneanetSpider(scrapy.Spider):
 
                 true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
-                self.log(f"URL parent {nb_parents} (forme 2) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
+                logger.info(f"URL parent {nb_parents} (forme 2) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
                 parents_url[nb_parents] = true_url_parent
 
                 # On essaye de voir s'il y a une ligne "Marié le ... avec" sur le premier parent :
@@ -798,7 +781,7 @@ class GeneanetSpider(scrapy.Spider):
                     lignes = lignes.replace("Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
-                        #self.log( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
+                        #logger.info( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
                         lignes = re.sub(".*Mariée* *", "", lignes)  # suppression avant "Marié"
                         lignes = re.sub(", *avec$", "", lignes)  # suppression ", avec" final
                         lignes = re.sub("avec$", "", lignes)  # suppression ", avec" final
@@ -815,13 +798,12 @@ class GeneanetSpider(scrapy.Spider):
                                 mariage_date = None
                             if mariage_place == "":
                                 mariage_place = None
-                            self.log(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
+                            logger.info(f"Infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = date='{mariage_date}' place='{mariage_place}'")
 
                 self.set_parent_of( true_http_url, true_url_parent)
-                if not url_parent_to_scan.startswith('file:'):
-                    self.log(f"Pause before scraping '{url_parent_to_scan}'")
-                    time.sleep(self.http_delay)
-                yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
+                # yield scrapy.Request(url_parent_to_scan, callback=self.parse, meta={'generation':generation,'sosa':sosa*2+nb_parents-1,'true_http_url':true_url_parent}, headers=self.HEADERS)
+                self.add_link(url_parent_to_scan, meta={'generation': generation, 'sosa': sosa*2+nb_parents-1})
+
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
             if mariage_date:
@@ -885,7 +867,7 @@ class GeneanetSpider(scrapy.Spider):
                 if mariage_place == "":
                     mariage_place = None
 
-                self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} = debut='{debut}' nom_conjoint='{nom_conjoint}' url_conjoint='{url_conjoint}' ")
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} = debut='{debut}' nom_conjoint='{nom_conjoint}' url_conjoint='{url_conjoint}' ")
                 if sexe == "M":
                     url_pere = true_http_url
                     url_mere = url_conjoint
@@ -926,7 +908,7 @@ class GeneanetSpider(scrapy.Spider):
                             if len(note_text) >= self.lg_min_notes_longues:
                                 nb_notes_longues += 1
                             self.mariages_note_union[key] = note_text
-                            self.log(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union {nb_unions} : '{note_text}'")
+                            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note union {nb_unions} : '{note_text}'")
 
                 #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
                 #debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
@@ -948,7 +930,7 @@ class GeneanetSpider(scrapy.Spider):
         multiple_events_count = person.get_multiple_events_count()
         if multiple_events_count > 0:
             self.multiple_events_count += multiple_events_count
-            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : multiple_events_count={multiple_events_count}")
+            logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : multiple_events_count={multiple_events_count}")
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
@@ -974,7 +956,7 @@ class GeneanetSpider(scrapy.Spider):
             titre = titre.replace("\n", " ")
             titre = re.sub( "  *", " ", titre)
             titre = titre.strip()
-            self.log( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
+            logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique='{titre}'")
             if titre not in GeneanetSpider.paragraphes_connus :
                 nb_errors_indiv += 1
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : rubrique '{titre}' inconnue !")
@@ -1017,7 +999,7 @@ class GeneanetSpider(scrapy.Spider):
             true_url_pere = None
             true_url_mere = None
             for parent_url in item[1]:
-                #print(f"child {child} : parent {parent}")
+                #print(f"child {child} : parent {parent}", flush=True)
                 try:
                     sexe = self.sex_of[parent_url][0]
                 except KeyError:
@@ -1041,7 +1023,7 @@ class GeneanetSpider(scrapy.Spider):
                     unions_wife[key] = true_url_mere
                 else:
                     self.nb_consanguinites += 1
-                    self.log(f"consanguinité #{self.nb_consanguinites} pour union '{key}'")
+                    logger.info(f"consanguinité #{self.nb_consanguinites} pour union '{key}'")
                     unions_children[key].append(child_pointer)
             else:
                 self.nb_errors += 1
@@ -1060,11 +1042,11 @@ class GeneanetSpider(scrapy.Spider):
             wife_pointer = self.pointer_of[true_url_mere]
 
             nb_children = len(children_pointers)
-            self.log(f"Famille '{pointer_family}' : père='{true_url_pere}', mère='{true_url_mere}', {nb_children} enfant(s)")
+            logger.info(f"Famille '{pointer_family}' : père='{true_url_pere}', mère='{true_url_mere}', {nb_children} enfant(s)")
             mariage_note = None
             if nb_children > 1 :
                 mariage_note = f"{nb_children} enfants dans l'arbre généalogique"
-                self.log(f"{nb_children} enfants dans la famille '{pointer_family}' (père='{true_url_pere}', mère='{true_url_mere}')")
+                logger.info(f"{nb_children} enfants dans la famille '{pointer_family}' (père='{true_url_pere}', mère='{true_url_mere}')")
 
             key = self.key_union(true_url_pere, true_url_mere)
             mariage_date = None
@@ -1092,13 +1074,13 @@ class GeneanetSpider(scrapy.Spider):
                     self.nb_errors += 1
                     self.logger.error(f"Famille '{pointer_family}' : ERREUR mariages_sources[père]('{mariage_source}') différent de mariages_sources[mère]('{self.mariages_sources[true_url_mere]}')")
                 else:
-                    self.log(f"Famille '{pointer_family}' : OK : mariages_sources[père]=mariages_sources[mère]='{mariage_source}'")
+                    logger.info(f"Famille '{pointer_family}' : OK : mariages_sources[père]=mariages_sources[mère]='{mariage_source}'")
 
-                self.log(f"Famille '{pointer_family}' : mariages_sources[{true_http_url}]='{mariage_source}'")
+                logger.info(f"Famille '{pointer_family}' : mariages_sources[{true_http_url}]='{mariage_source}'")
             except:
                 pass
 
-            self.log(f"Famille '{pointer_family}' : enfant='{child_url}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
+            logger.info(f"Famille '{pointer_family}' : enfant='{child_url}', true_url_pere='{true_url_pere}', true_url_mere='{true_url_mere}' mariage_date='{mariage_date}' mariage_place='{mariage_place}' mariage_source='{mariage_source}'")
             self.gedcomw_parser.add_family( pointer_family, children_pointers, husband_pointer, wife_pointer, mariage_date, mariage_place, mariage_source, mariage_note)
 
     @classmethod
@@ -1108,27 +1090,27 @@ class GeneanetSpider(scrapy.Spider):
         crawler.signals.connect(spider.spider_closed, signal=signals.spider_closed)
         return spider
 
-    def spider_closed(self, spider):
+    def close(self):
+        super().close()
         self.manage_families()
         self.gedcomw_parser.get_root_element().add_end_of_file()
 
-        spider.logger.info(f"NRa Spider '{spider.name}' closed :", )
-        spider.logger.info(f"- nb_persons            = {self.nb_persons}")
-        spider.logger.info(f"- nb_alias              = {self.nb_alias}")
-        spider.logger.info(f"- nb_masked_persons     = {self.nb_masked_persons}")
-        spider.logger.info(f"- nb_families           = {self.nb_families}")
-        spider.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
-        spider.logger.info(f"- nb_consanguinites     = {self.nb_consanguinites}")
-        spider.logger.info(f"- max_generations       = {self.max_generations}")
-        spider.logger.info(f"- nb_titres_noblesse    = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
-        spider.logger.info(f"- nb_sous_titres        = {self.nb_sous_titres}")
-        spider.logger.info(f"- nb_notes_longues      = {self.nb_notes_longues}")
-        spider.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
-        spider.logger.info(f"- nb_errors             = {self.nb_errors}")
-        spider.logger.info(f"- nb_todo               = {self.nb_todo}")
-        spider.logger.info(f"- nb_scanned_pages      = {self.nb_scanned_pages}")
-        spider.logger.info(f"- nb_saved_pages        = {self.nb_saved_pages}")
-        spider.logger.info(f"- nb_cached_pages       = {self.nb_cached_pages}")
+        self.logger.info(f"Spider '{self.name}' closed :", )
+        self.logger.info(f"- nb_persons            = {self.nb_persons}")
+        self.logger.info(f"- nb_alias              = {self.nb_alias}")
+        self.logger.info(f"- nb_masked_persons     = {self.nb_masked_persons}")
+        self.logger.info(f"- nb_families           = {self.nb_families}")
+        self.logger.info(f"- {len(self.parents_of)} relations enfants / parents")
+        self.logger.info(f"- nb_consanguinites     = {self.nb_consanguinites}")
+        self.logger.info(f"- max_generations       = {self.max_generations}")
+        self.logger.info(f"- nb_titres_noblesse    = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
+        self.logger.info(f"- nb_sous_titres        = {self.nb_sous_titres}")
+        self.logger.info(f"- nb_notes_longues      = {self.nb_notes_longues}")
+        self.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
+        self.logger.info(f"- nb_errors             = {self.nb_errors}")
+        self.logger.info(f"- nb_todo               = {self.nb_todo}")
+        self.logger.info(f"- nb_scanned_pages      = {self.nb_scanned_pages}")
+        self.logger.info(f"- nb_cached_pages       = {self.nb_cached_pages}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_todo} todo\n")
@@ -1136,39 +1118,42 @@ class GeneanetSpider(scrapy.Spider):
         self.csv_events.close()
         self.csv_unions.close()
 
-        gedresultfilename = self.result_dir + "/" + GeneanetSpider.gedcom_result_filename
-        spider.logger.info(f"Saving to '{gedresultfilename}'")
+        gedresultfilename = self.result_dir + "/" + self.gedcom_result_filename
+        self.logger.info(f"Saving to '{gedresultfilename}'")
         gedresult = open( gedresultfilename, "wb")
         self.gedcomw_parser.nra_save_gedcom(gedresult)
         gedresult.close()
 
+        # renommage log
+        final_logname = self.result_dir + "/" + self.result_name + ".log"
+        try:
+            os.remove(final_logname)
+        except OSError:
+            pass
+        print(f"Renaming '{tmplogfile.name}' to '{final_logname}'", flush=True)
+        """Ferme les handlers et renomme le fichier temporaire."""
+        for handler in logger.handlers[:]:
+            handler.close()
+            logger.removeHandler(handler)
+        shutil.copyfile(tmplogfile.name, final_logname)
+        try:
+            os.remove(tmplogfile.name)
+        except OSError:
+            print(f"Can't remove '{tmplogfile.name}' !'", flush=True)
+            pass
 
-def close_logger(logger):
-    """Close all handlers on logger object."""
-    if logger is None:
-        return
-    for handler in list(logger.handlers):
-        handler.close()
-        logger.removeHandler(handler)
 
-
-@atexit.register
-def goodbye():
-    print('Leaving the Python sector.')
-    #close_logger(logging)
-    #configure_logging(install_root_handler=True)
-    #logging.shutdown()
-    #os.rename(GeneanetSpider.tmplogfile, final_logname) # KO : erreur "fichier utilisé par un autre processus"
-    final_logname = GeneanetSpider.result_dir + "/" + GeneanetSpider.result_name + ".log"
-    try:
-        os.remove(final_logname)
-    except OSError:
-        pass
-    print(f"Renaming '{GeneanetSpider.tmplogfile}' to '{final_logname}'")
-    shutil.copyfile(GeneanetSpider.tmplogfile, final_logname)
-    try:
-        os.remove(GeneanetSpider.tmplogfile)
-    except OSError:
-        print(f"Can't remove '{GeneanetSpider.tmplogfile}' !'")
-        pass
-
+if __name__ == "__main__":
+    #if len(sys.argv) != 2:
+    #    print("Usage: python geneanet_spider.py <URL_DE_DEPART>")
+    #    sys.exit(1)
+    parser = argparse.ArgumentParser(description=GeneanetSpider.progname)
+    parser.add_argument("url")  # positionnel
+    parser.add_argument("--max_pages", type=int, default=11)
+    parser.add_argument("--max_cloudflare_errors", type=int, default=10)
+    parser.add_argument("--min_delay", type=float, default=0.6)
+    parser.add_argument("--max_delay", type=float, default=2.1)
+    parser.add_argument("--headless", action=argparse.BooleanOptionalAction, default=False)
+    args = parser.parse_args()
+    crawler = GeneanetSpider( max_pages=args.max_pages, max_cloudflare_errors=args.max_cloudflare_errors, min_delay=args.min_delay, max_delay=args.max_delay, headless=args.headless )
+    crawler.start(args.url)

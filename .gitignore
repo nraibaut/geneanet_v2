@@ -2,17 +2,19 @@
 # Exclusions perso :
 #-------------------
 download/
-#*.log
+*.log
 *.bak*
 *.out.*
 *.pybak*
 *.zip
 *.tgz
 *.tar.gz
+*.orig*
 result*/
 result/
 #result/pages/
 tmp/
+bak*
 *.tmp*
 *.old*
 * - Copie*

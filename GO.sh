@@ -4,7 +4,8 @@ function crawl()
 {
   # DOWNLOAD_DELAY surchargeable (défaut = 2 secondes dans settings.py), applicable aux lectures http et fichiers en cache.
   # En plus de ce délai, une pause de "http_delay" (défaut = 2 secondes dans geneanet_spider.py) s'applique uniquement aux lectures http.
-  scrapy crawl geneanet -a url="$1" -s DOWNLOAD_DELAY=0
+  #scrapy crawl geneanet -a url="$1" -s DOWNLOAD_DELAY=2
+  scrapy crawl geneanet -a url="$1"
 }
 
 # Entre parenthèses : valeurs précédentes, dec 2023
@@ -53,6 +54,34 @@ function go5()
   crawl "https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus" # 55 personnes, 9 générations
   crawl "https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana" # 51 personnes, 7 générations
 }
+function go6()
+{
+  crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025
+  #crawl "https://www.google.com/"
+  return
+  # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
+  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026
+  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026
+  
+  
+  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026
+  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche"
+  # Françoise BURAVAND :
+  crawl "https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026
+  # pour ascendance Biélone DE GUERIN :
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  # pour ascendance Gillette JULLIAN : plusieurs sources contradictoires :
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026
+}
+
+function go_test()
+{
+  # arbre de test, avec juste 2 parents
+  crawl "https://gw.geneanet.org/ariellebdx?lang=fr&n=dupont&oc=0&p=pierre&type=tree"
+}
 function go()
 {
   go1
@@ -67,11 +96,13 @@ mkdir -p "result/pages"
 
 while true
 do 
-  go
+  #go
   #go1
   #go2
   #go3
   #go5
+  #go6
+  go_test
 
   nb_ko="$(grep 'scrapy.core.engine.*Crawled.*403' result/*.log 2>/dev/null | wc -l)"
   if [ "$nb_ko" == "0" ]; then
