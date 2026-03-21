@@ -49,14 +49,12 @@ logger.propagate = False  # ← ne remonte pas au root logger
 logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 logger.setLevel(logging.INFO)
-logging.getLogger("FirefoxCrawler").addHandler(file_handler)
-#print('Logger GeneanetSpider initialisé.', flush=True)
-
+logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dans mon log les traces de la classe mère
 
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.0" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.1" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -111,7 +109,6 @@ class GeneanetSpider(FirefoxCrawler):
         "Arbre généalogique (aperçu)" # nouveau mars 2026
     ]
 
-    #def __init__(self, max_pages=50)
     def __init__(self, max_pages=50, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
 
         logger.info(f"Starting {self.progname} {self.version}")
@@ -173,6 +170,7 @@ class GeneanetSpider(FirefoxCrawler):
             result = result + "&type=fiche"
 
         return result
+
     def patch_url(self, url):
         result = url
         # mars 2025 : beaucoup d'erreurs 403, dont certaines systématiques sur des url contenant "&iz=12"
@@ -231,6 +229,7 @@ class GeneanetSpider(FirefoxCrawler):
         result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
 
         return result
+
     def post_trt_sources(self, texte):
         """
         Post-traitement des sources, notamment pour faire le ménage des datas superflues
@@ -252,16 +251,16 @@ class GeneanetSpider(FirefoxCrawler):
         return result
 
     def start(self, start_url):
-        result_name = self.url_to_filename(start_url)
-        GeneanetSpider.result_name = result_name
+
+        self.result_name = self.url_to_filename(start_url).replace(".type=fiche", "")
 
         logger.info(f"Starting parsing : start_url = {start_url}")
-        logger.info(f"result_name = {result_name}")
+        logger.info(f"result_name = {self.result_name}")
 
         # Initialisation parser
         self.gedcomw_parser = Parser()
 
-        self.gedcom_result_filename = result_name + ".ged"
+        self.gedcom_result_filename = self.result_name + ".ged"
         logger.info(f"gedcom_result_filename = {self.gedcom_result_filename}")
         now = datetime.now()  # current date and time
         date = now.strftime("%d/%m/%Y à %H:%M")
@@ -270,17 +269,17 @@ class GeneanetSpider(FirefoxCrawler):
                    self.team, self.address, self.gedcom_result_filename)
 
         # Sorties CSV :
-        csvfilename = self.result_dir + "/" + result_name + ".persons.csv"
+        csvfilename = self.result_dir + "/" + self.result_name + ".persons.csv"
         logger.info(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w", encoding="utf-8")
         self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
 
-        csvfilename = self.result_dir + "/" + result_name + ".events.csv"
+        csvfilename = self.result_dir + "/" + self.result_name + ".events.csv"
         logger.info(f"csv events = {csvfilename}")
         self.csv_events = open( csvfilename, "w", encoding="utf-8")
         self.csv_events.write(f"id;prenom;nom;url;evenement;tag;date;gedcom_date;lieu;notes;tag_ou_type;source;notes_source;{self.progname} {self.version} {date}\n")
 
-        csvfilename = self.result_dir + "/" + result_name + ".unions.csv"
+        csvfilename = self.result_dir + "/" + self.result_name + ".unions.csv"
         logger.info(f"csv unions = {csvfilename}")
         self.csv_unions = open( csvfilename, "w", encoding="utf-8")
         self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{self.progname} {self.version} {date}\n")
