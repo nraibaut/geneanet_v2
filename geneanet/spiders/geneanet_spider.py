@@ -55,7 +55,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.2" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.3" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -107,7 +107,9 @@ class GeneanetSpider(FirefoxCrawler):
         "Union(s), enfant(s)",
         "Événements",
         "Présences lors d'événements",
-        "Arbre généalogique (aperçu)" # nouveau mars 2026
+        "Arbre généalogique (aperçu)", # nouveau mars 2026
+        "Arbre généalogique (jusqu’aux grands-parents)", # nouveau mars 2026
+        "Frères et sœurs" # nouveau mars 2026
     ]
 
     def __init__(self, max_pages=50, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
@@ -158,7 +160,7 @@ class GeneanetSpider(FirefoxCrawler):
 
     def normalize_url(self, url):
         # Robustesse mars 2026 : enlever "&type=fiche" des url, pour ne pas être sensible à la présence ou absence de ce paramètre
-        # C'est CAPITAL pour tous les dictionnaires indexés par des URM.
+        # C'est CAPITAL pour tous les dictionnaires indexés par des URL.
         return url.replace("&type=fiche", "")
 
     def get_url_to_scan(self, true_http_url):
