@@ -1,11 +1,26 @@
 #!/bin/bash
 
+export PYTHONPATH=$(pwd):$(pwd)/geneanet  # pourquoi ai-je besoin de ça ???!!!!
+
 function crawl()
 {
   # DOWNLOAD_DELAY surchargeable (défaut = 2 secondes dans settings.py), applicable aux lectures http et fichiers en cache.
   # En plus de ce délai, une pause de "http_delay" (défaut = 2 secondes dans geneanet_spider.py) s'applique uniquement aux lectures http.
   #scrapy crawl geneanet -a url="$1" -s DOWNLOAD_DELAY=2
-  scrapy crawl geneanet -a url="$1"
+  #scrapy crawl geneanet -a url="$1"
+  while true
+  do
+    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 # --max_pages 23 --no-headless
+    LOG=$(ls -t result/*.log | head -1)
+    nb_to_scan="$(grep 'nb_scanned_pages *= [1-9]' "$LOG" 2>/dev/null | wc -l)"
+    if [ "$nb_to_scan" == "0" ]; then
+      break;
+    else
+      echo "============================================================================================"
+      echo "Il reste encore des pages non lues en cache..."
+      sleep 10
+    fi
+  done
 }
 
 # Entre parenthèses : valeurs précédentes, dec 2023
@@ -57,12 +72,10 @@ function go5()
 function go6()
 {
   crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025
-  #crawl "https://www.google.com/"
-  return
+
   # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026
   crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026
-  
   
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026
   crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche"
@@ -89,35 +102,25 @@ function go()
   go3
   go4
   go5
+  go6
 }
 
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
 mkdir -p "result/pages"
 
-while true
-do 
   #go
   #go1
   #go2
   #go3
   #go5
-  #go6
-  go_test
-
-  nb_ko="$(grep 'scrapy.core.engine.*Crawled.*403' result/*.log 2>/dev/null | wc -l)"
-  if [ "$nb_ko" == "0" ]; then
-    break;
-  else
-  echo "============================================================================================"
-    echo "Il reste au moins $nb_ko pages à scanner..."
-	sleep 10
-  fi
-done
+  go6
+  #go_test
 
 rm tmp/*.tmp
 
 function go_logs()
 {
+echo "ANALYSE DES LOGS :"
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Plantages (Tracebacks) :"
 egrep -H 'Traceback|During handling of the above exception, another exception occurred:' result/*.log
@@ -142,8 +145,9 @@ echo "--------------------------------------------------------------------------
 echo "Todo :"
 grep -H '@todo' result/*.ged | sed -e 's;@......@;@xxxxxx@;g' | sort | grep -v '_ancestris'
 echo "-------------------------------------------------------------------------------------------------------------------"
-echo "Erreurs crawling 403 :"
+echo "Erreurs crawling 403 ou Cloudflare/crawling :"
 egrep -H 'scrapy.core.engine.*Crawled.*403|httperror|HTTP status code is not handled or not allowed' result/*.log | egrep -v 'httperror/response_ignored_|log:..scrapy.spidermiddlewares.httperror.HttpErrorMiddleware.,'
+egrep -Hi '.- erreurs.* : [1-9]' result/*.log
 echo "Autres erreurs/warning crawling : ---------------------------------------------------------"
 grep -H 'scrapy.core.engine.*DEBUG' result/*.log | egrep -v 'Crawled .403.|Crawled .200.'
 echo "-------------------------------------------------------------------------------------------------------------------"

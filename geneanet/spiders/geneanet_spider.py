@@ -42,7 +42,8 @@ tmplogfile.close() # selon Le Chat : "évite le double descripteur ouvert (impor
 stream_handler = logging.StreamHandler()
 stream_handler.setFormatter(FirefoxCrawler.get_formatter())
 # Handler fichier
-file_handler = logging.FileHandler(tmplogfile.name)
+file_handler = logging.FileHandler(tmplogfile.name, encoding="utf-8") # encoding='utf-8', sinon les grep (de git bash) dans les logs ne fonctionnent pas sur les lignes accentuées !
+
 file_handler.setFormatter(FirefoxCrawler.get_formatter())
 logger = logging.getLogger("GeneanetSpider")  # Logger NRa
 logger.propagate = False  # ← ne remonte pas au root logger
@@ -54,7 +55,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.1" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.2" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -155,6 +156,11 @@ class GeneanetSpider(FirefoxCrawler):
 
         return result
 
+    def normalize_url(self, url):
+        # Robustesse mars 2026 : enlever "&type=fiche" des url, pour ne pas être sensible à la présence ou absence de ce paramètre
+        # C'est CAPITAL pour tous les dictionnaires indexés par des URM.
+        return url.replace("&type=fiche", "")
+
     def get_url_to_scan(self, true_http_url):
         """
         Historiquement : Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
@@ -193,8 +199,8 @@ class GeneanetSpider(FirefoxCrawler):
         :param url_parent2:
         :return:
         """
-        url_parent1b = self.patch_url(url_parent1) # robustesse : ne pas considérer "&pz=xxxx&nz=xxxx" , "&iz=xxx" dans la clé
-        url_parent2b = self.patch_url(url_parent2)
+        url_parent1b = self.normalize_url(self.patch_url(url_parent1))# robustesse : ne pas considérer "&pz=xxxx&nz=xxxx" , "&iz=xxx" dans la clé
+        url_parent2b = self.normalize_url(self.patch_url(url_parent2))
         if url_parent1b > url_parent2b:
             result = url_parent1b + ";" + url_parent2b
         else:
@@ -202,6 +208,8 @@ class GeneanetSpider(FirefoxCrawler):
         return result
 
     def set_parent_of(self, child_true_url, parent_true_url):
+        child_true_url = self.normalize_url(child_true_url)
+        parent_true_url = self.normalize_url(parent_true_url)
         if child_true_url not in self.parents_of:
             self.parents_of[child_true_url] = [parent_true_url]
         else:
@@ -252,6 +260,7 @@ class GeneanetSpider(FirefoxCrawler):
 
     def start(self, start_url):
 
+        start_url = start_url.replace("&type=tree", "") # robustesse aux oublis
         self.result_name = self.url_to_filename(start_url).replace(".type=fiche", "")
 
         logger.info(f"Starting parsing : start_url = {start_url}")
@@ -323,7 +332,7 @@ class GeneanetSpider(FirefoxCrawler):
         sosa = meta['sosa']
         self.nb_persons += 1
         pointer = "@I%05d@" % (self.nb_persons)
-        self.pointer_of[true_http_url] = pointer # on mémorise pour plus tard (élaboration des familles)
+        self.pointer_of[self.normalize_url(true_http_url)] = pointer # on mémorise pour plus tard (élaboration des familles)
         nb_errors_indiv = 0
 
         #generation = 1
@@ -394,7 +403,7 @@ class GeneanetSpider(FirefoxCrawler):
         if sexe not in ("M", "F") :
             nb_errors_indiv += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
-        self.sex_of[true_http_url] = [sexe]
+        self.sex_of[self.normalize_url(true_http_url)] = [sexe]
 
         # Dans la section "<span ng-non-bindable>" juste après le nom, on peut avoir des infos supplémentaires "sous-titre".
         # Chaque ligne est une balise "em".
@@ -675,7 +684,7 @@ class GeneanetSpider(FirefoxCrawler):
                         # Cette source concerne le mariage de la personne (autre événement de type mariage) :
                         # --> on mémorise pour le restaurer lors de la génération des familles :
                         source_mariage = event_sources
-                        self.mariages_sources[true_http_url] = source_mariage
+                        self.mariages_sources[self.normalize_url(true_http_url)] = source_mariage
                         logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
                     else:
                         logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
@@ -998,7 +1007,7 @@ class GeneanetSpider(FirefoxCrawler):
             true_url_pere = None
             true_url_mere = None
             for parent_url in item[1]:
-                #print(f"child {child} : parent {parent}", flush=True)
+                #print(f"child {child_url} : parent {parent_url}", flush=True)
                 try:
                     sexe = self.sex_of[parent_url][0]
                 except KeyError:
@@ -1148,11 +1157,11 @@ if __name__ == "__main__":
     #    sys.exit(1)
     parser = argparse.ArgumentParser(description=GeneanetSpider.progname)
     parser.add_argument("url")  # positionnel
-    parser.add_argument("--max_pages", type=int, default=11)
-    parser.add_argument("--max_cloudflare_errors", type=int, default=10)
+    parser.add_argument("--max_pages", type=int, default=1000)
+    parser.add_argument("--max_cloudflare_errors", type=int, default=2)
     parser.add_argument("--min_delay", type=float, default=0.6)
     parser.add_argument("--max_delay", type=float, default=2.1)
-    parser.add_argument("--headless", action=argparse.BooleanOptionalAction, default=False)
+    parser.add_argument("--headless", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
     crawler = GeneanetSpider( max_pages=args.max_pages, max_cloudflare_errors=args.max_cloudflare_errors, min_delay=args.min_delay, max_delay=args.max_delay, headless=args.headless )
     crawler.start(args.url)
