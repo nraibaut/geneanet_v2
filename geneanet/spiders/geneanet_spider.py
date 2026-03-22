@@ -124,7 +124,7 @@ class GeneanetSpider(FirefoxCrawler):
 
         logger.info(f"Init {self.progname} {self.version} OK")
 
-    def url_to_filename(self, url):
+    def url_to_result_name(self, url):
         result = url
         #result = result.replace("https://", "")
         result = re.sub("^http[s]*://", "", result)
@@ -135,6 +135,9 @@ class GeneanetSpider(FirefoxCrawler):
         result = result.replace("&", ".")
         result = result.replace("?", ".")
         result = result.replace("%", "_") # ex : https://gw.geneanet.org/boutch1?lang=fr&pz=marc&nz=vitelli&p=be%CC%81atrice+marguerite&n=de+faucigny
+        result = result.replace(".type=fiche", "") # raccourcissement des noms de fichiers (pour Ancestris)
+        result = result.replace(".lang=fr", "")
+        result = result.replace("gw.geneanet.org.", "")
         return result
 
     def url_to_true_http_url(self, current_true_http_url, url_to_scan):
@@ -263,7 +266,7 @@ class GeneanetSpider(FirefoxCrawler):
     def start(self, start_url):
 
         start_url = start_url.replace("&type=tree", "") # robustesse aux oublis
-        self.result_name = self.url_to_filename(start_url).replace(".type=fiche", "")
+        self.result_name = self.url_to_result_name(start_url)
 
         logger.info(f"Starting parsing : start_url = {start_url}")
         logger.info(f"result_name = {self.result_name}")
