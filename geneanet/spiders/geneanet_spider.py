@@ -55,7 +55,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.5" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.6" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -665,52 +665,6 @@ class GeneanetSpider(FirefoxCrawler):
             person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
-        nb_notes = 0
-        # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
-        # ==> on teste uniquement h3[@class='note_type' au lieu de :
-        # for note in response.xpath("//h2[span='Notes']/following-sibling::h3[@class='note_type']"):
-        for note in response.xpath("//h3[@class='note_type']"):
-            nb_notes += 1
-            note_type = note.xpath("text()").get().strip()
-            #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
-            note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
-            if note_text == "":
-                following_text = note.xpath("following-sibling::text()[1]") # des cas où le texte est juste après
-                if following_text :
-                    note_text = following_text.get().strip()
-            # Cas Notes individuelles :
-            if note_text == "":
-                #note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip() # plantage sur jeu de tests
-                note_indiv = note.xpath("following-sibling::div[@class='fiche-note-ind']").get()
-                if note_indiv:
-                    note_text = html2text.html2text(note_indiv).strip()
-            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
-            if note_text == "":
-                # on teste avant ménage post-traitement
-                nb_errors_indiv += 1
-                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') vide ! Vérifier le code...")
-            else :
-                note_text = self.post_trt_notes(note_text)
-
-            # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
-            if note_text != "":
-                if len(note_text) >= self.lg_min_notes_longues:
-                    nb_notes_longues += 1
-                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
-                if note_type == "Notes individuelles":
-                    person.add_note(self.gedcomw_parser.get_root_element(), note_text)
-                elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
-                    person.set_event(name=note_type, notes=note_text)
-                elif GeneanetSpider.union_avec_regex.match(note_type):
-                    self.nb_todo += 1
-                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
-                    texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
-                else:
-                    nb_errors_indiv += 1
-                    self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
-                    self.nb_todo += 1
-                    texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
-
         nb_parents=0
         # Parents forme 1 ("<!-- Parents photo -->")
         presence_parents=""
@@ -813,6 +767,7 @@ class GeneanetSpider(FirefoxCrawler):
             self.nb_todo += 1
             texte_infos = texte_infos + f"@todo à vérifier : {nb_parents} parents pour {prenom} {nom} !'\n"
 
+        nb_notes = 0
         nb_unions = 0
         unions_keys = {}
         for union in response.xpath("//ul[@class='fiche_union']/li"):
@@ -908,6 +863,62 @@ class GeneanetSpider(FirefoxCrawler):
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
                 self.nb_todo += 1
                 texte_infos = texte_infos + f"@todo à vérifier : union {nb_unions} NON DECODEE pour {prenom} {nom} = '{line}'\n"
+
+        # Mars 2026 : analyse des notes à faire APRES celle des unions, car on peut avoir des notes sur "Union avec xxxx"
+        # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
+        # ==> on teste uniquement h3[@class='note_type' au lieu de :
+        # for note in response.xpath("//h2[span='Notes']/following-sibling::h3[@class='note_type']"):
+        for note in response.xpath("//h3[@class='note_type']"):
+            nb_notes += 1
+            note_type = note.xpath("text()").get().strip()
+            #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
+            note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
+            if note_text == "":
+                following_text = note.xpath("following-sibling::text()[1]") # des cas où le texte est juste après
+                if following_text :
+                    note_text = following_text.get().strip()
+            # Cas Notes individuelles :
+            if note_text == "":
+                #note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip() # plantage sur jeu de tests
+                note_indiv = note.xpath("following-sibling::div[@class='fiche-note-ind']").get()
+                if note_indiv:
+                    note_text = html2text.html2text(note_indiv).strip()
+            # Mars 2026 : cas Notes "Notes concernant l'union" :
+            # ici, note_type="Union avec xxxx"
+            if note_text == "":
+                note_union = note.xpath("following-sibling::div[@class='fiche-note-union']").get()
+                if note_union:
+                    note_text = html2text.html2text(note_union).strip()
+            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+            if note_text == "":
+                # on teste avant ménage post-traitement
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') vide ! Vérifier le code...")
+            else :
+                note_text = self.post_trt_notes(note_text)
+
+            # après ménage, la note peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+            if note_text != "":
+                if len(note_text) >= self.lg_min_notes_longues:
+                    nb_notes_longues += 1
+                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
+                if note_type == "Notes individuelles":
+                    person.add_note(self.gedcomw_parser.get_root_element(), note_text)
+                elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
+                    person.set_event(name=note_type, notes=note_text)
+                elif GeneanetSpider.union_avec_regex.match(note_type): # cas "Union avec xxxx"
+                    if nb_unions == 1:
+                        key = unions_keys[1]
+                        self.mariages_note_union[key] = note_text
+                    else: # ambiguïté si plusieurs unions !
+                        self.nb_todo += 1
+                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
+                        texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
+                else:
+                    nb_errors_indiv += 1
+                    self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
+                    self.nb_todo += 1
+                    texte_infos = texte_infos + f"@todo type note ('{note_type}') non géré pour {prenom} {nom}. Valeur='{note_text}'\n"
 
         # Mars 2026 : analyse des sources à faire APRES celle des unions, car on peut avoir des sources
         # de type "Famille 1", "Famille 2",... ou "Union 1", "Union 2", ... qu'il faut pouvoir associer à la bonne union

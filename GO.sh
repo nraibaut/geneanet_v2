@@ -73,35 +73,35 @@ function go5()
 }
 function go6()
 {
-  crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025
+  crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025 : 19 personnes, 6 générations
 
   # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
-  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026
-  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026
+  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026 : 19 personnes, 5 générations
+  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026 : 19 personnes, 5 générations
   
-  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026
-  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche"
+  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026 : 27 personnes, 11 générations
+  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche" # 39 personnes, 7 générations
   # Françoise BURAVAND :
-  crawl "https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026
-  crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026 : 21 personnes, 6 générations
+  crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026 : 13 personnes, 6 générations
   # pour ascendance Biélone DE GUERIN :
-  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
-  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026, s'appuie sur jpifieec92
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026 : 393 personnes, 33 générations
+  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026, s'appuie sur jpifieec92 : 51 personnes, 11 générations
   # pour ascendance Gillette JULLIAN : plusieurs sources contradictoires :
-  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette&type=fiche" # fev 2026
-  crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette&type=fiche" # fev 2026 : 11 personnes, 4 générations
+  crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026 : 3 personnes, 2 générations
 }
 
 function go_test()
 {
   # arbre de test, avec juste 2 parents
   #crawl "https://gw.geneanet.org/ariellebdx?lang=fr&n=dupont&oc=0&p=pierre&type=tree"
-  # test événements inconnus 'Famille 1' 'Famille 2'
-  #crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026
-  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  # test événements unions 'Famille 1' 'Famille 2' :
+  #crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026 : 3 personnes, 2 générations
+  #crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=christolin&oc=0&p=magdeleine&type=fiche" # "Magdeleine CHRISTOLIN" = fille de "Bielonne Ou Biélone de GUÉRIN" (pour avoir 1 des unions de sa mère, et vérifier la source)
   # test passage par "Infos mariage sur parent"
   crawl "https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna" # 35 personnes, 7 générations
-
 }
 
 function go()
