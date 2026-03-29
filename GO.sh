@@ -8,12 +8,13 @@ function crawl()
   # En plus de ce délai, une pause de "http_delay" (défaut = 2 secondes dans geneanet_spider.py) s'applique uniquement aux lectures http.
   #scrapy crawl geneanet -a url="$1" -s DOWNLOAD_DELAY=2
   #scrapy crawl geneanet -a url="$1"
+  LAST_RESULT=result/last.log
   while true
   do
-    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 # --max_pages 23 --no-headless
-    LOG=$(ls -t result/*.log | head -1)
-    nb_to_scan="$(grep 'nb_scanned_pages *= [1-9]' "$LOG" 2>/dev/null | wc -l)"
-    if [ "$nb_to_scan" == "0" ]; then
+    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 2>&1 | tee "$LAST_RESULT" # --max_pages 23 --no-headless
+    nb_scanned_pages="$(grep 'nb_scanned_pages *=' "$LAST_RESULT" | sed -e 's/.*= *//g' 2>/dev/null)"
+    # nb_scanned_pages = 0 ou plus, voire "" si le programme s'est planté avant la fin
+    if [ "$nb_scanned_pages" == "0" ]; then
       break;
     else
       echo "============================================================================================"
@@ -21,6 +22,7 @@ function crawl()
       sleep 10
     fi
   done
+  rm -f "$LAST_RESULT"
 }
 
 # Entre parenthèses : valeurs précédentes, dec 2023
@@ -84,7 +86,7 @@ function go6()
   crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026
   # pour ascendance Biélone DE GUERIN :
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
-  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026, s'appuie sur jpifieec92
   # pour ascendance Gillette JULLIAN : plusieurs sources contradictoires :
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette&type=fiche" # fev 2026
   crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026
@@ -93,8 +95,15 @@ function go6()
 function go_test()
 {
   # arbre de test, avec juste 2 parents
-  crawl "https://gw.geneanet.org/ariellebdx?lang=fr&n=dupont&oc=0&p=pierre&type=tree"
+  #crawl "https://gw.geneanet.org/ariellebdx?lang=fr&n=dupont&oc=0&p=pierre&type=tree"
+  # test événements inconnus 'Famille 1' 'Famille 2'
+  #crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026
+  crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026
+  # test passage par "Infos mariage sur parent"
+  crawl "https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna" # 35 personnes, 7 générations
+
 }
+
 function go()
 {
   go1
@@ -113,8 +122,8 @@ mkdir -p "result/pages"
   #go2
   #go3
   #go5
-  go6
-  #go_test
+  #go6
+  go_test
 
 rm tmp/*.tmp
 

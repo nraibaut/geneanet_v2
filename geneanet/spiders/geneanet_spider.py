@@ -55,7 +55,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.3" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.4" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -77,10 +77,10 @@ class GeneanetSpider(FirefoxCrawler):
     parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
     pointer_of = {} # dictionnaire des pointeurs (id) de chaque individu (index = <true_url>)
     sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <true_url>)
-    mariages_dates = {} # dictionnaire des dates de mariaqes (index = "<true_url_pere>;<true_url_mere>")
-    mariages_places = {} # dictionnaire des lieux de mariages (index = "<true_url_pere>;<true_url_mere>")
-    mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_pere_ou_mere>")
-    mariages_note_union = {} # dictionnaire des notes sur les unions (index = "<true_url_pere>;<true_url_mere>")
+    mariages_dates = {} # dictionnaire des dates de mariaqes (index = "<true_url_mari>;<true_url_epouse>")
+    mariages_places = {} # dictionnaire des lieux de mariages (index = "<true_url_mari>;<true_url_epouse>")
+    mariages_sources = {} # dictionnaire des sources de mariages (index = "<true_url_mari>;<true_url_epouse>")
+    mariages_note_union = {} # dictionnaire des notes sur les unions (index = "<true_url_mari>;<true_url_epouse>")
     true_url_of = {} # dictionnaire des url (index = <pointer>)
     is_http_url = re.compile("^http[s]*:.*")
     #is_file_url = re.compile("^file:.*")
@@ -199,7 +199,7 @@ class GeneanetSpider(FirefoxCrawler):
     def key_union(self, url_parent1, url_parent2):
         """
         Donne la clé à utiliser pour les dictionnaires concernant les mariages.
-        Au lieu d'utiliser url_pere/url_mere (en risquant de se tromper), on trie pa ordre alphabétique
+        Au lieu d'utiliser url_mari/url_epouse (en risquant de se tromper), on trie par ordre alphabétique
         :param url_parent1:
         :param url_parent2:
         :return:
@@ -296,7 +296,7 @@ class GeneanetSpider(FirefoxCrawler):
         csvfilename = self.result_dir + "/" + self.result_name + ".unions.csv"
         logger.info(f"csv unions = {csvfilename}")
         self.csv_unions = open( csvfilename, "w", encoding="utf-8")
-        self.csv_unions.write(f"id;prenom;nom;url;origine;url_pere;url_mere;date;lieu;debug;{self.progname} {self.version} {date}\n")
+        self.csv_unions.write(f"id;prenom;nom;url;origine;url_mari;url_epouse;date;lieu;debug;{self.progname} {self.version} {date}\n")
 
         url_to_scan = self.get_url_to_scan(start_url)
         logger.info(f"Root URL = {start_url} (to_scan='{url_to_scan}')")
@@ -349,17 +349,17 @@ class GeneanetSpider(FirefoxCrawler):
         nom = response.xpath("//div[@id='person-title']/div/h1/a[2]/text()").get()
         extraire_surnom = False # cas avec surnom en tête, et liens nom/prénom plus loin
         if prenom is None:
-            prenom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=P&')]/text()").get() # lien hypetexte contenant "&m=P&" (recherche par prénom)
+            prenom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=P&')]/text()").get() # lien hypertexte contenant "&m=P&" (recherche par prénom)
             extraire_surnom = True
         if nom is None:
-            nom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=N&')]/text()").get() # lien hypetexte contenant "&m=N&" (recherche par nom)
+            nom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=N&')]/text()").get() # lien hypertexte contenant "&m=N&" (recherche par nom)
             extraire_surnom = True
         # Certains noms/prénoms sont à côté de "div[@id='person-title'", mais avec un niveau "span" supplémentaire
         if prenom is None:
-            prenom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=P&')]/text()").get()  # lien hypetexte contenant "&m=P&" (recherche par prénom)
+            prenom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=P&')]/text()").get()  # lien hypertexte contenant "&m=P&" (recherche par prénom)
             extraire_surnom = True
         if nom is None:
-            nom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=N&')]/text()").get()  # lien hypetexte contenant "&m=N&" (recherche par nom)
+            nom = response.xpath("//div[@id='person-title']/..//a[contains(@href,'&m=N&')]/text()").get()  # lien hypertexte contenant "&m=N&" (recherche par nom)
             extraire_surnom = True
         if prenom is None and nom is None:
             # Cas personne masquée ?
@@ -379,6 +379,8 @@ class GeneanetSpider(FirefoxCrawler):
             nb_errors_indiv += 1
             self.logger.error(f"Pas pu extraire le nom pour {true_http_url} !")
             nom = "????"
+        prenom = re.sub(r"\s+", " ", prenom)  # suppression des espaces multiples
+        nom = re.sub(r"\s+", " ", nom)
         prenom = re.sub("^\.\.*\.$", "?", prenom) # cas de certains prénoms valant "..." --> vide
         nom = re.sub("^\.\.*\.$", "?", nom) # cas de certains prénoms valant "..." --> vide
         nom = nom.upper() # Nom en majuscules
@@ -649,52 +651,6 @@ class GeneanetSpider(FirefoxCrawler):
             person.set_event(name=event_name, date=event_date, place=event_place, notes=event_notes, source=event_sources)
             # @todo y a-t-il d'autres classes ? parsing à robustifier
 
-        nb_sources = 0
-        for source in response.xpath("//h2[span='Sources']/following-sibling::em/ul[1]/li"):
-            nb_sources += 1
-            #line = source.xpath("text()").get()
-            line1 = source.extract()
-            line = html2text.html2text(line1).strip()
-            #line = source.xpath("text()").extract()
-            #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
-            event_name = line.split(":",1)[0]
-            event_name = re.sub("^\* *", "", event_name)  # suppression début "* "
-            #event_sources = re.sub("[^:]*:  *", "", line)  # suppression avant ":"
-            event_sources = line.split(":",1)[1]
-            event_sources = re.sub("^ *", "", event_sources)  # suppression début " "
-            # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
-            if event_name == "Décès":
-                event_sources = event_sources.replace("\\- ", "\n", 1)
-            event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
-            if event_sources == "":
-                # on teste avant ménage post-traitement
-                nb_errors_indiv += 1
-                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source vide ! Vérifier le code...")
-            event_sources = self.post_trt_sources(event_sources)
-
-            # après ménage, la source peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
-            if event_sources != "":
-                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
-
-                event_list = event_name.split(",")
-                for event_name in event_list:
-                    # Cas particulier : on peut avoir en fait plusieurs événements concernés :
-                    # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13", "Personne, famille: a d bouche du rhone"
-                    event_name = event_name.strip().capitalize()
-                    if event_name == "Personne" :
-                        # Cette source concerne la personne elle-même, et non pas un événement :
-                        source_personne = event_sources
-                        logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
-                    elif (event_name == "Union") or (event_name == "Famille") :
-                        # Cette source concerne le mariage de la personne (autre événement de type mariage) :
-                        # --> on mémorise pour le restaurer lors de la génération des familles :
-                        source_mariage = event_sources
-                        self.mariages_sources[self.normalize_url(true_http_url)] = source_mariage
-                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> mariages_sources[{true_http_url}]='{source_mariage}'")
-                    else:
-                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
-                        person.set_event(name=event_name, source=event_sources)
-
         nb_notes = 0
         # Attention : class='note_type' rencontré à la fois pour span="Notes"/"Notes", mais aussi class="htitle"/"Notes concernant l'union"
         # ==> on teste uniquement h3[@class='note_type' au lieu de :
@@ -783,6 +739,8 @@ class GeneanetSpider(FirefoxCrawler):
                 parents_url[nb_parents] = true_url_parent
 
                 # On essaye de voir s'il y a une ligne "Marié le ... avec" sur le premier parent :
+                # Note mars 2026 : cette forme de présentation des unions (des parents) semble avoir disparu,
+                # au profit de la rubrique "Union(s)" ou "Union(s) et enfant(s)", pour la ou les unions de l'individu courant
                 if nb_parents == 1:
                     lignes = parent.extract()
                     lignes = html2text.html2text(lignes).strip()
@@ -842,6 +800,7 @@ class GeneanetSpider(FirefoxCrawler):
             texte_infos = texte_infos + f"@todo à vérifier : {nb_parents} parents pour {prenom} {nom} !'\n"
 
         nb_unions = 0
+        unions_keys = {}
         for union in response.xpath("//ul[@class='fiche_union']/li"):
             nb_unions += 1
             #line = source.xpath("text()").get()
@@ -882,12 +841,14 @@ class GeneanetSpider(FirefoxCrawler):
 
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} = debut='{debut}' nom_conjoint='{nom_conjoint}' url_conjoint='{url_conjoint}' ")
                 if sexe == "M":
-                    url_pere = true_http_url
-                    url_mere = url_conjoint
+                    url_mari = true_http_url
+                    url_epouse = url_conjoint
                 else:
-                    url_pere = url_conjoint
-                    url_mere = true_http_url
-                key = self.key_union(url_pere, url_mere)
+                    url_mari = url_conjoint
+                    url_epouse = true_http_url
+                key = self.key_union(url_mari, url_epouse)
+                unions_keys[nb_unions] = key # on mémorise la clé de l'union n, pour pouvoir si besoin l'associer plus tard aux sources de type "Famille 1", "Famille 2",... ou "Union 1", "Union 2", ...
+                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} : '{key}'")
                 if mariage_date:
                     self.mariages_dates[key] = mariage_date
                 else:
@@ -925,7 +886,7 @@ class GeneanetSpider(FirefoxCrawler):
 
                 #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
                 #debut = debut.encode(encoding="ascii", errors="replace") # robustesse écriture csv
-                ligne = f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_pere};{url_mere};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n"
+                ligne = f"{pointer};{prenom};{nom};{true_http_url};union{nb_unions};{url_mari};{url_epouse};\"{mariage_date}\";\"{mariage_place}\";\"{debut}\";\n"
                 self.csv_unions.write(ligne)
 
             else:
@@ -933,6 +894,70 @@ class GeneanetSpider(FirefoxCrawler):
                 self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} NON DECODEE = '{line}'")
                 self.nb_todo += 1
                 texte_infos = texte_infos + f"@todo à vérifier : union {nb_unions} NON DECODEE pour {prenom} {nom} = '{line}'\n"
+
+        # Mars 2026 : analyse des sources à faire APRES celle des unions, car on peut avoir des sources
+        # de type "Famille 1", "Famille 2",... ou "Union 1", "Union 2", ... qu'il faut pouvoir associer à la bonne union
+        nb_sources = 0
+        for source in response.xpath("//h2[span='Sources']/following-sibling::em/ul[1]/li"):
+            nb_sources += 1
+            #line = source.xpath("text()").get()
+            line1 = source.extract()
+            line = html2text.html2text(line1).strip()
+            #line = source.xpath("text()").extract()
+            #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
+            event_name = line.split(":",1)[0]
+            event_name = re.sub("^\* *", "", event_name)  # suppression début "* "
+            #event_sources = re.sub("[^:]*:  *", "", line)  # suppression avant ":"
+            event_sources = line.split(":",1)[1]
+            event_sources = re.sub("^ *", "", event_sources)  # suppression début " "
+            # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
+            if event_name == "Décès":
+                event_sources = event_sources.replace("\\- ", "\n", 1)
+            event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
+            if event_sources == "":
+                # on teste avant ménage post-traitement
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source vide ! Vérifier le code...")
+            event_sources = self.post_trt_sources(event_sources)
+
+            # après ménage, la source peut devenir vide (cas généalogie https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio)
+            if event_sources != "":
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : source = '{line}'")
+
+                event_list = event_name.split(",")
+                for event_name in event_list:
+                    # Cas particulier : on peut avoir en fait plusieurs événements concernés :
+                    # exemples réels : "Naissance, décès: AG13", "Naissance, union 1: AG13", "Personne, famille: a d bouche du rhone"
+                    # On peut aussi avoir "Famille 1", "Famille 2" ou "Union 1", "Union 2" quand il y a plusieurs mariages/unions
+                    event_name = event_name.strip().capitalize()
+                    event_firstname = event_name.split()[0]
+                    if event_name == "Personne" :
+                        # Cette source concerne la personne elle-même, et non pas un événement :
+                        source_personne = event_sources
+                        logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source_personne='{source_personne}'")
+                    elif (event_firstname == "Union") or (event_firstname == "Famille") :
+                        # Unions/familles : quand il y a plusieurs mariages, on peut avoir "Famille 1", "Famille 2",... ou "Union 1", "Union 2", ...
+                        # Exemple : https://gw.geneanet.org/jmayet73?n=de+guerin&oc=&p=bielonne+ou+bielone&type=fiche
+                        try:
+                            event_number = int(event_name.split()[1])
+                        except:
+                            event_number = 1
+                        # Cette source concerne le mariage de la personne (autre événement de type mariage) :
+                        # --> on mémorise pour le restaurer lors de la génération des familles :
+                        source_mariage = event_sources
+                        try:
+                            key_union = unions_keys[event_number]
+                            self.mariages_sources[key_union] = source_mariage
+                            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source union {event_number} ('{event_name}') = '{source_mariage}'")
+                        except: # unions_keys[event_number] inconnu
+                            nb_errors_indiv += 1
+                            self.logger.error( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : pas d'union {event_number} pour la source '{event_name}' ('{source_mariage}')")
+                            self.nb_todo += 1
+                            texte_infos = texte_infos + f"@todo à vérifier : pas d'union {event_number} pour la source '{event_name}' ('{source_mariage}')\n"
+                    else:
+                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : --> source '{event_name}' = '{event_sources}'")
+                        person.set_event(name=event_name, source=event_sources)
+
 
         nb_err_events = person.manage_events( root_element=self.gedcomw_parser.get_root_element(), csv_log=self.csv_events, url=true_http_url)
         if nb_err_events > 0:
@@ -1001,9 +1026,9 @@ class GeneanetSpider(FirefoxCrawler):
     def manage_families(self):
         #print(self.parents_of)
         #for item in self.parents_of.keys() :
-        unions_children = {} # pointers des enfants, key = <url_pere>;<url_mere>
-        unions_husband = {} # urls des pères, key = <url_pere>;<url_mere>
-        unions_wife = {} # urls des mères, key = <url_pere>;<url_mere>
+        unions_children = {} # pointers des enfants, key = <url_mari>;<url_epouse>
+        unions_husband = {} # urls des pères, key = <url_mari>;<url_epouse>
+        unions_wife = {} # urls des mères, key = <url_mari>;<url_epouse>
 
         # Première boucle pour identifier les familles
         # (et traiter les cas de consanguinité : plusieurs enfants d'un même couple dans l'arbre généalogique)
@@ -1082,14 +1107,8 @@ class GeneanetSpider(FirefoxCrawler):
             except:
                 pass
             try:
-                mariage_source = self.mariages_sources[true_url_pere] # normalement, on a la même chose avec true_url_mere
-                if self.mariages_sources[true_url_pere] != self.mariages_sources[true_url_mere]:
-                    self.nb_errors += 1
-                    self.logger.error(f"Famille '{pointer_family}' : ERREUR mariages_sources[père]('{mariage_source}') différent de mariages_sources[mère]('{self.mariages_sources[true_url_mere]}')")
-                else:
-                    logger.info(f"Famille '{pointer_family}' : OK : mariages_sources[père]=mariages_sources[mère]='{mariage_source}'")
-
-                logger.info(f"Famille '{pointer_family}' : mariages_sources[{true_http_url}]='{mariage_source}'")
+                mariage_source = self.mariages_sources[key]
+                logger.info(f"Famille '{pointer_family}' : mariages_sources[{key}]='{mariage_source}'")
             except:
                 pass
 
