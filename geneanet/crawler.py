@@ -44,7 +44,7 @@ from selenium.common.exceptions import WebDriverException
 #)
 formatter = logging.Formatter(
     #fmt="%(asctime)s %(filename)s:%(lineno)d - %(levelname)s - %(message)s",
-    fmt="%(asctime)s %(name)-14s[%(lineno)3d] %(levelname)s: %(message)s",
+    fmt="%(asctime)s %(name)-14s[%(lineno)4d] %(levelname)s: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S"  # supprime les millisecondes
 )
 # Handler stdout
@@ -101,7 +101,7 @@ class FirefoxCrawler:
         self._hide_automation()
         logger.info("FirefoxCrawler initialisé avec succès")
         logger.info(f"- geckodriver = {GECKODRIVER_PATH}")
-        logger.info(f"- max_pages = {max_pages}")
+        #logger.info(f"- max_pages = {max_pages}") # @todo transformer en max avant de recharger une instance Firefox
         logger.info(f"- max_cloudflare_errors = {max_cloudflare_errors}")
         logger.info(f"- min_delay = {min_delay}")
         logger.info(f"- max_delay = {max_delay}")
@@ -471,13 +471,13 @@ class FirefoxCrawler:
         self.add_link(start_url, meta)
         pages_visited = 0
 
-        while not self.queue.empty() and pages_visited < self.max_pages and self.abort_crawling == False:
+        while not self.queue.empty() and self.abort_crawling == False:
             url, meta = self.queue.get()
             if url in self.visited_urls:
                 continue
             self.visited_urls.add(url)
             pages_visited += 1
-            logger.info(f"[{pages_visited}/{self.max_pages}] Visite de {url}")
+            logger.info(f"Visite page #{pages_visited} {url}")
 
             html_content = self.fetch_page(url)
             if html_content:

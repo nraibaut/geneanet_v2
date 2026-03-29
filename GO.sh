@@ -122,8 +122,8 @@ mkdir -p "result/pages"
   #go2
   #go3
   #go5
-  #go6
-  go_test
+  go6
+  #go_test
 
 rm tmp/*.tmp
 
