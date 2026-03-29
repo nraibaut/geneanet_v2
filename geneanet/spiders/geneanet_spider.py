@@ -55,7 +55,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(FirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.4" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.0.5" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -220,6 +220,18 @@ class GeneanetSpider(FirefoxCrawler):
         else:
             self.parents_of[child_true_url].append(parent_true_url)
 
+    def replace_markdown_url(self, texte):
+        """
+        Post-traitement pour remplacer les URL au format markdown ("[xxxx](xxxx)") par juste "xxx"
+        dans le texte des sources, notes, ...
+        Ex: https://gw.geneanet.org/jmayet73?n=de+guerin&oc=&p=bielonne+ou+bielone&type=fiche
+        Merci Claude pour la regex incluant une référence arrière (backreference) dans le pattern pour imposer que les deux groupes soient identiques.
+        :param texte:
+        :return:
+        """
+        result = re.sub(r'\[([^\]]+)\]\(\1\)', r'\1', texte)
+        return result
+
     def post_trt_notes(self, texte):
         """
         Post-traitement des notes, notamment pour faire le ménage des datas superflues
@@ -229,6 +241,7 @@ class GeneanetSpider(FirefoxCrawler):
         """
         result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
         result = result.replace(u"\u00A0", " ")  # avant toute chose !
+        result = self.replace_markdown_url(result)
 
         # Lignes "\-- GEDCOM (INDI) -- 1 SUBM @S6000000001808673965@" :
         result = re.sub("([^\n]* GEDCOM .INDI. [^\n]*)\n", "", result )
@@ -252,6 +265,7 @@ class GeneanetSpider(FirefoxCrawler):
         """
         result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
         result = result.replace(u"\u00A0", " ")  # avant toute chose !
+        result = self.replace_markdown_url(result)
 
         # Lignes "\- - 26 APR 2021 - First Name" :
         result = re.sub("(\\\\*- - [0-9]+ [A-Z]+ [0-9]+ - [^\n]*)\n", "", result )
