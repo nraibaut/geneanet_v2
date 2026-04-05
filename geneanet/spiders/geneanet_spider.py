@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.2" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.3" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -229,6 +229,20 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         result = re.sub(r'\[([^\]]+)\]\(\1\)', r'\1', texte)
         return result
 
+    def post_trt_general(self, result):
+
+        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
+
+        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
+        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
+
+        result = re.sub("&lt;br&gt;", "\n", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        result = re.sub("<br>", "\n", result ) # non observé, mais au cas où...
+        result = re.sub("<a>", "**", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        result = re.sub("</a>", "**", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+
+        return result
+
     def post_trt_notes(self, texte):
         """
         Post-traitement des notes, notamment pour faire le ménage des datas superflues
@@ -245,11 +259,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         # Lignes "  1 SUBM @S2304562@" :
         result = re.sub("([ 0-9]* SUBM @S[0-9]*@ *)\n", "", result )
 
-        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
         result = re.sub("\n\\\\", "\n", result)  # suppression des caractères "\" en début de lignes
 
-        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
-        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
+        result = self.post_trt_general(result)
 
         return result
 
@@ -267,10 +279,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         # Lignes "\- - 26 APR 2021 - First Name" :
         result = re.sub("(\\\\*- - [0-9]+ [A-Z]+ [0-9]+ - [^\n]*)\n", "", result )
 
-        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
-
-        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
-        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
+        result = self.post_trt_general(result)
 
         return result
 
