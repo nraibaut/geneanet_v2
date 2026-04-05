@@ -11,16 +11,13 @@ from gedcomw.parser import Parser
 import gedcomw.element
 from gedcomw.element.individual import IndividualElement
 from datetime import datetime
-#import sys
-#import atexit
 import shutil # pour copyfile final
 #import time # pour pause
 import re
 import tempfile
-from crawler import FirefoxCrawler
+from simple_crawler import SimpleFirefoxCrawler
 from scrapy.http import HtmlResponse
 #from scrapy.selector import Selector
-import sys
 import argparse
 
 # Configuration fichier de sortie log :
@@ -40,11 +37,11 @@ tmplogfile.close() # selon Le Chat : "évite le double descripteur ouvert (impor
 
 # Handler stdout
 stream_handler = logging.StreamHandler()
-stream_handler.setFormatter(FirefoxCrawler.get_formatter())
+stream_handler.setFormatter(SimpleFirefoxCrawler.get_formatter())
 # Handler fichier
 file_handler = logging.FileHandler(tmplogfile.name, encoding="utf-8") # encoding='utf-8', sinon les grep (de git bash) dans les logs ne fonctionnent pas sur les lignes accentuées !
 
-file_handler.setFormatter(FirefoxCrawler.get_formatter())
+file_handler.setFormatter(SimpleFirefoxCrawler.get_formatter())
 logger = logging.getLogger("GeneanetSpider")  # Logger NRa
 logger.propagate = False  # ← ne remonte pas au root logger
 logger.addHandler(stream_handler)
@@ -52,10 +49,10 @@ logger.addHandler(file_handler)
 logger.setLevel(logging.INFO)
 logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dans mon log les traces de la classe mère
 
-class GeneanetSpider(FirefoxCrawler):
+class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.0.6" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.0" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -759,7 +756,6 @@ class GeneanetSpider(FirefoxCrawler):
             #info_debug_csv = info_debug_csv.encode(encoding="ascii", errors="replace") # robustesse écriture csv
             ligne = f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n"
             self.csv_unions.write(ligne)
-
 
         elif nb_parents > 2 :
             nb_errors_indiv += 1
