@@ -78,6 +78,7 @@ class SimpleFirefoxCrawler:
         self.headless = headless
         self.cache_dir = "result/pages"
         self.nb_scanned_pages = 0
+        self.nb_retries = 0
         self.nb_cached_pages = 0
         self.nb_cloudflare_errors = 0
         self.nb_crawling_errors = 0
@@ -243,6 +244,20 @@ class SimpleFirefoxCrawler:
 
         return html_content
 
+    def robust_read_one_web_page(self, url):
+        for i in range(1,3):
+            try:
+                html_content = self.read_one_web_page(url)
+                return html_content
+            except Exception as e:
+                logger.error(f"Erreur #{1} lors du chargement de {url}: {str(e)[:200]}...", exc_info=True)
+                self.nb_crawling_errors += 1
+                self.nb_retries += 1
+        # Normalement, on n'arrive pas ici
+        raise ValueError(f"Erreur chargement '{url}' malgré 3 essais")
+        return None
+
+
     def fetch_page(self, url):
         """
         Récupère le contenu d'une page, sans gestion des cookies, challenges et comportements humains.
@@ -260,7 +275,7 @@ class SimpleFirefoxCrawler:
             return cached_html
         try:
             logger.info(f"Lecture web pour {url}")
-            html_content = self.read_one_web_page(url)
+            html_content = self.robust_read_one_web_page(url)
 
             if html_content:
                 self._save_to_cache(url, html_content)
@@ -315,7 +330,7 @@ class SimpleFirefoxCrawler:
                 continue
             self.visited_urls.add(url)
             pages_visited += 1
-            logger.info(f"Visite page #{pages_visited}({self.nb_scanned_pages}) {url}")
+            logger.info(f"Visite page #{pages_visited}({self.nb_scanned_pages}) {url} ({self.queue.qsize()} en attente)")
 
             html_content = self.fetch_page(url)
             if html_content:
@@ -341,5 +356,5 @@ class SimpleFirefoxCrawler:
         logger.info(f"- pages scannées (internet) : {self.nb_scanned_pages}")
         logger.info(f"- pages lues en cache       : {self.nb_cached_pages}")
         logger.info(f"- nb challenges Cloudflare  : {self.nb_cloudflare_errors}")
-        logger.info(f"- erreurs de crawling       : {self.nb_crawling_errors}")
+        logger.info(f"- erreurs de crawling       : {self.nb_crawling_errors} (dont {self.nb_retries} retries)")
         #logger.info("="*50)

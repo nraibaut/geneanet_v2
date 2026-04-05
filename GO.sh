@@ -60,7 +60,7 @@ function go3()
 
 function go4()
 {
-  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # 634 (vs 641 dec 2023) personnes, 24 générations, beaucoup d'anomalies Geneanet
+  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # avril 2026: 181 personnes, 13 générations, 4 anomalies; avant : 634 (vs 641 dec 2023) personnes, 24 générations, beaucoup d'anomalies Geneanet
 }
 
 function go5()
@@ -116,16 +116,16 @@ function go()
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
 mkdir -p "result/pages"
 
-  #go
+  go
   #go1
   #go2
   #go3
-  go4
+  #go4
   #go5
   #go6
   #go_test
 
-rm tmp/*.tmp
+rm tmp/*.tmp 2>/dev/null
 
 function go_logs()
 {
