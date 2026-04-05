@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.0" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.1" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -109,11 +109,11 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         "Frères et sœurs" # nouveau mars 2026
     ]
 
-    def __init__(self, max_pages=50, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
+    def __init__(self, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
 
         logger.info(f"Starting {self.progname} {self.version}")
         super().get_logger().addHandler(file_handler)
-        super().__init__(max_pages=max_pages, max_cloudflare_errors=max_cloudflare_errors, min_delay=min_delay, max_delay=max_delay, headless=headless)
+        super().__init__(max_cloudflare_errors=max_cloudflare_errors, min_delay=min_delay, max_delay=max_delay, headless=headless)
 
         # Initialize the parser
         self.gedcomw_parser = None
@@ -1197,16 +1197,12 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
 
 if __name__ == "__main__":
-    #if len(sys.argv) != 2:
-    #    print("Usage: python geneanet_spider.py <URL_DE_DEPART>")
-    #    sys.exit(1)
     parser = argparse.ArgumentParser(description=GeneanetSpider.progname)
     parser.add_argument("url")  # positionnel
-    parser.add_argument("--max_pages", type=int, default=1000)
     parser.add_argument("--max_cloudflare_errors", type=int, default=2)
     parser.add_argument("--min_delay", type=float, default=0.6)
     parser.add_argument("--max_delay", type=float, default=2.1)
     parser.add_argument("--headless", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
-    crawler = GeneanetSpider( max_pages=args.max_pages, max_cloudflare_errors=args.max_cloudflare_errors, min_delay=args.min_delay, max_delay=args.max_delay, headless=args.headless )
+    crawler = GeneanetSpider( max_cloudflare_errors=args.max_cloudflare_errors, min_delay=args.min_delay, max_delay=args.max_delay, headless=args.headless )
     crawler.start(args.url)

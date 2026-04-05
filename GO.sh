@@ -11,7 +11,7 @@ function crawl()
   LAST_RESULT=result/last.log
   while true
   do
-    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 2>&1 | tee "$LAST_RESULT" # --max_pages 23 --no-headless
+    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 2>&1 | tee "$LAST_RESULT" # --no-headless
     nb_scanned_pages="$(grep 'nb_scanned_pages *=' "$LAST_RESULT" | sed -e 's/.*= *//g' 2>/dev/null)"
     # nb_scanned_pages = 0 ou plus, voire "" si le programme s'est planté avant la fin
     if [ "$nb_scanned_pages" == "0" ]; then

@@ -64,16 +64,14 @@ class SimpleFirefoxCrawler:
     Crawler avancé pour Firefox avec contournement des protections anti-bot.
 
     Args:
-        max_pages (int): Nombre maximum de pages à crawler. Default: 50.
         min_delay (float): Délai minimum entre les requêtes (secondes). Default: 0.5.
         max_delay (float): Délai maximum entre les requêtes (secondes). Default: 2.0.
         headless (bool): Activer le mode headless. Default: False.
     """
 
-    def __init__(self, max_pages=50, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
+    def __init__(self, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
         self.visited_urls = set()
         self.queue = Queue()
-        self.max_pages = max_pages
         self.max_cloudflare_errors = max_cloudflare_errors
         self.min_delay = min_delay
         self.max_delay = max_delay
@@ -88,7 +86,6 @@ class SimpleFirefoxCrawler:
 
         logger.info("SimpleFirefoxCrawler initialisé avec succès")
         #logger.info(f"- geckodriver = {GECKODRIVER_PATH}")
-        #logger.info(f"- max_pages = {max_pages}") # @todo transformer en max avant de recharger une instance Firefox
         logger.info(f"- max_cloudflare_errors = {max_cloudflare_errors}")
         logger.info(f"- min_delay = {min_delay}")
         logger.info(f"- max_delay = {max_delay}")
