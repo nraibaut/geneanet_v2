@@ -19,6 +19,7 @@ from simple_crawler import SimpleFirefoxCrawler
 from scrapy.http import HtmlResponse
 #from scrapy.selector import Selector
 import argparse
+from bs4 import BeautifulSoup
 
 # Configuration fichier de sortie log :
 # problème : il faut le faire ici, sinon on rate le début du log (et ça ne marche pas dans start_requests)
@@ -52,7 +53,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.3" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.4" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -283,6 +284,36 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
         return result
 
+    def get_html_text( self, scrapy_selector, join_lines = True):
+        #texte = BeautifulSoup(scrapy_selector.get(), "html.parser").get_text(separator="\n", strip=True)
+        # Si on met separator="\n" : le texte est renvoyé sur plusieurs lignes (ex: https://gw.geneanet.org/boutch1?lang=fr&p=giovanni+maria&n=spiteri&oc=4&type=fiche)
+        # Si on met separator=" " : le texte est renvoyé sur 1 ligne, mais avec des espaces en trop avant/après les parenthèses : '( Giovanni Maria Spiteri )'
+        # Si on ne met pas separator : le texte est renvoyé sur 1 ligne, mais tout collé : '(Giovanni MariaSpiteri)' (pas d'espace avant le nom)
+        texte = BeautifulSoup(scrapy_selector.get(), "html.parser").get_text( separator=" ", strip=True)
+        # Probablement plus utile, mais conservé pour robustesse :
+        texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+        texte = texte.replace("( ", "(")  # contournement espace résiduel après jointure lignes
+        texte = texte.replace(" )", ")")  # contournement espace résiduel après jointure lignes
+        texte = re.sub(r"\s+", " ", texte)  # suppression des espaces multiples
+        #if join_lines:
+        #    texte = texte.replace("\n", " ")
+        texte = texte.strip()
+        return texte
+
+    def get_html_text_bis(self, scrapy_selector, join_lines=True):
+        # Alternatives proposées par Claude Code dans un contexte Scrapy (le Selector a déjà ses propres méthodes) :
+        # # Extraire tout le texte d'un bloc (Scrapy natif)
+        texts = scrapy_selector.css("::text").getall()
+        text = " ".join(texts)
+        return text
+        #
+        # # Ou avec xpath
+        # texts = selector.xpath(".//text()").getall()
+        # text = " ".join(texts)
+        #
+        # ::text et //text() descendent dans tous les nœuds enfants et récupèrent les nœuds texte,
+        # ce qui est l'équivalent direct de get_text().
+
     def start(self, start_url):
 
         start_url = start_url.replace("&type=tree", "") # robustesse aux oublis
@@ -306,7 +337,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         csvfilename = self.result_dir + "/" + self.result_name + ".persons.csv"
         logger.info(f"csv persons = {csvfilename}")
         self.csv = open( csvfilename, "w", encoding="utf-8")
-        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titre_noblesse;note_titre_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
+        self.csv.write(f"generation;sosa;id;prenom;nom;sexe;source;nb_infos;nb_evenements;nb_sources;nb_parents;forme_parents;parents_mariage_date;parents_mariage_lieu;profession;sous_titre;titres_noblesse;nb_notes;nb_notes_longues;infos;nb_err;{self.progname} {self.version} {date}\n")
 
         csvfilename = self.result_dir + "/" + self.result_name + ".events.csv"
         logger.info(f"csv events = {csvfilename}")
@@ -432,30 +463,6 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
         self.sex_of[self.normalize_url(true_http_url)] = [sexe]
 
-        # Dans la section "<span ng-non-bindable>" juste après le nom, on peut avoir des infos supplémentaires "sous-titre".
-        # Chaque ligne est une balise "em".
-        # Cette section se termine par "<br class="separateur"><br >".
-        # Ignorer les éventuelles lignes "(<a href="boutch1?lang=fr&pz=marc&nz=vitelli&m=P&v=agnes">Agnès</a>", déjà traitées par ailleurs.
-        #for info in response.xpath("//div[@id='person-title']/following-sibling::span[1]/em"):
-        for info in response.xpath("//div[@id='person-title']/following-sibling::span[count(br[@class='separateur'])>0]/em[count(a/@href)=0]"):
-            line = html2text.html2text(info.get()).strip()
-            line = re.sub("^\* *", "", line)
-            line = line.replace(u"\u00A0", " ")  # avant toute chose !
-            line = re.sub(" * ", " ", line) # suppression espaces multiples
-            line = re.sub("_", "", line) # suppression caractères de formatage
-            line = re.sub("^, *", "", line) # suppression ", " en début de ligne
-            if len(line) > 0:
-                self.nb_alias += 1
-                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : info sous-titre / alias = '{line}'")
-                texte_infos = texte_infos + "* " + line + '\n'
-
-        # Tentative (KO) de pause pour limiter erreurs "Redirecting (302) to ..." / "Forbidden by robots.txt: ..."
-        #pause = 0
-        #if generation >= 3 :
-        #    pause = 2 ** generation
-        #    #pause = 1000
-        #    pause = 0
-        #    time.sleep(pause/1000)
         logger.info(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
         self.true_url_of[pointer] = true_http_url # pour retrouver les infos sur les mariages
 
@@ -525,54 +532,75 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             person.set_event(name="Profession", notes=profession)
 
         # Extraction "sous-titre" ou titre_noblesse/note_titre_noblesse
-        # Cette info est présente dans la balise "em" juste après div[@id='person-title']
+        # Cette info est présente dans la balise "em" juste après div[@id='person-title'] : avril 2026 : l'info est désormais dans un sous-niveau "span"
         #
         # Méthode 1 pas assez robuste (la balise "em" peut être loin, notamment dans § Sources !) :
         # info = response.xpath("//div[@id='person-title']/following-sibling::em[1]")
         # Méthode 2 plus robuste : on prend le premier voisin, s'il est de type "em") :
         # info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em']")
         # Mais il ne faut pas prendre @class='sosa' (cas avec ref sosa)
-        sous_titre = None
-        titre_noblesse = None
-        note_titre_noblesse = None
+        liste_sous_titres = ""
+        liste_titres_noblesse = ""
 
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[name()='em' and not(@class='sosa')][1]")
-        info = response.xpath("//div[@id='person-title']/following-sibling::em[not(@class='sosa')][1]")
-        if info:
-            lien_hyper = info.xpath("a")
-            if lien_hyper:
-                titre_noblesse = lien_hyper.xpath("text()").get().strip()
-                #texte = info.xpath("text()").get()
-                texte = info.get()
-                texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-                texte = texte.replace("\n", " ")
-                texte = texte.strip()
-                # le texte est de la forme : "<em> <a href="xxxxx">Titre de noblesse</a>(commentaire)</em>'
-                texte = re.sub(".*</a> *", "", texte) # on enlève tout avant "</a>"
-                texte = re.sub(" *</em>$", "", texte) # on enlève le "</em>" final
-                texte = re.sub("^\(", "", texte) # on enlève l'éventuelle parenthèse de début
-                texte = re.sub("\)$", "", texte) # on enlève l'éventuelle parenthèse de fin
-                #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
-                #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
-                self.nb_titres_noblesse += 1
-                if texte != "":
-                    note_titre_noblesse = texte
-                    self.nb_notes_titres_noblesse += 1
-                    texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
-                else:
-                    texte_infos = texte_infos + f"- titre: {titre_noblesse}\n"
-                person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
-                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse = '{titre_noblesse}' ({note_titre_noblesse})")
-            else:
-                texte = info.xpath("text()").get()
-                texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-                texte = texte.strip()
-                if texte != "":
-                    sous_titre = texte
-                    self.nb_sous_titres += 1
-                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
-                    person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
+        #info = response.xpath("//div[@id='person-title']/following-sibling::em[not(@class='sosa')][1]") KO avril 2026
+        # avril 2026 :
+        # - l'info est désormais dans un sous-niveau "span",
+        # - on peut avoir plusieurs blocs "em"
+        # - pour chaque bloc "em" :
+        #   . s’il y a des parenthèses, ce sont des variantes d’orthographe :
+        #     - (%Prénoms% %Nom alias (autre orthographe du nom)%)
+        #     - (%Prénom alias (variante du prénom)% %NOM%)
+        #     - (%Prénoms% %NOM%)
+        #    . sinon :
+        #      - soit alias
+        #      - soit liens hypertexte titre(s) de noblesse
+        for info in response.xpath("//div[@id='person-title']/following-sibling::span[1]/em") :
+            line = self.get_html_text(info, join_lines=True)
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ligne sous-titre/noblesse/alias '{line}'")
+            liste_liens = info.xpath("a")
+            if line[0] == "(" :
+                sous_titre = line
+                liste_sous_titres = liste_sous_titres + sous_titre + " "
+                self.nb_sous_titres += 1
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
+                person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
+            elif len(liste_liens.getall()) > 0 :
+                nb_liens_hyper = 0
+                for lien_hyper in liste_liens :
+                    nb_liens_hyper += 1
+                    titre_noblesse = lien_hyper.xpath("text()").get().strip()
+                    note_titre_noblesse = None
+                    #texte = info.xpath("text()").get()
+                    texte = info.get()
+                    texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+                    texte = texte.replace("\n", " ")
+                    texte = texte.strip()
+                    # le texte est de la forme : "<em> <a href="xxxxx">Titre de noblesse</a>(commentaire)</em>'
+                    texte = re.sub(".*</a> *", "", texte) # on enlève tout avant "</a>"
+                    texte = re.sub(" *</em>$", "", texte) # on enlève le "</em>" final
+                    texte = re.sub("^\(", "", texte) # on enlève l'éventuelle parenthèse de début
+                    texte = re.sub("\)$", "", texte) # on enlève l'éventuelle parenthèse de fin
+                    #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
+                    #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
+                    self.nb_titres_noblesse += 1
+                    if texte != "":
+                        note_titre_noblesse = texte
+                        self.nb_notes_titres_noblesse += 1
+                        texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
+                        liste_titres_noblesse = liste_titres_noblesse + f"{titre_noblesse} ({note_titre_noblesse}) "
+                    else:
+                        texte_infos = texte_infos + f"- titre: {titre_noblesse}\n"
+                        liste_titres_noblesse = liste_titres_noblesse + f"{titre_noblesse} "
+                    person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
+                    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse {nb_liens_hyper} = '{titre_noblesse}' ({note_titre_noblesse})")
+            else :
+                alias = line
+                self.nb_alias += 1
+                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : alias='{alias}'")
+                person.add_note(self.gedcomw_parser.get_root_element(), "Alias : " + alias)
+
         nb_notes_longues = 0
         nb_evenements=0
         for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
@@ -1042,14 +1070,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             mariage_date = ""
         if mariage_place == None:
             mariage_place = ""
-        if sous_titre == None:
-            sous_titre = ""
-        if titre_noblesse == None:
-            titre_noblesse = ""
-        if note_titre_noblesse == None:
-            note_titre_noblesse = ""
 
-        ligne = f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{sous_titre}\";\"{titre_noblesse}\";\"{note_titre_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n"
+        ligne = f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{liste_sous_titres}\";\"{liste_titres_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n"
         self.csv.write(ligne)
 
 

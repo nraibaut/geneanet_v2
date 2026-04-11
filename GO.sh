@@ -2,7 +2,7 @@
 
 export PYTHONPATH=$(pwd):$(pwd)/geneanet  # pourquoi ai-je besoin de ça ???!!!!
 
-COVERAGE=1
+COVERAGE=0
 
 function crawl()
 {
@@ -123,6 +123,8 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
+   #crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026: 393 personnes, 33 générations
+   #crawl "https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # avril 2026: 181 personnes, 13 générations, 4 anomalies; avant : 634 (vs 641 dec 2023) personnes, 24 générations, beaucoup d'anomalies Geneanet
   #go1
   #go2
   #go3
