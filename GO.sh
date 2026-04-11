@@ -2,16 +2,18 @@
 
 export PYTHONPATH=$(pwd):$(pwd)/geneanet  # pourquoi ai-je besoin de ça ???!!!!
 
+COVERAGE=1
+
 function crawl()
 {
-  # DOWNLOAD_DELAY surchargeable (défaut = 2 secondes dans settings.py), applicable aux lectures http et fichiers en cache.
-  # En plus de ce délai, une pause de "http_delay" (défaut = 2 secondes dans geneanet_spider.py) s'applique uniquement aux lectures http.
-  #scrapy crawl geneanet -a url="$1" -s DOWNLOAD_DELAY=2
-  #scrapy crawl geneanet -a url="$1"
   LAST_RESULT=result/last.log
   while true
   do
-    python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 2>&1 | tee "$LAST_RESULT" # --no-headless
+    if [ "$COVERAGE" == "1" ]; then
+      coverage run --append --source=geneanet/spiders geneanet/spiders/geneanet_spider.py "$1" 2>&1 | tee "$LAST_RESULT"
+    else
+      python geneanet/spiders/geneanet_spider.py "$1" --max_cloudflare_errors 1 2>&1 | tee "$LAST_RESULT" # --no-headless
+    fi
     nb_scanned_pages="$(grep 'nb_scanned_pages *=' "$LAST_RESULT" | sed -e 's/.*= *//g' 2>/dev/null)"
     # nb_scanned_pages = 0 ou plus, voire "" si le programme s'est planté avant la fin
     if [ "$nb_scanned_pages" == "0" ]; then
@@ -116,6 +118,10 @@ function go()
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
 mkdir -p "result/pages"
 
+if [ "$COVERAGE" == "1" ]; then
+  rm .coverage 2>/dev/null
+fi
+
   go
   #go1
   #go2
@@ -163,7 +169,19 @@ echo "--------------------------------------------------------------------------
 echo "Statistiques :"
 grep -H 'INFO: - ' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
+echo "Contrôle présence cas particuliers "
+for key in nb_alias nb_masked_persons nb_consanguinites nb_titres_noblesse nb_sous_titres nb_notes_longues multiple_events_count
+do
+  echo "###### $key :"
+  grep " - $key "  result/*.log | grep -v "= 0"
+done
+echo "-------------------------------------------------------------------------------------------------------------------"
 }
 
 go_logs | tee result/synthese.log.txt
 
+if [ "$COVERAGE" == "1" ]; then
+  echo "Génération rapport coverage"
+  coverage report -m
+  coverage html --include=geneanet/spiders/geneanet_spider.py
+fi
