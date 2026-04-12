@@ -53,7 +53,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.5" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.6" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -136,27 +136,6 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         result = result.replace(".type=fiche", "") # raccourcissement des noms de fichiers (pour Ancestris)
         result = result.replace(".lang=fr", "")
         result = result.replace("gw.geneanet.org.", "")
-        return result
-
-    def url_to_true_http_url(self, current_true_http_url, url_to_scan):
-        """
-        Renvoie l'url à parser : celle en cache si on l'a déjà, sinon la vraie url
-        :param url:
-        :return:
-        """
-        # current_true_http_url = forcément une vraie URL http (https://...)
-        # url_to_scan =
-        # * soit une vraie URL http (https://...)
-        # * soit quelque chose de la forme "file:///compte?lang=fr&p=pierre&n=dupont"
-
-        is_http_url = GeneanetSpider.is_http_url.match(url_to_scan)
-        if is_http_url:
-            result = url_to_scan
-        else:
-            part1 = re.sub("[^/]*$", "", current_true_http_url) # on coupe après le dernier "/"
-            part2 = re.sub(".*/", "", url_to_scan) # on coupe jusqu'au dernier "/"
-            result = part1 + part2
-
         return result
 
     def normalize_url(self, url):
@@ -711,8 +690,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             # (cas arbo https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus : https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=maria+joanna&n=pieters)
             # Etrangement, en supprimant ce champ "iz=", les erreurs disparaissent...
             url_parent = self.patch_url(url_parent)
-
-            true_url_parent = self.url_to_true_http_url( true_http_url, url_parent)
+            true_url_parent = url_parent
             url_parent_to_scan = self.get_url_to_scan( true_url_parent)
             logger.info(f"URL parent {nb_parents} (forme 1) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
             parents_url[nb_parents]=true_url_parent
@@ -730,8 +708,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 url_parent = response.urljoin(url_parent)
                 presence_parents = "forme2"  # forme 2
                 url_parent = self.patch_url(url_parent) # suppression "&iz=xxx", "&pz=xxx", "&nz=xxx",... (voir explication plus haut)
-
-                true_url_parent = self.url_to_true_http_url(true_http_url, url_parent)
+                true_url_parent = url_parent
                 url_parent_to_scan = self.get_url_to_scan(true_url_parent)
                 logger.info(f"URL parent {nb_parents} (forme 2) de {true_http_url} = {url_parent} (true='{true_url_parent}', to_scan='{url_parent_to_scan}'")
                 parents_url[nb_parents] = true_url_parent
@@ -813,7 +790,6 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 #url_conjoint = match_union.groups(0)[2] # NON ! Ko si présence lien sosa
                 url_conjoint = union.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
                 url_conjoint = response.urljoin(url_conjoint)
-                url_conjoint = self.url_to_true_http_url(true_http_url, url_conjoint)
                 url_conjoint = self.patch_url(url_conjoint) # pour supprimer "&pz=xxxx&nz=xxxx" dans le cas sosa (important, car ne doit pas figurer dans la clé)
                 nom_conjoint = union.xpath("a[count(img)=0]/text()").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
 
