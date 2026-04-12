@@ -53,7 +53,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.6" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.7" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -68,6 +68,12 @@ class GeneanetSpider(SimpleFirefoxCrawler):
     lg_min_notes_longues = 60
     nb_notes_longues = 0
     nb_sous_titres = 0
+    nb_events = 0
+    nb_event_dates = 0
+    nb_event_places = 0
+    nb_event_notes = 0
+    nb_event_notes2 = 0
+    nb_event_sources = 0
     multiple_events_count = 0
     max_generations = 0
     nb_errors = 0
@@ -578,28 +584,53 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
         nb_notes_longues = 0
         nb_evenements=0
-        for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
+        #for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]/tr"):
+        # Avril 2026 :
+        # - "//tr" au lieu de "/tr" pour être robuste au niveau "tbody" inséré par le navigateur
+        # - critère "table[@class='ligne_vie timeline_toggle']" pour être robuste à l'espace présent après "Événements", au cas où ça changerait...
+        #for event in response.xpath("//table[@class='ligne_vie timeline_toggle']//tr"):
+        #for event in response.xpath("//h2[contains(span, 'Événements')]/following-sibling::table[1]//tr"):
+        #for event in response.xpath("//h2[span='Événements ']/following-sibling::table[1]//tr"):
+        for event in response.xpath("//table[@class='ligne_vie timeline_toggle']//tr"):
             nb_evenements += 1
-            #tmp = event.xpath("td[2]").get()
-            #tmp = html2text.html2text(tmp)
-            #event_name_and_place = event.xpath("td[2]/span[@class='nnom']/text()").get().strip()
-            event_name_and_place = html2text.html2text(event.xpath("td[2]/span[@class='nnom']").get())
+            self.nb_events += 1
+
+            # Avril 2026 : "td[2]/span[@class='nnom']" devient "td[2]/div[@class='nnom']"
+            #               mais certains événements (avec la première cellule valant "--- :") sont dans 2 niveaux supplémentaires <i> !!! (soit "td[2]/i/i/div[@class='nnom']")
+            nnom_div = event.xpath("td[2]//div[contains(@class,'nnom')]") # "//div" pour robustesse profondeur dans l'arbo
+            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : nnom_div='{nnom_div.get()}'")
+            if not nnom_div:
+                nb_errors_indiv += 1
+                self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : problème décodage événement {nb_evenements} ('{event.get()}')")
+                self.nb_todo += 1
+                texte_infos = texte_infos + f"@todo événement {nb_evenements} NON DECODE pour {prenom} {nom}\n"
+                continue
+
+            event_name_and_place = html2text.html2text(nnom_div.get())
             event_name_and_place = event_name_and_place.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
             event_name_and_place = event_name_and_place.replace("\n", " ")
             event_name_and_place = event_name_and_place.replace("_", "")
+            event_name_and_place = event_name_and_place.replace("**", "") # Avril 2026 : événement désormais en gras --> on enlève les "**" ajoutés
+            event_name_and_place = event_name_and_place.replace("\\-", "-") # Avril 2026 : bizarrement, "-" devient "\-" ! --> je restaure la chaîne
+
             event_name_and_place = event_name_and_place.strip()
+            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_name_and_place='{event_name_and_place}'")
+
             # contient : Naissance Baptême Profession Domicile Diplôme Décès Inhumation "Contrat de mariage (avec xxx)" "Mariage (avec xxx)"
             # suivi éventuellement du lieu
             event_name = re.sub(" *- .*", "", event_name_and_place)  # suppression " - .*" final
             event_place = None
             if " - " in event_name_and_place:
+                self.nb_event_places += 1
                 event_place = re.sub(".* *- *", "", event_name_and_place)
             logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : '{event_name_and_place}' --> event_name='{event_name}' event_place='{event_place}'")
 
-            lines = event.xpath("td[2]/div[@class='nnotes']").get()
-            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
+            # Avril 2026 : "td[2]/div[@class='nnotes']" devient "td[2]/div[@class='nnotes fiche-note-ind']"
+            lines = event.xpath("td[2]//div[contains(@class,'nnotes')]").get() # "//div" pour robustesse profondeur dans l'arbo
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines notes = '{lines}'")
             event_notes = None
             if not lines is None:
+                self.nb_event_notes += 1
                 #event_notes = html2text.html2text(event_notes)
                 event_notes = html2text.html2text(lines).strip()
                 event_notes = re.sub(" *\n", "\n", event_notes) # suppression des espaces ajoutés en fin de lignes
@@ -608,10 +639,13 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     nb_notes_longues += 1
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes = '{event_notes}'")
 
-            lines = event.xpath("td[2]/p").get()
+            # Avril 2026 : "td[2]/p class="ttemoins"" devient "td[2]/div class="ttemoins"
+            lines = event.xpath("td[2]//div[contains(@class,'ttemoins')]").get() # "//div" pour robustesse profondeur dans l'arbo
+            #lines = event.xpath("td[2]//div[@class='ttemoins']").get()
             #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines paragraphe  = '{lines}'")
             event_notes_complementaires = None # infos de type témoins, parrains, ...
-            if not lines is None:
+            if lines:
+                self.nb_event_notes2 += 1
                 #event_notes = html2text.html2text(event_notes)
                 event_notes_complementaires = html2text.html2text(lines).strip()
                 event_notes_complementaires = re.sub(" *\n", "\n", event_notes_complementaires) # suppression des espaces ajoutés en fin de lignes
@@ -620,7 +654,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     nb_notes_longues += 1
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_notes_complementaires = '{event_notes_complementaires}'")
 
-            # Concaténetion event_notes + event_notes_complementaires
+            # Concaténation event_notes + event_notes_complementaires
             event_notes2 = ""
             if not event_notes is None:
                 event_notes2 = event_notes
@@ -634,10 +668,12 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             if not event_notes2 == "":
                 event_notes = event_notes2
 
-            lines = event.xpath("td[2]/span[@class='ssource']").get()
+            # Avril 2026 : "td[2]/span[@class='ssource']" devient "td[2]/div[@class='ssource fiche-note-ind']"
+            lines = event.xpath("td[2]//div[contains(@class,'ssource')]").get() # "//div" pour robustesse profondeur dans l'arbo
             event_sources = None
-            #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
+            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : lines sources = '{lines}'")
             if not lines is None:
+                self.nb_event_sources += 1
                 #event_sources = html2text.html2text(tmp)
                 event_sources = html2text.html2text(lines).strip()
                 # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
@@ -650,6 +686,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             lines = event.xpath("td[2]/span[@class='ddate small-12 show-for-small-only']").get()
             event_date = None
             if not lines is None:
+                self.nb_event_dates += 1
                 event_date = html2text.html2text(lines).strip()
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 event_date = event_date.replace("\n", " ")  # certaines dates ont des retours chariot (avec "julien")
@@ -1162,6 +1199,12 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         self.logger.info(f"- nb_titres_noblesse    = {self.nb_titres_noblesse} (avec {self.nb_notes_titres_noblesse} notes(s))")
         self.logger.info(f"- nb_sous_titres        = {self.nb_sous_titres}")
         self.logger.info(f"- nb_notes_longues      = {self.nb_notes_longues}")
+        self.logger.info(f"- nb_events             = {self.nb_events}")
+        self.logger.info(f"- nb_event_dates        = {self.nb_event_dates}")
+        self.logger.info(f"- nb_event_places       = {self.nb_event_places}")
+        self.logger.info(f"- nb_event_notes        = {self.nb_event_notes}")
+        self.logger.info(f"- nb_event_notes2       = {self.nb_event_notes2}")
+        self.logger.info(f"- nb_event_sources      = {self.nb_event_sources}")
         self.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
         self.logger.info(f"- nb_errors             = {self.nb_errors}")
         self.logger.info(f"- nb_todo               = {self.nb_todo}")

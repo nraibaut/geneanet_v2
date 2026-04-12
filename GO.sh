@@ -127,8 +127,6 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
-   #crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026: 393 personnes, 33 générations
-   #crawl "https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio" # avril 2026: 181 personnes, 13 générations, 4 anomalies; avant : 634 (vs 641 dec 2023) personnes, 24 générations, beaucoup d'anomalies Geneanet
   #go1
   #go2
   #go3
@@ -176,7 +174,7 @@ echo "Statistiques :"
 grep -H 'INFO: - ' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Contrôle présence cas particuliers "
-for key in nb_alias nb_masked_persons nb_consanguinites nb_titres_noblesse nb_sous_titres nb_notes_longues multiple_events_count
+for key in nb_alias nb_masked_persons nb_consanguinites nb_titres_noblesse nb_sous_titres nb_notes_longues nb_events nb_event_dates nb_event_places nb_event_notes nb_event_notes2 nb_event_sources multiple_events_count
 do
   echo "###### $key :"
   grep " - $key "  result/*.log | grep -v "= 0"
@@ -185,6 +183,8 @@ echo "--------------------------------------------------------------------------
 }
 
 go_logs | tee result/synthese.log.txt
+
+cat result/*.log > result/all.log.txt
 
 if [ "$COVERAGE" == "1" ]; then
   echo "Génération rapport coverage"
