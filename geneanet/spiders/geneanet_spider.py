@@ -53,7 +53,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.4" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.5" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -544,8 +544,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[name()='em' and not(@class='sosa')][1]")
-        #info = response.xpath("//div[@id='person-title']/following-sibling::em[not(@class='sosa')][1]") KO avril 2026
-        # avril 2026 :
+        #info = response.xpath("//div[@id='person-title']/following-sibling::em[not(@class='sosa')][1]") # KO avril 2026
+        # Avril 2026 :
         # - l'info est désormais dans un sous-niveau "span",
         # - on peut avoir plusieurs blocs "em"
         # - pour chaque bloc "em" :
@@ -553,7 +553,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         #     - (%Prénoms% %Nom alias (autre orthographe du nom)%)
         #     - (%Prénom alias (variante du prénom)% %NOM%)
         #     - (%Prénoms% %NOM%)
-        #    . sinon :
+        #   . sinon :
         #      - soit alias
         #      - soit liens hypertexte titre(s) de noblesse
         for info in response.xpath("//div[@id='person-title']/following-sibling::span[1]/em") :
@@ -571,22 +571,18 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 for lien_hyper in liste_liens :
                     nb_liens_hyper += 1
                     titre_noblesse = lien_hyper.xpath("text()").get().strip()
-                    note_titre_noblesse = None
-                    #texte = info.xpath("text()").get()
-                    texte = info.get()
-                    texte = texte.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
-                    texte = texte.replace("\n", " ")
-                    texte = texte.strip()
-                    # le texte est de la forme : "<em> <a href="xxxxx">Titre de noblesse</a>(commentaire)</em>'
-                    texte = re.sub(".*</a> *", "", texte) # on enlève tout avant "</a>"
-                    texte = re.sub(" *</em>$", "", texte) # on enlève le "</em>" final
-                    texte = re.sub("^\(", "", texte) # on enlève l'éventuelle parenthèse de début
-                    texte = re.sub("\)$", "", texte) # on enlève l'éventuelle parenthèse de fin
-                    #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_titre_noblesse1      = '{titre_noblesse}'")
-                    #logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : NRa_note_titre_noblesse1 = '{texte}'")
                     self.nb_titres_noblesse += 1
-                    if texte != "":
-                        note_titre_noblesse = texte
+                    note_titre_noblesse = None
+                    # L'html est de la forme : "<em> <a href="xxxxx">Titre de noblesse1</a> (commentaire1), <a href="xxxxx">Titre de noblesse2</a> (commentaire2)</em>'
+                    # Le texte (variable "line") est de la forme : "Titre de noblesse1 (commentaire1), Titre de noblesse2 (commentaire2)'
+                    idx = line.find(titre_noblesse)
+                    if idx != -1:
+                        suite = line[idx + len(titre_noblesse):]  # on coupe après titre_noblesse
+                        suite = re.sub(",.*", "", suite) # on enlève tout à partir de l'éventuelle virgule
+                        match = re.search(r'^ *\((.+?)\)', suite) # on extrait le contenu entre les parenthèses
+                        if match:
+                            note_titre_noblesse = match.group(1)
+                    if note_titre_noblesse :
                         self.nb_notes_titres_noblesse += 1
                         texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
                         liste_titres_noblesse = liste_titres_noblesse + f"{titre_noblesse} ({note_titre_noblesse}) "

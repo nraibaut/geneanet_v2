@@ -2,7 +2,7 @@
 
 export PYTHONPATH=$(pwd):$(pwd)/geneanet  # pourquoi ai-je besoin de ça ???!!!!
 
-COVERAGE=0
+COVERAGE=1
 
 function crawl()
 {
@@ -26,10 +26,13 @@ function crawl()
   done
   rm -f "$LAST_RESULT"
 }
+function go0()
+{
+  crawl "https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard"
+}
 
 function go1()
 {
-  ##crawl "https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard"
   crawl "https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele" # avril 2026: idem: 43 personnes, 9 générations
   crawl "https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri" # avril 2026: idem: 386 (vs 374 dec 2023) personnes, 12 générations
 
@@ -107,6 +110,7 @@ function go_test()
 
 function go()
 {
+  go0
   go1
   go2
   go3
