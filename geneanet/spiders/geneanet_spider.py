@@ -12,7 +12,6 @@ import gedcomw.element
 from gedcomw.element.individual import IndividualElement
 from datetime import datetime
 import shutil # pour copyfile final
-#import time # pour pause
 import re
 import tempfile
 from simple_crawler import SimpleFirefoxCrawler
@@ -53,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.8" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.9" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -398,7 +397,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         elif sexe == "Femme":
             sexe = "F"
         elif sexe == "H":
-            sexe = "M"
+            sexe = "M" # code mort avril 2026
         if sexe not in ("M", "F"):
             nb_errors_indiv += 1
             self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
@@ -443,7 +442,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         if extraire_surnom:
             surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1/em").get()) # on tente d'extraire la partie "em"
             if surnom is None:
-                surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get())
+                surnom = html2text.html2text(response.xpath("//div[@id='person-title']/div/h1").get()) # code mort avril 2026
                 # Exemple : "#  ![H](images/male.png) Jean GINOUX _dit le vieux_"
             surnom = surnom.replace(u"\u00A0", " ")  # avant toute chose !
             surnom = re.sub(".*\.png\) *", "", surnom) # suppression image de début
@@ -724,7 +723,13 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         mariage_place = None
         info_debug_csv = None
         parents_url= {}
-        for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
+        # Avril 2026 : cette forme 1 ("<!-- Parents photo -->") semble ne plus exister
+        # J'assouplis l'expression xpath pour la rendre plus large, au cas où elle (ré)apparaisse sous une variante :
+        #   "//div[@id='parents']//table//tr//td//li" au lieu de
+        #   "//div[@id='parents']/div/div/table/tr/td/ul/li"
+        #for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
+        for parent in response.xpath("//div[@id='parents']//table//tr//td//li") :
+            logger.info(f"CODE_MORT Parents forme 1 ('<!-- Parents photo -->')")
             nb_parents += 1
             url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
             url_parent = response.urljoin(url_parent)
@@ -765,11 +770,14 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
                     lignes = lignes.replace("\n", " ") # sinon le match ne matche pas !!!!
                     lignes = lignes.replace("_", "")  # caractère de formatage introduit par html2text
+                    # logger.info(f"ZZZZZ ligne parent {nb_parents} de {prenom} {nom} = '{lignes}'")
                     info_debug_csv = lignes
                     lignes = lignes.replace("Contrat de mariage", "Marié") # on peut avoir "Contrat de mariage" au lieu de "Marié"
                     lignes = lignes.replace("Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
+                        logger.info(f"CODE_MORT ligne parent {nb_parents} de {prenom} {nom} = '{lignes}'")
+                        # Avril 2026 : code mort, on ne passe plus par ici pour avoir des infos sur les mariages
                         #logger.info( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
                         lignes = re.sub(".*Mariée* *", "", lignes)  # suppression avant "Marié"
                         lignes = re.sub(", *avec$", "", lignes)  # suppression ", avec" final
@@ -796,15 +804,15 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         if nb_parents == 2 :
             key = self.key_union(parents_url[1], parents_url[2])
             if mariage_date:
-                self.mariages_dates[key] = mariage_date
+                self.mariages_dates[key] = mariage_date # code mort avril 2026
             else:
                 mariage_date = ""
             if mariage_place:
-                self.mariages_places[key] = mariage_place
+                self.mariages_places[key] = mariage_place # code mort avril 2026
             else:
                 mariage_place = ""
             if not info_debug_csv:
-                info_debug_csv = ""
+                info_debug_csv = "" # code mort avril 2026
             #mariage_place = mariage_place.encode(encoding="ascii", errors="replace") # robustesse écriture csv
             #info_debug_csv = info_debug_csv.encode(encoding="ascii", errors="replace") # robustesse écriture csv
             ligne = f"{pointer};{prenom};{nom};{true_http_url};§parents;{parents_url[1]};{parents_url[2]};\"{mariage_date}\";\"{mariage_place}\";\"{info_debug_csv}\";\n"
@@ -1041,6 +1049,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         # Pour debug / vérif exports précédents :
         multiple_events_count = person.get_multiple_events_count()
         if multiple_events_count > 0:
+            # Décompte des événements qui ont plus d'une occurrence, pour un type donné
+            # Ex: 2 mariages pour https://gw.geneanet.org/dmdoyen?lang=fr&p=jean&n=mauche&oc=4&type=fiche
+            #     3 quittances et 2 bails pour https://gw.geneanet.org/fapoja?lang=fr&p=pierre+ou+pons&n=trebillon&type=fiche
             self.multiple_events_count += multiple_events_count
             logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : multiple_events_count={multiple_events_count}")
 
