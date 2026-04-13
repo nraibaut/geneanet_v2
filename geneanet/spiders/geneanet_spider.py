@@ -53,7 +53,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.7" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.8" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -375,6 +375,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         pointer = "@I%05d@" % (self.nb_persons)
         self.pointer_of[self.normalize_url(true_http_url)] = pointer # on mémorise pour plus tard (élaboration des familles)
         nb_errors_indiv = 0
+        person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
+        self.gedcomw_parser.get_root_element().add_child_element(person)
 
         #generation = 1
         #prenom = response.xpath("//div[@id='person-title']//div//h1//a//text()")[0].extract()
@@ -384,6 +386,24 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         prenom = response.xpath("//div[@id='person-title']/div/h1/a[1]/text()").get()
         nom = response.xpath("//div[@id='person-title']/div/h1/a[2]/text()").get()
         extraire_surnom = False # cas avec surnom en tête, et liens nom/prénom plus loin
+        notes_personne = "" # surnom, alias, variantes nom ("sous-titres")
+
+        sexe = response.xpath(
+            "//div[@id='person-title']/div/h1/img/@title").get()  # "H/F" en français, "M/F" en anglais
+        if sexe == None:
+            sexe = response.xpath(
+                "//div[@id='person-title']/div/h1/img/@alt").get()  # "Homme" ou "Femme" en français # nouveau format mars 2026
+        if sexe == "Homme":
+            sexe = "M"
+        elif sexe == "Femme":
+            sexe = "F"
+        elif sexe == "H":
+            sexe = "M"
+        if sexe not in ("M", "F"):
+            nb_errors_indiv += 1
+            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
+        self.sex_of[self.normalize_url(true_http_url)] = [sexe]
+
         if prenom is None:
             prenom = response.xpath("//div[@id='person-title']/../*/a[contains(@href,'&m=P&')]/text()").get() # lien hypertexte contenant "&m=P&" (recherche par prénom)
             extraire_surnom = True
@@ -429,33 +449,19 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             surnom = re.sub(".*\.png\) *", "", surnom) # suppression image de début
             surnom = re.sub("_", "", surnom) # suppression caractères de formatage
             surnom = surnom.strip()
-
-            texte_infos = texte_infos + "- surnom: " + surnom + '\n'
+            #texte_infos = texte_infos + "- surnom: " + surnom + '\n'
+            feminin=""
+            if sexe == "F":
+                feminin = "e"
+            notes_personne = f'{notes_personne}Surnommé{feminin} "{surnom}"\n'
             logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : surnom='{surnom}'")
-
-
-        sexe = response.xpath("//div[@id='person-title']/div/h1/img/@title").get() # "H/F" en français, "M/F" en anglais
-        if sexe == None:
-            sexe = response.xpath("//div[@id='person-title']/div/h1/img/@alt").get() # "Homme" ou "Femme" en français # nouveau format mars 2026
-        if sexe == "Homme" :
-           sexe = "M"
-        elif sexe == "Femme":
-           sexe = "F"
-        elif sexe == "H" :
-            sexe = "M"
-        if sexe not in ("M", "F") :
-            nb_errors_indiv += 1
-            self.logger.error(f"Sex ({sexe}) is not 'M' or 'F' for {prenom} {nom} ({true_http_url}) !")
-        self.sex_of[self.normalize_url(true_http_url)] = [sexe]
 
         logger.info(f"Generation {generation}, sosa {sosa}, id {pointer} : '{prenom}' '{nom}' ({sexe}) ({true_http_url})")
         self.true_url_of[pointer] = true_http_url # pour retrouver les infos sur les mariages
 
         source_personne = None
-        person = IndividualElement(0, pointer, gedcomw.tags.GEDCOM_TAG_INDIVIDUAL, "", '\n', multi_line=False)
         person.set_name(prenom,nom)
         person.set_sex(sexe)
-        self.gedcomw_parser.get_root_element().add_child_element(person)
 
         profession = None
         #for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li/text()"):
@@ -548,9 +554,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             if line[0] == "(" :
                 sous_titre = line
                 liste_sous_titres = liste_sous_titres + sous_titre + " "
+                notes_personne = notes_personne + sous_titre + "\n"
                 self.nb_sous_titres += 1
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
-                person.add_note(self.gedcomw_parser.get_root_element(), sous_titre)
             elif len(liste_liens.getall()) > 0 :
                 nb_liens_hyper = 0
                 for lien_hyper in liste_liens :
@@ -569,18 +575,18 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                             note_titre_noblesse = match.group(1)
                     if note_titre_noblesse :
                         self.nb_notes_titres_noblesse += 1
-                        texte_infos = texte_infos + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
+                        notes_personne = notes_personne + f"- titre: {titre_noblesse} ({note_titre_noblesse})\n"
                         liste_titres_noblesse = liste_titres_noblesse + f"{titre_noblesse} ({note_titre_noblesse}) "
                     else:
-                        texte_infos = texte_infos + f"- titre: {titre_noblesse}\n"
+                        notes_personne = notes_personne + f"- titre: {titre_noblesse}\n"
                         liste_titres_noblesse = liste_titres_noblesse + f"{titre_noblesse} "
                     person.add_title(self.gedcomw_parser.get_root_element(), titre_noblesse, note_titre_noblesse)
                     logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : titre_noblesse {nb_liens_hyper} = '{titre_noblesse}' ({note_titre_noblesse})")
             else :
                 alias = line
                 self.nb_alias += 1
+                notes_personne = f'{notes_personne}Alias "{alias}"\n'
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : alias='{alias}'")
-                person.add_note(self.gedcomw_parser.get_root_element(), "Alias : " + alias)
 
         nb_notes_longues = 0
         nb_evenements=0
@@ -945,7 +951,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     nb_notes_longues += 1
                 logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note {nb_notes} (type '{note_type}') : note_text='{note_text}'")
                 if note_type == "Notes individuelles":
-                    person.add_note(self.gedcomw_parser.get_root_element(), note_text)
+                    #person.add_note(self.gedcomw_parser.get_root_element(), note_text)
+                    notes_personne = f'{notes_personne}---\n{note_text}\n' # On concatène toutes les notes en 1 seule sur l'individu
                 elif (note_type == "Naissance") or (note_type == "Baptême") or (note_type == "Décès") or (note_type == "Inhumation") :
                     person.set_event(name=note_type, notes=note_text)
                 elif GeneanetSpider.union_avec_regex.match(note_type): # cas "Union avec xxxx"
@@ -1039,6 +1046,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
         if source_personne is not None:
             texte_infos = texte_infos + "Sources : " + source_personne
+
+        if len(notes_personne) > 0:
+            person.add_note(self.gedcomw_parser.get_root_element(), notes_personne)
 
         # Détection encart "Anomalies détectées"
         #if response.xpath("//gw-individual-anomalies"):
