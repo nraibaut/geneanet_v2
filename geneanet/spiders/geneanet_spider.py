@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.9" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.10" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -705,9 +705,11 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 # Evénement de la forme "Mariage (avec <conjoint>) - <lieu>"
                 #                    ou "Contrat de mariage (avec <conjoint>) - <lieu>"
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : événement de type mariage / contrat de mariage '{event_name}' : date='{event_date}', place='{event_place}', notes='{event_notes}', source='{event_sources}'")
-                if event_notes is None and event_sources is None :
-                    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : redondance probable événement de type mariage / contrat de mariage SANS note ou source '{event_name}' : date='{event_date}', place='{event_place}'")
-                    event_notes = f"@todo événement de type mariage probablement redondant pour {prenom} {nom}"
+                # Avril 2026 : je supprime le warning "@todo événement de type mariage probablement redondant..."
+                # car, même s'il n'y a aucune note ou source, ce n'est pas redondant pour ceux qui ont eu plusieurs épouses/époux...
+                #if event_notes is None and event_sources is None :
+                #    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : redondance probable événement de type mariage / contrat de mariage SANS note ou source '{event_name}' : date='{event_date}', place='{event_place}'")
+                #    event_notes = f"@todo événement de type mariage probablement redondant pour {prenom} {nom}"
 
             #    # on ignore les infos (normalement, on les a via la fiche enfant)
             #    self.nb_todo += 1
