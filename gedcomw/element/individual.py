@@ -82,6 +82,7 @@ class IndividualElement(Element):
     # Absent doc, mais présent export Ancestris et géré par Geneanet :
     # TITL  Titre
     # GRAD  Diplôme
+    # DIV   Divorce : attention : sur entité Famille et non pas sur individu
     #
     #====================================================================
 
@@ -91,11 +92,13 @@ class IndividualElement(Element):
         "Diplôme" : "GRAD",
         "Domicile" : "RESI",
         "Domicilie" : "RESI",
+        #"Divorce" : "DIV",  # Divorce géré comme événement générique, sur individu, car je ne sais pas simplement le rattacher à une famille
         "Décès" : "DEAT",
         "Inhumation" : "BURI",
         "Naissance" : "BIRT",
         #"Personne" : "Personne???", # Uniquement source sur la personne (géré au niveau du parsing individu)
         "Profession" : "OCCU",
+        "Recensement": "CENS",
         "Retraite" : "RETI",
         "Résidence" : "RESI",
         "Testament" : "WILL",
@@ -112,6 +115,7 @@ class IndividualElement(Element):
                         "Contrat de mariage", # cas "Contrat de mariage (avec xxx)"
                         "Non mariés",         # cas "Non mariés (avec xxx)
                         "Service militaire",
+                        "Divorce"
                         ]
     event_with_value = [ "OCCU" ] # événements pour lesquels il faut remonter la première ligne de la note en valeur du tag
     event_with_TYPE = [ "GRAD", "RESI" ] # événements pour lesquels il faut remonter la première ligne de la note en élément de type "TYPE"
