@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.11" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.12" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -627,7 +627,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             event_place = None
             if " - " in event_name_and_place:
                 self.nb_event_places += 1
-                event_place = re.sub(".* *- *", "", event_name_and_place)
+                event_place = re.sub("^[^-]* -  *", "", event_name_and_place)
             logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : '{event_name_and_place}' --> event_name='{event_name}' event_place='{event_place}'")
 
             # Avril 2026 : "td[2]/div[@class='nnotes']" devient "td[2]/div[@class='nnotes fiche-note-ind']"
