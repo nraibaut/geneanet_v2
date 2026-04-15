@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.13" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.14" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -1204,8 +1204,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             logger.info(f"Famille '{pointer_family}' : père='{true_url_pere}', mère='{true_url_mere}', {nb_children} enfant(s)")
             mariage_note = None
             if nb_children > 1 :
-                mariage_note = f"{nb_children} enfants dans l'arbre généalogique"
-                logger.info(f"{nb_children} enfants dans la famille '{pointer_family}' (père='{true_url_pere}', mère='{true_url_mere}')")
+                mariage_note = f"Note : implexe : {nb_children} enfants issus de cette famille dans l'arbre généalogique"
+                logger.info(f"implexe : {nb_children} enfants dans la famille '{pointer_family}' (père='{true_url_pere}', mère='{true_url_mere}')")
 
             key = self.key_union(true_url_pere, true_url_mere)
             mariage_date = None
@@ -1224,7 +1224,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 if mariage_note == None:
                     mariage_note = mariage_note_union
                 else :
-                    mariage_note = f"{mariage_note}\n{mariage_note_union}" # code mort avril 2026
+                    mariage_note = f"{mariage_note}\n{mariage_note_union}" # code mort avril 2026 : jamais de mariages_note_union en même temps que plusieurs enfants dans l'arbre (implexes)
             except:
                 pass
             try:
