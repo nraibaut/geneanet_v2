@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.12" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.13" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -875,7 +875,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     url_epouse = true_http_url
                 key = self.key_union(url_mari, url_epouse)
                 unions_keys[nb_unions] = key # on mémorise la clé de l'union n, pour pouvoir si besoin l'associer plus tard aux sources de type "Famille 1", "Famille 2",... ou "Union 1", "Union 2", ...
-                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} : '{key}'")
+                logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} : union_key='{key}'")
                 if mariage_date:
                     self.mariages_dates[key] = mariage_date
                 else:
@@ -970,9 +970,46 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                         key = unions_keys[1]
                         self.mariages_note_union[key] = note_text
                     else: # ambiguïté si plusieurs unions !
-                        self.nb_todo += 1
-                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' à analyser : '{note_text}'")
-                        texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
+                        conjoint = re.sub(".* avec ", "", note_type)
+                        logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' recherche URL conjoint '{conjoint}'")
+                        union_key = None
+                        for url_conjoint in response.xpath(f"//a[text()='{conjoint}']/@href"):
+                            relative_url = url_conjoint.get()
+                            full_url = response.urljoin(relative_url)
+                            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' : url_conjoint méthode 1 '{conjoint}' = {full_url}")
+                            key = self.key_union(true_http_url, full_url)
+                            #if key in unions_keys:
+                            for i in unions_keys:
+                                if unions_keys[i] == key:
+                                    union_key = key # on a trouvé une key union qui matche !
+                                    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' : union avec '{conjoint}' trouvée (méthode 1) (#{i} : key={union_key})")
+                                    break
+                        if not union_key:
+                            # On n'a pas trouvé de lien hypertexte avec le nom conjoint.
+                            # Il s'agit 3 cas (avril 2026) :
+                            # - https://gw.geneanet.org/boutch1?lang=fr&p=lucrezia&n=de+laimo&type=fiche : "Maruzzo Ferrando Spiteri" vs "Maruzzo Ferrando Ferdinando Spiteri" (lien "Maruzzo Ferrando <em>Ferdinando</em> Spiteri")
+                            # - https://gw.geneanet.org/boutch1?lang=fr&p=vincenza&n=xerri&type=fiche : "Giovanni Francesco Castelletti" vs "Giovanni Francesco Gio Francesco Castelletti" (lien "Giovanni Francesco <em>Gio Francesco</em> Castelletti")
+                            # - https://gw.geneanet.org/bigoudi2018?lang=fr&p=catherine&n=roux&oc=1&type=fiche : "Jean GINOUX" vs "Jean dit le vieux GINOUX" (lien "Jean <em>dit le vieux</em> GINOUX")
+                            # On cherche alors les mots dans les unions_keys (méthode plus fiable et robuste que la recherche des mots dans les URL qui amène des liens supplémentaires).
+                            for i in unions_keys:
+                                key_ok = True
+                                key = unions_keys[i]
+                                for mot in conjoint.split():
+                                    if not mot.lower() in key.lower() :
+                                        key_ok = False
+                                        break
+                                if key_ok:
+                                    union_key = key
+                                    logger.info( f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' : union avec '{conjoint}' trouvée (méthode 2) (#{i} : key={union_key})")
+                                    break
+                        if union_key:
+                            logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' bien associée avec conjoint '{conjoint}'  ")
+                            self.mariages_note_union[union_key] = note_text
+                        else:
+                            nb_errors_indiv += 1
+                            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : la note '{note_type}' ('{note_text}') n'a pas pu être rattachée avec une union avec le conjoint '{conjoint}'")
+                            self.nb_todo += 1
+                            texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
                 else:
                     nb_errors_indiv += 1
                     self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : ERREUR : note_type('{note_type}') NON GERE. note_text='{note_text}'")
