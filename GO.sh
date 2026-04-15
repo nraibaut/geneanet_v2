@@ -127,9 +127,6 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
-    #crawl "https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette" # avril 2026: 26 personnes, 7 générations (avant: 13(vs 11 dec 2023) personnes, 5 générations)
-    #crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025: 19 personnes, 6 générations
-    #crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026: 393 personnes, 33 générations
   #go1
   #go2
   #go3
@@ -178,6 +175,9 @@ grep -H 'CODE_MORT' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Statistiques :"
 grep -H 'INFO: - ' result/*.log
+echo "-------------------------------------------------------------------------------------------------------------------"
+echo "Synthèses :"
+grep -H 'Synthèse en 1 ligne :' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
 echo "Contrôle présence cas particuliers "
 for key in nb_alias nb_masked_persons nb_consanguinites nb_titres_noblesse nb_sous_titres nb_notes_longues nb_events nb_event_dates nb_event_places nb_event_notes nb_event_notes2 nb_event_sources multiple_events_count
