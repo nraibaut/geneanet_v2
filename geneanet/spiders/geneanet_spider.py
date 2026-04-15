@@ -731,7 +731,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         #   "//div[@id='parents']/div/div/table/tr/td/ul/li"
         #for parent in response.xpath("//div[@id='parents']/div/div/table/tr/td/ul/li") :
         for parent in response.xpath("//div[@id='parents']//table//tr//td//li") :
-            logger.info(f"CODE_MORT Parents forme 1 ('<!-- Parents photo -->')")
+            logger.info(f"CODE_MORT (avril 2026) Parents forme 1 ('<!-- Parents photo -->')")
             nb_parents += 1
             url_parent = parent.xpath("a[count(img)=0]/@href").get() # ne pas prendre l'éventuel premier lien hypertexte (sosa) qui contient la balise img
             url_parent = response.urljoin(url_parent)
@@ -778,7 +778,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                     lignes = lignes.replace("Relation", "Marié") # peut-on aussi avoir "Relation" ici ? Dans le doute...
                     info_mariage = GeneanetSpider.ligne_mariage.match(lignes)
                     if info_mariage:
-                        logger.info(f"CODE_MORT ligne parent {nb_parents} de {prenom} {nom} = '{lignes}'")
+                        logger.info(f"CODE_MORT (avril 2026) ligne parent {nb_parents} de {prenom} {nom} = '{lignes}'")
                         # Avril 2026 : code mort, on ne passe plus par ici pour avoir des infos sur les mariages
                         #logger.info( f"Match infos mariage sur parent {nb_parents} (forme 2) de {prenom} {nom} = '{lignes}'")
                         lignes = re.sub(".*Mariée* *", "", lignes)  # suppression avant "Marié"
@@ -864,7 +864,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 if mariage_date == "":
                     mariage_date = None
                 if mariage_place == "":
-                    mariage_place = None
+                    mariage_place = None # code mort avril 2026
 
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : union {nb_unions} = debut='{debut}' nom_conjoint='{nom_conjoint}' url_conjoint='{url_conjoint}' ")
                 if sexe == "M":
@@ -1136,9 +1136,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         if profession == None:
             profession = ""
         if mariage_date == None:
-            mariage_date = ""
+            mariage_date = "" # code mort avril 2026
         if mariage_place == None:
-            mariage_place = ""
+            mariage_place = "" # code mort avril 2026
 
         ligne = f"{generation};{sosa};{pointer};{prenom};{nom};{sexe};{true_http_url};{nb_infos};{nb_evenements};{nb_sources};{nb_parents};{presence_parents};{mariage_date};\"{mariage_place}\";\"{profession}\";\"{liste_sous_titres}\";\"{liste_titres_noblesse}\";{nb_notes};{nb_notes_longues};\"{texte_infos}\";{nb_errors_indiv};\n"
         self.csv.write(ligne)
@@ -1161,7 +1161,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 #print(f"child {child_url} : parent {parent_url}", flush=True)
                 try:
                     sexe = self.sex_of[parent_url][0]
-                except KeyError:
+                except KeyError: # code mort avril 2026
                     # robustesse si on n'a pas parcouru toutes les pages (cas blocage robot)
                     sexe = "?"
                     pass
@@ -1224,7 +1224,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 if mariage_note == None:
                     mariage_note = mariage_note_union
                 else :
-                    mariage_note = f"{mariage_note}\n{mariage_note_union}"
+                    mariage_note = f"{mariage_note}\n{mariage_note_union}" # code mort avril 2026
             except:
                 pass
             try:
@@ -1239,7 +1239,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
         # câblage de la méthode spider_closed
-        spider = super(GeneanetSpider, cls).from_crawler(crawler, *args, **kwargs)
+        spider = super(GeneanetSpider, cls).from_crawler(crawler, *args, **kwargs) # code mort avril 2026
         crawler.signals.connect(spider.spider_closed, signal=signals.spider_closed)
         return spider
 
