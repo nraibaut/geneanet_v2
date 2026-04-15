@@ -33,11 +33,11 @@ function go0()
 
 function go1()
 {
-  crawl "https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele" # avril 2026: idem: 43 personnes, 9 générations
-  crawl "https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri" # avril 2026: idem: 386 (vs 374 dec 2023) personnes, 12 générations
+  crawl "https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele" ## avril 2026: idem: 43 personnes, 9 générations (importé dec 2023 : 43 personnes)
+  crawl "https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri" ## avril 2026: idem: 386 (vs 374 dec 2023) personnes, 12 générations (importé avril 2025 : 386 personnes)
 
   crawl "https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna" # avril 2026: idem: 35 personnes, 7 générations
-  crawl "https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie" # avril 2026: idem: 27 personnes, 8 générations
+  crawl "https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie" ## avril 2026: idem: 27 personnes, 8 générations (importé avril 2025 : 27 personnes)
 
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=nicolas&oc=1&p=etienne" # avril 2026: idem: 513 (vs 541 dec 2023) personnes, 39 générations
 }
@@ -46,7 +46,7 @@ function go1()
 function go2()
 {
   crawl "https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette" # avril 2026: 26 personnes, 7 générations (avant: 13(vs 11 dec 2023) personnes, 5 générations)
-  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne" # avril 2026: idem: 7 personnes, 3 générations
+  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne" ## avril 2026: idem: 7 personnes, 3 générations (importé manuel février 2026 : complète danielr13 et dmdoyen)
   crawl "https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel" # avril 2026: idem: 3 personnes, 2 générations
 }
 
@@ -72,8 +72,8 @@ function go5()
 {
 ###  crawl "https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=maria+joanna&n=pieters" # test KO
 ###  crawl "https://gw.geneanet.org/jvo2506?lang=fr&iz=12&p=laurent&n=van+brussel" # test KO
-  crawl "https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus" # avril 2026: 61 personnes, 9 générations (avant: 55 personnes, 9 générations)
-  crawl "https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana" # avril 2026: idem: 51 personnes, 7 générations
+  crawl "https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus" ## avril 2026: 61 personnes, 9 générations (avant: 55 personnes, 9 générations) (importé avril 2025 : 55 personnes)
+  crawl "https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana" ## avril 2026: idem: 51 personnes, 7 générations (importé avril 2025 : 51 personnes)
 }
 function go6()
 {
@@ -81,7 +81,7 @@ function go6()
 
   # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026: 19 personnes, 5 générations
-  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026: 19 personnes, 5 générations
+  crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026: 19 personnes, 5 générations. Semble copié sur dmdoyen et moins détaillé, mais quelques écarts à vérifier
   
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026: 27 personnes, 11 générations
   crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche" # 39 personnes, 7 générations
@@ -127,6 +127,9 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
+    #crawl "https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette" # avril 2026: 26 personnes, 7 générations (avant: 13(vs 11 dec 2023) personnes, 5 générations)
+    #crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025: 19 personnes, 6 générations
+    #crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026: 393 personnes, 33 générations
   #go1
   #go2
   #go3

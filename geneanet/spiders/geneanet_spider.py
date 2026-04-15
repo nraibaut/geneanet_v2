@@ -77,6 +77,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
     max_generations = 0
     nb_errors = 0
     nb_todo = 0
+    min_year = 9999
+    max_year = 0
     parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
     pointer_of = {} # dictionnaire des pointeurs (id) de chaque individu (index = <true_url>)
     sex_of = {} # dictionnaire des sexes des parents de chaque individu (index = <true_url>)
@@ -1133,6 +1135,12 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         person.add_source( self.gedcomw_parser.get_root_element(), true_http_url, texte_infos)
         self.nb_notes_longues += nb_notes_longues
 
+        for year in { person.get_birth_year(), person.get_death_year() }:
+            if year != -1:
+                if year < self.min_year:
+                    self.min_year = year
+                if year > self.max_year:
+                    self.max_year = year
         if profession == None:
             profession = ""
         if mariage_date == None:
@@ -1250,6 +1258,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
 
         self.logger.info(f"Spider '{self.name}' closed :", )
         self.logger.info(f"- nb_persons            = {self.nb_persons}")
+        self.logger.info(f"- dates                 = {self.min_year}-{self.max_year}")
         self.logger.info(f"- nb_alias              = {self.nb_alias}")
         self.logger.info(f"- nb_masked_persons     = {self.nb_masked_persons}")
         self.logger.info(f"- nb_families           = {self.nb_families}")
