@@ -52,9 +52,10 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.16" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.17" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
+    start_url = ""
     result_dir = "result"
     result_name = "tbd.tmp" # sera connu plus tard
     nb_persons = 0
@@ -303,6 +304,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
     def start(self, start_url):
 
         start_url = start_url.replace("&type=tree", "") # robustesse aux oublis
+        self.start_url = start_url.replace("&type=fiche", "") # plus joli dans la synthèse
         self.result_name = self.url_to_result_name(start_url)
 
         logger.info(f"Starting parsing : start_url = {start_url}")
@@ -1286,15 +1288,15 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         self.logger.info(f"- nb_scanned_pages      = {self.nb_scanned_pages}")
         self.logger.info(f"- nb_cached_pages       = {self.nb_cached_pages}")
         option=""
-        if self.nb_consanguinites > 0:
-            option = f"{option}, {self.nb_consanguinites} consanguinité{'s' if self.nb_consanguinites > 1 else ''}"
         if self.nb_titres_noblesse > 0:
             option = f"{option}, {self.nb_titres_noblesse} titre{'s' if self.nb_titres_noblesse > 1 else ''} de noblesse"
+        if self.nb_consanguinites > 0:
+            option = f"{option}, {self.nb_consanguinites} consanguinité{'s' if self.nb_consanguinites > 1 else ''}"
         if self.nb_errors > 0:
             option = f"{option}, {self.nb_errors} erreur{'s' if self.nb_errors > 1 else ''}"
         if self.nb_todo > 0:
             option = f"{option}, {self.nb_todo} todo"
-        self.logger.info(f"Synthèse en 1 ligne : {self.nb_persons} personnes, {self.max_generations} générations, {self.min_year}-{self.max_year}{option}")
+        self.logger.info(f"Synthèse en 1 ligne : {self.start_url:<85}: {self.nb_persons:>3} personnes, {self.max_generations:>2} générations, {self.min_year:>4}-{self.max_year:>4}{option}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
         self.csv.write(f"# {self.nb_errors} errors, {self.nb_todo} todo\n")
