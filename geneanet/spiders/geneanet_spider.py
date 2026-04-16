@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.15" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.16" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     result_dir = "result"
@@ -533,6 +533,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         # Mais il ne faut pas prendre @class='sosa' (cas avec ref sosa)
         liste_sous_titres = ""
         liste_titres_noblesse = ""
+        sous_titre_redondant = f"({prenom} {nom})"
 
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[1][name()='em' and not(@class='sosa')]")
         #info = response.xpath("//div[@id='person-title']/following-sibling::*[name()='em' and not(@class='sosa')][1]")
@@ -554,10 +555,15 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             liste_liens = info.xpath("a")
             if line[0] == "(" :
                 sous_titre = line
-                liste_sous_titres = liste_sous_titres + sous_titre + " "
-                notes_personne = notes_personne + sous_titre + "\n"
-                self.nb_sous_titres += 1
-                logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
+                if sous_titre == sous_titre_redondant:
+                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous-titre redondant : '{sous_titre}'")
+                elif sous_titre.lower() == sous_titre_redondant.lower():
+                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous-titre redondant : '{sous_titre}' (minuscules)")
+                else:
+                    liste_sous_titres = liste_sous_titres + sous_titre + " "
+                    notes_personne = notes_personne + sous_titre + "\n"
+                    self.nb_sous_titres += 1
+                    logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : sous_titre='{sous_titre}'")
             elif len(liste_liens.getall()) > 0 :
                 nb_liens_hyper = 0
                 for lien_hyper in liste_liens :
