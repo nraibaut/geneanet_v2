@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.17" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.18" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     start_url = ""
@@ -214,22 +214,43 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         :param texte:
         :return:
         """
-        result = re.sub(r'\[([^\]]+)\]\(\1\)', r'\1', texte)
-        return result
+        result = re.sub(r'\[([^\]]+)\]\(\1\)', r'\1', texte) ## ok
 
-    def post_trt_general(self, result):
-
-        result = re.sub(" *\n", "\n", result)  # suppression des espaces inutiles en fin de lignes
-
-        result = re.sub("^[\n ]*", "", result )  # Espaces / retours chariot en trop au début
-        result = re.sub("[\n ]*$", "", result )  # Espaces / retours chariot en trop à la fin
-
-        result = re.sub("&lt;br&gt;", "\n", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
-        result = re.sub("<br>", "\n", result ) # non observé, mais au cas où...
-        result = re.sub("<a>", "**", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
-        result = re.sub("</a>", "**", result )  # cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        # On a aussi 1 cas avec [http://...](https://...) !!! (le lien affiché http devient https !)
+        # ex: https://gw.geneanet.org/dmdoyen?lang=fr&p=jeanne&n=trebillon&type=fiche
+        result = re.sub(r'\[http:([^\]]+)\]\(https:\1\)', r'https:\1', result) ## ok
 
         return result
+
+    def robust_html2text(self, texte):
+
+        # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
+        # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
+        texte = texte.replace(u"\u00A0", " ")  ## avant toute chose !
+
+        # Note substitutions : en commentaires :
+        # - "##" = substitution vérifiée ok (avril 2026)
+        # - "#-" = substitution non constatée, mais conservée pour robustese
+
+        texte = texte.replace("&#38;lt;br&#38;gt;", "<br>")  #- cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace("&#60;a&#62;", "<a>")  #- cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace("&#60;/a&#62;", "</a>")  #- cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace( "&amp;lt;br&amp;gt;", "<br>") ## cas https://gw.geneanet.org/gaetanv1?lang=fr&p=pierre+joseph&n=gonzales&type=fiche
+
+        texte = html2text.html2text(texte, bodywidth=120).strip()
+        texte = self.replace_markdown_url(texte)
+
+        texte = texte.replace("&lt;br&gt;", "\n")  #- cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace("<br>", "\n") #- non observé, mais au cas où...
+        texte = texte.replace("<a>", "**")  ## cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace("</a>", "**")  ## cas https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+        texte = texte.replace("\\-","-")  ## Avril 2026 : bizarrement, html2text.html2text remplace "-" en début de ligne par "\-" ! --> je restaure la chaîne
+        texte = re.sub(" +\n", "\n", texte)  ## suppression des espaces inutiles en fin de lignes
+
+        texte = re.sub("^[\n ]+", "", texte )  #- Espaces / retours chariot en trop au début
+        texte = re.sub("[\n ]+$", "", texte )  #- Espaces / retours chariot en trop à la fin
+
+        return texte
 
     def post_trt_notes(self, texte):
         """
@@ -239,17 +260,15 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         :return:
         """
         result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
-        result = result.replace(u"\u00A0", " ")  # avant toute chose !
-        result = self.replace_markdown_url(result)
+        logger.info(f"post_trt_notes : avant : '{texte}'")
 
+        # ex https://gw.geneanet.org/boutch1?lang=fr&p=giovanni+maria&n=soltana&oc=1&type=fiche
         # Lignes "\-- GEDCOM (INDI) -- 1 SUBM @S6000000001808673965@" :
-        result = re.sub("([^\n]* GEDCOM .INDI. [^\n]*)\n", "", result )
+        result = re.sub("([^\n]* GEDCOM .INDI. [^\n]*)\n", "", result ) ## ok
         # Lignes "  1 SUBM @S2304562@" :
-        result = re.sub("([ 0-9]* SUBM @S[0-9]*@ *)\n", "", result )
+        result = re.sub("([ 0-9]* SUBM @S[0-9]*@ *)\n", "", result ) ## ok
 
-        result = re.sub("\n\\\\", "\n", result)  # suppression des caractères "\" en début de lignes
-
-        result = self.post_trt_general(result)
+        result = re.sub("[\n ]+$", "", result )  ## suppression \n final ajouté pour le matching éventuel de la dernière ligne
 
         return result
 
@@ -261,13 +280,16 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         :return:
         """
         result = texte + "\n" # pour permettre l'éventuel match de la dernière ligne
-        result = result.replace(u"\u00A0", " ")  # avant toute chose !
-        result = self.replace_markdown_url(result)
+        logger.info(f"post_trt_sources : avant : '{texte}'")
 
-        # Lignes "\- - 26 APR 2021 - First Name" :
-        result = re.sub("(\\\\*- - [0-9]+ [A-Z]+ [0-9]+ - [^\n]*)\n", "", result )
-
-        result = self.post_trt_general(result)
+        # Lignes de la forme :
+        # - - 26 APR 2021 - First Name
+        # - - 15 FEB 2022 - First Name
+        # - - 26 APR 2021 - Birth Surname
+        # - - 15 FEB 2022 - Birth Surname
+        # - - 26 APR 2021 - Last Name
+        result = re.sub("(\\\\*- - [0-9]+ [A-Z][A-Z][A-Z] [0-9]+ - [^\n]*ame)\n", "", result ) ## ex. https://gw.geneanet.org/boutch1?lang=fr&p=vittorio&n=spiteri&type=fiche
+        result = re.sub("[\n ]+$", "", result )  ## suppression \n final ajouté pour le matching éventuel de la dernière ligne
 
         return result
 
@@ -471,12 +493,9 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         for info in response.xpath("//div[@id='person-title']/following-sibling::ul[1]/li"):
             nb_infos += 1
             #line = info.get().replace("\n", " ")
-            line = html2text.html2text(info.get()).strip()
+            #line = html2text.html2text(info.get()).strip()
+            line = self.robust_html2text(info.get())
             line = re.sub("^\* *", "", line)
-
-            # u"\u00A0" = Unicode Character 'NO-BREAK SPACE'
-            # Voir https://www.fileformat.info/info/unicode/char/a0/index.htm
-            line = line.replace(u"\u00A0", " ")  # avant toute chose !
             line = re.sub(" * ", " ", line) # suppression espaces multiples
             texte_infos = texte_infos + "- " + line + '\n'
 
@@ -621,12 +640,11 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 texte_infos = texte_infos + f"@todo événement {nb_evenements} NON DECODE pour {prenom} {nom}\n"
                 continue
 
-            event_name_and_place = html2text.html2text(nnom_div.get())
-            event_name_and_place = event_name_and_place.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+            #event_name_and_place = html2text.html2text(nnom_div.get())
+            event_name_and_place = self.robust_html2text(nnom_div.get())
             event_name_and_place = event_name_and_place.replace("\n", " ")
             event_name_and_place = event_name_and_place.replace("_", "")
             event_name_and_place = event_name_and_place.replace("**", "") # Avril 2026 : événement désormais en gras --> on enlève les "**" ajoutés
-            event_name_and_place = event_name_and_place.replace("\\-", "-") # Avril 2026 : bizarrement, "-" devient "\-" ! --> je restaure la chaîne
 
             event_name_and_place = event_name_and_place.strip()
             #logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_name_and_place='{event_name_and_place}'")
@@ -647,8 +665,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             if not lines is None:
                 self.nb_event_notes += 1
                 #event_notes = html2text.html2text(event_notes)
-                event_notes = html2text.html2text(lines).strip()
-                event_notes = re.sub(" *\n", "\n", event_notes) # suppression des espaces ajoutés en fin de lignes
+                #event_notes = html2text.html2text(lines).strip()
+                event_notes = self.robust_html2text(lines)
                 event_notes = self.post_trt_notes(event_notes)
                 if len(event_notes) >= self.lg_min_notes_longues :
                     nb_notes_longues += 1
@@ -662,8 +680,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             if lines:
                 self.nb_event_notes2 += 1
                 #event_notes = html2text.html2text(event_notes)
-                event_notes_complementaires = html2text.html2text(lines).strip()
-                event_notes_complementaires = re.sub(" *\n", "\n", event_notes_complementaires) # suppression des espaces ajoutés en fin de lignes
+                #event_notes_complementaires = html2text.html2text(lines).strip()
+                event_notes_complementaires = self.robust_html2text(lines)
                 event_notes_complementaires = self.post_trt_notes(event_notes_complementaires)
                 if len(event_notes_complementaires) >= self.lg_min_notes_longues :
                     nb_notes_longues += 1
@@ -690,11 +708,11 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             if not lines is None:
                 self.nb_event_sources += 1
                 #event_sources = html2text.html2text(tmp)
-                event_sources = html2text.html2text(lines).strip()
-                # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
+                #event_sources = html2text.html2text(lines).strip()
+                event_sources = self.robust_html2text(lines)
+                # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par " - "
                 if event_name == "Décès" :
-                    event_sources = event_sources.replace( "\\- ", "\n", 1)
-                event_sources = re.sub(" *\n", "\n", event_sources) # suppression des espaces ajoutés en fin de lignes
+                    event_sources = event_sources.replace(" - ", "\n", 1) ## premier tiret = séparateur entre source et note sur la source
                 event_sources = re.sub("^Sources: *", "", event_sources) # texte "Sources: " en début de source
                 logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : event_sources = '{event_sources}'")
 
@@ -702,7 +720,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             event_date = None
             if not lines is None:
                 self.nb_event_dates += 1
-                event_date = html2text.html2text(lines).strip()
+                #event_date = html2text.html2text(lines).strip()
+                event_date = self.robust_html2text(lines)
                 event_date = re.sub(" *: *$", "", event_date) # suppression " :" final
                 event_date = event_date.replace("\n", " ")  # certaines dates ont des retours chariot (avec "julien")
                 event_date = re.sub("  *", " ", event_date) # suppression espaces multiples
@@ -778,8 +797,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 # au profit de la rubrique "Union(s)" ou "Union(s) et enfant(s)", pour la ou les unions de l'individu courant
                 if nb_parents == 1:
                     lignes = parent.extract()
-                    lignes = html2text.html2text(lignes).strip()
-                    lignes = lignes.replace(u"\u00A0", " ")  # avant toute chose : remplacer espace son sécable par espace normal
+                    #lignes = html2text.html2text(lignes).strip()
+                    lignes = self.robust_html2text(lignes)
                     lignes = lignes.replace("\n", " ") # sinon le match ne matche pas !!!!
                     lignes = lignes.replace("_", "")  # caractère de formatage introduit par html2text
                     # logger.info(f"ZZZZZ ligne parent {nb_parents} de {prenom} {nom} = '{lignes}'")
@@ -843,7 +862,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             nb_unions += 1
             #line = source.xpath("text()").get()
             line1 = union.extract()
-            line = html2text.html2text(line1).strip()
+            #line = html2text.html2text(line1).strip()
+            line = self.robust_html2text(line1)
             #line = source.xpath("text()").extract()
             #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
             match_union = self.union_regex.match(line)
@@ -903,8 +923,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 # Par robustesse, je prends tout ce qui a @name='note-wed-*' (pas seulement balise "a" dans balise "p") :
                 for note in response.xpath(f"//*[*/@name='note-wed-{nb_unions}']"):
                     nb_notes += 1
-                    note_text = html2text.html2text(note.get()).strip()
-                    note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+                    #note_text = html2text.html2text(note.get()).strip()
+                    note_text = self.robust_html2text(note.get())
                     if note_text == "":
                         # des cas où le text est dans la balise <p> suivante :
                         note_text = note.xpath("following-sibling::p/text()").get().strip()
@@ -940,7 +960,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             nb_notes += 1
             note_type = note.xpath("text()").get().strip()
             #note_text = note.xpath("following-sibling::p/text()").get() # ne donne que la premère ligne
-            note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
+            #note_text = html2text.html2text(note.xpath("following-sibling::p").get()).strip() # ok, mais des cas vides (notes "individuelles")
+            note_text = self.robust_html2text(note.xpath("following-sibling::p").get()) # ok, mais des cas vides (notes "individuelles")
             if note_text == "":
                 following_text = note.xpath("following-sibling::text()[1]") # des cas où le texte est juste après
                 if following_text :
@@ -950,14 +971,15 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                 #note_text = html2text.html2text(note.xpath("following-sibling::div[@class='fiche-note-ind']").get()).strip() # plantage sur jeu de tests
                 note_indiv = note.xpath("following-sibling::div[@class='fiche-note-ind']").get()
                 if note_indiv:
-                    note_text = html2text.html2text(note_indiv).strip()
+                    #note_text = html2text.html2text(note_indiv).strip()
+                    note_text = self.robust_html2text(note_indiv)
             # Mars 2026 : cas Notes "Notes concernant l'union" :
             # ici, note_type="Union avec xxxx"
             if note_text == "":
                 note_union = note.xpath("following-sibling::div[@class='fiche-note-union']").get()
                 if note_union:
-                    note_text = html2text.html2text(note_union).strip()
-            note_text = re.sub(" *\n", "\n", note_text)  # suppression des espaces ajoutés en fin de lignes
+                    #note_text = html2text.html2text(note_union).strip()
+                    note_text = self.robust_html2text(note_union)
             if note_text == "":
                 # on teste avant ménage post-traitement
                 nb_errors_indiv += 1
@@ -1033,18 +1055,19 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             nb_sources += 1
             #line = source.xpath("text()").get()
             line1 = source.extract()
-            line = html2text.html2text(line1).strip()
+            #line = html2text.html2text( line1).strip()
+            line = self.robust_html2text(line1)
+
             #line = source.xpath("text()").extract()
             #event_name = re.sub(" *: .*", "xxx", line)  # suppression après ":"
             event_name = line.split(":",1)[0]
             event_name = re.sub("^\* *", "", event_name)  # suppression début "* "
             #event_sources = re.sub("[^:]*:  *", "", line)  # suppression avant ":"
             event_sources = line.split(":",1)[1]
-            event_sources = re.sub("^ *", "", event_sources)  # suppression début " "
+            event_sources = re.sub("^[\n ]+", "", event_sources)  # suppression début " " et/ou retour chariot
             # Patch sources de type "Décès" : Geneanet "oublie" le retour chariot, remplacé par "\- "
             if event_name == "Décès":
                 event_sources = event_sources.replace("\\- ", "\n", 1)
-            event_sources = re.sub(" *\n", "\n", event_sources)  # suppression des espaces ajoutés en fin de lignes
             if event_sources == "":
                 # on teste avant ménage post-traitement
                 nb_errors_indiv += 1
