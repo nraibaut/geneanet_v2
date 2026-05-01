@@ -179,15 +179,19 @@ echo "--------------------------------------------------------------------------
 echo "Statistiques :"
 grep -H 'INFO: - ' result/*.log
 echo "-------------------------------------------------------------------------------------------------------------------"
-echo "Synthèses :"
-grep -H 'Synthèse en 1 ligne :' result/*.log | sed -e 's/.*Synthèse en 1 ligne : /# /g' | sort
-echo "-------------------------------------------------------------------------------------------------------------------"
-echo "Contrôle présence cas particuliers "
+echo "Contrôle présence cas particuliers :"
+# S'il en manque, c'est que le format des pages Geneanet a évolué, et que le décodage ne se fait plus correctement...
 for key in nb_alias nb_masked_persons nb_consanguinites nb_titres_noblesse nb_sous_titres nb_notes_longues nb_events nb_event_dates nb_event_places nb_event_notes nb_event_notes2 nb_event_sources multiple_events_count
 do
   echo "###### $key :"
   grep " - $key "  result/*.log | grep -v "= 0"
 done
+echo "-------------------------------------------------------------------------------------------------------------------"
+echo "Synthèses :"
+grep -H 'Synthèse en 1 ligne :' result/*.log | sed -e 's/.*Synthèse en 1 ligne : //g' | sort > synthese.txt
+cat synthese.txt
+sed -e 's/ *: /;/g' -e 's/ *, */;/g' -e 's/générations*//g' -e 's/personnes*//g' synthese.txt > synthese.csv
+ls-al synthese.txt synthese.csv
 echo "-------------------------------------------------------------------------------------------------------------------"
 }
 
@@ -200,30 +204,3 @@ if [ "$COVERAGE" == "1" ]; then
   coverage report -m
   coverage html --include=geneanet/spiders/geneanet_spider.py
 fi
-# Synthèses avril 2026
-# https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel                :   3 personnes,  2 générations, 1563-1649
-# https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette               :  25 personnes,  7 générations, 1520-1733
-# https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise                  :  13 personnes,  6 générations, 1480-1701
-# https://gw.geneanet.org/boutch1?lang=fr&n=revest&oc=0&p=gregorio                     : 181 personnes, 13 générations, 1450-1699, 10 titres de noblesse, 4 erreurs, 4 todo
-# https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette                     :   3 personnes,  2 générations, 1560-1635, 3 erreurs, 3 todo
-# https://gw.geneanet.org/danielr13?lang=fr&n=nicolas&oc=0&p=etienne+henri             : 386 personnes, 12 générations, 1535-1914, 36 consanguinités
-# https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre                       :  27 personnes, 11 générations, 1310-1660
-# https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne                   :  39 personnes,  8 générations, 1496-1789, 1 titre de noblesse, 1 erreur, 1 todo
-# https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine                   :  19 personnes,  5 générations, 1496-1688, 1 titre de noblesse, 1 erreur, 1 todo
-# https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna            :  35 personnes,  7 générations, 1818-1818, 4 erreurs, 4 todo
-# https://gw.geneanet.org/fapoja?lang=fr&n=mauche&oc=0&p=marie+anne                    :  45 personnes,  8 générations, 1521-1761
-# https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance          :  19 personnes,  6 générations, 1675-1856
-# https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone      :  51 personnes, 11 générations, 1240-1601, 1 consanguinité
-# https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone    : 393 personnes, 33 générations,  530-1579, 150 titres de noblesse, 6 consanguinités
-# https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette                 :  11 personnes,  4 générations, 1530-1644
-# https://gw.geneanet.org/jpifieec92?lang=fr&n=nicolas&oc=1&p=etienne                  : 513 personnes, 39 générations,  530-1820, 151 titres de noblesse, 7 consanguinités
-# https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus                :  61 personnes,  9 générations, 1587-1859, 5 erreurs
-# https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard                     :   9 personnes,  4 générations, 1580-1912, 4 titres de noblesse
-# https://gw.geneanet.org/oollierbolvin?lang=fr&n=nicolas&oc=0&p=marguerite            : 649 personnes, 33 générations,  900-1816, 26 consanguinités, 4 erreurs, 4 todo
-# https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph            :  39 personnes,  7 générations, 1550-1782, 1 consanguinité, 1 erreur, 1 todo
-# https://gw.geneanet.org/ozone13?lang=fr&n=ollier&oc=0&p=jeanne+marie                 :  27 personnes,  8 générations, 1594-1846
-# https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne                  :   7 personnes,  3 générations, 1624-1683
-# https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine           :  19 personnes,  5 générations, 1496-1688
-# https://gw.geneanet.org/sh1?lang=fr&n=vermeulen&oc=0&p=anna+juliana                  :  51 personnes,  7 générations, 1625-1851
-# https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise                  :  21 personnes,  6 générations, 1515-1701
-# https://gw.geneanet.org/virgile81?lang=fr&n=schembri&oc=0&p=emmanuele                :  43 personnes,  9 générations, 1640-1877
