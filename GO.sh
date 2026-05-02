@@ -77,7 +77,7 @@ function go5()
 }
 function go6()
 {
-  crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" # dec 2025: 19 personnes, 6 générations
+  crawl "https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance&type=fiche" ## dec 2025: 19 personnes, 6 générations (importé mai 2026:fusion04)
 
   # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026: 19 personnes, 5 générations
@@ -94,6 +94,14 @@ function go6()
   # pour ascendance Gillette JULLIAN : plusieurs sources contradictoires :
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=jullian&oc=0&p=gillette&type=fiche" # fev 2026: 11 personnes, 4 générations
   crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026: 3 personnes, 2 générations
+}
+function go7()
+{
+  crawl "https://gw.geneanet.org/pmriccio?n=mauche&oc=&p=jean&type=fiche" ## mai 2026 : 7 personnes,  3 générations, 1530-1681 (importé mai 2026:fusion05)
+
+  # Pour ascendance Pierre PERRIER :
+  crawl "https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" #- mai 2026 : 37 personnes,  9 générations, 1466-1650, 15 erreurs, 10 todo
+  crawl "https://gw.geneanet.org/brouchev?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" ## mai 2026 : 39 personnes,  9 générations, 1466-1650 (importé mai 2026:fusion06)
 }
 
 function go_test()
@@ -117,6 +125,7 @@ function go()
   go4
   go5
   go6
+  go7
 }
 
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
@@ -191,7 +200,7 @@ echo "Synthèses :"
 grep -H 'Synthèse en 1 ligne :' result/*.log | sed -e 's/.*Synthèse en 1 ligne : //g' | sort > synthese.txt
 cat synthese.txt
 sed -e 's/ *: /;/g' -e 's/ *, */;/g' -e 's/générations*//g' -e 's/personnes*//g' synthese.txt > synthese.csv
-ls-al synthese.txt synthese.csv
+ls -al synthese.txt synthese.csv
 echo "-------------------------------------------------------------------------------------------------------------------"
 }
 
