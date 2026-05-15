@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.18" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.19" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     start_url = ""
@@ -1005,7 +1005,18 @@ class GeneanetSpider(SimpleFirefoxCrawler):
                         conjoint = re.sub(".* avec ", "", note_type)
                         logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' recherche URL conjoint '{conjoint}'")
                         union_key = None
-                        for url_conjoint in response.xpath(f"//a[text()='{conjoint}']/@href"):
+                        if "'" not in conjoint: # robustesse aux noms contenant le caractère simple quote
+                            req_conjoint=f"//a[text()='{conjoint}']/@href"
+                        elif '"' not in conjoint: # robustesse aux noms contenant le caractère guillemet
+                            req_conjoint=f'//a[text()="{conjoint}"]/@href'
+                        else:
+                            nb_errors_indiv += 1
+                            self.logger.error(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : problème (guillemets et quotes) pour faire la requête pour chercher le conjoint '{conjoint}'")
+                            self.nb_todo += 1
+                            texte_infos = texte_infos + f"@todo note '{note_type}' de {prenom} {nom} à analyser : '{note_text}'\n"
+                            req_conjoint=f'//a[text()="xxxxxxxx"]/@href' # ne rendra rien...
+                        logger.info(f"Generation {generation}, sosa {sosa} : zzzz requête pour '{conjoint}' = {req_conjoint}")
+                        for url_conjoint in response.xpath(req_conjoint):
                             relative_url = url_conjoint.get()
                             full_url = response.urljoin(relative_url)
                             logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : note '{note_type}' : url_conjoint méthode 1 '{conjoint}' = {full_url}")
@@ -1345,6 +1356,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             handler.close()
             logger.removeHandler(handler)
         shutil.copyfile(tmplogfile.name, final_logname)
+        print(f"Done.", flush=True)
         try:
             os.remove(tmplogfile.name)
         except OSError:
@@ -1357,7 +1369,7 @@ if __name__ == "__main__":
     parser.add_argument("url")  # positionnel
     parser.add_argument("--max_cloudflare_errors", type=int, default=2)
     parser.add_argument("--min_delay", type=float, default=0.6)
-    parser.add_argument("--max_delay", type=float, default=2.1)
+    parser.add_argument("--max_delay", type=float, default=3.1)
     parser.add_argument("--headless", action=argparse.BooleanOptionalAction, default=True)
     args = parser.parse_args()
     crawler = GeneanetSpider( max_cloudflare_errors=args.max_cloudflare_errors, min_delay=args.min_delay, max_delay=args.max_delay, headless=args.headless )

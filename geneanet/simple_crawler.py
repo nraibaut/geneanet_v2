@@ -212,7 +212,7 @@ class SimpleFirefoxCrawler:
         self._hide_automation()
 
         # Délai aléatoire avant la requête
-        delai = round( self._random_human_delay(), 2)
+        delai = round( self._random_human_delay(self.min_delay, self.max_delay), 2)
         logger.info(f"Attente {delai}s ...")
         time.sleep(delai)
 
@@ -250,9 +250,13 @@ class SimpleFirefoxCrawler:
                 html_content = self.read_one_web_page(url)
                 return html_content
             except Exception as e:
-                logger.error(f"Erreur #{1} lors du chargement de {url}: {str(e)[:200]}...", exc_info=True)
+                logger.error(f"Erreur #{i} lors du chargement de {url}: {str(e)[:200]}...", exc_info=True)
                 self.nb_crawling_errors += 1
                 self.nb_retries += 1
+                # Délai supplémentaire avant de ré-essayer
+                delai = round(self._random_human_delay(10, 30), 2)
+                logger.info(f"Attente {delai}s supplémentaires...")
+                time.sleep(delai)
         # Normalement, on n'arrive pas ici
         raise ValueError(f"Erreur chargement '{url}' malgré 3 essais")
         return None
