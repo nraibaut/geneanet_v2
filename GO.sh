@@ -47,7 +47,6 @@ function go2()
 {
   crawl "https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette" # avril 2026: 26 personnes, 7 générations (avant: 13(vs 11 dec 2023) personnes, 5 générations)
   crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=guiot&oc=0&p=anne" ## avril 2026: idem: 7 personnes, 3 générations (importé manuel février 2026 : complète danielr13 et dmdoyen)
-  crawl "https://gw.geneanet.org/bboluix1?lang=fr&n=michel&oc=0&p=andre+michel" # avril 2026: idem: 3 personnes, 2 générations
 }
 
 function go3()
@@ -102,6 +101,17 @@ function go7()
   # Pour ascendance Pierre PERRIER :
   crawl "https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" #- mai 2026 : 37 personnes,  9 générations, 1466-1650, 15 erreurs, 10 todo
   crawl "https://gw.geneanet.org/brouchev?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" ## mai 2026 : 39 personnes,  9 générations, 1466-1650 (importé mai 2026:fusion06)
+  # Pour ascendance Vittorio SPITERI :
+  crawl "https://gw.geneanet.org/hfenech?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 33 personnes,  6 générations, 1610-1635, 4 erreurs, 4 todo
+  crawl "https://gw.geneanet.org/patrice92?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 57 personnes, 12 générations, 1350-1655, 3 erreurs, 3 todo
+  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 95 personnes,  8 générations, 1450-1690, 9 titres de noblesse, 2 erreurs, 2 todo
+  crawl "https://gw.geneanet.org/jc8camil?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 133 personnes, 21 générations, 1070-1655, 26 titres de noblesse, 11 consanguinités
+  crawl "https://gw.geneanet.org/gerardfournier1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 6549 personnes, 104 générations, 1-1655, 547 consanguinités
+  # Pour ascendance Gioannella MERCIECA (épouse Vittorio SPITERI) :
+  crawl "https://gw.geneanet.org/patrice92?lang=fr&n=mercieca&oc=0&p=grazia+gioannella&type=fiche" # mai 2026 : 25 personnes,  7 générations, 1523-1665
+  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=mercieca&oc=0&p=gioannella&type=fiche" # mai 2026 : 25 personnes,  7 générations, 1505-1679, 1 erreur, 1 todo
+  # Pour ascendance Pierre TISSOT et Jeanne MAUCHE
+  crawl "https://gw.geneanet.org/alma13?lang=fr&n=tissot&oc=0&p=joseph&type=fiche" # mai 2026 : 25 personnes,  7 générations, 1495-1727
 }
 
 function go_test()
@@ -128,6 +138,7 @@ function go()
   go7
 }
 
+rm -rf /tmp/rust_mozprofile* 2>/dev/null
 rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
 mkdir -p "result/pages"
 
@@ -207,6 +218,10 @@ echo "--------------------------------------------------------------------------
 go_logs | tee result/synthese.log.txt
 
 cat result/*.log > result/all.log.txt
+
+# Ménage des dossiers temporaires résiduels en cas de pb selenium
+# générés dans /tmp (= C:\Users\Nicolas\AppData\Local\Temp)
+rm -rf /tmp/rust_mozprofile* 2>/dev/null
 
 if [ "$COVERAGE" == "1" ]; then
   echo "Génération rapport coverage"
