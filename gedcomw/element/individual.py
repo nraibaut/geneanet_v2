@@ -223,6 +223,8 @@ class IndividualElement(Element):
                     # notes = lignes_notes[1:]
                     #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
                     notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
+                    if notes == "":
+                        notes = None # aucune note supplémentaire (évite un warning Ancestris "Le tag NOTE n'a pas de valeur")
             if (tag in IndividualElement.event_with_TYPE) or evenement_geneanet :  # cas événements de type GRAD (diplôme) : on remonte la première ligne de la note en élément TYPE
                 if notes is not None:
                     lignes_notes = notes.splitlines()
@@ -230,7 +232,9 @@ class IndividualElement(Element):
                     # notes = lignes_notes[1:]
                     #notes = re.sub("^[^\n]*\n", "", notes)  # suppression première ligne
                     notes = '\n'.join(lignes_notes[1:]) # on ne garde que les lignes suivantes
-            if (tag == "DEAT") and ((event._date is None) or (event._date is "")) and ((event._place is None) or (event._place is "")): # cas des morts sans date ni lieu
+                    if notes == "":
+                        notes = None # aucune note supplémentaire (évite un warning Ancestris "Le tag NOTE n'a pas de valeur")
+            if (tag == "DEAT") and ((event._date is None) or (event._date == "")) and ((event._place is None) or (event._place == "")): # cas des morts sans date ni lieu
                 tag_value = "Y"
             element_event = Element(self.get_level() + 1, '', tag, tag_value, '\n', multi_line=False)
             self.add_child_element(element_event)
@@ -242,13 +246,13 @@ class IndividualElement(Element):
             place = ""
             source = ""
             notes_on_source = ""
-            if event._date is not None and event._date is not "" :
+            if event._date is not None and event._date != "" :
                 date = event._date
                 conv = DateConverter(event._date)
                 gedcom_date = conv.to_gedcom_string()
                 element_date = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_DATE, gedcom_date, '\n', multi_line=False)
                 element_event.add_child_element(element_date)
-            if event._place is not None and event._place is not "":
+            if event._place is not None and event._place != "":
                 place = event._place
                 element_place = Element(self.get_level() + 2, '', gedcomw.tags.GEDCOM_TAG_PLACE, place, '\n', multi_line=False)
                 element_event.add_child_element(element_place)
