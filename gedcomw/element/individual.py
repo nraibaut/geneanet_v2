@@ -270,6 +270,8 @@ class IndividualElement(Element):
                 source = re.sub("^<", "", source)  # suppression "<" au début
                 source = re.sub(">$", "", source)  # suppression ">" à la fin
                 notes_on_source = '\n'.join(lines[1:])
+                if notes_on_source == "":
+                    notes_on_source = None  # Robustesse si aucune note supplémentaire (évite un warning Ancestris "Le tag NOTE n'a pas de valeur")
                 element_event.add_source(root_element, source, notes_on_source)
 
             if csv_log is not None:
