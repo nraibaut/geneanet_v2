@@ -112,6 +112,18 @@ function go7()
   crawl "https://gw.geneanet.org/boutch1?lang=fr&n=mercieca&oc=0&p=gioannella&type=fiche" # mai 2026 : 25 personnes,  7 générations, 1505-1679, 1 erreur, 1 todo
   # Pour ascendance Pierre TISSOT et Jeanne MAUCHE
   crawl "https://gw.geneanet.org/alma13?lang=fr&n=tissot&oc=0&p=joseph&type=fiche" # mai 2026 : 25 personnes,  7 générations, 1495-1727
+  # Pour ascendance François POILDAVOINE et Catherine DE GUERIN
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&p=louis&n=poildavoine&type=fiche" # mai 2026 : 399 personnes, 34 générations,  530-1653, 150 titres de noblesse, 7 consanguinités
+  # Pour ascendance Pierre JEAN et Françoise COSTET
+  crawl "https://gw.geneanet.org/jpeg69?lang=fr&n=jean&oc=0&p=jeanne&type=fiche" # juin 2026 : 17 personnes,  5 générations, 1578-1705
+  # Pour ascendance Jean BONDON et Anne PONSARD
+  crawl "https://gw.geneanet.org/ofromont?lang=fr&n=bondon&oc=1&p=pierre&type=fiche" # juin 2026 : 17 personnes,  7 générations, 1395-1592
+  # Pour ascendance Joseph ARNAUD
+  crawl "https://gw.geneanet.org/221158fc?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 71 personnes,  9 générations, 1535-1841, 6 erreurs, 6 todo
+  crawl "https://gw.geneanet.org/b277?lang=fr&n=arnaud&oc=2&p=joseph&type=fiche" # juin 2026 : 29 personnes,  7 générations, 1563-1813, 3 erreurs, 3 todo
+  crawl "https://gw.geneanet.org/ascmathevetpeyr?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 75 personnes,  9 générations, 1553-1813
+  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=arnaud&oc=4&p=joseph&type=fiche" # juin 2026 : 643 personnes, 33 générations,  900-1841, 26 consanguinités, 6 erreurs, 6 todo
+  crawl "https://gw.geneanet.org/amansmarty?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 73 personnes,  9 générations, 1525-1813
 }
 
 function go_test()
@@ -128,6 +140,7 @@ function go_test()
 
 function go()
 {
+  rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
   go0
   go1
   go2
@@ -139,7 +152,6 @@ function go()
 }
 
 rm -rf /tmp/rust_mozprofile* 2>/dev/null
-rm result/*.log result/*.csv result/*.ged tmp/*.tmp 2>/dev/null
 mkdir -p "result/pages"
 
 if [ "$COVERAGE" == "1" ]; then
