@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.21" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.22" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     start_url = ""
@@ -115,7 +115,8 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         "Présences lors d'événements",
         "Arbre généalogique (aperçu)", # nouveau mars 2026
         "Arbre généalogique (jusqu’aux grands-parents)", # nouveau mars 2026
-        "Frères et sœurs" # nouveau mars 2026
+        "Frères et sœurs", # nouveau mars 2026
+        "Photos et documents d'archives", # nouveau juillet 2026. Rubrique "cachée" dans https://gw.geneanet.org/pmriccio?lang=fr&n=buravand&oc=0&p=francoise&type=fiche et ascendance
     ]
 
     def __init__(self, max_cloudflare_errors=10, min_delay=0.5, max_delay=2.0, headless=False):
