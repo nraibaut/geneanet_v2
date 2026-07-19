@@ -52,7 +52,7 @@ logging.getLogger("FirefoxCrawler").addHandler(file_handler) # je mets aussi dan
 class GeneanetSpider(SimpleFirefoxCrawler):
     name = "geneanet"
     progname = "GeneanetFSpider" # "F" comme Firefox
-    version = "2.1.22" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
+    version = "2.1.23" # v1.0.26 = dernière version avec Scrapy. v2.x = version Selenium/Firefox
     team = "Nicolas Raibaut"
     address = "raibaut.nicolas@gmail.com" # "https://xxxxxx"
     start_url = ""
@@ -78,6 +78,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
     max_generations = 0
     nb_errors = 0
     nb_todo = 0
+    nb_anomalies_geneanet = 0
     min_year = 9999
     max_year = 0
     parents_of = {} # dictionnaire des parents de chaque individu (index = <true_url_enfant>)
@@ -1153,10 +1154,11 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         # maintenant : "GeneanetKeys.add('gntGeneweb.person.anomalies',
         # 		   JSON.parse('[]'.replace(/&lt;/..."
         if not response.xpath("//script[contains(text(),\"GeneanetKeys.add('gntGeneweb.person.anomalies'\") and contains(text(),\"JSON.parse('[]'\")]"):
-            nb_errors_indiv += 1
+            # nb_errors_indiv += 1 # les anomalies geneanet sont comptabilisées séparément et ne sont pas considérées comme des "erreurs"
+            self.nb_anomalies_geneanet += 1
             self.logger.info(f"Generation {generation}, sosa {sosa} : {prenom} {nom} : Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.")
             self.nb_todo += 1
-            texte_infos = texte_infos + f"@todo Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.\n"
+            texte_infos = f"@todo Geneanet signale des anomalies sur {prenom} {nom}. Vérifier la source.\n" + texte_infos
 
         # Liste/contrôle des rubriques
         #for info in response.xpath("//h2[span/@class]/span[2]/text()"): # NON à cause § "Union(s), enfant(s)"... : extraire text() après for
@@ -1319,6 +1321,7 @@ class GeneanetSpider(SimpleFirefoxCrawler):
         self.logger.info(f"- nb_event_sources      = {self.nb_event_sources}")
         self.logger.info(f"- multiple_events_count = {self.multiple_events_count}")
         self.logger.info(f"- nb_errors             = {self.nb_errors}")
+        self.logger.info(f"- nb_anomalies_geneanet = {self.nb_anomalies_geneanet}")
         self.logger.info(f"- nb_todo               = {self.nb_todo}")
         self.logger.info(f"- nb_scanned_pages      = {self.nb_scanned_pages}")
         self.logger.info(f"- nb_cached_pages       = {self.nb_cached_pages}")
@@ -1329,12 +1332,14 @@ class GeneanetSpider(SimpleFirefoxCrawler):
             option = f"{option}, {self.nb_consanguinites} consanguinité{'s' if self.nb_consanguinites > 1 else ''}"
         if self.nb_errors > 0:
             option = f"{option}, {self.nb_errors} erreur{'s' if self.nb_errors > 1 else ''}"
+        if self.nb_anomalies_geneanet > 0:
+            option = f"{option}, {self.nb_anomalies_geneanet} anomalie{'s' if self.nb_anomalies_geneanet > 1 else ''}"
         if self.nb_todo > 0:
             option = f"{option}, {self.nb_todo} todo"
         self.logger.info(f"Synthèse en 1 ligne : {self.start_url:<85}: {self.nb_persons:>3} personnes, {self.max_generations:>2} générations, {self.min_year:>4}-{self.max_year:>4}{option}")
 
         self.csv.write(f"# {self.nb_persons} persons, {self.nb_families} families, {self.max_generations} generations, {self.nb_titres_noblesse} titres de noblesse\n")
-        self.csv.write(f"# {self.nb_errors} errors, {self.nb_todo} todo\n")
+        self.csv.write(f"# {self.nb_errors} errors, {self.nb_anomalies_geneanet} anomalies, {self.nb_todo} todo\n")
         self.csv.close()
         self.csv_events.close()
         self.csv_unions.close()
