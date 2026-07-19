@@ -87,6 +87,7 @@ function go6()
   # Françoise BURAVAND :
   crawl "https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026: 21 personnes, 6 générations
   crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026: 13 personnes, 6 générations
+  crawl "https://gw.geneanet.org/pmriccio?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # juill 2026 : 47 personnes, 13 générations, 1270-1701, 1 consanguinité
   # pour ascendance Biélone DE GUERIN :
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026: 393 personnes, 33 générations
   crawl "https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone&type=fiche" # fev 2026, s'appuie sur jpifieec92 : 51 personnes, 11 générations
@@ -118,12 +119,18 @@ function go7()
   crawl "https://gw.geneanet.org/jpeg69?lang=fr&n=jean&oc=0&p=jeanne&type=fiche" # juin 2026 : 17 personnes,  5 générations, 1578-1705
   # Pour ascendance Jean BONDON et Anne PONSARD
   crawl "https://gw.geneanet.org/ofromont?lang=fr&n=bondon&oc=1&p=pierre&type=fiche" # juin 2026 : 17 personnes,  7 générations, 1395-1592
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=bondon&oc=0&p=louise&type=fiche" # juill 2026 : 13 personnes,  5 générations, 1465-1630
+  # Pour ascendance Pierre DE GUERIN et Magdeleine MAUCHE
+  crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=guerin&oc=0&p=catherine&type=fiche" # juill 2026 : 395 personnes, 34 générations,  530-1628, 151 titres de noblesse, 6 consanguinités
   # Pour ascendance Joseph ARNAUD
   crawl "https://gw.geneanet.org/221158fc?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 71 personnes,  9 générations, 1535-1841, 6 erreurs, 6 todo
   crawl "https://gw.geneanet.org/b277?lang=fr&n=arnaud&oc=2&p=joseph&type=fiche" # juin 2026 : 29 personnes,  7 générations, 1563-1813, 3 erreurs, 3 todo
   crawl "https://gw.geneanet.org/ascmathevetpeyr?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 75 personnes,  9 générations, 1553-1813
   crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=arnaud&oc=4&p=joseph&type=fiche" # juin 2026 : 643 personnes, 33 générations,  900-1841, 26 consanguinités, 6 erreurs, 6 todo
   crawl "https://gw.geneanet.org/amansmarty?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 73 personnes,  9 générations, 1525-1813
+  # Pour ascendance Vincenza TANTI
+  crawl "https://gw.geneanet.org/kaltair?lang=fr&n=tanti&oc=0&p=vincenza&type=fiche" # juill 2026 : 11 personnes,  4 générations, 1770-1873, 2 erreurs, 2 todo
+
 }
 
 function go_test()
@@ -159,6 +166,7 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
+  #crawl "https://gw.geneanet.org/kaltair?lang=fr&n=tanti&oc=0&p=vincenza&type=fiche" # juill 2026 :
   #go1
   #go2
   #go3
