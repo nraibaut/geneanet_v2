@@ -1,6 +1,9 @@
 https://gw.geneanet.org/221158fc?lang=fr&n=arnaud&oc=0&p=joseph                      :  71 personnes,  9 générations, 1535-1841, 6 erreurs, 6 todo
+https://gw.geneanet.org/230581?lang=fr&n=mercieca&p=gioannella                       :  11 personnes,  4 générations, 1620-1722
+https://gw.geneanet.org/230581?lang=fr&n=spiteri&p=vittorio                          :   7 personnes,  3 générations, 1706-1740
 https://gw.geneanet.org/alma13?lang=fr&n=tissot&oc=0&p=joseph                        :  25 personnes,  7 générations, 1495-1727
 https://gw.geneanet.org/amansmarty?lang=fr&n=arnaud&oc=0&p=joseph                    :  73 personnes,  9 générations, 1525-1813
+https://gw.geneanet.org/arcenciel53?lang=fr&n=cutajar&p=anna                         :  51 personnes,  8 générations, 1542-1738
 https://gw.geneanet.org/ascmathevetpeyr?lang=fr&n=arnaud&oc=0&p=joseph               :  75 personnes,  9 générations, 1553-1813
 https://gw.geneanet.org/b277?lang=fr&n=arnaud&oc=2&p=joseph                          :  29 personnes,  7 générations, 1563-1813, 3 anomalies, 3 todo
 https://gw.geneanet.org/bigoudi2018?lang=fr&n=ginoux&oc=0&p=antoinette               :  25 personnes,  7 générations, 1520-1733
@@ -15,8 +18,10 @@ https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre                  
 https://gw.geneanet.org/dmdoyen?lang=fr&n=mauche&oc=1&p=marie+anne                   :  39 personnes,  8 générations, 1496-1789, 1 titre de noblesse, 1 anomalie, 1 todo
 https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine                   :  19 personnes,  5 générations, 1496-1688, 1 titre de noblesse, 1 anomalie, 1 todo
 https://gw.geneanet.org/evechevaleyre?lang=fr&n=brincat&oc=0&p=maria+anna            :  35 personnes,  7 générations, 1818-1818, 4 anomalies, 4 todo
+https://gw.geneanet.org/fapoja?lang=fr&n=bard&oc=0&p=magdeleine                      :  15 personnes,  4 générations, 1582-1711, 1 titre de noblesse
 https://gw.geneanet.org/fapoja?lang=fr&n=mauche&oc=0&p=marie+anne                    :  45 personnes,  8 générations, 1521-1761
 https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance          :  19 personnes,  6 générations, 1675-1856
+https://gw.geneanet.org/gerardfournier1?lang=fr&n=merciera&oc=0&p=grazia+gioannella  :  33 personnes,  8 générations, 1490-1665
 https://gw.geneanet.org/gerardfournier1?lang=fr&n=spiteri&oc=0&p=vittorio            : 6549 personnes, 104 générations,    1-1655, 547 consanguinités
 https://gw.geneanet.org/hfenech?lang=fr&n=spiteri&oc=0&p=vittorio                    :  33 personnes,  6 générations, 1610-1635, 4 erreurs, 4 todo
 https://gw.geneanet.org/jc8camil?lang=fr&n=spiteri&oc=0&p=vittorio                   : 133 personnes, 21 générations, 1070-1655, 26 titres de noblesse, 11 consanguinités
@@ -30,6 +35,7 @@ https://gw.geneanet.org/jpifieec92?lang=fr&n=nicolas&oc=1&p=etienne             
 https://gw.geneanet.org/jpifieec92?lang=fr&p=louis&n=poildavoine                     : 399 personnes, 34 générations,  530-1653, 150 titres de noblesse, 7 consanguinités
 https://gw.geneanet.org/jvo2506?lang=fr&n=van+brussel&oc=0&p=eduardus                :  61 personnes,  9 générations, 1587-1859, 5 erreurs
 https://gw.geneanet.org/kaltair?lang=fr&n=tanti&oc=0&p=vincenza                      :  11 personnes,  4 générations, 1770-1873, 2 anomalies, 2 todo
+https://gw.geneanet.org/lio1321?lang=fr&n=bard&oc=0&p=magdeleine                     :  37 personnes,  7 générations, 1530-1735
 https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre                       :  37 personnes,  9 générations, 1466-1650, 15 erreurs, 10 todo
 https://gw.geneanet.org/nraibaut2?lang=fr&n=dupont&oc=0&p=gerard                     :   9 personnes,  4 générations, 1580-1912, 4 titres de noblesse
 https://gw.geneanet.org/ofromont?lang=fr&n=bondon&oc=1&p=pierre                      :  17 personnes,  7 générations, 1395-1592
