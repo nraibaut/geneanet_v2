@@ -137,6 +137,14 @@ function go7()
   crawl "https://gw.geneanet.org/fapoja?lang=fr&n=bard&oc=0&p=magdeleine&type=fiche" # juill 2026 : 15 personnes, 4 générations, 1582-1711, 1 titre de noblesse
   crawl "https://gw.geneanet.org/lio1321?lang=fr&n=bard&oc=0&p=magdeleine&type=fiche" # juill 2026 : 37 personnes, 7 générations, 1530-1735
   crawl "https://gw.geneanet.org/arcenciel53?lang=fr&n=cutajar&p=anna&type=fiche" # juill 2026 : 51 personnes, 8 générations, 1542-1738
+  # Pour ascendance Maria ZAEMAN / SAMAN
+  crawl "https://gw.geneanet.org/deledicque4444?lang=fr&n=zaeman&oc=2&p=maria&type=fiche" # sept 2026: 21 personnes, 10 générations, 1614-1688
+  # Pour ascendance Bernard EYMON (Ambroise "Bernard" EYMON, fils de Ambroise Crépin EYMON)
+  crawl "https://gw.geneanet.org/soleil041262?lang=fr&n=eymon&p=ambroise+bernard&type=fiche" # nov 2026: 23 personnes,  6 générations, 1600-1810
+  # Pour ascendance Delphine GRILLET
+  crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine" # nov 2026: 21 personnes, 8 générations, 1440-1691
+  # Pour ascendance Agnese CASSIA
+  crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese" # nov 2026: 13 personnes, 5 générations, 1405-1540, 1 erreur, 1 todo
 }
 
 function go_test()
@@ -172,6 +180,8 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
+  #crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine"
+  #crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese"
   #go1
   #go2
   #go3
