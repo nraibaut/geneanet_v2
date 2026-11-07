@@ -180,6 +180,9 @@ if [ "$COVERAGE" == "1" ]; then
 fi
 
   go
+  #crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026: 3 personnes, 2 générations
+  #crawl "https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" #- mai 2026 : 37 personnes, 9 générations, 1466-1650, 15 erreurs, 10 todo
+  #crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese" # nov 2026: 13 personnes, 5 générations, 1405-1540, 1 erreur, 1 todo
   #crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine"
   #crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese"
   #go1

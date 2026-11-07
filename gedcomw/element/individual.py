@@ -46,12 +46,12 @@ class IndividualElement(Element):
     # voir https://www.francogene.com/internet/gedcom.php#indi
     # (voir aussi doc Ancestris et norme : https://docs.ancestris.org/books/mode-demploi/page/gedcom)
     # OCCU	Occupation de l'individu.
-    # BIRT	Naissance de l'individu.  Voir les lignes génériques d'un événement.
-    # CHR	Le fait de donner un nom à l'individu (christening).  Certains logiciels préfèrent BAPT pour baptême. Voir les lignes génériques d'un événement.
-    # BAPT	Baptême d'un individu.  Voir les lignes génériques d'un événement.
-    # DEAT	Décès d'un individu.  Voir les lignes génériques d'un événement.
-    # BURI	Inhumation ou sépulture d'un individu.  Chez les catholiques, il s'agit en général de l'inscription du décès dans un registre lors de la sépulture.  Voir les lignes génériques d'un événement.
-    # EVEN	Autre événement.  Dans certaines logiciels, il peut s'agir du baptême ou de la sépulture.  On trouve alors un mot clé indiquant le type d'événement.  Dans d'autres logiciels, il s'agit du numéro d'une fiche d'événement qui contient alors les détails sur cet événement. Voir les lignes génériques d'un événement.
+    # BIRT	Naissance de l'individu. Voir les lignes génériques d'un événement.
+    # CHR	Le fait de donner un nom à l'individu (christening). Certains logiciels préfèrent BAPT pour baptême. Voir les lignes génériques d'un événement.
+    # BAPT	Baptême d'un individu. Voir les lignes génériques d'un événement.
+    # DEAT	Décès d'un individu. Voir les lignes génériques d'un événement.
+    # BURI	Inhumation ou sépulture d'un individu. Chez les catholiques, il s'agit en général de l'inscription du décès dans un registre lors de la sépulture. Voir les lignes génériques d'un événement.
+    # EVEN	Autre événement. Dans certains logiciels, il peut s'agir du baptême ou de la sépulture. On trouve alors un mot clé indiquant le type d'événement. Dans d'autres logiciels, il s'agit du numéro d'une fiche d'événement qui contient alors les détails sur cet événement. Voir les lignes génériques d'un événement.
     # Autres :
     # ADOP	Adoption
     # CENS	Recensement
@@ -102,6 +102,12 @@ class IndividualElement(Element):
         "Retraite" : "RETI",
         "Résidence" : "RESI",
         "Testament" : "WILL",
+        "Apprentissage" : "EDUC",   # ex: https://gw.geneanet.org/mserre?lang=fr&p=ayme&n=perrier&type=fiche
+        #"Donation" : "DONA", # "DONA" non reconnu par Ancestris # ex: https://gw.geneanet.org/mserre?lang=fr&p=ayme&n=perrier&type=fiche
+        #"Comment" : "RMRK",  # "RMRK" non reconnu par Ancestris # ex: https://gw.geneanet.org/jybalandefr?lang=fr&n=i+cassia+of+mdina&p=gaddo&type=fiche
+        "Custom event" : "EVEN",    # ex: https://gw.geneanet.org/221158fc?lang=fr&p=claude&n=arnaud&type=fiche
+        "Title": "TITL",            # ex: https://gw.geneanet.org/patrice92?lang=fr&p=pietro+antonius&n=la+barba&type=fiche
+        "Titre": "TITL",            # robustesse
         "Evenement" : "EVEN",
         #"Union" : "Union???", # Uniquement source sur le mariage (unions gérées séparément)
     }
@@ -109,8 +115,18 @@ class IndividualElement(Element):
     geneanet_events = [ # événements ne figurant ni dans la norme ni dans Ancestris
                         # + Mariages / unions --> evt générique EVEN + TYPE
                         "Arrentement", "Bail", "Vente", "Quittance", "Reconnaissance", "Reconnaissance féodale",
-                        "Quittance de dot", "Reconnaissance de dette", "Accord",
-                        #"Union",              # cas "Union avec xxx"
+                        "Quittance de dot",
+                        "Reconnaissance de dette",
+                        "Dette",            # ex: https://gw.geneanet.org/mserre?lang=fr&p=claude&n=martin&type=fiche
+                        "RD",               # = reconnaissance de dette : ex: https://gw.geneanet.org/mserre?lang=fr&p=jean&n=gibert&oc=12&type=fiche
+                        "Ratification",     # ex: https://gw.geneanet.org/mserre?lang=fr&p=bernard&n=delon&type=fiche
+                        "Ratification et dette", # ex: https://gw.geneanet.org/mserre?lang=fr&p=alysone&n=dizonat&type=fiche
+                        "Transaction",      # ex: https://gw.geneanet.org/mserre?lang=fr&p=blaise&n=martin&oc=1&type=fiche
+                        "Reference Number", # ex: https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche
+                        "Comment",          # ex: https://gw.geneanet.org/jybalandefr?lang=fr&n=i+cassia+of+mdina&p=gaddo&type=fiche
+                        "Donation",         # ex: https://gw.geneanet.org/mserre?lang=fr&p=ayme&n=perrier&type=fiche
+                        "Accord",
+                        #"Union",             # cas "Union avec xxx"
                         "Mariage",            # cas "Mariage (avec xxx)"
                         "Contrat de mariage", # cas "Contrat de mariage (avec xxx)"
                         "Non mariés",         # cas "Non mariés (avec xxx)
