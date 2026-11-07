@@ -26,6 +26,7 @@ https://gw.geneanet.org/gaetanv1?lang=fr&n=gonzales&oc=0&p=ursule+esperance     
 https://gw.geneanet.org/gerardfournier1?lang=fr&n=merciera&oc=0&p=grazia+gioannella  :  33 personnes,  8 générations, 1490-1665
 https://gw.geneanet.org/gerardfournier1?lang=fr&n=spiteri&oc=0&p=vittorio            : 6549 personnes, 104 générations,    1-1655, 547 consanguinités
 https://gw.geneanet.org/hfenech?lang=fr&n=spiteri&oc=0&p=vittorio                    :  33 personnes,  6 générations, 1610-1635, 4 erreurs, 4 todo
+https://gw.geneanet.org/jalbre?lang=fr&n=tissot&oc=0&p=eyme                          :  17 personnes,  5 générations, 1500-1668
 https://gw.geneanet.org/jc8camil?lang=fr&n=spiteri&oc=0&p=vittorio                   : 133 personnes, 21 générations, 1070-1655, 26 titres de noblesse, 11 consanguinités
 https://gw.geneanet.org/jmayet73?lang=fr&n=de+guerin&oc=0&p=bielonne+ou+bielone      :  51 personnes, 11 générations, 1240-1601, 1 consanguinité
 https://gw.geneanet.org/jpeg69?lang=fr&n=jean&oc=0&p=jeanne                          :  17 personnes,  5 générations, 1578-1705

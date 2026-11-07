@@ -81,9 +81,10 @@ function go6()
   # pour ascendance Balthazar TISSOT et Jeanne TREBILLON :
   crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=tissot&oc=0&p=magdelaine&type=fiche" # janv 2026: 19 personnes, 5 générations, 1496-1688, 1 titre de noblesse, 1 anomalie
   crawl "https://gw.geneanet.org/pascallacroix93?lang=fr&n=tissot&oc=0&p=magdelaine&type=tree" # fev 2026: 19 personnes, 5 générations. Semble copié sur dmdoyen et moins détaillé, mais quelques écarts à vérifier
-  
-  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" # janv 2026: 27 personnes, 11 générations (importé mai 2026:fusion08)
-  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche" # 39 personnes, 7 générations, 1550-1782, 1 consanguinité, 1 anomalie, 1 todo (importé mai 2026:fusion07)
+  crawl "https://gw.geneanet.org/jalbre?lang=fr&n=tissot&oc=0&p=eyme&type=fiche" # nov 2026 : 17 personnes, 5 générations, 1500-1668
+
+  crawl "https://gw.geneanet.org/dmdoyen?lang=fr&n=bechet&oc=0&p=pierre&type=fiche" ## janv 2026: 27 personnes, 11 générations (importé mai 2026:fusion08)
+  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=ollier&oc=0&p=jean+joseph&type=fiche" ## 39 personnes, 7 générations, 1550-1782, 1 consanguinité, 1 anomalie, 1 todo (importé mai 2026:fusion07)
   # Françoise BURAVAND :
   crawl "https://gw.geneanet.org/sikerik?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026: 21 personnes, 6 générations
   crawl "https://gw.geneanet.org/blouche?lang=fr&n=buravand&oc=0&p=francoise&type=fiche" # fev 2026: 13 personnes, 6 générations
@@ -103,12 +104,12 @@ function go7()
   crawl "https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" #- mai 2026 : 37 personnes, 9 générations, 1466-1650, 15 erreurs, 10 todo
   crawl "https://gw.geneanet.org/brouchev?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" ## mai 2026 : 39 personnes, 9 générations, 1466-1650 (importé mai 2026:fusion06)
   # Pour ascendance Vittorio SPITERI :
-  crawl "https://gw.geneanet.org/hfenech?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 33 personnes, 6 générations, 1610-1635, 4 erreurs, 4 todo
-  crawl "https://gw.geneanet.org/patrice92?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 57 personnes, 12 générations, 1350-1655, 1 erreur, 2 anomalies, 3 todo
-  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 95 personnes, 8 générations, 1450-1690, 9 titres de noblesse, 2 anomalies, 2 todo
-  crawl "https://gw.geneanet.org/jc8camil?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 133 personnes, 21 générations, 1070-1655, 26 titres de noblesse, 11 consanguinités
-  crawl "https://gw.geneanet.org/gerardfournier1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" # mai 2026 : 6549 personnes, 104 générations, 1-1655, 547 consanguinités
-  crawl "https://gw.geneanet.org/230581?lang=fr&n=spiteri&p=vittorio&type=fiche" # aout 2026 : 7 personnes, 3 générations, 1706-1740, désaccord sur la mère
+  crawl "https://gw.geneanet.org/hfenech?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" #- mai 2026 : 33 personnes, 6 générations, 1610-1635, 4 erreurs, 4 todo
+  crawl "https://gw.geneanet.org/patrice92?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" #- mai 2026 : 57 personnes, 12 générations, 1350-1655, 1 erreur, 2 anomalies, 3 todo
+  crawl "https://gw.geneanet.org/boutch1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" ## mai 2026 : 95 personnes, 8 générations, 1450-1690, 9 titres de noblesse, 2 anomalies, 2 todo
+  crawl "https://gw.geneanet.org/jc8camil?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" #- mai 2026 : 133 personnes, 21 générations, 1070-1655, 26 titres de noblesse, 11 consanguinités
+  crawl "https://gw.geneanet.org/gerardfournier1?lang=fr&n=spiteri&oc=0&p=vittorio&type=fiche" #- mai 2026 : 6549 personnes, 104 générations, 1-1655, 547 consanguinités
+  crawl "https://gw.geneanet.org/230581?lang=fr&n=spiteri&p=vittorio&type=fiche" #- aout 2026 : 7 personnes, 3 générations, 1706-1740, désaccord sur la mère
   # Pour ascendance Gioannella MERCIECA (épouse Vittorio SPITERI) :
   crawl "https://gw.geneanet.org/patrice92?lang=fr&n=mercieca&oc=0&p=grazia+gioannella&type=fiche" # mai 2026 : 25 personnes, 7 générations, 1523-1665
   crawl "https://gw.geneanet.org/boutch1?lang=fr&n=mercieca&oc=0&p=gioannella&type=fiche" # mai 2026 : 25 personnes, 7 générations, 1505-1679, 1 anomalie, 1 todo
@@ -126,11 +127,11 @@ function go7()
   # Pour ascendance Pierre DE GUERIN et Magdeleine MAUCHE
   crawl "https://gw.geneanet.org/jpifieec92?lang=fr&n=guerin&oc=0&p=catherine&type=fiche" # juill 2026 : 395 personnes, 34 générations, 530-1628, 151 titres de noblesse, 6 consanguinités
   # Pour ascendance Joseph ARNAUD
-  crawl "https://gw.geneanet.org/221158fc?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 71 personnes, 9 générations, 1535-1841, 6 erreurs, 6 todo
-  crawl "https://gw.geneanet.org/b277?lang=fr&n=arnaud&oc=2&p=joseph&type=fiche" # juin 2026 : 29 personnes, 7 générations, 1563-1813, 3 anomalies, 3 todo
-  crawl "https://gw.geneanet.org/ascmathevetpeyr?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 75 personnes, 9 générations, 1553-1813 (importé juillet 2026:fusion09)
-  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=arnaud&oc=4&p=joseph&type=fiche" # juin 2026 : 643 personnes, 33 générations, 900-1841, 26 consanguinités, 6 anomalies, 6 todo
-  crawl "https://gw.geneanet.org/amansmarty?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" # juin 2026 : 73 personnes, 9 générations, 1525-1813
+  crawl "https://gw.geneanet.org/221158fc?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" #- juin 2026 : 71 personnes, 9 générations, 1535-1841, 6 erreurs, 6 todo
+  crawl "https://gw.geneanet.org/b277?lang=fr&n=arnaud&oc=2&p=joseph&type=fiche" #- juin 2026 : 29 personnes, 7 générations, 1563-1813, 3 anomalies, 3 todo
+  crawl "https://gw.geneanet.org/ascmathevetpeyr?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" ## juin 2026 : 75 personnes, 9 générations, 1553-1813 (importé juillet 2026:fusion09)
+  crawl "https://gw.geneanet.org/oollierbolvin?lang=fr&n=arnaud&oc=4&p=joseph&type=fiche" #- juin 2026 : 643 personnes, 33 générations, 900-1841, 26 consanguinités, 6 anomalies, 6 todo
+  crawl "https://gw.geneanet.org/amansmarty?lang=fr&n=arnaud&oc=0&p=joseph&type=fiche" #- juin 2026 : 73 personnes, 9 générations, 1525-1813
   # Pour ascendance Vincenza TANTI
   crawl "https://gw.geneanet.org/kaltair?lang=fr&n=tanti&oc=0&p=vincenza&type=fiche" # juill 2026 : 11 personnes, 4 générations, 1770-1873, 2 anomalies, 2 todo
   # Pour ascendance Magdeleine BARD
@@ -140,9 +141,9 @@ function go7()
   # Pour ascendance Maria ZAEMAN / SAMAN
   crawl "https://gw.geneanet.org/deledicque4444?lang=fr&n=zaeman&oc=2&p=maria&type=fiche" # sept 2026: 21 personnes, 10 générations, 1614-1688
   # Pour ascendance Bernard EYMON (Ambroise "Bernard" EYMON, fils de Ambroise Crépin EYMON)
-  crawl "https://gw.geneanet.org/soleil041262?lang=fr&n=eymon&p=ambroise+bernard&type=fiche" # nov 2026: 23 personnes,  6 générations, 1600-1810
+  crawl "https://gw.geneanet.org/soleil041262?lang=fr&n=eymon&p=ambroise+bernard&type=fiche" ## nov 2026: 23 personnes,  6 générations, 1600-1810
   # Pour ascendance Delphine GRILLET
-  crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine" # nov 2026: 21 personnes, 8 générations, 1440-1691
+  crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine" ## nov 2026: 21 personnes, 8 générations, 1440-1691
   # Pour ascendance Agnese CASSIA
   crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese" # nov 2026: 13 personnes, 5 générations, 1405-1540, 1 erreur, 1 todo
 }
@@ -179,12 +180,8 @@ if [ "$COVERAGE" == "1" ]; then
   rm .coverage 2>/dev/null
 fi
 
-  go
-  #crawl "https://gw.geneanet.org/bsacco2?lang=fr&n=jullian&oc=0&p=gilette&type=fiche" # fev 2026: 3 personnes, 2 générations
-  #crawl "https://gw.geneanet.org/mserre?lang=fr&n=perrier&oc=0&p=pierre&type=fiche" #- mai 2026 : 37 personnes, 9 générations, 1466-1650, 15 erreurs, 10 todo
-  #crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese" # nov 2026: 13 personnes, 5 générations, 1405-1540, 1 erreur, 1 todo
-  #crawl "https://gw.geneanet.org/cathyalain?lang=fr&n=grillet&p=delphine"
-  #crawl "https://gw.geneanet.org/jybalandefr?lang=fr&n=cassia&p=agnese"
+  #go
+  crawl "https://gw.geneanet.org/jalbre?lang=fr&n=tissot&oc=0&p=eyme&type=fiche" # nov 2026 : 17 personnes, 5 générations, 1500-1668
   #go1
   #go2
   #go3
