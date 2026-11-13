@@ -233,6 +233,10 @@ class SimpleFirefoxCrawler:
             if self.nb_cloudflare_errors >= self.max_cloudflare_errors:
                 logger.error(f"Arrêt après {self.max_cloudflare_errors} challenges Cloudflare détectés.")
                 self.abort_crawling = True
+        elif "Geneanet est temporairement indisponible" in self.driver.page_source.lower():
+            # Cas observé 11/11/2026 : page avec "Geneanet est temporairement indisponible. Merci de patienter un peu et de réessayer ultérieurement."
+            # en français, anglais ("Due to heavy load, the Geneanet Database is unavailable. Please try again later.", espanol, ...
+            logger.error('Page "Geneanet est temporairement indisponible."')
         else :
             # Récupère le contenu
             html_content = str(self.driver.page_source)
